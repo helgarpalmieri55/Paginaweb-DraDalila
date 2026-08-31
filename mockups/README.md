@@ -1,6 +1,6 @@
 # Propuestas de diseño — página de inicio
 
-Cinco maquetas HTML autocontenidas de la página de inicio del sitio de la **Dra. Dalila Peñaranda** (Semana 2 del cronograma de la propuesta). Abrir `index.html` para navegarlas, o cada archivo directamente en el navegador — funcionan sin conexión (fuentes auto-hospedadas en `assets/fonts/`).
+Seis maquetas HTML autocontenidas de la página de inicio del sitio de la **Dra. Dalila Peñaranda** (Semana 2 del cronograma de la propuesta). Abrir `index.html` para navegarlas, o cada archivo directamente en el navegador — funcionan sin conexión (fuentes auto-hospedadas en `assets/fonts/`).
 
 Versión 2 (tras la primera revisión con el cliente): la propuesta 1 se conserva; las otras cuatro fueron reemplazadas por mundos ilustrados e inmersivos definidos con `/impeccable shape`. Las cuatro originales quedaron en `archivo/`.
 
@@ -10,9 +10,10 @@ Versión 2 (tras la primera revisión con el cliente): la propuesta 1 se conserv
 | 2 | `2-acuarela-de-cuento.html` | **Acuarela de cuento** — libro álbum pintado a mano: pigmento SVG con bordes irregulares, grano de papel, manzano en acuarela, notas Caveat. |
 | 3 | `3-teatro-de-papel.html` | **Teatro de papel** — diorama pop-up: escenarios de cartulina por capas con profundidad, telón, sol colgado de un hilo, actos de una función. |
 | 4 | `4-mapa-de-aventura.html` | **Mapa de aventura** — globo aerostático sobre el mapa del crecimiento: valle, campamentos, bosque, lago y puerto unidos por ruta punteada. |
-| 5 | `5-jardin-de-medianoche.html` | **Jardín de medianoche** (premium) — grabado botánico en línea de oro sobre índigo, luna, luciérnagas y marcos dorados. |
+| 5 | `5-jardin-del-amanecer.html` | **Jardín del amanecer** (premium) — grabado botánico en oro suave sobre porcelana: rosa antiguo, salvia y pétalos a la deriva; claro y elegante. |
+| 6 | `6-un-dia-completo.html` | **Un día completo** — un solo paisaje del amanecer a la noche: cada momento del día es un tema de la doctora y la cita se agenda antes de apagar la luz. |
 
-Además, `briefs/6-un-dia-completo.md` guarda el brief aprobado de la sexta dirección («Un día en el mundo de Doc Daly», paisaje continuo de amanecer a noche), pendiente de construcción tras revisión con la doctora.
+El brief de la dirección 6 está en `briefs/6-un-dia-completo.md` (ya construida). El jardín de medianoche (versión oscura del premium) quedó en `archivo/` junto a las cuatro propuestas de la primera ronda.
 
 ## Notas
 
