@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 5 · Jardín de medianoche — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --noche:#171331;            /* índigo de medianoche */
+    --noche-honda:#100D24;
+    --noche-clara:#211C42;
+    --oro:#D8BC80;              /* línea de grabado */
+    --oro-claro:#EBD9AE;
+    --marfil:#F5F0E4;
+    --marfil-velado:#C6BFD9;
+    --rosa:#F0A7BC;             /* rosa de pétalo */
+    --rosa-honda:#E27E9D;
+    --verde-noche:#9DBE7C;      /* hoja a la luz de la luna */
+    --linea:rgba(216,188,128,.28);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--oro);color:var(--noche-honda)}
+  body{
+    font-family:"Jost",system-ui,sans-serif;font-weight:300;
+    background:
+      radial-gradient(90% 50% at 50% 0%, #241E4A 0%, transparent 60%),
+      var(--noche);
+    color:var(--marfil);
+    font-size:17px;line-height:1.75;letter-spacing:.012em;
+  }
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:var(--noche-honda)}
+  body::-webkit-scrollbar-thumb{background:#3A3168;border-radius:6px}
+  h1,h2,h3{font-family:"Italiana",serif;font-weight:400;line-height:1.12;text-wrap:balance;letter-spacing:.02em}
+  :focus-visible{outline:2px solid var(--oro);outline-offset:4px}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 28px;position:relative}
+
+  /* luciérnagas ambientales (gradientes radiales, sin box-shadow) */
+  .luciernagas{position:fixed;inset:0;pointer-events:none;z-index:1}
+  .luciernaga{
+    position:absolute;width:26px;height:26px;border-radius:50%;
+    background:radial-gradient(circle, rgba(235,217,174,.85) 0%, rgba(235,217,174,.25) 35%, transparent 70%);
+    animation:titilar 6s ease-in-out infinite;
+  }
+  .luciernaga:nth-child(1){top:22%;left:8%;animation-delay:0s;animation-duration:7s}
+  .luciernaga:nth-child(2){top:38%;right:10%;animation-delay:1.6s}
+  .luciernaga:nth-child(3){top:64%;left:16%;animation-delay:3.1s;animation-duration:8s}
+  .luciernaga:nth-child(4){top:78%;right:22%;animation-delay:2.2s}
+  .luciernaga:nth-child(5){top:12%;right:30%;animation-delay:4.4s;animation-duration:9s}
+  @keyframes titilar{0%,100%{opacity:.15;transform:translateY(0)}50%{opacity:.95;transform:translateY(-14px)}}
+
+  main,header,footer{position:relative;z-index:2}
+
+  /* ---------- entrada ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(16,13,36,.86);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--linea);
+  }
+  .nav{max-width:1020px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:22px}
+  .nav img{height:42px;width:auto}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:4px;flex-wrap:wrap}
+  .nav a{
+    color:var(--marfil);text-decoration:none;font-size:.8rem;font-weight:400;
+    letter-spacing:.2em;text-transform:uppercase;padding:8px 12px;
+    border-bottom:1px solid transparent;transition:color .3s,border-color .3s;
+  }
+  .nav a:hover{color:var(--oro-claro);border-bottom-color:var(--oro)}
+  .nav .cta{border:1px solid var(--oro);color:var(--oro-claro)}
+  .nav .cta:hover{background:var(--oro);color:var(--noche-honda)}
+
+  /* ---------- hero: el portón del jardín ---------- */
+  .hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;padding:80px 0 60px;overflow:hidden}
+  .hero .ramas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .hero .ramas svg{position:absolute;width:100%;height:100%}
+  .hero .contenido{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center}
+  .hero .luna{margin-bottom:26px;animation:lunar 10s ease-in-out infinite}
+  @keyframes lunar{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.8rem);max-width:18ch;color:var(--marfil)}
+  .hero h1 em{font-style:normal;color:var(--oro-claro)}
+  .hero .sub{margin:24px auto 42px;max-width:37rem;color:var(--marfil-velado);font-size:1.05rem;font-weight:300}
+  .acciones{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+    font-size:.84rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+    padding:17px 36px;transition:background .35s,color .35s,border-color .35s;
+  }
+  .btn-oro{background:var(--oro);color:var(--noche-honda)}
+  .btn-oro:hover{background:var(--oro-claro)}
+  .btn-linea{border:1px solid rgba(245,240,228,.4);color:var(--marfil)}
+  .btn-linea:hover{border-color:var(--oro);color:var(--oro-claro)}
+
+  /* ornamento divisor */
+  .ornamento{display:flex;justify-content:center;padding:10px 0}
+  .ornamento svg{width:min(420px,80%);height:auto}
+
+  /* ---------- el herbario (sobre mí) ---------- */
+  .seccion{padding:90px 0}
+  .cabeza-seccion{text-align:center;max-width:46rem;margin:0 auto 60px}
+  .cabeza-seccion h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+  .cabeza-seccion h2 em{font-style:normal;color:var(--oro-claro)}
+  .cabeza-seccion p{margin-top:14px;color:var(--marfil-velado);font-size:.96rem}
+  .herbario{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea)}
+  .planta{
+    background:var(--noche);padding:44px 42px;display:grid;grid-template-columns:88px 1fr;gap:26px;align-items:center;
+    transition:background .35s;
+  }
+  .planta:hover{background:var(--noche-clara)}
+  .planta .grabado{width:88px;height:88px;flex:none}
+  .planta .grabado svg{width:100%;height:100%}
+  .planta h3{font-size:1.5rem;margin-bottom:6px}
+  .planta p{color:var(--marfil-velado);font-size:.92rem;font-weight:300}
+  .planta em{font-style:italic;color:#948BB0;font-size:.8rem}
+
+  /* ---------- el invernadero (cursos) ---------- */
+  .invernadero{background:var(--noche-honda);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+  .vitrinas{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+  .vitrina{
+    position:relative;text-decoration:none;color:inherit;
+    border:1px solid var(--linea);padding:40px 34px 32px;
+    display:flex;flex-direction:column;gap:16px;
+    transition:border-color .35s, background .35s;
+    background:linear-gradient(180deg, rgba(33,28,66,.5), transparent 40%);
+  }
+  .vitrina::before{
+    content:"";position:absolute;inset:6px;border:1px solid rgba(216,188,128,.14);pointer-events:none;
+    transition:border-color .35s;
+  }
+  .vitrina:hover{border-color:var(--oro);background:linear-gradient(180deg, rgba(33,28,66,.85), rgba(33,28,66,.2))}
+  .vitrina:hover::before{border-color:rgba(216,188,128,.4)}
+  .vitrina .lamina{height:110px;display:grid;place-items:center}
+  .vitrina .lamina svg{height:100%;width:auto}
+  .vitrina h3{font-size:1.55rem}
+  .vitrina p{color:var(--marfil-velado);font-size:.9rem;flex:1;font-weight:300}
+  .vitrina .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--linea);padding-top:16px}
+  .vitrina .precio{font-family:"Italiana",serif;font-size:1.35rem;color:var(--oro-claro)}
+  .vitrina .precio small{display:block;font-family:"Jost",sans-serif;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#948BB0}
+  .vitrina .ver{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rosa)}
+
+  /* ---------- cuaderno y voces ---------- */
+  .cuaderno .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .cuaderno h2{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:8px}
+  .cuaderno h2 em{font-style:normal;color:var(--oro-claro)}
+  .cuaderno .sub{color:var(--marfil-velado);font-size:.92rem;margin-bottom:34px;font-weight:300}
+  .paginas{list-style:none}
+  .paginas a{
+    display:block;text-decoration:none;color:inherit;
+    padding:22px 2px;border-top:1px solid var(--linea);
+    transition:transform .35s cubic-bezier(.16,1,.3,1);
+  }
+  .paginas li:last-child a{border-bottom:1px solid var(--linea)}
+  .paginas a:hover{transform:translateX(14px)}
+  .paginas h3{font-size:1.35rem;transition:color .3s}
+  .paginas a:hover h3{color:var(--oro-claro)}
+  .paginas p{color:var(--marfil-velado);font-size:.86rem;margin-top:4px;font-weight:300}
+  .voces blockquote{padding:30px 0;border-top:1px solid var(--linea)}
+  .voces blockquote:last-of-type{border-bottom:1px solid var(--linea)}
+  .voces blockquote p{font-family:"Italiana",serif;font-size:1.45rem;line-height:1.45}
+  .voces blockquote p::before{content:"— "}
+  .voces cite{display:block;margin-top:14px;font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:#A79DC4}
+
+  /* ---------- la cita (citas) ---------- */
+  .cita-nocturna{background:var(--noche-honda);border-top:1px solid var(--linea)}
+  .marcos{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:840px;margin:0 auto}
+  .marco{
+    border:1px solid var(--oro);padding:44px 38px;text-align:center;position:relative;
+    display:flex;flex-direction:column;align-items:center;gap:14px;
+  }
+  .marco::before{content:"";position:absolute;inset:7px;border:1px solid rgba(216,188,128,.22);pointer-events:none}
+  .marco .emblema-cita{height:60px;display:grid;place-items:center}
+  .marco h3{font-size:1.7rem}
+  .marco p{color:var(--marfil-velado);font-size:.9rem;font-weight:300}
+  .marco .precio-cita{font-family:"Italiana",serif;font-size:2rem;color:var(--oro-claro)}
+  .marco .precio-cita small{display:block;font-family:"Jost",sans-serif;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:#948BB0}
+  .marco .btn{margin-top:10px}
+
+  /* ---------- despedida ---------- */
+  footer{border-top:1px solid var(--linea);padding:70px 0 110px;background:var(--noche-honda)}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+  footer img{height:82px;width:auto;margin-bottom:20px}
+  footer h2{font-family:"Italiana",serif;color:#fff;font-size:1.8rem;margin-bottom:10px}
+  footer p{color:var(--marfil-velado);font-size:.92rem;max-width:32rem;font-weight:300}
+  footer .btn{margin-top:22px}
+  footer nav ul{list-style:none;display:grid;gap:9px}
+  footer nav a{color:var(--marfil);text-decoration:none;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
+  footer nav a:hover{color:var(--oro-claro)}
+  .legal{border-top:1px solid var(--linea);margin-top:46px;padding-top:26px;font-size:.78rem;color:#948BB0}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:24px;right:24px;z-index:60;
+    width:58px;height:58px;border-radius:50%;
+    background:var(--oro);color:var(--noche-honda);
+    display:grid;place-items:center;
+    box-shadow:0 12px 26px rgba(5,3,14,.6);
+    transition:transform .35s cubic-bezier(.16,1,.3,1),background .35s;
+  }
+  .flotante:hover{transform:translateY(-4px);background:var(--oro-claro)}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+    .luciernaga{opacity:.5}
+  }
+  @media (max-width:920px){
+    .hero{min-height:auto;padding:70px 0 50px}
+    .herbario{grid-template-columns:1fr}
+    .planta{padding:34px 26px}
+    .vitrinas{grid-template-columns:1fr}
+    .cuaderno .wrap{grid-template-columns:1fr;gap:50px}
+    .marcos{grid-template-columns:1fr;gap:40px}
+    footer .wrap{grid-template-columns:1fr}
+    .nav a{padding:8px 8px;font-size:.7rem;letter-spacing:.14em}
+  }
+</style>
+</head>
+<body>
+<!--
+THESIS: la consulta premium como jardín botánico de medianoche: grabado de línea dorada sobre índigo, luciérnagas y calma de cuento de hadas para adultos; rechaza tanto el lujo genérico oscuro-minimal como el pastel maternal — aquí el lujo es un jardín que cuida lo que crece.
+OWN-WORLD: índigo #171331 con halo lunar, línea de grabado oro #D8BC80 en ilustración botánica (ramas de manzano, hojas, luna), marfil y rosa de pétalo, Italiana como serif de lápida fina para display, Jost light de texto, marcos dobles de filete y luciérnagas de gradiente radial.
+STORY: la visitante empuja el portón del jardín de noche: las ramas doradas enmarcan la promesa ("lo que se cuida de noche, florece de día"), recorre el herbario de credenciales, el invernadero de cursos, el cuaderno botánico del blog, y reserva su cita en un marco dorado.
+FIRST VIEWPORT: composición central: luna grabada en oro con fase, titular Italiana de 4.8rem, ramas de manzano dibujadas a línea entrando desde las esquinas, luciérnagas titilando, dos acciones (reservar oro pleno / cursos en filete).
+FORM: jardín de medianoche — slot premium-elegante del pedido original, dirección fijada por el usuario en la ronda shape.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+-->
+
+<div class="luciernagas" aria-hidden="true">
+  <span class="luciernaga"></span><span class="luciernaga"></span><span class="luciernaga"></span><span class="luciernaga"></span><span class="luciernaga"></span>
+</div>
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <a href="#inicio" aria-label="Inicio"><img src="assets/logo-icon-white.png" alt="Logo: manzana con bebé — Dra. Dalila Peñaranda"></a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="cta" href="#citas">Reservar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <div class="ramas" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" fill="none">
+        <!-- rama superior izquierda -->
+        <g stroke="#D8BC80" stroke-width="2" opacity=".8">
+          <path d="M-20 80 C 160 120, 300 90, 430 190 C 480 228, 500 260, 505 300"/>
+          <path d="M180 108 C 200 70, 240 58, 285 62 M 300 106 C 330 74, 372 68, 410 80 M 430 190 C 470 170, 510 172, 540 188"/>
+          <path d="M240 100 q14 -32 44 -36 q-4 30 -44 36Z" fill="rgba(157,190,124,.2)"/>
+          <path d="M360 130 q20 -28 50 -26 q-8 30 -50 26Z" fill="rgba(157,190,124,.2)"/>
+        </g>
+        <!-- manzana dorada colgando -->
+        <g stroke="#D8BC80" stroke-width="2">
+          <path d="M505 300 v34"/>
+          <path d="M505 388 c-26 0 -40 -18 -40 -36 c0 -14 10 -22 22 -22 c8 0 12 2 18 6 c6 -4 10 -6 18 -6 c12 0 22 8 22 22 c0 18 -14 36 -40 36Z" fill="rgba(240,167,188,.16)"/>
+          <path d="M505 332 c2 -10 8 -18 20 -21"/>
+        </g>
+        <!-- rama superior derecha -->
+        <g stroke="#D8BC80" stroke-width="2" opacity=".8">
+          <path d="M1460 140 C 1300 180, 1160 150, 1040 240 C 1000 270, 985 296, 980 330"/>
+          <path d="M1240 168 C 1226 128, 1190 112, 1150 114 M 1120 190 C 1096 158, 1054 150, 1016 160"/>
+          <path d="M1190 160 q-12 -34 -44 -40 q2 32 44 40Z" fill="rgba(157,190,124,.2)"/>
+          <path d="M1060 210 q-18 -30 -50 -30 q6 32 50 30Z" fill="rgba(157,190,124,.2)"/>
+        </g>
+        <!-- estrellas finas -->
+        <g fill="#EBD9AE" opacity=".8">
+          <circle cx="220" cy="300" r="1.8"/><circle cx="1240" cy="420" r="1.6"/><circle cx="160" cy="520" r="1.4"/><circle cx="1300" cy="250" r="1.8"/><circle cx="720" cy="120" r="1.4"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap contenido">
+      <svg class="luna" width="110" height="110" viewBox="0 0 110 110" fill="none" aria-hidden="true">
+        <circle cx="55" cy="55" r="40" stroke="#D8BC80" stroke-width="2"/>
+        <path d="M67 22 a40 40 0 1 0 21 60 32 32 0 0 1 -21 -60Z" fill="rgba(235,217,174,.14)" stroke="#D8BC80" stroke-width="1.4"/>
+        <circle cx="55" cy="55" r="49" stroke="rgba(216,188,128,.25)" stroke-width="1"/>
+      </svg>
+      <h1>Lo que se cuida de noche, <em>florece de día</em></h1>
+      <p class="sub">Dra. Dalila Peñaranda · pediatría y nutrición infantil. Una consulta serena, con evidencia y sin culpas, para que sus hijos crezcan como se cuidan los jardines: con paciencia y a su tiempo. Presencial, o virtual desde cualquier país.</p>
+      <div class="acciones">
+        <a class="btn btn-oro" href="#citas">Reservar por WhatsApp</a>
+        <a class="btn btn-linea" href="#cursos">Conocer los cursos</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornamento" aria-hidden="true">
+    <svg viewBox="0 0 420 40" fill="none">
+      <path d="M10 20 H 175 M 245 20 H 410" stroke="#D8BC80" stroke-width="1" opacity=".6"/>
+      <path d="M210 8 c8 6 8 18 0 24 c-8 -6 -8 -18 0 -24Z" stroke="#D8BC80" stroke-width="1.4"/>
+      <circle cx="188" cy="20" r="2" fill="#D8BC80"/><circle cx="232" cy="20" r="2" fill="#D8BC80"/>
+    </svg>
+  </div>
+
+  <section class="seccion" id="sobre-mi" aria-label="Sobre mí">
+    <div class="wrap">
+      <div class="cabeza-seccion">
+        <h2>El <em>herbario</em> de una trayectoria</h2>
+        <p>Credenciales cultivadas durante años. (Datos de ejemplo — se reemplazarán por los reales.)</p>
+      </div>
+      <div class="herbario">
+        <div class="planta">
+          <span class="grabado" aria-hidden="true">
+            <svg viewBox="0 0 88 88" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <circle cx="44" cy="44" r="34" opacity=".5"/>
+              <rect x="26" y="36" width="36" height="26" rx="6"/>
+              <path d="M36 36v-4a8 8 0 0 1 16 0v4M44 44v10M39 49h10"/>
+            </svg>
+          </span>
+          <div><h3>Médica pediatra</h3><p>Formación universitaria y de posgrado en pediatría.</p><em>Universidad por confirmar · ejemplo</em></div>
+        </div>
+        <div class="planta">
+          <span class="grabado" aria-hidden="true">
+            <svg viewBox="0 0 88 88" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <circle cx="44" cy="44" r="34" opacity=".5"/>
+              <path d="M44 64c-11 0-17.5-7.3-17.5-15.5C26.5 41 31.7 37 38 37c2.6 0 4 .6 6 1.6 2-1 3.4-1.6 6-1.6 6.3 0 11.5 4 11.5 11.5C61.5 56.7 55 64 44 64Z"/>
+              <path d="M44 38c0-5 3-9.6 8.8-11.3-1 5.8-3.3 9.6-8.8 11.3Z" fill="rgba(157,190,124,.25)"/>
+            </svg>
+          </span>
+          <div><h3>Nutrición infantil</h3><p>Planes de alimentación por escrito, etapa por etapa.</p><em>Título por confirmar · ejemplo</em></div>
+        </div>
+        <div class="planta">
+          <span class="grabado" aria-hidden="true">
+            <svg viewBox="0 0 88 88" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <circle cx="44" cy="44" r="34" opacity=".5"/>
+              <circle cx="44" cy="44" r="18"/>
+              <path d="M26 44h36M44 26c5.5 5 8.4 11.4 8.4 18S49.5 57 44 62c-5.5-5-8.4-11.4-8.4-18S38.5 31 44 26Z"/>
+            </svg>
+          </span>
+          <div><h3>Consulta internacional</h3><p>Atención virtual a familias en cualquier país, coordinada por WhatsApp.</p></div>
+        </div>
+        <div class="planta">
+          <span class="grabado" aria-hidden="true">
+            <svg viewBox="0 0 88 88" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <circle cx="44" cy="44" r="34" opacity=".5"/>
+              <path d="M44 26l5.6 11.4 12.6 1.8-9.1 8.9 2.2 12.5L44 54.7l-11.3 5.9 2.2-12.5-9.1-8.9 12.6-1.8L44 26Z"/>
+            </svg>
+          </span>
+          <div><h3>Sociedades científicas</h3><p>Afiliación a sociedades de pediatría y nutrición.</p><em>Por confirmar · ejemplo</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion invernadero" id="cursos" aria-label="Cursos">
+    <div class="wrap">
+      <div class="cabeza-seccion">
+        <h2>El <em>invernadero</em> de los cursos</h2>
+        <p>Programas en video para las etapas que más preguntas traen, con acceso a través de Hotmart. (Cursos y precios de ejemplo.)</p>
+      </div>
+      <div class="vitrinas">
+        <a class="vitrina" href="#cursos">
+          <span class="lamina" aria-hidden="true">
+            <svg viewBox="0 0 120 110" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <path d="M60 96c-17 0-27-11.4-27-24.2C33 60 41 54 51 54c4 0 6.2 1 9 2.5 2.8-1.5 5-2.5 9-2.5 10 0 18 6 18 17.8C87 84.6 77 96 60 96Z"/>
+              <path d="M60 56c0-8 4.6-15 13.6-17.6-1.6 9-5.1 15-13.6 17.6Z" fill="rgba(157,190,124,.25)"/>
+              <path d="M60 40V22 M 60 22 q-14 -10 -28 -4 M 60 22 q14 -10 28 -4" opacity=".7"/>
+            </svg>
+          </span>
+          <h3>Alimentación complementaria sin miedo</h3>
+          <p>De la leche a la cuchara, de los 6 a los 12 meses: método, menús y señales de alerta.</p>
+          <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+        </a>
+        <a class="vitrina" href="#cursos">
+          <span class="lamina" aria-hidden="true">
+            <svg viewBox="0 0 120 110" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <rect x="26" y="38" width="68" height="48" rx="8"/>
+              <path d="M40 38v-6a8 8 0 0 1 8-8h24a8 8 0 0 1 8 8v6"/>
+              <circle cx="47" cy="62" r="9" fill="rgba(240,167,188,.18)"/>
+              <rect x="62" y="54" width="22" height="17" rx="3" fill="rgba(157,190,124,.18)"/>
+            </svg>
+          </span>
+          <h3>La lonchera que sí se comen</h3>
+          <p>Menús escolares equilibrados, prácticos y sin discusiones en la mesa.</p>
+          <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+        </a>
+        <a class="vitrina" href="#cursos">
+          <span class="lamina" aria-hidden="true">
+            <svg viewBox="0 0 120 110" fill="none" stroke="#D8BC80" stroke-width="1.8">
+              <path d="M74 24a36 36 0 1 0 24 44 29 29 0 0 1-24-44Z" fill="rgba(235,217,174,.12)"/>
+              <circle cx="34" cy="30" r="1.8" fill="#EBD9AE" stroke="none"/><circle cx="46" cy="18" r="1.4" fill="#EBD9AE" stroke="none"/><circle cx="24" cy="48" r="1.4" fill="#EBD9AE" stroke="none"/>
+            </svg>
+          </span>
+          <h3>Dormir bien desde bebés</h3>
+          <p>Rutinas de sueño respetuosas: siestas, noches y despertares, paso a paso.</p>
+          <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion cuaderno" id="blog" aria-label="Blog y testimonios">
+    <div class="wrap">
+      <div>
+        <h2>El <em>cuaderno</em> botánico</h2>
+        <p class="sub">Artículos gratuitos del blog de la doctora. (Títulos de ejemplo.)</p>
+        <ul class="paginas">
+          <li><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a></li>
+          <li><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a></li>
+          <li><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a></li>
+        </ul>
+      </div>
+      <div class="voces" aria-label="Testimonios">
+        <h2>Las <em>voces</em> del jardín</h2>
+        <p class="sub">Testimonios ilustrativos — se reemplazarán por opiniones reales autorizadas.</p>
+        <blockquote>
+          <p>Salimos de la consulta con un plan claro y sin culpas. Mi hija por fin come verduras.</p>
+          <cite>María F. · mamá de Salomé · ejemplo</cite>
+        </blockquote>
+        <blockquote>
+          <p>La consulta virtual fue igual de cercana que ir al consultorio, desde otro país.</p>
+          <cite>Carlos R. · papá de Emilio · ejemplo</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion cita-nocturna" id="citas" aria-label="Citas">
+    <div class="wrap">
+      <div class="cabeza-seccion">
+        <h2>Su <em>cita</em>, a la hora serena</h2>
+        <p>Escriba por WhatsApp y la doctora confirmará personalmente el horario.</p>
+      </div>
+      <div class="marcos">
+        <div class="marco">
+          <span class="emblema-cita" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#D8BC80" stroke-width="1.8"><path d="M23 42S8.5 31.6 8.5 20a14.5 14.5 0 0 1 29 0C37.5 31.6 23 42 23 42Z"/><circle cx="23" cy="19.4" r="5"/></svg>
+          </span>
+          <h3>Presencial</h3>
+          <p>En el consultorio — ciudad y dirección por confirmar. Valoración completa con plan de alimentación por escrito.</p>
+          <span class="precio-cita">$180.000<small>COP · precio de ejemplo</small></span>
+          <a class="btn btn-oro" href="https://wa.me/570000000000?text=Hola%2C%20deseo%20reservar%20una%20cita%20presencial" rel="noopener">Reservar por WhatsApp</a>
+        </div>
+        <div class="marco">
+          <span class="emblema-cita" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#D8BC80" stroke-width="1.8"><rect x="5" y="11" width="26" height="21" rx="4"/><path d="M31 20l10-6v18l-10-6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Virtual</h3>
+          <p>Videollamada desde cualquier país, con plan e indicaciones enviados por correo tras la consulta.</p>
+          <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
+          <a class="btn btn-oro" href="https://wa.me/570000000000?text=Hola%2C%20deseo%20reservar%20una%20cita%20virtual" rel="noopener">Reservar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <h2>El portón queda abierto</h2>
+      <p>Citas por WhatsApp; correspondencia por correo. Aquí irán la dirección del consultorio, los horarios de atención y los enlaces a redes sociales.</p>
+      <a class="btn btn-oro" href="https://wa.me/570000000000" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acuda a su servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="https://wa.me/570000000000" aria-label="Abrir WhatsApp" rel="noopener">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="currentColor"/></svg>
+</a>
+</body>
+</html>
