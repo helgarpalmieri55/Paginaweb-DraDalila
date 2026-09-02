@@ -15,6 +15,16 @@ Versión 2 (tras la primera revisión con el cliente): la propuesta 1 se conserv
 
 El brief de la dirección 6 está en `briefs/6-un-dia-completo.md` (ya construida). El jardín de medianoche (versión oscura del premium) quedó en `archivo/` junto a las cuatro propuestas de la primera ronda.
 
+## Versión 3 — variaciones marinas del teatro elegido
+
+La doctora eligió el **teatro de papel** y pidió que la página se sienta como su consultorio real, cuyo mural es un mundo marino de papel (ballena, tortugas, corales, estrellas, zócalo de olas, banca menta, madera clara). Tres variaciones definidas con `/impeccable shape` conservan el esqueleto del teatro (telón, actos, escenarios de cartulina) y cambian la escenografía:
+
+| # | Archivo | Dirección visual |
+|---|---------|------------------|
+| 3A | `3a-teatro-consultorio.html` | **Consultorio claro** — la más fiel al lugar: pared cálida, marquesina de madera, telón de olas azul-lila, ballena y tortuga colgadas, banca menta y zócalo de olas. |
+| 3B | `3b-teatro-arrecife.html` | **Arrecife colorido** — el teatro sumergido: escenarios crema flotando en agua celeste con burbujas, corales coral/aqua y banco de peces. |
+| 3C | `3c-teatro-oceano.html` | **Océano profundo** — la más cercana al diseño elegido: mismo telón rosa y estructura, pero el fondo índigo marino y la escena del mural (ballena, medusa, olas) en el proscenio. |
+
 ## Notas
 
 - **Todo el contenido es placeholder**: textos, credenciales, cursos, precios y testimonios son de ejemplo y están marcados como tales. Se reemplazan con el material real que entregue la doctora (Semana 1 del cronograma).

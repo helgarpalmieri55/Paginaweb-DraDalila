@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Variación B · El arrecife en función — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --agua:#CDE8F5;             /* agua celeste del acuario */
+    --agua-honda:#A8D4EC;
+    --papel-escenario:#FFF8EA;  /* cartulina crema de los escenarios */
+    --coral:#F2845C; --coral-hondo:#C4502E; --coral-tinta:#8F3418;
+    --aqua:#5FBFAE; --aqua-honda:#2E8A78; --aqua-tinta:#1D5C50;
+    --celeste-hondo:#3D7EB4;
+    --lila-agua:#8CA3DC; --lila-honda:#5C74B4;
+    --arena:#F2D492; --arena-honda:#C49A44;
+    --ballena:#6FA0D6;
+    --tinta:#16324F;            /* tinta de fondo marino */
+    --tinta-suave:#4A6580;
+    --sombra-capa:0 10px 18px rgba(0,0,0,.18);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  ::selection{background:var(--arena);color:var(--tinta)}
+  body{
+    font-family:"Karla",system-ui,sans-serif;
+    background:linear-gradient(var(--agua), var(--agua-honda));
+    background-attachment:fixed;
+    color:var(--tinta);
+    font-size:17px;line-height:1.65;overflow-x:hidden;
+  }
+  /* burbujas del acuario */
+  .acuario{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .acuario span{
+    position:absolute;bottom:-30px;border-radius:50%;
+    border:2.5px solid rgba(255,255,255,.55);
+    animation:ascender linear infinite;
+  }
+  .acuario span:nth-child(1){left:6%;width:14px;height:14px;animation-duration:18s}
+  .acuario span:nth-child(2){left:22%;width:9px;height:9px;animation-duration:24s;animation-delay:6s}
+  .acuario span:nth-child(3){left:58%;width:12px;height:12px;animation-duration:21s;animation-delay:3s}
+  .acuario span:nth-child(4){left:78%;width:8px;height:8px;animation-duration:26s;animation-delay:10s}
+  .acuario span:nth-child(5){left:92%;width:15px;height:15px;animation-duration:19s;animation-delay:8s}
+  @keyframes ascender{from{transform:translateY(0)}to{transform:translateY(-115vh)}}
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:var(--agua-honda)}
+  body::-webkit-scrollbar-thumb{background:var(--celeste-hondo);border-radius:6px}
+  h1,h2,h3{font-family:"Alfa Slab One",serif;font-weight:400;line-height:1.12;text-wrap:balance}
+  :focus-visible{outline:3px solid var(--coral-hondo);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+  /* ---------- marquesina ---------- */
+  header{position:sticky;top:0;z-index:50;background:var(--tinta);box-shadow:0 6px 16px rgba(0,0,0,.35)}
+  .nav{max-width:1100px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:16px}
+  .nav img{height:46px;width:auto}
+  .nav .marca{font-family:"Alfa Slab One",serif;color:#FFF8EA;font-size:1.02rem;letter-spacing:.02em}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
+  .nav a{
+    color:#DCEBF7;text-decoration:none;font-weight:700;font-size:.88rem;
+    padding:8px 12px;border-radius:10px;transition:background .2s,color .2s;
+  }
+  .nav a:hover{background:var(--celeste-hondo);color:#fff}
+  .nav .cta{background:var(--coral);color:#fff}
+  .nav .cta:hover{background:var(--coral-hondo)}
+
+  /* ---------- escenario base ---------- */
+  .escenario{
+    position:relative;margin:56px auto;max-width:1100px;
+    background:var(--papel-escenario);border-radius:18px;
+    box-shadow:0 24px 50px rgba(10,40,70,.35), inset 0 0 0 8px rgba(242,132,92,.18);
+    overflow:hidden;
+  }
+  .escenario .interior{padding:60px 56px 0;position:relative;z-index:3}
+  .rotulo-acto{
+    position:absolute;top:0;left:0;z-index:5;
+    background:var(--coral-hondo);color:#FFF8EA;
+    font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+    padding:9px 20px;border-radius:18px 0 16px 0;
+  }
+  .escenario h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:10px}
+  .escenario .sub{color:var(--tinta-suave);max-width:38rem}
+  .capas{position:relative;display:block;width:100%;margin-top:34px}
+  .capas svg{display:block;width:100%;height:auto}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding-top:26px}
+  .telon-borde{position:relative;z-index:4;display:block;width:100%;margin-bottom:-70px;pointer-events:none;filter:drop-shadow(0 12px 14px rgba(10,40,70,.35))}
+  .hero .escenario{margin-top:0}
+  .hero .interior{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:96px}
+  .hero h1{font-size:clamp(2.4rem,5.4vw,4.1rem);color:var(--tinta)}
+  .hero h1 .recorte{color:var(--coral-hondo)}
+  .hero .intro{margin:18px 0 26px;font-size:1.1rem;max-width:32rem;color:#2E4A66}
+  .botones{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-family:"Alfa Slab One",serif;font-size:.95rem;letter-spacing:.02em;
+    padding:15px 26px;border-radius:14px;color:#fff;
+    box-shadow:0 6px 0 rgba(0,0,0,.2), var(--sombra-capa);
+    transition:transform .18s ease-out, box-shadow .18s ease-out;
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 rgba(0,0,0,.2), 0 16px 26px rgba(0,0,0,.28)}
+  .btn:active{transform:translateY(2px);box-shadow:0 3px 0 rgba(0,0,0,.2), 0 8px 14px rgba(0,0,0,.22)}
+  .btn-whatsapp{background:var(--aqua-honda)}
+  .btn-coral{background:var(--coral-hondo)}
+  .escena-colgante{position:relative}
+  .escena-colgante svg{width:100%;height:auto;display:block}
+  .cuelga{animation:mecer 6.5s ease-in-out infinite;transform-origin:center -40px}
+  .cuelga-2{animation:mecer 8s ease-in-out infinite reverse;transform-origin:center -60px}
+  @keyframes mecer{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
+  .nada{animation:nadar 9s ease-in-out infinite}
+  @keyframes nadar{0%,100%{transform:translateX(0)}50%{transform:translateX(26px)}}
+  .hero figcaption{text-align:center;font-size:.85rem;color:var(--tinta-suave);font-style:italic;margin-top:8px}
+
+  /* ---------- reparto ---------- */
+  .reparto .interior{padding-bottom:26px}
+  .fichas{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:30px 0 40px}
+  .fichap{
+    background:#fff;border-radius:14px;padding:22px 18px 18px;text-align:center;
+    box-shadow:var(--sombra-capa);
+    transition:transform .25s cubic-bezier(.22,1,.36,1);
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+  }
+  .fichap:hover{transform:translateY(-6px) rotate(-1deg)}
+  .fichap:nth-child(even):hover{transform:translateY(-6px) rotate(1deg)}
+  .fichap .medalla{
+    width:74px;height:74px;border-radius:50%;display:grid;place-items:center;
+    box-shadow:inset 0 -5px 0 rgba(0,0,0,.14);
+  }
+  .fichap h3{font-size:1rem;line-height:1.25}
+  .fichap p{font-size:.8rem;color:var(--tinta-suave)}
+
+  /* ---------- cursos ---------- */
+  .funciones .interior{padding-bottom:44px}
+  .teatritos{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:34px}
+  .teatrito{
+    background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;
+    box-shadow:var(--sombra-capa);
+    transition:transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s;
+    display:flex;flex-direction:column;
+  }
+  .teatrito:hover{transform:translateY(-8px);box-shadow:0 20px 34px rgba(10,40,70,.4)}
+  .teatrito .boca{position:relative;aspect-ratio:16/10;overflow:hidden}
+  .teatrito .boca svg{width:100%;height:100%;display:block}
+  .teatrito .texto{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .teatrito h3{font-size:1.12rem}
+  .teatrito p{font-size:.88rem;color:var(--tinta-suave);flex:1}
+  .teatrito .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #F0E6D2;padding-top:10px}
+  .teatrito .precio{font-family:"Alfa Slab One",serif;font-size:1rem;color:var(--aqua-tinta)}
+  .teatrito .precio small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.66rem;color:var(--tinta-suave)}
+  .teatrito .ver{font-weight:800;font-size:.84rem;color:var(--coral-hondo)}
+
+  /* ---------- programa + aplausos ---------- */
+  .programa .interior{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;padding-bottom:50px}
+  .tiras{list-style:none;margin-top:24px}
+  .tiras a{
+    position:relative;display:block;text-decoration:none;color:inherit;
+    background:#fff;border-radius:10px;padding:16px 20px 14px;margin-bottom:16px;
+    box-shadow:var(--sombra-capa);
+    transition:transform .22s cubic-bezier(.22,1,.36,1);
+  }
+  .tiras a::before,.tiras a::after{
+    content:"";position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
+    background:var(--papel-escenario);transform:translateY(-50%);
+  }
+  .tiras a::before{left:-7px}
+  .tiras a::after{right:-7px}
+  .tiras a:hover{transform:translateX(10px)}
+  .tiras h3{font-size:1.05rem}
+  .tiras a:hover h3{color:var(--coral-hondo)}
+  .tiras p{font-size:.85rem;color:var(--tinta-suave)}
+  .aplausos blockquote{
+    background:#fff;border-radius:12px;padding:20px 22px 16px;margin-top:24px;
+    box-shadow:var(--sombra-capa);position:relative;
+  }
+  .aplausos blockquote::before{
+    content:"";position:absolute;top:-8px;left:34px;
+    border:9px solid transparent;border-bottom-color:#fff;border-top:0;
+  }
+  .aplausos p{font-size:.98rem;color:#2E4A66}
+  .aplausos cite{display:block;margin-top:10px;font-style:normal;font-weight:800;font-size:.8rem}
+  .aplausos cite small{font-weight:600;color:var(--tinta-suave)}
+
+  /* ---------- acto final ---------- */
+  .final .interior{padding-bottom:0}
+  .final .funciones-dobles{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:34px 0 46px}
+  .boleto{
+    background:#fff;border-radius:16px;padding:32px 30px;text-align:center;
+    box-shadow:var(--sombra-capa);
+    display:flex;flex-direction:column;align-items:center;gap:12px;
+  }
+  .boleto .medalla{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 -5px 0 rgba(0,0,0,.14)}
+  .boleto h3{font-size:1.3rem}
+  .boleto p{font-size:.9rem;color:var(--tinta-suave)}
+  .boleto .precio-cita{font-family:"Alfa Slab One",serif;font-size:1.4rem;color:var(--tinta)}
+  .boleto .precio-cita small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.68rem;color:var(--tinta-suave)}
+
+  /* ---------- pie ---------- */
+  footer{position:relative;z-index:2;background:var(--tinta);color:#C9DCEC;padding:56px 0 100px;margin-top:70px}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  footer img{height:78px;width:auto;margin-bottom:16px}
+  footer h2{color:#fff;font-size:1.6rem;margin-bottom:10px}
+  footer p{font-size:.94rem;max-width:34rem}
+  footer .btn{margin-top:20px}
+  footer nav ul{list-style:none;display:grid;gap:8px}
+  footer nav a{color:#A8CBE4;text-decoration:none;font-weight:700}
+  footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+  .legal{border-top:1px solid rgba(255,255,255,.2);margin-top:44px;padding-top:24px;font-size:.8rem;color:#8FB4D4}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    width:62px;height:62px;border-radius:50%;background:var(--aqua-honda);
+    display:grid;place-items:center;
+    box-shadow:0 6px 0 rgba(0,0,0,.22), 0 14px 26px rgba(10,40,70,.5);
+    transition:transform .18s ease-out;
+  }
+  .flotante:hover{transform:translateY(-4px)}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+    .acuario{display:none}
+  }
+  @media (max-width:940px){
+    .escenario{margin:40px 16px}
+    .escenario .interior{padding:44px 26px 0}
+    .hero .interior{grid-template-columns:1fr;padding-top:84px;gap:20px}
+    .escena-colgante{max-width:420px;margin:0 auto;order:-1}
+    .fichas{grid-template-columns:repeat(2,1fr)}
+    .teatritos{grid-template-columns:1fr}
+    .programa .interior{grid-template-columns:1fr;gap:36px}
+    .final .funciones-dobles{grid-template-columns:1fr}
+    footer .wrap{grid-template-columns:1fr}
+    .nav a{padding:8px 9px;font-size:.8rem}
+  }
+</style>
+</head>
+<body>
+<!--
+THESIS: variación B del teatro de papel elegido: la función sucede DENTRO del acuario del mural — toda la página es agua celeste con burbujas subiendo, y cada escenario es una cartulina crema con marco coral donde actúan la ballena, la tortuga y el arrecife; la más alegre y colorida de las tres.
+OWN-WORLD: agua celeste #CDE8F5→#A8D4EC fija con burbujas ascendentes, escenarios crema #FFF8EA con filete coral, cartulinas coral/aqua/arena/lila-agua saturadas, telón de olas azul profundo, tinta marina #16324F; Alfa Slab One + Karla del teatro elegido.
+STORY: la mamá se sumerge: el telón de olas se abre, la ballena del consultorio protagoniza el primer acto, los cursos son funciones del arrecife, el público aplaude en burbujas y el boleto final la lleva a la cita.
+FIRST VIEWPORT: página sumergida en agua celeste con burbujas, telón de olas azul, escenario crema con titular troquelado y la escena del arrecife: ballena nadando, tortuga colgada de un hilo, corales coral/arena y banco de peces.
+FORM: variación de refinamiento del mundo fijado por la doctora (teatro de papel) con la estética marina de su consultorio; estructura, tipografía y secciones intactas.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+-->
+
+<div class="acuario" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <img src="assets/logo-icon-white.png" alt="Logo: manzana con bebé">
+    <span class="marca">Doc Daly</span>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="cta" href="#citas">Pedir cita</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <div class="wrap">
+      <svg class="telon-borde" viewBox="0 0 1100 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 0 H1100 V36 Q 1040 70 980 42 Q 920 74 860 44 Q 800 74 740 42 Q 680 72 620 40 Q 560 74 500 44 Q 440 74 380 42 Q 320 72 260 40 Q 200 72 140 44 Q 80 70 0 40 Z" fill="#2E5C8A"/>
+        <path d="M0 0 H1100 V24 Q 1040 52 980 28 Q 920 56 860 30 Q 800 56 740 28 Q 680 54 620 26 Q 560 56 500 30 Q 440 56 380 28 Q 320 54 260 26 Q 200 54 140 30 Q 80 52 0 26 Z" fill="#3D7EB4"/>
+        <path d="M0 0 H1100 V13 Q 1040 30 980 15 Q 920 32 860 17 Q 800 34 740 15 Q 680 30 620 13 Q 560 32 500 17 Q 440 34 380 15 Q 320 30 260 13 Q 200 32 140 17 Q 80 28 0 13 Z" fill="#7FB2DC"/>
+      </svg>
+      <div class="escenario">
+        <div class="interior">
+          <div>
+            <h1>La función del <span class="recorte">arrecife</span> va a empezar</h1>
+            <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. Sumérgete: en este arrecife tus hijos son los protagonistas — alimentación, crecimiento y sueño contados sin culpas y con evidencia, presencial y virtual desde cualquier país.</p>
+            <div class="botones">
+              <a class="btn btn-whatsapp" href="#citas">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+                Pedir cita por WhatsApp
+              </a>
+              <a class="btn btn-coral" href="#cursos">Ver los cursos</a>
+            </div>
+          </div>
+          <figure class="escena-colgante">
+            <svg viewBox="0 0 460 400" role="img" aria-label="Escena del arrecife en papel: ballena nadando, tortuga colgada de un hilo, corales y banco de peces">
+              <!-- ballena nadando -->
+              <g class="nada">
+                <g filter="drop-shadow(0 8px 8px rgba(0,0,0,.22))">
+                  <path d="M96 128 C 128 82 214 68 282 92 C 324 108 344 132 340 154 C 332 182 286 194 224 192 C 158 190 106 170 96 128 Z" fill="#6FA0D6"/>
+                  <path d="M102 140 C 140 170 206 184 292 176 C 248 194 160 192 102 140 Z" fill="#C6DCF2"/>
+                  <path d="M334 116 q 28 -20 38 -4 q -20 5 -24 20 Z" fill="#6FA0D6"/>
+                  <circle cx="148" cy="122" r="6.5" fill="#16324F"/>
+                  <path d="M178 152 q 14 9 28 0" stroke="#16324F" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <path d="M236 74 q -2 -20 13 -28 M 236 74 q 13 -15 28 -13" stroke="#A8D4EC" stroke-width="4" fill="none" stroke-linecap="round"/>
+                </g>
+              </g>
+              <!-- tortuga colgando -->
+              <g class="cuelga-2">
+                <line x1="392" y1="-20" x2="392" y2="120" stroke="#16324F" stroke-width="1.8"/>
+                <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.2))">
+                  <ellipse cx="392" cy="152" rx="38" ry="28" fill="#2E8A78"/>
+                  <path d="M366 140 q 26 -18 52 0 q -5 15 -26 15 q -21 0 -26 -15Z" fill="#5FBFAE"/>
+                  <circle cx="354" cy="142" r="11" fill="#5FBFAE"/>
+                  <circle cx="350" cy="139" r="2.4" fill="#16324F"/>
+                </g>
+              </g>
+              <!-- arrecife: corales grandes -->
+              <g filter="drop-shadow(0 5px 5px rgba(0,0,0,.2))">
+                <path d="M60 388 q -6 -50 22 -78 M 82 366 q 0 -38 30 -52 M 66 388 q -24 -26 -52 -24" stroke="#F2845C" stroke-width="11" fill="none" stroke-linecap="round"/>
+                <path d="M150 392 q -2 -34 18 -50 M 156 384 q 12 -24 36 -26" stroke="#C4502E" stroke-width="9" fill="none" stroke-linecap="round"/>
+                <path d="M392 392 q -4 -44 22 -66 M 404 376 q 8 -30 34 -36 M 396 392 q -20 -22 -44 -20" stroke="#8CA3DC" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <path d="M312 396 q 0 -28 16 -40 M 318 390 q 10 -18 28 -20" stroke="#F2D492" stroke-width="8" fill="none" stroke-linecap="round"/>
+              </g>
+              <!-- estrellas de mar -->
+              <g filter="drop-shadow(0 4px 4px rgba(0,0,0,.18))">
+                <path d="M236 356 l8 16 17 2.4 -12.6 12.4 3 17 -15.4 -8.6 -15.4 8.6 3 -17 -12.6 -12.4 17 -2.4 Z" fill="#F2D492"/>
+                <path d="M120 300 l5.5 11 12 1.7 -8.8 8.6 2 12 -10.7 -6 -10.7 6 2 -12 -8.8 -8.6 12 -1.7 Z" fill="#F2845C"/>
+              </g>
+              <!-- banco de peces -->
+              <g filter="drop-shadow(0 3px 3px rgba(0,0,0,.18))">
+                <g class="nada">
+                  <path d="M64 210 q 18 -11 36 0 q -18 11 -36 0Z" fill="#3D7EB4"/><path d="M100 210 l 11 -7 v14Z" fill="#3D7EB4"/><circle cx="74" cy="207" r="2" fill="#fff"/>
+                  <path d="M118 240 q 15 -9 30 0 q -15 9 -30 0Z" fill="#5C74B4"/><path d="M148 240 l 9 -6 v12Z" fill="#5C74B4"/><circle cx="126" cy="238" r="1.8" fill="#fff"/>
+                  <path d="M84 264 q 13 -8 26 0 q -13 8 -26 0Z" fill="#2E8A78"/><path d="M110 264 l 8 -5 v10Z" fill="#2E8A78"/><circle cx="91" cy="262" r="1.6" fill="#fff"/>
+                </g>
+              </g>
+              <!-- manzana-logo en burbuja -->
+              <g class="cuelga">
+                <line x1="60" y1="-20" x2="60" y2="66" stroke="#16324F" stroke-width="1.8"/>
+                <g filter="drop-shadow(0 5px 5px rgba(0,0,0,.18))">
+                  <circle cx="60" cy="112" r="46" fill="#fff"/>
+                  <circle cx="60" cy="112" r="46" fill="none" stroke="#A8D4EC" stroke-width="5"/>
+                  <image href="assets/logo-icon-color.png" x="30" y="86" width="60" height="66" preserveAspectRatio="xMidYMid meet"/>
+                </g>
+              </g>
+            </svg>
+            <figcaption>La escena del retrato: aquí entrará la foto real de la doctora.</figcaption>
+          </figure>
+        </div>
+        <div class="capas" aria-hidden="true">
+          <svg viewBox="0 0 1100 90" preserveAspectRatio="none">
+            <path d="M0 52 Q 180 22 400 48 T 1100 40 V90 H0 Z" fill="#5FBFAE"/>
+            <path d="M0 70 Q 240 44 520 64 T 1100 60 V90 H0 Z" fill="#2E8A78"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reparto" id="sobre-mi" aria-label="Sobre mí">
+    <div class="wrap">
+      <div class="escenario">
+        <span class="rotulo-acto">Primer acto</span>
+        <div class="interior">
+          <h2>La doctora del arrecife</h2>
+          <p class="sub">Pediatría y nutrición infantil en una sola consulta. Credenciales de ejemplo — se reemplazarán por las reales.</p>
+          <div class="fichas">
+            <div class="fichap">
+              <span class="medalla" style="background:#F5B199" aria-hidden="true">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><rect x="5" y="12" width="28" height="20" rx="5" stroke="#8F3418" stroke-width="2.8"/><path d="M13 12v-2.5A3.5 3.5 0 0 1 16.5 6h5A3.5 3.5 0 0 1 25 9.5V12" stroke="#8F3418" stroke-width="2.8"/><path d="M19 18v7M15.5 21.5h7" stroke="#8F3418" stroke-width="2.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3>Médica pediatra</h3><p>Universidad por confirmar · ejemplo</p>
+            </div>
+            <div class="fichap">
+              <span class="medalla" style="background:#9FDDD0" aria-hidden="true">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19 32c-7 0-11.5-4.8-11.5-10.3 0-4.8 3.5-7.7 7.7-7.7 1.8 0 2.7.4 3.8 1 1.1-.6 2-1 3.8-1 4.2 0 7.7 2.9 7.7 7.7C30.5 27.2 26 32 19 32Z" stroke="#1D5C50" stroke-width="2.8"/><path d="M19 13c0-3.2 1.9-6.1 5.6-7.2-.7 3.7-2.1 6.1-5.6 7.2Z" fill="#1D5C50"/></svg>
+              </span>
+              <h3>Nutrición infantil</h3><p>Especialización por confirmar · ejemplo</p>
+            </div>
+            <div class="fichap">
+              <span class="medalla" style="background:#B7D9F2" aria-hidden="true">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="13" r="6" stroke="#16324F" stroke-width="2.8"/><path d="M7 31c1.3-5.8 5.8-8.7 12-8.7S29.7 25.2 31 31" stroke="#16324F" stroke-width="2.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3>Familias en varios países</h3><p>Consulta virtual internacional</p>
+            </div>
+            <div class="fichap">
+              <span class="medalla" style="background:#F2D492" aria-hidden="true">
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19 5l4 8.2 9 1.3-6.5 6.4 1.5 9L19 25.7l-8 4.2 1.5-9L6 14.5l9-1.3L19 5Z" stroke="#8A6420" stroke-width="2.8" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>Sociedades científicas</h3><p>Afiliaciones por confirmar · ejemplo</p>
+            </div>
+          </div>
+        </div>
+        <div class="capas" aria-hidden="true">
+          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
+            <path d="M0 46 Q 220 18 440 42 T 1100 36 V70 H0 Z" fill="#F2845C"/>
+            <path d="M0 60 Q 260 40 520 56 T 1100 54 V70 H0 Z" fill="#C4502E"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="funciones" id="cursos" aria-label="Cursos">
+    <div class="wrap">
+      <div class="escenario">
+        <span class="rotulo-acto">Segundo acto</span>
+        <div class="interior">
+          <h2>Tres funciones en cartelera</h2>
+          <p class="sub">Cursos en video para ver a tu ritmo, desde cualquier país. La compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
+          <div class="teatritos">
+            <a class="teatrito" href="#cursos">
+              <span class="boca" aria-hidden="true">
+                <svg viewBox="0 0 320 200">
+                  <rect width="320" height="200" fill="#BFE3F2"/>
+                  <path d="M0 150 Q 90 122 180 144 T 320 138 V200 H0 Z" fill="#5FBFAE"/>
+                  <path d="M0 176 Q 110 154 220 170 T 320 168 V200 H0 Z" fill="#2E8A78"/>
+                  <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.22))">
+                    <circle cx="160" cy="86" r="46" fill="#fff"/>
+                    <path d="M160 58v20" stroke="#C4502E" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M132 96q28 24 56 0" stroke="#C4502E" stroke-width="5" fill="none" stroke-linecap="round"/>
+                    <circle cx="160" cy="88" r="12" fill="#F5B199"/>
+                  </g>
+                  <path d="M48 44 q -4 -22 14 -34" stroke="#F2845C" stroke-width="7" fill="none" stroke-linecap="round" filter="drop-shadow(0 3px 3px rgba(0,0,0,.15))"/>
+                </svg>
+              </span>
+              <span class="texto">
+                <h3>Alimentación complementaria sin miedo</h3>
+                <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+                <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+              </span>
+            </a>
+            <a class="teatrito" href="#cursos">
+              <span class="boca" aria-hidden="true">
+                <svg viewBox="0 0 320 200">
+                  <rect width="320" height="200" fill="#F9E8C2"/>
+                  <path d="M0 160 Q 100 134 200 154 T 320 150 V200 H0 Z" fill="#F2D492"/>
+                  <path d="M0 182 Q 120 162 240 176 T 320 174 V200 H0 Z" fill="#C49A44"/>
+                  <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.22))">
+                    <rect x="96" y="62" width="128" height="82" rx="12" fill="#F2845C"/>
+                    <rect x="116" y="46" width="88" height="22" rx="11" fill="#C4502E"/>
+                    <circle cx="136" cy="104" r="17" fill="#fff"/>
+                    <rect x="164" y="90" width="40" height="30" rx="6" fill="#5FBFAE"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="texto">
+                <h3>La lonchera que sí se comen</h3>
+                <p>Menús escolares prácticos y sin peleas en la mesa.</p>
+                <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+              </span>
+            </a>
+            <a class="teatrito" href="#cursos">
+              <span class="boca" aria-hidden="true">
+                <svg viewBox="0 0 320 200">
+                  <rect width="320" height="200" fill="#16324F"/>
+                  <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.4))">
+                    <path d="M62 74 C 82 46 134 38 174 52 C 200 62 212 78 208 92 C 202 110 174 118 138 116 C 98 114 68 100 62 74 Z" fill="#6FA0D6"/>
+                    <path d="M68 82 C 92 102 132 110 184 104 C 158 116 102 116 68 82 Z" fill="#C6DCF2"/>
+                    <circle cx="94" cy="70" r="4" fill="#0B1D33"/>
+                  </g>
+                  <path d="M0 168 Q 110 148 220 162 T 320 158 V200 H0 Z" fill="#2E5C8A"/>
+                  <g fill="none" stroke="#7FB2DC" stroke-width="2"><circle cx="250" cy="60" r="7"/><circle cx="272" cy="96" r="5"/><circle cx="238" cy="120" r="4"/></g>
+                </svg>
+              </span>
+              <span class="texto">
+                <h3>Dormir bien desde bebés</h3>
+                <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+                <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="capas" aria-hidden="true">
+          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
+            <path d="M0 44 Q 200 18 400 40 T 1100 36 V70 H0 Z" fill="#8CA3DC"/>
+            <path d="M0 60 Q 260 38 520 56 T 1100 52 V70 H0 Z" fill="#5C74B4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programa" id="blog" aria-label="Blog y testimonios">
+    <div class="wrap">
+      <div class="escenario">
+        <span class="rotulo-acto">Tercer acto</span>
+        <div class="interior">
+          <div>
+            <h2>El programa de mano</h2>
+            <p class="sub">Artículos gratuitos del blog. (Títulos de ejemplo.)</p>
+            <ul class="tiras">
+              <li><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a></li>
+              <li><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a></li>
+              <li><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a></li>
+            </ul>
+          </div>
+          <div class="aplausos" aria-label="Testimonios">
+            <span class="rotulo-acto" style="position:static;display:inline-block;border-radius:10px;background:var(--celeste-hondo)">Aplausos</span>
+            <h2 style="font-size:1.5rem;margin-top:10px">Dice el público</h2>
+            <p class="sub">Testimonios ilustrativos — se reemplazarán por reales.</p>
+            <blockquote>
+              <p>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</p>
+              <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
+            </blockquote>
+            <blockquote>
+              <p>«La consulta virtual fue igual de cercana, desde otro país.»</p>
+              <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="capas" aria-hidden="true">
+          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
+            <path d="M0 46 Q 220 20 440 42 T 1100 36 V70 H0 Z" fill="#F2D492"/>
+            <path d="M0 60 Q 260 40 520 56 T 1100 54 V70 H0 Z" fill="#C49A44"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="citas" aria-label="Citas">
+    <div class="wrap">
+      <div class="escenario">
+        <span class="rotulo-acto">Acto final</span>
+        <div class="interior">
+          <h2>Reserva tu función privada</h2>
+          <p class="sub">Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
+          <div class="funciones-dobles">
+            <div class="boleto">
+              <span class="medalla" style="background:#9FDDD0" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 36S8 27.6 8 18.2a12 12 0 0 1 24 0C32 27.6 20 36 20 36Z" stroke="#1D5C50" stroke-width="2.8"/><circle cx="20" cy="17.6" r="4.4" stroke="#1D5C50" stroke-width="2.8"/></svg>
+              </span>
+              <h3>Presencial</h3>
+              <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
+              <span class="precio-cita">$180.000 COP<small>precio de ejemplo</small></span>
+              <a class="btn btn-whatsapp" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20presencial" rel="noopener">Agendar por WhatsApp</a>
+            </div>
+            <div class="boleto">
+              <span class="medalla" style="background:#B7D9F2" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="5" y="10" width="21" height="17" rx="4" stroke="#16324F" stroke-width="2.8"/><path d="M26 16.5l9-5v14l-9-5" stroke="#16324F" stroke-width="2.8" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>Virtual</h3>
+              <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+              <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
+              <a class="btn btn-whatsapp" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20virtual" rel="noopener">Agendar por WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="capas" aria-hidden="true">
+          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
+            <path d="M0 44 Q 200 20 420 42 T 1100 34 V70 H0 Z" fill="#5FBFAE"/>
+            <path d="M0 60 Q 240 40 500 56 T 1100 52 V70 H0 Z" fill="#2E8A78"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <h2>El fondo del arrecife</h2>
+      <p>Citas por WhatsApp; todo lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y las redes sociales.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/570000000000" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="https://wa.me/570000000000" aria-label="Abrir WhatsApp" rel="noopener">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+</a>
+</body>
+</html>
