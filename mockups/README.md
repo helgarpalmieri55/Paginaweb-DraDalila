@@ -15,16 +15,16 @@ Versión 2 (tras la primera revisión con el cliente): la propuesta 1 se conserv
 
 El brief de la dirección 6 está en `briefs/6-un-dia-completo.md` (ya construida). El jardín de medianoche (versión oscura del premium) quedó en `archivo/` junto a las cuatro propuestas de la primera ronda.
 
-## Versión 3 — variaciones marinas del teatro elegido
+## Versión 4 — opciones A–D del teatro elegido
 
-La doctora eligió el **teatro de papel** y pidió que la página se sienta como su consultorio real, cuyo mural es un mundo marino de papel (ballena, tortugas, corales, estrellas, zócalo de olas, banca menta, madera clara). Tres variaciones definidas con `/impeccable shape` conservan el esqueleto del teatro (telón, actos, escenarios de cartulina) y cambian la escenografía:
+La doctora eligió el **teatro de papel**. Tras el feedback de marketing, las cuatro opciones son variaciones de **color y estilo** del mismo diseño (idéntica estructura por actos), con la **pediatra como protagonista**: su retrato cuelga en el proscenio como marcador de la fotografía real, acompañado por la ballena, la tortuga y las olas del mural de su consultorio. Las versiones anteriores quedaron en `archivo/`.
 
-| # | Archivo | Dirección visual |
-|---|---------|------------------|
-| 3A | `3a-teatro-consultorio.html` | **Consultorio claro** — la más fiel al lugar: pared cálida, marquesina de madera, telón de olas azul-lila, ballena y tortuga colgadas, banca menta y zócalo de olas. |
-| 3B | `3b-teatro-arrecife.html` | **Arrecife colorido** — el teatro sumergido: escenarios crema flotando en agua celeste con burbujas, corales coral/aqua y banco de peces. |
-| 3C | `3c-teatro-oceano.html` | **Océano fotográfico en el teatro** — conserva el telón, los escenarios y los actos del teatro elegido; las bocas de escenario proyectan fotografía real del océano (ilustrativa, generada para la maqueta, en `assets/3c/`) y fotos en cursos y blog. La versión ilustrada anterior quedó en `archivo/3c-teatro-oceano-ilustrado.html`. |
-| 3D | `3d-consultorio-real.html` | **El consultorio en el teatro** — el teatro de papel en versión clara (marquesina de madera, telón de olas, actos) con los fotogramas del video real del consultorio mejorados con IA (`assets/3d/`) colgados en proscenios y postales. Las fotos se reemplazarán por la sesión profesional. |
+| # | Archivo | Paleta |
+|---|---------|--------|
+| A | `3a-teatro-consultorio.html` | **Claro cálido** — pared arena, olas azul-lila, verde menta. |
+| B | `3b-teatro-arrecife.html` | **Arrecife** — pared celeste, coral y aqua. |
+| C | `3c-teatro-oceano.html` | **Océano profundo** — pared índigo marina, telón rosa, olas azules. |
+| D | `3d-consultorio-real.html` | **Rosa de marca** — pared rosa empolvado, lila y verde del logo. |
 
 ## Notas
 
