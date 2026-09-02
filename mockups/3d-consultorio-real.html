@@ -116,6 +116,22 @@
   .fichap h3{font-size:1rem;line-height:1.25}
   .fichap p{font-size:.8rem;color:#8A5E74}
 
+
+  /* ---------- entreacto: el consultorio ---------- */
+  .entreacto .interior{padding-bottom:26px}
+  .postales{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:38px 0 40px}
+  .postal{position:relative;padding-top:40px}
+  .postal .hilo{position:absolute;top:0;left:50%;width:2px;height:42px;background:#5A2242;opacity:.45;transform:translateX(-50%)}
+  .postal .marco-postal{position:relative;background:#fff;border-radius:14px;padding:10px;box-shadow:var(--sombra-capa)}
+  .postal:nth-child(1) .marco-postal{transform:rotate(-1.6deg)}
+  .postal:nth-child(2) .marco-postal{transform:rotate(1.1deg)}
+  .postal:nth-child(3) .marco-postal{transform:rotate(-1deg)}
+  .postal .boca-foto{position:relative;border-radius:8px;overflow:hidden}
+  .postal .boca-foto img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
+  .postal .fleco{position:absolute;top:0;left:0;right:0;width:100%;height:auto;display:block;filter:drop-shadow(0 3px 3px rgba(90,34,66,.16))}
+  .postal h3{font-size:1.02rem;text-align:center;margin-top:14px}
+  .postal p{font-size:.84rem;color:#8A5E74;text-align:center}
+
   /* ---------- cursos: tres teatritos ---------- */
   .funciones .interior{padding-bottom:44px}
   .teatritos{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:34px}
@@ -215,6 +231,7 @@
     .escena-colgante{max-width:420px;margin:0 auto;order:-1}
     .fichas{grid-template-columns:repeat(2,1fr)}
     .teatritos{grid-template-columns:1fr}
+    .postales{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}
     .programa .interior{grid-template-columns:1fr;gap:36px}
     .final .funciones-dobles{grid-template-columns:1fr}
     footer .wrap{grid-template-columns:1fr}
@@ -369,6 +386,59 @@ MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejempl
           <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
             <path d="M0 46 Q 220 16 440 40 T 1100 34 V70 H0 Z" fill="#F585A3"/>
             <path d="M0 60 Q 260 36 520 54 T 1100 52 V70 H0 Z" fill="#D6336C"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="entreacto" aria-label="El consultorio">
+    <div class="wrap">
+      <div class="escenario">
+        <div class="interior">
+          <span class="rotulo-acto">Entreacto</span>
+          <h2>Conoce el consultorio</h2>
+          <p class="sub">Fotos reales del consultorio, tomadas del video y mejoradas digitalmente: el mismo mar del mural te espera en cada rincón.</p>
+          <div class="postales">
+            <figure class="postal">
+              <span class="hilo" aria-hidden="true"></span>
+              <div class="marco-postal">
+                <div class="boca-foto">
+                  <img src="assets/3d/recepcion.jpg" alt="Recepción con mostrador de madera clara y ballena de acuarela en la pared">
+                  <svg class="fleco" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H400 V12 Q390 24 380 12 Q370 24 360 12 Q350 24 340 12 Q330 24 320 12 Q310 24 300 12 Q290 24 280 12 Q270 24 260 12 Q250 24 240 12 Q230 24 220 12 Q210 24 200 12 Q190 24 180 12 Q170 24 160 12 Q150 24 140 12 Q130 24 120 12 Q110 24 100 12 Q90 24 80 12 Q70 24 60 12 Q50 24 40 12 Q30 24 20 12 Q10 24 0 12 Z" fill="#F585A3"/></svg>
+                </div>
+              </div>
+              <h3>La recepción</h3>
+              <p>Te recibe la ballena del mural y la madera clara.</p>
+            </figure>
+            <figure class="postal">
+              <span class="hilo" aria-hidden="true"></span>
+              <div class="marco-postal">
+                <div class="boca-foto">
+                  <img src="assets/3d/consulta.jpg" alt="Consultorio con escritorio de madera clara y ballenas de acuarela en la pared">
+                  <svg class="fleco" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H400 V12 Q390 24 380 12 Q370 24 360 12 Q350 24 340 12 Q330 24 320 12 Q310 24 300 12 Q290 24 280 12 Q270 24 260 12 Q250 24 240 12 Q230 24 220 12 Q210 24 200 12 Q190 24 180 12 Q170 24 160 12 Q150 24 140 12 Q130 24 120 12 Q110 24 100 12 Q90 24 80 12 Q70 24 60 12 Q50 24 40 12 Q30 24 20 12 Q10 24 0 12 Z" fill="#A6D46A"/></svg>
+                </div>
+              </div>
+              <h3>La consulta</h3>
+              <p>Aquí conversamos con calma y armamos el plan.</p>
+            </figure>
+            <figure class="postal">
+              <span class="hilo" aria-hidden="true"></span>
+              <div class="marco-postal">
+                <div class="boca-foto">
+                  <img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches junto a la ventana">
+                  <svg class="fleco" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H400 V12 Q390 24 380 12 Q370 24 360 12 Q350 24 340 12 Q330 24 320 12 Q310 24 300 12 Q290 24 280 12 Q270 24 260 12 Q250 24 240 12 Q230 24 220 12 Q210 24 200 12 Q190 24 180 12 Q170 24 160 12 Q150 24 140 12 Q130 24 120 12 Q110 24 100 12 Q90 24 80 12 Q70 24 60 12 Q50 24 40 12 Q30 24 20 12 Q10 24 0 12 Z" fill="#FFC94B"/></svg>
+                </div>
+              </div>
+              <h3>La sala de examen</h3>
+              <p>La camilla celeste, custodiada por los peluches.</p>
+            </figure>
+          </div>
+        </div>
+        <div class="capas" aria-hidden="true">
+          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
+            <path d="M0 46 Q 220 16 440 40 T 1100 34 V70 H0 Z" fill="#CBE0F0"/>
+            <path d="M0 60 Q 260 36 520 54 T 1100 52 V70 H0 Z" fill="#C9BBE3"/>
           </svg>
         </div>
       </div>

@@ -17,7 +17,7 @@ El brief de la dirección 6 está en `briefs/6-un-dia-completo.md` (ya construid
 
 ## Versión 4 — opciones A–D del teatro elegido
 
-La doctora eligió el **teatro de papel**. Tras el feedback de marketing, las cuatro opciones son variaciones de **color y estilo** del mismo diseño (idéntica estructura por actos), con la **pediatra como protagonista**: su retrato cuelga en el proscenio como marcador de la fotografía real, acompañado por la ballena, la tortuga y las olas del mural de su consultorio. Las versiones anteriores quedaron en `archivo/`.
+La doctora eligió el **teatro de papel**. Tras el feedback de marketing, las cuatro opciones son variaciones de **color y estilo** del mismo diseño (idéntica estructura por actos), con la **pediatra como protagonista**: su retrato cuelga en el proscenio como marcador de la fotografía real, acompañado por la ballena, la tortuga y las olas del mural de su consultorio. Todas incluyen el «Entreacto · Conoce el consultorio», una galería de postales colgadas con las fotos reales del video (en `assets/3d/`). Las versiones anteriores quedaron en `archivo/`.
 
 | # | Archivo | Paleta |
 |---|---------|--------|
