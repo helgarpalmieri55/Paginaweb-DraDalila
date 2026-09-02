@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Variación D · El consultorio real — Dra. Dalila Peñaranda</title>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+  :root{
+    --pared:#FBF8F7;
+    --pared-rosada:#F7F1F2;
+    --ola-1:#DCE7F7;
+    --ola-2:#BFD3EE;
+    --ola-3:#9FB8E0;
+    --menta:#8FD4C2;
+    --menta-honda:#2F8A6F;
+    --madera:#D9C29A;
+    --tinta:#2A4A73;
+    --gris:#5E7291;
+    --blanco:#FFFFFF;
+    --rosa:#F16F90;
+    --rosa-honda:#D6336C;
+    --verde:#5FA52E;
+    --verde-honda:#4C8A20;
+    --borde:#E4E9F2;
+    --sombra:0 10px 28px rgba(42,74,115,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{overflow-x:clip;scroll-behavior:smooth}
+  body{
+    font-family:'Nunito',Arial,sans-serif;
+    color:var(--tinta);
+    background:var(--pared);
+    line-height:1.6;
+    font-size:16.5px;
+  }
+  h1,h2,h3{font-family:'Baloo 2','Nunito',Arial,sans-serif;line-height:1.15}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  .ola{display:block;width:100%;height:auto}
+
+  /* ---------- nav ---------- */
+  .nav{padding:18px 0;background:var(--blanco);border-bottom:1px solid var(--borde)}
+  .nav .wrap{display:flex;align-items:center;gap:30px}
+  .nav img{height:46px;width:auto}
+  .nav ul{display:flex;gap:24px;list-style:none;margin-left:auto;align-items:center}
+  .nav a{color:var(--tinta);text-decoration:none;font-size:.95rem;font-weight:700}
+  .nav a:hover{color:var(--rosa-honda)}
+  .nav .cta{
+    background:var(--rosa-honda);color:#fff;padding:10px 22px;border-radius:999px;
+  }
+  .nav .cta:hover{background:var(--rosa);color:#fff}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--pared-rosada);padding:70px 0 0}
+  .hero .wrap{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;
+    padding-bottom:56px;
+  }
+  .hero h1{font-size:clamp(2.2rem,4.8vw,3.4rem);font-weight:700;margin-bottom:18px}
+  .hero h1 span{color:var(--rosa-honda)}
+  .hero p.intro{font-size:1.08rem;color:var(--gris);margin-bottom:28px;max-width:520px}
+  .hero p.intro strong{color:var(--tinta)}
+  .botones{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:14px 28px;border-radius:999px;font-weight:800;font-size:1rem;
+    text-decoration:none;border:2px solid transparent;font-family:'Nunito',sans-serif;
+  }
+  .btn.verde{background:var(--verde);color:#fff}
+  .btn.verde:hover{background:var(--verde-honda)}
+  .btn.linea{border-color:var(--tinta);color:var(--tinta)}
+  .btn.linea:hover{background:var(--tinta);color:#fff}
+  .hero .nota-foto{margin-top:26px;font-size:.8rem;color:var(--gris);max-width:440px}
+  .marco-arco{
+    border-radius:200px 200px 24px 24px;overflow:hidden;box-shadow:var(--sombra);
+    border:8px solid var(--blanco);
+  }
+  .marco-arco img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .pie-foto{font-size:.82rem;color:var(--gris);text-align:center;margin-top:12px}
+
+  /* ---------- secciones ---------- */
+  section{padding:84px 0}
+  .cabeza{max-width:660px;margin-bottom:44px}
+  .cabeza.centro{margin-left:auto;margin-right:auto;text-align:center}
+  .cabeza h2{font-size:clamp(1.7rem,3.4vw,2.3rem);font-weight:700;margin-bottom:10px}
+  .cabeza p{color:var(--gris)}
+
+  /* galería consultorio */
+  .galeria{background:var(--blanco)}
+  .fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .foto-tarjeta{background:var(--blanco);border:1px solid var(--borde);border-radius:20px;overflow:hidden;box-shadow:var(--sombra)}
+  .foto-tarjeta img{width:100%;aspect-ratio:3/4;object-fit:cover}
+  .foto-tarjeta figcaption{padding:16px 20px}
+  .foto-tarjeta h3{font-size:1.05rem;font-weight:700;margin-bottom:2px}
+  .foto-tarjeta p{font-size:.86rem;color:var(--gris)}
+  .nota-centro{text-align:center;color:var(--gris);font-size:.85rem;margin-top:28px}
+
+  /* credenciales */
+  .credenciales{background:var(--pared)}
+  .fichas{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .ficha{
+    background:var(--blanco);border:1px solid var(--borde);border-radius:18px;
+    padding:26px 24px;box-shadow:var(--sombra);
+  }
+  .ficha .punto{
+    width:46px;height:46px;border-radius:50%;margin-bottom:14px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ficha .punto svg{width:22px;height:22px}
+  .ficha h3{font-size:1.02rem;font-weight:700;margin-bottom:4px}
+  .ficha p{font-size:.86rem;color:var(--gris)}
+
+  /* cursos */
+  .cursos{background:var(--blanco)}
+  .tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .curso{
+    background:var(--blanco);border:1px solid var(--borde);border-radius:20px;
+    overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column;
+  }
+  .curso img{width:100%;aspect-ratio:4/3;object-fit:cover}
+  .curso .texto{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+  .curso h3{font-size:1.12rem;font-weight:700;margin-bottom:6px}
+  .curso p{font-size:.9rem;color:var(--gris);margin-bottom:16px}
+  .curso .pie{margin-top:auto;display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+  .precio{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.25rem;color:var(--rosa-honda)}
+  .precio small{display:block;font-family:'Nunito',sans-serif;font-weight:600;font-size:.7rem;color:var(--gris)}
+  .ver{color:var(--rosa-honda);font-weight:800;text-decoration:none;font-size:.95rem}
+  .ver:hover{text-decoration:underline;text-underline-offset:4px}
+
+  /* blog + testimonios */
+  .bitacora{background:var(--ola-1)}
+  .dos-columnas{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start}
+  .articulo{
+    background:var(--blanco);border:1px solid var(--borde);border-radius:16px;
+    padding:18px 22px;margin-bottom:14px;box-shadow:var(--sombra);
+  }
+  .articulo h3{font-size:1rem;font-weight:700;margin-bottom:2px}
+  .articulo p{font-size:.86rem;color:var(--gris)}
+  .voz{
+    background:var(--blanco);border:1px solid var(--borde);border-radius:16px;
+    padding:24px 26px;margin-bottom:14px;box-shadow:var(--sombra);
+  }
+  .voz blockquote{font-size:.98rem;margin-bottom:12px}
+  .voz cite{font-style:normal;font-size:.84rem;color:var(--gris)}
+  .voz cite strong{color:var(--tinta)}
+  .dos-columnas h2{font-size:1.5rem;font-weight:700;margin-bottom:18px}
+  .dos-columnas .mini{color:var(--gris);font-size:.9rem;margin-bottom:18px}
+
+  /* citas */
+  .citas{background:var(--pared-rosada)}
+  .citas .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+  .citas .marco-arco img{aspect-ratio:3/4}
+  .modos{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+  .modo{
+    background:var(--blanco);border:1px solid var(--borde);border-radius:20px;
+    padding:28px 26px;box-shadow:var(--sombra);
+  }
+  .modo h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+  .modo p{font-size:.88rem;color:var(--gris);margin-bottom:16px}
+  .modo .precio{font-size:1.55rem;margin-bottom:16px}
+  .modo .btn{width:100%}
+
+  /* footer */
+  footer{background:var(--tinta);color:#C7D4E6;padding:64px 0 38px;font-size:.92rem}
+  .pie-arriba{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;margin-bottom:40px}
+  footer img{height:60px;width:auto;margin-bottom:16px}
+  footer h2{color:#fff;font-family:'Baloo 2',sans-serif;font-size:1.25rem;margin-bottom:8px}
+  footer ul{list-style:none}
+  footer li{margin-bottom:8px}
+  footer a{color:#DEE8F5;text-decoration:none}
+  footer a:hover{text-decoration:underline;text-underline-offset:4px}
+  .pie-abajo{
+    border-top:1px solid rgba(255,255,255,.16);padding-top:24px;
+    display:grid;grid-template-columns:1fr 1fr;gap:30px;font-size:.78rem;color:#9CB0CB;
+  }
+
+  /* whatsapp flotante */
+  .wa{
+    position:fixed;right:26px;bottom:26px;z-index:50;
+    width:58px;height:58px;border-radius:50%;background:#25D366;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(0,0,0,.28);
+  }
+  .wa svg{width:30px;height:30px;fill:#fff}
+
+  @media (max-width:960px){
+    .hero .wrap{grid-template-columns:1fr;gap:40px}
+    .marco-arco{max-width:420px;margin:0 auto}
+    .fotos{grid-template-columns:1fr}
+    .foto-tarjeta img{aspect-ratio:4/3}
+    .fichas{grid-template-columns:repeat(2,1fr)}
+    .tarjetas{grid-template-columns:1fr}
+    .dos-columnas{grid-template-columns:1fr;gap:40px}
+    .citas .wrap{grid-template-columns:1fr;gap:40px}
+    .modos{grid-template-columns:1fr}
+    .pie-arriba,.pie-abajo{grid-template-columns:1fr}
+    .nav ul li.enlace{display:none}
+  }
+  @media (max-width:600px){
+    section{padding:60px 0}
+    .fichas{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <img src="assets/logo-full-color.png" alt="Doc Daly — Dra. Dalila Peñaranda">
+    <ul>
+      <li class="enlace"><a href="#">Inicio</a></li>
+      <li class="enlace"><a href="#consultorio">Consultorio</a></li>
+      <li class="enlace"><a href="#doctora">Sobre mí</a></li>
+      <li class="enlace"><a href="#cursos">Cursos</a></li>
+      <li class="enlace"><a href="#blog">Blog</a></li>
+      <li><a class="cta" href="#citas">Pedir cita</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Este es el mar donde <span>cuidamos a tus hijos</span></h1>
+      <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. Mi consultorio es un pequeño océano de acuarela — ballenas, tortugas y olas que calman — y esta página está hecha con sus fotos reales. Alimentación, crecimiento y sueño con evidencia, sin culpas. Presencial y virtual desde cualquier país.</p>
+      <div class="botones">
+        <a class="btn verde" href="#citas">Pedir cita por WhatsApp</a>
+        <a class="btn linea" href="#cursos">Ver los cursos</a>
+      </div>
+      <p class="nota-foto">Fotos del consultorio tomadas del video real (mejoradas para la maqueta); se reemplazarán por la sesión fotográfica profesional.</p>
+    </div>
+    <figure>
+      <div class="marco-arco">
+        <img src="assets/3d/sala-vertical.jpg" alt="Sala de espera real: mural marino de acuarela con tortugas, corales y olas, y banca menta con peluches">
+      </div>
+      <figcaption class="pie-foto">La sala de espera, con su mural marino de acuarela.</figcaption>
+    </figure>
+  </div>
+</header>
+<svg class="ola" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:var(--blanco)">
+  <path d="M0,40 C240,70 480,10 720,35 C960,60 1200,15 1440,40 L1440,0 L0,0 Z" fill="#F7F1F2"/>
+</svg>
+
+<section class="galeria" id="consultorio">
+  <div class="wrap">
+    <div class="cabeza centro">
+      <h2>Conoce el consultorio</h2>
+      <p>Cada rincón está pensado para que los niños entren sin miedo: recepción, consulta y sala de examen comparten el mismo océano.</p>
+    </div>
+    <div class="fotos">
+      <figure class="foto-tarjeta">
+        <img src="assets/3d/recepcion.jpg" alt="Recepción con mostrador de madera clara y ballena de acuarela en la pared">
+        <figcaption>
+          <h3>La recepción</h3>
+          <p>Te recibe la ballena del mural y el mostrador de madera clara.</p>
+        </figcaption>
+      </figure>
+      <figure class="foto-tarjeta">
+        <img src="assets/3d/consulta.jpg" alt="Consultorio con escritorio de madera clara, computador y ballenas de acuarela en la pared">
+        <figcaption>
+          <h3>La consulta</h3>
+          <p>Aquí conversamos con calma y armamos el plan por escrito.</p>
+        </figcaption>
+      </figure>
+      <figure class="foto-tarjeta">
+        <img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches alineados junto a la ventana">
+        <figcaption>
+          <h3>La sala de examen</h3>
+          <p>La camilla celeste, custodiada por el comité de peluches.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="nota-centro">Fotos reales del consultorio, tomadas del video y mejoradas digitalmente para esta maqueta.</p>
+  </div>
+</section>
+
+<section class="credenciales" id="doctora">
+  <div class="wrap">
+    <div class="cabeza">
+      <h2>Quién acompaña a tu familia</h2>
+      <p>Pediatría y nutrición infantil en una sola consulta. Credenciales de ejemplo — se reemplazarán por las reales.</p>
+    </div>
+    <div class="fichas">
+      <div class="ficha">
+        <div class="punto" style="background:#FDE7EE">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#D6336C" stroke-width="2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>
+        </div>
+        <h3>Médica pediatra</h3>
+        <p>Universidad por confirmar · ejemplo</p>
+      </div>
+      <div class="ficha">
+        <div class="punto" style="background:#EBF5DF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4C8A20" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 6c0-2 1.5-3 3-3"/></svg>
+        </div>
+        <h3>Nutrición infantil</h3>
+        <p>Especialización por confirmar · ejemplo</p>
+      </div>
+      <div class="ficha">
+        <div class="punto" style="background:#E4F0FA">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16-3-3-3-13 0-16z"/></svg>
+        </div>
+        <h3>Familias en varios países</h3>
+        <p>Consulta virtual internacional</p>
+      </div>
+      <div class="ficha">
+        <div class="punto" style="background:#FBF1DC">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#B07C1F" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 5.9L12 16.4 6.7 19.3l1.2-5.9L3.4 9.3l6-.7z"/></svg>
+        </div>
+        <h3>Sociedades científicas</h3>
+        <p>Afiliaciones por confirmar · ejemplo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cursos" id="cursos">
+  <div class="wrap">
+    <div class="cabeza centro">
+      <h2>Cursos para ver en casa</h2>
+      <p>En video y a tu ritmo, desde cualquier país. La compra se realiza en Hotmart.</p>
+    </div>
+    <div class="tarjetas">
+      <div class="curso">
+        <img src="assets/3c/curso-alimentacion.jpg" alt="Bebé comiendo verduras con cuchara en su silla de comer">
+        <div class="texto">
+          <h3>Alimentación complementaria sin miedo</h3>
+          <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+          <div class="pie">
+            <span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span>
+            <a class="ver" href="#">Ver curso</a>
+          </div>
+        </div>
+      </div>
+      <div class="curso">
+        <img src="assets/3c/curso-lonchera.jpg" alt="Lonchera abierta con sándwiches en forma de estrella, fresas y verduras">
+        <div class="texto">
+          <h3>La lonchera que sí se comen</h3>
+          <p>Menús escolares prácticos y sin peleas en la mesa.</p>
+          <div class="pie">
+            <span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span>
+            <a class="ver" href="#">Ver curso</a>
+          </div>
+        </div>
+      </div>
+      <div class="curso">
+        <img src="assets/3c/curso-dormir.jpg" alt="Bebé durmiendo tranquilo en su cuna con luz cálida de noche">
+        <div class="texto">
+          <h3>Dormir bien desde bebés</h3>
+          <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+          <div class="pie">
+            <span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span>
+            <a class="ver" href="#">Ver curso</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="nota-centro">Cursos, precios e imágenes de ejemplo — se reemplazarán por el material real de cada curso.</p>
+  </div>
+</section>
+
+<section class="bitacora" id="blog">
+  <div class="wrap">
+    <div class="dos-columnas">
+      <div>
+        <h2>Artículos del blog</h2>
+        <p class="mini">Guías gratuitas para leer con calma. (Títulos de ejemplo.)</p>
+        <div class="articulo">
+          <h3>¿Cuánto debe comer un niño de 2 años?</h3>
+          <p>Porciones reales, apetito variable y señales de alarma.</p>
+        </div>
+        <div class="articulo">
+          <h3>Hierro: el mineral que más falta</h3>
+          <p>Dónde está, cómo se absorbe y cuándo suplementar.</p>
+        </div>
+        <div class="articulo">
+          <h3>Fiebre: cuándo observar y cuándo consultar</h3>
+          <p>Guía tranquila para noches intranquilas.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Dice el público</h2>
+        <p class="mini">Testimonios ilustrativos — se reemplazarán por reales.</p>
+        <div class="voz">
+          <blockquote>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</blockquote>
+          <cite><strong>María F.</strong> · mamá de Salomé, 3 años · ejemplo</cite>
+        </div>
+        <div class="voz">
+          <blockquote>«La consulta virtual fue igual de cercana, desde otro país.»</blockquote>
+          <cite><strong>Carlos R.</strong> · papá de Emilio, 14 meses · ejemplo</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="citas" id="citas">
+  <div class="wrap">
+    <figure>
+      <div class="marco-arco">
+        <img src="assets/3d/camilla.jpg" alt="Sala de examen real con camilla celeste y peluches">
+      </div>
+      <figcaption class="pie-foto">Te esperamos aquí — o en videollamada.</figcaption>
+    </figure>
+    <div>
+      <div class="cabeza" style="margin-bottom:26px">
+        <h2>Reserva tu cita</h2>
+        <p>Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
+      </div>
+      <div class="modos">
+        <div class="modo">
+          <h3>Presencial</h3>
+          <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
+          <p class="precio">$180.000 COP<small>precio de ejemplo</small></p>
+          <a class="btn verde" href="#">Agendar por WhatsApp</a>
+        </div>
+        <div class="modo">
+          <h3>Virtual</h3>
+          <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+          <p class="precio">45 USD<small>precio de ejemplo</small></p>
+          <a class="btn verde" href="#">Agendar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="pie-arriba">
+      <div>
+        <img src="assets/logo-icon-white.png" alt="Doc Daly">
+        <h2>El mar de Doc Daly</h2>
+        <p>Citas por WhatsApp; todo lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y las redes sociales.</p>
+      </div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#consultorio">Consultorio</a></li>
+        <li><a href="#doctora">Sobre mí</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+      </ul>
+    </div>
+    <div class="pie-abajo">
+      <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+      <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo. Fotos del consultorio tomadas del video real y mejoradas digitalmente; fotos de cursos ilustrativas.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.1c1.9 1 4 1.6 6.3 1.6h.5c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.9 17.1c-.3.8-1.7 1.6-2.3 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.4-1.5-5.6-4.9-5.8-5.1-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.7 1 2.4 1.1 2.6.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.4.1 2.1 1 2.5 1.2.4.2.6.3.7.5.1.1.1.9-.2 1.7z"/></svg>
+</a>
+
+</body>
+</html>

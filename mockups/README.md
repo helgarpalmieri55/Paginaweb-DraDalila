@@ -23,6 +23,7 @@ La doctora eligió el **teatro de papel** y pidió que la página se sienta como
 |---|---------|------------------|
 | 3A | `3a-teatro-consultorio.html` | **Consultorio claro** — la más fiel al lugar: pared cálida, marquesina de madera, telón de olas azul-lila, ballena y tortuga colgadas, banca menta y zócalo de olas. |
 | 3B | `3b-teatro-arrecife.html` | **Arrecife colorido** — el teatro sumergido: escenarios crema flotando en agua celeste con burbujas, corales coral/aqua y banco de peces. |
+| 3D | `3d-consultorio-real.html` | **El consultorio real** — hecha con los fotogramas del video real del consultorio, mejorados con IA (nitidez de foto, en `assets/3d/`): la sala de espera con su mural en el héroe y una galería de recepción, consulta y sala de examen. Se reemplazarán por la sesión fotográfica profesional. |
 | 3C | `3c-teatro-oceano.html` | **Océano real** — variación fotográfica: ballenas y tortugas reales bajo rayos de sol, fotografías reales en los cursos y una capa mínima de diseño; nada ilustrado ni animado. Las fotos son ilustrativas (generadas para la maqueta, en `assets/3c/`) y se reemplazarán por las reales. La versión ilustrada anterior quedó en `archivo/3c-teatro-oceano-ilustrado.html`. |
 
 ## Notas
