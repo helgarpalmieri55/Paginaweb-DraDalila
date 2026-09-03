@@ -23,7 +23,7 @@ La doctora eligió el **teatro de papel**. Tras la observación del cliente de q
 |---|---------|--------------|
 | A | `3a-teatro-consultorio.html` | **Claro cálido** — la puesta clásica por actos del teatro elegido, en paleta arena, azul-lila y menta. |
 | B | `3b-teatro-arrecife.html` | **Teatro de marionetas** — la doctora-marioneta presenta la función; credenciales en cuerda, fotos con pinzas, cursos en carrito ambulante. |
-| C | `3c-teatro-oceano.html` | **Teatro de sombras** — sala a oscuras y pantallas de linterna cálida; la doctora en silueta, fotos proyectadas como diapositivas. |
+| C | `3c-teatro-oceano.html` | **Libro pop-up** — el cuento desplegable: la doctora emerge del pliegue, solapas para levantar, álbum con esquineros, cintas marcapáginas y boletos recortables. |
 | D | `3d-consultorio-real.html` | **Diorama continuo** — sin tarjetas: un mar de papel que se profundiza al hacer scroll, de la superficie al cofre abisal. |
 
 ## Notas
