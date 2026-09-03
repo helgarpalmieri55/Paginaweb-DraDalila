@@ -48,10 +48,12 @@
   .titulo{font-size:clamp(1.8rem,3.8vw,2.5rem)}
   .bajada{color:var(--texto);text-align:center;max-width:40rem;margin:10px auto 0}
 
-  /* stickers marinos: papel con borde blanco */
-  .sticker{position:absolute;pointer-events:none;filter:drop-shadow(0 6px 8px rgba(78,58,102,.22))}
-  .sticker svg{width:100%;height:auto;display:block}
-  .sticker path,.sticker circle,.sticker ellipse{paint-order:stroke;stroke:#fff;stroke-width:9;stroke-linejoin:round}
+  /* stickers marinos: los stickers REALES del consultorio, con borde blanco de calcomanía */
+  .sticker{position:absolute;pointer-events:none}
+  .sticker img{
+    width:100%;height:auto;display:block;
+    filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 8px 9px rgba(78,58,102,.25));
+  }
 
   /* ---------- barra ---------- */
   header{
@@ -106,7 +108,7 @@
     border-radius:48% 52% 46% 54% / 44% 46% 54% 56%;
     border:9px solid #fff;box-shadow:var(--sombra);
   }
-  .hero figcaption{text-align:center;font-size:.82rem;color:var(--texto);font-style:italic;margin-top:12px}
+  .hero figcaption{text-align:left;font-size:.82rem;color:var(--texto);font-style:italic;margin-top:14px;padding-left:172px;min-height:44px}
   .hero .mascota{position:absolute;left:-30px;bottom:-6px;width:132px;z-index:3}
   .hero .mascota img{display:block;width:100%;filter:drop-shadow(0 8px 10px rgba(78,58,102,.28))}
   .hero .globo{
@@ -310,6 +312,7 @@
     .hero .mascota{position:static;width:98px;margin:-44px 0 0 4px}
     .hero .globo{position:static;width:auto;max-width:300px;margin:10px auto 0}
     .hero .globo::after{left:36px;bottom:auto;top:-9px;border:10px solid transparent;border-bottom-color:#fff;border-top:0}
+    .hero figcaption{padding-left:0;text-align:center;min-height:0}
     .rama{grid-template-columns:1fr}
     .rama img{aspect-ratio:16/10;min-height:0}
     .tarjetas-serv{grid-template-columns:repeat(2,1fr)}
@@ -332,12 +335,13 @@
 </head>
 <body>
 <!--
-MAQUETA: textos, precios, cursos y testimonios son contenido de ejemplo. Las fotos de la
-doctora son PROVISIONALES (generadas digitalmente a partir del diseño de referencia) y se
-reemplazarán por sus fotografías reales; las del consultorio provienen del video real.
+MAQUETA: textos, precios, cursos y testimonios son contenido de ejemplo.
 Opción E · Mar de papel: la esencia del teatro de papel (telón, cartulina, olas) mezclada
-con el diseño de referencia del cliente — fotos protagonistas, animalitos del mural como
-stickers y el sapo tejido del consultorio como mascota oficial (nombre por definir).
+con el diseño de referencia del cliente. Los STICKERS MARINOS son los reales del
+consultorio (recortados de las fotos/video: ballena, tortuga, caballito, estrellas,
+corales, pez); PEPE es el sapo de peluche real del consultorio, recortado de las fotos, y
+la foto de la doctora abrazándolo es real. Las fotos de la doctora en consulta son
+provisionales (generadas) hasta recibir las reales.
 -->
 
 <header>
@@ -361,28 +365,11 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
       <path d="M0 0 h1440 v8 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 q -30 28 -60 0 Z" fill="#EF5A82"/>
       <path d="M0 0 h1440 v5 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 Z" fill="#F7A9A4" opacity=".55"/>
     </svg>
-    <span class="sticker" style="left:4%;top:120px;width:120px" aria-hidden="true">
-      <svg viewBox="0 0 130 90">
-        <path d="M14 48 Q 62 16 112 46 Q 102 76 60 76 Q 26 74 14 48 Z" fill="#7FA8D9"/>
-        <path d="M100 42 q 22 -16 28 -2 q -14 9 -24 14 Z" fill="#7FA8D9"/>
-        <circle cx="44" cy="48" r="4" fill="#4E3A66" stroke="none"/>
-      </svg>
-    </span>
-    <span class="sticker" style="right:3%;top:150px;width:92px" aria-hidden="true">
-      <svg viewBox="0 0 116 84">
-        <path d="M20 56 Q 24 22 56 22 Q 88 22 92 56 Z" fill="#7CC242"/>
-        <path d="M34 42 q 22 -12 44 0 M28 54 h 56" stroke="#4F8A20" stroke-width="3" fill="none"/>
-        <path d="M12 56 h 88 q 5 11 -8 11 h -72 q -13 0 -8 -11 Z" fill="#4F8A20"/>
-        <circle cx="103" cy="52" r="11" fill="#9FD8C4"/>
-        <circle cx="106" cy="49" r="2.4" fill="#4E3A66" stroke="none"/>
-        <path d="M30 67 q -2 9 8 8 M74 67 q 2 9 -8 8" stroke="#9FD8C4" stroke-width="7" fill="none" stroke-linecap="round"/>
-      </svg>
-    </span>
-    <span class="sticker" style="right:8%;bottom:160px;width:74px" aria-hidden="true">
-      <svg viewBox="0 0 80 80">
-        <path d="M40 8 l 8 20 22 3 -16 15 4 22 -18 -10 -18 10 4 -22 -16 -15 22 -3 Z" fill="#F2B33D"/>
-      </svg>
-    </span>
+    <span class="sticker" style="left:3%;top:118px;width:150px" aria-hidden="true"><img src="assets/3e/stickers/ballena.png" alt=""></span>
+    <span class="sticker" style="right:3%;top:140px;width:120px" aria-hidden="true"><img src="assets/3e/stickers/tortuga.png" alt=""></span>
+    <span class="sticker" style="right:7%;bottom:150px;width:96px" aria-hidden="true"><img src="assets/3e/stickers/estrellas-rosa.png" alt=""></span>
+    <span class="sticker" style="left:2.5%;bottom:210px;width:58px" aria-hidden="true"><img src="assets/3e/stickers/caballito.png" alt=""></span>
+    <span class="sticker" style="left:12%;bottom:130px;width:62px" aria-hidden="true"><img src="assets/3e/stickers/pez.png" alt=""></span>
     <div class="wrap">
       <div class="interior">
         <div>
@@ -396,10 +383,10 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
         <figure>
           <img class="foto-mar" src="assets/3e/hero-doctora.jpg" alt="La doctora auscultando a un niño sonriente en el consultorio (foto provisional)">
           <span class="mascota salta">
-            <img src="assets/3e/mascota-sapo.png" alt="El sapo tejido, mascota oficial del consultorio">
+            <img src="assets/3e/pepe.png" alt="Pepe, el sapo de peluche del consultorio">
           </span>
-          <span class="globo" role="note">¡Croac! Soy la <b>mascota oficial</b> del consultorio. Aún no tengo nombre… ¿me ayudas a escogerlo?</span>
-          <figcaption>Fotos provisionales generadas a partir de la referencia — se reemplazarán por las reales.</figcaption>
+          <span class="globo" role="note">¡Croac! Soy <b>Pepe</b>, la mascota oficial del consultorio. Estoy aquí desde el primer día — ¡te espero!</span>
+          <figcaption>La foto en consulta es provisional (generada); Pepe y los stickers del mar son los reales del consultorio.</figcaption>
         </figure>
       </div>
     </div>
@@ -443,20 +430,16 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
   </section>
 
   <section class="doctora" id="sobre-mi" aria-label="Sobre la doctora">
-    <span class="sticker" style="right:2%;top:80px;width:110px" aria-hidden="true">
-      <svg viewBox="0 0 110 110">
-        <path d="M55 10 l 11 27 30 4 -22 21 5 30 -24 -14 -24 14 5 -30 -22 -21 30 -4 Z" fill="#7FA8D9"/>
-      </svg>
-    </span>
+    <span class="sticker" style="right:2%;top:80px;width:150px" aria-hidden="true"><img src="assets/3e/stickers/ballenita-estrellas.png" alt=""></span>
     <div class="wrap">
       <div class="interior">
         <div class="collage">
           <img class="grande" src="assets/3e/retrato-doctora.jpg" alt="Retrato de la doctora sonriendo con una manzana (foto provisional)">
-          <img class="chica" src="assets/3e/escritorio-doctora.jpg" alt="La doctora escribiendo en su escritorio, con la ballena de acuarela en la pared (foto provisional)">
+          <img class="chica" src="assets/3e/dra-pepe.jpg" alt="Foto real de la doctora abrazando a Pepe, el sapo de peluche del consultorio">
         </div>
         <div>
           <h2 class="titulo">conoce a la doctora</h2>
-          <p class="parr">Mi misión es acompañar a tu familia con un enfoque cálido, humano y basado en evidencia, promoviendo la salud y el desarrollo óptimo de cada niño. Pediatría y nutrición infantil en una sola consulta.</p>
+          <p class="parr">Mi misión es acompañar a tu familia con un enfoque cálido, humano y basado en evidencia, promoviendo la salud y el desarrollo óptimo de cada niño. Pediatría y nutrición infantil en una sola consulta. Y el de la foto es <strong>Pepe</strong>: el sapo del consultorio, con nosotros desde que abrimos.</p>
           <div class="pilares">
             <div class="pilar">
               <span class="aro" style="background:#FBD8E3"><svg viewBox="0 0 24 24" fill="none" stroke="#D6336C" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-7-4.5-9-9c-1.2-2.8.6-6 3.8-6 2 0 3.4 1.2 5.2 3.2C13.8 6.2 15.2 5 17.2 5c3.2 0 5 3.2 3.8 6-2 4.5-9 9-9 9Z"/></svg></span>
@@ -512,11 +495,7 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
   </section>
 
   <section class="consultorio" id="consultorio" aria-label="El consultorio">
-    <span class="sticker" style="left:2%;top:120px;width:86px" aria-hidden="true">
-      <svg viewBox="0 0 90 90">
-        <path d="M20 78 V44 q 12 -26 22 -2 q 10 -20 18 2 V78 Z" fill="#F7A9A4"/>
-      </svg>
-    </span>
+    <span class="sticker" style="left:2%;top:110px;width:96px" aria-hidden="true"><img src="assets/3e/stickers/corales.png" alt=""></span>
     <div class="wrap">
       <h2 class="titulo">así es el consultorio de verdad</h2>
       <p class="bajada">Las fotos reales del consultorio, con el mural del mar que inspira toda esta página.</p>
@@ -531,7 +510,7 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
         </figure>
         <figure class="postal">
           <div class="marquito"><img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches junto a la ventana"></div>
-          <h3>la sala de examen</h3><p>La camilla celeste, los peluches… y la casa del sapo.</p>
+          <h3>la sala de examen</h3><p>La camilla celeste, los peluches… y los amigos de Pepe.</p>
         </figure>
       </div>
       <p class="nota">Fotos tomadas del video real del consultorio, mejoradas digitalmente para esta maqueta.</p>
@@ -610,9 +589,9 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
       <p class="bajada">Consejos, información y herramientas para acompañarte cada día.</p>
       <div class="interior">
         <div class="dalytips">
-          <img class="salta" src="assets/3e/mascota-sapo.png" alt="El sapo tejido, mascota del consultorio, presenta los DalyTips">
+          <img class="salta" src="assets/3e/pepe.png" alt="Pepe, el sapo de peluche del consultorio, presenta los DalyTips">
           <span class="letrero">DalyTips</span>
-          <p>Los consejos rápidos del consultorio, presentados por la mascota oficial. (Su nombre está por definirse — ¡se aceptan sugerencias!)</p>
+          <p>Los consejos rápidos del consultorio, presentados por <strong>Pepe</strong>, la mascota oficial: en el consultorio desde el primer día.</p>
         </div>
         <div class="articulos">
           <a class="articulo" href="#blog">
@@ -648,11 +627,7 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
   </section>
 
   <section class="familias" aria-label="Testimonios">
-    <span class="sticker" style="right:3%;top:60px;width:80px" aria-hidden="true">
-      <svg viewBox="0 0 80 80">
-        <path d="M40 8 l 8 20 22 3 -16 15 4 22 -18 -10 -18 10 4 -22 -16 -15 22 -3 Z" fill="#F2B33D"/>
-      </svg>
-    </span>
+    <span class="sticker" style="right:3%;top:60px;width:84px" aria-hidden="true"><img src="assets/3e/stickers/estrella-arena.png" alt=""></span>
     <div class="wrap">
       <h2 class="titulo">lo que dicen las familias</h2>
       <p class="bajada">Testimonios ilustrativos — se reemplazarán por reales.</p>
@@ -707,7 +682,7 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
           <span class="chip-contacto"><svg viewBox="0 0 24 24" fill="none" stroke="#D6336C" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>correo por confirmar</span>
           <span class="chip-contacto"><svg viewBox="0 0 24 24" fill="none" stroke="#6B5CA8" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>consultorio en Colombia · ciudad por confirmar</span>
         </div>
-        <span class="mascota-final" aria-hidden="true"><img src="assets/3e/mascota-sapo.png" alt=""></span>
+        <span class="mascota-final" aria-hidden="true"><img src="assets/3e/pepe.png" alt=""></span>
       </div>
     </div>
   </section>
@@ -737,7 +712,7 @@ stickers y el sapo tejido del consultorio como mascota oficial (nombre por defin
   </div>
   <div class="wrap legal">
     <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
-    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo. Fotos de la doctora provisionales (generadas digitalmente a partir del diseño de referencia); fotos del consultorio del video real, mejoradas digitalmente. La mascota aparece en versión provisional; su nombre está por definir.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo. Los stickers marinos, la foto de la doctora con Pepe y las fotos del consultorio son los reales del consultorio (recortados y mejorados digitalmente); las fotos de la doctora en consulta son provisionales, generadas digitalmente, y se reemplazarán por las reales.</p>
   </div>
 </footer>
 
