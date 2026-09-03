@@ -3,237 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Opción C · Teatro de papel — océano profundo — Dra. Dalila Peñaranda</title>
+<title>Opción C · Teatro de sombras — Dra. Dalila Peñaranda</title>
 <link href="assets/fonts/fonts.css" rel="stylesheet">
 <style>
   :root{
-    --telon:#14264D;            /* pared del teatro, lila-tinta profundo */
-    --telon-hondo:#0C1A38;
-    --papel-crema:#FFF6E8;      /* papel escenario */
-    --rosa-papel:#F585A3;  --rosa-honda:#D6336C;
-    --verde-papel:#9CCf56;  --verde-hondo:#5E9A28; --verde-tinta:#38610F;
-    --lila-papel:#8FB6DE;  --lila-honda:#3D6FA8;
-    --sol-papel:#FFC94B;  --cielo-papel:#BFE3F2;
-    --tinta:#1B2C4A;
-    --sombra-capa:0 10px 18px rgba(0,0,0,.28);
+    --noche:#14121E;          /* sala a oscuras */
+    --noche-2:#1C1930;
+    --noche-3:#262040;
+    --marco:#2A2440;          /* marco de las pantallas */
+    --silueta:#241F33;        /* papel recortado */
+    --crema:#F7EAD2;          /* titulares sobre la oscuridad */
+    --texto:#D6C3A2;          /* texto secundario, entintado cálido */
+    --ambar:#F2C078;
+    --ambar-vivo:#E8A93C;
+    --rosa:#D6336C; --rosa-luz:#F585A3;
+    --verde-hondo:#4F8A20;
+    --luz:radial-gradient(120% 130% at 50% 38%, #FFF1D4 0%, #F9DFAC 52%, #EFC98A 82%, #E2B26C 100%);
+    --halo:0 0 46px rgba(242,192,120,.22), 0 26px 60px rgba(0,0,0,.55);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  ::selection{background:var(--sol-papel);color:var(--tinta)}
+  ::selection{background:var(--ambar);color:var(--noche)}
   body{
     font-family:"Karla",system-ui,sans-serif;
-    background:var(--telon);color:var(--tinta);
+    background:var(--noche);color:var(--crema);
     font-size:17px;line-height:1.65;overflow-x:hidden;
   }
-  /* textura de cartón del telón */
   body::before{
     content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .04 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23c)'/%3E%3C/svg%3E");
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .95 0 0 0 0 .8 0 0 0 0 .55 0 0 0 .04 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23p)'/%3E%3C/svg%3E");
   }
   body::-webkit-scrollbar{width:12px}
-  body::-webkit-scrollbar-track{background:var(--telon-hondo)}
-  body::-webkit-scrollbar-thumb{background:var(--lila-honda);border-radius:6px}
+  body::-webkit-scrollbar-track{background:var(--noche-2)}
+  body::-webkit-scrollbar-thumb{background:#8A6B3F;border-radius:6px}
   h1,h2,h3{font-family:"Alfa Slab One",serif;font-weight:400;line-height:1.12;text-wrap:balance}
-  :focus-visible{outline:3px solid var(--sol-papel);outline-offset:3px;border-radius:4px}
+  :focus-visible{outline:3px solid var(--ambar);outline-offset:3px;border-radius:4px}
+  img{max-width:100%}
   .wrap{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+  section{position:relative;z-index:1}
 
-  /* ---------- marquesina ---------- */
-  header{position:sticky;top:0;z-index:50;background:var(--telon-hondo);box-shadow:0 6px 16px rgba(0,0,0,.5)}
-  .nav{max-width:1100px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:16px}
-  .nav img{height:46px;width:auto}
-  .nav .marca{font-family:"Alfa Slab One",serif;color:#FFF6E8;font-size:1.02rem;letter-spacing:.02em}
-  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
-  .nav a{
-    color:#E4EBF8;text-decoration:none;font-weight:700;font-size:.88rem;
-    padding:8px 12px;border-radius:10px;transition:background .2s,color .2s;
-  }
-  .nav a:hover{background:var(--lila-honda);color:#fff}
-  .nav .cta{background:var(--rosa-honda);color:#fff}
-  .nav .cta:hover{background:var(--rosa-papel);color:var(--tinta)}
-
-  /* ---------- escenario base ---------- */
-  .escenario{
-    position:relative;margin:56px auto;max-width:1100px;
-    background:var(--papel-crema);border-radius:18px;
-    box-shadow:0 24px 50px rgba(0,0,0,.5), inset 0 0 0 10px rgba(20,38,77,.08);
+  /* ---------- pantalla de linterna ---------- */
+  .pantalla{
+    position:relative;border-radius:18px;background:var(--luz);
+    box-shadow:inset 0 0 0 1px rgba(255,241,212,.5), 0 0 0 10px var(--marco), var(--halo);
     overflow:hidden;
   }
-  .escenario .interior{padding:60px 56px 0;position:relative;z-index:3}
-  .rotulo-acto{
-    position:absolute;top:0;left:0;z-index:5;
-    background:var(--tinta);color:var(--papel-crema);
-    font-weight:800;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
-    padding:9px 20px;border-radius:18px 0 16px 0;
-  }
-  .escenario h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:10px}
-  .escenario .sub{color:#5C6B8A;max-width:38rem}
-  .capas{position:relative;display:block;width:100%;margin-top:34px}
-  .capas svg{display:block;width:100%;height:auto}
 
-  /* ---------- hero: gran función ---------- */
-  .hero{position:relative;padding-top:26px}
-  .telon-borde{position:relative;z-index:4;display:block;width:100%;margin-bottom:-70px;pointer-events:none;filter:drop-shadow(0 12px 14px rgba(0,0,0,.35))}
-  .hero .escenario{margin-top:0}
-  .hero .interior{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:96px}
-  .hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem);color:var(--tinta)}
-  .hero h1 .recorte{color:var(--rosa-honda)}
-  .hero .intro{margin:18px 0 26px;font-size:1.1rem;max-width:32rem;color:#3E4E70}
-  .botones{display:flex;gap:14px;flex-wrap:wrap}
+  /* ---------- barra de la sala ---------- */
+  header{
+    position:sticky;top:0;z-index:50;background:var(--noche-2);
+    box-shadow:0 1px 0 rgba(242,192,120,.28), 0 8px 24px rgba(0,0,0,.55);
+  }
+  .nav{max-width:1100px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:16px}
+  .nav img{height:44px;width:auto}
+  .nav .marca{font-family:"Alfa Slab One",serif;color:var(--crema);font-size:1.02rem;letter-spacing:.02em}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
+  .nav a{
+    color:var(--texto);text-decoration:none;font-weight:700;font-size:.88rem;
+    padding:8px 12px;border-radius:10px;transition:background .2s,color .2s;
+  }
+  .nav a:hover{background:var(--ambar);color:var(--noche)}
+  .nav .cta{background:var(--rosa);color:#fff}
+  .nav .cta:hover{background:var(--ambar);color:var(--noche)}
+
+  /* ---------- momento de motion: la linterna respira ---------- */
+  .hero .marco-luz{position:relative}
+  .hero .marco-luz::before{
+    content:"";position:absolute;inset:-60px;border-radius:50%;
+    background:radial-gradient(closest-side, rgba(242,192,120,.30), transparent 72%);
+    animation:respirar 7s ease-in-out infinite;pointer-events:none;
+  }
+  @keyframes respirar{0%,100%{opacity:.55}50%{opacity:1}}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+  }
+
+  /* ---------- hero: la pantalla se enciende ---------- */
+  .hero{padding:64px 0 26px;text-align:center}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);max-width:20ch;margin:0 auto}
+  .hero h1 .encendida{color:var(--ambar)}
+  .hero .intro{margin:18px auto 26px;font-size:1.08rem;max-width:38rem;color:var(--texto)}
+  .botones{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
   .btn{
     display:inline-flex;align-items:center;gap:10px;text-decoration:none;
     font-family:"Alfa Slab One",serif;font-size:.95rem;letter-spacing:.02em;
     padding:15px 26px;border-radius:14px;color:#fff;
-    box-shadow:0 6px 0 rgba(0,0,0,.25), var(--sombra-capa);
+    box-shadow:0 6px 0 rgba(0,0,0,.4), 0 12px 26px rgba(0,0,0,.45);
     transition:transform .18s ease-out, box-shadow .18s ease-out;
   }
-  .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 rgba(0,0,0,.25), 0 16px 26px rgba(0,0,0,.3)}
-  .btn:active{transform:translateY(2px);box-shadow:0 3px 0 rgba(0,0,0,.25), 0 8px 14px rgba(0,0,0,.25)}
+  .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 rgba(0,0,0,.4), 0 18px 30px rgba(0,0,0,.5)}
+  .btn:active{transform:translateY(2px);box-shadow:0 3px 0 rgba(0,0,0,.4), 0 8px 14px rgba(0,0,0,.4)}
   .btn-whatsapp{background:var(--verde-hondo)}
-  .btn-lila{background:var(--lila-honda)}
-  /* escena colgante */
-  .escena-colgante{position:relative}
-  .escena-colgante svg{width:100%;height:auto;display:block}
-  .cuelga{animation:mecer 6s ease-in-out infinite;transform-origin:center -40px}
-  .cuelga-2{animation:mecer 7.5s ease-in-out infinite reverse;transform-origin:center -60px}
-  @keyframes mecer{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
-  .hero figcaption{text-align:center;font-size:.85rem;color:#5C6B8A;font-style:italic;margin-top:8px}
+  .btn-rosa{background:var(--rosa)}
+  .hero figure{margin-top:44px}
+  .hero .pantalla svg{width:100%;height:auto;display:block}
+  .hero figcaption{font-size:.85rem;color:var(--texto);font-style:italic;margin-top:26px}
 
-  /* ---------- reparto (sobre mí) ---------- */
-  .reparto .interior{padding-bottom:26px}
-  .fichas{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:30px 0 40px}
-  .fichap{
-    background:#fff;border-radius:14px;padding:22px 18px 18px;text-align:center;
-    box-shadow:var(--sombra-capa);
-    transition:transform .25s cubic-bezier(.22,1,.36,1);
-    display:flex;flex-direction:column;align-items:center;gap:10px;
+  /* ---------- credenciales: títeres de varilla ---------- */
+  .figuras{padding:72px 0 20px}
+  .figuras h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px;text-align:center}
+  .figuras .sub{color:var(--texto);max-width:38rem;margin:0 auto 40px;text-align:center}
+  .varillas{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+  .varilla-fig{text-align:center}
+  .varilla-fig .pantalla{aspect-ratio:4/3.4;margin-bottom:2px}
+  .varilla-fig .pantalla svg{position:absolute;inset:0;width:100%;height:100%}
+  .varilla-fig .vara{display:block;width:3px;height:34px;margin:0 auto;background:#8A6B3F;border-radius:2px}
+  .varilla-fig h3{font-size:.98rem;line-height:1.25;margin-top:10px}
+  .varilla-fig p{font-size:.8rem;color:var(--texto)}
+
+  /* ---------- consultorio: diapositivas proyectadas ---------- */
+  .proyeccion{padding:72px 0 30px}
+  .proyeccion h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .proyeccion .sub{color:var(--texto);max-width:36rem;margin-bottom:34px}
+  .proyeccion .pantalla{padding:30px}
+  .diapositivas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .diapo{margin:0}
+  .diapo .cuadro{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 8px 18px rgba(90,60,20,.4)}
+  .diapo img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;filter:sepia(.24) saturate(.92) brightness(.97)}
+  .diapo .cuadro::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 105% at 50% 42%, transparent 52%, rgba(70,44,10,.42) 100%);
   }
-  .fichap:hover{transform:translateY(-6px) rotate(-1deg)}
-  .fichap:nth-child(even):hover{transform:translateY(-6px) rotate(1deg)}
-  .fichap .medalla{
-    width:74px;height:74px;border-radius:50%;display:grid;place-items:center;
-    box-shadow:inset 0 -5px 0 rgba(0,0,0,.15);
-  }
-  .fichap h3{font-size:1rem;line-height:1.25}
-  .fichap p{font-size:.8rem;color:#5C6B8A}
+  .diapo h3{font-size:1rem;color:var(--silueta);text-align:center;margin-top:14px}
+  .diapo p{font-size:.83rem;color:#6B5433;text-align:center}
+  .proyeccion .nota{font-size:.8rem;color:var(--texto);margin-top:24px;text-align:center}
 
-
-  /* ---------- entreacto: el consultorio ---------- */
-  .entreacto .interior{padding-bottom:26px}
-  .postales{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:38px 0 40px}
-  .postal{position:relative;padding-top:40px}
-  .postal .hilo{position:absolute;top:0;left:50%;width:2px;height:42px;background:#1B2C4A;opacity:.45;transform:translateX(-50%)}
-  .postal .marco-postal{position:relative;background:#fff;border-radius:14px;padding:10px;box-shadow:var(--sombra-capa)}
-  .postal:nth-child(1) .marco-postal{transform:rotate(-1.6deg)}
-  .postal:nth-child(2) .marco-postal{transform:rotate(1.1deg)}
-  .postal:nth-child(3) .marco-postal{transform:rotate(-1deg)}
-  .postal .boca-foto{position:relative;border-radius:8px;overflow:hidden}
-  .postal .boca-foto img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
-  .postal .fleco{position:absolute;top:0;left:0;right:0;width:100%;height:auto;display:block;filter:drop-shadow(0 3px 3px rgba(0,0,0,.25))}
-  .postal h3{font-size:1.02rem;text-align:center;margin-top:14px}
-  .postal p{font-size:.84rem;color:#5C6B8A;text-align:center}
-
-  /* ---------- cursos: tres teatritos ---------- */
-  .funciones .interior{padding-bottom:44px}
-  .teatritos{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:34px}
-  .teatrito{
-    background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;
-    box-shadow:var(--sombra-capa);
-    transition:transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s;
+  /* ---------- cursos: tres funciones de linterna ---------- */
+  .funciones-seccion{padding:72px 0 26px}
+  .funciones-seccion h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .funciones-seccion .sub{color:var(--texto);max-width:38rem;margin-bottom:34px}
+  .funciones{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .funcion{
+    background:var(--noche-2);border:1px solid rgba(242,192,120,.32);border-radius:16px;
+    overflow:hidden;text-decoration:none;color:var(--crema);
     display:flex;flex-direction:column;
+    transition:transform .2s ease-out, box-shadow .2s ease-out;
   }
-  .teatrito:hover{transform:translateY(-8px);box-shadow:0 20px 34px rgba(0,0,0,.35)}
-  .teatrito .boca{position:relative;aspect-ratio:16/10;overflow:hidden}
-  .teatrito .boca svg{width:100%;height:100%;display:block}
-  .teatrito .texto{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
-  .teatrito h3{font-size:1.12rem}
-  .teatrito p{font-size:.88rem;color:#5C6B8A;flex:1}
-  .teatrito .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #EFE6DA;padding-top:10px}
-  .teatrito .precio{font-family:"Alfa Slab One",serif;font-size:1rem;color:var(--verde-tinta)}
-  .teatrito .precio small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.66rem;color:#5C6B8A}
-  .teatrito .ver{font-weight:800;font-size:.84rem;color:var(--rosa-honda)}
+  .funcion:hover{transform:translateY(-6px);box-shadow:0 0 34px rgba(242,192,120,.18), 0 18px 34px rgba(0,0,0,.5)}
+  .funcion .escena{margin:14px 14px 0;border-radius:10px;overflow:hidden;background:var(--luz);box-shadow:inset 0 0 0 1px rgba(255,241,212,.5)}
+  .funcion .escena svg{width:100%;height:auto;display:block}
+  .funcion .texto{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .funcion h3{font-size:1.05rem}
+  .funcion p{font-size:.85rem;color:var(--texto);flex:1}
+  .funcion .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(242,192,120,.28);padding-top:10px}
+  .funcion .precio{font-family:"Alfa Slab One",serif;font-size:.98rem;color:var(--ambar)}
+  .funcion .precio small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.64rem;color:var(--texto)}
+  .funcion .ver{font-weight:800;font-size:.82rem;color:var(--rosa-luz)}
+  .funciones-seccion .nota{font-size:.8rem;color:var(--texto);margin-top:26px;text-align:center}
 
-  /* ---------- programa (blog) + aplausos ---------- */
-  .programa .interior{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;padding-bottom:50px}
-  .tiras{list-style:none;margin-top:24px}
+  /* ---------- programa a media luz + voces de la sala ---------- */
+  .programa{padding:72px 0 30px}
+  .programa .interior{display:grid;grid-template-columns:1.1fr .9fr;gap:52px}
+  .programa h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:8px}
+  .programa .sub{color:var(--texto);margin-bottom:22px}
+  .tiras{list-style:none}
   .tiras a{
     position:relative;display:block;text-decoration:none;color:inherit;
-    background:#fff;border-radius:10px;padding:16px 20px 14px;margin-bottom:16px;
-    box-shadow:var(--sombra-capa);
-    transition:transform .22s cubic-bezier(.22,1,.36,1);
+    background:var(--noche-2);border:1px solid rgba(242,192,120,.28);
+    border-radius:10px;padding:16px 20px 14px;margin-bottom:16px;
+    transition:transform .22s cubic-bezier(.22,1,.36,1), border-color .22s;
   }
   .tiras a::before,.tiras a::after{
     content:"";position:absolute;top:50%;width:14px;height:14px;border-radius:50%;
-    background:var(--papel-crema);transform:translateY(-50%);
+    background:var(--noche);border:1px solid rgba(242,192,120,.28);transform:translateY(-50%);
   }
-  .tiras a::before{left:-7px}
-  .tiras a::after{right:-7px}
-  .tiras a:hover{transform:translateX(10px)}
-  .tiras h3{font-size:1.05rem}
-  .tiras a:hover h3{color:var(--rosa-honda)}
-  .tiras p{font-size:.85rem;color:#5C6B8A}
+  .tiras a::before{left:-8px}
+  .tiras a::after{right:-8px}
+  .tiras a:hover{transform:translateX(10px);border-color:rgba(242,192,120,.6)}
+  .tiras h3{font-size:1.02rem}
+  .tiras a:hover h3{color:var(--ambar)}
+  .tiras p{font-size:.84rem;color:var(--texto)}
   .aplausos blockquote{
-    background:#fff;border-radius:12px;padding:20px 22px 16px;margin-top:24px;
-    box-shadow:var(--sombra-capa);position:relative;
+    background:var(--noche-2);border:1px solid rgba(242,192,120,.28);
+    border-radius:12px;padding:20px 22px 16px;margin-top:20px;position:relative;
   }
   .aplausos blockquote::before{
-    content:"";position:absolute;top:-8px;left:34px;
-    border:9px solid transparent;border-bottom-color:#fff;border-top:0;
+    content:"";position:absolute;top:-9px;left:34px;
+    border:9px solid transparent;border-bottom-color:rgba(242,192,120,.5);border-top:0;
   }
-  .aplausos blockquote:first-of-type{margin-top:24px}
-  .aplausos p{font-size:.98rem;color:#3E4E70}
-  .aplausos cite{display:block;margin-top:10px;font-style:normal;font-weight:800;font-size:.8rem}
-  .aplausos cite small{font-weight:600;color:#5C6B8A}
+  .aplausos p{font-size:.96rem;color:var(--crema)}
+  .aplausos cite{display:block;margin-top:10px;font-style:normal;font-weight:800;font-size:.8rem;color:var(--ambar)}
+  .aplausos cite small{font-weight:600;color:var(--texto)}
 
-  /* ---------- acto final (citas) ---------- */
-  .final .interior{padding-bottom:0}
-  .final .funciones-dobles{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:34px 0 46px}
+  /* ---------- citas: la última pantalla ---------- */
+  .final{padding:72px 0 64px}
+  .final .pantalla{padding:44px 40px 64px;text-align:center;margin-bottom:44px}
+  .final .pantalla h2{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--silueta);max-width:18ch;margin:0 auto 10px}
+  .final .pantalla .sub{color:#6B5433;max-width:34rem;margin:0 auto}
+  .final .pantalla svg.olas{position:absolute;left:0;right:0;bottom:0;width:100%;height:52px;display:block}
+  .final .pantalla svg.ballena{position:absolute;right:26px;top:22px;width:120px;height:auto;opacity:.9}
+  .boletos{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:860px;margin:0 auto}
   .boleto{
-    background:#fff;border-radius:16px;padding:32px 30px;text-align:center;
-    box-shadow:var(--sombra-capa);
-    display:flex;flex-direction:column;align-items:center;gap:12px;
+    position:relative;background:var(--crema);color:#3D2C14;border-radius:16px;padding:30px 30px 28px;
+    box-shadow:0 0 26px rgba(242,192,120,.14), 0 18px 36px rgba(0,0,0,.5);
   }
-  .boleto .medalla{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 -5px 0 rgba(0,0,0,.15)}
-  .boleto h3{font-size:1.3rem}
-  .boleto p{font-size:.9rem;color:#5C6B8A}
-  .boleto .precio-cita{font-family:"Alfa Slab One",serif;font-size:1.4rem;color:var(--tinta)}
-  .boleto .precio-cita small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.68rem;color:#5C6B8A}
+  .boleto::before,.boleto::after{
+    content:"";position:absolute;top:50%;width:22px;height:22px;border-radius:50%;
+    background:var(--noche);transform:translateY(-50%);
+  }
+  .boleto::before{left:-11px}
+  .boleto::after{right:-11px}
+  .boleto h3{font-size:1.3rem;margin-bottom:6px;color:#2E2110}
+  .boleto p{font-size:.9rem;color:#6B5433;margin-bottom:16px}
+  .boleto .precio-cita{font-family:"Alfa Slab One",serif;font-size:1.4rem;display:block;margin-bottom:18px;color:#2E2110}
+  .boleto .precio-cita small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.68rem;color:#6B5433}
 
-  /* ---------- pie: tras bambalinas ---------- */
-  footer{position:relative;z-index:2;background:var(--telon-hondo);color:#C7D4E9;padding:64px 0 100px;margin-top:70px}
+  /* ---------- pie: se apaga la linterna ---------- */
+  footer{position:relative;z-index:2;background:#0E0C16;color:var(--texto);padding:64px 0 100px;border-top:1px solid rgba(242,192,120,.22)}
   footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
-  footer img{height:78px;width:auto;margin-bottom:16px}
-  footer h2{color:#fff;font-size:1.6rem;margin-bottom:10px}
+  footer img{height:74px;width:auto;margin-bottom:16px}
+  footer h2{color:var(--crema);font-size:1.6rem;margin-bottom:10px}
   footer p{font-size:.94rem;max-width:34rem}
   footer .btn{margin-top:20px}
   footer nav ul{list-style:none;display:grid;gap:8px}
-  footer nav a{color:#AFC3E2;text-decoration:none;font-weight:700}
-  footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
-  .legal{border-top:1px solid rgba(255,255,255,.18);margin-top:44px;padding-top:24px;font-size:.8rem;color:#8FA6C8}
+  footer nav a{color:var(--ambar);text-decoration:none;font-weight:700}
+  footer nav a:hover{color:var(--crema);text-decoration:underline;text-underline-offset:4px}
+  .legal{border-top:1px solid rgba(242,192,120,.18);margin-top:44px;padding-top:24px;font-size:.8rem;color:#A8946F;display:block}
   .legal p+p{margin-top:6px}
 
   .flotante{
     position:fixed;bottom:22px;right:22px;z-index:60;
     width:62px;height:62px;border-radius:50%;background:var(--verde-hondo);
     display:grid;place-items:center;
-    box-shadow:0 6px 0 rgba(0,0,0,.3), 0 14px 26px rgba(0,0,0,.5);
+    box-shadow:0 6px 0 rgba(0,0,0,.4), 0 14px 26px rgba(0,0,0,.55);
     transition:transform .18s ease-out;
   }
   .flotante:hover{transform:translateY(-4px)}
 
-  @media (prefers-reduced-motion: reduce){
-    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
-    html{scroll-behavior:auto}
-  }
   @media (max-width:940px){
-    .escenario{margin:40px 16px}
-    .escenario .interior{padding:44px 26px 0}
-    .hero .interior{grid-template-columns:1fr;padding-top:84px;gap:20px}
-    .escena-colgante{max-width:420px;margin:0 auto;order:-1}
-    .fichas{grid-template-columns:repeat(2,1fr)}
-    .teatritos{grid-template-columns:1fr}
-    .postales{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}
+    .hero .marco-luz::before{inset:-18px}
+    .varillas{grid-template-columns:repeat(2,1fr)}
+    .diapositivas{grid-template-columns:1fr;max-width:360px;margin:0 auto}
+    .funciones{grid-template-columns:1fr}
     .programa .interior{grid-template-columns:1fr;gap:36px}
-    .final .funciones-dobles{grid-template-columns:1fr}
+    .boletos{grid-template-columns:1fr}
+    .final .pantalla svg.ballena{display:none}
     footer .wrap{grid-template-columns:1fr}
     .nav a{padding:8px 9px;font-size:.8rem}
   }
@@ -241,13 +246,11 @@
 </head>
 <body>
 <!--
-THESIS: la página como teatro de papel: cada sección es un escenario de cartulina recortada con capas y profundidad real, dentro de la pared lila-tinta del teatro; rechaza el sitio plano de secciones apiladas y el diseño médico sin materia.
-OWN-WORLD: telón lila-tinta #14264D con textura de cartón, escenarios de papel crema #FFF6E8 con esquinas redondeadas y sombra de caja profunda, cartulinas rosa/verde/lila/sol con sombras entre capas, elementos colgados de hilos que se mecen, Alfa Slab One como letra troquelada, Karla de texto.
-STORY: la mamá entra a una función: se abre el telón, el primer acto presenta a la doctora, los actos siguientes muestran cursos, blog y aplausos del público, y el acto final vende el boleto: la cita por WhatsApp.
-FIRST VIEWPORT: telón festón colgando arriba, gran escenario con titular troquelado y, a la derecha, la escena de papel: sol colgando de un hilo, colinas en 4 capas con profundidad, manzano recortado con la manzana-logo, nubes colgantes meciéndose.
-FORM: teatro de papel / libro pop-up — dirección fijada por el usuario en la ronda shape (reemplazo de las 4 genéricas).
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+Opción C · Teatro de sombras: la esencia del teatro de papel a contraluz — la sala está a
+oscuras y cada sección es una pantalla de linterna encendida; la doctora es la silueta
+protagonista, las credenciales son títeres de varilla y las fotos del consultorio se
+proyectan como diapositivas.
 -->
 
 <header>
@@ -257,10 +260,9 @@ MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejempl
     <ul>
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#consultorio">Consultorio</a></li>
       <li><a href="#cursos">Cursos</a></li>
       <li><a href="#blog">Blog</a></li>
-      <li><a href="#citas">Citas</a></li>
-      <li><a href="#contacto">Contacto</a></li>
       <li><a class="cta" href="#citas">Pedir cita</a></li>
     </ul>
   </nav>
@@ -269,294 +271,236 @@ MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejempl
 <main id="inicio">
   <section class="hero" aria-label="Presentación">
     <div class="wrap">
-      <svg class="telon-borde" viewBox="0 0 1100 90" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 0 H1100 V38 Q1072 78 1044 38 Q1016 78 988 38 Q960 78 932 38 Q904 78 876 38 Q848 78 820 38 Q792 78 764 38 Q736 78 708 38 Q680 78 652 38 Q624 78 596 38 Q568 78 540 38 Q512 78 484 38 Q456 78 428 38 Q400 78 372 38 Q344 78 316 38 Q288 78 260 38 Q232 78 204 38 Q176 78 148 38 Q120 78 92 38 Q64 78 36 38 Q18 60 0 38 Z" fill="#D6336C"/>
-        <path d="M0 0 H1100 V26 Q1072 58 1044 26 Q1016 58 988 26 Q960 58 932 26 Q904 58 876 26 Q848 58 820 26 Q792 58 764 26 Q736 58 708 26 Q680 58 652 26 Q624 58 596 26 Q568 58 540 26 Q512 58 484 26 Q456 58 428 26 Q400 58 372 26 Q344 58 316 26 Q288 58 260 26 Q232 58 204 26 Q176 58 148 26 Q120 58 92 26 Q64 58 36 26 Q18 44 0 26 Z" fill="#F585A3"/>
-      </svg>
-      <div class="escenario">
-        <div class="interior">
-          <div>
-            <h1>Sube a escena el <span class="recorte">crecer sano</span></h1>
-            <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. En esta función, tus hijos son los protagonistas: alimentación, crecimiento y sueño, contados sin culpas y con evidencia. Presencial y virtual desde cualquier país.</p>
-            <div class="botones">
-              <a class="btn btn-whatsapp" href="#citas">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
-                Pedir cita por WhatsApp
-              </a>
-              <a class="btn btn-lila" href="#cursos">Ver los cursos</a>
-            </div>
-          </div>
-          <figure class="escena-colgante">
-            <svg viewBox="0 0 460 400" role="img" aria-label="Escena de papel: retrato de la doctora colgado en el proscenio, con ballena, tortuga y olas recortadas">
-              <!-- ballena colgante -->
-              <g class="cuelga-2">
-                <line x1="88" y1="-20" x2="88" y2="60" stroke="#1B2C4A" stroke-width="2"/>
-                <g filter="drop-shadow(0 8px 8px rgba(0,0,0,.25))">
-                  <path d="M40 96 Q 88 58 140 90 Q 132 126 90 126 Q 52 124 40 96 Z" fill="#BFE3F2"/>
-                  <path d="M128 86 q 24 -16 30 -2 q -14 10 -26 14 Z" fill="#BFE3F2"/>
-                  <circle cx="70" cy="94" r="4" fill="#1B2C4A"/>
-                  <path d="M48 108 q 18 12 42 6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
-                </g>
+      <h1>Se apagan las luces: <span class="encendida">tu pediatra</span> entra en escena</h1>
+      <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. En este teatro de sombras la función es para tus hijos: alimentación, crecimiento y sueño, contados sin culpas y con evidencia. Presencial y virtual desde cualquier país.</p>
+      <div class="botones">
+        <a class="btn btn-whatsapp" href="#citas">Pedir cita por WhatsApp</a>
+        <a class="btn btn-rosa" href="#cursos">Ver los cursos</a>
+      </div>
+      <figure>
+        <div class="marco-luz">
+          <div class="pantalla">
+            <svg viewBox="0 0 1200 520" role="img" aria-label="Pantalla de linterna encendida con la silueta de la doctora cargando a un bebé, una ballena, gaviotas y olas de papel recortado">
+              <!-- telón en sombra -->
+              <path d="M0 0 h1200 v46 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 q -50 58 -100 0 Z" fill="#241F33" opacity=".92"/>
+              <path d="M0 0 h74 q 30 150 8 520 h-82 Z" fill="#241F33"/>
+              <path d="M1200 0 h-74 q -30 150 -8 520 h82 Z" fill="#241F33"/>
+              <!-- gaviotas -->
+              <g stroke="#241F33" stroke-width="6" fill="none" stroke-linecap="round">
+                <path d="M905 130 q 14 -12 28 0 q 14 -12 28 0"/>
+                <path d="M985 170 q 10 -9 21 0 q 10 -9 21 0"/>
               </g>
-              <!-- retrato colgante: la doctora, protagonista -->
-              <g class="cuelga">
-                <line x1="252" y1="-20" x2="264" y2="36" stroke="#1B2C4A" stroke-width="2"/>
-                <line x1="348" y1="-20" x2="336" y2="36" stroke="#1B2C4A" stroke-width="2"/>
-                <g filter="drop-shadow(0 12px 12px rgba(0,0,0,.3))">
-                  <rect x="218" y="34" width="164" height="212" rx="16" fill="#fff"/>
-                  <rect x="230" y="46" width="140" height="188" rx="10" fill="#FFF6E8"/>
-                  <circle cx="300" cy="112" r="34" fill="#3D6FA8" opacity=".5"/>
-                  <path d="M244 234 q 8 -58 56 -58 q 48 0 56 58 Z" fill="#3D6FA8" opacity=".5"/>
-                  <path d="M262 234 q 10 -42 38 -42 q 28 0 38 42 Z" fill="#fff"/>
-                  <path d="M300 194 l -9 14 9 20 9 -20 Z" fill="#FFF6E8"/>
-                  <path d="M285 210 q 5 16 15 16 q 10 0 15 -16" stroke="#D6336C" stroke-width="4" fill="none" stroke-linecap="round"/>
-                  <circle cx="300" cy="228" r="6" fill="#D6336C"/>
-                </g>
-                <g filter="drop-shadow(0 4px 4px rgba(0,0,0,.25))">
-                  <circle cx="300" cy="34" r="12" fill="#FFC94B"/>
-                </g>
+              <!-- ballena en sombra -->
+              <g fill="#241F33">
+                <path d="M160 300 Q 250 236 352 296 Q 336 366 246 366 Q 180 362 160 300 Z"/>
+                <path d="M330 288 q 44 -30 56 -4 q -26 18 -48 26 Z"/>
+                <circle cx="216" cy="300" r="6" fill="#F9DFAC"/>
+                <circle cx="252" cy="238" r="7"/><circle cx="262" cy="216" r="5"/><circle cx="270" cy="198" r="4"/>
+              </g>
+              <!-- la doctora con el bebé en brazos (silueta protagonista) -->
+              <g fill="#241F33">
+                <circle cx="640" cy="72" r="30"/>
+                <circle cx="622" cy="130" r="52"/>
+                <path d="M540 470 Q 546 232 622 208 Q 700 232 706 470 Z"/>
+                <path d="M560 268 q -34 34 -22 76 q 44 24 96 -6 Z"/>
+                <path d="M688 268 q 34 34 22 76 q -44 24 -96 -6 Z"/>
+                <ellipse cx="622" cy="308" rx="74" ry="42"/>
+                <circle cx="558" cy="296" r="26"/>
+              </g>
+              <!-- carita del bebé recortada en la luz -->
+              <circle cx="558" cy="296" r="17" fill="#F9DFAC"/>
+              <g fill="#241F33"><circle cx="552" cy="293" r="2.4"/><circle cx="564" cy="293" r="2.4"/></g>
+              <path d="M553 302 q 5 4 10 0" stroke="#241F33" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <!-- manzana de varilla junto a la doctora -->
+              <g fill="#241F33">
+                <rect x="812" y="250" width="4" height="270" rx="2"/>
+                <circle cx="814" cy="226" r="26"/>
+                <path d="M814 202 q 6 -14 22 -14 q -2 16 -22 14 Z"/>
               </g>
               <!-- olas recortadas -->
-              <g>
-                <path d="M0 316 Q 70 292 140 310 T 280 306 T 460 300 V400 H0 Z" fill="#8FB6DE" filter="drop-shadow(0 -6px 10px rgba(0,0,0,.18))"/>
-                <path d="M0 344 Q 90 320 180 338 T 360 334 T 460 330 V400 H0 Z" fill="#9CCF56" filter="drop-shadow(0 -6px 10px rgba(0,0,0,.2))"/>
-                <path d="M0 372 Q 110 350 220 366 T 460 358 V400 H0 Z" fill="#3D6FA8" filter="drop-shadow(0 -6px 10px rgba(0,0,0,.22))"/>
-              </g>
-              <!-- tortuga sobre la ola -->
-              <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.25))">
-                <ellipse cx="120" cy="332" rx="34" ry="20" fill="#5E9A28"/>
-                <ellipse cx="120" cy="330" rx="26" ry="14" fill="#9CCF56"/>
-                <circle cx="158" cy="326" r="9" fill="#5E9A28"/>
-                <circle cx="161" cy="324" r="2" fill="#1B2C4A"/>
-              </g>
-              <!-- estrella de mar y flores troqueladas -->
-              <g filter="drop-shadow(0 3px 3px rgba(0,0,0,.25))">
-                <path d="M404 344 l6 12 13 2 -9 9 2 13 -12 -6 -12 6 2 -13 -9 -9 13 -2 Z" fill="#FFC94B"/>
-                <circle cx="52" cy="384" r="7" fill="#F585A3"/><circle cx="336" cy="384" r="6" fill="#F585A3"/>
+              <path d="M0 424 Q 150 392 300 420 T 600 416 T 900 420 T 1200 412 V520 H0 Z" fill="#241F33" opacity=".55"/>
+              <path d="M0 460 Q 160 428 320 456 T 640 452 T 960 456 T 1200 448 V520 H0 Z" fill="#241F33"/>
+            </svg>
+          </div>
+        </div>
+        <figcaption>La silueta protagonista: aquí entrará la foto real de la doctora, proyectada en la pantalla.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="figuras" id="sobre-mi" aria-label="Sobre la doctora">
+    <div class="wrap">
+      <h2>Las figuras de esta función</h2>
+      <p class="sub">Pediatría y nutrición infantil en una sola consulta. Cada credencial es un títere de varilla frente a la linterna. (Credenciales de ejemplo — se reemplazarán por las reales.)</p>
+      <div class="varillas">
+        <article class="varilla-fig">
+          <div class="pantalla">
+            <svg viewBox="0 0 200 170" aria-hidden="true">
+              <g fill="#241F33">
+                <path d="M100 46 L172 72 L100 98 L28 72 Z"/>
+                <path d="M60 84 v 26 q 40 26 80 0 v -26 q -40 22 -80 0 Z"/>
+                <rect x="166" y="72" width="4" height="42" rx="2"/>
+                <circle cx="168" cy="120" r="6"/>
               </g>
             </svg>
-            <figcaption>La escena del retrato: aquí entrará la foto real de la doctora.</figcaption>
+          </div>
+          <span class="vara" aria-hidden="true"></span>
+          <h3>Médica pediatra</h3><p>Universidad por confirmar · ejemplo</p>
+        </article>
+        <article class="varilla-fig">
+          <div class="pantalla">
+            <svg viewBox="0 0 200 170" aria-hidden="true">
+              <g fill="#241F33">
+                <circle cx="100" cy="96" r="42"/>
+                <path d="M100 58 q 8 -20 30 -20 q -4 24 -30 20 Z"/>
+              </g>
+              <path d="M78 96 q 22 22 44 0" stroke="#F9DFAC" stroke-width="6" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="vara" aria-hidden="true"></span>
+          <h3>Nutrición infantil</h3><p>Especialización por confirmar · ejemplo</p>
+        </article>
+        <article class="varilla-fig">
+          <div class="pantalla">
+            <svg viewBox="0 0 200 170" aria-hidden="true">
+              <circle cx="100" cy="88" r="46" fill="#241F33"/>
+              <g stroke="#F9DFAC" stroke-width="5" fill="none" stroke-linecap="round">
+                <path d="M56 88 h 88"/>
+                <path d="M100 44 c 26 26 26 62 0 88 c -26 -26 -26 -62 0 -88 Z"/>
+              </g>
+              <rect x="97" y="134" width="6" height="24" rx="3" fill="#241F33"/>
+            </svg>
+          </div>
+          <span class="vara" aria-hidden="true"></span>
+          <h3>Familias en varios países</h3><p>Consulta virtual internacional</p>
+        </article>
+        <article class="varilla-fig">
+          <div class="pantalla">
+            <svg viewBox="0 0 200 170" aria-hidden="true">
+              <path d="M100 34 l 17 36 40 5 -29 27 7 39 -35 -19 -35 19 7 -39 -29 -27 40 -5 Z" fill="#241F33"/>
+            </svg>
+          </div>
+          <span class="vara" aria-hidden="true"></span>
+          <h3>Sociedades científicas</h3><p>Afiliaciones por confirmar · ejemplo</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="proyeccion" id="consultorio" aria-label="El consultorio">
+    <div class="wrap">
+      <h2>Diapositivas del consultorio</h2>
+      <p class="sub">Entre sombra y sombra, la linterna proyecta el consultorio real de la doctora.</p>
+      <div class="pantalla">
+        <div class="diapositivas">
+          <figure class="diapo">
+            <div class="cuadro"><img src="assets/3d/recepcion.jpg" alt="Recepción con mostrador de madera clara y ballena de acuarela en la pared"></div>
+            <h3>La recepción</h3><p>Te recibe la ballena del mural y la madera clara.</p>
+          </figure>
+          <figure class="diapo">
+            <div class="cuadro"><img src="assets/3d/consulta.jpg" alt="Consultorio con escritorio de madera clara y ballenas de acuarela en la pared"></div>
+            <h3>La consulta</h3><p>Aquí conversamos con calma y armamos el plan.</p>
+          </figure>
+          <figure class="diapo">
+            <div class="cuadro"><img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches junto a la ventana"></div>
+            <h3>La sala de examen</h3><p>La camilla celeste, custodiada por los peluches.</p>
           </figure>
         </div>
-        <div class="capas" aria-hidden="true">
-          <svg viewBox="0 0 1100 90" preserveAspectRatio="none">
-            <path d="M0 60 Q 200 20 420 52 T 1100 44 V90 H0 Z" fill="#9CCF56"/>
-            <path d="M0 78 Q 260 44 520 70 T 1100 66 V90 H0 Z" fill="#5E9A28"/>
-          </svg>
-        </div>
       </div>
+      <p class="nota">Fotos tomadas del video real del consultorio, mejoradas digitalmente para esta maqueta.</p>
     </div>
   </section>
 
-  <section class="reparto" id="sobre-mi" aria-label="Sobre mí">
+  <section class="funciones-seccion" id="cursos" aria-label="Cursos">
     <div class="wrap">
-      <div class="escenario">
-        <div class="interior">
-          <span class="rotulo-acto">Primer acto</span>
-          <h2>La doctora del reparto</h2>
-          <p class="sub">Pediatría y nutrición infantil en una sola consulta. Credenciales de ejemplo — se reemplazarán por las reales.</p>
-          <div class="fichas">
-            <div class="fichap">
-              <span class="medalla" style="background:var(--rosa-papel)" aria-hidden="true">
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><rect x="5" y="12" width="28" height="20" rx="5" stroke="#fff" stroke-width="2.8"/><path d="M13 12v-2.5A3.5 3.5 0 0 1 16.5 6h5A3.5 3.5 0 0 1 25 9.5V12" stroke="#fff" stroke-width="2.8"/><path d="M19 18v7M15.5 21.5h7" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/></svg>
-              </span>
-              <h3>Médica pediatra</h3><p>Universidad por confirmar · ejemplo</p>
-            </div>
-            <div class="fichap">
-              <span class="medalla" style="background:var(--verde-papel)" aria-hidden="true">
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19 32c-7 0-11.5-4.8-11.5-10.3 0-4.8 3.5-7.7 7.7-7.7 1.8 0 2.7.4 3.8 1 1.1-.6 2-1 3.8-1 4.2 0 7.7 2.9 7.7 7.7C30.5 27.2 26 32 19 32Z" stroke="#fff" stroke-width="2.8"/><path d="M19 13c0-3.2 1.9-6.1 5.6-7.2-.7 3.7-2.1 6.1-5.6 7.2Z" fill="#fff"/></svg>
-              </span>
-              <h3>Nutrición infantil</h3><p>Especialización por confirmar · ejemplo</p>
-            </div>
-            <div class="fichap">
-              <span class="medalla" style="background:var(--lila-papel)" aria-hidden="true">
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="13" r="6" stroke="#fff" stroke-width="2.8"/><path d="M7 31c1.3-5.8 5.8-8.7 12-8.7S29.7 25.2 31 31" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/></svg>
-              </span>
-              <h3>Familias en varios países</h3><p>Consulta virtual internacional</p>
-            </div>
-            <div class="fichap">
-              <span class="medalla" style="background:var(--sol-papel)" aria-hidden="true">
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19 5l4 8.2 9 1.3-6.5 6.4 1.5 9L19 25.7l-8 4.2 1.5-9L6 14.5l9-1.3L19 5Z" stroke="#fff" stroke-width="2.8" stroke-linejoin="round"/></svg>
-              </span>
-              <h3>Sociedades científicas</h3><p>Afiliaciones por confirmar · ejemplo</p>
-            </div>
-          </div>
-        </div>
-        <div class="capas" aria-hidden="true">
-          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
-            <path d="M0 46 Q 220 16 440 40 T 1100 34 V70 H0 Z" fill="#F585A3"/>
-            <path d="M0 60 Q 260 36 520 54 T 1100 52 V70 H0 Z" fill="#D6336C"/>
-          </svg>
-        </div>
+      <h2>Tres funciones de linterna</h2>
+      <p class="sub">Tres cursos en video para ver a tu ritmo, desde cualquier país. La compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
+      <div class="funciones">
+        <a class="funcion" href="#cursos">
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 320 180">
+              <g fill="#241F33">
+                <path d="M96 118 q 64 44 128 0 l -10 34 q -54 22 -108 0 Z"/>
+                <rect x="152" y="64" width="8" height="52" rx="4" transform="rotate(24 156 90)"/>
+                <ellipse cx="186" cy="60" rx="17" ry="11" transform="rotate(24 186 60)"/>
+                <circle cx="96" cy="70" r="17"/>
+                <path d="M96 56 q 4 -10 14 -10 q -2 12 -14 10 Z"/>
+              </g>
+              <path d="M0 158 Q 80 142 160 156 T 320 152 V180 H0 Z" fill="#241F33" opacity=".55"/>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>Alimentación complementaria sin miedo</h3>
+            <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+            <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+        <a class="funcion" href="#cursos">
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 320 180">
+              <g fill="#241F33">
+                <rect x="96" y="74" width="128" height="70" rx="12"/>
+                <path d="M124 74 v -12 q 0 -12 12 -12 h 48 q 12 0 12 12 v 12 h -14 v -10 q 0 -4 -4 -4 h -40 q -4 0 -4 4 v 10 Z"/>
+                <circle cx="252" cy="120" r="14"/>
+                <rect x="246" y="84" width="12" height="26" rx="6"/>
+              </g>
+              <circle cx="134" cy="108" r="13" fill="#F9DFAC"/>
+              <rect x="162" y="98" width="42" height="24" rx="5" fill="#F9DFAC"/>
+              <path d="M0 158 Q 80 142 160 156 T 320 152 V180 H0 Z" fill="#241F33" opacity=".55"/>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>La lonchera que sí se comen</h3>
+            <p>Menús escolares prácticos y sin peleas en la mesa.</p>
+            <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+        <a class="funcion" href="#cursos">
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 320 180">
+              <g fill="#241F33">
+                <path d="M196 30 a 44 44 0 1 0 24 76 36 36 0 0 1 -24 -76 Z"/>
+                <path d="M96 108 l 6 12 13 2 -9 9 2 13 -12 -6 -12 6 2 -13 -9 -9 13 -2 Z"/>
+                <path d="M258 120 l 4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 Z"/>
+                <circle cx="130" cy="52" r="4"/><circle cx="242" cy="42" r="3"/>
+              </g>
+              <path d="M0 158 Q 80 142 160 156 T 320 152 V180 H0 Z" fill="#241F33" opacity=".55"/>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>Dormir bien desde bebés</h3>
+            <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+            <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
       </div>
-    </div>
-  </section>
-
-  <section class="entreacto" aria-label="El consultorio">
-    <div class="wrap">
-      <div class="escenario">
-        <div class="interior">
-          <span class="rotulo-acto">Entreacto</span>
-          <h2>Conoce el consultorio</h2>
-          <p class="sub">Fotos reales del consultorio, tomadas del video y mejoradas digitalmente: el mismo mar del mural te espera en cada rincón.</p>
-          <div class="postales">
-            <figure class="postal">
-              <span class="hilo" aria-hidden="true"></span>
-              <div class="marco-postal">
-                <div class="boca-foto">
-                  <img src="assets/3d/recepcion.jpg" alt="Recepción con mostrador de madera clara y ballena de acuarela en la pared">
-                  <svg class="fleco" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H400 V12 Q390 24 380 12 Q370 24 360 12 Q350 24 340 12 Q330 24 320 12 Q310 24 300 12 Q290 24 280 12 Q270 24 260 12 Q250 24 240 12 Q230 24 220 12 Q210 24 200 12 Q190 24 180 12 Q170 24 160 12 Q150 24 140 12 Q130 24 120 12 Q110 24 100 12 Q90 24 80 12 Q70 24 60 12 Q50 24 40 12 Q30 24 20 12 Q10 24 0 12 Z" fill="#F585A3"/></svg>
-                </div>
-              </div>
-              <h3>La recepción</h3>
-              <p>Te recibe la ballena del mural y la madera clara.</p>
-            </figure>
-            <figure class="postal">
-              <span class="hilo" aria-hidden="true"></span>
-              <div class="marco-postal">
-                <div class="boca-foto">
-                  <img src="assets/3d/consulta.jpg" alt="Consultorio con escritorio de madera clara y ballenas de acuarela en la pared">
-                  <svg class="fleco" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H400 V12 Q390 24 380 12 Q370 24 360 12 Q350 24 340 12 Q330 24 320 12 Q310 24 300 12 Q290 24 280 12 Q270 24 260 12 Q250 24 240 12 Q230 24 220 12 Q210 24 200 12 Q190 24 180 12 Q170 24 160 12 Q150 24 140 12 Q130 24 120 12 Q110 24 100 12 Q90 24 80 12 Q70 24 60 12 Q50 24 40 12 Q30 24 20 12 Q10 24 0 12 Z" fill="#9CCF56"/></svg>
-                </div>
-              </div>
-              <h3>La consulta</h3>
-              <p>Aquí conversamos con calma y armamos el plan.</p>
-            </figure>
-            <figure class="postal">
-              <span class="hilo" aria-hidden="true"></span>
-              <div class="marco-postal">
-                <div class="boca-foto">
-                  <img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches junto a la ventana">
-                  <svg class="fleco" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H400 V12 Q390 24 380 12 Q370 24 360 12 Q350 24 340 12 Q330 24 320 12 Q310 24 300 12 Q290 24 280 12 Q270 24 260 12 Q250 24 240 12 Q230 24 220 12 Q210 24 200 12 Q190 24 180 12 Q170 24 160 12 Q150 24 140 12 Q130 24 120 12 Q110 24 100 12 Q90 24 80 12 Q70 24 60 12 Q50 24 40 12 Q30 24 20 12 Q10 24 0 12 Z" fill="#FFC94B"/></svg>
-                </div>
-              </div>
-              <h3>La sala de examen</h3>
-              <p>La camilla celeste, custodiada por los peluches.</p>
-            </figure>
-          </div>
-        </div>
-        <div class="capas" aria-hidden="true">
-          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
-            <path d="M0 46 Q 220 16 440 40 T 1100 34 V70 H0 Z" fill="#BFE3F2"/>
-            <path d="M0 60 Q 260 36 520 54 T 1100 52 V70 H0 Z" fill="#8FB6DE"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="funciones" id="cursos" aria-label="Cursos">
-    <div class="wrap">
-      <div class="escenario">
-        <div class="interior">
-          <span class="rotulo-acto">Segundo acto</span>
-          <h2>Tres funciones en cartelera</h2>
-          <p class="sub">Cursos en video para ver a tu ritmo, desde cualquier país. La compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
-          <div class="teatritos">
-            <a class="teatrito" href="#cursos">
-              <span class="boca" aria-hidden="true">
-                <svg viewBox="0 0 320 200">
-                  <rect width="320" height="200" fill="#BFE3F2"/>
-                  <path d="M0 150 Q 90 116 180 142 T 320 136 V200 H0 Z" fill="#9CCF56"/>
-                  <path d="M0 176 Q 110 150 220 168 T 320 166 V200 H0 Z" fill="#5E9A28"/>
-                  <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.25))">
-                    <circle cx="160" cy="86" r="46" fill="#fff"/>
-                    <path d="M160 58v20" stroke="#D6336C" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M132 96q28 24 56 0" stroke="#D6336C" stroke-width="5" fill="none" stroke-linecap="round"/>
-                    <circle cx="160" cy="88" r="12" fill="#F585A3"/>
-                  </g>
-                  <circle cx="52" cy="44" r="18" fill="#FFC94B" filter="drop-shadow(0 4px 4px rgba(0,0,0,.2))"/>
-                </svg>
-              </span>
-              <span class="texto">
-                <h3>Alimentación complementaria sin miedo</h3>
-                <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
-                <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
-              </span>
-            </a>
-            <a class="teatrito" href="#cursos">
-              <span class="boca" aria-hidden="true">
-                <svg viewBox="0 0 320 200">
-                  <rect width="320" height="200" fill="#FFE9B8"/>
-                  <path d="M0 160 Q 100 130 200 152 T 320 148 V200 H0 Z" fill="#F585A3"/>
-                  <path d="M0 182 Q 120 160 240 176 T 320 174 V200 H0 Z" fill="#D6336C"/>
-                  <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.25))">
-                    <rect x="96" y="62" width="128" height="82" rx="12" fill="#D6336C"/>
-                    <rect x="116" y="46" width="88" height="22" rx="11" fill="#B02455"/>
-                    <circle cx="136" cy="104" r="17" fill="#fff"/>
-                    <rect x="164" y="90" width="40" height="30" rx="6" fill="#9CCF56"/>
-                  </g>
-                </svg>
-              </span>
-              <span class="texto">
-                <h3>La lonchera que sí se comen</h3>
-                <p>Menús escolares prácticos y sin peleas en la mesa.</p>
-                <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
-              </span>
-            </a>
-            <a class="teatrito" href="#cursos">
-              <span class="boca" aria-hidden="true">
-                <svg viewBox="0 0 320 200">
-                  <rect width="320" height="200" fill="#3B2C5F"/>
-                  <g filter="drop-shadow(0 6px 6px rgba(0,0,0,.5))">
-                    <circle cx="216" cy="72" r="40" fill="#FFE9B8"/>
-                    <path d="M230 38 a40 40 0 1 0 20 66 32 32 0 0 1 -20 -66Z" fill="#8FB6DE"/>
-                  </g>
-                  <path d="M0 168 Q 110 144 220 160 T 320 158 V200 H0 Z" fill="#3D6FA8"/>
-                  <g fill="#fff"><circle cx="60" cy="52" r="4"/><circle cx="104" cy="30" r="3"/><circle cx="40" cy="100" r="3"/><circle cx="140" cy="70" r="2.6"/></g>
-                </svg>
-              </span>
-              <span class="texto">
-                <h3>Dormir bien desde bebés</h3>
-                <p>Siestas, noches y despertares con rutinas respetuosas.</p>
-                <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="capas" aria-hidden="true">
-          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
-            <path d="M0 44 Q 200 18 400 40 T 1100 36 V70 H0 Z" fill="#8FB6DE"/>
-            <path d="M0 60 Q 260 38 520 56 T 1100 52 V70 H0 Z" fill="#3D6FA8"/>
-          </svg>
-        </div>
-      </div>
+      <p class="nota">Cada curso es una función que enciendes cuando quieras: compra en Hotmart y vela a tu ritmo.</p>
     </div>
   </section>
 
   <section class="programa" id="blog" aria-label="Blog y testimonios">
     <div class="wrap">
-      <div class="escenario">
-        <div class="interior">
-          <div>
-            <span class="rotulo-acto">Tercer acto</span>
-            <h2>El programa de mano</h2>
-            <p class="sub">Artículos gratuitos del blog. (Títulos de ejemplo.)</p>
-            <ul class="tiras">
-              <li><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a></li>
-              <li><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a></li>
-              <li><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a></li>
-            </ul>
-          </div>
-          <div class="aplausos" aria-label="Testimonios">
-            <span class="rotulo-acto" style="background:var(--rosa-honda)">Aplausos</span>
-            <h2 style="font-size:1.5rem">Dice el público</h2>
-            <p class="sub">Testimonios ilustrativos — se reemplazarán por reales.</p>
-            <blockquote>
-              <p>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</p>
-              <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
-            </blockquote>
-            <blockquote>
-              <p>«La consulta virtual fue igual de cercana, desde otro país.»</p>
-              <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
-            </blockquote>
-          </div>
+      <div class="interior">
+        <div>
+          <h2>El programa, a media luz</h2>
+          <p class="sub">Artículos gratuitos del blog. (Títulos de ejemplo.)</p>
+          <ul class="tiras">
+            <li><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a></li>
+            <li><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a></li>
+            <li><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a></li>
+          </ul>
         </div>
-        <div class="capas" aria-hidden="true">
-          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
-            <path d="M0 46 Q 220 20 440 42 T 1100 36 V70 H0 Z" fill="#FFC94B"/>
-            <path d="M0 60 Q 260 40 520 56 T 1100 54 V70 H0 Z" fill="#F0A814"/>
-          </svg>
+        <div class="aplausos" aria-label="Testimonios">
+          <h2 style="font-size:1.5rem">Se oye en la sala</h2>
+          <p class="sub">Testimonios ilustrativos — se reemplazarán por reales.</p>
+          <blockquote>
+            <p>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</p>
+            <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
+          </blockquote>
+          <blockquote>
+            <p>«La consulta virtual fue igual de cercana, desde otro país.»</p>
+            <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
+          </blockquote>
         </div>
       </div>
     </div>
@@ -564,38 +508,34 @@ MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejempl
 
   <section class="final" id="citas" aria-label="Citas">
     <div class="wrap">
-      <div class="escenario">
-        <div class="interior">
-          <span class="rotulo-acto">Acto final</span>
-          <h2>Reserva tu función privada</h2>
-          <p class="sub">Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
-          <div class="funciones-dobles">
-            <div class="boleto">
-              <span class="medalla" style="background:var(--verde-papel)" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 36S8 27.6 8 18.2a12 12 0 0 1 24 0C32 27.6 20 36 20 36Z" stroke="#fff" stroke-width="2.8"/><circle cx="20" cy="17.6" r="4.4" stroke="#fff" stroke-width="2.8"/></svg>
-              </span>
-              <h3>Presencial</h3>
-              <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
-              <span class="precio-cita">$180.000 COP<small>precio de ejemplo</small></span>
-              <a class="btn btn-whatsapp" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20presencial" rel="noopener">Agendar por WhatsApp</a>
-            </div>
-            <div class="boleto">
-              <span class="medalla" style="background:var(--cielo-papel)" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="5" y="10" width="21" height="17" rx="4" stroke="#1B2C4A" stroke-width="2.8"/><path d="M26 16.5l9-5v14l-9-5" stroke="#1B2C4A" stroke-width="2.8" stroke-linejoin="round"/></svg>
-              </span>
-              <h3>Virtual</h3>
-              <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
-              <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
-              <a class="btn btn-whatsapp" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20virtual" rel="noopener">Agendar por WhatsApp</a>
-            </div>
-          </div>
-        </div>
-        <div class="capas" aria-hidden="true">
-          <svg viewBox="0 0 1100 70" preserveAspectRatio="none">
-            <path d="M0 44 Q 200 20 420 42 T 1100 34 V70 H0 Z" fill="#9CCF56"/>
-            <path d="M0 60 Q 240 40 500 56 T 1100 52 V70 H0 Z" fill="#5E9A28"/>
-          </svg>
-        </div>
+      <div class="pantalla">
+        <svg class="ballena" viewBox="0 0 170 120" aria-hidden="true">
+          <g fill="#241F33">
+            <path d="M28 72 Q 85 36 148 70 Q 138 106 88 106 Q 42 104 28 72 Z"/>
+            <path d="M134 64 q 26 -18 32 -2 q -16 10 -28 16 Z"/>
+          </g>
+          <circle cx="60" cy="72" r="4" fill="#F9DFAC"/>
+        </svg>
+        <h2>La última pantalla se enciende para ti</h2>
+        <p class="sub">Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
+        <svg class="olas" viewBox="0 0 1200 52" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 26 Q 150 2 300 24 T 600 20 T 900 24 T 1200 16 V52 H0 Z" fill="#241F33" opacity=".5"/>
+          <path d="M0 40 Q 160 16 320 38 T 640 34 T 960 38 T 1200 30 V52 H0 Z" fill="#241F33"/>
+        </svg>
+      </div>
+      <div class="boletos">
+        <article class="boleto">
+          <h3>Presencial</h3>
+          <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
+          <span class="precio-cita">$180.000 COP<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="#">Agendar por WhatsApp</a>
+        </article>
+        <article class="boleto">
+          <h3>Virtual</h3>
+          <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+          <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="#">Agendar por WhatsApp</a>
+        </article>
       </div>
     </div>
   </section>
@@ -605,29 +545,30 @@ MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejempl
   <div class="wrap">
     <div>
       <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
-      <h2>Tras bambalinas</h2>
+      <h2>Cuando se apaga la linterna</h2>
       <p>Citas por WhatsApp; todo lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y las redes sociales.</p>
-      <a class="btn btn-whatsapp" href="https://wa.me/570000000000" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn-whatsapp" href="#">Escribir por WhatsApp</a>
     </div>
-    <nav aria-label="Mapa del sitio">
+    <nav aria-label="Pie">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#consultorio">Consultorio</a></li>
         <li><a href="#cursos">Cursos</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="#citas">Citas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </div>
   <div class="wrap legal">
     <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
-    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo; fotos del consultorio del video real, mejoradas digitalmente.</p>
   </div>
 </footer>
 
-<a class="flotante" href="https://wa.me/570000000000" aria-label="Abrir WhatsApp" rel="noopener">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+<a class="flotante" href="#" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.1c1.9 1 4 1.6 6.3 1.6h.5c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.9 17.1c-.3.8-1.7 1.6-2.3 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.4-1.5-5.6-4.9-5.8-5.1-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.7 1 2.4 1.1 2.6.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.4.1 2.1 1 2.5 1.2.4.2.6.3.7.5.1.1.1.9-.2 1.7z"/></svg>
 </a>
+
 </body>
 </html>

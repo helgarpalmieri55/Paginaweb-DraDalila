@@ -15,16 +15,16 @@ Versión 2 (tras la primera revisión con el cliente): la propuesta 1 se conserv
 
 El brief de la dirección 6 está en `briefs/6-un-dia-completo.md` (ya construida). El jardín de medianoche (versión oscura del premium) quedó en `archivo/` junto a las cuatro propuestas de la primera ronda.
 
-## Versión 4 — opciones A–D del teatro elegido
+## Versión 5 — cuatro escenografías del teatro elegido
 
-La doctora eligió el **teatro de papel**. Tras el feedback de marketing, las cuatro opciones son variaciones de **color y estilo** del mismo diseño (idéntica estructura por actos), con la **pediatra como protagonista**: su retrato cuelga en el proscenio como marcador de la fotografía real, acompañado por la ballena, la tortuga y las olas del mural de su consultorio. Todas incluyen el «Entreacto · Conoce el consultorio», una galería de postales colgadas con las fotos reales del video (en `assets/3d/`). Las versiones anteriores quedaron en `archivo/`.
+La doctora eligió el **teatro de papel**. Tras la observación del cliente de que las cuatro opciones anteriores eran el mismo diseño con distintos colores, las opciones B, C y D se reconstruyeron como **escenografías estructuralmente distintas** que conservan la esencia del teatro (cartulina por capas, telón, la **pediatra como protagonista** —su retrato o silueta marca el lugar de la fotografía real— y las fotos reales del consultorio en `assets/3d/`). Las versiones recoloreadas quedaron en `archivo/` (`*-teatro-recolor-v2.html`).
 
-| # | Archivo | Paleta |
-|---|---------|--------|
-| A | `3a-teatro-consultorio.html` | **Claro cálido** — pared arena, olas azul-lila, verde menta. |
-| B | `3b-teatro-arrecife.html` | **Arrecife** — pared celeste, coral y aqua. |
-| C | `3c-teatro-oceano.html` | **Océano profundo** — pared índigo marina, telón rosa, olas azules. |
-| D | `3d-consultorio-real.html` | **Rosa de marca** — pared rosa empolvado, lila y verde del logo. |
+| # | Archivo | Escenografía |
+|---|---------|--------------|
+| A | `3a-teatro-consultorio.html` | **Claro cálido** — la puesta clásica por actos del teatro elegido, en paleta arena, azul-lila y menta. |
+| B | `3b-teatro-arrecife.html` | **Teatro de marionetas** — la doctora-marioneta presenta la función; credenciales en cuerda, fotos con pinzas, cursos en carrito ambulante. |
+| C | `3c-teatro-oceano.html` | **Teatro de sombras** — sala a oscuras y pantallas de linterna cálida; la doctora en silueta, fotos proyectadas como diapositivas. |
+| D | `3d-consultorio-real.html` | **Diorama continuo** — sin tarjetas: un mar de papel que se profundiza al hacer scroll, de la superficie al cofre abisal. |
 
 ## Notas
 
