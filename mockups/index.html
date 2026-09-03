@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propuestas de diseño — Dra. Dalila Peñaranda</title>
+<style>
+  :root{--tinta:#241A38;--gris:#6B6478;--linea:#E4E0EA;--rosa:#D6336C}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#FAF9FC;color:var(--tinta);line-height:1.6;padding:56px 24px 80px}
+  .wrap{max-width:760px;margin:0 auto}
+  header{margin-bottom:40px}
+  header img{height:64px;width:auto;margin-bottom:18px}
+  h1{font-size:1.9rem;line-height:1.2;margin-bottom:10px}
+  header p{color:var(--gris);max-width:44rem}
+  ol{list-style:none;display:grid;gap:14px;margin-top:32px}
+  a.propuesta{
+    display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:center;
+    background:#fff;border:1px solid var(--linea);border-radius:14px;
+    padding:20px 24px;text-decoration:none;color:inherit;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  a.propuesta:hover{border-color:var(--rosa);box-shadow:0 6px 18px rgba(36,26,56,.08)}
+  .muestra{width:64px;height:64px;border-radius:12px;display:grid;place-items:center;font-size:1.5rem;font-weight:700;color:#fff}
+  h2{font-size:1.1rem}
+  .propuesta p{color:var(--gris);font-size:.9rem}
+  .flecha{color:var(--rosa);font-size:1.3rem}
+  footer{margin-top:44px;color:var(--gris);font-size:.85rem;border-top:1px solid var(--linea);padding-top:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/logo-full-color.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+    <h1>Propuestas de diseño para la página de inicio</h1>
+    <p>Versión 5: la doctora eligió el <strong>teatro de papel</strong>. Las opciones A–D comparten esa esencia (cartulina por capas, telón, la pediatra como protagonista y las fotos reales del consultorio) pero ahora son <strong>cuatro escenografías distintas</strong>: la A conserva la puesta clásica por actos, la B la cuenta con marionetas, la C la despliega como libro pop-up y la D la convierte en un diorama marino continuo. Las versiones anteriores quedaron en <code>archivo/</code>. Todos los textos, precios y testimonios son de ejemplo.</p>
+  </header>
+  <ol>
+    <li>
+      <a class="propuesta" href="1-mundo-de-juego.html">
+        <span class="muestra" style="background:#A9DCF2;color:#33406B">1</span>
+        <span><h2>Mundo de juego</h2><p>Alusiva a la pediatría, como un cuento infantil: cielo, sol, colinas y colores del logo en tono lúdico.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="2-acuarela-de-cuento.html">
+        <span class="muestra" style="background:#F9C3D2;color:#4A3A55">2</span>
+        <span><h2>Acuarela de cuento</h2><p>Libro álbum pintado a mano: manchas de pigmento real, grano de papel, manzano en acuarela y notas de las familias.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="3a-teatro-consultorio.html">
+        <span class="muestra" style="background:#F0E2CE;color:#23406B">3A</span>
+        <span><h2>Opción A · Claro cálido</h2><p>El mismo teatro elegido en paleta clara y cálida: pared arena, olas azul-lila y verde menta. La doctora protagoniza el proscenio.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="3b-teatro-arrecife.html">
+        <span class="muestra" style="background:#F6EEE0;color:#5A2530">3B</span>
+        <span><h2>Opción B · Teatro de marionetas</h2><p>La función contada por títeres: la doctora-marioneta presenta, las credenciales cuelgan de una cuerda, las fotos se tienden con pinzas y los cursos viajan en carrito.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="3c-teatro-oceano.html">
+        <span class="muestra" style="background:#DFF0FA;color:#D6336C">3C</span>
+        <span><h2>Opción C · Libro pop-up</h2><p>El cuento desplegable: la doctora emerge del pliegue central, credenciales como solapas, fotos en álbum con esquineros y boletos recortables.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="3d-consultorio-real.html">
+        <span class="muestra" style="background:#3D6FA8;color:#FFF6E4">3D</span>
+        <span><h2>Opción D · Diorama continuo</h2><p>Sin tarjetas: un solo mar de papel que se profundiza al hacer scroll, del proscenio con el retrato de la doctora al cofre del fondo con los boletos.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="3e-mar-de-papel.html">
+        <span class="muestra" style="background:#FDF3ED;color:#D6336C">3E</span>
+        <span><h2>Opción E · Mar de papel</h2><p>Reproducción fiel del diseño de referencia del cliente (fotos reales de la doctora, stickers exactos del consultorio, misma estructura y tipografía) con toques ligeros de teatro de papel: telón, olas de cartulina y Pepe, el sapo de peluche real, como mascota.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="3-teatro-de-papel.html">
+        <span class="muestra" style="background:#3B2C5F;color:#FFC94B">3</span>
+        <span><h2>Teatro de papel</h2><p>Diorama pop-up: escenarios de cartulina por capas, telón, sol colgado de un hilo y cada sección como un acto de la función.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="4-mapa-de-aventura.html">
+        <span class="muestra" style="background:#AEDCF2;color:#1E3B52">4</span>
+        <span><h2>Mapa de aventura</h2><p>Un globo aerostático recorre el mapa del crecimiento: valle, campamentos, bosque, lago y puerto, unidos por ruta punteada.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="5-jardin-del-amanecer.html">
+        <span class="muestra" style="background:#F6E7EB;color:#C25E7C">5</span>
+        <span><h2>Jardín del amanecer</h2><p>Premium claro y elegante: grabado botánico en oro suave sobre porcelana, rosa antiguo, salvia y pétalos a la deriva.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a class="propuesta" href="6-un-dia-completo.html">
+        <span class="muestra" style="background:linear-gradient(#F5C8A8,#3D3470);color:#fff">6</span>
+        <span><h2>Un día completo</h2><p>Un solo paisaje que va del amanecer a la noche: cada momento del día es un tema de la doctora, y la cita se agenda antes de apagar la luz.</p></span>
+        <span class="flecha" aria-hidden="true">→</span>
+      </a>
+    </li>
+  </ol>
+  <footer>
+    <p>Maquetas de diseño (Semana 2 de la propuesta) · Dra. Dalila Peñaranda · Pediatría y Nutrición.</p>
+  </footer>
+</div>
+</body>
+</html>
