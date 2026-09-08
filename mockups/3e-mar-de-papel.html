@@ -52,6 +52,7 @@
   .sticker{position:absolute;pointer-events:none;z-index:1}
   .sticker img{width:100%;height:auto;display:block;filter:drop-shadow(0 6px 8px rgba(111,93,175,.18))}
   .sticker.volteado img{transform:scaleX(-1)}
+  .sticker.raiz{z-index:3}
   .burb{position:absolute;pointer-events:none;z-index:1}
   .burb svg{width:100%;height:auto;display:block}
   .burb circle{fill:rgba(140,180,224,.32);stroke:rgba(120,165,215,.75);stroke-width:1.4}
@@ -121,7 +122,7 @@
     filter:drop-shadow(0 14px 16px rgba(111,93,175,.22));
   }
   .escena .nota{
-    position:absolute;right:-2%;bottom:6%;width:172px;padding:18px 16px 16px;
+    position:absolute;right:7%;bottom:5%;width:172px;padding:18px 16px 16px;
     background:#FFF8EC;border-radius:6px;transform:rotate(-6deg);
     box-shadow:0 10px 22px rgba(111,93,175,.22);
     font-family:"Caveat",cursive;font-size:1.32rem;line-height:1.15;color:#5B4B3A;text-align:center;
@@ -146,7 +147,7 @@
   .doctora .collage{border-radius:26px;overflow:hidden}
   .doctora .collage img{display:block;width:100%}
   .doctora .titulo{justify-content:flex-start;text-align:left}
-  .doctora .parr{color:var(--texto);margin:12px 0 20px;max-width:33rem;font-size:.94rem}
+  .doctora .parr{color:var(--texto);margin:12px 0 20px;max-width:30rem;font-size:.94rem}
   .pilares{display:grid;gap:14px}
   .pilar{display:flex;gap:13px;align-items:flex-start}
   .pilar .aro{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center}
@@ -295,19 +296,19 @@ material de referencia y se validarán antes de publicar.
 
 <main id="inicio">
   <section class="hero" aria-label="Presentación">
+    <span class="sticker" style="left:.5%;top:236px;width:170px" aria-hidden="true"><img src="assets/3e/stickers/ballena.png" alt=""></span>
+    <span class="sticker raiz" style="left:.8%;bottom:-34px;width:150px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
+    <span class="burb" style="left:9%;top:96px;width:44px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+    <span class="sticker" style="right:2%;top:64px;width:170px" aria-hidden="true"><img src="assets/3e/stickers/tortuga.png" alt=""></span>
+    <span class="sticker" style="right:6%;top:268px;width:74px" aria-hidden="true"><img src="assets/3e/stickers/estrella-mostaza.png" alt=""></span>
+    <span class="sticker raiz" style="right:0;bottom:-44px;width:176px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
+    <span class="sticker" style="left:33%;top:284px;width:40px" aria-hidden="true"><img src="assets/3e/stickers/pez.png" alt=""></span>
+    <span class="sticker volteado" style="left:30%;top:352px;width:32px" aria-hidden="true"><img src="assets/3e/stickers/pez.png" alt=""></span>
+    <span class="burb lento" style="right:10%;bottom:210px;width:40px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <svg class="feston" viewBox="0 0 1440 34" preserveAspectRatio="none" aria-hidden="true">
       <path d="M0 0 h1440 v7 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 q -30 24 -60 0 Z" fill="#E75480"/>
       <path d="M0 0 h1440 v4 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 q -30 21 -60 0 Z" fill="#F7A9A4" opacity=".55"/>
     </svg>
-    <span class="sticker" style="left:1.5%;top:236px;width:120px" aria-hidden="true"><img src="assets/3e/stickers/ballena.png" alt=""></span>
-    <span class="sticker" style="left:1%;bottom:44px;width:84px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
-    <span class="sticker" style="right:2%;top:70px;width:100px" aria-hidden="true"><img src="assets/3e/stickers/tortuga.png" alt=""></span>
-    <span class="sticker" style="right:5%;top:230px;width:50px" aria-hidden="true"><img src="assets/3e/stickers/estrella-mostaza.png" alt=""></span>
-    <span class="sticker" style="right:1%;bottom:50px;width:110px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
-    <span class="sticker" style="left:33%;top:280px;width:30px" aria-hidden="true"><img src="assets/3e/stickers/pez.png" alt=""></span>
-    <span class="sticker volteado" style="left:30%;top:352px;width:24px" aria-hidden="true"><img src="assets/3e/stickers/pez.png" alt=""></span>
-    <span class="burb" style="left:9%;top:90px;width:34px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
-    <span class="burb lento" style="right:9%;bottom:170px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <div class="wrap">
       <div class="interior">
         <div>
@@ -333,9 +334,10 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="servicios" id="servicios" aria-label="Servicios">
-    <span class="sticker" style="left:1.5%;top:60px;width:62px" aria-hidden="true"><img src="assets/3e/stickers/algas-salmon.png" alt=""></span>
-    <span class="burb lento" style="left:5%;top:190px;width:26px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="12" cy="48" r="8"/><circle cx="22" cy="24" r="5"/><circle cx="12" cy="7" r="3.5"/><circle class="brillo" cx="9" cy="45" r="2"/></svg></span>
-    <span class="burb" style="right:3%;top:40px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="18" cy="50" r="9"/><circle cx="8" cy="26" r="5"/><circle cx="22" cy="8" r="4"/><circle class="brillo" cx="15" cy="47" r="2"/></svg></span>
+    <span class="sticker" style="left:1%;top:150px;width:112px" aria-hidden="true"><img src="assets/3e/stickers/algas-salmon.png" alt=""></span>
+    <span class="sticker volteado" style="right:.6%;top:150px;width:150px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
+    <span class="burb" style="right:3%;top:44px;width:46px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
+    <span class="burb lento" style="left:6%;top:44px;width:32px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
     <div class="wrap">
       <h2 class="titulo">¿cómo podemos ayudarte?</h2>
       <p class="bajada">Servicios pensados para el bienestar integral de tus hijos.</p>
@@ -351,9 +353,11 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="doctora" id="sobre-mi" aria-label="Sobre la doctora">
-    <span class="sticker" style="right:2%;top:30px;width:96px" aria-hidden="true"><img src="assets/3e/stickers/estrella-azul.png" alt=""></span>
-    <span class="sticker" style="right:1%;top:170px;width:112px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
-    <span class="burb" style="left:3%;top:120px;width:28px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="14" cy="50" r="8"/><circle cx="24" cy="26" r="5"/><circle cx="10" cy="8" r="3.5"/><circle class="brillo" cx="11" cy="47" r="2"/></svg></span>
+    <span class="sticker" style="right:.4%;top:-14px;width:160px" aria-hidden="true"><img src="assets/3e/stickers/estrella-azul.png" alt=""></span>
+    <span class="sticker raiz" style="right:.5%;bottom:-54px;width:230px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
+    <span class="sticker raiz" style="left:.8%;bottom:-44px;width:130px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
+    <span class="burb" style="left:3%;top:110px;width:40px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+    <span class="burb lento" style="left:5%;bottom:150px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <div class="wrap">
       <div class="interior">
         <div class="collage"><img src="assets/3e/fotos/conoce.jpg" alt="Dos fotos de la Dra. Dalila: retrato con bata blanca y trabajando en su escritorio"></div>
@@ -375,9 +379,11 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="duo" aria-label="Nutrición infantil y pediatría">
-    <span class="sticker volteado" style="left:1%;top:60px;width:80px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
-    <span class="sticker" style="right:2%;bottom:70px;width:50px" aria-hidden="true"><img src="assets/3e/stickers/estrella-naranja.png" alt=""></span>
-    <span class="burb lento" style="right:4%;top:40px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="18" cy="50" r="9"/><circle cx="8" cy="26" r="5"/><circle cx="22" cy="8" r="4"/><circle class="brillo" cx="15" cy="47" r="2"/></svg></span>
+    <span class="sticker raiz volteado" style="left:.8%;bottom:-54px;width:170px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
+    <span class="sticker raiz" style="right:1%;bottom:-34px;width:150px" aria-hidden="true"><img src="assets/3e/stickers/algas-salmon.png" alt=""></span>
+    <span class="sticker" style="right:3%;top:30px;width:80px" aria-hidden="true"><img src="assets/3e/stickers/estrella-naranja.png" alt=""></span>
+    <span class="burb lento" style="right:5%;top:130px;width:44px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+    <span class="burb" style="left:6%;top:40px;width:36px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <div class="wrap">
       <div class="interior">
         <article class="rama" id="nutricion">
@@ -417,10 +423,11 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="consultorio" id="consultorio" aria-label="El consultorio">
-    <span class="sticker" style="left:1.5%;top:90px;width:84px" aria-hidden="true"><img src="assets/3e/stickers/tortuga-celeste.png" alt=""></span>
-    <span class="sticker volteado" style="right:1%;top:150px;width:104px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
-    <span class="burb" style="right:6%;top:40px;width:26px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="12" cy="48" r="8"/><circle cx="22" cy="24" r="5"/><circle cx="12" cy="7" r="3.5"/><circle class="brillo" cx="9" cy="45" r="2"/></svg></span>
-    <span class="burb lento" style="left:6%;bottom:60px;width:24px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="16" cy="50" r="7"/><circle cx="8" cy="28" r="4.5"/><circle cx="20" cy="10" r="3.5"/><circle class="brillo" cx="13" cy="47" r="1.8"/></svg></span>
+    <span class="sticker" style="left:1%;top:96px;width:190px" aria-hidden="true"><img src="assets/3e/stickers/tortuga-celeste.png" alt=""></span>
+    <span class="sticker raiz volteado" style="right:.5%;bottom:-54px;width:220px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
+    <span class="sticker raiz volteado" style="left:1.5%;bottom:-34px;width:130px" aria-hidden="true"><img src="assets/3e/stickers/algas-salmon.png" alt=""></span>
+    <span class="burb" style="right:5%;top:44px;width:46px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+    <span class="burb lento" style="left:8%;top:60px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <div class="wrap">
       <h2 class="titulo"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#E75480" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>conoce el consultorio</h2>
       <p class="bajada">Un espacio diseñado con mucho cariño para la comodidad de tus pequeños y sus familias.</p>
@@ -446,9 +453,11 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="cartelera" id="blog" aria-label="Blog">
-    <span class="burb" style="left:3%;top:50px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
-    <span class="sticker" style="right:2%;top:40px;width:92px" aria-hidden="true"><img src="assets/3e/stickers/ballena-chica.png" alt=""></span>
-    <span class="burb lento" style="right:8%;bottom:70px;width:24px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="16" cy="50" r="7"/><circle cx="8" cy="28" r="4.5"/><circle cx="20" cy="10" r="3.5"/><circle class="brillo" cx="13" cy="47" r="1.8"/></svg></span>
+    <span class="sticker" style="right:2%;top:40px;width:170px" aria-hidden="true"><img src="assets/3e/stickers/ballena-chica.png" alt=""></span>
+    <span class="sticker raiz" style="left:.8%;bottom:-44px;width:130px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
+    <span class="burb" style="left:3%;top:50px;width:48px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
+    <span class="burb lento" style="right:8%;bottom:96px;width:36px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+    <span class="burb" style="left:7%;bottom:70px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <div class="wrap">
       <h2 class="titulo"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#E75480" stroke-width="2" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4Z"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>tres funciones en cartelera</h2>
       <p class="bajada">Contenido útil y práctico para acompañarte en el día a día.</p>
@@ -465,9 +474,10 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="familias" aria-label="Testimonios">
-    <span class="sticker" style="left:1.5%;top:40px;width:72px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
-    <span class="sticker" style="right:2.5%;top:60px;width:50px" aria-hidden="true"><img src="assets/3e/stickers/estrella-naranja.png" alt=""></span>
-    <span class="burb lento" style="right:4%;bottom:60px;width:28px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="14" cy="50" r="8"/><circle cx="24" cy="26" r="5"/><circle cx="10" cy="8" r="3.5"/><circle class="brillo" cx="11" cy="47" r="2"/></svg></span>
+    <span class="sticker raiz" style="left:.8%;bottom:-54px;width:160px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
+    <span class="sticker" style="right:3%;top:50px;width:84px" aria-hidden="true"><img src="assets/3e/stickers/estrella-naranja.png" alt=""></span>
+    <span class="sticker raiz" style="right:.5%;bottom:-54px;width:200px" aria-hidden="true"><img src="assets/3e/stickers/corales-azules.png" alt=""></span>
+    <span class="burb lento" style="right:6%;top:150px;width:40px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
     <div class="wrap">
       <h2 class="titulo">lo que dicen las familias</h2>
       <div class="aplausos">
@@ -484,8 +494,9 @@ material de referencia y se validarán antes de publicar.
   </section>
 
   <section class="final" id="contacto" aria-label="Contacto">
-    <span class="sticker volteado" style="right:1%;top:30px;width:70px" aria-hidden="true"><img src="assets/3e/stickers/algas-izq.png" alt=""></span>
-    <span class="burb" style="left:2%;top:30px;width:26px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="12" cy="48" r="8"/><circle cx="22" cy="24" r="5"/><circle cx="12" cy="7" r="3.5"/><circle class="brillo" cx="9" cy="45" r="2"/></svg></span>
+    <span class="sticker raiz volteado" style="right:1%;bottom:-34px;width:140px" aria-hidden="true"><img src="assets/3e/stickers/algas-salmon.png" alt=""></span>
+    <span class="burb" style="left:2%;top:30px;width:40px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+    <span class="sticker" style="left:3%;bottom:70px;width:64px" aria-hidden="true"><img src="assets/3e/stickers/estrella-mostaza.png" alt=""></span>
     <div class="wrap">
       <div class="fila">
         <div class="foto"><img src="assets/3e/fotos/hero.jpg" alt="La doctora auscultando a un niño sonriente"></div>
