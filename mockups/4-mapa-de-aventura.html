@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 4 · Mapa de aventura — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --cielo:#AEDCF2; --cielo-alto:#8FCDEC;
+    --pradera:#E3F1C9;          /* terreno del mapa */
+    --pradera-honda:#C6E39B;
+    --bosque:#7FB63E; --bosque-tinta:#3E6B15;
+    --rio:#7EC5E8; --rio-hondo:#4A9CC9;
+    --rosa:#F16F90; --rosa-honda:#D6336C;
+    --lila:#9E8CC1; --lila-honda:#6B579E;
+    --sol:#FFC94B;
+    --tinta:#2F4418;            /* tinta de explorador, verde bosque oscuro */
+    --tinta-suave:#5C6F45;
+    --ruta:#8A5C3B;             /* camino punteado, tierra */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  ::selection{background:var(--sol);color:var(--tinta)}
+  body{
+    font-family:"Nunito",system-ui,sans-serif;
+    background:var(--pradera);color:var(--tinta);
+    font-size:17px;line-height:1.65;overflow-x:hidden;
+  }
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:var(--pradera)}
+  body::-webkit-scrollbar-thumb{background:var(--bosque);border-radius:6px;border:3px solid var(--pradera)}
+  h1,h2,h3{font-family:"Fredoka",sans-serif;font-weight:600;line-height:1.15;text-wrap:balance}
+  :focus-visible{outline:3px solid var(--rosa-honda);outline-offset:3px;border-radius:8px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;position:relative}
+  .rotulo-mapa{font-family:"Caveat",cursive;font-size:1.35rem;color:var(--tinta-suave)}
+
+  /* ---------- brújula (header) ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(227,241,201,.92);backdrop-filter:blur(6px);border-bottom:3px dashed rgba(47,68,24,.25)}
+  .nav{max-width:1080px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:16px}
+  .nav img{height:48px;width:auto}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
+  .nav a{
+    text-decoration:none;color:var(--tinta);font-weight:800;font-size:15px;
+    padding:8px 13px;border-radius:999px;transition:background .2s;
+  }
+  .nav a:hover{background:var(--pradera-honda)}
+  .nav .cta{background:var(--rosa-honda);color:#fff}
+  .nav .cta:hover{background:var(--rosa)}
+
+  /* ---------- hero: despegue ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(var(--cielo-alto), var(--cielo) 60%, #D3EBC9 100%);
+    padding:70px 0 0;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1fr .9fr;gap:30px;align-items:center;padding-bottom:110px}
+  .hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem);color:#1E3B52}
+  .hero h1 .alto{color:var(--rosa-honda)}
+  .hero .intro{font-size:1.13rem;max-width:33rem;margin:18px 0 28px;color:#2A4A63}
+  .botones{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-family:"Fredoka",sans-serif;font-weight:600;font-size:1.02rem;
+    padding:14px 26px;border-radius:999px;color:#fff;
+    box-shadow:0 10px 22px rgba(30,59,82,.25);
+    transition:transform .25s cubic-bezier(.22,1,.36,1);
+  }
+  .btn:hover{transform:translateY(-3px)}
+  .btn-whatsapp{background:var(--bosque-tinta)}
+  .btn-claro{background:#fff;color:var(--lila-honda)}
+  /* globo */
+  .globo-escena{position:relative}
+  .globo-escena svg{width:100%;height:auto;display:block}
+  .globo{animation:volar 8s ease-in-out infinite;transform-origin:center}
+  @keyframes volar{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-18px) rotate(1.4deg)}}
+  .nube-lenta{animation:nube 34s ease-in-out infinite alternate}
+  .nube-lenta-2{animation:nube 26s ease-in-out infinite alternate-reverse}
+  @keyframes nube{from{transform:translateX(0)}to{transform:translateX(70px)}}
+  .hero .costa{display:block;width:100%;margin-bottom:-2px}
+  .hero figcaption{position:absolute;bottom:16px;right:28px;font-family:"Caveat",cursive;font-size:1.2rem;color:#2A4A63}
+
+  /* ---------- ruta punteada entre paradas ---------- */
+  .tramo{position:relative;height:120px;pointer-events:none}
+  .tramo svg{position:absolute;left:50%;transform:translateX(-50%);height:120px}
+  .parada{
+    position:relative;z-index:2;display:flex;align-items:center;gap:14px;justify-content:center;
+    margin-bottom:34px;
+  }
+  .parada .hito{
+    width:56px;height:56px;border-radius:50%;background:var(--ruta);color:#FFF3E2;
+    font-family:"Fredoka",sans-serif;font-weight:700;font-size:1.35rem;
+    display:grid;place-items:center;box-shadow:0 8px 16px rgba(47,68,24,.3);
+    border:4px solid #FFF3E2;flex:none;
+  }
+  .parada .rotulo-mapa{font-size:1.6rem;color:var(--tinta)}
+
+  /* ---------- parada 1: el valle (sobre mí) ---------- */
+  .valle{position:relative;padding:26px 0 60px}
+  .valle .cuerpo-valle{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+  .valle h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:8px}
+  .valle .sub{color:var(--tinta-suave);max-width:30rem}
+  .banderines{list-style:none;display:grid;gap:18px;margin-top:6px}
+  .banderin{
+    display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:center;
+    background:#fff;border-radius:18px;padding:16px 20px;
+    box-shadow:0 10px 20px rgba(47,68,24,.14);
+    transition:transform .25s cubic-bezier(.22,1,.36,1);
+  }
+  .banderin:hover{transform:translateX(8px)}
+  .banderin .asta{width:64px;height:64px;border-radius:16px;display:grid;place-items:center}
+  .banderin h3{font-size:1.08rem}
+  .banderin p{font-size:.84rem;color:var(--tinta-suave)}
+
+  /* ---------- parada 2: campamentos (cursos) ---------- */
+  .campamentos{position:relative;padding:26px 0 70px;overflow:clip}
+  .campamentos::before{ /* río que cruza el mapa */
+    content:"";position:absolute;left:-5%;right:-5%;top:44%;height:130px;transform:rotate(-2deg);
+    background:linear-gradient(var(--rio-hondo), var(--rio) 30%, var(--rio) 70%, var(--rio-hondo));
+    border-radius:60px;opacity:.5;z-index:0;
+  }
+  .campamentos .cabeza{position:relative;text-align:center;max-width:44rem;margin:0 auto 44px;z-index:2}
+  .campamentos h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+  .campamentos .cabeza p{color:var(--tinta-suave);margin-top:8px}
+  .tiendas{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;z-index:2}
+  .tienda{
+    background:#fff;border-radius:22px;overflow:hidden;text-decoration:none;color:inherit;
+    box-shadow:0 14px 28px rgba(47,68,24,.18);
+    transition:transform .25s cubic-bezier(.22,1,.36,1);
+    display:flex;flex-direction:column;
+  }
+  .tienda:hover{transform:translateY(-8px) rotate(-.6deg)}
+  .tienda .lona{aspect-ratio:16/10}
+  .tienda .lona svg{width:100%;height:100%;display:block}
+  .tienda .texto{padding:18px 22px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .tienda h3{font-size:1.16rem}
+  .tienda p{font-size:.88rem;color:var(--tinta-suave);flex:1}
+  .tienda .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:2px dashed var(--pradera-honda);padding-top:10px}
+  .tienda .precio{font-family:"Fredoka",sans-serif;font-weight:700;color:var(--bosque-tinta)}
+  .tienda .precio small{display:block;font-family:"Nunito",sans-serif;font-weight:700;font-size:.66rem;color:var(--tinta-suave)}
+  .tienda .ver{font-weight:800;font-size:.86rem;color:var(--rosa-honda)}
+
+  /* ---------- parada 3: bosque (blog) + lago (testimonios) ---------- */
+  .bosque-lago{position:relative;padding:26px 0 70px}
+  .bosque-lago .dos{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+  .bosque-lago h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:6px}
+  .bosque-lago .sub{color:var(--tinta-suave);margin-bottom:24px}
+  .letreros{list-style:none}
+  .letreros a{
+    position:relative;display:block;text-decoration:none;color:inherit;
+    background:#FFF3E2;border-radius:12px;padding:16px 22px 14px;margin-bottom:16px;
+    box-shadow:0 8px 16px rgba(47,68,24,.15);
+    border:2px solid var(--ruta);
+    transition:transform .22s cubic-bezier(.22,1,.36,1);
+  }
+  .letreros a::before,.letreros a::after{
+    content:"";position:absolute;top:10px;width:8px;height:8px;border-radius:50%;background:var(--ruta);opacity:.7;
+  }
+  .letreros a::before{left:12px}
+  .letreros a::after{right:12px}
+  .letreros a:hover{transform:translateX(8px)}
+  .letreros h3{font-size:1.05rem}
+  .letreros a:hover h3{color:var(--rosa-honda)}
+  .letreros p{font-size:.85rem;color:var(--tinta-suave)}
+  .lago{
+    background:linear-gradient(160deg, var(--rio) 0%, var(--rio-hondo) 130%);
+    border-radius:28px;padding:30px 30px 26px;color:#0E3A52;
+    box-shadow:inset 0 4px 18px rgba(255,255,255,.35), 0 14px 28px rgba(47,68,24,.2);
+  }
+  .lago h2{color:#0E3A52}
+  .lago .sub{color:#1D5674}
+  .lago blockquote{
+    background:rgba(255,255,255,.92);border-radius:16px;padding:18px 20px 14px;margin-bottom:16px;
+    box-shadow:0 8px 16px rgba(14,58,82,.18);
+  }
+  .lago blockquote p{font-size:.96rem;color:#173A4E}
+  .lago cite{display:block;margin-top:8px;font-style:normal;font-weight:800;font-size:.8rem;color:#0E3A52}
+  .lago cite small{font-weight:600;color:#1D5674}
+
+  /* ---------- parada 4: el faro (citas) ---------- */
+  .puerto{position:relative;padding:26px 0 90px}
+  .puerto .cabeza{text-align:center;margin-bottom:44px}
+  .puerto h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+  .puerto .cabeza p{color:var(--tinta-suave);margin-top:8px}
+  .muelles{display:grid;grid-template-columns:1fr 1fr;gap:34px;max-width:880px;margin:0 auto}
+  .muelle{
+    background:#fff;border-radius:24px;padding:34px 32px;text-align:center;
+    box-shadow:0 14px 28px rgba(47,68,24,.18);
+    display:flex;flex-direction:column;align-items:center;gap:12px;
+  }
+  .muelle .faro{width:80px;height:80px;border-radius:22px;display:grid;place-items:center}
+  .muelle h3{font-size:1.35rem}
+  .muelle p{font-size:.9rem;color:var(--tinta-suave)}
+  .muelle .precio-cita{font-family:"Fredoka",sans-serif;font-weight:700;font-size:1.5rem}
+  .muelle .precio-cita small{display:block;font-family:"Nunito",sans-serif;font-weight:700;font-size:.68rem;color:var(--tinta-suave)}
+
+  /* ---------- pie: fin del mapa ---------- */
+  footer{position:relative;background:#243A0F;color:#D7E6BE;padding:64px 0 100px;overflow:hidden}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  footer img{height:78px;width:auto;margin-bottom:16px}
+  footer h2{color:#fff;font-size:1.6rem;margin-bottom:10px;font-family:"Fredoka",sans-serif}
+  footer p{font-size:.94rem;max-width:34rem}
+  footer .btn{margin-top:20px;box-shadow:0 10px 22px rgba(0,0,0,.35)}
+  footer nav ul{list-style:none;display:grid;gap:8px}
+  footer nav a{color:#BCD59A;text-decoration:none;font-weight:700}
+  footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+  .legal{border-top:1px solid rgba(255,255,255,.2);margin-top:44px;padding-top:24px;font-size:.8rem;color:#9DBB78}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    width:62px;height:62px;border-radius:50%;background:var(--bosque-tinta);
+    display:grid;place-items:center;box-shadow:0 10px 24px rgba(36,58,15,.4);
+    transition:transform .25s cubic-bezier(.22,1,.36,1);
+  }
+  .flotante:hover{transform:scale(1.12)}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+  }
+  @media (max-width:940px){
+    .hero .wrap{grid-template-columns:1fr;padding-bottom:80px}
+    .globo-escena{max-width:380px;margin:0 auto;order:-1}
+    .valle .cuerpo-valle,.bosque-lago .dos{grid-template-columns:1fr;gap:36px}
+    .tiendas{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+    .muelles{grid-template-columns:1fr}
+    footer .wrap{grid-template-columns:1fr}
+    .tramo{height:90px}
+    .nav a{padding:8px 9px;font-size:13.5px}
+  }
+</style>
+</head>
+<body>
+<!--
+THESIS: la página como mapa de aventura del crecimiento: un globo despega en el hero y la visita recorre paradas de un valle ilustrado (valle, campamentos, bosque, lago, puerto); rechaza la landing de secciones apiladas: aquí el scroll es literalmente un viaje.
+OWN-WORLD: terreno pradera #E3F1C9 con río y bosque, cielo celeste del despegue, globo de franjas rosa/verde/lila (paleta del logo), ruta punteada color tierra con hitos numerados de expedición, letreros de madera y lago azul; Fredoka redonda como rotulación de atlas infantil, Caveat para anotaciones a mano, Nunito de lectura.
+STORY: la mamá despega con el globo, visita el valle de la doctora (credenciales como banderines), acampa en los cursos, lee letreros del bosque (blog), escucha las voces del lago (testimonios) y llega al puerto a reservar su cita.
+FIRST VIEWPORT: cielo celeste con nubes lentas, globo aerostático de papel flotando con la manzana-logo en la canasta, titular Fredoka, dos CTAs y la costa del mapa asomando abajo.
+FORM: mapa de aventura — dirección fijada por el usuario en la ronda shape (reemplazo de las 4 genéricas). Los hitos numerados son paradas reales de una ruta ordenada: la secuencia lleva información del viaje.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+-->
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <a href="#inicio" aria-label="Inicio — Dra. Dalila Peñaranda"><img src="assets/logo-icon-color.png" alt="Logo: manzana con bebé — Dra. Dalila Peñaranda"></a>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="cta" href="#citas">Pedir cita</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <div class="wrap">
+      <div>
+        <h1>El viaje de crecer, <span class="alto">bien acompañado</span></h1>
+        <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. Este mapa recorre las paradas del crecimiento de tus hijos: comer, crecer y dormir — con evidencia, sin culpas, presencial o virtual desde cualquier país.</p>
+        <div class="botones">
+          <a class="btn btn-whatsapp" href="#citas">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+            Pedir cita por WhatsApp
+          </a>
+          <a class="btn btn-claro" href="#cursos">Ver los cursos</a>
+        </div>
+      </div>
+      <div class="globo-escena" aria-hidden="true">
+        <svg viewBox="0 0 420 420">
+          <g class="nube-lenta"><ellipse cx="80" cy="70" rx="46" ry="18" fill="#fff" opacity=".95"/><ellipse cx="118" cy="60" rx="34" ry="15" fill="#fff" opacity=".85"/></g>
+          <g class="nube-lenta-2"><ellipse cx="330" cy="330" rx="40" ry="16" fill="#fff" opacity=".9"/><ellipse cx="362" cy="322" rx="28" ry="12" fill="#fff" opacity=".8"/></g>
+          <!-- pájaros -->
+          <g stroke="#2A4A63" stroke-width="3" fill="none" stroke-linecap="round">
+            <path d="M50 190 q8 -8 16 0 q8 -8 16 0"/>
+            <path d="M330 110 q7 -7 14 0 q7 -7 14 0"/>
+          </g>
+          <g class="globo">
+            <!-- envoltura de franjas -->
+            <path d="M210 30 C 130 30, 92 96, 92 160 C 92 226, 150 274, 190 300 L 230 300 C 270 274, 328 226, 328 160 C 328 96, 290 30, 210 30 Z" fill="#F16F90"/>
+            <path d="M210 30 C 170 30, 148 96, 148 160 C 148 226, 176 274, 196 300 L 210 300 Z" fill="#9E8CC1"/>
+            <path d="M210 30 C 250 30, 272 96, 272 160 C 272 226, 244 274, 224 300 L 210 300 Z" fill="#87C440"/>
+            <path d="M210 30 C 196 30, 188 96, 188 160 C 188 226, 198 274, 205 300 L 215 300 C 222 274, 232 226, 232 160 C 232 96, 224 30, 210 30 Z" fill="#FFC94B"/>
+            <!-- cuerdas y canasta -->
+            <path d="M190 300 L 196 344 M 230 300 L 224 344" stroke="#8A5C3B" stroke-width="4" stroke-linecap="round"/>
+            <rect x="186" y="342" width="48" height="40" rx="9" fill="#8A5C3B"/>
+            <rect x="186" y="342" width="48" height="12" rx="6" fill="#6E4223"/>
+            <!-- la manzana-logo asomada en la canasta -->
+            <circle cx="210" cy="336" r="26" fill="#fff"/>
+            <image href="assets/logo-icon-color.png" x="190" y="314" width="40" height="44" preserveAspectRatio="xMidYMid meet"/>
+          </g>
+        </svg>
+        <figcaption class="rotulo-mapa" style="position:static;text-align:center">aquí volará la foto de la doctora</figcaption>
+      </div>
+    </div>
+    <svg class="costa" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C 200 20 420 24 640 52 C 880 82 1160 30 1440 54 L1440 90 L0 90 Z" fill="#E3F1C9"/>
+    </svg>
+  </section>
+
+  <div class="tramo" aria-hidden="true">
+    <svg viewBox="0 0 200 120" width="200">
+      <path d="M100 0 C 60 40, 140 80, 100 120" fill="none" stroke="#8A5C3B" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <section class="valle" id="sobre-mi" aria-label="Sobre mí">
+    <div class="wrap">
+      <div class="parada"><span class="hito" aria-hidden="true">1</span><span class="rotulo-mapa">El Valle de la Doctora</span></div>
+      <div class="cuerpo-valle">
+        <div>
+          <h2>Quien guía la expedición</h2>
+          <p class="sub">Pediatra y especialista en nutrición infantil: las dos preguntas de toda familia — cómo crece y cómo come — en una sola consulta. (Credenciales de ejemplo, por entregar.)</p>
+        </div>
+        <ul class="banderines">
+          <li class="banderin">
+            <span class="asta" style="background:#FBD9E2" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="5" y="12" width="26" height="18" rx="5" stroke="#D6336C" stroke-width="2.8"/><path d="M13 12V9.5A3.5 3.5 0 0 1 16.5 6h3A3.5 3.5 0 0 1 23 9.5V12" stroke="#D6336C" stroke-width="2.8"/><path d="M18 17v7M14.5 20.5h7" stroke="#D6336C" stroke-width="2.8" stroke-linecap="round"/></svg>
+            </span>
+            <div><h3>Médica pediatra</h3><p>Universidad por confirmar · ejemplo</p></div>
+          </li>
+          <li class="banderin">
+            <span class="asta" style="background:#E4F3D2" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 31c-6.6 0-10.8-4.5-10.8-9.7 0-4.5 3.3-7.2 7.2-7.2 1.7 0 2.5.4 3.6.9 1.1-.5 1.9-.9 3.6-.9 3.9 0 7.2 2.7 7.2 7.2C28.8 26.5 24.6 31 18 31Z" stroke="#4C8A1F" stroke-width="2.8"/><path d="M18 13c0-3 1.8-5.7 5.2-6.7-.6 3.4-2 5.7-5.2 6.7Z" fill="#4C8A1F"/></svg>
+            </span>
+            <div><h3>Nutrición infantil</h3><p>Especialización por confirmar · ejemplo</p></div>
+          </li>
+          <li class="banderin">
+            <span class="asta" style="background:#ECE7F5" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="12.5" stroke="#6B579E" stroke-width="2.8"/><path d="M5.5 18h25M18 5.5c3.4 3.2 5.2 7.5 5.2 12.5S21.4 27.3 18 30.5c-3.4-3.2-5.2-7.5-5.2-12.5S14.6 8.7 18 5.5Z" stroke="#6B579E" stroke-width="2.8"/></svg>
+            </span>
+            <div><h3>Consulta a varios países</h3><p>Virtual, en horarios coordinados por WhatsApp</p></div>
+          </li>
+          <li class="banderin">
+            <span class="asta" style="background:#FFF1C4" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 5l3.8 7.8 8.6 1.2-6.2 6.1 1.5 8.6L18 24.6l-7.7 4.1 1.5-8.6-6.2-6.1 8.6-1.2L18 5Z" stroke="#B98A00" stroke-width="2.8" stroke-linejoin="round"/></svg>
+            </span>
+            <div><h3>Sociedades científicas</h3><p>Afiliaciones por confirmar · ejemplo</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="tramo" aria-hidden="true">
+    <svg viewBox="0 0 200 120" width="200">
+      <path d="M100 0 C 150 40, 50 80, 100 120" fill="none" stroke="#8A5C3B" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <section class="campamentos" id="cursos" aria-label="Cursos">
+    <div class="wrap">
+      <div class="parada"><span class="hito" aria-hidden="true">2</span><span class="rotulo-mapa">Los Tres Campamentos</span></div>
+      <div class="cabeza">
+        <h2>Cursos para acampar a tu ritmo</h2>
+        <p>Clases en video desde cualquier país; la compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
+      </div>
+      <div class="tiendas">
+        <a class="tienda" href="#cursos">
+          <span class="lona" aria-hidden="true">
+            <svg viewBox="0 0 320 200">
+              <rect width="320" height="200" fill="#C6E39B"/>
+              <path d="M0 168 Q 90 146 180 162 T 320 158 V200 H0 Z" fill="#7FB63E"/>
+              <path d="M160 44 L 236 168 H 84 Z" fill="#F16F90"/>
+              <path d="M160 44 L 196 168 H 124 Z" fill="#D6336C"/>
+              <path d="M160 92 L 182 168 H 138 Z" fill="#FFF3E2"/>
+              <circle cx="58" cy="52" r="18" fill="#FFC94B"/>
+              <path d="M262 120 l16 -26 16 26 Z" fill="#3E6B15"/><rect x="274" y="120" width="8" height="14" fill="#8A5C3B"/>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>Alimentación complementaria sin miedo</h3>
+            <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+            <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+        <a class="tienda" href="#cursos">
+          <span class="lona" aria-hidden="true">
+            <svg viewBox="0 0 320 200">
+              <rect width="320" height="200" fill="#FFE9B8"/>
+              <path d="M0 170 Q 100 148 200 164 T 320 160 V200 H0 Z" fill="#E8B54B"/>
+              <path d="M160 40 L 240 170 H 80 Z" fill="#87C440"/>
+              <path d="M160 40 L 200 170 H 120 Z" fill="#4C8A1F"/>
+              <path d="M160 92 L 184 170 H 136 Z" fill="#FFF3E2"/>
+              <g stroke="#8A5C3B" stroke-width="5" stroke-linecap="round"><path d="M52 150 l20 -18M52 132 l20 18"/></g>
+              <circle cx="62" cy="120" r="10" fill="#D6336C"/>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>La lonchera que sí se comen</h3>
+            <p>Menús escolares prácticos, económicos y sin peleas.</p>
+            <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+        <a class="tienda" href="#cursos">
+          <span class="lona" aria-hidden="true">
+            <svg viewBox="0 0 320 200">
+              <rect width="320" height="200" fill="#3B2C5F"/>
+              <path d="M0 172 Q 100 152 200 166 T 320 162 V200 H0 Z" fill="#6B579E"/>
+              <path d="M160 48 L 238 172 H 82 Z" fill="#9E8CC1"/>
+              <path d="M160 48 L 198 172 H 122 Z" fill="#7B67AD"/>
+              <path d="M160 98 L 182 172 H 138 Z" fill="#FFE9B8"/>
+              <circle cx="244" cy="54" r="24" fill="#FFE9B8"/>
+              <path d="M252 34 a24 24 0 1 0 14 40 19 19 0 0 1 -14 -40Z" fill="#B4A1D8"/>
+              <g fill="#fff"><circle cx="54" cy="44" r="3.4"/><circle cx="92" cy="26" r="2.6"/><circle cx="36" cy="86" r="2.6"/></g>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>Dormir bien desde bebés</h3>
+            <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+            <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="tramo" aria-hidden="true">
+    <svg viewBox="0 0 200 120" width="200">
+      <path d="M100 0 C 60 40, 140 80, 100 120" fill="none" stroke="#8A5C3B" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <section class="bosque-lago" id="blog" aria-label="Blog y testimonios">
+    <div class="wrap">
+      <div class="parada"><span class="hito" aria-hidden="true">3</span><span class="rotulo-mapa">El Bosque de los Cuentos y el Lago de las Voces</span></div>
+      <div class="dos">
+          <div>
+            <h2>Letreros del bosque</h2>
+            <p class="sub">El blog gratuito de la doctora. (Títulos de ejemplo.)</p>
+            <ul class="letreros">
+              <li><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a></li>
+              <li><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a></li>
+              <li><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a></li>
+            </ul>
+          </div>
+          <div class="lago" aria-label="Testimonios">
+            <h2>Voces del lago</h2>
+            <p class="sub">Testimonios ilustrativos — se reemplazarán por reales.</p>
+            <blockquote>
+              <p>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</p>
+              <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
+            </blockquote>
+            <blockquote>
+              <p>«La consulta virtual fue igual de cercana, desde otro país.»</p>
+              <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
+            </blockquote>
+            <blockquote>
+              <p>«El curso de alimentación me quitó el miedo. Ciencia con paciencia.»</p>
+              <cite>Laura P. <small>· mamá de Antonia, 8 meses · ejemplo</small></cite>
+            </blockquote>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="tramo" aria-hidden="true">
+    <svg viewBox="0 0 200 120" width="200">
+      <path d="M100 0 C 150 40, 50 80, 100 120" fill="none" stroke="#8A5C3B" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <section class="puerto" id="citas" aria-label="Citas">
+    <div class="wrap">
+      <div class="parada"><span class="hito" aria-hidden="true">4</span><span class="rotulo-mapa">El Puerto de las Citas</span></div>
+      <div class="cabeza">
+        <h2>Fin del viaje: tu cita</h2>
+        <p>Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
+      </div>
+      <div class="muelles">
+        <div class="muelle">
+          <span class="faro" style="background:#E4F3D2" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M22 40S8 30.4 8 19.6a14 14 0 0 1 28 0C36 30.4 22 40 22 40Z" stroke="#4C8A1F" stroke-width="3"/><circle cx="22" cy="19" r="5" stroke="#4C8A1F" stroke-width="3"/></svg>
+          </span>
+          <h3>Presencial</h3>
+          <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
+          <span class="precio-cita">$180.000 COP<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20presencial" rel="noopener">Agendar por WhatsApp</a>
+        </div>
+        <div class="muelle">
+          <span class="faro" style="background:#D6EEF9" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><rect x="5" y="11" width="24" height="19" rx="4" stroke="#1D5674" stroke-width="3"/><path d="M29 18l10-5.5v15L29 22" stroke="#1D5674" stroke-width="3" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Virtual</h3>
+          <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+          <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20virtual" rel="noopener">Agendar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <h2>El campamento base</h2>
+      <p>Citas por WhatsApp; lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y las redes sociales.</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/570000000000" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="https://wa.me/570000000000" aria-label="Abrir WhatsApp" rel="noopener">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+</a>
+</body>
+</html>

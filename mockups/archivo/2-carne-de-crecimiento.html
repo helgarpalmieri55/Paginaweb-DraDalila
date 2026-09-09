@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 2 · Carné de crecimiento — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --consulta:#CDE6D2;        /* verde sala de espera, el color del carné */
+    --consulta-honda:#9CCBA8;
+    --papel:#FEFDF9;           /* ficha blanca */
+    --tinta:#173F33;           /* tinta clínica verde-carbón */
+    --tinta-media:#3D6B58;
+    --sello:#D6336C;           /* tinta de caucho rosa */
+    --lila:#7869AF;
+    --verde:#5E9A28;
+    --regla:#B8D4BE;           /* rayado de la ficha */
+    --amarillo-tab:#F4C542;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--sello);color:#fff}
+  body{
+    font-family:"Archivo",system-ui,sans-serif;
+    background:var(--consulta);
+    background-image:radial-gradient(rgba(23,63,51,.05) 1px, transparent 1px);
+    background-size:22px 22px;
+    color:var(--tinta);
+    font-size:16.5px;line-height:1.6;
+  }
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:var(--consulta)}
+  body::-webkit-scrollbar-thumb{background:var(--tinta-media);border-radius:0}
+  h1,h2,h3{line-height:1.12;text-wrap:balance}
+  :focus-visible{outline:3px solid var(--sello);outline-offset:2px}
+  .mono{font-family:"Courier Prime",monospace}
+  .mano{font-family:"Caveat",cursive}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+  /* ---------- header: la carátula del carné ---------- */
+  header{
+    background:var(--tinta);color:#EAF3EC;
+    border-bottom:6px double var(--consulta-honda);
+    position:sticky;top:0;z-index:50;
+  }
+  .nav{max-width:1060px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:18px}
+  .nav img{height:44px;width:auto}
+  .nav .quien{font-weight:700;font-size:.95rem;letter-spacing:.02em}
+  .nav .quien small{display:block;font-weight:500;font-size:.72rem;color:#A9C9B4}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
+  .nav a{color:#EAF3EC;text-decoration:none;font-size:.85rem;font-weight:600;padding:7px 11px;border:1px solid transparent}
+  .nav a:hover{border-color:#EAF3EC}
+  .nav .cta{background:var(--sello);border-color:var(--sello)}
+
+  /* ---------- ficha base ---------- */
+  .ficha{
+    background:var(--papel);
+    border:1.5px solid var(--tinta);
+    box-shadow:5px 9px 22px rgba(23,63,51,.22);
+    position:relative;
+  }
+  .ficha-cabecera{
+    display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+    border-bottom:1.5px solid var(--tinta);
+    padding:10px 18px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  }
+  .ficha-cabecera .folio{font-family:"Courier Prime",monospace;letter-spacing:0;text-transform:none;font-weight:400;color:var(--tinta-media)}
+
+  /* ---------- hero: el carné abierto ---------- */
+  .hero{padding:56px 0 64px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}
+  .hero h1{
+    font-weight:900;font-size:clamp(2rem,4.6vw,3.4rem);
+    text-transform:uppercase;letter-spacing:.01em;margin:6px 0 14px;
+  }
+  .hero h1 em{font-style:normal;color:var(--sello)}
+  .hero .presenta{padding:26px 30px 30px}
+  .hero .presenta > p{max-width:32rem;margin-bottom:22px;color:var(--tinta-media)}
+  .campos{border-top:1.5px dashed var(--regla);padding-top:18px;display:grid;gap:10px;margin-bottom:26px}
+  .campo{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:baseline;font-size:.8rem}
+  .campo dt{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.68rem;color:var(--tinta-media)}
+  .campo dd{font-family:"Courier Prime",monospace;border-bottom:1px solid var(--regla);padding-bottom:3px;font-size:.95rem}
+  .acciones{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-weight:700;font-size:.95rem;padding:13px 22px;
+    border:1.5px solid var(--tinta);
+    transition:transform .18s ease-out, box-shadow .18s ease-out;
+    box-shadow:2px 4px 10px rgba(23,63,51,.28);
+  }
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:4px 7px 14px rgba(23,63,51,.32)}
+  .btn:active{transform:translate(1px,1px);box-shadow:1px 2px 6px rgba(23,63,51,.3)}
+  .btn-sello{background:var(--sello);border-color:#A02050;color:#fff}
+  .btn-linea{background:var(--papel);color:var(--tinta)}
+  .sello-tampon{
+    position:absolute;top:-16px;right:22px;transform:rotate(7deg);
+    font-weight:900;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--sello);border:3px solid var(--sello);border-radius:6px;
+    padding:6px 12px;background:rgba(254,253,249,.9);
+    mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40'%3E%3Crect width='120' height='40' fill='white'/%3E%3C/svg%3E");
+  }
+
+  /* curva de crecimiento */
+  .curva{padding:22px 24px 26px}
+  .curva h2{font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
+  .curva .mono{font-size:.75rem;color:var(--tinta-media)}
+  .curva svg{width:100%;height:auto;margin-top:14px}
+  .leyenda{display:flex;gap:18px;font-size:.72rem;margin-top:10px;color:var(--tinta-media)}
+  .leyenda span{display:inline-flex;align-items:center;gap:6px}
+  .muestra{width:22px;height:0;border-top:3px solid}
+
+  /* ---------- controles = secciones del sitio ---------- */
+  .controles{padding:8px 0 70px}
+  .control{margin-top:52px}
+  .control .ficha{overflow:hidden}
+  .tab{
+    position:absolute;top:22px;left:-13px;
+    writing-mode:vertical-rl;transform:rotate(180deg);
+    font-size:.66rem;font-weight:900;letter-spacing:.22em;text-transform:uppercase;
+    padding:14px 5px;color:var(--tinta);
+  }
+  .cuerpo{padding:30px 34px 36px 44px}
+  .control h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:900;text-transform:uppercase;margin-bottom:6px}
+  .control .sub{color:var(--tinta-media);max-width:40rem;margin-bottom:28px;font-size:.95rem}
+
+  /* cursos: renglones de formulario */
+  .renglones{border:1.5px solid var(--tinta)}
+  .renglon{
+    display:grid;grid-template-columns:56px 1fr auto auto;align-items:center;gap:18px;
+    padding:18px 20px;border-top:1.5px solid var(--regla);
+    transition:background .15s ease-out;
+  }
+  .renglon:first-child{border-top:0}
+  .renglon:hover{background:#F4FAF0}
+  .renglon .check{
+    width:30px;height:30px;border:2px solid var(--tinta);display:grid;place-items:center;
+  }
+  .renglon .check svg{opacity:0;transition:opacity .2s}
+  .renglon:hover .check svg{opacity:1}
+  .renglon h3{font-size:1.06rem;font-weight:700}
+  .renglon .detalle{font-family:"Courier Prime",monospace;font-size:.8rem;color:var(--tinta-media)}
+  .renglon .valor{font-family:"Courier Prime",monospace;font-weight:700;font-size:.95rem;text-align:right}
+  .renglon .valor small{display:block;font-size:.66rem;font-weight:400;color:var(--tinta-media)}
+  .renglon .ir{
+    text-decoration:none;font-weight:700;font-size:.8rem;color:var(--sello);
+    border-bottom:2px solid transparent;
+  }
+  .renglon .ir:hover{border-bottom-color:var(--sello)}
+  .nota-hotmart{font-family:"Courier Prime",monospace;font-size:.75rem;color:var(--tinta-media);margin-top:12px}
+
+  /* blog: recetario */
+  .dos-columnas{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+  .articulo{padding:16px 0;border-bottom:1.5px dashed var(--regla)}
+  .articulo:first-of-type{border-top:1.5px dashed var(--regla)}
+  .articulo a{display:block;text-decoration:none;color:var(--tinta)}
+  .articulo .fecha{font-family:"Courier Prime",monospace;font-size:.72rem;color:var(--tinta-media)}
+  .articulo h3{font-size:1.1rem;margin:2px 0 4px}
+  .articulo a:hover h3{color:var(--sello)}
+  .articulo p{font-size:.88rem;color:var(--tinta-media)}
+  .rx{
+    background:var(--papel);border:1.5px solid var(--tinta);box-shadow:5px 9px 22px rgba(23,63,51,.22);
+    padding:26px 28px;position:relative;
+  }
+  .rx .mano{font-size:1.9rem;color:var(--lila);line-height:1.2;margin:10px 0 4px}
+  .rx .firma{text-align:right;margin-top:18px}
+  .rx .firma .mano{font-size:1.5rem;color:var(--tinta)}
+  .rx .firma small{display:block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-media)}
+
+  /* testimonios: notas grapadas */
+  .notas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .nota{
+    background:#FFFDF2;border:1px solid #E3DAB4;
+    padding:24px 22px 20px;position:relative;
+    box-shadow:3px 7px 16px rgba(23,63,51,.16);
+  }
+  .nota:nth-child(1){transform:rotate(-1.2deg)}
+  .nota:nth-child(2){transform:rotate(.8deg)}
+  .nota:nth-child(3){transform:rotate(-.5deg)}
+  .nota::before{
+    content:"";position:absolute;top:-9px;left:50%;width:34px;height:12px;margin-left:-17px;
+    background:var(--consulta-honda);border:1px solid var(--tinta-media);
+  }
+  .nota p{font-family:"Caveat",cursive;font-size:1.45rem;line-height:1.3;color:#2B2417}
+  .nota cite{display:block;margin-top:12px;font-style:normal;font-size:.78rem;font-weight:700}
+  .nota cite small{font-weight:400;color:var(--tinta-media)}
+
+  /* citas: la casilla de próxima cita */
+  .cita-grande .cuerpo{display:grid;grid-template-columns:1fr 1fr;gap:0}
+  .modalidad{padding:30px 34px}
+  .modalidad + .modalidad{border-left:1.5px dashed var(--regla)}
+  .modalidad h3{font-size:1.2rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:10px}
+  .modalidad ul{list-style:none;margin:16px 0 20px;display:grid;gap:8px;font-size:.9rem}
+  .modalidad li{display:flex;gap:10px;align-items:baseline}
+  .modalidad li::before{content:"—";color:var(--sello);font-weight:700}
+  .modalidad .valor-cita{font-family:"Courier Prime",monospace;font-size:1.35rem;font-weight:700}
+  .modalidad .valor-cita small{display:block;font-size:.68rem;font-weight:400;color:var(--tinta-media)}
+  .modalidad .btn{margin-top:18px}
+
+  /* ---------- pie ---------- */
+  footer{background:var(--tinta);color:#D7E7DC;padding:56px 0 90px;margin-top:26px}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  footer img{height:74px;width:auto;margin-bottom:16px}
+  footer h2{color:#fff;font-size:1.5rem;font-weight:900;text-transform:uppercase;margin-bottom:10px}
+  footer p{font-size:.92rem;max-width:34rem}
+  footer .btn{border-color:#0E2A21;margin-top:20px}
+  footer nav ul{list-style:none;display:grid;gap:6px}
+  footer nav a{color:#B9D4C1;text-decoration:none;font-weight:600;font-size:.92rem}
+  footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+  .legal{border-top:1px solid rgba(255,255,255,.2);margin-top:40px;padding-top:22px;font-size:.76rem;color:#9DBBA7;font-family:"Courier Prime",monospace}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    width:60px;height:60px;background:var(--sello);border:2px solid #A02050;
+    display:grid;place-items:center;box-shadow:3px 6px 14px rgba(23,63,51,.35);
+    transition:transform .18s ease-out;
+  }
+  .flotante:hover{transform:translate(-2px,-2px)}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{transition-duration:.01ms !important;animation:none !important}
+    html{scroll-behavior:auto}
+  }
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr}
+    .dos-columnas{grid-template-columns:1fr}
+    .notas{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+    .cita-grande .cuerpo{grid-template-columns:1fr}
+    .modalidad + .modalidad{border-left:0;border-top:1.5px dashed var(--regla)}
+    footer .wrap{grid-template-columns:1fr}
+    .tab{display:none}
+    .cuerpo{padding:26px 22px 30px}
+    .renglon{grid-template-columns:1fr auto;grid-template-rows:auto auto}
+    .renglon .check{display:none}
+    .renglon .ir{grid-column:1 / -1}
+    .campo{grid-template-columns:1fr;gap:2px}
+  }
+</style>
+</head>
+<body>
+<!--
+THESIS: la página de inicio como el objeto más querido de la pediatría colombiana: el carné de crecimiento y desarrollo, elevado a sitio web; rechaza el hero genérico de clínica con foto y degradado.
+OWN-WORLD: verde sala-de-espera con trama de puntos, fichas de papel con borde de tinta y sombra dura de imprenta, sellos de caucho rosa, datos mecanografiados en Courier, notas a mano en Caveat; Archivo en mayúsculas como grotesca de formulario oficial.
+STORY: la mamá reconoce el carné de su hijo, sonríe, ve la curva de crecimiento, entiende que aquí llevan el control con rigor y cariño, y "sella" su próxima cita por WhatsApp.
+FIRST VIEWPORT: carné abierto en dos fichas: izquierda la presentación con campos mecanografiados y botón-sello de WhatsApp; derecha la curva de percentiles con la línea rosa del paciente.
+FORM: carné de crecimiento/vacunación — candidato 2 de la lista propia; disciplina de cupones y estados sellados donada por el challenger jet-age-ticket-wallet (declined: pierde identificación de audiencia y claridad de producto, dona su honestidad estructural de formulario). Seed b7c87a62.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+-->
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <img src="assets/logo-icon-white.png" alt="Logo: manzana con bebé">
+    <span class="quien">Dra. Dalila Peñaranda<small>Pediatría y Nutrición · Carné de crecimiento</small></span>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="cta" href="#citas">Sacar cita</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <div class="wrap">
+      <div class="ficha">
+        <span class="sello-tampon" aria-hidden="true">Control al día</span>
+        <div class="ficha-cabecera">
+          <span>Carné de crecimiento y desarrollo</span>
+          <span class="folio">Ficha Nº 001 · pág. 1</span>
+        </div>
+        <div class="presenta">
+          <h1>Cada niño lleva <em>su propia curva</em></h1>
+          <p>Soy la Dra. Dalila Peñaranda, pediatra y especialista en nutrición infantil. Llevo el control del crecimiento, la alimentación y el desarrollo de tus hijos como se llevan los carnés que guardamos toda la vida: con rigor, con historia y con cariño.</p>
+          <dl class="campos">
+            <div class="campo"><dt>Profesional</dt><dd>Dra. Dalila Peñaranda — "Doc Daly"</dd></div>
+            <div class="campo"><dt>Especialidad</dt><dd>Pediatría · Nutrición infantil</dd></div>
+            <div class="campo"><dt>Modalidades</dt><dd>Presencial (consultorio) · Virtual (todo el mundo)</dd></div>
+            <div class="campo"><dt>Registro</dt><dd>Credenciales y títulos por entregar (ejemplo)</dd></div>
+          </dl>
+          <div class="acciones">
+            <a class="btn btn-sello" href="#citas">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+              Sacar cita por WhatsApp
+            </a>
+            <a class="btn btn-linea" href="#cursos">Ver los cursos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ficha curva" role="img" aria-label="Gráfica de ejemplo: curva de peso por edad con percentiles 3, 50 y 97, y la curva del paciente entre ambos">
+        <h2>Peso para la edad · 0–24 meses</h2>
+        <span class="mono">Estándares OMS · gráfica ilustrativa</span>
+        <svg viewBox="0 0 520 340" aria-hidden="true">
+          <defs>
+            <clipPath id="area"><rect x="52" y="18" width="446" height="270"/></clipPath>
+          </defs>
+          <!-- retícula -->
+          <g stroke="#DCE9DF" stroke-width="1">
+            <path d="M52 18V288M126 18V288M200 18V288M274 18V288M348 18V288M422 18V288M496 18V288"/>
+            <path d="M52 18H498M52 63H498M52 108H498M52 153H498M52 198H498M52 243H498M52 288H498"/>
+          </g>
+          <!-- banda p3–p97 -->
+          <g clip-path="url(#area)">
+            <path d="M52 268 C 160 210, 300 150, 498 96 L498 190 C 300 232, 160 262, 52 284 Z" fill="#CDE6D2" opacity=".55"/>
+            <path d="M52 268 C 160 210, 300 150, 498 96" fill="none" stroke="#9CCBA8" stroke-width="2"/>
+            <path d="M52 284 C 160 262, 300 232, 498 190" fill="none" stroke="#9CCBA8" stroke-width="2"/>
+            <path d="M52 276 C 160 236, 300 190, 498 143" fill="none" stroke="#3D6B58" stroke-width="2" stroke-dasharray="6 5"/>
+            <!-- curva del paciente -->
+            <path d="M52 280 C 130 250, 210 214, 290 192 C 360 174, 430 162, 486 150" fill="none" stroke="#D6336C" stroke-width="4" stroke-linecap="round"/>
+            <g fill="#D6336C" stroke="#FEFDF9" stroke-width="2">
+              <circle cx="52" cy="280" r="5"/><circle cx="170" cy="234" r="5"/><circle cx="290" cy="192" r="5"/><circle cx="400" cy="168" r="5"/><circle cx="486" cy="150" r="5"/>
+            </g>
+          </g>
+          <!-- ejes -->
+          <g font-family="'Courier Prime',monospace" font-size="11" fill="#3D6B58">
+            <text x="52" y="306" text-anchor="middle">0m</text>
+            <text x="126" y="306" text-anchor="middle">4m</text>
+            <text x="200" y="306" text-anchor="middle">8m</text>
+            <text x="274" y="306" text-anchor="middle">12m</text>
+            <text x="348" y="306" text-anchor="middle">16m</text>
+            <text x="422" y="306" text-anchor="middle">20m</text>
+            <text x="496" y="306" text-anchor="middle">24m</text>
+            <text x="44" y="292" text-anchor="end">3kg</text>
+            <text x="44" y="202" text-anchor="end">8kg</text>
+            <text x="44" y="112" text-anchor="end">13kg</text>
+            <text x="44" y="24" text-anchor="end">18kg</text>
+          </g>
+          <g font-family="'Courier Prime',monospace" font-size="11">
+            <text x="470" y="90" fill="#3D6B58">p97</text>
+            <text x="470" y="137" fill="#3D6B58">p50</text>
+            <text x="470" y="205" fill="#3D6B58">p3</text>
+          </g>
+          <text x="330" y="330" font-family="'Courier Prime',monospace" font-size="11" fill="#3D6B58">edad →</text>
+        </svg>
+        <div class="leyenda">
+          <span><span class="muestra" style="border-color:#D6336C"></span> tu hijo/a (ejemplo)</span>
+          <span><span class="muestra" style="border-color:#3D6B58;border-top-style:dashed"></span> mediana OMS</span>
+          <span><span class="muestra" style="border-color:#9CCBA8"></span> percentiles 3–97</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="controles wrap">
+
+    <section class="control" id="sobre-mi" aria-label="Sobre mí">
+      <div class="ficha">
+        <span class="tab" style="background:var(--amarillo-tab)" aria-hidden="true">Sobre mí</span>
+        <div class="ficha-cabecera"><span>Control Nº 1 · La profesional</span><span class="folio">pág. 2</span></div>
+        <div class="cuerpo dos-columnas">
+          <div>
+            <h2>Trayectoria y enfoque</h2>
+            <p class="sub">Formación, títulos y afiliaciones (datos de ejemplo, por entregar):</p>
+            <dl class="campos">
+              <div class="campo"><dt>Medicina</dt><dd>Universidad por confirmar</dd></div>
+              <div class="campo"><dt>Pediatría</dt><dd>Especialización por confirmar</dd></div>
+              <div class="campo"><dt>Nutrición</dt><dd>Especialización por confirmar</dd></div>
+              <div class="campo"><dt>Afiliaciones</dt><dd>Sociedades científicas por confirmar</dd></div>
+              <div class="campo"><dt>Consultorio</dt><dd>Ciudad y dirección por confirmar</dd></div>
+            </dl>
+          </div>
+          <div class="rx">
+            <div class="ficha-cabecera" style="border:0;padding:0 0 8px"><span>Indicación permanente</span></div>
+            <p class="mano">«Comer bien no es un castigo ni una batalla: es un hábito que se siembra en casa, un bocado a la vez.»</p>
+            <div class="firma">
+              <span class="mano">Doc Daly</span>
+              <small>Pediatría y Nutrición</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="control" id="cursos" aria-label="Cursos">
+      <div class="ficha">
+        <span class="tab" style="background:var(--consulta-honda)" aria-hidden="true">Cursos</span>
+        <div class="ficha-cabecera"><span>Control Nº 2 · Esquema de cursos</span><span class="folio">pág. 3</span></div>
+        <div class="cuerpo">
+          <h2>Cursos aplicados</h2>
+          <p class="sub">Como un esquema de vacunas, pero de hábitos: cursos en video para ver a tu ritmo. La compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
+          <div class="renglones">
+            <article class="renglon">
+              <span class="check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9.5 7 13.5 15 4.5" fill="none" stroke="#5E9A28" stroke-width="3" stroke-linecap="round"/></svg></span>
+              <div>
+                <h3>Alimentación complementaria sin miedo</h3>
+                <span class="detalle">6–12 meses · 8 lecciones · 2h 30m</span>
+              </div>
+              <span class="valor">$149.000<small>COP · ejemplo</small></span>
+              <a class="ir" href="#cursos" aria-label="Ver curso: Alimentación complementaria sin miedo">Ver curso →</a>
+            </article>
+            <article class="renglon">
+              <span class="check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9.5 7 13.5 15 4.5" fill="none" stroke="#5E9A28" stroke-width="3" stroke-linecap="round"/></svg></span>
+              <div>
+                <h3>La lonchera que sí se comen</h3>
+                <span class="detalle">Etapa escolar · 6 lecciones · 1h 45m</span>
+              </div>
+              <span class="valor">$119.000<small>COP · ejemplo</small></span>
+              <a class="ir" href="#cursos" aria-label="Ver curso: La lonchera que sí se comen">Ver curso →</a>
+            </article>
+            <article class="renglon">
+              <span class="check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9.5 7 13.5 15 4.5" fill="none" stroke="#5E9A28" stroke-width="3" stroke-linecap="round"/></svg></span>
+              <div>
+                <h3>Dormir bien desde bebés</h3>
+                <span class="detalle">0–24 meses · 5 lecciones · 1h 20m</span>
+              </div>
+              <span class="valor">$99.000<small>COP · ejemplo</small></span>
+              <a class="ir" href="#cursos" aria-label="Ver curso: Dormir bien desde bebés">Ver curso →</a>
+            </article>
+          </div>
+          <p class="nota-hotmart">* El botón de compra enlaza a Hotmart; el pago y el acceso se gestionan allí.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="control" id="blog" aria-label="Blog">
+      <div class="ficha">
+        <span class="tab" style="background:#E8B4C8" aria-hidden="true">Blog</span>
+        <div class="ficha-cabecera"><span>Control Nº 3 · Notas de consulta</span><span class="folio">pág. 4</span></div>
+        <div class="cuerpo dos-columnas">
+          <div>
+            <h2>El blog, gratis</h2>
+            <p class="sub">Respuestas claras a las preguntas de toda consulta, publicadas por la doctora. (Títulos de ejemplo.)</p>
+            <article class="articulo">
+              <a href="#blog">
+                <span class="fecha">12 · agosto · 2026</span>
+                <h3>¿Cuánto debe comer un niño de 2 años?</h3>
+                <p>Porciones reales, apetito variable y señales de alarma.</p>
+              </a>
+            </article>
+            <article class="articulo">
+              <a href="#blog">
+                <span class="fecha">29 · julio · 2026</span>
+                <h3>Hierro: el mineral que más falta</h3>
+                <p>Dónde está, cómo se absorbe y cuándo suplementar.</p>
+              </a>
+            </article>
+            <article class="articulo">
+              <a href="#blog">
+                <span class="fecha">15 · julio · 2026</span>
+                <h3>Fiebre: cuándo observar y cuándo consultar</h3>
+                <p>Guía tranquila para noches intranquilas.</p>
+              </a>
+            </article>
+          </div>
+          <div>
+            <h2 style="font-size:1.1rem;letter-spacing:.1em">Testimonios</h2>
+            <p class="sub" style="margin-bottom:20px">Notas de las familias (ilustrativas, se reemplazarán por reales):</p>
+            <div class="notas" style="grid-template-columns:1fr;gap:20px">
+              <blockquote class="nota">
+                <p>“Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!”</p>
+                <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
+              </blockquote>
+              <blockquote class="nota">
+                <p>“La consulta virtual fue igual de cercana. Nos atendió desde otro país.”</p>
+                <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="control cita-grande" id="citas" aria-label="Citas">
+      <div class="ficha">
+        <span class="tab" style="background:var(--amarillo-tab)" aria-hidden="true">Citas</span>
+        <div class="ficha-cabecera"><span>Control Nº 4 · Próxima cita</span><span class="folio">pág. 5</span></div>
+        <div class="cuerpo">
+          <div class="modalidad">
+            <h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-5.2-7.5-11a7.5 7.5 0 0 1 15 0c0 5.8-7.5 11-7.5 11Z" stroke="#173F33" stroke-width="2"/><circle cx="12" cy="9.6" r="2.6" stroke="#173F33" stroke-width="2"/></svg>
+              Presencial
+            </h3>
+            <ul>
+              <li>Valoración completa de pediatría y nutrición</li>
+              <li>Consultorio: ciudad y dirección por confirmar</li>
+              <li>Incluye plan de alimentación por escrito</li>
+            </ul>
+            <span class="valor-cita">$180.000 COP<small>precio de ejemplo</small></span><br>
+            <a class="btn btn-sello" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20presencial" rel="noopener">Sacar cita por WhatsApp</a>
+          </div>
+          <div class="modalidad">
+            <h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5.5" width="13" height="11" rx="2" stroke="#173F33" stroke-width="2"/><path d="M16 10l5-3v8l-5-3" stroke="#173F33" stroke-width="2" stroke-linejoin="round"/></svg>
+              Virtual
+            </h3>
+            <ul>
+              <li>Videollamada desde cualquier país</li>
+              <li>Ideal para controles y seguimiento de nutrición</li>
+              <li>Recibes el plan y las indicaciones por correo</li>
+            </ul>
+            <span class="valor-cita">45 USD<small>precio de ejemplo</small></span><br>
+            <a class="btn btn-sello" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20una%20cita%20virtual" rel="noopener">Sacar cita por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <h2>Contacto</h2>
+      <p>Citas por WhatsApp; todo lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y los enlaces a redes sociales.</p>
+      <a class="btn btn-sello" href="https://wa.me/570000000000" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p>AVISO MÉDICO: este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="https://wa.me/570000000000" aria-label="Abrir WhatsApp" rel="noopener">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+</a>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opción D · Diorama continuo — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --cielo:#FFF6E4;            /* proscenio, cartulina crema */
+    --sol:#FFC94B;
+    --superficie:#BFE3F2;       /* primera zona de agua */
+    --mar:#3D6FA8;              /* zona de postales */
+    --gruta:#2C5583;            /* zona de cursos */
+    --indigo:#1B355E;           /* blog y testimonios */
+    --abisal:#10203E;           /* el cofre */
+    --fondo-pie:#0A1428;
+    --tinta:#1B2C4A;
+    --rosa:#D6336C; --rosa-luz:#F585A3; --rosa-suave:#F7A9A4;
+    --verde:#6FA83C; --verde-hondo:#4F8A20;
+    --mostaza:#E8A93C;
+    --madera:#8A5C3B; --madera-clara:#B98A5F;
+    --claro:#EAF2FF;            /* texto sobre lo profundo */
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--mostaza);color:var(--tinta)}
+  body{
+    font-family:"Karla",system-ui,sans-serif;
+    background:var(--cielo);color:var(--tinta);
+    font-size:17px;line-height:1.65;overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.45;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .17 0 0 0 0 .29 0 0 0 .03 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23p)'/%3E%3C/svg%3E");
+  }
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:var(--indigo)}
+  body::-webkit-scrollbar-thumb{background:var(--rosa-luz);border-radius:6px}
+  h1,h2,h3{font-family:"Alfa Slab One",serif;font-weight:400;line-height:1.12;text-wrap:balance}
+  :focus-visible{outline:3px solid var(--mostaza);outline-offset:3px;border-radius:4px}
+  img{max-width:100%}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+  section{position:relative;z-index:1}
+
+  /* olas continuas entre zonas: cada zona se recorta sobre la anterior */
+  .ola{display:block;width:100%;height:74px}
+  .ola path{filter:drop-shadow(0 -7px 9px rgba(10,20,40,.28))}
+
+  /* ---------- barra del muelle ---------- */
+  header{
+    position:sticky;top:0;z-index:50;background:var(--cielo);
+    box-shadow:0 1px 0 rgba(27,44,74,.14), 0 6px 18px rgba(27,44,74,.12);
+  }
+  .nav{max-width:1100px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:16px}
+  .nav img{height:44px;width:auto}
+  .nav .marca{font-family:"Alfa Slab One",serif;color:var(--tinta);font-size:1.02rem;letter-spacing:.02em}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
+  .nav a{
+    color:var(--tinta);text-decoration:none;font-weight:700;font-size:.88rem;
+    padding:8px 12px;border-radius:10px;transition:background .2s,color .2s;
+  }
+  .nav a:hover{background:var(--tinta);color:var(--cielo)}
+  .nav .cta{background:var(--rosa);color:#fff}
+  .nav .cta:hover{background:var(--tinta);color:#fff}
+
+  /* ---------- momento de motion: burbujas que suben ---------- */
+  .burbuja{
+    position:absolute;bottom:-40px;border-radius:50%;
+    border:2px solid rgba(214,235,248,.5);
+    background:radial-gradient(circle at 34% 30%, rgba(255,255,255,.35), rgba(255,255,255,.04));
+    animation:subir linear infinite;pointer-events:none;
+  }
+  @keyframes subir{
+    0%{transform:translateY(0);opacity:0}
+    12%{opacity:.8}
+    88%{opacity:.55}
+    100%{transform:translateY(-88vh);opacity:0}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+    .burbuja{display:none}
+  }
+
+  /* ---------- proscenio: cielo, sol y el retrato de la doctora ---------- */
+  .hero{padding:0 0 40px;background:var(--cielo)}
+  .hero .feston{display:block;width:100%;height:44px}
+  .hero .interior{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:34px}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem)}
+  .hero h1 .marea{color:var(--rosa)}
+  .hero .intro{margin:18px 0 26px;font-size:1.08rem;max-width:32rem;color:#4E5F7E}
+  .botones{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-family:"Alfa Slab One",serif;font-size:.95rem;letter-spacing:.02em;
+    padding:15px 26px;border-radius:14px;color:#fff;
+    box-shadow:0 6px 0 rgba(27,44,74,.28), 0 12px 24px rgba(27,44,74,.22);
+    transition:transform .18s ease-out, box-shadow .18s ease-out;
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 rgba(27,44,74,.28), 0 16px 28px rgba(27,44,74,.26)}
+  .btn:active{transform:translateY(2px);box-shadow:0 3px 0 rgba(27,44,74,.28), 0 8px 14px rgba(27,44,74,.2)}
+  .btn-whatsapp{background:var(--verde-hondo)}
+  .btn-rosa{background:var(--rosa)}
+  .hero figure{position:relative;margin:0}
+  .hero figure svg{width:100%;height:auto;display:block}
+  .hero figcaption{text-align:center;font-size:.85rem;color:#4E5F7E;font-style:italic;margin-top:8px}
+
+  /* ---------- superficie: credenciales que flotan, sin tarjetas ---------- */
+  .superficie{background:var(--superficie);padding:26px 0 46px}
+  .superficie h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px;text-align:center}
+  .superficie .sub{color:#3A5570;max-width:38rem;margin:0 auto 40px;text-align:center}
+  .flotadores{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+  .flotador{text-align:center}
+  .flotador svg{width:96px;height:96px;display:block;margin:0 auto 6px;filter:drop-shadow(0 8px 10px rgba(27,44,74,.25))}
+  .flotador h3{font-size:.98rem;line-height:1.25}
+  .flotador p{font-size:.8rem;color:#3A5570}
+
+  /* ---------- mar: postales del consultorio entre corales ---------- */
+  .mar{background:var(--mar);padding:16px 0 110px;color:var(--claro)}
+  .mar h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .mar .sub{color:#CFE0F5;max-width:34rem;margin-bottom:40px}
+  .postales{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+  .postal{margin:0}
+  .postal .marquito{background:#FFF9EC;padding:10px 10px 14px;border-radius:6px;box-shadow:0 16px 30px rgba(6,16,34,.45)}
+  .postal:nth-child(1) .marquito{transform:rotate(-2deg)}
+  .postal:nth-child(2) .marquito{transform:rotate(1.4deg) translateY(18px)}
+  .postal:nth-child(3) .marquito{transform:rotate(-1.2deg)}
+  .postal img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px}
+  .postal h3{font-size:1rem;text-align:center;margin-top:16px;color:#fff}
+  .postal p{font-size:.83rem;color:#CFE0F5;text-align:center}
+  .mar .nota{font-size:.8rem;color:#CFE0F5;margin-top:30px;text-align:center}
+  .mar .corales{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:96px;pointer-events:none}
+
+  /* ---------- grutas: los cursos como cuevas iluminadas ---------- */
+  .grutas-zona{background:var(--gruta);padding:16px 0 60px;color:var(--claro)}
+  .grutas-zona h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .grutas-zona .sub{color:#C4D6EE;max-width:38rem;margin-bottom:44px}
+  .grutas{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .gruta{
+    display:flex;flex-direction:column;text-decoration:none;color:#4A3320;
+    background:radial-gradient(120% 90% at 50% 30%, #FFF1D4 0%, #F9DFAC 58%, #EFC98A 100%);
+    border-radius:170px 170px 14px 14px;
+    box-shadow:inset 0 0 0 10px #1E406B, inset 0 0 0 12px rgba(255,241,212,.35), 0 18px 34px rgba(6,16,34,.5);
+    padding:44px 26px 26px;text-align:center;
+    transition:transform .2s ease-out, box-shadow .2s ease-out;
+  }
+  .gruta:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 10px #1E406B, inset 0 0 0 12px rgba(255,241,212,.35), 0 0 38px rgba(255,201,75,.3), 0 22px 38px rgba(6,16,34,.55)}
+  .gruta .escena{height:96px;margin-bottom:12px}
+  .gruta .escena svg{height:100%;width:auto;margin:0 auto;display:block}
+  .gruta h3{font-size:1.06rem;color:#2E2110}
+  .gruta p{font-size:.85rem;color:#6B5433;flex:1;margin-top:8px}
+  .gruta .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(110,84,51,.35);padding-top:12px;margin-top:14px}
+  .gruta .precio{font-family:"Alfa Slab One",serif;font-size:.98rem;color:#2E2110}
+  .gruta .precio small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.64rem;color:#6B5433}
+  .gruta .ver{font-weight:800;font-size:.82rem;color:var(--rosa)}
+  .grutas-zona .nota{font-size:.8rem;color:#C4D6EE;margin-top:34px;text-align:center}
+
+  /* ---------- índigo: botellas con mensaje y burbujas del público ---------- */
+  .indigo{background:var(--indigo);padding:16px 0 60px;color:var(--claro)}
+  .indigo .interior{display:grid;grid-template-columns:1.1fr .9fr;gap:52px}
+  .indigo h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:8px}
+  .indigo .sub{color:#B8CBE8;margin-bottom:26px}
+  .botellas{list-style:none}
+  .botella{position:relative;margin-bottom:20px}
+  .botella a{
+    display:block;text-decoration:none;color:inherit;
+    background:rgba(191,227,242,.1);border:1.5px solid rgba(191,227,242,.42);
+    border-radius:34px;padding:16px 58px 14px 24px;
+    transition:transform .22s cubic-bezier(.22,1,.36,1), border-color .22s, background .22s;
+  }
+  .botella:nth-child(odd) a{transform:rotate(-1.2deg)}
+  .botella:nth-child(even) a{transform:rotate(1deg)}
+  .botella a:hover{transform:rotate(0) translateX(8px);border-color:rgba(191,227,242,.85);background:rgba(191,227,242,.16)}
+  .botella .corcho{
+    position:absolute;right:14px;top:50%;transform:translateY(-50%);
+    width:26px;height:34px;border-radius:7px;background:var(--madera-clara);
+    box-shadow:inset 0 -5px 0 rgba(27,44,74,.3);
+  }
+  .botella h3{font-size:1.02rem}
+  .botella a:hover h3{color:var(--rosa-luz)}
+  .botella p{font-size:.84rem;color:#B8CBE8}
+  .burbujas-publico blockquote{
+    position:relative;background:rgba(191,227,242,.1);border:1.5px solid rgba(191,227,242,.42);
+    border-radius:26px;padding:20px 22px 16px;margin-top:24px;
+  }
+  .burbujas-publico blockquote::before{
+    content:"";position:absolute;left:30px;bottom:-14px;width:14px;height:14px;border-radius:50%;
+    border:1.5px solid rgba(191,227,242,.42);background:rgba(191,227,242,.08);
+  }
+  .burbujas-publico blockquote::after{
+    content:"";position:absolute;left:52px;bottom:-24px;width:8px;height:8px;border-radius:50%;
+    border:1.5px solid rgba(191,227,242,.36);
+  }
+  .burbujas-publico p{font-size:.96rem;color:var(--claro)}
+  .burbujas-publico cite{display:block;margin-top:10px;font-style:normal;font-weight:800;font-size:.8rem;color:var(--rosa-luz)}
+  .burbujas-publico cite small{font-weight:600;color:#B8CBE8}
+
+  /* ---------- abisal: el cofre con los boletos ---------- */
+  .abisal{background:var(--abisal);padding:16px 0 70px;color:var(--claro);overflow:hidden}
+  .abisal h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px;text-align:center}
+  .abisal .sub{color:#B8CBE8;max-width:38rem;margin:0 auto 30px;text-align:center}
+  .cofre{width:min(320px,70%);margin:0 auto 40px;display:block}
+  .boletos{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:860px;margin:0 auto}
+  .boleto{
+    position:relative;background:#FFF9EC;color:#3D2C14;border-radius:16px;padding:30px 30px 28px;
+    box-shadow:0 0 30px rgba(255,201,75,.16), 0 18px 36px rgba(0,0,0,.5);
+  }
+  .boleto::before,.boleto::after{
+    content:"";position:absolute;top:50%;width:22px;height:22px;border-radius:50%;
+    background:var(--abisal);transform:translateY(-50%);
+  }
+  .boleto::before{left:-11px}
+  .boleto::after{right:-11px}
+  .boleto h3{font-size:1.3rem;margin-bottom:6px;color:#2E2110}
+  .boleto p{font-size:.9rem;color:#6B5433;margin-bottom:16px}
+  .boleto .precio-cita{font-family:"Alfa Slab One",serif;font-size:1.4rem;display:block;margin-bottom:18px;color:#2E2110}
+  .boleto .precio-cita small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.68rem;color:#6B5433}
+
+  /* ---------- pie: lo más hondo ---------- */
+  footer{position:relative;z-index:2;background:var(--fondo-pie);color:#B8CBE8;padding:64px 0 100px}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  footer img{height:74px;width:auto;margin-bottom:16px}
+  footer h2{color:#fff;font-size:1.6rem;margin-bottom:10px}
+  footer p{font-size:.94rem;max-width:34rem}
+  footer .btn{margin-top:20px}
+  footer nav ul{list-style:none;display:grid;gap:8px}
+  footer nav a{color:var(--rosa-luz);text-decoration:none;font-weight:700}
+  footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+  .legal{border-top:1px solid rgba(191,227,242,.2);margin-top:44px;padding-top:24px;font-size:.8rem;color:#8CA3C4;display:block}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    width:62px;height:62px;border-radius:50%;background:var(--verde-hondo);
+    display:grid;place-items:center;
+    box-shadow:0 6px 0 rgba(0,0,0,.35), 0 14px 26px rgba(0,0,0,.45);
+    transition:transform .18s ease-out;
+  }
+  .flotante:hover{transform:translateY(-4px)}
+
+  @media (max-width:940px){
+    .hero .interior{grid-template-columns:1fr;gap:24px}
+    .hero figure{max-width:400px;margin:0 auto;order:-1}
+    .flotadores{grid-template-columns:repeat(2,1fr)}
+    .postales{grid-template-columns:1fr;max-width:340px;margin:0 auto;gap:44px}
+    .postal:nth-child(2) .marquito{transform:rotate(1.4deg)}
+    .grutas{grid-template-columns:1fr;max-width:380px;margin:0 auto}
+    .indigo .interior{grid-template-columns:1fr;gap:40px}
+    .boletos{grid-template-columns:1fr}
+    footer .wrap{grid-template-columns:1fr}
+    .nav a{padding:8px 9px;font-size:.8rem}
+  }
+</style>
+</head>
+<body>
+<!--
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+Opción D · Diorama continuo: la esencia del teatro de papel convertida en un solo paisaje
+marino que se profundiza al hacer scroll — sin tarjetas: del proscenio con el retrato de la
+doctora a la superficie con credenciales flotantes, las postales del consultorio entre
+corales, los cursos como grutas iluminadas, el blog en botellas con mensaje y la cita como
+cofre del fondo.
+-->
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <img src="assets/logo-icon-color.png" alt="Logo: manzana con bebé">
+    <span class="marca">Doc Daly</span>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#consultorio">Consultorio</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a class="cta" href="#citas">Pedir cita</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <svg class="feston" viewBox="0 0 1440 44" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0 h1440 v10 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 q -30 30 -60 0 Z" fill="#D6336C"/>
+      <path d="M0 0 h1440 v6 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 q -30 26 -60 0 Z" fill="#F585A3" opacity=".55"/>
+    </svg>
+    <div class="wrap">
+      <div class="interior">
+        <div>
+          <h1>Un solo mar de papel, <span class="marea">guiado por tu pediatra</span></h1>
+          <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. Este diorama baja contigo desde la superficie hasta el fondo del mar: alimentación, crecimiento y sueño, sin culpas y con evidencia. Presencial y virtual desde cualquier país.</p>
+          <div class="botones">
+            <a class="btn btn-whatsapp" href="#citas">Pedir cita por WhatsApp</a>
+            <a class="btn btn-rosa" href="#cursos">Ver los cursos</a>
+          </div>
+        </div>
+        <figure>
+          <svg viewBox="0 0 420 400" role="img" aria-label="Retrato de la doctora colgado en la boca del diorama, junto a un sol de papel y gaviotas">
+            <!-- sol colgado de un hilo -->
+            <line x1="66" y1="0" x2="66" y2="52" stroke="#1B2C4A" stroke-width="1.6" opacity=".5"/>
+            <g fill="#FFC94B" filter="drop-shadow(0 6px 8px rgba(27,44,74,.25))">
+              <circle cx="66" cy="88" r="32"/>
+              <g stroke="#FFC94B" stroke-width="7" stroke-linecap="round">
+                <line x1="66" y1="40" x2="66" y2="30"/><line x1="66" y1="136" x2="66" y2="146"/>
+                <line x1="18" y1="88" x2="28" y2="88"/><line x1="104" y1="88" x2="114" y2="88"/>
+                <line x1="32" y1="54" x2="39" y2="61"/><line x1="93" y1="115" x2="100" y2="122"/>
+                <line x1="100" y1="54" x2="93" y2="61"/><line x1="39" y1="115" x2="32" y2="122"/>
+              </g>
+            </g>
+            <!-- gaviotas -->
+            <g stroke="#1B2C4A" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7">
+              <path d="M150 44 q 11 -9 22 0 q 11 -9 22 0"/>
+              <path d="M120 82 q 8 -7 17 0 q 8 -7 17 0"/>
+            </g>
+            <!-- retrato colgado -->
+            <line x1="205" y1="0" x2="255" y2="64" stroke="#1B2C4A" stroke-width="1.8" opacity=".5"/>
+            <line x1="395" y1="0" x2="345" y2="64" stroke="#1B2C4A" stroke-width="1.8" opacity=".5"/>
+            <g filter="drop-shadow(0 14px 16px rgba(27,44,74,.3))">
+              <rect x="230" y="60" width="150" height="190" rx="10" fill="#B98A5F"/>
+              <rect x="242" y="72" width="126" height="166" rx="6" fill="#FFF9EC"/>
+              <!-- busto de papel de la doctora (marcador de su foto real) -->
+              <circle cx="305" cy="128" r="27" fill="#F3C7A6"/>
+              <path d="M278 122 q 5 -27 27 -27 q 22 0 27 27 q -10 -11 -27 -11 q -17 0 -27 11 Z" fill="#4A2B33"/>
+              <circle cx="296" cy="128" r="2.6" fill="#4A2B33"/>
+              <circle cx="314" cy="128" r="2.6" fill="#4A2B33"/>
+              <path d="M298 139 q 7 6 14 0" stroke="#B02455" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+              <path d="M263 238 q 3 -60 42 -60 q 39 0 42 60 Z" fill="#fff"/>
+              <path d="M291 186 q 7 16 14 16 q 7 0 14 -16" stroke="#D6336C" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+              <circle cx="305" cy="206" r="5" fill="#D6336C"/>
+            </g>
+            <!-- ballena asomada a la superficie -->
+            <g filter="drop-shadow(0 8px 8px rgba(27,44,74,.22))">
+              <path d="M60 330 Q 130 282 208 328 Q 196 380 128 380 Q 76 378 60 330 Z" fill="#7FA8D9"/>
+              <path d="M192 320 q 34 -22 42 -2 q -20 14 -36 20 Z" fill="#7FA8D9"/>
+              <circle cx="104" cy="330" r="5" fill="#1B2C4A"/>
+              <path d="M78 348 q 24 14 52 6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <g fill="#BFE3F2"><circle cx="134" cy="270" r="7"/><circle cx="146" cy="248" r="5"/><circle cx="154" cy="230" r="4"/></g>
+            </g>
+          </svg>
+          <figcaption>El retrato del proscenio: aquí entrará la foto real de la doctora.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <svg class="ola" viewBox="0 0 1440 74" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cielo)">
+    <path d="M0 40 Q 180 6 360 34 T 720 30 T 1080 34 T 1440 24 V74 H0 Z" fill="#BFE3F2"/>
+  </svg>
+
+  <section class="superficie" id="sobre-mi" aria-label="Sobre la doctora">
+    <div class="wrap">
+      <h2>Lo que flota en la superficie</h2>
+      <p class="sub">Pediatría y nutrición infantil en una sola consulta. Las credenciales llegan flotando, sin vitrinas. (De ejemplo — se reemplazarán por las reales.)</p>
+      <div class="flotadores">
+        <article class="flotador">
+          <svg viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="36" fill="#fff"/>
+            <circle cx="48" cy="48" r="36" fill="none" stroke="#D6336C" stroke-width="13" stroke-dasharray="28 28.5"/>
+            <circle cx="48" cy="48" r="17" fill="#BFE3F2"/>
+          </svg>
+          <h3>Médica pediatra</h3><p>Universidad por confirmar · ejemplo</p>
+        </article>
+        <article class="flotador">
+          <svg viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="54" r="30" fill="#D6336C"/>
+            <path d="M48 26 q 8 -16 26 -16 q -4 20 -26 16 Z" fill="#6FA83C"/>
+            <path d="M34 58 q 14 14 28 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <h3>Nutrición infantil</h3><p>Especialización por confirmar · ejemplo</p>
+        </article>
+        <article class="flotador">
+          <svg viewBox="0 0 96 96" aria-hidden="true">
+            <circle cx="48" cy="48" r="36" fill="#3D6FA8"/>
+            <g stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round">
+              <path d="M14 48 h 68"/>
+              <path d="M48 14 c 20 20 20 48 0 68 c -20 -20 -20 -48 0 -68 Z"/>
+              <circle cx="48" cy="48" r="34"/>
+            </g>
+          </svg>
+          <h3>Familias en varios países</h3><p>Consulta virtual internacional</p>
+        </article>
+        <article class="flotador">
+          <svg viewBox="0 0 96 96" aria-hidden="true">
+            <path d="M48 12 l 10 24 26 3 -19 18 5 26 -22 -13 -22 13 5 -26 -19 -18 26 -3 Z" fill="#E8A93C"/>
+            <circle cx="48" cy="46" r="6" fill="#FFF6E4"/>
+          </svg>
+          <h3>Sociedades científicas</h3><p>Afiliaciones por confirmar · ejemplo</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <svg class="ola" viewBox="0 0 1440 74" preserveAspectRatio="none" aria-hidden="true" style="background:var(--superficie)">
+    <path d="M0 34 Q 200 66 400 38 T 800 42 T 1200 38 T 1440 46 V74 H0 Z" fill="#3D6FA8"/>
+  </svg>
+
+  <section class="mar" id="consultorio" aria-label="El consultorio">
+    <div class="wrap">
+      <h2>El consultorio, entre corales</h2>
+      <p class="sub">Tres postales del consultorio real de la doctora flotan a media agua.</p>
+      <div class="postales">
+        <figure class="postal">
+          <div class="marquito"><img src="assets/3d/recepcion.jpg" alt="Recepción con mostrador de madera clara y ballena de acuarela en la pared"></div>
+          <h3>La recepción</h3><p>Te recibe la ballena del mural y la madera clara.</p>
+        </figure>
+        <figure class="postal">
+          <div class="marquito"><img src="assets/3d/consulta.jpg" alt="Consultorio con escritorio de madera clara y ballenas de acuarela en la pared"></div>
+          <h3>La consulta</h3><p>Aquí conversamos con calma y armamos el plan.</p>
+        </figure>
+        <figure class="postal">
+          <div class="marquito"><img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches junto a la ventana"></div>
+          <h3>La sala de examen</h3><p>La camilla celeste, custodiada por los peluches.</p>
+        </figure>
+      </div>
+      <p class="nota">Fotos tomadas del video real del consultorio, mejoradas digitalmente para esta maqueta.</p>
+    </div>
+    <svg class="corales" viewBox="0 0 1440 96" preserveAspectRatio="none" aria-hidden="true">
+      <g fill="#2C5583">
+        <path d="M0 96 V64 q 20 -34 34 0 q 6 -22 18 -6 V96 Z"/>
+        <path d="M120 96 V58 q 16 -28 28 -2 q 10 -18 20 2 V96 Z"/>
+        <path d="M1260 96 V60 q 18 -30 30 -2 q 8 -16 18 0 V96 Z"/>
+        <path d="M1380 96 V68 q 14 -24 26 0 q 8 -14 16 0 V96 Z"/>
+      </g>
+      <g fill="#F7A9A4">
+        <path d="M240 96 V70 q 12 -22 22 -2 q 8 -12 14 2 V96 Z"/>
+        <path d="M1180 96 V74 q 10 -18 18 -2 q 6 -10 12 2 V96 Z"/>
+      </g>
+      <path d="M0 96 Q 240 66 480 88 T 960 84 T 1440 88 V96 H0 Z" fill="#2C5583"/>
+    </svg>
+  </section>
+
+  <section class="grutas-zona" id="cursos" aria-label="Cursos">
+    <div class="wrap">
+      <h2>Tres grutas iluminadas</h2>
+      <p class="sub">Tres cursos en video para ver a tu ritmo, desde cualquier país: cada gruta guarda una luz encendida. La compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
+      <div class="grutas">
+        <a class="gruta" href="#cursos">
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 160 96">
+              <path d="M28 62 q 52 34 104 0 l -9 26 q -43 18 -86 0 Z" fill="#D6336C"/>
+              <rect x="76" y="18" width="7" height="42" rx="3.5" transform="rotate(24 79 39)" fill="#8A5C3B"/>
+              <ellipse cx="104" cy="16" rx="14" ry="9" transform="rotate(24 104 16)" fill="#B98A5F"/>
+              <circle cx="34" cy="24" r="13" fill="#D6336C"/>
+              <path d="M34 12 q 3 -8 12 -8 q -2 10 -12 8 Z" fill="#6FA83C"/>
+            </svg>
+          </span>
+          <h3>Alimentación complementaria sin miedo</h3>
+          <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+          <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+        </a>
+        <a class="gruta" href="#cursos">
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 160 96">
+              <rect x="30" y="34" width="100" height="54" rx="10" fill="#D6336C"/>
+              <path d="M52 34 v -8 q 0 -10 10 -10 h 36 q 10 0 10 10 v 8 h -11 v -7 q 0 -3 -3 -3 h -28 q -3 0 -3 3 v 7 Z" fill="#B02455"/>
+              <circle cx="60" cy="61" r="11" fill="#FFF6E4"/>
+              <rect x="80" y="52" width="34" height="20" rx="4" fill="#6FA83C"/>
+            </svg>
+          </span>
+          <h3>La lonchera que sí se comen</h3>
+          <p>Menús escolares prácticos y sin peleas en la mesa.</p>
+          <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+        </a>
+        <a class="gruta" href="#cursos">
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 160 96">
+              <path d="M96 8 a 40 40 0 1 0 22 68 32 32 0 0 1 -22 -68 Z" fill="#3D6FA8"/>
+              <path d="M38 52 l 4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 Z" fill="#E8A93C"/>
+              <circle cx="132" cy="30" r="4" fill="#E8A93C"/><circle cx="48" cy="22" r="3" fill="#E8A93C"/>
+            </svg>
+          </span>
+          <h3>Dormir bien desde bebés</h3>
+          <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+          <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+        </a>
+      </div>
+      <p class="nota">Cada gruta se enciende cuando entras: compra en Hotmart y ve cada curso cuando quieras.</p>
+    </div>
+  </section>
+
+  <svg class="ola" viewBox="0 0 1440 74" preserveAspectRatio="none" aria-hidden="true" style="background:var(--gruta)">
+    <path d="M0 38 Q 200 68 400 40 T 800 44 T 1200 40 T 1440 48 V74 H0 Z" fill="#1B355E"/>
+  </svg>
+
+  <section class="indigo" id="blog" aria-label="Blog y testimonios">
+    <div class="wrap">
+      <div class="interior">
+        <div>
+          <h2>Botellas con mensaje</h2>
+          <p class="sub">Artículos gratuitos del blog, embotellados para el viaje. (Títulos de ejemplo.)</p>
+          <ul class="botellas">
+            <li class="botella"><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a><span class="corcho" aria-hidden="true"></span></li>
+            <li class="botella"><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a><span class="corcho" aria-hidden="true"></span></li>
+            <li class="botella"><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a><span class="corcho" aria-hidden="true"></span></li>
+          </ul>
+        </div>
+        <div class="burbujas-publico" aria-label="Testimonios">
+          <h2 style="font-size:1.5rem">Burbujas del público</h2>
+          <p class="sub">Testimonios ilustrativos — se reemplazarán por reales.</p>
+          <blockquote>
+            <p>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</p>
+            <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
+          </blockquote>
+          <blockquote>
+            <p>«La consulta virtual fue igual de cercana, desde otro país.»</p>
+            <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="ola" viewBox="0 0 1440 74" preserveAspectRatio="none" aria-hidden="true" style="background:var(--indigo)">
+    <path d="M0 40 Q 200 8 400 36 T 800 32 T 1200 36 T 1440 28 V74 H0 Z" fill="#10203E"/>
+  </svg>
+
+  <section class="abisal" id="citas" aria-label="Citas">
+    <span class="burbuja" style="left:8%;width:18px;height:18px;animation-duration:11s;animation-delay:0s" aria-hidden="true"></span>
+    <span class="burbuja" style="left:22%;width:10px;height:10px;animation-duration:14s;animation-delay:3s" aria-hidden="true"></span>
+    <span class="burbuja" style="left:64%;width:14px;height:14px;animation-duration:12s;animation-delay:6s" aria-hidden="true"></span>
+    <span class="burbuja" style="left:84%;width:22px;height:22px;animation-duration:16s;animation-delay:1.5s" aria-hidden="true"></span>
+    <span class="burbuja" style="left:46%;width:8px;height:8px;animation-duration:10s;animation-delay:8s" aria-hidden="true"></span>
+    <div class="wrap">
+      <h2>El tesoro del fondo: tu cita</h2>
+      <p class="sub">Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
+      <svg class="cofre" viewBox="0 0 320 190" aria-hidden="true">
+        <ellipse cx="160" cy="96" rx="120" ry="66" fill="#FFC94B" opacity=".16"/>
+        <path d="M70 96 q 0 -52 90 -52 q 90 0 90 52 l -12 6 q -6 -44 -78 -44 q -72 0 -78 44 Z" fill="#B98A5F" transform="rotate(-16 160 70)"/>
+        <rect x="70" y="96" width="180" height="70" rx="10" fill="#8A5C3B"/>
+        <rect x="70" y="96" width="180" height="14" fill="#6E4426"/>
+        <rect x="148" y="102" width="24" height="26" rx="5" fill="#E8A93C"/>
+        <g fill="#FFC94B">
+          <circle cx="120" cy="96" r="9"/><circle cx="146" cy="90" r="8"/><circle cx="176" cy="92" r="9"/><circle cx="202" cy="96" r="8"/>
+        </g>
+        <g stroke="#FFC94B" stroke-width="3" opacity=".7" stroke-linecap="round">
+          <line x1="112" y1="64" x2="106" y2="52"/><line x1="160" y1="58" x2="160" y2="44"/><line x1="208" y1="64" x2="214" y2="52"/>
+        </g>
+      </svg>
+      <div class="boletos">
+        <article class="boleto">
+          <h3>Presencial</h3>
+          <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
+          <span class="precio-cita">$180.000 COP<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="#">Agendar por WhatsApp</a>
+        </article>
+        <article class="boleto">
+          <h3>Virtual</h3>
+          <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+          <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="#">Agendar por WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <h2>En lo más hondo</h2>
+      <p>Citas por WhatsApp; todo lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y las redes sociales.</p>
+      <a class="btn btn-whatsapp" href="#">Escribir por WhatsApp</a>
+    </div>
+    <nav aria-label="Pie">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#consultorio">Consultorio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo; fotos del consultorio del video real, mejoradas digitalmente.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="#" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.1c1.9 1 4 1.6 6.3 1.6h.5c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.9 17.1c-.3.8-1.7 1.6-2.3 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.4-1.5-5.6-4.9-5.8-5.1-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.7 1 2.4 1.1 2.6.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.4.1 2.1 1 2.5 1.2.4.2.6.3.7.5.1.1.1.9-.2 1.7z"/></svg>
+</a>
+
+</body>
+</html>

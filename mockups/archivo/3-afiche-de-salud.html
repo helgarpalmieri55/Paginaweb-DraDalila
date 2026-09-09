@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup 3 · Afiche de salud — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --verde:#5E9C22; --verde-tinta:#1C3308;
+    --rosa:#E8547E; --rosa-tinta:#5C1128; --rosa-palido:#FFD3E0;
+    --lila:#8C77BC; --lila-tinta:#2E2153;
+    --crema-no:#FFFFFF; /* blanco puro de cartel, no crema */
+    --tinta:#1B2312;
+    --amarillo:#F7C948;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--amarillo);color:var(--tinta)}
+  body{
+    font-family:"Karla",system-ui,sans-serif;
+    color:var(--tinta);background:#fff;
+    font-size:17px;line-height:1.6;
+    overflow-x:hidden;
+  }
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:#fff}
+  body::-webkit-scrollbar-thumb{background:var(--rosa)}
+  h1,h2,h3{font-family:"Anton",sans-serif;font-weight:400;line-height:1.02;text-wrap:balance;letter-spacing:.005em}
+  :focus-visible{outline:4px solid var(--amarillo);outline-offset:3px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 26px}
+
+  /* grano de imprenta sobre toda la página */
+  .grano{
+    position:fixed;inset:0;pointer-events:none;z-index:70;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- barra ---------- */
+  header{position:sticky;top:0;z-index:60;background:var(--tinta);color:#fff}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:stretch;gap:0;padding:0 26px}
+  .nav .marca{display:flex;align-items:center;gap:12px;padding:10px 18px 10px 0;border-right:1px solid rgba(255,255,255,.25)}
+  .nav .marca img{height:40px;width:auto}
+  .nav .marca span{font-family:"Anton",sans-serif;font-size:1rem;letter-spacing:.04em;text-transform:uppercase}
+  .nav ul{display:flex;list-style:none;margin-left:auto;flex-wrap:wrap}
+  .nav a{
+    display:flex;align-items:center;height:100%;padding:16px 16px;
+    color:#fff;text-decoration:none;font-weight:800;font-size:.82rem;
+    text-transform:uppercase;letter-spacing:.08em;
+    transition:background .15s,color .15s;
+  }
+  .nav a:hover{background:var(--amarillo);color:var(--tinta)}
+  .nav .cta{background:var(--rosa)}
+  .nav .cta:hover{background:var(--rosa-palido);color:var(--rosa-tinta)}
+
+  /* ---------- cartel hero ---------- */
+  .hero{background:var(--verde);color:#fff;position:relative;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding-top:72px;padding-bottom:88px;position:relative;z-index:2}
+  .hero h1{font-size:clamp(3rem,8vw,6rem);text-transform:uppercase;color:#fff}
+  .hero h1 .contraste{color:var(--amarillo)}
+  .hero .lema{
+    font-size:1.2rem;font-weight:500;max-width:30rem;margin:22px 0 30px;color:#132A08;
+  }
+  .hero .lema strong{font-weight:800}
+  .firma-cartel{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+  .firma-cartel .disco{background:#fff;border-radius:50%;width:74px;height:74px;display:grid;place-items:center;flex:none}
+  .firma-cartel img{width:74%;height:auto}
+  .firma-cartel p{font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;line-height:1.45;color:#132A08}
+  .botones{display:flex;gap:16px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-family:"Anton",sans-serif;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:16px 28px;border:3px solid var(--tinta);
+    transition:transform .18s ease-out;
+  }
+  .btn:hover{transform:translateY(-3px)}
+  .btn-principal{background:var(--amarillo);color:var(--tinta)}
+  .btn-secundario{background:transparent;border-color:#132A08;color:#132A08}
+  .btn-rosa{background:var(--rosa);border-color:var(--rosa-tinta);color:#fff}
+  /* manzana geométrica de cartel */
+  .manzana-cartel{position:relative;aspect-ratio:1;max-width:430px;margin:0 auto;width:100%}
+  .manzana-cartel svg{width:100%;height:auto;display:block}
+  .sol-rayos{position:absolute;inset:0;z-index:1;opacity:.25;pointer-events:none}
+  .sol-rayos svg{position:absolute;right:-12%;top:-22%;width:70%;transform-origin:center;animation:girar 80s linear infinite}
+  @keyframes girar{to{transform:rotate(360deg)}}
+
+  /* ---------- franja lema ---------- */
+  .franja{
+    background:var(--tinta);color:#fff;overflow:hidden;white-space:nowrap;
+    padding:14px 0;font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:1.05rem;
+  }
+  .franja .cinta{display:flex;justify-content:center;flex-wrap:wrap;gap:0 8px}
+  .franja span{margin:0 14px;color:#fff}
+  .franja span:nth-child(even){color:var(--amarillo)}
+
+  /* ---------- sobre mí: cartilla tipográfica ---------- */
+  .sobre{background:#fff;padding:84px 0}
+  .sobre .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .sobre h2{font-size:clamp(2.2rem,4.5vw,3.4rem);text-transform:uppercase}
+  .sobre h2 span{color:var(--rosa)}
+  .sobre .credo{margin-top:22px;font-size:1.05rem;max-width:30rem}
+  .lecciones{display:grid;gap:0;border-top:3px solid var(--tinta)}
+  .leccion{display:grid;grid-template-columns:96px 1fr;gap:22px;padding:22px 0;border-bottom:3px solid var(--tinta);align-items:center}
+  .leccion .simbolo{width:84px;height:84px;display:grid;place-items:center}
+  .leccion h3{font-size:1.25rem;text-transform:uppercase;margin-bottom:4px}
+  .leccion p{font-size:.95rem;color:#4A5240}
+  .leccion em{font-style:normal;color:#77806B;font-size:.8rem}
+
+  /* ---------- cursos: mini-afiches ---------- */
+  .cursos{background:var(--rosa);padding:84px 0 96px;color:#fff;position:relative}
+  .cursos h2{font-size:clamp(2.2rem,4.5vw,3.4rem);text-transform:uppercase;color:#fff}
+  .cursos .sub{color:#4C0E22;max-width:36rem;margin:12px 0 44px;font-size:1.02rem}
+  .afiches{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .afiche{
+    background:#fff;color:var(--tinta);border:4px solid var(--tinta);
+    display:flex;flex-direction:column;text-decoration:none;
+    transition:transform .2s ease-out;
+  }
+  .afiche:hover{transform:translateY(-8px)}
+  .afiche .lamina{aspect-ratio:4/3;display:grid;place-items:center;border-bottom:4px solid var(--tinta)}
+  .afiche .texto{padding:20px 20px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .afiche h3{font-size:1.3rem;text-transform:uppercase}
+  .afiche p{font-size:.9rem;color:#4A5240;flex:1}
+  .afiche .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid var(--tinta);padding-top:12px}
+  .afiche .precio{font-family:"Anton",sans-serif;font-size:1.1rem}
+  .afiche .precio small{display:block;font-family:"Karla",sans-serif;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#77806B}
+  .afiche .hotmart{font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--rosa)}
+
+  /* ---------- blog ---------- */
+  .blog{background:#fff;padding:84px 0}
+  .blog h2{font-size:clamp(2.2rem,4.5vw,3.4rem);text-transform:uppercase}
+  .blog h2 span{color:var(--verde)}
+  .blog .sub{max-width:36rem;color:#4A5240;margin:12px 0 40px}
+  .titulares{border-top:3px solid var(--tinta)}
+  .titular{display:block;text-decoration:none;color:inherit;border-bottom:3px solid var(--tinta);padding:26px 0;transition:background .15s}
+  .titular:hover{background:var(--rosa-palido)}
+  .titular .fila{display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .titular h3{font-size:clamp(1.4rem,3vw,2.1rem);text-transform:uppercase}
+  .titular:hover h3{color:var(--rosa)}
+  .titular .tema{font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;padding:6px 12px;border:2px solid var(--tinta);flex:none}
+  .titular p{color:#4A5240;font-size:.95rem;margin-top:8px;max-width:46rem}
+
+  /* ---------- testimonios ---------- */
+  .testimonios{background:#5E4A96;color:#fff;padding:84px 0 92px}
+  .testimonios h2{font-size:clamp(2.2rem,4.5vw,3.4rem);text-transform:uppercase;margin-bottom:8px}
+  .testimonios .sub{color:#DCD3F2;margin-bottom:46px}
+  .coro{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+  .voz{border-top:6px solid var(--amarillo);padding-top:20px}
+  .voz p{font-size:1.12rem;font-weight:500;line-height:1.5}
+  .voz cite{display:block;margin-top:16px;font-style:normal;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:#F4F0FC}
+  .voz cite small{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:#DCD3F2}
+
+  /* ---------- citas ---------- */
+  .citas{background:var(--tinta);color:#fff;padding:88px 0 96px}
+  .citas .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .citas h2{font-size:clamp(2.4rem,5vw,4rem);text-transform:uppercase}
+  .citas h2 span{color:var(--amarillo)}
+  .citas .sub{color:#C9CFBF;margin:16px 0 30px;max-width:28rem}
+  .tarifas{display:grid;gap:0;border-top:2px solid rgba(255,255,255,.35)}
+  .tarifa{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:2px solid rgba(255,255,255,.35)}
+  .tarifa h3{font-size:1.25rem;text-transform:uppercase}
+  .tarifa p{color:#C9CFBF;font-size:.88rem;max-width:22rem}
+  .tarifa .monto{font-family:"Anton",sans-serif;font-size:1.6rem;color:var(--amarillo);text-align:right}
+  .tarifa .monto small{display:block;font-family:"Karla",sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9AA18D}
+
+  /* ---------- pie ---------- */
+  footer{background:#10160A;color:#B7BFAA;padding:56px 0 96px}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  footer img{height:72px;width:auto;margin-bottom:16px}
+  footer p{font-size:.92rem;max-width:34rem}
+  footer nav ul{list-style:none;display:grid;gap:6px}
+  footer nav a{color:#D5DCC8;text-decoration:none;font-weight:700;text-transform:uppercase;font-size:.82rem;letter-spacing:.08em}
+  footer nav a:hover{color:var(--amarillo)}
+  .legal{border-top:1px solid rgba(255,255,255,.18);margin-top:40px;padding-top:22px;font-size:.78rem}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:22px;right:22px;z-index:80;
+    width:62px;height:62px;background:var(--verde);border:3px solid var(--verde-tinta);
+    display:grid;place-items:center;transition:transform .18s ease-out;border-radius:50%;
+    box-shadow:0 10px 24px rgba(27,35,18,.4);
+  }
+  .flotante:hover{transform:scale(1.1)}
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+  }
+  @media (max-width:940px){
+    .hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px}
+    .manzana-cartel{max-width:300px}
+    .sobre .wrap{grid-template-columns:1fr;gap:36px}
+    .afiches{grid-template-columns:1fr;max-width:440px;margin:0 auto}
+    .coro{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+    .citas .wrap{grid-template-columns:1fr;gap:40px}
+    footer .wrap{grid-template-columns:1fr}
+    .nav{flex-wrap:wrap;padding-bottom:0}
+    .nav .marca{border-right:0}
+    .nav ul{margin-left:0;width:100%;border-top:1px solid rgba(255,255,255,.25)}
+    .nav a{padding:12px 12px;font-size:.76rem}
+  }
+</style>
+</head>
+<body>
+<!--
+THESIS: la salud pública como cartel: mensajes de una sola frase, colores planos saturados y geometría de imprenta; rechaza el sitio médico blanco-apagado y también el "wellness pastel" de Instagram.
+OWN-WORLD: campos planos drenchados (verde cartel, rosa tinta de caucho, lila, negro-verdoso), Anton condensada en mayúsculas como titular de afiche, Karla de texto, amarillo señal como subrayado, grano de imprenta sobre todo, bordes de 3-4px.
+STORY: el visitante recibe una campaña: "comer bien es crecer feliz"; cada sección es un cartel que le deja una idea y una acción, y la acción final es sellar la cita por WhatsApp.
+FIRST VIEWPORT: titular Anton de 6rem sobre campo verde pleno, manzana geométrica plana a la derecha con el bebé del logo en el centro, botón amarillo "cita por WhatsApp" con borde negro, rayos de sol girando al fondo.
+FORM: afiche modernista de salud pública — candidato 6 de la lista propia, ASIGNADO por el roll (seed b7c87a62). Challengers del catálogo declinados: pierden identificación de audiencia y claridad del producto; del cartel fosforescente se conserva la disciplina de una sola familia tipográfica display.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+-->
+
+<div class="grano" aria-hidden="true"></div>
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <span class="marca"><img src="assets/logo-icon-white.png" alt="Logo: manzana con bebé"><span>Doc Daly</span></span>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#citas">Citas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="cta" href="#citas">Cita ya</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <div class="sol-rayos" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <g fill="#F7C948">
+          <path d="M200 200 L188 0 h24 Z"/><path d="M200 200 L400 188 v24 Z"/><path d="M200 200 L212 400 h-24 Z"/><path d="M200 200 L0 212 v-24 Z"/>
+          <path d="M200 200 L332 41 l17 17 Z"/><path d="M200 200 L359 332 l-17 17 Z"/><path d="M200 200 L68 359 l-17-17 Z"/><path d="M200 200 L41 68 l17-17 Z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap">
+      <div>
+        <h1>Comer bien es <span class="contraste">crecer feliz</span></h1>
+        <p class="lema"><strong>Dra. Dalila Peñaranda</strong> · pediatría y nutrición infantil. Consulta presencial y virtual, cursos para familias y respuestas sin alarmismo.</p>
+        <div class="firma-cartel">
+          <span class="disco"><img src="assets/logo-icon-color.png" alt=""></span>
+          <p>Campaña permanente<br>por la buena mesa infantil</p>
+        </div>
+        <div class="botones">
+          <a class="btn btn-principal" href="#citas">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="currentColor"/></svg>
+            Cita por WhatsApp
+          </a>
+          <a class="btn btn-secundario" href="#cursos">Los cursos</a>
+        </div>
+      </div>
+      <div class="manzana-cartel" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <!-- manzana plana geométrica -->
+          <circle cx="140" cy="230" r="118" fill="#E8547E"/>
+          <circle cx="260" cy="230" r="118" fill="#D6336C"/>
+          <rect x="188" y="66" width="22" height="70" rx="11" fill="#1C3308"/>
+          <path d="M210 100 C 240 40, 320 44, 330 52 C 320 110, 250 128, 210 100 Z" fill="#5E9C22" stroke="#1C3308" stroke-width="8"/>
+          <!-- bebé del logo en disco blanco -->
+          <circle cx="200" cy="240" r="86" fill="#fff"/>
+          <image href="assets/logo-icon-color.png" x="130" y="164" width="140" height="152" preserveAspectRatio="xMidYMid meet"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="franja" aria-hidden="true">
+    <div class="cinta">
+      <span>Pediatría</span><span>·</span><span>Nutrición infantil</span><span>·</span><span>Consulta virtual a todo el mundo</span><span>·</span><span>Cursos en Hotmart</span><span>·</span><span>Blog gratuito</span>
+    </div>
+  </div>
+
+  <section class="sobre" id="sobre-mi" aria-label="Sobre mí">
+    <div class="wrap">
+      <div>
+        <h2>Una doctora, <span>un método</span></h2>
+        <p class="credo">Pediatra y especialista en nutrición infantil. Mi consulta junta las dos cosas que más preguntan las familias: cómo crece y cómo come. (Credenciales de ejemplo, por entregar.)</p>
+      </div>
+      <div class="lecciones">
+        <div class="leccion">
+          <span class="simbolo" aria-hidden="true">
+            <svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" fill="#5E9C22"/><path d="M42 20v44M20 42h44" stroke="#fff" stroke-width="10" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <h3>Medicina + nutrición en una sola consulta</h3>
+            <p>Valoración pediátrica completa y plan de alimentación por escrito, sin remitir a dos consultas distintas.</p>
+          </div>
+        </div>
+        <div class="leccion">
+          <span class="simbolo" aria-hidden="true">
+            <svg width="84" height="84" viewBox="0 0 84 84"><rect x="8" y="8" width="68" height="68" fill="#8C77BC"/><path d="M24 46l12 12 26-30" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <h3>Evidencia, no modas</h3>
+            <p>Guías OMS y sociedades de pediatría, traducidas a menús que una familia real puede cocinar. <em>· afiliaciones por confirmar</em></p>
+          </div>
+        </div>
+        <div class="leccion">
+          <span class="simbolo" aria-hidden="true">
+            <svg width="84" height="84" viewBox="0 0 84 84"><path d="M42 8 76 70 H8 Z" fill="#E8547E"/><circle cx="42" cy="52" r="9" fill="#fff"/></svg>
+          </span>
+          <div>
+            <h3>Sin alarmismo</h3>
+            <p>Explicaciones que bajan la angustia: qué observar en casa y cuándo sí hay que consultar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cursos" id="cursos" aria-label="Cursos">
+    <div class="wrap">
+      <h2>Cursos de campaña</h2>
+      <p class="sub">Para ver a tu ritmo, desde cualquier país. La compra se realiza en Hotmart. Cursos y precios de ejemplo.</p>
+      <div class="afiches">
+        <a class="afiche" href="#cursos">
+          <span class="lamina" style="background:var(--verde)" aria-hidden="true">
+            <svg width="150" height="120" viewBox="0 0 150 120"><circle cx="75" cy="70" r="42" fill="#fff"/><rect x="68" y="14" width="14" height="26" rx="7" fill="#1C3308"/><path d="M82 34c10-18 36-16 40-14-4 18-26 24-40 14Z" fill="#F7C948"/><path d="M56 72c0-12 9-20 19-20s19 8 19 20" fill="none" stroke="#5E9C22" stroke-width="8" stroke-linecap="round"/></svg>
+          </span>
+          <span class="texto">
+            <h3>Alimentación complementaria sin miedo</h3>
+            <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+            <span class="pie"><span class="precio">$149.000<small>COP · ejemplo</small></span><span class="hotmart">Ver en Hotmart</span></span>
+          </span>
+        </a>
+        <a class="afiche" href="#cursos">
+          <span class="lamina" style="background:var(--amarillo)" aria-hidden="true">
+            <svg width="150" height="120" viewBox="0 0 150 120"><rect x="30" y="30" width="90" height="64" rx="8" fill="#1B2312"/><rect x="44" y="16" width="62" height="18" rx="9" fill="#E8547E"/><circle cx="60" cy="62" r="12" fill="#5E9C22"/><rect x="80" y="52" width="26" height="20" rx="4" fill="#fff"/></svg>
+          </span>
+          <span class="texto">
+            <h3>La lonchera que sí se comen</h3>
+            <p>Menús escolares prácticos, económicos y sin peleas.</p>
+            <span class="pie"><span class="precio">$119.000<small>COP · ejemplo</small></span><span class="hotmart">Ver en Hotmart</span></span>
+          </span>
+        </a>
+        <a class="afiche" href="#cursos">
+          <span class="lamina" style="background:var(--lila)" aria-hidden="true">
+            <svg width="150" height="120" viewBox="0 0 150 120"><path d="M96 20a44 44 0 1 0 34 52 36 36 0 0 1-34-52Z" fill="#fff"/><circle cx="40" cy="34" r="5" fill="#F7C948"/><circle cx="112" cy="92" r="4" fill="#F7C948"/><circle cx="30" cy="88" r="3.5" fill="#F7C948"/></svg>
+          </span>
+          <span class="texto">
+            <h3>Dormir bien desde bebés</h3>
+            <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+            <span class="pie"><span class="precio">$99.000<small>COP · ejemplo</small></span><span class="hotmart">Ver en Hotmart</span></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog" aria-label="Blog">
+    <div class="wrap">
+      <h2>Boletín <span>gratuito</span></h2>
+      <p class="sub">El blog de la doctora: titulares claros, cero alarmismo. (Títulos de ejemplo.)</p>
+      <div class="titulares">
+        <a class="titular" href="#blog">
+          <span class="fila"><h3>¿Cuánto debe comer un niño de 2 años?</h3><span class="tema">Nutrición</span></span>
+          <p>Porciones reales, apetito variable y señales de alarma.</p>
+        </a>
+        <a class="titular" href="#blog">
+          <span class="fila"><h3>Hierro: el mineral que más falta</h3><span class="tema">Nutrición</span></span>
+          <p>Dónde está, cómo se absorbe y cuándo suplementar.</p>
+        </a>
+        <a class="titular" href="#blog">
+          <span class="fila"><h3>Fiebre: cuándo observar y cuándo consultar</h3><span class="tema">Pediatría</span></span>
+          <p>Guía tranquila para noches intranquilas.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonios" aria-label="Testimonios">
+    <div class="wrap">
+      <h2>Dicen las familias</h2>
+      <p class="sub">Testimonios ilustrativos — se reemplazarán por opiniones reales autorizadas.</p>
+      <div class="coro">
+        <blockquote class="voz">
+          <p>«Salimos de la consulta con un plan claro y sin culpas. Mi hija por fin come verduras.»</p>
+          <cite>María F.<small>mamá de Salomé, 3 años · ejemplo</small></cite>
+        </blockquote>
+        <blockquote class="voz">
+          <p>«La consulta virtual fue igual de cercana que ir al consultorio, desde otro país.»</p>
+          <cite>Carlos R.<small>papá de Emilio, 14 meses · ejemplo</small></cite>
+        </blockquote>
+        <blockquote class="voz">
+          <p>«El curso de alimentación complementaria me quitó el miedo. Ciencia con paciencia.»</p>
+          <cite>Laura P.<small>mamá de Antonia, 8 meses · ejemplo</small></cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="citas" id="citas" aria-label="Citas">
+    <div class="wrap">
+      <div>
+        <h2>Tu cita, <span>hoy mismo</span></h2>
+        <p class="sub">Escribe por WhatsApp y la doctora confirma personalmente el horario. Sin formularios eternos.</p>
+        <a class="btn btn-rosa" href="https://wa.me/570000000000?text=Hola%2C%20quiero%20agendar%20una%20cita" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+      <div class="tarifas">
+        <div class="tarifa">
+          <div><h3>Presencial</h3><p>Consultorio — ciudad y dirección por confirmar. Incluye plan de alimentación.</p></div>
+          <span class="monto">$180.000<small>COP · ejemplo</small></span>
+        </div>
+        <div class="tarifa">
+          <div><h3>Virtual</h3><p>Videollamada desde cualquier país, con plan e indicaciones por correo.</p></div>
+          <span class="monto">45 USD<small>ejemplo</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <p>Citas por WhatsApp; lo demás por correo. Aquí irán dirección del consultorio, horarios y redes sociales.</p>
+    </div>
+    <nav aria-label="Mapa del sitio">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="https://wa.me/570000000000" aria-label="Abrir WhatsApp" rel="noopener">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="1.8"/><path d="M8.8 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.7 1.4 1.7 2.4 2.1.2.1.4.1.6-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.2.5.3.5.5v.7c0 .3-.1.6-.5.8-.5.3-1.3.5-2.3.2-1.5-.5-3.2-1.6-4.4-3.2-.8-1-1.4-2.2-1.6-3.2-.1-.6 0-1.1.1-1.4Z" fill="#fff"/></svg>
+</a>
+</body>
+</html>

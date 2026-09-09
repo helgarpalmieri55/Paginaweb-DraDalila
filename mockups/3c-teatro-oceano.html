@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opción C · Libro pop-up — Dra. Dalila Peñaranda</title>
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --cielo:#DFF0FA;           /* la mesa de lectura bajo el cielo */
+    --cielo-hondo:#C6E3F4;
+    --pagina:#FFFDF4;          /* hoja del libro */
+    --pagina-borde:#EDE4CC;
+    --tinta:#2B3A66;
+    --texto:#4E5F7E;           /* secundario, entintado azul */
+    --rosa:#D6336C; --rosa-luz:#F585A3; --rosa-suave:#F7A9A4;
+    --verde:#5E9A28; --verde-hondo:#4F8A20; --menta:#9FD8C4;
+    --mostaza:#E8A93C; --sol:#FFC94B;
+    --celeste:#7FA8D9; --celeste-hondo:#3D6FA8;
+    --lomo:#B98A5F; --lomo-hondo:#8A5C3B;
+    --sombra:0 10px 22px rgba(43,58,102,.16);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--sol);color:var(--tinta)}
+  body{
+    font-family:"Karla",system-ui,sans-serif;
+    background:var(--cielo);color:var(--tinta);
+    font-size:17px;line-height:1.65;overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .17 0 0 0 0 .23 0 0 0 0 .4 0 0 0 .03 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23p)'/%3E%3C/svg%3E");
+  }
+  body::-webkit-scrollbar{width:12px}
+  body::-webkit-scrollbar-track{background:var(--cielo-hondo)}
+  body::-webkit-scrollbar-thumb{background:var(--celeste-hondo);border-radius:6px}
+  h1,h2,h3{font-family:"Alfa Slab One",serif;font-weight:400;line-height:1.12;text-wrap:balance}
+  :focus-visible{outline:3px solid var(--mostaza);outline-offset:3px;border-radius:4px}
+  img{max-width:100%}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+  section{position:relative;z-index:1}
+
+  /* ---------- barra de la biblioteca ---------- */
+  header{
+    position:sticky;top:0;z-index:50;background:var(--pagina);
+    box-shadow:0 1px 0 rgba(43,58,102,.12), 0 6px 16px rgba(43,58,102,.12);
+  }
+  .nav{max-width:1100px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:16px}
+  .nav img{height:44px;width:auto}
+  .nav .marca{font-family:"Alfa Slab One",serif;color:var(--tinta);font-size:1.02rem;letter-spacing:.02em}
+  .nav ul{margin-left:auto;display:flex;list-style:none;gap:2px;flex-wrap:wrap}
+  .nav a{
+    color:var(--tinta);text-decoration:none;font-weight:700;font-size:.88rem;
+    padding:8px 12px;border-radius:10px;transition:background .2s,color .2s;
+  }
+  .nav a:hover{background:var(--tinta);color:#fff}
+  .nav .cta{background:var(--rosa);color:#fff}
+  .nav .cta:hover{background:var(--tinta);color:#fff}
+
+  /* ---------- momento de motion: el pop-up recién desplegado ---------- */
+  .desplegado{animation:desplegarse 6.5s ease-in-out infinite;transform-origin:center bottom}
+  .desplegado-2{animation:desplegarse 8s ease-in-out infinite reverse;transform-origin:center bottom}
+  @keyframes desplegarse{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1.2deg)}}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+  }
+
+  /* ---------- hero: el libro se abre ---------- */
+  .hero{padding:60px 0 44px}
+  .hero .interior{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem)}
+  .hero h1 .popup{color:var(--rosa)}
+  .hero .intro{margin:18px 0 26px;font-size:1.08rem;max-width:32rem;color:var(--texto)}
+  .botones{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-family:"Alfa Slab One",serif;font-size:.95rem;letter-spacing:.02em;
+    padding:15px 26px;border-radius:14px;color:#fff;
+    box-shadow:0 6px 0 rgba(43,58,102,.24), var(--sombra);
+    transition:transform .18s ease-out, box-shadow .18s ease-out;
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 rgba(43,58,102,.24), 0 16px 26px rgba(43,58,102,.2)}
+  .btn:active{transform:translateY(2px);box-shadow:0 3px 0 rgba(43,58,102,.24), 0 8px 14px rgba(43,58,102,.18)}
+  .btn-whatsapp{background:var(--verde-hondo)}
+  .btn-rosa{background:var(--rosa)}
+  .hero figure{position:relative;margin:0}
+  .hero figure svg{width:100%;height:auto;display:block}
+  .hero figcaption{text-align:center;font-size:.85rem;color:var(--texto);font-style:italic;margin-top:10px}
+  .hero .nubes{position:absolute;top:-10px;left:0;right:0;height:60px;pointer-events:none}
+
+  /* ---------- credenciales: solapas para levantar ---------- */
+  .solapas-seccion{padding:56px 0 24px}
+  .solapas-seccion h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .solapas-seccion .sub{color:var(--texto);max-width:38rem;margin-bottom:36px}
+  .solapas{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .solapa{
+    position:relative;background:var(--pagina);border-radius:4px 4px 14px 14px;
+    padding:26px 16px 20px;text-align:center;box-shadow:var(--sombra);
+    border-top:2px dashed var(--pagina-borde);
+    transition:transform .2s ease-out, box-shadow .2s ease-out;
+  }
+  .solapa::after{ /* esquina doblada */
+    content:"";position:absolute;top:0;right:0;width:0;height:0;
+    border-style:solid;border-width:0 26px 26px 0;
+    border-color:transparent var(--cielo) transparent transparent;
+    filter:drop-shadow(-2px 2px 2px rgba(43,58,102,.18));
+  }
+  .solapa:hover{transform:rotate(-1.4deg) translateY(-4px);box-shadow:0 16px 28px rgba(43,58,102,.2)}
+  .solapa .aro{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;box-shadow:inset 0 -5px 0 rgba(43,58,102,.12)}
+  .solapa .aro svg{width:32px;height:32px}
+  .solapa h3{font-size:.98rem;line-height:1.25}
+  .solapa p{font-size:.8rem;color:var(--texto)}
+
+  /* ---------- consultorio: álbum con esquineros ---------- */
+  .album-seccion{padding:64px 0 30px}
+  .album-seccion h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .album-seccion .sub{color:var(--texto);max-width:34rem;margin-bottom:34px}
+  .album{
+    background:var(--pagina);border-radius:8px;padding:38px 34px 30px;
+    box-shadow:0 2px 0 #F4EDD9, 0 4px 0 #EDE4CC, var(--sombra);
+  }
+  .album .fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .foto-album{margin:0;text-align:center}
+  .foto-album .marquito{position:relative;display:block;padding:8px;background:#fff;box-shadow:0 6px 14px rgba(43,58,102,.18)}
+  .foto-album:nth-child(1) .marquito{transform:rotate(-1.6deg)}
+  .foto-album:nth-child(2) .marquito{transform:rotate(1.2deg)}
+  .foto-album:nth-child(3) .marquito{transform:rotate(-1deg)}
+  .foto-album img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}
+  .foto-album .esq{position:absolute;width:0;height:0;border-style:solid}
+  .foto-album .esq.a{top:-2px;left:-2px;border-width:22px 22px 0 0;border-color:var(--celeste) transparent transparent transparent}
+  .foto-album .esq.b{top:-2px;right:-2px;border-width:0 22px 22px 0;border-color:transparent var(--rosa-suave) transparent transparent}
+  .foto-album .esq.c{bottom:-2px;left:-2px;border-width:22px 0 0 22px;border-color:transparent transparent transparent var(--menta)}
+  .foto-album .esq.d{bottom:-2px;right:-2px;border-width:0 0 22px 22px;border-color:transparent transparent var(--mostaza) transparent}
+  .foto-album h3{font-size:1rem;margin-top:16px}
+  .foto-album p{font-size:.83rem;color:var(--texto)}
+  .album-seccion .nota{font-size:.8rem;color:var(--texto);margin-top:26px;text-align:center}
+
+  /* ---------- cursos: páginas con pestaña ---------- */
+  .capitulos{padding:70px 0 26px}
+  .capitulos h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .capitulos .sub{color:var(--texto);max-width:38rem;margin-bottom:44px}
+  .paginas{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .pagina-curso{
+    position:relative;background:var(--pagina);border-radius:6px 6px 10px 10px;
+    box-shadow:0 2px 0 #F4EDD9, 0 4px 0 #EDE4CC, var(--sombra);
+    display:flex;flex-direction:column;text-decoration:none;color:var(--tinta);
+    transition:transform .2s ease-out, box-shadow .2s ease-out;
+  }
+  .pagina-curso:hover{transform:translateY(-6px);box-shadow:0 2px 0 #F4EDD9, 0 4px 0 #EDE4CC, 0 18px 30px rgba(43,58,102,.22)}
+  .pestana{
+    position:absolute;top:-16px;left:22px;padding:5px 16px 4px;border-radius:8px 8px 0 0;
+    font-family:"Alfa Slab One",serif;font-size:.72rem;color:#fff;letter-spacing:.03em;
+  }
+  .pagina-curso .escena{margin:18px 18px 0;border-radius:8px;overflow:hidden;border:1px solid var(--pagina-borde)}
+  .pagina-curso .escena svg{width:100%;height:auto;display:block}
+  .pagina-curso .texto{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .pagina-curso h3{font-size:1.05rem}
+  .pagina-curso p{font-size:.85rem;color:var(--texto);flex:1}
+  .pagina-curso .pie{display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #F0E9D5;padding-top:10px}
+  .pagina-curso .precio{font-family:"Alfa Slab One",serif;font-size:.98rem;color:var(--verde-hondo)}
+  .pagina-curso .precio small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.64rem;color:var(--texto)}
+  .pagina-curso .ver{font-weight:800;font-size:.82rem;color:var(--rosa)}
+  .capitulos .nota{font-size:.8rem;color:var(--texto);margin-top:30px;text-align:center}
+
+  /* ---------- blog: cintas marcapáginas + notas al margen ---------- */
+  .marcadores{padding:70px 0 30px}
+  .marcadores .interior{display:grid;grid-template-columns:1.1fr .9fr;gap:52px}
+  .marcadores h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:8px}
+  .marcadores .sub{color:var(--texto);margin-bottom:24px}
+  .cintas{list-style:none}
+  .cintas a{
+    display:block;text-decoration:none;color:var(--tinta);
+    padding:16px 44px 14px 22px;margin-bottom:16px;
+    clip-path:polygon(0 0,100% 0,calc(100% - 20px) 50%,100% 100%,0 100%);
+    transition:transform .22s cubic-bezier(.22,1,.36,1);
+    box-shadow:var(--sombra);
+  }
+  .cintas li:nth-child(1) a{background:#FBD8E3}
+  .cintas li:nth-child(2) a{background:#FBEBC8}
+  .cintas li:nth-child(3) a{background:#D7EBDF}
+  .cintas a:hover{transform:translateX(10px)}
+  .cintas h3{font-size:1.02rem}
+  .cintas a:hover h3{color:var(--rosa)}
+  .cintas p{font-size:.84rem;color:var(--texto)}
+  .margen blockquote{
+    position:relative;background:#FFF8DE;border-radius:3px;padding:24px 22px 16px;margin-top:22px;
+    box-shadow:var(--sombra);transform:rotate(-.8deg);
+  }
+  .margen blockquote:nth-of-type(2){transform:rotate(.9deg)}
+  .margen blockquote::before{ /* cinta adhesiva */
+    content:"";position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-2deg);
+    width:92px;height:22px;background:rgba(127,168,217,.5);border-radius:2px;
+  }
+  .margen p{font-size:.96rem;color:#4A4630}
+  .margen cite{display:block;margin-top:10px;font-style:normal;font-weight:800;font-size:.8rem;color:var(--tinta)}
+  .margen cite small{font-weight:600;color:#7A7458}
+
+  /* ---------- citas: boletos recortables de la última página ---------- */
+  .final{padding:70px 0 64px}
+  .final h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:10px}
+  .final .sub{color:var(--texto);max-width:38rem;margin-bottom:34px}
+  .boletos{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:880px}
+  .boleto{
+    position:relative;background:var(--pagina);border-radius:8px;padding:30px 30px 28px;
+    border:2.5px dashed var(--celeste-hondo);box-shadow:var(--sombra);
+  }
+  .boleto .tijeras{position:absolute;top:-15px;left:34px;width:30px;height:30px;background:var(--cielo);border-radius:50%;display:grid;place-items:center}
+  .boleto .tijeras svg{width:20px;height:20px}
+  .boleto h3{font-size:1.3rem;margin-bottom:6px}
+  .boleto p{font-size:.9rem;color:var(--texto);margin-bottom:16px}
+  .boleto .precio-cita{font-family:"Alfa Slab One",serif;font-size:1.4rem;display:block;margin-bottom:18px}
+  .boleto .precio-cita small{display:block;font-family:"Karla",sans-serif;font-weight:700;font-size:.68rem;color:var(--texto)}
+
+  /* ---------- pie: contraportada ---------- */
+  footer{position:relative;z-index:2;background:var(--tinta);color:#C9D4EC;padding:64px 0 100px}
+  footer .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+  footer img{height:74px;width:auto;margin-bottom:16px}
+  footer h2{color:#fff;font-size:1.6rem;margin-bottom:10px}
+  footer p{font-size:.94rem;max-width:34rem}
+  footer .btn{margin-top:20px}
+  footer nav ul{list-style:none;display:grid;gap:8px}
+  footer nav a{color:#A9C4EE;text-decoration:none;font-weight:700}
+  footer nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+  .legal{border-top:1px solid rgba(255,255,255,.18);margin-top:44px;padding-top:24px;font-size:.8rem;color:#93A5CC;display:block}
+  .legal p+p{margin-top:6px}
+
+  .flotante{
+    position:fixed;bottom:22px;right:22px;z-index:60;
+    width:62px;height:62px;border-radius:50%;background:var(--verde-hondo);
+    display:grid;place-items:center;
+    box-shadow:0 6px 0 rgba(43,58,102,.26), 0 14px 26px rgba(43,58,102,.3);
+    transition:transform .18s ease-out;
+  }
+  .flotante:hover{transform:translateY(-4px)}
+
+  @media (max-width:940px){
+    .hero .interior{grid-template-columns:1fr;gap:24px}
+    .hero figure{max-width:460px;margin:0 auto;order:-1}
+    .solapas{grid-template-columns:repeat(2,1fr)}
+    .album .fotos{grid-template-columns:1fr;max-width:340px;margin:0 auto;gap:38px}
+    .paginas{grid-template-columns:1fr;gap:34px}
+    .marcadores .interior{grid-template-columns:1fr;gap:36px}
+    .boletos{grid-template-columns:1fr}
+    footer .wrap{grid-template-columns:1fr}
+    .nav a{padding:8px 9px;font-size:.8rem}
+  }
+</style>
+</head>
+<body>
+<!--
+MAQUETA: todos los textos, precios, cursos y testimonios son contenido de ejemplo.
+Opción C · Libro pop-up: la esencia del teatro de papel como cuento desplegable — el libro
+se abre y la doctora emerge en pop-up del pliegue central; las credenciales son solapas
+para levantar, las fotos del consultorio van en el álbum con esquineros, los cursos son
+páginas con pestaña y los boletos se recortan de la última página.
+-->
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <img src="assets/logo-icon-color.png" alt="Logo: manzana con bebé">
+    <span class="marca">Doc Daly</span>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#consultorio">Consultorio</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a class="cta" href="#citas">Pedir cita</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <div class="wrap">
+      <div class="interior">
+        <div>
+          <h1>El cuento se abre y aparece <span class="popup">tu pediatra</span></h1>
+          <p class="intro">Soy la <strong>Dra. Dalila Peñaranda</strong>, pediatra y especialista en nutrición infantil. Este libro pop-up se despliega para tus hijos: alimentación, crecimiento y sueño, contados sin culpas y con evidencia. Presencial y virtual desde cualquier país.</p>
+          <div class="botones">
+            <a class="btn btn-whatsapp" href="#citas">Pedir cita por WhatsApp</a>
+            <a class="btn btn-rosa" href="#cursos">Ver los cursos</a>
+          </div>
+        </div>
+        <figure>
+          <svg viewBox="0 0 560 420" role="img" aria-label="Libro pop-up abierto: la doctora emerge de pie en el pliegue central con un telón desplegable, una ballena y un sol de papel">
+            <!-- tapa y hojas del libro -->
+            <g filter="drop-shadow(0 16px 18px rgba(43,58,102,.25))">
+              <path d="M40 330 Q 160 300 280 322 Q 400 300 520 330 L 520 352 Q 400 322 280 344 Q 160 322 40 352 Z" fill="#8A5C3B"/>
+              <path d="M48 322 Q 162 294 280 316 Q 398 294 512 322 L 512 336 Q 398 308 280 330 Q 162 308 48 336 Z" fill="#EDE4CC"/>
+              <path d="M56 314 Q 164 288 280 310 Q 396 288 504 314 L 504 326 Q 396 300 280 322 Q 164 300 56 326 Z" fill="#F6F0DD"/>
+              <path d="M64 306 Q 166 282 280 304 Q 394 282 496 306 L 496 318 Q 394 294 280 316 Q 166 294 64 318 Z" fill="#FFFDF4"/>
+            </g>
+            <!-- página izquierda: mar pop-up con ballena -->
+            <g class="desplegado-2">
+              <path d="M84 274 Q 140 258 196 270 L 196 296 Q 140 284 84 300 Z" fill="#7FA8D9"/>
+              <g filter="drop-shadow(0 8px 8px rgba(43,58,102,.22))">
+                <path d="M92 226 Q 142 192 198 224 Q 190 262 142 262 Q 106 260 92 226 Z" fill="#7FA8D9"/>
+                <path d="M186 218 q 28 -18 34 -2 q -17 11 -30 16 Z" fill="#7FA8D9"/>
+                <circle cx="124" cy="226" r="4.4" fill="#2B3A66"/>
+                <path d="M102 240 q 18 12 40 6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <rect x="138" y="258" width="10" height="34" fill="#CBE0F2"/>
+              </g>
+            </g>
+            <!-- página derecha: sol y colinas pop-up -->
+            <g class="desplegado">
+              <path d="M368 268 Q 420 252 476 266 L 476 294 Q 420 280 368 296 Z" fill="#9FD8C4"/>
+              <g filter="drop-shadow(0 8px 8px rgba(43,58,102,.22))">
+                <circle cx="440" cy="196" r="30" fill="#FFC94B"/>
+                <g stroke="#FFC94B" stroke-width="7" stroke-linecap="round">
+                  <line x1="440" y1="150" x2="440" y2="140"/><line x1="440" y1="242" x2="440" y2="252"/>
+                  <line x1="394" y1="196" x2="404" y2="196"/><line x1="476" y1="196" x2="486" y2="196"/>
+                  <line x1="408" y1="164" x2="415" y2="171"/><line x1="465" y1="221" x2="472" y2="228"/>
+                  <line x1="472" y1="164" x2="465" y2="171"/><line x1="415" y1="221" x2="408" y2="228"/>
+                </g>
+                <rect x="434" y="240" width="10" height="34" fill="#FBEBC8"/>
+              </g>
+            </g>
+            <!-- telón pop-up central detrás de la doctora -->
+            <g filter="drop-shadow(0 10px 12px rgba(43,58,102,.24))">
+              <path d="M206 120 h148 v20 q -18 24 -37 0 q -18 24 -37 0 q -18 24 -37 0 q -18 24 -37 0 Z" fill="#D6336C"/>
+              <path d="M206 120 h148 v10 q -18 20 -37 0 q -18 20 -37 0 q -18 20 -37 0 q -18 20 -37 0 Z" fill="#F585A3" opacity=".6"/>
+              <path d="M212 138 q 14 66 6 160 l -14 0 q 6 -90 -2 -152 Z" fill="#B02455"/>
+              <path d="M348 138 q -14 66 -6 160 l 14 0 q -6 -90 2 -152 Z" fill="#B02455"/>
+            </g>
+            <!-- la doctora pop-up en el pliegue (marcador de su foto real) -->
+            <g class="desplegado" filter="drop-shadow(0 10px 10px rgba(43,58,102,.28))">
+              <path d="M262 306 l -8 -18 h 52 l -8 18 Z" fill="#EDE4CC"/>
+              <path d="M238 292 q 4 -74 42 -74 q 38 0 42 74 Z" fill="#fff"/>
+              <path d="M280 218 l -10 15 10 24 10 -24 Z" fill="#F6F0DD"/>
+              <path d="M263 238 q 8 20 17 20 q 9 0 17 -20" stroke="#D6336C" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+              <circle cx="280" cy="262" r="6.4" fill="#D6336C"/>
+              <circle cx="280" cy="186" r="31" fill="#F3C7A6"/>
+              <path d="M249 179 q 6 -31 31 -31 q 25 0 31 31 q -11 -13 -31 -13 q -20 0 -31 13 Z" fill="#4A2B33"/>
+              <circle cx="270" cy="186" r="3" fill="#4A2B33"/>
+              <circle cx="290" cy="186" r="3" fill="#4A2B33"/>
+              <path d="M272 198 q 8 7 16 0" stroke="#B02455" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+              <!-- manzana en la mano -->
+              <path d="M241 244 q -18 10 -16 30" stroke="#F3C7A6" stroke-width="11" fill="none" stroke-linecap="round"/>
+              <circle cx="226" cy="282" r="13" fill="#D6336C"/>
+              <path d="M226 270 q 4 -8 12 -8" stroke="#4F8A20" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+            </g>
+            <!-- cinta marcapáginas -->
+            <path d="M330 322 l 0 64 10 -10 10 10 0 -60 Z" fill="#E8A93C" filter="drop-shadow(0 4px 5px rgba(43,58,102,.25))"/>
+          </svg>
+          <figcaption>La protagonista emerge del pliegue: aquí entrará la foto real de la doctora.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="solapas-seccion" id="sobre-mi" aria-label="Sobre la doctora">
+    <div class="wrap">
+      <h2>Levanta las solapas del cuento</h2>
+      <p class="sub">Pediatría y nutrición infantil en una sola consulta. Cada credencial es una solapa del libro. (De ejemplo — se reemplazarán por las reales.)</p>
+      <div class="solapas">
+        <article class="solapa">
+          <span class="aro" style="background:#F9D2DD"><svg viewBox="0 0 24 24" fill="none" stroke="#D6336C" stroke-width="2" stroke-linecap="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M9 8V6.5A2.5 2.5 0 0 1 11.5 4h1A2.5 2.5 0 0 1 15 6.5V8M12 11v5M9.5 13.5h5"/></svg></span>
+          <h3>Médica pediatra</h3><p>Universidad por confirmar · ejemplo</p>
+        </article>
+        <article class="solapa">
+          <span class="aro" style="background:#E7F0D6"><svg viewBox="0 0 24 24" fill="none" stroke="#4F8A20" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><path d="M12 6c0-2 1.5-3 3-3"/></svg></span>
+          <h3>Nutrición infantil</h3><p>Especialización por confirmar · ejemplo</p>
+        </article>
+        <article class="solapa">
+          <span class="aro" style="background:#DCE8F6"><svg viewBox="0 0 24 24" fill="none" stroke="#3D6FA8" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16-3-3-3-13 0-16z"/></svg></span>
+          <h3>Familias en varios países</h3><p>Consulta virtual internacional</p>
+        </article>
+        <article class="solapa">
+          <span class="aro" style="background:#FBEBC8"><svg viewBox="0 0 24 24" fill="none" stroke="#C4831B" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 5.9L12 16.4 6.7 19.3l1.2-5.9L3.4 9.3l6-.7z"/></svg></span>
+          <h3>Sociedades científicas</h3><p>Afiliaciones por confirmar · ejemplo</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="album-seccion" id="consultorio" aria-label="El consultorio">
+    <div class="wrap">
+      <h2>El álbum del consultorio</h2>
+      <p class="sub">Las fotos reales del consultorio, pegadas con esquineros en la página del álbum.</p>
+      <div class="album">
+        <div class="fotos">
+          <figure class="foto-album">
+            <span class="marquito">
+              <span class="esq a" aria-hidden="true"></span><span class="esq b" aria-hidden="true"></span>
+              <span class="esq c" aria-hidden="true"></span><span class="esq d" aria-hidden="true"></span>
+              <img src="assets/3d/recepcion.jpg" alt="Recepción con mostrador de madera clara y ballena de acuarela en la pared">
+            </span>
+            <h3>La recepción</h3><p>Te recibe la ballena del mural y la madera clara.</p>
+          </figure>
+          <figure class="foto-album">
+            <span class="marquito">
+              <span class="esq a" aria-hidden="true"></span><span class="esq b" aria-hidden="true"></span>
+              <span class="esq c" aria-hidden="true"></span><span class="esq d" aria-hidden="true"></span>
+              <img src="assets/3d/consulta.jpg" alt="Consultorio con escritorio de madera clara y ballenas de acuarela en la pared">
+            </span>
+            <h3>La consulta</h3><p>Aquí conversamos con calma y armamos el plan.</p>
+          </figure>
+          <figure class="foto-album">
+            <span class="marquito">
+              <span class="esq a" aria-hidden="true"></span><span class="esq b" aria-hidden="true"></span>
+              <span class="esq c" aria-hidden="true"></span><span class="esq d" aria-hidden="true"></span>
+              <img src="assets/3d/camilla.jpg" alt="Sala de examen con camilla celeste y peluches junto a la ventana">
+            </span>
+            <h3>La sala de examen</h3><p>La camilla celeste, custodiada por los peluches.</p>
+          </figure>
+        </div>
+      </div>
+      <p class="nota">Fotos tomadas del video real del consultorio, mejoradas digitalmente para esta maqueta.</p>
+    </div>
+  </section>
+
+  <section class="capitulos" id="cursos" aria-label="Cursos">
+    <div class="wrap">
+      <h2>Capítulos con pestaña</h2>
+      <p class="sub">Tres cursos en video para ver a tu ritmo, desde cualquier país: cada uno es un capítulo marcado del libro. La compra se realiza en Hotmart. (Cursos y precios de ejemplo.)</p>
+      <div class="paginas">
+        <a class="pagina-curso" href="#cursos">
+          <span class="pestana" style="background:var(--rosa)">Capítulo 1</span>
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 320 180">
+              <rect width="320" height="180" fill="#CFE3F4"/>
+              <path d="M0 132 Q 90 104 180 126 T 320 122 V180 H0 Z" fill="#9FD8C4"/>
+              <g filter="drop-shadow(0 5px 5px rgba(43,58,102,.22))">
+                <circle cx="160" cy="78" r="42" fill="#fff"/>
+                <path d="M160 52v18" stroke="#D6336C" stroke-width="5" stroke-linecap="round"/>
+                <path d="M136 86q24 22 48 0" stroke="#D6336C" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <circle cx="160" cy="80" r="11" fill="#F7A9A4"/>
+              </g>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>Alimentación complementaria sin miedo</h3>
+            <p>De la leche a la cuchara: 6 a 12 meses, paso a paso.</p>
+            <span class="pie"><span class="precio">$149.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+        <a class="pagina-curso" href="#cursos">
+          <span class="pestana" style="background:var(--celeste-hondo)">Capítulo 2</span>
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 320 180">
+              <rect width="320" height="180" fill="#FBEBC8"/>
+              <path d="M0 142 Q 100 116 200 136 T 320 132 V180 H0 Z" fill="#E8A93C"/>
+              <g filter="drop-shadow(0 5px 5px rgba(43,58,102,.22))">
+                <rect x="96" y="58" width="128" height="76" rx="12" fill="#D6336C"/>
+                <rect x="116" y="44" width="88" height="20" rx="10" fill="#B02455"/>
+                <circle cx="134" cy="96" r="15" fill="#fff"/>
+                <rect x="160" y="84" width="40" height="26" rx="6" fill="#6FA83C"/>
+              </g>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>La lonchera que sí se comen</h3>
+            <p>Menús escolares prácticos y sin peleas en la mesa.</p>
+            <span class="pie"><span class="precio">$119.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+        <a class="pagina-curso" href="#cursos">
+          <span class="pestana" style="background:var(--verde-hondo)">Capítulo 3</span>
+          <span class="escena" aria-hidden="true">
+            <svg viewBox="0 0 320 180">
+              <rect width="320" height="180" fill="#4A3A66"/>
+              <g filter="drop-shadow(0 5px 5px rgba(0,0,0,.4))">
+                <circle cx="210" cy="66" r="34" fill="#FBEBC8"/>
+                <path d="M222 38 a34 34 0 1 0 17 56 27 27 0 0 1 -17 -56Z" fill="#8B7DB0"/>
+              </g>
+              <path d="M0 150 Q 100 128 210 144 T 320 140 V180 H0 Z" fill="#665592"/>
+              <g fill="#fff"><circle cx="60" cy="50" r="4"/><circle cx="104" cy="30" r="3"/><circle cx="42" cy="98" r="3"/><circle cx="140" cy="66" r="2.6"/></g>
+            </svg>
+          </span>
+          <span class="texto">
+            <h3>Dormir bien desde bebés</h3>
+            <p>Siestas, noches y despertares con rutinas respetuosas.</p>
+            <span class="pie"><span class="precio">$99.000<small>COP · ejemplo · Hotmart</small></span><span class="ver">Ver curso</span></span>
+          </span>
+        </a>
+      </div>
+      <p class="nota">Marca tu capítulo y léelo a tu ritmo: compra en Hotmart y ve cada curso cuando quieras.</p>
+    </div>
+  </section>
+
+  <section class="marcadores" id="blog" aria-label="Blog y testimonios">
+    <div class="wrap">
+      <div class="interior">
+        <div>
+          <h2>Cintas que marcan el blog</h2>
+          <p class="sub">Artículos gratuitos, señalados con marcapáginas. (Títulos de ejemplo.)</p>
+          <ul class="cintas">
+            <li><a href="#blog"><h3>¿Cuánto debe comer un niño de 2 años?</h3><p>Porciones reales, apetito variable y señales de alarma.</p></a></li>
+            <li><a href="#blog"><h3>Hierro: el mineral que más falta</h3><p>Dónde está, cómo se absorbe y cuándo suplementar.</p></a></li>
+            <li><a href="#blog"><h3>Fiebre: cuándo observar y cuándo consultar</h3><p>Guía tranquila para noches intranquilas.</p></a></li>
+          </ul>
+        </div>
+        <div class="margen" aria-label="Testimonios">
+          <h2 style="font-size:1.5rem">Notas en los márgenes</h2>
+          <p class="sub">Testimonios ilustrativos — se reemplazarán por reales.</p>
+          <blockquote>
+            <p>«Salimos con un plan claro y sin culpas. ¡Mi hija por fin come verduras!»</p>
+            <cite>María F. <small>· mamá de Salomé, 3 años · ejemplo</small></cite>
+          </blockquote>
+          <blockquote>
+            <p>«La consulta virtual fue igual de cercana, desde otro país.»</p>
+            <cite>Carlos R. <small>· papá de Emilio, 14 meses · ejemplo</small></cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="citas" aria-label="Citas">
+    <div class="wrap">
+      <h2>Recorta tu boleto de la última página</h2>
+      <p class="sub">Escríbeme por WhatsApp y confirmo personalmente tu horario.</p>
+      <div class="boletos">
+        <article class="boleto">
+          <span class="tijeras" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3D6FA8" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2.6"/><circle cx="6" cy="18" r="2.6"/><path d="M8.2 7.6 20 18M8.2 16.4 20 6"/></svg>
+          </span>
+          <h3>Presencial</h3>
+          <p>Consultorio — ciudad y dirección por confirmar. Valoración completa con plan por escrito.</p>
+          <span class="precio-cita">$180.000 COP<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="#">Agendar por WhatsApp</a>
+        </article>
+        <article class="boleto">
+          <span class="tijeras" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3D6FA8" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="2.6"/><circle cx="6" cy="18" r="2.6"/><path d="M8.2 7.6 20 18M8.2 16.4 20 6"/></svg>
+          </span>
+          <h3>Virtual</h3>
+          <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+          <span class="precio-cita">45 USD<small>precio de ejemplo</small></span>
+          <a class="btn btn-whatsapp" href="#">Agendar por WhatsApp</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-full-white.png" alt="Dra. Dalila Peñaranda — Pediatría y Nutrición">
+      <h2>La contraportada</h2>
+      <p>Citas por WhatsApp; todo lo demás por correo. Aquí irán la dirección del consultorio, los horarios de atención y las redes sociales.</p>
+      <a class="btn btn-whatsapp" href="#">Escribir por WhatsApp</a>
+    </div>
+    <nav aria-label="Pie">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#consultorio">Consultorio</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#citas">Citas</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p><strong>Aviso médico:</strong> este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, acude a tu servicio de salud.</p>
+    <p>© Dra. Dalila Peñaranda · Política de privacidad · Política de cookies · Maqueta de diseño: textos, precios y testimonios de ejemplo; fotos del consultorio del video real, mejoradas digitalmente.</p>
+  </div>
+</footer>
+
+<a class="flotante" href="#" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.2 7L4 29l7.2-2.1c1.9 1 4 1.6 6.3 1.6h.5c6.6 0 12-5.4 12-12S22.6 3 16 3zm5.9 17.1c-.3.8-1.7 1.6-2.3 1.6-.6.1-1.3.1-2.1-.1-.5-.2-1.1-.4-1.9-.7-3.4-1.5-5.6-4.9-5.8-5.1-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.7 1 2.4 1.1 2.6.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.4.1 2.1 1 2.5 1.2.4.2.6.3.7.5.1.1.1.9-.2 1.7z"/></svg>
+</a>
+
+</body>
+</html>
