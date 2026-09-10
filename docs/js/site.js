@@ -14,7 +14,10 @@ const CONFIG = {
   precioVirtual: '45 USD',                 // pendiente de confirmar con la doctora
   mostrarPrecios: true,                    // false oculta la sección "Tu cita"
   mostrarPepe: true,                       // false oculta el bloque de Pepe
-  redes: { instagram: '#', facebook: '#', tiktok: '#' }  // pendientes
+  redes: { instagram: '#', facebook: '#', tiktok: '#' },  // pendientes
+  hotmart: {                               // enlaces de compra, pendientes
+    complementaria: '', lonchera: '', sueno: ''
+  }
 };
 
 (function () {
@@ -30,6 +33,11 @@ const CONFIG = {
   document.querySelectorAll('[data-precio="presencial"]').forEach(el => { el.textContent = CONFIG.precioPresencial; });
   document.querySelectorAll('[data-precio="virtual"]').forEach(el => { el.textContent = CONFIG.precioVirtual; });
   document.querySelectorAll('[data-red]').forEach(a => { a.href = CONFIG.redes[a.dataset.red] || '#'; });
+  document.querySelectorAll('[data-hotmart]').forEach(a => {
+    const url = CONFIG.hotmart[a.dataset.hotmart];
+    if (url) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
+    else { a.href = waLink; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Pregúntame por el curso'; }
+  });
   if (!CONFIG.mostrarPrecios) document.getElementById('citas')?.remove();
   if (!CONFIG.mostrarPepe) document.getElementById('pepe')?.remove();
 
@@ -44,15 +52,8 @@ const CONFIG = {
     barra.classList.remove('abierta'); toggle?.setAttribute('aria-expanded', 'false');
   }));
 
-  /* -------- sombra de la barra + enlace activo -------- */
-  const enlaces = [...document.querySelectorAll('.barra__menu a[href^="#"]')];
-  const secciones = enlaces.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-  function alScroll() {
-    barra.classList.toggle('con-sombra', window.scrollY > 12);
-    let actual = null;
-    for (const s of secciones) { if (s.getBoundingClientRect().top <= 120) actual = s.id; }
-    enlaces.forEach(a => a.classList.toggle('activo', a.getAttribute('href') === '#' + actual));
-  }
+  /* -------- sombra de la barra al bajar -------- */
+  function alScroll() { barra?.classList.toggle('con-sombra', window.scrollY > 12); }
   window.addEventListener('scroll', alScroll, { passive: true });
   alScroll();
 
@@ -86,6 +87,52 @@ const CONFIG = {
       }
     });
   });
+
+  /* -------- blog: filtro por categoría -------- */
+  const filtros = document.querySelectorAll('.filtro[data-cat]');
+  if (filtros.length) {
+    const articulos = [...document.querySelectorAll('[data-cat]')];
+    const vacio = document.querySelector('.sin-resultados');
+    filtros.forEach(b => b.addEventListener('click', () => {
+      const cat = b.dataset.cat;
+      filtros.forEach(o => o.setAttribute('aria-pressed', String(o === b)));
+      let visibles = 0;
+      articulos.forEach(a => {
+        const va = cat === 'todo' || a.dataset.cat === cat;
+        a.hidden = !va;
+        if (va) { visibles++; a.classList.remove('visible'); requestAnimationFrame(() => a.classList.add('visible')); }
+      });
+      if (vacio) vacio.hidden = visibles > 0;
+    }));
+  }
+
+  /* -------- contacto: validación y envío simulado --------
+     Aún no hay servidor: el formulario valida, muestra el mensaje de
+     confirmación y abre WhatsApp con el texto ya redactado.          */
+  const form = document.querySelector('.formulario');
+  if (form) {
+    const marcar = (campo, mal) => campo.classList.toggle('malo', mal);
+    form.querySelectorAll('input,select,textarea').forEach(c => {
+      c.addEventListener('blur', () => { if (c.value.trim()) marcar(c.closest('.campo') || c.parentElement, !c.checkValidity()); });
+      c.addEventListener('input', () => { const w = c.closest('.campo'); if (w && w.classList.contains('malo') && c.checkValidity()) marcar(w, false); });
+    });
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let ok = true;
+      form.querySelectorAll('input,select,textarea').forEach(c => {
+        const w = c.closest('.campo');
+        if (!c.checkValidity()) { ok = false; if (w) marcar(w, true); else c.focus(); }
+      });
+      if (!ok) { form.querySelector('.malo input,.malo select,.malo textarea,:invalid')?.focus(); return; }
+      const nombre = form.querySelector('#nombre')?.value.trim() || '';
+      const motivo = form.querySelector('#motivo')?.value || '';
+      const mensaje = form.querySelector('#mensaje')?.value.trim() || '';
+      const texto = 'Hola doctora, soy ' + nombre + '. Escribo por: ' + motivo + '. ' + mensaje;
+      form.classList.add('listo');
+      form.querySelector('.enviado')?.focus?.();
+      window.open('https://wa.me/' + digits + '?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+    });
+  }
 
   /* -------- año en el pie -------- */
   document.querySelectorAll('[data-anio]').forEach(el => { el.textContent = new Date().getFullYear(); });

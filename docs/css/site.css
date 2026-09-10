@@ -10,7 +10,7 @@
 :root{
   --alto-barra:75px; --alto-franja:264px;
   --crema:#FBF5EF; --agua:#EEF4FA; --blanco:#fff;
-  --tinta:#2F4260; --texto:#4B6588; --suave:#5B7894; --tenue:#8DA2B4;
+  --tinta:#2F4260; --texto:#4B6588; --suave:#4F6B85; --tenue:#5A7086;
   --rosa:#E2557E; --rosa-hover:#D0446E; --rosa-sombra:#B93C61; --rosa-palo:#F3E3EA; --rosa-claro:#EFAFC3;
   --azul:#4A7BB5; --celeste:#DCE9F5; --celeste-washi:#BBD5EA;
   --verde:#4E9E55; --verde-hoja:#5DA84F; --verde-palo:#E2F0DE; --verde-tinta:#3E7A45;
@@ -52,6 +52,9 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .btn--blanco{background:#fff;color:var(--tinta);box-shadow:0 5px 0 rgba(47,66,96,.14)}
 .btn--blanco:hover{background:var(--agua);color:var(--tinta);transform:translateY(-2px);box-shadow:0 7px 0 rgba(47,66,96,.14)}
 .btn--blanco:active{transform:translateY(2px);box-shadow:0 3px 0 rgba(47,66,96,.14)}
+.btn--azul{background:var(--azul);color:#fff;box-shadow:0 5px 0 #33608F}
+.btn--azul:hover{background:#3F6DA4;color:#fff;transform:translateY(-2px);box-shadow:0 7px 0 #33608F}
+.btn--azul:active{transform:translateY(2px);box-shadow:0 3px 0 #33608F}
 .btn--chico{padding:13px 24px;font-size:14.5px}
 
 /* ---------- barra de navegación ---------- */
@@ -61,8 +64,8 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .barra__logo img{height:54px;width:auto}
 .barra__menu{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-top:0;margin-bottom:0}
 .barra__menu a{display:block;padding:8px 12px;border-radius:999px;color:var(--texto);font-weight:700;font-size:14px;transition:color .2s,background .2s}
-.barra__menu a:hover{color:var(--rosa);background:rgba(226,85,126,.08)}
-.barra__menu a.activo{color:var(--rosa)}
+.barra__menu a:hover{color:var(--rosa-sombra);background:rgba(226,85,126,.08)}
+.barra__menu a[aria-current="page"]{color:var(--rosa-sombra);background:rgba(226,85,126,.10)}
 .barra__cta{padding:11px 20px;font-size:14px;box-shadow:0 4px 0 var(--rosa-sombra)}
 .barra__cta svg{width:16px;height:16px}
 .barra__toggle{display:none;margin-left:auto;width:44px;height:44px;border:0;border-radius:12px;background:transparent;cursor:pointer;padding:10px}
@@ -93,7 +96,8 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .burbujas .brillo{fill:rgba(255,255,255,.85);stroke:none}
 
 /* ---------- franjas de mar: escena con elementos independientes ---------- */
-.franja{--k:1.08;position:relative;overflow:hidden;height:264px}
+.franja{--k:1.08;position:relative;overflow:hidden;height:var(--alto-franja)}
+.no-js .franja{height:0}
 .franja--crema{background:var(--crema)}
 .franja--agua{background:var(--agua)}
 .franja__escena{position:absolute;inset:0}
@@ -174,7 +178,7 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .lista li{display:flex;gap:10px;align-items:center;font-size:15px;color:#42607E}
 .lista__check{width:20px;height:20px;flex:0 0 20px;border-radius:50%;display:grid;place-items:center}
 .lista__check svg{width:11px;height:11px}
-.lista--verde .lista__check{background:var(--verde-palo);color:var(--verde)}
+.lista--verde .lista__check{background:var(--verde-palo);color:var(--verde-tinta)}
 .lista--azul .lista__check{background:var(--celeste);color:var(--azul)}
 
 /* ---------- consultorio ---------- */
@@ -220,8 +224,8 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .convenios__nota{margin-top:16px;color:var(--tenue);font-size:13.5px}
 
 /* ---------- citas ---------- */
-.cita{background:#fff;border-radius:20px;padding:30px;box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10);border-top:6px solid var(--rosa)}
-.cita--virtual{border-top-color:var(--azul)}
+.cita{--filo:var(--rosa);background:linear-gradient(var(--filo) 0 6px,#fff 6px);border-radius:20px;padding:30px;box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10)}
+.cita--virtual{--filo:var(--azul)}
 .cita strong{font-family:"Baloo 2",cursive;font-size:24px;display:block;margin-bottom:6px}
 .cita > p{margin-bottom:18px;color:var(--suave);font-size:15px;line-height:1.6}
 .cita__precio{font-family:"Baloo 2",cursive;font-size:32px;color:var(--tinta);margin-bottom:4px}
@@ -277,6 +281,10 @@ details .faq__cuerpo{overflow:hidden}
 .redes svg{width:17px;height:17px}
 .pie__abajo{max-width:var(--ancho);margin:30px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#9FB9D2}
 .pie__lema{font-style:italic}
+.pie__legal{margin-top:18px;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
+.pie__legal a{color:#9FB9D2}
+.pie__legal a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.pie__borrador{max-width:var(--ancho);margin:14px auto 0;font-size:12.5px;color:#9DB4C9;font-style:italic}
 
 /* ---------- flotante ---------- */
 .flotante{position:fixed;right:22px;bottom:22px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--verde);display:grid;place-items:center;box-shadow:0 8px 20px rgba(47,66,96,.28);animation:latido 3s ease-out infinite;transition:transform .2s ease}
