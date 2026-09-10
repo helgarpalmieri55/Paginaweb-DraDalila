@@ -89,7 +89,7 @@ const CONFIG = {
   });
 
   /* -------- blog: filtro por categoría -------- */
-  const filtros = document.querySelectorAll('.filtro');
+  const filtros = document.querySelectorAll('.filtro[data-cat]');
   if (filtros.length) {
     const articulos = [...document.querySelectorAll('[data-cat]')];
     const vacio = document.querySelector('.sin-resultados');

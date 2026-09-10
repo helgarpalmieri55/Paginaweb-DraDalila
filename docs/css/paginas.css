@@ -123,6 +123,7 @@
 .filtro{border:0;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border-radius:999px;background:#fff;color:var(--suave);box-shadow:0 3px 0 rgba(47,66,96,.10);transition:transform .18s ease,background .18s ease,color .18s ease}
 .filtro:hover{transform:translateY(-2px);color:var(--tinta)}
 .filtro[aria-pressed="true"]{background:var(--rosa);color:#fff;box-shadow:0 3px 0 var(--rosa-sombra)}
+.filtros--enlaces .filtro:hover{background:var(--rosa-palo);color:var(--rosa-sombra)}
 .articulo[hidden]{display:none}
 .sin-resultados{background:#fff;border-radius:18px;padding:36px;text-align:center;color:var(--suave);box-shadow:var(--sombra-carta)}
 .sin-resultados strong{display:block;font-family:"Baloo 2",cursive;font-size:20px;color:var(--tinta);margin-bottom:6px}
