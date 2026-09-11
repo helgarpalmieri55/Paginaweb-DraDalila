@@ -39,6 +39,8 @@ La barra y el pie son idénticos en todas las páginas: si se cambia un enlace h
 
 y `docs/js/franjas.js` las puebla: el oleaje se dibuja en SVG (cinco capas que derivan a distinta velocidad, generadas con una función de onda) y cada animalito es un elemento independiente recortado de `assets/img/mar/`. La tortuga rema, la ballena nada, el pez avanza a impulsos, las estrellas se balancean, los corales se mecen desde la base y las burbujas suben; cada uno con su propia duración y desfase, así que nunca se mueven en bloque. `data-escena` (0–5) elige el reparto y `franja--crema` / `franja--agua` el color del que viene; el color al que va se deduce solo, o se fuerza con `data-hasta="crema|agua"`. Para retocar un reparto se edita la receta correspondiente en `ESCENAS` (`nombre  izquierda%  ancho  altura%  duración  retraso`, y `:x` para ocultarlo en móvil).
 
+**Logo:** el original en alta resolución está en la raíz del repositorio (`logo-dra-dalila-color-HQ.png`, 5461 × 2310 px con fondo transparente). De ahí salen los archivos que usa el sitio: `docs/assets/img/logo.webp` (615 × 260, la marca completa para barra y pie), `favicon.png` (solo la manzana, que a tamaño de pestaña se lee; el logotipo completo no) y `apple-touch-icon.png` (la manzana sobre crema, porque iOS no respeta la transparencia). Si el logo cambia, se regeneran los tres desde el original.
+
 **Previsualizar en local:** `cd docs && python3 -m http.server 8000` y abrir `http://localhost:8000` (las fuentes no cargan si se abre el archivo directamente con `file://`).
 
 ## Maquetas de diseño
