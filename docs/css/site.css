@@ -8,7 +8,7 @@
 @font-face{font-family:"Nunito";font-style:normal;font-weight:400 800;font-display:swap;src:url("../assets/fonts/nunito-latin.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 :root{
-  --alto-barra:75px; --alto-franja:264px;
+  --alto-barra:85px; --alto-franja:264px;
   --crema:#FBF5EF; --agua:#EEF4FA; --blanco:#fff;
   --tinta:#2F4260; --texto:#4B6588; --suave:#4F6B85; --tenue:#5A7086;
   --rosa:#E2557E; --rosa-hover:#D0446E; --rosa-sombra:#B93C61; --rosa-palo:#F3E3EA; --rosa-claro:#EFAFC3;
@@ -60,14 +60,15 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 /* ---------- barra de navegación ---------- */
 .barra{position:sticky;top:0;z-index:40;background:rgba(251,245,239,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(47,66,96,.10);transition:box-shadow .3s ease}
 .barra.con-sombra{box-shadow:0 6px 18px rgba(47,66,96,.10)}
-.barra__inner{max-width:var(--ancho);margin:0 auto;padding:10px 24px;display:flex;align-items:center;gap:20px}
-.barra__logo img{height:54px;width:auto}
-.barra__menu{display:flex;gap:4px;margin-left:auto;list-style:none;padding:0;margin-top:0;margin-bottom:0}
-.barra__menu a{display:block;padding:8px 12px;border-radius:999px;color:var(--texto);font-weight:700;font-size:14px;transition:color .2s,background .2s}
+.barra__inner{margin:0;padding:9px 30px;display:flex;align-items:center;gap:24px}
+.barra__logo{margin-right:auto}
+.barra__logo img{height:65px;width:auto}
+.barra__menu{display:flex;gap:4px;list-style:none;padding:0;margin:0}
+.barra__menu a{display:block;padding:9px 14px;border-radius:999px;color:var(--texto);font-weight:700;font-size:15.5px;transition:color .2s,background .2s}
 .barra__menu a:hover{color:var(--rosa-sombra);background:rgba(226,85,126,.08)}
 .barra__menu a[aria-current="page"]{color:var(--rosa-sombra);background:rgba(226,85,126,.10)}
-.barra__cta{padding:11px 20px;font-size:14px;box-shadow:0 4px 0 var(--rosa-sombra)}
-.barra__cta svg{width:16px;height:16px}
+.barra__cta{padding:12px 22px;font-size:15px;box-shadow:0 4px 0 var(--rosa-sombra)}
+.barra__cta svg{width:17px;height:17px}
 .barra__toggle{display:none;margin-left:auto;width:44px;height:44px;border:0;border-radius:12px;background:transparent;cursor:pointer;padding:10px}
 .barra__toggle span{display:block;height:3px;background:var(--tinta);border-radius:3px;transition:transform .25s ease,opacity .2s ease}
 .barra__toggle span+span{margin-top:6px}
@@ -302,12 +303,19 @@ details .faq__cuerpo{overflow:hidden}
 .no-js .reveal{opacity:1;transform:none;filter:none}
 
 /* ---------- responsive ---------- */
-@media (max-width:900px){
+@media (max-width:1040px){
+  .barra__inner{padding:8px 18px;gap:12px}
+  .barra__logo img{height:56px}
   .barra__menu{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--crema);border-bottom:1px solid rgba(47,66,96,.10);padding:8px 16px 16px;display:none;box-shadow:0 14px 26px rgba(47,66,96,.12)}
   .barra.abierta .barra__menu{display:flex}
-  .barra__menu a{padding:12px 14px;font-size:16px}
-  .barra__cta{display:none}
-  .barra__toggle{display:block}
+  .barra__menu a{padding:13px 14px;font-size:16.5px}
+  .barra__toggle{display:block;margin-left:auto;order:2}
+  .barra nav{order:3}
+  .barra__cta{order:4;width:46px;height:46px;padding:0;justify-content:center}
+  .barra__cta span{display:none}
+  :root{--alto-barra:74px}
+}
+@media (max-width:900px){
   .hero{padding-top:clamp(20px,3vh,36px);min-height:calc(100svh - var(--alto-barra) - var(--alto-franja))}
   .hero__escena{margin-top:10px}
   .polaroid img{height:clamp(300px,40vh,420px)}
