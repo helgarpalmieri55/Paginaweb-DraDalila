@@ -119,17 +119,14 @@ archivo de diseño que conviene reemplazar por material suyo.
 
 ## 9 · La guía nutricional que regala
 
-Ya está publicada y descargable desde el blog y desde tres artículos de nutrición.
-Pero hay algo que resolver antes de darla a conocer:
+Ya está publicada y descargable desde el blog y desde tres artículos de nutrición,
+con la versión corregida del 17 de septiembre. El teléfono y la dirección viejos
+que traía la versión anterior ya no aparecen: ahora el pie de cada página lleva
+solo el Instagram y el correo, que son los mismos del sitio.
 
-- [ ] ⚠️ **El PDF está desactualizado: lleva impresos, en todas sus páginas, un
-      teléfono y una dirección viejos** — `300 264 0179` y
-      `Cll 85 # 50-159 Cons 507` — en lugar del `+57 304 653 2006` y la
-      `Calle 1C # 30-40, High Park Medical Center, consultorio 129` que son los
-      actuales. Los datos del sitio ya están correctos y se quedan como están; lo
-      que hace falta es que vuelva a exportar la guía con el teléfono y la
-      dirección de hoy. Apenas nos mande el archivo nuevo lo reemplazamos: el
-      enlace del sitio no cambia.
+- [ ] Detalle cosmético del PDF: en el pie quedaron el **ícono de teléfono y el de
+      ubicación sin texto al lado**. Si nos manda una versión sin esos dos íconos
+      —o con los datos actuales escritos— la reemplazamos.
 - [ ] Confirmar que la guía se puede **entregar abierta a cualquiera**, o si prefiere
       pedirla por WhatsApp para saber quién la descarga.
 
