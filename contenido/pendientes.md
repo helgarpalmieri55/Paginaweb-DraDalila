@@ -98,8 +98,8 @@ archivo de diseño que conviene reemplazar por material suyo.
 
 ## 6 · Redes sociales
 
-- [ ] **Enlaces de Instagram, Facebook y TikTok.** Los tres iconos del pie apuntan
-      a `#`. Con las URL los dejamos activos en un minuto.
+- ✅ **Instagram** conectado: [@dra.dalilapenaranda](https://www.instagram.com/dra.dalilapenaranda/).
+      Por ahora es su única red, así que Facebook y TikTok salieron del pie.
 
 ## 7 · Revisión clínica del blog
 
@@ -117,7 +117,21 @@ archivo de diseño que conviene reemplazar por material suyo.
 - [ ] Confirmar quién figura como **responsable del tratamiento de datos** y si
       quiere un **correo distinto** para las solicitudes de datos personales.
 
-## 9 · Detalles menores
+## 9 · La guía nutricional que regala
+
+Ya está publicada y descargable desde el blog y desde tres artículos de nutrición.
+Pero hay algo que resolver antes de darla a conocer:
+
+- [ ] ⚠️ **El PDF lleva impresos, en todas sus páginas, un teléfono y una dirección
+      distintos a los del sitio:** `300 264 0179` y `Cll 85 # 50-159 Cons 507`,
+      frente al `+57 304 653 2006` y `Calle 1C # 30-40, High Park Medical Center,
+      consultorio 129` que usamos. ¿Es un consultorio anterior, una segunda sede, o
+      el PDF quedó desactualizado? Si nos manda el archivo con los datos correctos,
+      lo reemplazamos; el enlace del sitio no cambia.
+- [ ] Confirmar que la guía se puede **entregar abierta a cualquiera**, o si prefiere
+      pedirla por WhatsApp para saber quién la descarga.
+
+## 10 · Detalles menores
 
 - [ ] En su pieza de conducta alimentaria dice **«PICKY EATHER»**, con una hache de
       más. Si la corrige, cambiamos la imagen.

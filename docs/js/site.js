@@ -14,7 +14,7 @@ const CONFIG = {
   precioVirtual: '45 USD',                 // pendiente de confirmar con la doctora
   mostrarPrecios: true,                    // false oculta la sección "Tu cita"
   mostrarPepe: true,                       // false oculta el bloque de Pepe
-  redes: { instagram: '#', facebook: '#', tiktok: '#' },  // pendientes
+  redes: { instagram: 'https://www.instagram.com/dra.dalilapenaranda/' },   // por ahora solo tiene Instagram
   // Enlaces de compra. Mientras estén vacíos, el botón abre WhatsApp con el
   // nombre del curso escrito; al pegar un enlace, ese curso pasa a comprarse allí.
   hotmart: {

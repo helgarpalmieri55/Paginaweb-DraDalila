@@ -169,6 +169,21 @@
 .formulario.listo .enviado{display:flex}
 .formulario.listo .campo,.formulario.listo .consentimiento,.formulario.listo .formulario__pie{display:none}
 
+/* ---------- descarga: la guía que regala la doctora ---------- */
+.descarga{display:grid;grid-template-columns:150px minmax(0,1fr);gap:26px;align-items:center;
+  background:var(--nota);border-radius:22px;padding:26px 30px;
+  box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 18px 30px rgba(47,66,96,.10)}
+.descarga img{width:100%;height:auto;border-radius:10px;box-shadow:0 8px 18px rgba(47,66,96,.20);transform:rotate(-2deg)}
+.descarga strong{display:block;font-family:"Baloo 2",cursive;font-size:23px;color:var(--nota-tinta);line-height:1.15}
+.descarga p{margin:8px 0 0;color:#6E5220;font-size:15px;line-height:1.6;max-width:52ch}
+.descarga__pie{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
+.descarga__pie small{color:#8A6A2F;font-size:13px}
+.prosa .descarga{margin:34px 0}
+@media (max-width:560px){
+  .descarga{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px}
+  .descarga img{max-width:170px;margin:0 auto}
+}
+
 /* ---------- cierre de página ---------- */
 .cierre{padding:0 24px 70px}
 .cierre__banda{max-width:var(--ancho);margin:0 auto;background:var(--rosa-palo);border-radius:26px;padding:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;align-items:center}
