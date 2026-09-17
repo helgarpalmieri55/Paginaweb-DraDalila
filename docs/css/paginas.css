@@ -179,6 +179,8 @@
 .descarga__pie{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
 .descarga__pie small{color:#8A6A2F;font-size:13px}
 .prosa .descarga{margin:34px 0}
+/* En el blog, el regalo va entre el destacado y los filtros: mismo aire arriba y abajo. */
+.descarga + .filtros{margin-top:56px}
 @media (max-width:560px){
   .descarga{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px}
   .descarga img{max-width:170px;margin:0 auto}
@@ -197,6 +199,15 @@
 .reveal--izq{transform:translateX(-26px)}
 .reveal--der{transform:translateX(26px)}
 .reveal--izq.visible,.reveal--der.visible{transform:none}
+
+/* ---------- artículos: una sola superficie de lectura ---------- */
+/* La cabecera y el cuerpo comparten eje y fondo, para que el título, la
+   entradilla y el primer párrafo se lean como una sola cosa. La franja de mar
+   entra después, donde el artículo termina. */
+.cabecera--articulo{padding-bottom:10px}
+.cabecera--articulo .cabecera__texto{max-width:68ch;margin:0 auto;font-size:17px}
+.seccion--lectura{padding-top:18px;padding-bottom:46px}
+.cierre--fondo-agua{background:var(--agua)}
 
 /* ---------- firma de la autora al pie de cada artículo ---------- */
 .autora{display:grid;grid-template-columns:86px minmax(0,1fr);gap:22px;align-items:center;

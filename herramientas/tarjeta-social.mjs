@@ -9,9 +9,17 @@
  *   cd docs && python3 -m http.server 8765 &
  *   node herramientas/tarjeta-social.mjs
  */
-import { chromium } from 'playwright-core';
+/*
+ * Necesita playwright-core y un Chromium. Si no está instalado en el proyecto,
+ * se le puede pasar la ruta del módulo y del navegador:
+ *
+ *   PLAYWRIGHT_CORE=/ruta/node_modules/playwright-core/index.mjs \
+ *   CHROMIUM=/ruta/chrome node herramientas/tarjeta-social.mjs
+ */
 import { copyFileSync, unlinkSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+
+const { chromium } = await import(process.env.PLAYWRIGHT_CORE || 'playwright-core');
 
 const RAIZ = new URL('..', import.meta.url).pathname;
 const TEMPORAL = RAIZ + 'docs/_tarjeta-tmp.html';
