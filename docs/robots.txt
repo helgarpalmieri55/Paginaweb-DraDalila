@@ -1,0 +1,7 @@
+# Sitio informativo de la Dra. Dalila Peñaranda
+# Pediatría y nutrición infantil · Barranquilla, Colombia
+
+User-agent: *
+Allow: /
+
+Sitemap: https://helgarpalmieri55.github.io/Paginaweb-DraDalila/sitemap.xml

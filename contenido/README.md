@@ -1,6 +1,35 @@
 # Revisión del material de Instagram
 
-Qué hay en `_transcripciones.zip`, qué sirve para el sitio y qué sigue faltando.
+Qué hay en el material que entregó la doctora, qué sirve para el sitio y qué sigue
+faltando.
+
+## Dónde vive el material
+
+El repositorio guarda **solo lo que el sitio usa**. Las 467 fotos y los 24 videos que
+se subieron para revisarlos ya no están aquí: pesaban 159 MB y el histórico de git no
+suelta lo que una vez entró, así que el archivo original se conserva fuera del
+repositorio y aquí quedaron las 24 piezas elegidas, optimizadas, en
+`docs/assets/img/posts/`.
+
+Si hay que volver a elegir imágenes, se repite el proceso sobre una copia local del
+archivo; no hace falta subirlo.
+
+## Cómo se eligieron las imágenes
+
+De las 467, se descartaron por norma:
+
+- **Los memes con fotos de celebridades** y los cromos con marcas ajenas. En Instagram
+  funcionan como contenido de tendencia; en el sitio de una médica son imágenes de
+  terceros con dueño.
+- **Las fotos donde se reconoce a un menor** —consultorio, sala de partos, eventos—
+  mientras no haya autorización de su familia. Que estén publicadas en Instagram no
+  cubre publicarlas en la web, y es justo lo que promete la política de privacidad
+  del sitio.
+- Las piezas que incorporan fotos de archivo o portadas de libros ajenas.
+
+Quedaron **24**: las gráficas que ella misma diseña, con su logo, y dos fotos suyas
+—una de frente y otra abrazando a Pepe—. Son las que el sitio muestra hoy en el blog,
+en los cursos, en contacto y en los bloques de Pepe.
 
 ## Qué llegó
 

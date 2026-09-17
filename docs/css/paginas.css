@@ -125,6 +125,12 @@
 .filtro[aria-pressed="true"]{background:var(--rosa);color:#fff;box-shadow:0 3px 0 var(--rosa-sombra)}
 .filtros--enlaces .filtro:hover{background:var(--rosa-palo);color:var(--rosa-sombra)}
 .articulo[hidden]{display:none}
+/* Las piezas que la doctora publica en Instagram son cuadradas y llevan texto:
+   se muestran enteras, sin recorte que se coma un renglón. */
+.rejilla--piezas .articulo img{height:auto;aspect-ratio:1/1;object-fit:cover}
+.detalle__figura--pieza img{height:auto;aspect-ratio:4/5;object-fit:contain;background:var(--crema);
+  box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10)}
+.destacado img.pieza{object-fit:contain;background:var(--crema)}
 .sin-resultados{background:#fff;border-radius:18px;padding:36px;text-align:center;color:var(--suave);box-shadow:var(--sombra-carta)}
 .sin-resultados strong{display:block;font-family:"Baloo 2",cursive;font-size:20px;color:var(--tinta);margin-bottom:6px}
 
@@ -163,6 +169,21 @@
 .formulario.listo .enviado{display:flex}
 .formulario.listo .campo,.formulario.listo .consentimiento,.formulario.listo .formulario__pie{display:none}
 
+/* ---------- descarga: la guía que regala la doctora ---------- */
+.descarga{display:grid;grid-template-columns:150px minmax(0,1fr);gap:26px;align-items:center;
+  background:var(--nota);border-radius:22px;padding:26px 30px;
+  box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 18px 30px rgba(47,66,96,.10)}
+.descarga img{width:100%;height:auto;border-radius:10px;box-shadow:0 8px 18px rgba(47,66,96,.20);transform:rotate(-2deg)}
+.descarga strong{display:block;font-family:"Baloo 2",cursive;font-size:23px;color:var(--nota-tinta);line-height:1.15}
+.descarga p{margin:8px 0 0;color:#6E5220;font-size:15px;line-height:1.6;max-width:52ch}
+.descarga__pie{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
+.descarga__pie small{color:#8A6A2F;font-size:13px}
+.prosa .descarga{margin:34px 0}
+@media (max-width:560px){
+  .descarga{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px}
+  .descarga img{max-width:170px;margin:0 auto}
+}
+
 /* ---------- cierre de página ---------- */
 .cierre{padding:0 24px 70px}
 .cierre__banda{max-width:var(--ancho);margin:0 auto;background:var(--rosa-palo);border-radius:26px;padding:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;align-items:center}
@@ -176,6 +197,21 @@
 .reveal--izq{transform:translateX(-26px)}
 .reveal--der{transform:translateX(26px)}
 .reveal--izq.visible,.reveal--der.visible{transform:none}
+
+/* ---------- firma de la autora al pie de cada artículo ---------- */
+.autora{display:grid;grid-template-columns:86px minmax(0,1fr);gap:22px;align-items:center;
+  max-width:760px;margin:0 auto;background:var(--nota);border-radius:20px;padding:22px 26px}
+.autora__foto{width:86px;height:86px;border-radius:50%;object-fit:cover;object-position:50% 50%;
+  background:var(--crema);box-shadow:0 6px 16px rgba(47,66,96,.14)}
+.autora strong{display:block;font-family:"Baloo 2",cursive;font-size:20px;color:var(--tinta);line-height:1.2}
+.autora p{margin:6px 0 0;font-size:15px;color:var(--nota-tinta);line-height:1.5}
+.autora__enlaces{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;font-weight:700}
+.autora__enlaces a{color:var(--rosa-sombra);text-decoration:none;border-bottom:2px solid transparent}
+.autora__enlaces a:hover{border-bottom-color:currentColor}
+@media (max-width:560px){
+  .autora{grid-template-columns:minmax(0,1fr);text-align:center;justify-items:center;gap:14px;padding:24px 20px}
+  .autora__enlaces{justify-content:center}
+}
 
 /* ---------- responsive ---------- */
 @media (max-width:900px){

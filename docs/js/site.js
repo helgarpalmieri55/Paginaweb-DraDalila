@@ -7,16 +7,21 @@
 const CONFIG = {
   whatsapp: '+57 304 653 2006',            // número visible y del enlace wa.me
   mensajeWhatsApp: 'Hola doctora, quiero agendar una cita',
-  correo: 'hola@dradalilapenaranda.com',
+  correo: 'nutripedcm@gmail.com',
   direccion: 'Calle 1C # 30-40, High Park Medical Center',
   direccion2: 'Consultorio 129 · Barranquilla, Colombia',
   precioPresencial: '$180.000',            // pendiente de confirmar con la doctora
   precioVirtual: '45 USD',                 // pendiente de confirmar con la doctora
   mostrarPrecios: true,                    // false oculta la sección "Tu cita"
   mostrarPepe: true,                       // false oculta el bloque de Pepe
-  redes: { instagram: '#', facebook: '#', tiktok: '#' },  // pendientes
-  hotmart: {                               // enlaces de compra, pendientes
-    complementaria: '', lonchera: '', sueno: ''
+  redes: { instagram: 'https://www.instagram.com/dra.dalilapenaranda/' },   // por ahora solo tiene Instagram
+  // Enlaces de compra. Mientras estén vacíos, el botón abre WhatsApp con el
+  // nombre del curso escrito; al pegar un enlace, ese curso pasa a comprarse allí.
+  hotmart: {
+    complementaria: '',
+    lonchera: '',
+    habitos: '',
+    escuela: ''
   }
 };
 
@@ -33,11 +38,17 @@ const CONFIG = {
   document.querySelectorAll('[data-precio="presencial"]').forEach(el => { el.textContent = CONFIG.precioPresencial; });
   document.querySelectorAll('[data-precio="virtual"]').forEach(el => { el.textContent = CONFIG.precioVirtual; });
   document.querySelectorAll('[data-red]').forEach(a => { a.href = CONFIG.redes[a.dataset.red] || '#'; });
-  document.querySelectorAll('[data-hotmart]').forEach(a => {
-    const url = CONFIG.hotmart[a.dataset.hotmart];
-    if (url) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
-    else { a.href = waLink; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Pregúntame por el curso'; }
+  /* Botón de compra: va a Hotmart si ya hay enlace; si no, abre WhatsApp
+     con el curso escrito, para acordar el pago directamente con la doctora. */
+  document.querySelectorAll('[data-curso]').forEach(a => {
+    const url = CONFIG.hotmart[a.dataset.curso];
+    a.target = '_blank'; a.rel = 'noopener';
+    if (url) { a.href = url; return; }
+    a.href = 'https://wa.me/' + digits + '?text=' +
+      encodeURIComponent('Hola doctora, quiero tomar ' + (a.dataset.nombre || 'uno de sus cursos') +
+                         '. ' + (a.dataset.pregunta || '¿Cómo hago el pago?'));
   });
+
   if (!CONFIG.mostrarPrecios) document.getElementById('citas')?.remove();
   if (!CONFIG.mostrarPepe) document.getElementById('pepe')?.remove();
 

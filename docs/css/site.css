@@ -285,7 +285,6 @@ details .faq__cuerpo{overflow:hidden}
 .pie__legal{margin-top:18px;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
 .pie__legal a{color:#9FB9D2}
 .pie__legal a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
-.pie__borrador{max-width:var(--ancho);margin:14px auto 0;font-size:12.5px;color:#9DB4C9;font-style:italic}
 
 /* ---------- flotante ---------- */
 .flotante{position:fixed;right:22px;bottom:22px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--verde);display:grid;place-items:center;box-shadow:0 8px 20px rgba(47,66,96,.28);animation:latido 3s ease-out infinite;transition:transform .2s ease}
