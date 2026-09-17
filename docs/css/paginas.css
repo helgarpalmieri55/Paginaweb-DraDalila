@@ -200,6 +200,15 @@
 .reveal--der{transform:translateX(26px)}
 .reveal--izq.visible,.reveal--der.visible{transform:none}
 
+/* ---------- artículos: una sola superficie de lectura ---------- */
+/* La cabecera y el cuerpo comparten eje y fondo, para que el título, la
+   entradilla y el primer párrafo se lean como una sola cosa. La franja de mar
+   entra después, donde el artículo termina. */
+.cabecera--articulo{padding-bottom:10px}
+.cabecera--articulo .cabecera__texto{max-width:68ch;margin:0 auto;font-size:17px}
+.seccion--lectura{padding-top:18px;padding-bottom:46px}
+.cierre--fondo-agua{background:var(--agua)}
+
 /* ---------- firma de la autora al pie de cada artículo ---------- */
 .autora{display:grid;grid-template-columns:86px minmax(0,1fr);gap:22px;align-items:center;
   max-width:760px;margin:0 auto;background:var(--nota);border-radius:20px;padding:22px 26px}
