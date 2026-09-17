@@ -68,6 +68,15 @@ archivo de diseño que conviene reemplazar por material suyo.
       para la página de cursos.
 - [ ] **Confirmar que podemos usar** las dos fotos suyas que venían del archivo de
       diseño: el retrato y la foto abrazando a Pepe.
+- [ ] ⚠️ **La foto de la portada muestra una marca de fórmula infantil.** En la foto
+      con Pepe se ve, en brazos de la rana, un sobre de Similac 3 con el logo de
+      Abbott legible; también se alcanza a ver el botón de reproducir de Instagram,
+      porque la imagen salió de un reel. En el sitio de una pediatra que promueve
+      la lactancia, una marca de sucedáneo a la vista se lee como respaldo, y en
+      Colombia la publicidad de sucedáneos de la leche materna está regulada. Para
+      la tarjeta que se comparte por WhatsApp ya usamos el retrato de estudio, que
+      no la tiene; **la portada sigue mostrándola**. Lo ideal es una foto nueva; si
+      no, se puede retocar o recortar, pero conviene decidirlo con ella.
 
 **Dónde están hoy las fotos de archivo, para saber qué reemplaza qué:**
 
@@ -138,6 +147,35 @@ solo el Instagram y el correo, que son los mismos del sitio.
 - [ ] Decidir si quiere **videos en los artículos**. Si sí, la vía recomendada es
       subirlos a YouTube y embeberlos con carga diferida, para no hacer lenta la
       página.
+
+## 11 · Posicionamiento (ver `contenido/seo.md` para el detalle)
+
+El sitio ya quedó preparado por dentro: sitemap, datos estructurados, preguntas
+frecuentes locales y firma de autora. Lo que falta no es código.
+
+- [ ] ⭐ **Crear o reclamar la ficha de Google del consultorio.** Es lo que decide
+      quién sale en el mapa cuando alguien busca «pediatra en Barranquilla», y es
+      gratis. Sin esto, nada de lo demás rinde.
+- [ ] **Horarios reales de atención del consultorio.** Los necesita la ficha de
+      Google y los datos estructurados del sitio; por ahora no pusimos ninguno
+      para no publicar un horario inventado.
+- [ ] **Pedir reseñas a pacientes reales** en la ficha de Google. Diez reseñas
+      auténticas pesan más que cualquier ajuste técnico. Sin incentivos: Google
+      los penaliza.
+- [ ] ⚠️ **Testimonios reales para la home.** Los tres que hay son de relleno, con
+      nombres inventados y cinco estrellas. Mientras sean falsos no podemos
+      marcarlos como reseñas, y si alguien lo nota cuesta credibilidad. O los
+      reemplazamos por reales o los quitamos.
+- [ ] **Corregir sus perfiles de Doctoralia y medicosdoc.** El de Doctoralia
+      muestra una dirección vieja (Calle 85, Torre Mar Center). Necesitamos sus
+      claves o que ella los actualice.
+- [ ] **Confirmar su nombre completo para el sitio:** en los directorios y el
+      registro aparece como *Dalila María Peñaranda Saurith*. Que figure al menos
+      una vez en «Sobre mí» ayuda a que Google entienda que es la misma persona.
+- [ ] **Decidir el dominio propio.** Mientras el sitio viva en
+      `helgarpalmieri55.github.io/Paginaweb-DraDalila/`, el `robots.txt` no se lee,
+      no hay correo con dominio y la dirección no transmite confianza. Un `.com`
+      cuesta unos 50.000 al año y el cambio es de media hora.
 
 ---
 

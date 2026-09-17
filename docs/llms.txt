@@ -1,0 +1,66 @@
+# Dra. Dalila Peñaranda — Pediatría y Nutrición Infantil
+
+> Pediatra con subespecialidad en nutrición infantil en Barranquilla, Colombia.
+> Atiende de forma presencial en el consultorio y por videollamada a familias
+> dentro y fuera del país, desde recién nacidos hasta la adolescencia.
+
+## Datos de contacto
+
+- Consultorio: Calle 1C # 30-40, High Park Medical Center, consultorio 129, Barranquilla, Atlántico, Colombia
+- WhatsApp: +57 304 653 2006
+- Correo: nutripedcm@gmail.com
+- Instagram: https://www.instagram.com/dra.dalilapenaranda/
+- Sitio: https://helgarpalmieri55.github.io/Paginaweb-DraDalila/
+
+## Qué atiende
+
+- **Control pediátrico**: Revisión completa del crecimiento, el desarrollo, la alimentación y el esquema de vacunación, desde recién nacido hasta la adolescencia.
+- **Nutrición infantil**: Valoración nutricional con antropometría y plan de alimentación ajustado a la edad, los hábitos y la realidad de cada casa.
+- **Crecimiento y desarrollo**: Seguimiento de talla, peso y perímetro cefálico sobre las curvas de la OMS, y de los hitos del desarrollo.
+- **Alimentación complementaria**: Acompañamiento en el inicio de sólidos: texturas, cantidades, señales de alarma y manejo de la selectividad.
+- **Asesoría a padres**: Lactancia, sueño, pataletas y dudas de crianza resueltas con tiempo y sin apuro.
+- **Consulta virtual**: Videollamada para familias dentro y fuera de Colombia, con el plan enviado por correo.
+
+## Páginas
+
+- [Sobre la doctora](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/sobre-mi.html)
+- [Servicios](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/servicios.html)
+- [El consultorio](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/consultorio.html)
+- [Citas y tarifas](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/citas.html)
+- [Cursos y talleres](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/cursos.html)
+- [Blog](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog.html)
+- [Contacto](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/contacto.html)
+
+## Artículos del blog
+
+- [El agarre: tres señales de que va bien](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-agarre-lactancia.html): La mano en C, dos centímetros de areola y el labio inferior hacia afuera. Tres formas de verificar un buen agarre durante la lactancia.
+- [Agotamiento materno: cinco señales](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-agotamiento-materno.html): Cansancio que no se quita durmiendo, pensamientos de insuficiencia y desconexión con el bebé. Las señales del agotamiento materno.
+- [Frutos secos y uvas: cómo sí](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-alimentos-peligrosos.html): Duros y redondos son los dos riesgos al iniciar la complementaria. Cómo ofrecer frutos secos, uvas y arándanos de forma segura.
+- [¿Cuándo necesita agua tu bebé?](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-articulo.html): Antes de los seis meses la leche materna basta; después, agua en cada tiempo de comida. Lo explica una pediatra especialista en nutrición infantil.
+- [Bullying: las señales que no te cuenta](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-bullying.html): Los niños que sufren matoneo casi nunca lo cuentan por pena. Las señales que sí se ven, y qué hacer con ellas.
+- [Cumplió el año y dejó de comer](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-deja-de-comer-al-ano.html): Comía perfecto a los seis meses y al año todo cambió. Qué pasó con el apetito, y por qué casi siempre es desarrollo y no un problema.
+- [Derivados lácteos: cuánto y desde cuándo](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-derivados-lacteos.html): Yogur y queso desde los seis meses, con cantidades por edad y un límite de sodio que casi nadie revisa.
+- [Diez veces antes de decir «no le gusta»](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-diez-veces.html): Un alimento nuevo se ofrece mínimo diez veces, y no todas seguidas. Por qué la papila gustativa necesita tiempo, explicado por una pediatra especialista en nutrición infantil.
+- [El cólico del lactante cambió de nombre](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-distress-lactante.html): Ahora se llama síndrome de distress del lactante. El cambio reconoce que la irritabilidad no siempre viene del intestino.
+- [Dolor de oído a medianoche](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-dolor-de-oido.html): Nada de gotas sin ver el oído, ni orégano, ni leche materna adentro. Qué sí ayuda hasta que puedas consultar.
+- [Cinco errores que llevan a la selectividad](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-errores-selectividad.html): Obligar, gritar durante una arcada y quedarse en las papillas: los errores de la complementaria que terminan en un niño selectivo.
+- [Se puso morado al llorar](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-espasmo-sollozo.html): El espasmo del sollozo asusta muchísimo y es benigno. Qué es, por qué pasa y qué hacer en el momento.
+- [La malnutrición que no se ve](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-hambre-oculta.html): Se llama hambre oculta, no se nota en la balanza y solo aparece en exámenes de laboratorio. Qué es y a quién le pasa.
+- [Leer los ingredientes, no solo la tabla](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-ingredientes.html): El azúcar añadido se esconde con otros nombres. Cómo revisar un procesado antes de dárselo a tu hijo, explicado por una pediatra especialista en nutrición infantil.
+- [El inhalador: la técnica correcta](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-inhalador.html): Inhalocámara siempre, sello correcto y diez segundos contados. Cómo administrar el medicamento inhalado a un niño.
+- [Lactancia y caries: protege, pero no basta](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-lactancia-caries.html): La lactancia materna tiene factores protectores, pero no son suficientes contra la caries. Las tres herramientas que sí funcionan.
+- [Lavado nasal sin lágrimas](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-lavado-nasal.html): El objetivo del lavado nasal no es destapar: es diluir. La técnica paso a paso, y por qué no se hace si el niño está llorando.
+- [¿Qué leche le doy después del destete?](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-leche-destete.html): Leche de vaca o fórmula adaptada: la respuesta depende de cómo esté comiendo el resto del día. Lo explica una pediatra especialista en nutrición infantil.
+- [Después de los dos años, ¿qué leche?](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-leche-dos-anios.html): Si ya destetaste, la leche de crecimiento sigue aportando nutrientes críticos. Cuántas tazas al día y por qué no más.
+- [Cuidado con los mosquitos](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-mosquitos.html): Dengue, Zika, chikungunya y fiebre amarilla. Todas son peligrosas, sobre todo en niños, y ninguna se maneja automedicando.
+- [El ronquido nunca es normal](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-ronquido.html): Roncar no es un rasgo heredado: afecta el sueño, la concentración, el rendimiento escolar, el crecimiento y hasta los dientes.
+- [Si le sangra la nariz, esto no](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-sangrado-nariz.html): Nada de echar la cabeza hacia atrás ni de meter papel. Qué hacer de verdad cuando a tu hijo le sangra la nariz.
+- [La silla de comer: los tres ángulos de 90°](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-silla-complementaria.html): Antes de la primera cucharada está la silla. Los tres ángulos rectos que debe permitir y el descansapiés que casi nadie mira, explicados por una pediatra especialista en nutrición infantil.
+- [El tamizaje auditivo: la primera prueba de tu bebé](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-tamizaje-auditivo.html): Lo ideal es que tu bebé no salga de la clínica sin ella. Qué mide el tamizaje auditivo, qué pasa si falla y por qué a veces se repite.
+- [Tres mitos que oigo cada semana](https://helgarpalmieri55.github.io/Paginaweb-DraDalila/blog-tres-mitos.html): Los jugos de fruta, el huevo antes del año y el «come poquito, no crecerá bien»: tres creencias frecuentes y lo que dice la evidencia.
+
+## Nota
+
+Todo el contenido de este sitio es información general de educación en salud
+y no reemplaza una consulta médica. Ante una urgencia hay que acudir al
+servicio de salud más cercano.
