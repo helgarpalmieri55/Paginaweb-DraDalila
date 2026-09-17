@@ -15,8 +15,13 @@ const CONFIG = {
   mostrarPrecios: true,                    // false oculta la sección "Tu cita"
   mostrarPepe: true,                       // false oculta el bloque de Pepe
   redes: { instagram: '#', facebook: '#', tiktok: '#' },  // pendientes
-  hotmart: {                               // enlaces de compra, pendientes
-    complementaria: '', lonchera: '', sueno: ''
+  // Enlaces de compra. Mientras estén vacíos, el botón abre WhatsApp con el
+  // nombre del curso escrito; al pegar un enlace, ese curso pasa a comprarse allí.
+  hotmart: {
+    complementaria: '',
+    lonchera: '',
+    habitos: '',
+    escuela: ''
   }
 };
 
@@ -33,11 +38,17 @@ const CONFIG = {
   document.querySelectorAll('[data-precio="presencial"]').forEach(el => { el.textContent = CONFIG.precioPresencial; });
   document.querySelectorAll('[data-precio="virtual"]').forEach(el => { el.textContent = CONFIG.precioVirtual; });
   document.querySelectorAll('[data-red]').forEach(a => { a.href = CONFIG.redes[a.dataset.red] || '#'; });
-  document.querySelectorAll('[data-hotmart]').forEach(a => {
-    const url = CONFIG.hotmart[a.dataset.hotmart];
-    if (url) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
-    else { a.href = waLink; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'Pregúntame por el curso'; }
+  /* Botón de compra: va a Hotmart si ya hay enlace; si no, abre WhatsApp
+     con el curso escrito, para acordar el pago directamente con la doctora. */
+  document.querySelectorAll('[data-curso]').forEach(a => {
+    const url = CONFIG.hotmart[a.dataset.curso];
+    a.target = '_blank'; a.rel = 'noopener';
+    if (url) { a.href = url; return; }
+    a.href = 'https://wa.me/' + digits + '?text=' +
+      encodeURIComponent('Hola doctora, quiero tomar ' + (a.dataset.nombre || 'uno de sus cursos') +
+                         '. ' + (a.dataset.pregunta || '¿Cómo hago el pago?'));
   });
+
   if (!CONFIG.mostrarPrecios) document.getElementById('citas')?.remove();
   if (!CONFIG.mostrarPepe) document.getElementById('pepe')?.remove();
 
