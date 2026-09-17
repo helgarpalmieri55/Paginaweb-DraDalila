@@ -125,6 +125,12 @@
 .filtro[aria-pressed="true"]{background:var(--rosa);color:#fff;box-shadow:0 3px 0 var(--rosa-sombra)}
 .filtros--enlaces .filtro:hover{background:var(--rosa-palo);color:var(--rosa-sombra)}
 .articulo[hidden]{display:none}
+/* Las piezas que la doctora publica en Instagram son cuadradas y llevan texto:
+   se muestran enteras, sin recorte que se coma un renglón. */
+.rejilla--piezas .articulo img{height:auto;aspect-ratio:1/1;object-fit:cover}
+.detalle__figura--pieza img{height:auto;aspect-ratio:4/5;object-fit:contain;background:var(--crema);
+  box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10)}
+.destacado img.pieza{object-fit:contain;background:var(--crema)}
 .sin-resultados{background:#fff;border-radius:18px;padding:36px;text-align:center;color:var(--suave);box-shadow:var(--sombra-carta)}
 .sin-resultados strong{display:block;font-family:"Baloo 2",cursive;font-size:20px;color:var(--tinta);margin-bottom:6px}
 
