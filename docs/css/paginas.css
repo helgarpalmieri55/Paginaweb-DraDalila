@@ -179,6 +179,8 @@
 .descarga__pie{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
 .descarga__pie small{color:#8A6A2F;font-size:13px}
 .prosa .descarga{margin:34px 0}
+/* En el blog, el regalo va entre el destacado y los filtros: mismo aire arriba y abajo. */
+.descarga + .filtros{margin-top:56px}
 @media (max-width:560px){
   .descarga{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px}
   .descarga img{max-width:170px;margin:0 auto}
