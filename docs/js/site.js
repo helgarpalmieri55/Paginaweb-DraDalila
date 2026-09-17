@@ -7,7 +7,7 @@
 const CONFIG = {
   whatsapp: '+57 304 653 2006',            // número visible y del enlace wa.me
   mensajeWhatsApp: 'Hola doctora, quiero agendar una cita',
-  correo: 'hola@dradalilapenaranda.com',
+  correo: 'nutripedcm@gmail.com',
   direccion: 'Calle 1C # 30-40, High Park Medical Center',
   direccion2: 'Consultorio 129 · Barranquilla, Colombia',
   precioPresencial: '$180.000',            // pendiente de confirmar con la doctora
