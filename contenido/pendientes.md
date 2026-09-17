@@ -127,8 +127,6 @@ solo el Instagram y el correo, que son los mismos del sitio.
 - [ ] Detalle cosmético del PDF: en el pie quedaron el **ícono de teléfono y el de
       ubicación sin texto al lado**. Si nos manda una versión sin esos dos íconos
       —o con los datos actuales escritos— la reemplazamos.
-- [ ] Confirmar que la guía se puede **entregar abierta a cualquiera**, o si prefiere
-      pedirla por WhatsApp para saber quién la descarga.
 
 ## 10 · Detalles menores
 
@@ -152,5 +150,7 @@ solo el Instagram y el correo, que son los mismos del sitio.
 - ✅ **Logo** en alta resolución.
 - ✅ **Tarifas de consulta:** se dejan tal como están por ahora *(pero ver el punto
   2 — el origen de esos números es el archivo de diseño, no ella)*.
-- ✅ **Fotos del consultorio:** las cuatro son reales y están publicadas.
+- ✅ **Fotos del consultorio:** las seis son reales y están publicadas.
 - ✅ **Sus piezas de Instagram:** 24 seleccionadas, ya optimizadas y en uso.
+- ✅ **La guía nutricional se entrega abierta:** cualquiera la descarga desde el
+  blog sin dejar datos ni pasar por WhatsApp.
