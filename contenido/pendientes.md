@@ -122,12 +122,14 @@ archivo de diseño que conviene reemplazar por material suyo.
 Ya está publicada y descargable desde el blog y desde tres artículos de nutrición.
 Pero hay algo que resolver antes de darla a conocer:
 
-- [ ] ⚠️ **El PDF lleva impresos, en todas sus páginas, un teléfono y una dirección
-      distintos a los del sitio:** `300 264 0179` y `Cll 85 # 50-159 Cons 507`,
-      frente al `+57 304 653 2006` y `Calle 1C # 30-40, High Park Medical Center,
-      consultorio 129` que usamos. ¿Es un consultorio anterior, una segunda sede, o
-      el PDF quedó desactualizado? Si nos manda el archivo con los datos correctos,
-      lo reemplazamos; el enlace del sitio no cambia.
+- [ ] ⚠️ **El PDF está desactualizado: lleva impresos, en todas sus páginas, un
+      teléfono y una dirección viejos** — `300 264 0179` y
+      `Cll 85 # 50-159 Cons 507` — en lugar del `+57 304 653 2006` y la
+      `Calle 1C # 30-40, High Park Medical Center, consultorio 129` que son los
+      actuales. Los datos del sitio ya están correctos y se quedan como están; lo
+      que hace falta es que vuelva a exportar la guía con el teléfono y la
+      dirección de hoy. Apenas nos mande el archivo nuevo lo reemplazamos: el
+      enlace del sitio no cambia.
 - [ ] Confirmar que la guía se puede **entregar abierta a cualquiera**, o si prefiere
       pedirla por WhatsApp para saber quién la descarga.
 
