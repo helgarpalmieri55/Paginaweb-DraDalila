@@ -116,7 +116,6 @@ archivo de diseño que conviene reemplazar por material suyo.
       propias explicaciones en video, pero llevan su firma. Priorizaría cinco:
       *el inhalador*, *cuidado con los mosquitos*, *el cólico cambió de nombre*,
       *dolor de oído a medianoche* y *frutos secos y uvas*.
-- [ ] Decidir si quiere **firmar con fecha** cada artículo (hoy no llevan fecha).
 
 ## 8 · Textos legales
 
@@ -186,8 +185,8 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 - ✅ **Convenios:** las cinco entidades que aparecen son las que atiende.
 - ✅ **Horario de respuesta** a mensajes.
 - ✅ **Logo** en alta resolución.
-- ✅ **Tarifas de consulta:** se dejan tal como están por ahora *(pero ver el punto
-  2 — el origen de esos números es el archivo de diseño, no ella)*.
+- ✅ **Tarifas de consulta:** se dejan publicadas tal como están por ahora *(pero
+  siguen sin confirmarse con ella — ver el punto 2)*.
 - ✅ **Fotos del consultorio:** las seis son reales y están publicadas.
 - ✅ **Sus piezas de Instagram:** 24 seleccionadas, ya optimizadas y en uso.
 - ✅ **La guía nutricional se entrega abierta:** cualquiera la descarga desde el
