@@ -10,8 +10,8 @@
 #                      145.14.xxx.xxx
 #   HOSTINGER_USER     el usuario SFTP, empieza por u... 
 #   HOSTINGER_SSH_KEY  la clave privada completa, con sus líneas BEGIN y END
-#   HOSTINGER_RUTA     la carpeta del tema en el servidor, por ejemplo
-#                      /home/uXXXXXXXX/domains/dalilapenaranda.com/public_html/wp-content/themes/dalila
+#   HOSTINGER_RUTA     la carpeta wp-content en el servidor, por ejemplo
+#                      /home/uXXXXXXXX/domains/dalilapenaranda.com/public_html/wp-content
 
 name: Tema de WordPress
 
@@ -20,6 +20,7 @@ on:
     branches: [ main ]
     paths:
       - 'wordpress/themes/dalila/**'
+      - 'wordpress/mu-plugins/**'
       - '.github/workflows/tema-wordpress.yml'
   workflow_dispatch:
 
@@ -38,7 +39,7 @@ jobs:
 
       - name: Revisar que el PHP compile
         run: |
-          find wordpress/themes/dalila -name '*.php' -print0 \
+          find wordpress/themes/dalila wordpress/mu-plugins -name '*.php' -print0 \
             | xargs -0 -n1 php -l
 
       - name: Revisar que el JavaScript y el JSON estén bien
@@ -61,7 +62,7 @@ jobs:
       - name: Instalar lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
-      - name: Espejar el tema en el servidor
+      - name: Espejar el tema y el plugin en el servidor
         env:
           SERVIDOR: ${{ secrets.HOSTINGER_HOST }}
           USUARIO: ${{ secrets.HOSTINGER_USER }}
@@ -73,5 +74,7 @@ jobs:
             open -u $USUARIO, sftp://$SERVIDOR;
             mirror --reverse --delete --verbose --parallel=4 \
                    --exclude-glob .DS_Store \
-                   wordpress/themes/dalila '$RUTA';
+                   wordpress/themes/dalila '$RUTA/themes/dalila';
+            mirror --reverse --delete --verbose \
+                   wordpress/mu-plugins '$RUTA/mu-plugins';
           "

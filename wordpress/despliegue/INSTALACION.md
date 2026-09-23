@@ -45,10 +45,14 @@ Tiene dos caminos. El segundo es el que queda funcionando para siempre.
 1. Comprimir la carpeta `wordpress/themes/dalila` en un `dalila.zip`.
 2. En el escritorio: **Apariencia → Temas → Añadir nuevo → Subir tema**.
 3. Activar **Dra. Dalila Peñaranda**.
+4. Copiar `wordpress/mu-plugins/dalila-posicionamiento.php` a
+   `wp-content/mu-plugins/` por el administrador de archivos de Hostinger. Esa
+   carpeta se crea si no existe; lo que está ahí se activa solo y no se puede
+   desactivar por error.
 
 ### De ahí en adelante, solo
 
-Cada push a `main` que toque el tema lo sube solo. Para que funcione hay que
+Cada push a `main` que toque el tema o el plugin los sube solos. Para que funcione hay que
 crear cuatro secretos en GitHub, en **Settings → Secrets and variables →
 Actions → New repository secret**:
 
@@ -57,7 +61,7 @@ Actions → New repository secret**:
 | `HOSTINGER_HOST` | Hostinger → **Archivos → Cuentas FTP**, campo «Servidor FTP» |
 | `HOSTINGER_USER` | la misma pantalla, campo «Usuario FTP», empieza por `u` |
 | `HOSTINGER_SSH_KEY` | la clave privada del par que se genera abajo |
-| `HOSTINGER_RUTA` | `/home/uXXXXXXXX/domains/dalilapenaranda.com/public_html/wp-content/themes/dalila` |
+| `HOSTINGER_RUTA` | `/home/uXXXXXXXX/domains/dalilapenaranda.com/public_html/wp-content` |
 
 **Generar el par de claves**, en tu computador:
 
