@@ -28,3 +28,19 @@ wordpress/
 El tema se despliega desde GitHub. Cualquier cambio hecho con el editor de
 archivos de WordPress se pierde en el siguiente despliegue. Los textos, las
 imágenes y las páginas sí viven en el servidor y no se tocan nunca desde aquí.
+
+## La regla de esta mudanza
+
+**No se cambia nada del diseño ni de los textos que ya existen.** WordPress es
+solo un envase nuevo para lo mismo.
+
+- El CSS y el JavaScript son los archivos de `docs/`, copiados sin editar.
+- Los textos se importan tal cual: cada artículo conserva su propio cierre y sus
+  propios tres artículos relacionados, que están escogidos a mano y son
+  distintos en cada uno. La plantilla no impone ninguno.
+- La plantilla solo aporta lo que sí es igual en los 25 artículos: la cabecera
+  con título, entradilla y firma, y el recuadro de la autora al pie.
+
+Lo único que no existía en el sitio estático es la **página de error 404**, que
+WordPress necesita. Su texto se dejó al mínimo, a propósito, para que lo
+escriba la doctora cuando quiera.

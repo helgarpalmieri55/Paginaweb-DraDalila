@@ -3,7 +3,7 @@
  * Title: Cierre con llamado a la cita
  * Slug: dalila/cierre-articulo
  * Categories: dalila-piezas
- * Description: La banda rosada del final, con el botón para agendar y la vuelta al blog.
+ * Description: La banda rosada del final de un artículo. Es un punto de partida para artículos nuevos: en los 25 que ya existen, cada uno trae su propio cierre y no se toca.
  * Inserter: yes
  */
 ?>
