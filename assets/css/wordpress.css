@@ -101,6 +101,10 @@
 .barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
 .barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
   align-items: flex-start;
+  justify-content: flex-start;
+}
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content {
+  flex-direction: column;
 }
 .barra .wp-block-navigation__responsive-container.is-menu-open
   .wp-block-navigation-item__content {
@@ -111,7 +115,7 @@
 /* En pantallas medianas y chicas el sitio esconde el menú detrás de la
    hamburguesa desde los 1040 px, no desde los 600 px que trae WordPress. */
 @media (max-width: 1040px) {
-  .barra .wp-block-navigation {
+  .barra nav.wp-block-navigation {
     order: 2;
     margin-left: auto;
   }
