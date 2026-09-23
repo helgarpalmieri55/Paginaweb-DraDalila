@@ -94,8 +94,12 @@
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
-.barra .is-menu-open .wp-block-navigation__responsive-container-content,
-.barra .is-menu-open .wp-block-navigation__container {
+.barra .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay) {
+  background-color: var(--crema);
+}
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content,
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
   align-items: flex-start;
 }
 .barra .wp-block-navigation__responsive-container.is-menu-open
