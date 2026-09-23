@@ -7,10 +7,14 @@ archivos, copiados aquí.
 
 ```
 wordpress/
-  themes/dalila/     el tema de bloques
+  themes/dalila/     el tema de bloques, con su posicionamiento incluido
   importacion/       el contenido listo para importar
   despliegue/        la guía de instalación
 ```
+
+El tema llega al servidor por la rama `tema-wordpress`, que arma sola la
+GitHub Action `rama-del-tema.yml` desde `main`. Hostinger despliega esa rama, y
+solo esa, en `wp-content/themes/dalila`.
 
 ## Qué puede hacer el community manager
 
@@ -47,7 +51,8 @@ wordpress/
 ## Qué no debe tocar
 
 El tema se despliega desde GitHub. Cualquier cambio hecho con el editor de
-archivos de WordPress se pierde en el siguiente despliegue. Los textos, las
+archivos de WordPress o por el administrador de archivos de Hostinger se pierde
+en el siguiente despliegue. Los textos, las
 imágenes y las páginas sí viven en el servidor y no se tocan nunca desde aquí.
 
 ## La regla de esta mudanza

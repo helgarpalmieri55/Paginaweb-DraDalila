@@ -18,6 +18,7 @@ require_once __DIR__ . '/inc/ajustes.php';
 require_once __DIR__ . '/inc/patrones.php';
 require_once __DIR__ . '/inc/franjas.php';
 require_once __DIR__ . '/inc/articulos.php';
+require_once __DIR__ . '/inc/posicionamiento.php';
 
 /**
  * Lo que el tema le dice a WordPress que sabe hacer.

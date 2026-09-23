@@ -36,45 +36,32 @@ Después, en Cloudflare → **SSL/TLS → Overview**, poner el modo en
 > termine de emitir su certificado —lo hace solo, en unos minutos— y recién ahí
 > poner Full (strict).
 
-## 3 · El tema
+## 3 · El tema, desplegado desde GitHub
 
-Tiene dos caminos. El segundo es el que queda funcionando para siempre.
+Hostinger despliega desde GitHub la rama **`tema-wordpress`**, que contiene solo
+el tema en su raíz. La arma sola la GitHub Action `rama-del-tema.yml` cada vez
+que cambia algo del tema en `main`, después de revisar que el PHP compile y que
+el JavaScript y el JSON estén bien.
 
-### La primera vez, a mano
+En Hostinger, **Sitios web → Panel → Avanzado → Git**, el despliegue automático
+queda así:
 
-1. Comprimir la carpeta `wordpress/themes/dalila` en un `dalila.zip`.
-2. En el escritorio: **Apariencia → Temas → Añadir nuevo → Subir tema**.
-3. Activar **Dra. Dalila Peñaranda**.
-4. Copiar `wordpress/mu-plugins/dalila-posicionamiento.php` a
-   `wp-content/mu-plugins/` por el administrador de archivos de Hostinger. Esa
-   carpeta se crea si no existe; lo que está ahí se activa solo y no se puede
-   desactivar por error.
-
-### De ahí en adelante, solo
-
-Cada push a `main` que toque el tema o el plugin los sube solos. Para que funcione hay que
-crear cuatro secretos en GitHub, en **Settings → Secrets and variables →
-Actions → New repository secret**:
-
-| Secreto | De dónde sale |
+| Campo | Valor |
 |---|---|
-| `HOSTINGER_HOST` | Hostinger → **Archivos → Cuentas FTP**, campo «Servidor FTP» |
-| `HOSTINGER_USER` | la misma pantalla, campo «Usuario FTP», empieza por `u` |
-| `HOSTINGER_SSH_KEY` | la clave privada del par que se genera abajo |
-| `HOSTINGER_RUTA` | `/home/uXXXXXXXX/domains/dalilapenaranda.com/public_html/wp-content` |
+| Repositorio | `helgarpalmieri55/Paginaweb-DraDalila` |
+| Rama | `tema-wordpress` |
+| Carpeta | `wp-content/themes/dalila` |
+| Despliegue automático | activado |
 
-**Generar el par de claves**, en tu computador:
+> **Nunca** apuntar el despliegue a la raíz del sitio ni a otra rama: se copiaría
+> el repositorio entero —mockups, propuesta comercial, notas internas— en la web
+> pública.
 
-```bash
-ssh-keygen -t ed25519 -C "github-dalila" -f ~/.ssh/dalila-hostinger -N ""
-```
+Después, en el escritorio de WordPress: **Apariencia → Temas → activar
+«Dra. Dalila Peñaranda»**.
 
-- El contenido de `~/.ssh/dalila-hostinger.pub` se pega en Hostinger, en
-  **Avanzado → Acceso SSH → Claves SSH**.
-- El contenido de `~/.ssh/dalila-hostinger` —el archivo sin `.pub`, completo,
-  con sus líneas `BEGIN` y `END`— se pega en el secreto `HOSTINGER_SSH_KEY`.
-
-La conexión va por el puerto **65002**, que es el que usa Hostinger.
+El posicionamiento —datos estructurados y etiquetas sociales— viene dentro del
+tema, en `inc/posicionamiento.php`. No hay plugin aparte que instalar.
 
 ## 4 · El contenido
 

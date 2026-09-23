@@ -1,13 +1,15 @@
 <?php
 /**
- * Plugin Name: Posicionamiento · Dra. Dalila Peñaranda
- * Description: Los datos estructurados y las etiquetas sociales que ya tenía el sitio, ahora alimentados por Ajustes → Datos del consultorio. Va en mu-plugins para que esté siempre activo.
- * Version: 1.0.0
- * Author: novieri
+ * Posicionamiento: los datos estructurados y las etiquetas sociales del sitio.
+ *
+ * Vive dentro del tema, y no como plugin aparte, porque Hostinger despliega una
+ * sola carpeta desde GitHub: así el tema y su posicionamiento viajan juntos y
+ * no hay nada que instalar a mano.
  *
  * Es el mismo esquema que generaba herramientas/seo.py: Physician con la
  * dirección y los servicios, Person de la doctora, migas de pan, BlogPosting en
- * los artículos y las preguntas frecuentes que haya en la página.
+ * los artículos y las preguntas frecuentes de la página. Los datos salen de
+ * Ajustes → Datos del consultorio.
  *
  * Lo que no lleva, a propósito: horarios de atención, títulos universitarios,
  * registro médico ni reseñas. Ninguno está confirmado, y un dato inventado en
