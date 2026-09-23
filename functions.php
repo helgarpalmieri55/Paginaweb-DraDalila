@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'DALILA_VERSION', wp_get_theme()->get( 'Version' ) );
 
 require_once __DIR__ . '/inc/ajustes.php';
+require_once __DIR__ . '/inc/cabecera.php';
 require_once __DIR__ . '/inc/patrones.php';
 require_once __DIR__ . '/inc/franjas.php';
 require_once __DIR__ . '/inc/articulos.php';

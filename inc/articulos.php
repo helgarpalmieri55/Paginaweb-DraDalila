@@ -74,3 +74,48 @@ function dalila_meses_en_espanol( $traducido, $original ) {
 	return isset( $meses[ $original ] ) ? $meses[ $original ] : $traducido;
 }
 add_filter( 'gettext_with_context', 'dalila_meses_en_espanol', 10, 2 );
+
+/**
+ * La firma de la autora va en el mismo lugar que en el sitio: después de
+ * «Sigue leyendo» y antes del cierre del artículo. Como el cierre viene dentro
+ * del contenido, la firma se mete justo antes de él. Si un artículo nuevo no
+ * trae cierre, la firma queda al final.
+ */
+function dalila_firma_en_su_lugar( $html ) {
+	if ( ! is_singular( 'post' ) ) {
+		return $html;
+	}
+
+	$patron = WP_Block_Patterns_Registry::get_instance()->get_registered( 'dalila/firma-autora' );
+	if ( ! $patron || preg_match( '/class="[^"]*\bautora\b/', $html ) ) {
+		return $html;
+	}
+
+	$firma  = do_blocks( $patron['content'] );
+	$cierre = strrpos( $html, '<section class="cierre' );
+
+	if ( false !== $cierre ) {
+		return substr_replace( $html, $firma, $cierre, 0 );
+	}
+
+	$fin = strrpos( $html, '</div>' );
+
+	return false === $fin ? $html . $firma : substr_replace( $html, $firma, $fin, 0 );
+}
+add_filter( 'render_block_core/post-content', 'dalila_firma_en_su_lugar' );
+
+/**
+ * Las migas del artículo terminan en su título, como en el sitio:
+ * Inicio › Blog › Dolor de oído a medianoche.
+ */
+function dalila_migas_con_titulo( $html ) {
+	if ( ! is_singular( 'post' ) || false === strpos( $html, 'class="migas' ) || false !== strpos( $html, 'aria-current' ) ) {
+		return $html;
+	}
+
+	$flecha = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
+	$titulo = sprintf( '<span aria-current="page">%s</span>', esc_html( get_the_title( get_queried_object_id() ) ) );
+
+	return preg_replace( '#</nav>#', $flecha . "\n\t\t\t\t" . $titulo . "\n\t\t\t</nav>", $html, 1 );
+}
+add_filter( 'render_block_core/html', 'dalila_migas_con_titulo' );
