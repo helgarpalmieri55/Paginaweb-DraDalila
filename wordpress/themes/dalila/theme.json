@@ -102,6 +102,7 @@
       ]
     },
     "spacing": {
+      "blockGap": null,
       "units": [ "px", "rem", "%", "vw" ],
       "spacingSizes": [
         { "slug": "20", "name": "Muy chico", "size": "12px" },
@@ -130,8 +131,7 @@
       "lineHeight": "1.6"
     },
     "spacing": {
-      "padding": { "left": "24px", "right": "24px" },
-      "blockGap": "20px"
+      "padding": { "left": "24px", "right": "24px" }
     },
     "elements": {
       "link": {

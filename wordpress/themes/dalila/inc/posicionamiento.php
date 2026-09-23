@@ -269,7 +269,6 @@ function dalila_seo_cabecera() {
 		$url = is_singular() ? get_permalink() : home_url( add_query_arg( array() ) );
 
 		printf( '<meta name="description" content="%s">' . "\n", esc_attr( $resumen ) );
-		printf( '<meta name="robots" content="%s">' . "\n", 'index, follow, max-image-preview:large, max-snippet:-1' );
 		printf( '<meta property="og:type" content="%s">' . "\n", is_singular( 'post' ) ? 'article' : 'website' );
 		printf( '<meta property="og:url" content="%s">' . "\n", esc_url( $url ) );
 		printf( '<meta property="og:site_name" content="%s">' . "\n", esc_attr( get_bloginfo( 'name' ) ) );
@@ -291,3 +290,25 @@ function dalila_seo_cabecera() {
 	);
 }
 add_action( 'wp_head', 'dalila_seo_cabecera', 5 );
+
+/**
+ * La etiqueta robots la escribe WordPress y respeta la casilla «Disuadir a los
+ * motores de búsqueda» de Ajustes → Lectura. Aquí solo se le suma que Google
+ * pueda mostrar fragmentos largos cuando el sitio está abierto.
+ */
+function dalila_seo_robots( $robots ) {
+	if ( get_option( 'blog_public' ) && ! dalila_seo_hay_otro_plugin() && empty( $robots['noindex'] ) ) {
+		$robots['max-snippet'] = '-1';
+	}
+
+	return $robots;
+}
+add_filter( 'wp_robots', 'dalila_seo_robots' );
+
+/**
+ * El separador de los títulos es el punto medio del sitio: «Sobre mí · Dra. Dalila Peñaranda».
+ */
+function dalila_seo_separador() {
+	return '·';
+}
+add_filter( 'document_title_separator', 'dalila_seo_separador' );
