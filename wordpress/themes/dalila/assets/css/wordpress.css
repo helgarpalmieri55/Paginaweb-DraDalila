@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Puente entre el diseño del sitio y lo que WordPress pone alrededor.
+   El diseño real está en site.css y paginas.css; aquí solo va lo que hace
+   falta para que convivan con el editor de bloques.
+   ========================================================================== */
+
+/* ---------- el ancho lo reparte WordPress ----------
+   theme.json ya deja 24 px de aire a los lados y centra el contenido en
+   1180 px. Si .seccion volviera a poner los suyos, el margen se duplicaría. */
+.wp-site-blocks .seccion,
+.wp-site-blocks .cabecera,
+.wp-site-blocks .cierre {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Las secciones a todo el ancho llevan su color hasta el borde de la pantalla. */
+.wp-site-blocks > .alignfull,
+.wp-site-blocks .seccion.alignfull {
+  margin-left: calc(-1 * var(--wp--style--root--padding-left));
+  margin-right: calc(-1 * var(--wp--style--root--padding-right));
+  padding-left: var(--wp--style--root--padding-left);
+  padding-right: var(--wp--style--root--padding-right);
+}
+
+/* ---------- la barra fija y la barra del escritorio ----------
+   Con sesión iniciada WordPress mete su propia barra de 32 px arriba. */
+.admin-bar .barra { top: 32px; }
+@media (max-width: 782px) {
+  .admin-bar .barra { top: 46px; }
+}
+
+/* ---------- la franja de mar como bloque ---------- */
+.wp-block-dalila-franja { height: var(--alto-franja); }
+.no-js .wp-block-dalila-franja { height: 0; }
+
+/* ---------- el cuerpo de los artículos ----------
+   El contenido de una entrada son bloques de WordPress, no nuestro HTML, así
+   que .prosa tiene que reconocer también lo que trae el editor. */
+.prosa > .wp-block-image,
+.prosa > figure.wp-block-image { margin: 34px 0; }
+.prosa figure.wp-block-image img { border-radius: 16px; }
+.prosa figure.wp-block-image figcaption {
+  margin-top: 10px;
+  font-size: 14.5px;
+  color: var(--tenue);
+  line-height: 1.5;
+  text-align: left;
+}
+.prosa .wp-block-quote {
+  border: 0;
+  margin: 30px 0;
+  padding: 22px 26px;
+  background: var(--rosa-palo);
+  border-radius: 18px;
+  font-size: 18px;
+  color: var(--tinta);
+}
+.prosa .wp-block-quote p { margin: 0; }
+.prosa .wp-block-separator {
+  border: 0;
+  height: 2px;
+  background: var(--celeste);
+  max-width: 90px;
+  margin: 38px 0;
+}
+.prosa .wp-block-list { padding-left: 1.2em; }
+.prosa .wp-block-list li + li { margin-top: 10px; }
+.prosa .wp-block-embed { margin: 34px 0; }
+
+/* ---------- la navegación del escritorio con nuestra piel ---------- */
+.barra .wp-block-navigation__container {
+  gap: 0;
+}
+.barra .wp-block-navigation-item__content {
+  padding: 9px 14px;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--tinta);
+  border-radius: 999px;
+}
+.barra .wp-block-navigation-item__content:hover,
+.barra .current-menu-item > .wp-block-navigation-item__content {
+  color: var(--rosa-sombra);
+  background: var(--rosa-palo);
+}
+.barra .wp-block-navigation__responsive-container-open,
+.barra .wp-block-navigation__responsive-container-close {
+  color: var(--tinta);
+}
+.barra .wp-block-navigation__responsive-container.is-menu-open {
+  background: var(--crema);
+  padding: 26px;
+}
+.barra .wp-block-navigation__responsive-container.is-menu-open
+  .wp-block-navigation-item__content {
+  font-size: 19px;
+}
+
+/* ---------- paginación del blog ---------- */
+.wp-block-query-pagination {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.wp-block-query-pagination a,
+.wp-block-query-pagination .current {
+  padding: 8px 15px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--tinta);
+  background: var(--blanco);
+  box-shadow: var(--sombra-carta);
+}
+.wp-block-query-pagination .current {
+  background: var(--rosa);
+  color: #fff;
+}
+
+/* ---------- comentarios: el sitio no los usa ---------- */
+.wp-block-post-comments-form,
+.wp-block-comments { display: none; }

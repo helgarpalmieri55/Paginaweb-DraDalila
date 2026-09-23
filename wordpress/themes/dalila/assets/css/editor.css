@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Para que el escritorio se parezca al sitio mientras se edita.
+   ========================================================================== */
+
+.editor-styles-wrapper {
+  background: var(--wp--preset--color--crema);
+  font-family: "Nunito", system-ui, sans-serif;
+}
+
+/* Las franjas de mar dentro del editor: mismo alto que en el sitio. */
+.editor-styles-wrapper .franja {
+  position: relative;
+  overflow: hidden;
+  height: 264px;
+  --k: 1.08;
+}
+.editor-styles-wrapper .franja--crema { background: var(--wp--preset--color--crema); }
+.editor-styles-wrapper .franja--agua { background: var(--wp--preset--color--agua); }
+
+/* Un aviso discreto para que se entienda que el bloque se dibuja solo. */
+.editor-styles-wrapper .wp-block-dalila-franja::after {
+  content: "Franja de mar";
+  position: absolute;
+  inset: auto auto 8px 12px;
+  font: 700 12px/1 "Nunito", sans-serif;
+  color: var(--wp--preset--color--suave);
+  opacity: .5;
+}
