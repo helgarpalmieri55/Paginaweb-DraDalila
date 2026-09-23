@@ -47,10 +47,11 @@
 .prosa .wp-block-quote p { margin: 0; }
 .prosa .wp-block-separator {
   border: 0;
-  height: 2px;
-  background: var(--celeste);
-  max-width: 90px;
+  height: 1px;
+  max-width: none;
+  background: rgba(47,66,96,.14);
   margin: 38px 0;
+  opacity: 1;
 }
 .prosa .wp-block-list { padding-left: 1.2em; }
 .prosa .wp-block-list li + li { margin-top: 10px; }
@@ -88,6 +89,39 @@
   font-size: 19px;
 }
 .barra__botones { flex: none; }
+
+/* En pantallas medianas y chicas el sitio esconde el menú detrás de la
+   hamburguesa desde los 1040 px, no desde los 600 px que trae WordPress. */
+@media (max-width: 1040px) {
+  .barra .wp-block-navigation {
+    order: 2;
+    margin-left: auto;
+  }
+  .barra__botones { order: 3; }
+  .barra .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+  .barra .wp-block-navigation__responsive-container-open svg {
+    width: 30px;
+    height: 30px;
+  }
+  .barra .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none;
+  }
+  /* El botón de la cita queda redondo, solo con el calendario. */
+  .barra__boton > .wp-block-button__link {
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    justify-content: center;
+    font-size: 0;
+  }
+}
 
 /* ---------- los botones del editor con la forma de .btn ----------
    En el sitio .btn va en el enlace; el bloque Botón pone la clase en la caja
