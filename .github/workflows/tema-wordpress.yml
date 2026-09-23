@@ -1,0 +1,77 @@
+# Sube el tema a Hostinger cada vez que cambia algo del tema en main.
+#
+# Solo viaja wordpress/themes/dalila. Ni la base de datos ni las imágenes que
+# suba el community manager se tocan nunca desde aquí: eso vive en el servidor.
+#
+# Hace falta configurar cuatro secretos en el repositorio
+# (Settings → Secrets and variables → Actions):
+#
+#   HOSTINGER_HOST     el servidor SFTP que muestra Hostinger, por ejemplo
+#                      145.14.xxx.xxx
+#   HOSTINGER_USER     el usuario SFTP, empieza por u... 
+#   HOSTINGER_SSH_KEY  la clave privada completa, con sus líneas BEGIN y END
+#   HOSTINGER_RUTA     la carpeta del tema en el servidor, por ejemplo
+#                      /home/uXXXXXXXX/domains/dalilapenaranda.com/public_html/wp-content/themes/dalila
+
+name: Tema de WordPress
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'wordpress/themes/dalila/**'
+      - '.github/workflows/tema-wordpress.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: despliegue-tema
+  cancel-in-progress: false
+
+jobs:
+  subir:
+    name: Subir el tema por SFTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Traer el repositorio
+        uses: actions/checkout@v4
+
+      - name: Revisar que el PHP compile
+        run: |
+          find wordpress/themes/dalila -name '*.php' -print0 \
+            | xargs -0 -n1 php -l
+
+      - name: Revisar que el JavaScript y el JSON estén bien
+        run: |
+          find wordpress/themes/dalila -name '*.js' -print0 \
+            | xargs -0 -n1 node --check
+          find wordpress/themes/dalila -name '*.json' -print0 \
+            | xargs -0 -I{} node -e "JSON.parse(require('fs').readFileSync('{}','utf8'))"
+
+      - name: Preparar la clave y conocer el servidor
+        env:
+          CLAVE: ${{ secrets.HOSTINGER_SSH_KEY }}
+          SERVIDOR: ${{ secrets.HOSTINGER_HOST }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$CLAVE" > ~/.ssh/hostinger
+          chmod 600 ~/.ssh/hostinger
+          ssh-keyscan -p 65002 -H "$SERVIDOR" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Instalar lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Espejar el tema en el servidor
+        env:
+          SERVIDOR: ${{ secrets.HOSTINGER_HOST }}
+          USUARIO: ${{ secrets.HOSTINGER_USER }}
+          RUTA: ${{ secrets.HOSTINGER_RUTA }}
+        run: |
+          lftp -c "
+            set sftp:connect-program 'ssh -a -x -p 65002 -i $HOME/.ssh/hostinger';
+            set sftp:auto-confirm yes;
+            open -u $USUARIO, sftp://$SERVIDOR;
+            mirror --reverse --delete --verbose --parallel=4 \
+                   --exclude-glob .DS_Store \
+                   wordpress/themes/dalila '$RUTA';
+          "
