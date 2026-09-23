@@ -42,9 +42,16 @@
 			<!-- /wp:query-pagination -->
 
 			<!-- wp:query-no-results -->
-				<!-- wp:paragraph {"className":"sin-resultados"} -->
-				<p class="sin-resultados">Todavía no hay artículos en esta categoría.</p>
-				<!-- /wp:paragraph -->
+				<!-- wp:group {"className":"sin-resultados","layout":{"type":"default"}} -->
+				<div class="wp-block-group sin-resultados">
+					<!-- wp:paragraph -->
+					<p><strong>Todavía no hay artículos en esta categoría</strong></p>
+					<!-- /wp:paragraph -->
+					<!-- wp:paragraph -->
+					<p>Escríbeme el tema que te gustaría leer y lo pongo en la lista.</p>
+					<!-- /wp:paragraph -->
+				</div>
+				<!-- /wp:group -->
 			<!-- /wp:query-no-results -->
 		</div>
 		<!-- /wp:query -->

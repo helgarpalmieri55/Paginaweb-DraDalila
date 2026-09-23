@@ -120,3 +120,21 @@
 /* ---------- comentarios: el sitio no los usa ---------- */
 .wp-block-post-comments-form,
 .wp-block-comments { display: none; }
+
+/* ---------- la firma de la autora ----------
+   En el sitio el retrato es un <img> suelto; el bloque de imagen de WordPress
+   lo envuelve en <figure>. Esta regla le devuelve el lugar que tenía en la
+   rejilla y el recorte redondo. */
+.autora > .wp-block-image { margin: 0; }
+.autora > .wp-block-image img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  background: var(--crema);
+  box-shadow: 0 6px 16px rgba(47,66,96,.14);
+}
+@media (max-width: 560px) {
+  .autora > .wp-block-image img { margin: 0 auto; }
+}
