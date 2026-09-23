@@ -102,7 +102,7 @@ const CONFIG = {
   /* -------- blog: filtro por categoría -------- */
   const filtros = document.querySelectorAll('.filtro[data-cat]');
   if (filtros.length) {
-    const articulos = [...document.querySelectorAll('[data-cat]')];
+    const articulos = [...document.querySelectorAll('[data-cat]:not(.filtro)')];
     const vacio = document.querySelector('.sin-resultados');
     filtros.forEach(b => b.addEventListener('click', () => {
       const cat = b.dataset.cat;

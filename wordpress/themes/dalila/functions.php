@@ -19,6 +19,7 @@ require_once __DIR__ . '/inc/cabecera.php';
 require_once __DIR__ . '/inc/patrones.php';
 require_once __DIR__ . '/inc/franjas.php';
 require_once __DIR__ . '/inc/articulos.php';
+require_once __DIR__ . '/inc/blog.php';
 require_once __DIR__ . '/inc/posicionamiento.php';
 
 /**

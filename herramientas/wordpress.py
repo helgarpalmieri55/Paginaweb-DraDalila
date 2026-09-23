@@ -27,6 +27,8 @@ from datetime import datetime, timezone
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(RAIZ, 'docs')
 SALIDA = os.path.join(RAIZ, 'wordpress', 'importacion', 'contenido.xml')
+# Los resúmenes de las tarjetas del blog, para un sitio que ya se importó.
+TARJETAS = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'tarjetas.php')
 
 # De dónde se descargan las imágenes durante la importación.
 ORIGEN = 'https://helgarpalmieri55.github.io/Paginaweb-DraDalila/'
@@ -34,6 +36,9 @@ ORIGEN = 'https://helgarpalmieri55.github.io/Paginaweb-DraDalila/'
 DESTINO = 'https://dalilapenaranda.com/'
 
 AUTOR = 'dalila'
+
+# Donde quedan los PDF para descargar: dentro del tema.
+DESCARGAS = DESTINO + 'wp-content/themes/dalila/assets/descargas/'
 
 CATEGORIAS = {
     'nutricion':   ('nutricion', 'Nutrición'),
@@ -117,6 +122,8 @@ def reescribir(fragmento, mapa):
     for archivo, destino in mapa.items():
         fragmento = fragmento.replace('href="%s"' % archivo, 'href="%s"' % destino)
         fragmento = fragmento.replace('href="%s#' % archivo, 'href="%s#' % destino)
+    # Las descargas viajan dentro del tema, porque el sitio viejo se va a bajar.
+    fragmento = fragmento.replace('href="assets/descargas/', 'href="%s' % DESCARGAS)
     # Las imágenes apuntan al sitio actual: el importador las descarga y luego
     # reemplaza solo estas direcciones por las de la biblioteca de medios.
     fragmento = re.sub(r'(src|href)="(assets/[^"]+)"',
@@ -373,7 +380,8 @@ def bloque_categorias():
 
 
 def item(titulo, nombre, contenido, resumen, fecha, post_id, tipo,
-         estado='publish', categoria=None, orden=0, adjunto=None, miniatura=None, padre=0):
+         estado='publish', categoria=None, orden=0, adjunto=None, miniatura=None, padre=0,
+         tarjeta=None, fijo=False):
     fecha_wp = fecha.strftime('%Y-%m-%d %H:%M:%S')
     enlace = DESTINO + ('' if nombre == 'inicio' else nombre + '/')
 
@@ -398,7 +406,7 @@ def item(titulo, nombre, contenido, resumen, fecha, post_id, tipo,
         '\t\t<wp:menu_order>%d</wp:menu_order>' % orden,
         '\t\t<wp:post_type>%s</wp:post_type>' % cdata(tipo),
         '\t\t<wp:post_password></wp:post_password>',
-        '\t\t<wp:is_sticky>0</wp:is_sticky>',
+        '\t\t<wp:is_sticky>%d</wp:is_sticky>' % (1 if fijo else 0),
     ]
 
     if categoria:
@@ -416,6 +424,13 @@ def item(titulo, nombre, contenido, resumen, fecha, post_id, tipo,
             '\t\t\t<wp:meta_value>%s</wp:meta_value>\n'
             '\t\t</wp:postmeta>' % (cdata('_thumbnail_id'), cdata(str(miniatura))))
 
+    if tarjeta:
+        filas.append(
+            '\t\t<wp:postmeta>\n'
+            '\t\t\t<wp:meta_key>%s</wp:meta_key>\n'
+            '\t\t\t<wp:meta_value>%s</wp:meta_value>\n'
+            '\t\t</wp:postmeta>' % (cdata('dalila_tarjeta'), cdata(tarjeta)))
+
     if tipo == 'page':
         filas.append(
             '\t\t<wp:postmeta>\n'
@@ -425,6 +440,53 @@ def item(titulo, nombre, contenido, resumen, fecha, post_id, tipo,
 
     filas.append('\t</item>')
     return '\n'.join(filas)
+
+
+def tarjetas():
+    """El texto corto que cada artículo lleva en su tarjeta del blog, y cuál
+    es el destacado. En el sitio es distinto de la entrada del artículo."""
+    blog = open(os.path.join(DOCS, 'blog.html'), encoding='utf-8').read()
+    textos = {}
+    for m in re.finditer(r'<article class="articulo[^"]*"[^>]*>(?:(?!</article>).)*?<h3>.*?</h3>\s*<p>(.*?)</p>'
+                         r'(?:(?!</article>).)*?href="([^"]+)"', blog, re.S):
+        textos[m.group(2)] = texto_plano(m.group(1))
+
+    destacado = None
+    d = re.search(r'<article class="destacado.*?</article>', blog, re.S)
+    if d:
+        destacado = etiqueta(d.group(0), r'href="(blog-[^"]+)"')
+        texto = etiqueta(d.group(0), r'</h2>\s*<p>(.*?)</p>')
+        if destacado and texto:
+            textos[destacado] = texto_plano(texto)
+
+    return textos, destacado
+
+
+def escribir_tarjetas(por_nombre, destacado):
+    """Los mismos resúmenes en PHP, para pasarlos a un sitio ya importado."""
+    filas = ['<?php',
+             '/**',
+             ' * Generado por herramientas/wordpress.py. No se edita a mano.',
+             ' *',
+             ' * Los resúmenes de las tarjetas del blog y el artículo destacado, tal como',
+             ' * estaban en el sitio. inc/blog.php los copia una sola vez a cada entrada;',
+             ' * después se editan desde el campo personalizado «dalila_tarjeta».',
+             ' *',
+             ' * @package dalila',
+             ' */',
+             '',
+             "if ( ! defined( 'ABSPATH' ) ) {",
+             '\texit;',
+             '}',
+             '',
+             'return array(',
+             "\t'destacado' => %s," % ("'%s'" % destacado if destacado else 'null'),
+             "\t'tarjetas'  => array("]
+    for nombre in sorted(por_nombre):
+        texto = por_nombre[nombre].replace('\\', '\\\\').replace("'", "\\'")
+        filas.append("\t\t'%s' => '%s'," % (nombre, texto))
+    filas += ['\t),', ');', '']
+    open(TARJETAS, 'w', encoding='utf-8').write('\n'.join(filas))
 
 
 def imagenes_del_sitio():
@@ -468,6 +530,9 @@ def generar():
 
     # --- los 25 artículos
     articulos = 0
+    textos, destacado = tarjetas()
+    por_nombre = {}
+    nombre_destacado = None
     for archivo in sorted(os.listdir(DOCS)):
         if not archivo.startswith('blog-') or not archivo.endswith('.html'):
             continue
@@ -493,6 +558,11 @@ def generar():
         if categoria not in CATEGORIAS:
             raise SystemExit('sin categoría fiable para %s' % archivo)
 
+        if archivo in textos:
+            por_nombre[apodo(titulo)] = textos[archivo]
+        if archivo == destacado:
+            nombre_destacado = apodo(titulo)
+
         partes.append(item(
             titulo=titulo,
             nombre=apodo(titulo),
@@ -500,7 +570,8 @@ def generar():
             resumen=resumen,
             fecha=fecha_de_alta(os.path.join(DOCS, archivo)),
             post_id=siguiente, tipo='post', categoria=categoria,
-            miniatura=id_de.get(portada)))
+            miniatura=id_de.get(portada),
+            tarjeta=textos.get(archivo), fijo=archivo == destacado))
         siguiente += 1
         articulos += 1
 
@@ -518,6 +589,8 @@ def generar():
             post_id=siguiente, tipo='page', orden=paginas))
         siguiente += 1
         paginas += 1
+
+    escribir_tarjetas(por_nombre, nombre_destacado)
 
     partes.append('</channel>\n</rss>\n')
 
