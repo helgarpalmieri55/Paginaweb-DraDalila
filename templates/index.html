@@ -1,0 +1,57 @@
+<!-- wp:template-part {"slug":"header","tagName":"div"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"className":"cabecera cabecera--simple","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group cabecera cabecera--simple">
+		<!-- wp:group {"className":"cabecera__texto","layout":{"type":"default"}} -->
+		<div class="wp-block-group cabecera__texto">
+			<!-- wp:heading {"level":1} -->
+			<h1 class="wp-block-heading">Lo que alcanzo a contar<br><em>fuera de la consulta</em></h1>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"className":"cabecera__lead"} -->
+			<p class="cabecera__lead">Las preguntas que más se repiten en el consultorio, respondidas con calma y sin tecnicismos.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+	<!-- wp:group {"className":"seccion seccion--agua","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group seccion seccion--agua">
+		<!-- wp:query {"queryId":1,"query":{"perPage":12,"postType":"post","order":"desc","orderBy":"date","inherit":true},"layout":{"type":"default"}} -->
+		<div class="wp-block-query">
+			<!-- wp:post-template {"className":"rejilla rejilla--3 rejilla--piezas","layout":{"type":"grid","columnCount":3}} -->
+				<!-- wp:post-featured-image {"isLink":true} /-->
+				<!-- wp:group {"className":"articulo__cuerpo","layout":{"type":"default"}} -->
+				<div class="wp-block-group articulo__cuerpo">
+					<!-- wp:post-terms {"term":"category","className":"chip"} /-->
+					<!-- wp:post-title {"level":3,"isLink":true} /-->
+					<!-- wp:post-excerpt {"excerptLength":22,"showMoreOnNewLine":false} /-->
+				</div>
+				<!-- /wp:group -->
+			<!-- /wp:post-template -->
+
+			<!-- wp:query-pagination -->
+				<!-- wp:query-pagination-previous {"label":"← Anteriores"} /-->
+				<!-- wp:query-pagination-numbers /-->
+				<!-- wp:query-pagination-next {"label":"Siguientes →"} /-->
+			<!-- /wp:query-pagination -->
+
+			<!-- wp:query-no-results -->
+				<!-- wp:paragraph {"className":"sin-resultados"} -->
+				<p class="sin-resultados">Todavía no hay artículos en esta categoría.</p>
+				<!-- /wp:paragraph -->
+			<!-- /wp:query-no-results -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"div"} /-->

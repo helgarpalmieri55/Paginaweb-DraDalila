@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"header","tagName":"div"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"className":"cabecera cabecera--simple cabecera--articulo","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group cabecera cabecera--simple cabecera--articulo">
+		<!-- wp:group {"className":"cabecera__texto","layout":{"type":"default"}} -->
+		<div class="wp-block-group cabecera__texto">
+
+			<!-- wp:html -->
+			<nav class="migas" aria-label="Ruta">
+				<a href="/">Inicio</a>
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+				<a href="/blog/">Blog</a>
+			</nav>
+			<!-- /wp:html -->
+
+			<!-- wp:post-title {"level":1} /-->
+
+			<!-- wp:post-excerpt {"className":"cabecera__lead","showMoreOnNewLine":false,"excerptLength":45} /-->
+
+			<!-- wp:group {"className":"articulo__fecha","layout":{"type":"default"}} -->
+			<div class="wp-block-group articulo__fecha">
+				<!-- wp:shortcode -->
+				Por [dalila_firma]
+				<!-- /wp:shortcode -->
+			</div>
+			<!-- /wp:group -->
+
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group seccion seccion--crema seccion--lectura">
+		<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group prosa">
+			<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+	<!-- wp:pattern {"slug":"dalila/sigue-leyendo"} /-->
+	<!-- wp:pattern {"slug":"dalila/firma-autora"} /-->
+	<!-- wp:pattern {"slug":"dalila/cierre-articulo"} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"div"} /-->
