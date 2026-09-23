@@ -59,7 +59,7 @@
 
 /* ---------- la barra con la piel del sitio ---------- */
 .barra .wp-block-navigation__container { gap: 4px; }
-.barra .wp-block-navigation-item__content {
+.barra .wp-block-navigation .wp-block-navigation-item__content {
   display: block;
   padding: 9px 14px;
   font-size: 15.5px;
@@ -68,11 +68,11 @@
   border-radius: 999px;
   transition: color .2s, background .2s;
 }
-.barra .wp-block-navigation-item__content:hover {
+.barra .wp-block-navigation .wp-block-navigation-item__content:hover {
   color: var(--rosa-sombra);
   background: rgba(226,85,126,.08);
 }
-.barra .wp-block-navigation-item__content[aria-current="page"] {
+.barra .wp-block-navigation .wp-block-navigation-item__content[aria-current="page"] {
   color: var(--rosa-sombra);
   background: rgba(226,85,126,.10);
 }
@@ -80,9 +80,13 @@
 .barra .wp-block-navigation__responsive-container-close {
   color: var(--tinta);
 }
-.barra .wp-block-navigation__responsive-container.is-menu-open {
+.barra .barra__logo { margin-right: auto; }
+.barra .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open {
   background: var(--crema);
+  color: var(--texto);
   padding: 26px;
+  --navigation-layout-justification-setting: flex-start;
+  --navigation-layout-justify: flex-start;
 }
 /* El desenfoque de la barra encierra al menú abierto dentro de ella; mientras
    el menú está abierto, la barra lo suelta. */
