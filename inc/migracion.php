@@ -17,7 +17,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'aviso-medico',
-		'antes'     => array( '4ccfd328be40e6fe567c2d13ec6d1412' ),
+		'antes'     => array( '4ccfd328be40e6fe567c2d13ec6d1412', '86bd9ed46ce9b7b293c3948166e532fa' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -122,10 +122,6 @@ return array(
 <!-- wp:html -->
 <hr>
 <!-- /wp:html -->
-
-<!-- wp:paragraph {"className": "pendiente"} -->
-<p class="pendiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>Texto de referencia — debe revisarlo la doctora antes de publicar</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </section>
@@ -166,7 +162,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'blog',
-		'antes'     => array( 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
+		'antes'     => array( '9d9e75dbae47e65c99621429499da838', 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -600,18 +596,6 @@ return array(
       <p>Escríbeme el tema que te gustaría leer y lo pongo en la lista.</p>
     </div>
 <!-- /wp:html -->
-
-<!-- wp:group {"className": "aviso aviso--agua reveal en-ff3981", "layout": {"type": "default"}} -->
-<div class="wp-block-group aviso aviso--agua reveal en-ff3981">
-<!-- wp:html -->
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-<!-- /wp:html -->
-
-<!-- wp:html -->
-<div><strong>Veinticinco artículos, todos suyos</strong>Cada entrada nace de un video donde la doctora explica el tema completo, y se ilustra con sus propias piezas o con fotos de su consultorio.</div>
-<!-- /wp:html -->
-</div>
-<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </section>
@@ -3096,7 +3080,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'privacidad',
-		'antes'     => array( '7e03dcf8462feeee68bcc1312a0b5f82' ),
+		'antes'     => array( '7e03dcf8462feeee68bcc1312a0b5f82', '95f3cfef6a31aedcfde4d7120de4f34a' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3222,10 +3206,6 @@ return array(
 <!-- wp:html -->
 <hr>
 <!-- /wp:html -->
-
-<!-- wp:paragraph {"className": "pendiente"} -->
-<p class="pendiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>Borrador de referencia — debe revisarlo la doctora, y ojalá un abogado, antes de publicar</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </section>
