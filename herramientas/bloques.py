@@ -165,6 +165,27 @@ class Conversor:
             nombre, ' ' + clases if clases else '', ' id="%s"' % ancla if ancla else '',
             contenido.strip(), nombre)
 
+    def imagen(self, atributos):
+        """Una imagen suelta pasa al bloque «Imagen del sitio» (dalila/imagen),
+        que guarda el mismo <img> y en el editor se cambia con «Reemplazar»."""
+        propios = ('src', 'alt', 'width', 'height', 'loading', 'fetchpriority')
+        if set(atributos) - set(propios) - {'class', 'style'} or not atributos.get('src'):
+            return None
+        clases = atributos.get('class', '').split()
+        if atributos.get('style'):
+            clases.append(self.clase_de_estilo(atributos['style']))
+        clases = ' '.join(c for c in clases if c)
+
+        # El mismo orden en que el bloque escribe sus atributos al guardar.
+        partes = ['src="%s"' % atributos['src'], 'alt="%s"' % atributos.get('alt', '')]
+        partes += ['%s="%s"' % (a, atributos[a]) for a in propios[2:] if a in atributos]
+        if clases:
+            partes.append('class="%s"' % clases)
+        etiqueta_img = '<img ' + ' '.join(partes)
+        etiqueta_img += '/>'
+        return '%s\n%s\n<!-- /wp:dalila/imagen -->' % (
+            self.comentario('dalila/imagen', {'className': clases}), etiqueta_img)
+
     def lista(self, nombre, atributos, contenido):
         if 'aria-label' in atributos:
             return None
@@ -222,7 +243,9 @@ class Conversor:
             return self.franja(atributos)
 
         resultado = None
-        if nombre in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p') and not HAY_BLOQUE.search(contenido):
+        if nombre == 'img':
+            resultado = self.imagen(atributos)
+        elif nombre in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p') and not HAY_BLOQUE.search(contenido):
             resultado = self.texto(nombre, atributos, contenido)
         elif nombre in ('ul', 'ol'):
             resultado = self.lista(nombre, atributos, contenido)

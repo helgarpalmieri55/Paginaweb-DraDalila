@@ -13,8 +13,7 @@ bloque HTML, que es la única forma de que se vea idéntico.
 Deja wordpress/importacion/contenido.xml, listo para
 Herramientas → Importar → WordPress en el escritorio.
 
-Las imágenes se traen desde el sitio actual, así que hay que importar ANTES de
-bajar GitHub Pages.
+Las imágenes se traen de docs/ en la rama main del repositorio, que es público.
 """
 
 import html
@@ -34,13 +33,14 @@ HOJA_BLOQUES = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'assets', 'cs
 # importó y las que después se pasaron con la actualización del tema. Una
 # página que sigue igual a cualquiera de ellas no se editó a mano y se puede
 # actualizar. Cada vez que se publique una actualización, su commit se suma.
-IMPORTADOS = ['ba1636b', '028508a', 'ef67d86', 'c2d9a5f', 'f1beb6d', 'ad6695c', 'e4629e0', 'cbab215', 'e2f3cf5']
+IMPORTADOS = ['ba1636b', '028508a', 'ef67d86', 'c2d9a5f', 'f1beb6d', 'ad6695c', 'e4629e0', 'cbab215', 'e2f3cf5', '6fdb728']
 MIGRACION = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'migracion.php')
 # Los resúmenes de las tarjetas del blog, para un sitio que ya se importó.
 TARJETAS = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'tarjetas.php')
 
-# De dónde se descargan las imágenes durante la importación.
-ORIGEN = 'https://helgarpalmieri55.github.io/Paginaweb-DraDalila/'
+# De dónde se descargan las imágenes durante la importación: los archivos de
+# docs/ en la rama main del repositorio (GitHub Pages ya no está publicado).
+ORIGEN = 'https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/'
 # El sitio nuevo.
 DESTINO = 'https://dalilapenaranda.com/'
 

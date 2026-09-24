@@ -22,7 +22,7 @@ PATRONES = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'patterns')
 
 sys.path.insert(0, os.path.join(RAIZ, 'herramientas'))
 from wordpress import (construir_mapa, reescribir, elementos, interior, etiqueta,  # noqa: E402
-                       texto_plano, ORIGEN)
+                       texto_plano, ORIGEN, DESCARGAS)
 
 # Cada patrón: archivo de origen, marca del comentario que lo abre, nombre,
 # título y descripción. El orden es el de la portada.
@@ -180,7 +180,11 @@ def llevar_imagenes_al_tema(cuerpo):
                 shutil.copy2(origen, destino)
         return ('src="<?php echo esc_url( get_template_directory_uri() . \'/%s\' ); ?>"' % ruta)
 
-    return re.sub(r'src="%s(assets/img/[^"]+)"' % re.escape(ORIGEN), mover, cuerpo)
+    cuerpo = re.sub(r'src="%s(assets/img/[^"]+)"' % re.escape(ORIGEN), mover, cuerpo)
+    # Las descargas también viven en el tema.
+    return re.sub(r'href="%s([^"]+)"' % re.escape(DESCARGAS),
+                  lambda m: 'href="<?php echo esc_url( get_template_directory_uri() . \'/assets/descargas/%s\' ); ?>"' % m.group(1),
+                  cuerpo)
 
 
 CABECERA = '''<?php

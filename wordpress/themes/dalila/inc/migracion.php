@@ -162,7 +162,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'blog',
-		'antes'     => array( '9d9e75dbae47e65c99621429499da838', 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
+		'antes'     => array( '9d9e75dbae47e65c99621429499da838', 'd43bea19dfe6f55cb7c05e05c7999d3e', 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -199,9 +199,9 @@ return array(
 <div class="wp-block-group wrap">
 <!-- wp:group {"tagName": "article", "className": "destacado reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group destacado reveal">
-<!-- wp:html -->
-<img class="pieza" src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora: consejos para comenzar la alimentación complementaria" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "pieza"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora: consejos para comenzar la alimentación complementaria" width="900" height="900" loading="lazy" class="pieza"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "destacado__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group destacado__cuerpo">
@@ -231,9 +231,9 @@ return array(
 
 <!-- wp:group {"className": "descarga reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group descarga reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
@@ -278,7 +278,7 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Diez veces antes de decir «no le gusta»" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Diez veces antes de decir «no le gusta»" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Diez veces antes de decir «no le gusta»</h3>
@@ -291,7 +291,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="La silla de comer: los tres ángulos de 90°" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="La silla de comer: los tres ángulos de 90°" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>La silla de comer: los tres ángulos de 90°</h3>
@@ -304,7 +304,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mitos-lonchera.webp" alt="Leer los ingredientes, no solo la tabla" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mitos-lonchera.webp" alt="Leer los ingredientes, no solo la tabla" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Leer los ingredientes, no solo la tabla</h3>
@@ -317,7 +317,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Cumplió el año y dejó de comer" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Cumplió el año y dejó de comer" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Cumplió el año y dejó de comer</h3>
@@ -330,7 +330,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="lactancia">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="¿Qué leche después del destete?" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-lactancia.webp" alt="¿Qué leche después del destete?" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">lactancia</span>
           <h3>¿Qué leche después del destete?</h3>
@@ -343,7 +343,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="lactancia">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/grietas-lactancia.webp" alt="El agarre: tres señales de que va bien" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/grietas-lactancia.webp" alt="El agarre: tres señales de que va bien" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">lactancia</span>
           <h3>El agarre: tres señales de que va bien</h3>
@@ -356,7 +356,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>Lavado nasal: si está llorando, no se hace</h3>
@@ -369,7 +369,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>Si le sangra la nariz, esto no</h3>
@@ -382,7 +382,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>Se puso morado al llorar</h3>
@@ -395,7 +395,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="crecimiento">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="El tamizaje auditivo: la primera prueba" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="El tamizaje auditivo: la primera prueba" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--azul">crecimiento</span>
           <h3>El tamizaje auditivo: la primera prueba</h3>
@@ -408,7 +408,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="crecimiento">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--azul">crecimiento</span>
           <h3>El ronquido nunca es normal</h3>
@@ -421,7 +421,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Frutos secos y uvas: cómo sí" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Frutos secos y uvas: cómo sí" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Frutos secos y uvas: cómo sí</h3>
@@ -434,7 +434,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Cinco errores que llevan a la selectividad" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Cinco errores que llevan a la selectividad" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Cinco errores que llevan a la selectividad</h3>
@@ -447,7 +447,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Derivados lácteos: cuánto y desde cuándo" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Derivados lácteos: cuánto y desde cuándo" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Derivados lácteos: cuánto y desde cuándo</h3>
@@ -460,7 +460,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Después de los dos años, ¿qué leche?</h3>
@@ -473,7 +473,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="La malnutrición que no se ve" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="La malnutrición que no se ve" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>La malnutrición que no se ve</h3>
@@ -486,7 +486,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="lactancia">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Lactancia y caries" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/horarios-amamantar.webp" alt="Lactancia y caries" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">lactancia</span>
           <h3>Lactancia y caries</h3>
@@ -499,7 +499,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>Dolor de oído a medianoche</h3>
@@ -512,7 +512,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="Agotamiento materno: cinco señales" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="Agotamiento materno: cinco señales" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>Agotamiento materno: cinco señales</h3>
@@ -525,7 +525,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="nutricion">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Tres mitos que oigo cada semana" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Tres mitos que oigo cada semana" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--verde">nutrición</span>
           <h3>Tres mitos que oigo cada semana</h3>
@@ -538,7 +538,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="El cólico cambió de nombre" width="900" height="900" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="El cólico cambió de nombre" width="900" height="900" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>El cólico cambió de nombre</h3>
@@ -551,7 +551,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>Cuidado con los mosquitos</h3>
@@ -564,7 +564,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="1" data-cat="salud">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--rosa">salud</span>
           <h3>El inhalador: la técnica correcta</h3>
@@ -577,7 +577,7 @@ return array(
 
 <!-- wp:html -->
 <article class="articulo reveal" data-delay="2" data-cat="crecimiento">
-        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy">
+        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy">
         <div class="articulo__cuerpo">
           <span class="chip chip--azul">crecimiento</span>
           <h3>Bullying: las señales que no te cuenta</h3>
@@ -636,7 +636,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '8b5436cbb862a638d7234db5cc0f90d1' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -847,41 +847,41 @@ return array(
 <div class="wp-block-group logos reveal retraso-1">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-sura.webp" alt="Sura Póliza" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-sura.webp" alt="Sura Póliza" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-colmedica.webp" alt="Colmédica Medicina Prepagada" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-colmedica.webp" alt="Colmédica Medicina Prepagada" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-bolivar.webp" alt="Seguros Bolívar" loading="lazy" style="height:40px">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-57af08"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-bolivar.webp" alt="Seguros Bolívar" loading="lazy" class="en-57af08"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-coomeva.webp" alt="Coomeva Medicina Prepagada" loading="lazy" style="height:50px">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-3f5062"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-coomeva.webp" alt="Coomeva Medicina Prepagada" loading="lazy" class="en-3f5062"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-allianz.webp" alt="Allianz" loading="lazy" style="height:34px">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-c5c808"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-allianz.webp" alt="Allianz" loading="lazy" class="en-c5c808"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1034,7 +1034,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'consultorio',
-		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a' ),
+		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a', '4d990048ca8d6f0adb85cd994950b571' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1083,9 +1083,9 @@ return array(
 <span class="washi" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" fetchpriority="high">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" fetchpriority="high"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1117,9 +1117,9 @@ return array(
 <span class="washi" style="background:#BBD5EA;transform:translateX(-50%) rotate(-4deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La ballena de la entrada</strong>
@@ -1137,9 +1137,9 @@ return array(
 <span class="washi" style="background:#F3E3EA;transform:translateX(-50%) rotate(3deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La recepción</strong>
@@ -1157,9 +1157,9 @@ return array(
 <span class="washi" style="background:#CFE4DF;transform:translateX(-50%) rotate(-3deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-espera.webp" alt="Sala de espera con la banca turquesa y la rana de peluche" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-espera.webp" alt="Sala de espera con la banca turquesa y la rana de peluche" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La sala de espera</strong>
@@ -1177,9 +1177,9 @@ return array(
 <span class="washi" style="background:#DCC08D;transform:translateX(-50%) rotate(-2deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La consulta</strong>
@@ -1197,9 +1197,9 @@ return array(
 <span class="washi" style="background:#BBD5EA;transform:translateX(-50%) rotate(2deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La sala de examen</strong>
@@ -1217,9 +1217,9 @@ return array(
 <span class="washi" style="background:#F3E3EA;transform:translateX(-50%) rotate(-2deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ventana.webp" alt="Camilla junto a la ventana, con la ciudad al fondo" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ventana.webp" alt="Camilla junto a la ventana, con la ciudad al fondo" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>Luz y ciudad</strong>
@@ -1241,9 +1241,9 @@ return array(
 <section class="wp-block-group seccion seccion--crema en-42b6d0">
 <!-- wp:group {"className": "pepe reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group pepe reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
@@ -1446,7 +1446,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'contacto',
-		'antes'     => array( 'eb14d83b273d645748cf26c7dcb01f87' ),
+		'antes'     => array( '842d31e5cead29914a729deb1675f9ce', 'eb14d83b273d645748cf26c7dcb01f87' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1483,9 +1483,9 @@ return array(
 <span class="washi" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos" width="820" height="874" fetchpriority="high" style="object-position:50% 35%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-45fe4c"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos" width="820" height="874" fetchpriority="high" class="en-45fe4c"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1716,7 +1716,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'cursos',
-		'antes'     => array( 'ae42d729285ac1a2ac31a7532d52fc29' ),
+		'antes'     => array( '15b2d5ce35736b2b2b37f9bfbe00ad34', 'ae42d729285ac1a2ac31a7532d52fc29' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1759,9 +1759,9 @@ return array(
 <article class="wp-block-group detalle" id="complementaria">
 <!-- wp:group {"className": "detalle__figura detalle__figura--pieza reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura detalle__figura--pieza reveal reveal--izq">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora con los diez alimentos ideales para la alimentación complementaria" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora con los diez alimentos ideales para la alimentación complementaria" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -1834,9 +1834,9 @@ return array(
 <article class="wp-block-group detalle" id="lonchera">
 <!-- wp:group {"className": "detalle__figura detalle__figura--pieza reveal reveal--der", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura detalle__figura--pieza reveal reveal--der">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/taller-lonchera.webp" alt="Pieza del Taller Lonchera Nutritiva de la Dra. Dalila Peñaranda" width="820" height="1025" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/taller-lonchera.webp" alt="Pieza del Taller Lonchera Nutritiva de la Dra. Dalila Peñaranda" width="820" height="1025" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -1903,9 +1903,9 @@ return array(
 <article class="wp-block-group detalle" id="habitos">
 <!-- wp:group {"className": "detalle__figura detalle__figura--pieza reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura detalle__figura--pieza reveal reveal--izq">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora: ideas para crear una relación saludable con los alimentos" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora: ideas para crear una relación saludable con los alimentos" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -1964,9 +1964,9 @@ return array(
 <article class="wp-block-group detalle" id="escuela-para-padres">
 <!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--der">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 30%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-a70435"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" class="en-a70435"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -2111,7 +2111,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '505d28469a2e9f05bda37c13838ab710' ),
+		'antes'     => array( '505d28469a2e9f05bda37c13838ab710', '8e5554a5104ddef178e462ac6ecea6b4' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -2167,9 +2167,9 @@ return array(
 <span class="washi" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/doctora-pepe.jpg" alt="Dra. Dalila Peñaranda con Pepe, la rana de peluche del consultorio" width="1000" height="1327" fetchpriority="high">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-pepe-sofa.webp" alt="Dra. Dalila Peñaranda con Pepe, la rana de peluche del consultorio" width="1100" height="1088" fetchpriority="high"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -2309,9 +2309,9 @@ return array(
 <div class="wp-block-group reveal">
 <!-- wp:group {"className": "marco", "layout": {"type": "default"}} -->
 <div class="wp-block-group marco">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/doctora-retrato.jpg" alt="Dra. Dalila Peñaranda" width="820" height="700" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-retrato.jpg" alt="Dra. Dalila Peñaranda" width="820" height="700" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2397,9 +2397,9 @@ return array(
 
 <!-- wp:group {"anchor": "pepe", "className": "pepe reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group pepe reveal" id="pepe">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
@@ -2505,9 +2505,9 @@ return array(
 <span class="washi" style="background:#BBD5EA;transform:translateX(-50%) rotate(-4deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La ballena de la entrada</strong>
@@ -2525,9 +2525,9 @@ return array(
 <span class="washi" style="background:#F3E3EA;transform:translateX(-50%) rotate(3deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La recepción</strong>
@@ -2545,9 +2545,9 @@ return array(
 <span class="washi" style="background:#DCC08D;transform:translateX(-50%) rotate(-2deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La consulta</strong>
@@ -2565,9 +2565,9 @@ return array(
 <span class="washi" style="background:#CFE4DF;transform:translateX(-50%) rotate(2deg)" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:html -->
 <strong>La sala de examen</strong>
@@ -2601,9 +2601,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3">
 <!-- wp:group {"tagName": "article", "className": "curso reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group curso reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-complementaria.jpg" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/curso-complementaria.jpg" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__cuerpo">
@@ -2633,9 +2633,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "curso reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group curso reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-lonchera.jpg" alt="Comida saludable lista en porciones" width="800" height="533" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/curso-lonchera.jpg" alt="Comida saludable lista en porciones" width="800" height="533" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__cuerpo">
@@ -2665,9 +2665,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "curso reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group curso reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-dormir.jpg" alt="Bebé durmiendo tranquilo" width="800" height="534" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/curso-dormir.jpg" alt="Bebé durmiendo tranquilo" width="800" height="534" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__cuerpo">
@@ -2725,41 +2725,41 @@ return array(
 <div class="wp-block-group logos reveal retraso-1">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-sura.webp" alt="Sura Póliza" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-sura.webp" alt="Sura Póliza" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-colmedica.webp" alt="Colmédica Medicina Prepagada" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-colmedica.webp" alt="Colmédica Medicina Prepagada" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-bolivar.webp" alt="Seguros Bolívar" loading="lazy" style="height:40px">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-57af08"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-bolivar.webp" alt="Seguros Bolívar" loading="lazy" class="en-57af08"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-coomeva.webp" alt="Coomeva Medicina Prepagada" loading="lazy" style="height:50px">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-3f5062"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-coomeva.webp" alt="Coomeva Medicina Prepagada" loading="lazy" class="en-3f5062"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-allianz.webp" alt="Allianz" loading="lazy" style="height:34px">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-c5c808"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/logo-allianz.webp" alt="Allianz" loading="lazy" class="en-c5c808"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2859,9 +2859,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-nutricion.jpg" alt="Bebé comiendo en su silla" width="800" height="1200" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-nutricion.jpg" alt="Bebé comiendo en su silla" width="800" height="1200" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -2887,9 +2887,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 30%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-a70435"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" class="en-a70435"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -2915,9 +2915,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" style="object-position:50% 40%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-7e2142"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" class="en-7e2142"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -3246,7 +3246,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '775bf4283ac1b449bd44fde5d6bf7a22', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3296,9 +3296,9 @@ return array(
 <article class="wp-block-group detalle" id="control-pediatrico">
 <!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--izq">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -3353,9 +3353,9 @@ return array(
 <article class="wp-block-group detalle" id="nutricion-infantil">
 <!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--der">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-nutricion.jpg" alt="Bebé comiendo en su silla" width="800" height="1200" loading="lazy" style="object-position:50% 35%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-45fe4c"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-nutricion.jpg" alt="Bebé comiendo en su silla" width="800" height="1200" loading="lazy" class="en-45fe4c"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -3410,9 +3410,9 @@ return array(
 <article class="wp-block-group detalle" id="crecimiento-desarrollo">
 <!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--izq">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 25%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-4bfa45"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" class="en-4bfa45"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -3467,9 +3467,9 @@ return array(
 <article class="wp-block-group detalle" id="alimentacion-complementaria">
 <!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--der">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-complementaria.jpg" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy" style="object-position:50% 40%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-7e2142"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/curso-complementaria.jpg" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy" class="en-7e2142"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -3524,9 +3524,9 @@ return array(
 <article class="wp-block-group detalle" id="asesoria-padres">
 <!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--izq">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" style="object-position:50% 40%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-7e2142"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" class="en-7e2142"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -3581,9 +3581,9 @@ return array(
 <article class="wp-block-group detalle" id="consulta-virtual">
 <!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--der">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
@@ -3712,7 +3712,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'sobre-mi',
-		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'fefea6507a070729c37f063be9636f6c' ),
+		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '90e6c9a2ed332a05de4669b330f21ad8', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'fefea6507a070729c37f063be9636f6c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3761,9 +3761,9 @@ return array(
 <span class="washi" aria-hidden="true"></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/doctora-retrato.jpg" alt="Retrato de la Dra. Dalila Peñaranda en su consultorio" width="820" height="700" fetchpriority="high">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-retrato.jpg" alt="Retrato de la Dra. Dalila Peñaranda en su consultorio" width="820" height="700" fetchpriority="high"/>
+<!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3951,9 +3951,9 @@ return array(
 <section class="wp-block-group seccion seccion--agua en-810cae">
 <!-- wp:group {"anchor": "pepe", "className": "pepe reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group pepe reveal" id="pepe">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
@@ -4008,7 +4008,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'agotamiento-materno-cinco-senales',
-		'antes'     => array( '46f73c03c33e991a2c313ee5603ba83f' ),
+		'antes'     => array( '353a8fc4ee61c2e79f16c75444cf6476', '46f73c03c33e991a2c313ee5603ba83f' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4078,7 +4078,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos"/><figcaption class="wp-element-caption">Si algo de esto te suena, no lo cargues sola.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos"/><figcaption class="wp-element-caption">Si algo de esto te suena, no lo cargues sola.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -4121,9 +4121,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4149,9 +4149,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4177,9 +4177,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4244,7 +4244,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'bullying-las-senales-que-no-te-cuenta',
-		'antes'     => array( '5dce3f469438bd568d3a5e311751bfb9' ),
+		'antes'     => array( '5dce3f469438bd568d3a5e311751bfb9', 'd5b37ac42291a36466d23caba0477712' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4310,7 +4310,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo"/><figcaption class="wp-element-caption">Lo que no se dice también deja rastro. Ahí empieza la sospecha.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo"/><figcaption class="wp-element-caption">Lo que no se dice también deja rastro. Ahí empieza la sospecha.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -4353,9 +4353,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4381,9 +4381,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4409,9 +4409,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4476,7 +4476,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cinco-errores-que-llevan-a-la-selectividad',
-		'antes'     => array( 'd68b9bc1a6b459d8ea2b55079e56503d' ),
+		'antes'     => array( 'd68b9bc1a6b459d8ea2b55079e56503d', 'e4a590abe3078ae9083382e7e2742636' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4527,7 +4527,7 @@ return array(
 
 <!-- wp:html -->
 <div class="descarga">
-      <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+      <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
       <div>
         <strong>Un regalo: mis recomendaciones nutricionales</strong>
         <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
@@ -4551,7 +4551,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre cómo crear una relación saludable con los alimentos"/><figcaption class="wp-element-caption">De mi serie sobre la relación con la comida.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre cómo crear una relación saludable con los alimentos"/><figcaption class="wp-element-caption">De mi serie sobre la relación con la comida.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -4594,9 +4594,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4622,9 +4622,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4650,9 +4650,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4717,7 +4717,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cuando-necesita-agua-tu-bebe',
-		'antes'     => array( 'cd4e1ae0a1d0d7fa12439434ddb20fe5' ),
+		'antes'     => array( '3cdd1916e3c35ad65f6a8bf6140f6882', 'cd4e1ae0a1d0d7fa12439434ddb20fe5' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4757,7 +4757,7 @@ return array(
 <!-- /wp:quote -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora: consejos para comenzar la alimentación complementaria"/><figcaption class="wp-element-caption">De la serie que la doctora publica en sus redes sobre el inicio de la complementaria.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora: consejos para comenzar la alimentación complementaria"/><figcaption class="wp-element-caption">De la serie que la doctora publica en sus redes sobre el inicio de la complementaria.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":2} -->
@@ -4826,9 +4826,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-lonchera.jpg" alt="Comida saludable servida en porciones" width="800" height="533" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/curso-lonchera.jpg" alt="Comida saludable servida en porciones" width="800" height="533" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4854,9 +4854,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 30%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-a70435"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" class="en-a70435"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4882,9 +4882,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" style="object-position:50% 40%">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen {"className": "en-7e2142"} -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" class="en-7e2142"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -4949,7 +4949,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cuidado-con-los-mosquitos',
-		'antes'     => array( 'b57510247cb368232d171385db5389e5' ),
+		'antes'     => array( '415866bd1ba7e9e11d34ad18ac98f221', 'b57510247cb368232d171385db5389e5' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5012,7 +5012,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques"/><figcaption class="wp-element-caption">Su propia pieza sobre el tema: ante la fiebre, consulta; no automediques.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques"/><figcaption class="wp-element-caption">Su propia pieza sobre el tema: ante la fiebre, consulta; no automediques.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -5055,9 +5055,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5083,9 +5083,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5111,9 +5111,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5178,7 +5178,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cumplio-el-ano-y-dejo-de-comer',
-		'antes'     => array( '2df2ca729565a30696562dc7ba761bc1' ),
+		'antes'     => array( '199d82e4a3c91b1cbf7732500db3a1db', '2df2ca729565a30696562dc7ba761bc1' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5251,7 +5251,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora con consejos para lidiar con la selectividad alimentaria"/><figcaption class="wp-element-caption">De mi serie sobre selectividad alimentaria.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Pieza de la doctora con consejos para lidiar con la selectividad alimentaria"/><figcaption class="wp-element-caption">De mi serie sobre selectividad alimentaria.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -5294,9 +5294,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5322,9 +5322,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5350,9 +5350,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5417,7 +5417,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'derivados-lacteos-cuanto-y-desde-cuando',
-		'antes'     => array( '8483f42a161d37add61ecbceec86b76f' ),
+		'antes'     => array( '23a21f1530b0b48505b4c750c5a736ef', '8483f42a161d37add61ecbceec86b76f' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5473,7 +5473,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre cómo elegir un buen procesado"/><figcaption class="wp-element-caption">De mi serie sobre cómo mirar un procesado antes de comprarlo.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre cómo elegir un buen procesado"/><figcaption class="wp-element-caption">De mi serie sobre cómo mirar un procesado antes de comprarlo.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -5516,9 +5516,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5544,9 +5544,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5572,9 +5572,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5639,7 +5639,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'despues-de-los-dos-anos-que-leche',
-		'antes'     => array( 'c09caa6be41316af299c5e0f2d090b6b' ),
+		'antes'     => array( '61572217d95f2d510dd7ce54c83b7e98', 'c09caa6be41316af299c5e0f2d090b6b' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5694,7 +5694,7 @@ return array(
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta"/><figcaption class="wp-element-caption">Dos tazas de ocho onzas al día. Más que eso desplaza la comida.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta"/><figcaption class="wp-element-caption">Dos tazas de ocho onzas al día. Más que eso desplaza la comida.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -5737,9 +5737,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5765,9 +5765,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5793,9 +5793,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -5860,7 +5860,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'diez-veces-antes-de-decir-no-le-gusta',
-		'antes'     => array( 'a73801d172f58497cdbc7a46921c3c48' ),
+		'antes'     => array( '01b8839bea138a87aee3d1b93a523b45', 'a73801d172f58497cdbc7a46921c3c48' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5911,7 +5911,7 @@ return array(
 
 <!-- wp:html -->
 <div class="descarga">
-      <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+      <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
       <div>
         <strong>Un regalo: mis recomendaciones nutricionales</strong>
         <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
@@ -5948,7 +5948,7 @@ return array(
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora con recomendaciones para mejorar la conducta de un niño selectivo"/><figcaption class="wp-element-caption">De la serie que publico sobre conducta alimentaria.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora con recomendaciones para mejorar la conducta de un niño selectivo"/><figcaption class="wp-element-caption">De la serie que publico sobre conducta alimentaria.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -5991,9 +5991,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6019,9 +6019,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6047,9 +6047,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6114,7 +6114,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'dolor-de-oido-a-medianoche',
-		'antes'     => array( 'e6a9ee90482760eb3407196774ebbf22' ),
+		'antes'     => array( '659d67a22b82d8eeb166f80b6f142b21', 'e6a9ee90482760eb3407196774ebbf22' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6184,7 +6184,7 @@ return array(
 <!-- /wp:separator -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído"/><figcaption class="wp-element-caption">Casi siempre aparece de noche, y casi nunca hay cómo mirar el oído en casa.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído"/><figcaption class="wp-element-caption">Casi siempre aparece de noche, y casi nunca hay cómo mirar el oído en casa.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:html -->
@@ -6223,9 +6223,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6251,9 +6251,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6279,9 +6279,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6346,7 +6346,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-agarre-tres-senales-de-que-va-bien',
-		'antes'     => array( '639b109dec68f81f235812fb2d0a4a3c' ),
+		'antes'     => array( '639b109dec68f81f235812fb2d0a4a3c', 'ded9843a6b784f619395eae57d4184c4' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6392,7 +6392,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/grietas-lactancia.webp" alt="Pieza de la doctora sobre grietas y lactancia materna"/><figcaption class="wp-element-caption">De mi serie sobre lactancia: las grietas casi siempre hablan del agarre.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/grietas-lactancia.webp" alt="Pieza de la doctora sobre grietas y lactancia materna"/><figcaption class="wp-element-caption">De mi serie sobre lactancia: las grietas casi siempre hablan del agarre.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -6435,9 +6435,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6463,9 +6463,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6491,9 +6491,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6558,7 +6558,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-colico-del-lactante-cambio-de-nombre',
-		'antes'     => array( '5287d946f7811e38062a3fb6d293d5ff' ),
+		'antes'     => array( '5287d946f7811e38062a3fb6d293d5ff', '9f3a0699716a198992dd912114e0198f' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6604,7 +6604,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora: el cólico del lactante ahora se llama síndrome de distress del lactante"/><figcaption class="wp-element-caption">El cambio de nombre, en una de mis publicaciones.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora: el cólico del lactante ahora se llama síndrome de distress del lactante"/><figcaption class="wp-element-caption">El cambio de nombre, en una de mis publicaciones.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -6647,9 +6647,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6675,9 +6675,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6703,9 +6703,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6770,7 +6770,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-inhalador-la-tecnica-correcta',
-		'antes'     => array( '5706f439e61740f8d5f6d6e4ab3e42b9' ),
+		'antes'     => array( '5706f439e61740f8d5f6d6e4ab3e42b9', '641c6560fb81e478e8eb0cff6f1c4d8c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6857,7 +6857,7 @@ return array(
 <!-- /wp:separator -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla"/><figcaption class="wp-element-caption">El inhalador solo no basta: la inhalocámara es parte del tratamiento.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla"/><figcaption class="wp-element-caption">El inhalador solo no basta: la inhalocámara es parte del tratamiento.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:html -->
@@ -6896,9 +6896,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6924,9 +6924,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -6952,9 +6952,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7019,7 +7019,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-ronquido-nunca-es-normal',
-		'antes'     => array( 'a08684119706cdcc2e868ce440a8240c' ),
+		'antes'     => array( '36f59aa1e899a30f5589d3ea7e374808', 'a08684119706cdcc2e868ce440a8240c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7074,7 +7074,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana"/><figcaption class="wp-element-caption">Duerme las horas, pero no descansa. Eso se paga durante el día.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana"/><figcaption class="wp-element-caption">Duerme las horas, pero no descansa. Eso se paga durante el día.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -7117,9 +7117,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7145,9 +7145,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7173,9 +7173,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7240,7 +7240,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe',
-		'antes'     => array( '286a2a626fef12a0770765512fa11476' ),
+		'antes'     => array( '286a2a626fef12a0770765512fa11476', '868a25219aa4f39df99be0ea0b5b1fa8' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7307,7 +7307,7 @@ return array(
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre la importancia de detectar a tiempo la pérdida auditiva"/><figcaption class="wp-element-caption">Detectar a tiempo hace la diferencia: una de mis piezas sobre audición en recién nacidos.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre la importancia de detectar a tiempo la pérdida auditiva"/><figcaption class="wp-element-caption">Detectar a tiempo hace la diferencia: una de mis piezas sobre audición en recién nacidos.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -7350,9 +7350,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7378,9 +7378,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7406,9 +7406,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7473,7 +7473,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'frutos-secos-y-uvas-como-si',
-		'antes'     => array( '60e15192eb5fa476a472f18589486a56' ),
+		'antes'     => array( '60e15192eb5fa476a472f18589486a56', '7b0b8b57f78eb0a6b545699d1cd01192' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7528,7 +7528,7 @@ return array(
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora con los diez alimentos ideales para la alimentación complementaria"/><figcaption class="wp-element-caption">De mi serie sobre qué ofrecer al empezar la complementaria.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora con los diez alimentos ideales para la alimentación complementaria"/><figcaption class="wp-element-caption">De mi serie sobre qué ofrecer al empezar la complementaria.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -7571,9 +7571,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7599,9 +7599,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7627,9 +7627,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7694,7 +7694,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'la-malnutricion-que-no-se-ve',
-		'antes'     => array( '346a82c0f08430de099a59f8f5ec12e9' ),
+		'antes'     => array( '346a82c0f08430de099a59f8f5ec12e9', 'f66b3a25d5bafb5ac97b84232a226676' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7744,7 +7744,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora: «si come poquito, no crecerá bien»"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades en nutrición.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora: «si come poquito, no crecerá bien»"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades en nutrición.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -7787,9 +7787,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7815,9 +7815,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7843,9 +7843,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -7910,7 +7910,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'la-silla-de-comer-los-tres-angulos-de-90',
-		'antes'     => array( 'eb9651058f120b350866edd51143007e' ),
+		'antes'     => array( '9e242cfc14be2159f6b8a5921fa686eb', 'eb9651058f120b350866edd51143007e' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7987,7 +7987,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre los errores frecuentes al iniciar la alimentación complementaria"/><figcaption class="wp-element-caption">Los tropiezos más comunes de las primeras semanas, en una de mis piezas sobre el inicio de la complementaria.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre los errores frecuentes al iniciar la alimentación complementaria"/><figcaption class="wp-element-caption">Los tropiezos más comunes de las primeras semanas, en una de mis piezas sobre el inicio de la complementaria.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -8030,9 +8030,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8058,9 +8058,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8086,9 +8086,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8153,7 +8153,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'lactancia-y-caries-protege-pero-no-basta',
-		'antes'     => array( 'f64daa13c1b3166c04ff3f0ae451ca7c' ),
+		'antes'     => array( '86d72994e2b36f7ade11fe8589cb73eb', 'f64daa13c1b3166c04ff3f0ae451ca7c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8209,7 +8209,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre horarios y tiempos para amamantar"/><figcaption class="wp-element-caption">De mi serie sobre lactancia.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre horarios y tiempos para amamantar"/><figcaption class="wp-element-caption">De mi serie sobre lactancia.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -8252,9 +8252,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8280,9 +8280,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8308,9 +8308,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8375,7 +8375,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'lavado-nasal-si-esta-llorando-no-se-hace',
-		'antes'     => array( 'f2371c3b922295fd28c6e9caac3c4a88' ),
+		'antes'     => array( '9a6af0b76907fd703ef5908aeb1f7c4d', 'f2371c3b922295fd28c6e9caac3c4a88' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8457,7 +8457,7 @@ return array(
 <!-- /wp:separator -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas"/><figcaption class="wp-element-caption">El objetivo no es destapar de un empujón: es bajar el moco y diluirlo.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas"/><figcaption class="wp-element-caption">El objetivo no es destapar de un empujón: es bajar el moco y diluirlo.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:html -->
@@ -8496,9 +8496,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8524,9 +8524,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8552,9 +8552,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8619,7 +8619,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'leer-los-ingredientes-no-solo-la-tabla',
-		'antes'     => array( 'ebf0cdafb7d89e573ffd54b66dcb6557' ),
+		'antes'     => array( 'ebf0cdafb7d89e573ffd54b66dcb6557', 'f8be977c3d8b63f6c51c9ebf6fa2b254' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8689,7 +8689,7 @@ return array(
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mitos-lonchera.webp" alt="Pieza de la doctora sobre los mitos de una lonchera saludable"/><figcaption class="wp-element-caption">De mi serie sobre lo que entra —y lo que no— en la lonchera.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mitos-lonchera.webp" alt="Pieza de la doctora sobre los mitos de una lonchera saludable"/><figcaption class="wp-element-caption">De mi serie sobre lo que entra —y lo que no— en la lonchera.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -8732,9 +8732,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8760,9 +8760,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8788,9 +8788,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8855,7 +8855,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'que-leche-le-doy-despues-del-destete',
-		'antes'     => array( '5c1c9844821e7b57b8883a8300367944' ),
+		'antes'     => array( '44482facc4af3f575bcf80a4dcab561a', '5c1c9844821e7b57b8883a8300367944' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8901,7 +8901,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre mitos y realidades de la lactancia materna"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades sobre lactancia.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre mitos y realidades de la lactancia materna"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades sobre lactancia.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -8944,9 +8944,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/grietas-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/grietas-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -8972,9 +8972,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9000,9 +9000,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9067,7 +9067,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'se-puso-morado-al-llorar',
-		'antes'     => array( '856706259e576bc04fa0d1b996d202ac' ),
+		'antes'     => array( '856706259e576bc04fa0d1b996d202ac', 'beed068ed9dc72f2f6748f1f05c27446' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9126,7 +9126,7 @@ return array(
 <!-- /wp:separator -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora"/><figcaption class="wp-element-caption">Se corta un momento y vuelve. Por eso asusta tanto, y por eso es benigno.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora"/><figcaption class="wp-element-caption">Se corta un momento y vuelve. Por eso asusta tanto, y por eso es benigno.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:html -->
@@ -9165,9 +9165,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9193,9 +9193,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9221,9 +9221,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9288,7 +9288,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'si-le-sangra-la-nariz-esto-no',
-		'antes'     => array( 'fca90a3ef9a56a213a7c7a6470e4c2bc' ),
+		'antes'     => array( 'c810a6041ed59af3ab2df2189fa1ce1f', 'fca90a3ef9a56a213a7c7a6470e4c2bc' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9344,7 +9344,7 @@ return array(
 <!-- /wp:separator -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos"/><figcaption class="wp-element-caption">Presión en la parte blanda y el reloj a la vista: tres minutos sin soltar.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos"/><figcaption class="wp-element-caption">Presión en la parte blanda y el reloj a la vista: tres minutos sin soltar.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:html -->
@@ -9383,9 +9383,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9411,9 +9411,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9439,9 +9439,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9506,7 +9506,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'tres-mitos-que-oigo-cada-semana',
-		'antes'     => array( '55a024994c56a37ede7e9ab9e32d8295' ),
+		'antes'     => array( '55a024994c56a37ede7e9ab9e32d8295', 'dc416370b8bbfd489f519c88a1ab20d7' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9553,7 +9553,7 @@ return array(
 
 <!-- wp:html -->
 <div class="descarga">
-      <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+      <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
       <div>
         <strong>Un regalo: mis recomendaciones nutricionales</strong>
         <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
@@ -9577,7 +9577,7 @@ return array(
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora: mito y realidad sobre los jugos de fruta"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades en nutrición.</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora: mito y realidad sobre los jugos de fruta"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades en nutrición.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:separator -->
@@ -9620,9 +9620,9 @@ return array(
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
 <!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9648,9 +9648,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-1">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
@@ -9676,9 +9676,9 @@ return array(
 
 <!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
 <article class="wp-block-group articulo reveal retraso-2">
-<!-- wp:html -->
-<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
-<!-- /wp:html -->
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">

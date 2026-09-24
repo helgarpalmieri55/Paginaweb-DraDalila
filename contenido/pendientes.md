@@ -78,15 +78,9 @@ archivo de diseño que conviene reemplazar por material suyo.
       para la página de cursos.
 - [ ] **Confirmar que podemos usar** las dos fotos suyas que venían del archivo de
       diseño: el retrato y la foto abrazando a Pepe.
-- [ ] ⚠️ **La foto de la portada muestra una marca de fórmula infantil.** En la foto
-      con Pepe se ve, en brazos de la rana, un sobre de Similac 3 con el logo de
-      Abbott legible; también se alcanza a ver el botón de reproducir de Instagram,
-      porque la imagen salió de un reel. En el sitio de una pediatra que promueve
-      la lactancia, una marca de sucedáneo a la vista se lee como respaldo, y en
-      Colombia la publicidad de sucedáneos de la leche materna está regulada. Para
-      la tarjeta que se comparte por WhatsApp ya usamos el retrato de estudio, que
-      no la tiene; **la portada sigue mostrándola**. Lo ideal es una foto nueva; si
-      no, se puede retocar o recortar, pero conviene decidirlo con ella.
+- [x] **La foto de la portada ya no muestra la marca de fórmula.** Desde el 24 de
+      septiembre la portada usa una foto nueva con Pepe en el sofá, con un sobre
+      azul sin marca (`doctora-pepe-sofa.webp`).
 
 **Dónde están hoy las fotos de archivo, para saber qué reemplaza qué:**
 

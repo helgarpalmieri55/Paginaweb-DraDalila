@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const DALILA_BLOQUES_VERSION = 8;
+const DALILA_BLOQUES_VERSION = 9;
 
 /**
  * El contenido sin las direcciones de las imágenes, que el importador cambia
@@ -43,7 +43,7 @@ function dalila_normalizar_contenido( $contenido ) {
  */
 function dalila_imagenes_de_la_biblioteca( $contenido ) {
 	return preg_replace_callback(
-		'#https://helgarpalmieri55\.github\.io/Paginaweb-DraDalila/(assets/img/[^"\'\s)]+)#',
+		'#https://(?:helgarpalmieri55\.github\.io/Paginaweb-DraDalila|raw\.githubusercontent\.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs)/(assets/img/[^"\'\s)]+)#',
 		function ( $m ) {
 			$nombre   = sanitize_title( pathinfo( $m[1], PATHINFO_FILENAME ) );
 			$adjuntos = get_posts(
@@ -58,15 +58,66 @@ function dalila_imagenes_de_la_biblioteca( $contenido ) {
 				return wp_get_attachment_url( $adjuntos[0]->ID );
 			}
 
-			// Si no está en la biblioteca, la copia que trae el tema.
-			if ( file_exists( get_template_directory() . '/' . $m[1] ) ) {
-				return get_template_directory_uri() . '/' . $m[1];
+			// Si no está en la biblioteca pero el tema trae una copia, se sube
+			// a la biblioteca: así se puede reemplazar como cualquier otra.
+			$subida = dalila_subir_a_la_biblioteca( get_template_directory() . '/' . $m[1] );
+			if ( $subida ) {
+				return $subida;
 			}
 
 			return $m[0];
 		},
 		$contenido
 	);
+}
+
+/**
+ * Sube a la biblioteca de medios un archivo del tema y devuelve su dirección.
+ * Si ya se subió antes (mismo nombre), devuelve la que ya existe.
+ */
+function dalila_subir_a_la_biblioteca( $archivo ) {
+	if ( ! file_exists( $archivo ) ) {
+		return '';
+	}
+
+	$nombre = sanitize_title( pathinfo( $archivo, PATHINFO_FILENAME ) );
+	$ya     = get_posts(
+		array(
+			'post_type'      => 'attachment',
+			'name'           => $nombre,
+			'posts_per_page' => 1,
+			'post_status'    => 'inherit',
+			'fields'         => 'ids',
+		)
+	);
+	if ( $ya ) {
+		return wp_get_attachment_url( $ya[0] );
+	}
+
+	// file_get_contents de un archivo del propio tema, no de internet.
+	$subido = wp_upload_bits( basename( $archivo ), null, file_get_contents( $archivo ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+	if ( ! empty( $subido['error'] ) ) {
+		return '';
+	}
+
+	$tipo = wp_check_filetype( $subido['file'] );
+	$id   = wp_insert_attachment(
+		array(
+			'post_mime_type' => $tipo['type'],
+			'post_title'     => str_replace( '-', ' ', pathinfo( $archivo, PATHINFO_FILENAME ) ),
+			'post_name'      => $nombre,
+			'post_status'    => 'inherit',
+		),
+		$subido['file']
+	);
+	if ( ! $id || is_wp_error( $id ) ) {
+		return '';
+	}
+
+	require_once ABSPATH . 'wp-admin/includes/image.php';
+	wp_update_attachment_metadata( $id, wp_generate_attachment_metadata( $id, $subido['file'] ) );
+
+	return wp_get_attachment_url( $id );
 }
 
 /**
