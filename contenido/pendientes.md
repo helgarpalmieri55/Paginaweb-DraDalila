@@ -106,7 +106,7 @@ archivo de diseño que conviene reemplazar por material suyo.
 
 - [x] **Los tres inventados salieron** (María F., Carlos R., Andrea P.) y con
       ellos la nota de «ilustrativos». Desde el 24 de septiembre la portada muestra
-      solo testimonios reales; el primero es de **Sylvana Nova**.
+      solo testimonios reales; el primero es de la **Familia Palmieri Nova**.
 - [ ] **Más testimonios reales**, con autorización de quien lo escribe, para
       completar la sección (uno por tarjeta, todos con cinco estrellas).
 
@@ -166,8 +166,8 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 - [ ] **Pedir reseñas a pacientes reales** en la ficha de Google. Diez reseñas
       auténticas pesan más que cualquier ajuste técnico. Sin incentivos: Google
       los penaliza.
-- [x] **Testimonios reales para la home.** Los de relleno salieron; queda el de
-      Sylvana Nova, que es real. No se marcan como reseñas en los datos
+- [x] **Testimonios reales para la home.** Los de relleno salieron; queda el de la
+      Familia Palmieri Nova, que es real. No se marcan como reseñas en los datos
       estructurados: Google no las muestra para el propio negocio.
 - [ ] **Corregir sus perfiles de Doctoralia y medicosdoc.** El de Doctoralia
       muestra una dirección vieja (Calle 85, Torre Mar Center). Necesitamos sus
