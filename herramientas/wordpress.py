@@ -33,7 +33,7 @@ HOJA_BLOQUES = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'assets', 'cs
 # importó y las que después se pasaron con la actualización del tema. Una
 # página que sigue igual a cualquiera de ellas no se editó a mano y se puede
 # actualizar. Cada vez que se publique una actualización, su commit se suma.
-IMPORTADOS = ['ba1636b', '028508a', 'ef67d86', 'c2d9a5f', 'f1beb6d', 'ad6695c', 'e4629e0', 'cbab215', 'e2f3cf5', '6fdb728', 'b1413bf', 'cde1972']
+IMPORTADOS = ['ba1636b', '028508a', 'ef67d86', 'c2d9a5f', 'f1beb6d', 'ad6695c', 'e4629e0', 'cbab215', 'e2f3cf5', '6fdb728', 'b1413bf', 'cde1972', '24ae3e3']
 MIGRACION = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'migracion.php')
 # Los resúmenes de las tarjetas del blog, para un sitio que ya se importó.
 TARJETAS = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'tarjetas.php')

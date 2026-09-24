@@ -108,8 +108,7 @@ archivo de diseño que conviene reemplazar por material suyo.
       ellos la nota de «ilustrativos». Desde el 24 de septiembre la portada muestra
       solo testimonios reales; el primero es de **Sylvana Nova**.
 - [ ] **Más testimonios reales**, con autorización de quien lo escribe, para
-      completar la sección (cabe uno por tarjeta, sin estrellas si no hay
-      calificación).
+      completar la sección (uno por tarjeta, todos con cinco estrellas).
 
 ## 6 · Redes sociales
 
