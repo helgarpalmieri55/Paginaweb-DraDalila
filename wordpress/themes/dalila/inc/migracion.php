@@ -2111,7 +2111,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '505d28469a2e9f05bda37c13838ab710', '8e5554a5104ddef178e462ac6ecea6b4' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -2951,26 +2951,14 @@ return array(
 <section class="wp-block-group seccion seccion--agua en-ab17dd" aria-label="Testimonios">
 <!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap">
-<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
-<h2 class="wp-block-heading titulo reveal">Lo que dicen las familias</h2>
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-8c2756"} -->
+<h2 class="wp-block-heading titulo reveal en-8c2756">Lo que dicen las familias</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className": "bajada reveal en-8c2756"} -->
-<p class="bajada reveal en-8c2756"><em>Testimonios ilustrativos — se reemplazarán por reales.</em></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
-<div class="wp-block-group rejilla rejilla--3">
+<!-- wp:group {"className": "rejilla en-06fa12", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla en-06fa12">
 <!-- wp:html -->
-<blockquote class="testimonio reveal"><span class="testimonio__comilla" aria-hidden="true">“</span><p>Salimos con un plan claro y sin culpas. Mi hija por fin come verduras.</p><footer><strong>María F.</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
-<!-- /wp:html -->
-
-<!-- wp:html -->
-<blockquote class="testimonio reveal" data-delay="1"><span class="testimonio__comilla" aria-hidden="true">“</span><p>La consulta virtual fue igual de cercana, y vivimos en otro país.</p><footer><strong>Carlos R.</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
-<!-- /wp:html -->
-
-<!-- wp:html -->
-<blockquote class="testimonio reveal" data-delay="2"><span class="testimonio__comilla" aria-hidden="true">“</span><p>Profesional, empática y muy dedicada. Explica todo con calma.</p><footer><strong>Andrea P.</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
+<blockquote class="testimonio reveal"><span class="testimonio__comilla" aria-hidden="true">“</span><p>La Dra. ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p><footer><strong>Sylvana Nova</strong></footer></blockquote>
 <!-- /wp:html -->
 </div>
 <!-- /wp:group -->

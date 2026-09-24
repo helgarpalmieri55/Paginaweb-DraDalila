@@ -104,10 +104,12 @@ archivo de diseño que conviene reemplazar por material suyo.
 
 ## 5 · Testimonios
 
-- [ ] **Los tres que están en el inicio son inventados** (María F., Carlos R.,
-      Andrea P.) y están marcados como ilustrativos. Hacen falta **testimonios
-      reales con autorización escrita** para publicarlos, aunque sea solo con
-      nombre de pila e inicial.
+- [x] **Los tres inventados salieron** (María F., Carlos R., Andrea P.) y con
+      ellos la nota de «ilustrativos». Desde el 24 de septiembre la portada muestra
+      solo testimonios reales; el primero es de **Sylvana Nova**.
+- [ ] **Más testimonios reales**, con autorización de quien lo escribe, para
+      completar la sección (cabe uno por tarjeta, sin estrellas si no hay
+      calificación).
 
 ## 6 · Redes sociales
 
@@ -165,10 +167,9 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 - [ ] **Pedir reseñas a pacientes reales** en la ficha de Google. Diez reseñas
       auténticas pesan más que cualquier ajuste técnico. Sin incentivos: Google
       los penaliza.
-- [ ] ⚠️ **Testimonios reales para la home.** Los tres que hay son de relleno, con
-      nombres inventados y cinco estrellas. Mientras sean falsos no podemos
-      marcarlos como reseñas, y si alguien lo nota cuesta credibilidad. O los
-      reemplazamos por reales o los quitamos.
+- [x] **Testimonios reales para la home.** Los de relleno salieron; queda el de
+      Sylvana Nova, que es real. No se marcan como reseñas en los datos
+      estructurados: Google no las muestra para el propio negocio.
 - [ ] **Corregir sus perfiles de Doctoralia y medicosdoc.** El de Doctoralia
       muestra una dirección vieja (Calle 85, Torre Mar Center). Necesitamos sus
       claves o que ella los actualice.
