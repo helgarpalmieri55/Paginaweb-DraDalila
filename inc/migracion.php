@@ -1624,7 +1624,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'consultorio',
-		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a', '4d990048ca8d6f0adb85cd994950b571', 'bc3d03aa83ee114beb0c61a7fb8cef66' ),
+		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a', '4d990048ca8d6f0adb85cd994950b571', 'bc3d03aa83ee114beb0c61a7fb8cef66', 'cd42c075278234d53c2dce71cba3700b' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1957,10 +1957,6 @@ return array(
 <div class="wp-block-group tabla-envoltura">
 <!-- wp:dalila/caja {"etiqueta": "table", "className": "horario"} -->
 <table class="horario">
-<!-- wp:dalila/texto {"etiqueta": "caption", "contenido": "Horario de ejemplo — pendiente de confirmar con la doctora."} -->
-<caption>Horario de ejemplo — pendiente de confirmar con la doctora.</caption>
-<!-- /wp:dalila/texto -->
-
 <!-- wp:dalila/caja {"etiqueta": "tbody"} -->
 <tbody>
 <!-- wp:dalila/caja {"etiqueta": "tr"} -->
