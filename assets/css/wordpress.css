@@ -148,6 +148,9 @@
     padding: 0;
     justify-content: center;
     font-size: 0;
+    /* El texto escondido sigue contando como pieza: sin separación, el
+       calendario queda justo en el centro. */
+    gap: 0;
   }
 }
 
