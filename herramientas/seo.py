@@ -178,22 +178,46 @@ def nodo_practica():
 
 
 def nodo_doctora():
-    """La doctora. Sin títulos ni registro médico: pendientes de que ella los confirme."""
+    """La doctora, con los títulos que constan en sus diplomas y certificados."""
     return {
         '@type': 'Person',
         '@id': ID_DOCTORA,
         'name': 'Dalila Peñaranda',
         'honorificPrefix': 'Dra.',
         'jobTitle': 'Pediatra y especialista en nutrición infantil',
-        'description': ('Pediatra con subespecialidad en nutrición infantil. Atiende en Barranquilla '
-                        'y por videollamada a familias dentro y fuera de Colombia.'),
+        'description': ('Pediatra de la Universidad Libre con posgrado en nutrición pediátrica '
+                        '(PGPN, Boston University School of Medicine) y formación como terapista de '
+                        'alimentación (SOS Approach to Feeding). Atiende en Barranquilla y por '
+                        'videollamada a familias dentro y fuera de Colombia.'),
         'url': BASE + 'sobre-mi.html',
         'image': BASE + 'assets/img/doctora-retrato.jpg',
         'worksFor': {'@id': ID_PRACTICA},
+        'alumniOf': [
+            {'@type': 'CollegeOrUniversity', 'name': 'Fundación Universitaria San Martín'},
+            {'@type': 'CollegeOrUniversity', 'name': 'Universidad Libre'},
+        ],
+        'hasCredential': CREDENCIALES,
         'knowsAbout': TEMAS,
         'knowsLanguage': 'es',
         'sameAs': [INSTAGRAM],
     }
+
+
+# Sus títulos y certificaciones, tal como constan en los documentos.
+CREDENCIALES = [
+    {'@type': 'EducationalOccupationalCredential', 'credentialCategory': 'degree',
+     'name': 'Médico general', 'dateCreated': '2004-12-14',
+     'recognizedBy': {'@type': 'CollegeOrUniversity', 'name': 'Fundación Universitaria San Martín'}},
+    {'@type': 'EducationalOccupationalCredential', 'credentialCategory': 'degree',
+     'name': 'Especialista en Pediatría', 'dateCreated': '2011-08-26',
+     'recognizedBy': {'@type': 'CollegeOrUniversity', 'name': 'Universidad Libre'}},
+    {'@type': 'EducationalOccupationalCredential', 'credentialCategory': 'certificate',
+     'name': 'Post Graduate Program in Pediatric Nutrition (PGPN)', 'dateCreated': '2016',
+     'recognizedBy': {'@type': 'CollegeOrUniversity', 'name': 'Boston University School of Medicine'}},
+    {'@type': 'EducationalOccupationalCredential', 'credentialCategory': 'certificate',
+     'name': 'SOS Trained Feeding Therapist', 'dateCreated': '2024-11-12',
+     'recognizedBy': {'@type': 'Organization', 'name': 'SOS Approach to Feeding'}},
+]
 
 
 def nodo_sitio():
