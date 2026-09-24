@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function dalila_registrar_bloques() {
 	register_block_type( get_template_directory() . '/bloques/franja' );
+	register_block_type( get_template_directory() . '/bloques/imagen' );
 }
 add_action( 'init', 'dalila_registrar_bloques' );
 
