@@ -125,7 +125,7 @@ function dalila_atajo_destacado() {
 
 	return sprintf(
 		'<article class="destacado reveal">%1$s<div class="destacado__cuerpo">%2$s<h2>%3$s</h2><p>%4$s</p><p class="articulo__fecha">%5$s</p><p style="margin-top:20px"><a class="btn btn--rosa btn--chico" href="%6$s">%7$s</a></p></div></article>',
-		dalila_portada( $id, 'pieza' ),
+		dalila_portada( $id ),
 		$chip,
 		esc_html( get_the_title( $id ) ),
 		esc_html( dalila_texto_de_tarjeta( $id ) ),
@@ -156,6 +156,20 @@ function dalila_atajo_filtros() {
 	if ( is_wp_error( $categorias ) || count( $categorias ) < 2 ) {
 		return '';
 	}
+
+	// El orden del sitio; las categorías nuevas van al final.
+	$orden = array( 'nutricion', 'lactancia', 'salud', 'crecimiento' );
+	usort(
+		$categorias,
+		function ( $a, $b ) use ( $orden ) {
+			$pa = array_search( $a->slug, $orden, true );
+			$pb = array_search( $b->slug, $orden, true );
+			$pa = false === $pa ? PHP_INT_MAX : $pa;
+			$pb = false === $pb ? PHP_INT_MAX : $pb;
+
+			return $pa === $pb ? strcmp( $a->name, $b->name ) : $pa - $pb;
+		}
+	);
 
 	$botones = '<button class="filtro" type="button" data-cat="todo" aria-pressed="true">' . esc_html__( 'Todo', 'dalila' ) . '</button>';
 	foreach ( $categorias as $categoria ) {

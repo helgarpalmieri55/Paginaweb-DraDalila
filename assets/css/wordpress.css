@@ -210,6 +210,9 @@
    En una categoría no hay filtros entre el regalo y las tarjetas; el aire que
    ponían los filtros lo pone esta regla. */
 .descarga + .rejilla { margin-top: 56px; }
+/* La portada del destacado es la de la entrada, que puede venir vertical; se
+   recorta cuadrada, que es la forma que tiene en el sitio. */
+.destacado > img { height: auto; aspect-ratio: 1 / 1; }
 
 /* ---------- paginación del blog ---------- */
 .wp-block-query-pagination {
