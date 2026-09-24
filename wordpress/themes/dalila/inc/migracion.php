@@ -3712,7 +3712,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'sobre-mi',
-		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d' ),
+		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'fefea6507a070729c37f063be9636f6c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3856,12 +3856,12 @@ return array(
           <li>
             <time>Posgrado · 2016</time>
             <strong>Nutrición pediátrica</strong>
-            <p>Post Graduate Program in Pediatric Nutrition (PGPN), en asociación con la Escuela de Medicina de Boston University. Es la que marca su consulta: cada control mira también el plato.</p>
+            <p>Post Graduate Program in Pediatric Nutrition (PGPN), en asociación con la Escuela de Medicina de Boston University.</p>
           </li>
           <li>
             <time>Certificación · 2024</time>
             <strong>Terapista de alimentación</strong>
-            <p>SOS Approach to Feeding: formación de cinco días y 37,5 horas para acompañar a los niños a los que comer les cuesta.</p>
+            <p>SOS Approach to Feeding.</p>
           </li>
           <li>
             <time>Hoy</time>
