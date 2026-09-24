@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const DALILA_BLOQUES_VERSION = 2;
+const DALILA_BLOQUES_VERSION = 3;
 
 /**
  * El contenido sin las direcciones de las imágenes, que el importador cambia
@@ -102,7 +102,7 @@ function dalila_actualizar_a_bloques() {
 		if ( md5( dalila_normalizar_contenido( $entrada['contenido'] ) ) === $huella ) {
 			continue; // Ya está al día.
 		}
-		if ( $huella !== $entrada['antes'] ) {
+		if ( ! in_array( $huella, (array) $entrada['antes'], true ) ) {
 			// Alguien la editó después de importarla: se decide a mano.
 			$pendiente[] = $post->ID;
 			continue;
