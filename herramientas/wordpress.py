@@ -30,9 +30,11 @@ DOCS = os.path.join(RAIZ, 'docs')
 SALIDA = os.path.join(RAIZ, 'wordpress', 'importacion', 'contenido.xml')
 # Los estilos que iban en línea, convertidos en clases (ver bloques.py).
 HOJA_BLOQUES = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'assets', 'css', 'bloques.css')
-# La versión del archivo de importación que se cargó en dalilapenaranda.com.
-# Con ella se reconoce qué páginas siguen sin editar y se pueden actualizar.
-IMPORTADO = 'ba1636b'
+# Las versiones del contenido que pudo tener dalilapenaranda.com: la que se
+# importó y las que después se pasaron con la actualización del tema. Una
+# página que sigue igual a cualquiera de ellas no se editó a mano y se puede
+# actualizar. Cada vez que se publique una actualización, su commit se suma.
+IMPORTADOS = ['ba1636b', '028508a']
 MIGRACION = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'migracion.php')
 # Los resúmenes de las tarjetas del blog, para un sitio que ya se importó.
 TARJETAS = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'tarjetas.php')
@@ -519,9 +521,12 @@ def escribir_migracion(nuevo_xml):
     """Para un sitio ya importado: el contenido nuevo de cada página y
     entrada, y la huella del que se importó, para no pisar lo que se editó."""
     import hashlib
-    viejo_xml = subprocess.run(['git', 'show', '%s:wordpress/importacion/contenido.xml' % IMPORTADO],
-                               capture_output=True, text=True, cwd=RAIZ).stdout
-    viejos = contenidos_del_xml(viejo_xml)
+    viejos = {}
+    for version in IMPORTADOS:
+        xml = subprocess.run(['git', 'show', '%s:wordpress/importacion/contenido.xml' % version],
+                             capture_output=True, text=True, cwd=RAIZ).stdout
+        for clave, contenido in contenidos_del_xml(xml).items():
+            viejos.setdefault(clave, []).append(contenido)
     nuevos = contenidos_del_xml(nuevo_xml)
 
     def php(texto):
@@ -544,13 +549,15 @@ def escribir_migracion(nuevo_xml):
              '',
              'return array(']
     for (tipo, nombre), contenido in sorted(nuevos.items()):
-        antes = viejos.get((tipo, nombre))
-        if antes is None or normalizar(antes) == normalizar(contenido):
+        huellas = sorted({hashlib.md5(normalizar(a).encode()).hexdigest()
+                          for a in viejos.get((tipo, nombre), [])
+                          if normalizar(a) != normalizar(contenido)})
+        if not huellas:
             continue
         filas += ['\tarray(',
                   "\t\t'tipo'      => '%s'," % tipo,
                   "\t\t'nombre'    => '%s'," % nombre,
-                  "\t\t'antes'     => '%s'," % hashlib.md5(normalizar(antes).encode()).hexdigest(),
+                  "\t\t'antes'     => array( %s )," % ', '.join("'%s'" % h for h in huellas),
                   "\t\t'contenido' => %s," % php(contenido),
                   '\t),']
     filas += [');', '']

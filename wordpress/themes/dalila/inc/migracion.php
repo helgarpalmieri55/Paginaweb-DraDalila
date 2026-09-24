@@ -17,7 +17,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'aviso-medico',
-		'antes'     => '4ccfd328be40e6fe567c2d13ec6d1412',
+		'antes'     => array( '4ccfd328be40e6fe567c2d13ec6d1412' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -166,7 +166,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'blog',
-		'antes'     => 'ebf29b6fc4a282ab2db2bcfa205f8005',
+		'antes'     => array( 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -652,7 +652,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => '7a1c6657e82e12f0d0db5eaaad4c1fa8',
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1050,7 +1050,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'consultorio',
-		'antes'     => '2f45954b2ec139bff49d431c2552cc2a',
+		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1462,7 +1462,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'contacto',
-		'antes'     => '90d3a7708f17dd28f589fb58c48aeb0e',
+		'antes'     => array( '90d3a7708f17dd28f589fb58c48aeb0e' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1732,7 +1732,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'cursos',
-		'antes'     => '96af89d3b877ae541488d7b134899061',
+		'antes'     => array( '96af89d3b877ae541488d7b134899061' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -2127,7 +2127,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => '505d28469a2e9f05bda37c13838ab710',
+		'antes'     => array( '505d28469a2e9f05bda37c13838ab710' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -3096,7 +3096,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'privacidad',
-		'antes'     => '7e03dcf8462feeee68bcc1312a0b5f82',
+		'antes'     => array( '7e03dcf8462feeee68bcc1312a0b5f82' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3266,7 +3266,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => 'd810358c3acc70b0a1e1d2272c32c0bb',
+		'antes'     => array( 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3732,7 +3732,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'sobre-mi',
-		'antes'     => 'cad60d34b975fe2d07ecd890fc06db0d',
+		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', 'cad60d34b975fe2d07ecd890fc06db0d' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3845,10 +3845,6 @@ return array(
 
 <!-- wp:paragraph -->
 <p><strong>Lo que sí me importa es que vengas tranquila.</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className": "pendiente"} -->
-<p class="pendiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>Escrito a partir de lo que ella cuenta en sus redes — falta su visto bueno</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -4036,7 +4032,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'agotamiento-materno-cinco-senales',
-		'antes'     => '46f73c03c33e991a2c313ee5603ba83f',
+		'antes'     => array( '46f73c03c33e991a2c313ee5603ba83f' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4272,7 +4268,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'bullying-las-senales-que-no-te-cuenta',
-		'antes'     => '5dce3f469438bd568d3a5e311751bfb9',
+		'antes'     => array( '5dce3f469438bd568d3a5e311751bfb9' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4504,7 +4500,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cinco-errores-que-llevan-a-la-selectividad',
-		'antes'     => 'd68b9bc1a6b459d8ea2b55079e56503d',
+		'antes'     => array( 'd68b9bc1a6b459d8ea2b55079e56503d' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4745,7 +4741,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cuando-necesita-agua-tu-bebe',
-		'antes'     => 'cd4e1ae0a1d0d7fa12439434ddb20fe5',
+		'antes'     => array( 'cd4e1ae0a1d0d7fa12439434ddb20fe5' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4977,7 +4973,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cuidado-con-los-mosquitos',
-		'antes'     => 'b57510247cb368232d171385db5389e5',
+		'antes'     => array( 'b57510247cb368232d171385db5389e5' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5206,7 +5202,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cumplio-el-ano-y-dejo-de-comer',
-		'antes'     => '2df2ca729565a30696562dc7ba761bc1',
+		'antes'     => array( '2df2ca729565a30696562dc7ba761bc1' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5445,7 +5441,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'derivados-lacteos-cuanto-y-desde-cuando',
-		'antes'     => '8483f42a161d37add61ecbceec86b76f',
+		'antes'     => array( '8483f42a161d37add61ecbceec86b76f' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5667,7 +5663,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'despues-de-los-dos-anos-que-leche',
-		'antes'     => 'c09caa6be41316af299c5e0f2d090b6b',
+		'antes'     => array( 'c09caa6be41316af299c5e0f2d090b6b' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5888,7 +5884,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'diez-veces-antes-de-decir-no-le-gusta',
-		'antes'     => 'a73801d172f58497cdbc7a46921c3c48',
+		'antes'     => array( 'a73801d172f58497cdbc7a46921c3c48' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6142,7 +6138,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'dolor-de-oido-a-medianoche',
-		'antes'     => 'e6a9ee90482760eb3407196774ebbf22',
+		'antes'     => array( 'e6a9ee90482760eb3407196774ebbf22' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6374,7 +6370,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-agarre-tres-senales-de-que-va-bien',
-		'antes'     => '639b109dec68f81f235812fb2d0a4a3c',
+		'antes'     => array( '639b109dec68f81f235812fb2d0a4a3c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6586,7 +6582,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-colico-del-lactante-cambio-de-nombre',
-		'antes'     => '5287d946f7811e38062a3fb6d293d5ff',
+		'antes'     => array( '5287d946f7811e38062a3fb6d293d5ff' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6798,7 +6794,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-inhalador-la-tecnica-correcta',
-		'antes'     => '5706f439e61740f8d5f6d6e4ab3e42b9',
+		'antes'     => array( '5706f439e61740f8d5f6d6e4ab3e42b9' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7047,7 +7043,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-ronquido-nunca-es-normal',
-		'antes'     => 'a08684119706cdcc2e868ce440a8240c',
+		'antes'     => array( 'a08684119706cdcc2e868ce440a8240c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7268,7 +7264,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe',
-		'antes'     => '286a2a626fef12a0770765512fa11476',
+		'antes'     => array( '286a2a626fef12a0770765512fa11476' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7501,7 +7497,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'frutos-secos-y-uvas-como-si',
-		'antes'     => '60e15192eb5fa476a472f18589486a56',
+		'antes'     => array( '60e15192eb5fa476a472f18589486a56' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7722,7 +7718,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'la-malnutricion-que-no-se-ve',
-		'antes'     => '346a82c0f08430de099a59f8f5ec12e9',
+		'antes'     => array( '346a82c0f08430de099a59f8f5ec12e9' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7938,7 +7934,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'la-silla-de-comer-los-tres-angulos-de-90',
-		'antes'     => 'eb9651058f120b350866edd51143007e',
+		'antes'     => array( 'eb9651058f120b350866edd51143007e' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8181,7 +8177,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'lactancia-y-caries-protege-pero-no-basta',
-		'antes'     => 'f64daa13c1b3166c04ff3f0ae451ca7c',
+		'antes'     => array( 'f64daa13c1b3166c04ff3f0ae451ca7c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8403,7 +8399,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'lavado-nasal-si-esta-llorando-no-se-hace',
-		'antes'     => 'f2371c3b922295fd28c6e9caac3c4a88',
+		'antes'     => array( 'f2371c3b922295fd28c6e9caac3c4a88' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8647,7 +8643,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'leer-los-ingredientes-no-solo-la-tabla',
-		'antes'     => 'ebf0cdafb7d89e573ffd54b66dcb6557',
+		'antes'     => array( 'ebf0cdafb7d89e573ffd54b66dcb6557' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8883,7 +8879,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'que-leche-le-doy-despues-del-destete',
-		'antes'     => '5c1c9844821e7b57b8883a8300367944',
+		'antes'     => array( '5c1c9844821e7b57b8883a8300367944' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9095,7 +9091,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'se-puso-morado-al-llorar',
-		'antes'     => '856706259e576bc04fa0d1b996d202ac',
+		'antes'     => array( '856706259e576bc04fa0d1b996d202ac' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9316,7 +9312,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'si-le-sangra-la-nariz-esto-no',
-		'antes'     => 'fca90a3ef9a56a213a7c7a6470e4c2bc',
+		'antes'     => array( 'fca90a3ef9a56a213a7c7a6470e4c2bc' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9534,7 +9530,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'tres-mitos-que-oigo-cada-semana',
-		'antes'     => '55a024994c56a37ede7e9ab9e32d8295',
+		'antes'     => array( '55a024994c56a37ede7e9ab9e32d8295' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
