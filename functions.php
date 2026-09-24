@@ -21,6 +21,7 @@ require_once __DIR__ . '/inc/franjas.php';
 require_once __DIR__ . '/inc/articulos.php';
 require_once __DIR__ . '/inc/blog.php';
 require_once __DIR__ . '/inc/posicionamiento.php';
+require_once __DIR__ . '/inc/actualizacion.php';
 
 /**
  * Lo que el tema le dice a WordPress que sabe hacer.
@@ -30,8 +31,6 @@ function dalila_soporte() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'html5', array( 'style', 'script', 'navigation-widgets' ) );
-	add_theme_support( 'editor-styles' );
-	add_editor_style( 'assets/css/editor.css' );
 
 	// El ancho del sitio y las alineaciones los define theme.json.
 	remove_theme_support( 'core-block-patterns' );
@@ -50,6 +49,7 @@ function dalila_recursos() {
 	wp_enqueue_style( 'dalila-base', $dir . '/assets/css/site.css', array(), DALILA_VERSION );
 	wp_enqueue_style( 'dalila-paginas', $dir . '/assets/css/paginas.css', array( 'dalila-base' ), DALILA_VERSION );
 	wp_enqueue_style( 'dalila-wp', $dir . '/assets/css/wordpress.css', array( 'dalila-paginas' ), DALILA_VERSION );
+	wp_enqueue_style( 'dalila-bloques', $dir . '/assets/css/bloques.css', array( 'dalila-wp' ), DALILA_VERSION );
 
 	wp_enqueue_script( 'dalila-franjas', $dir . '/assets/js/franjas.js', array(), DALILA_VERSION, true );
 	wp_enqueue_script( 'dalila-sitio', $dir . '/assets/js/site.js', array(), DALILA_VERSION, true );

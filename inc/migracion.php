@@ -1,0 +1,9771 @@
+<?php
+/**
+ * Generado por herramientas/wordpress.py. No se edita a mano.
+ *
+ * El contenido de cada página y entrada convertido a bloques editables,
+ * para pasarlo a un sitio que ya se había importado. inc/actualizacion.php
+ * lo aplica una sola vez y solo donde nadie editó desde la importación.
+ *
+ * @package dalila
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+return array(
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'aviso-medico',
+		'antes'     => '4ccfd328be40e6fe567c2d13ec6d1412',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--simple">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Aviso médico</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Aviso médico</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Qué es y qué no es este sitio, y cuándo dejar de leer para ir a urgencias.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-b2d526", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-b2d526">
+<!-- wp:group {"className": "wrap prosa reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap prosa reveal">
+<!-- wp:paragraph -->
+<p><strong>Este sitio es informativo.</strong> Los textos, artículos y cursos publicados aquí tienen fines educativos y no constituyen una consulta médica, un diagnóstico ni un tratamiento. Cada niño es distinto: lo que aplica para uno puede no aplicar para el tuyo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">No reemplaza la consulta</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La información de esta página no sustituye la valoración presencial o virtual de un profesional de la salud. Ninguna decisión sobre medicamentos, alimentación, suplementos o suspensión de un tratamiento debe tomarse solo con lo leído aquí.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">No se atiende por este medio</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los mensajes recibidos por WhatsApp, correo o el formulario de contacto sirven para agendar citas y resolver dudas administrativas. <strong>No se emiten diagnósticos, fórmulas médicas, incapacidades ni interpretaciones de exámenes por esos canales.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Cuándo ir a urgencias</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Acude de inmediato al servicio de urgencias más cercano, sin esperar respuesta a un mensaje, si tu peque presenta:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Fiebre en menores de tres meses.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Dificultad para respirar, respiración rápida o coloración azulada.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Convulsión, pérdida de conciencia o decaimiento marcado.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Vómito o diarrea persistentes con signos de deshidratación.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Trauma craneal, atragantamiento o sospecha de intoxicación.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Cualquier situación que, como madre o padre, te parezca grave.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Sobre los cursos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los cursos en video son material educativo para familias. No otorgan formación clínica ni reemplazan el seguimiento individual de cada niño.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Testimonios y resultados</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los testimonios publicados reflejan experiencias individuales y no garantizan un resultado similar en otros casos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<hr>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"className": "pendiente"} -->
+<p class="pendiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>Texto de referencia — debe revisarlo la doctora antes de publicar</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Prefieres consultarlo?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si algo de lo que leíste te dejó dudas sobre tu peque, lo vemos en consulta y salimos con un plan.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/contacto/">Escribirme</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'blog',
+		'antes'     => 'ebf29b6fc4a282ab2db2bcfa205f8005',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--simple cabecera--agua">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Blog</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Lo que alcanzo a contar<br><em>fuera de la consulta</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Las dudas que más se repiten en consulta, respondidas con calma y sin tecnicismos. Para leer en la sala de espera, en la madrugada o cuando el buscador ya te asustó demasiado.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-048228">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:group {"tagName": "article", "className": "destacado reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group destacado reveal">
+<!-- wp:html -->
+<img class="pieza" src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora: consejos para comenzar la alimentación complementaria" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "destacado__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group destacado__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En un clima como el nuestro la pregunta aparece siempre. La respuesta corta: antes de los seis meses no hace falta, porque el 80 % de la leche materna ya es agua. Después sí, y en cada tiempo de comida.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-3ae1f6"} -->
+<p class="en-3ae1f6"><a class="btn btn--rosa btn--chico" href="/blog/cuando-necesita-agua-tu-bebe/">Leer el artículo →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "descarga reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Un regalo: mis recomendaciones nutricionales</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga__pie">
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
+            Descargar la guía
+          </a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<small>PDF · 9 páginas · gratis</small>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="filtros reveal" role="group" aria-label="Filtrar por categoría">
+      <button class="filtro" type="button" data-cat="todo" aria-pressed="true">Todo</button>
+      <button class="filtro" type="button" data-cat="nutricion" aria-pressed="false">Nutrición</button>
+      <button class="filtro" type="button" data-cat="lactancia" aria-pressed="false">Lactancia</button>
+      <button class="filtro" type="button" data-cat="salud" aria-pressed="false">Salud</button>
+      <button class="filtro" type="button" data-cat="crecimiento" aria-pressed="false">Crecimiento</button>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Diez veces antes de decir «no le gusta»" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Diez veces antes de decir «no le gusta»</h3>
+          <p>La papila gustativa necesita tiempo. Cómo y cuándo volver a ofrecer un alimento que rechazó.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="La silla de comer: los tres ángulos de 90°" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>La silla de comer: los tres ángulos de 90°</h3>
+          <p>Lo primero de la complementaria no es la comida: es dónde se sienta a comerla.</p>
+          <p class="articulo__fecha">6 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mitos-lonchera.webp" alt="Leer los ingredientes, no solo la tabla" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Leer los ingredientes, no solo la tabla</h3>
+          <p>Dónde se esconde el azúcar añadido y por qué un buen procesado casi no tiene lista.</p>
+          <p class="articulo__fecha">6 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/leer-los-ingredientes-no-solo-la-tabla/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Cumplió el año y dejó de comer" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Cumplió el año y dejó de comer</h3>
+          <p>Descubrió el «no», aprendió a caminar y le llama más la atención el mundo que el plato.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/cumplio-el-ano-y-dejo-de-comer/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="lactancia">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="¿Qué leche después del destete?" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">lactancia</span>
+          <h3>¿Qué leche después del destete?</h3>
+          <p>Leche de vaca o adaptada: la respuesta depende de cómo esté comiendo el resto del día.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/que-leche-le-doy-despues-del-destete/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="lactancia">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/grietas-lactancia.webp" alt="El agarre: tres señales de que va bien" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">lactancia</span>
+          <h3>El agarre: tres señales de que va bien</h3>
+          <p>La mano en C, dos centímetros de areola y el labio de abajo hacia afuera.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/el-agarre-tres-senales-de-que-va-bien/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>Lavado nasal: si está llorando, no se hace</h3>
+          <p>Sonarse antes, cabeza abajo y boca abierta. El objetivo no es destapar: es diluir.</p>
+          <p class="articulo__fecha">7 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/lavado-nasal-si-esta-llorando-no-se-hace/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>Si le sangra la nariz, esto no</h3>
+          <p>Nada de echar la cabeza atrás ni de meter papel. Dos dedos, tres minutos y se detiene.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/si-le-sangra-la-nariz-esto-no/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>Se puso morado al llorar</h3>
+          <p>El espasmo del sollozo asusta muchísimo y es una condición benigna.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/se-puso-morado-al-llorar/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="crecimiento">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="El tamizaje auditivo: la primera prueba" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--azul">crecimiento</span>
+          <h3>El tamizaje auditivo: la primera prueba</h3>
+          <p>Idealmente antes de salir de la clínica. Qué mide, y por qué a veces hay que repetirla.</p>
+          <p class="articulo__fecha">6 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="crecimiento">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--azul">crecimiento</span>
+          <h3>El ronquido nunca es normal</h3>
+          <p>Afecta el sueño, la concentración, el crecimiento y hasta los dientes.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/el-ronquido-nunca-es-normal/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Frutos secos y uvas: cómo sí" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Frutos secos y uvas: cómo sí</h3>
+          <p>Duros y redondos son los dos riesgos. No hay que eliminarlos: hay que cambiarles la forma.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/frutos-secos-y-uvas-como-si/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Cinco errores que llevan a la selectividad" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Cinco errores que llevan a la selectividad</h3>
+          <p>Obligar, gritar durante una arcada y quedarse en las papillas más allá de los diez meses.</p>
+          <p class="articulo__fecha">6 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Derivados lácteos: cuánto y desde cuándo" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Derivados lácteos: cuánto y desde cuándo</h3>
+          <p>Una cuchara a los seis meses, dos al año, y un límite de sodio que casi nadie mira.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Después de los dos años, ¿qué leche?</h3>
+          <p>Dos tazas de ocho onzas, y por qué no más de eso.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/despues-de-los-dos-anos-que-leche/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="La malnutrición que no se ve" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>La malnutrición que no se ve</h3>
+          <p>Se llama hambre oculta, no se nota en la balanza y solo aparece en el laboratorio.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="lactancia">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Lactancia y caries" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">lactancia</span>
+          <h3>Lactancia y caries</h3>
+          <p>Protege, pero no basta. La higiene empieza con el primer diente, no cuando salgan varios.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/lactancia-y-caries-protege-pero-no-basta/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>Dolor de oído a medianoche</h3>
+          <p>Nada de gotas sin ver el oído, ni orégano, ni leche materna. Lo que sí ayuda hasta la consulta.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/dolor-de-oido-a-medianoche/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="Agotamiento materno: cinco señales" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>Agotamiento materno: cinco señales</h3>
+          <p>La última es la más grave y la que más cuesta decir en voz alta.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/agotamiento-materno-cinco-senales/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="nutricion">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Tres mitos que oigo cada semana" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--verde">nutrición</span>
+          <h3>Tres mitos que oigo cada semana</h3>
+          <p>Los jugos de fruta, el huevo antes del año y el «come poquito, no crecerá bien».</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/tres-mitos-que-oigo-cada-semana/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="El cólico cambió de nombre" width="900" height="900" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>El cólico cambió de nombre</h3>
+          <p>Ahora es síndrome de distress del lactante, y el cambio no es cosmético.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>Cuidado con los mosquitos</h3>
+          <p>Dengue, Zika, chikungunya y fiebre amarilla. Y por qué no se automedica la fiebre.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="1" data-cat="salud">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--rosa">salud</span>
+          <h3>El inhalador: la técnica correcta</h3>
+          <p>Inhalocámara siempre, sello correcto y diez segundos contados, uno por uno.</p>
+          <p class="articulo__fecha">5 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/el-inhalador-la-tecnica-correcta/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<article class="articulo reveal" data-delay="2" data-cat="crecimiento">
+        <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy">
+        <div class="articulo__cuerpo">
+          <span class="chip chip--azul">crecimiento</span>
+          <h3>Bullying: las señales que no te cuenta</h3>
+          <p>Se esconde en el silencio, pero deja rastros que sí se ven.</p>
+          <p class="articulo__fecha">4 min de lectura</p>
+          <p style="margin-top:12px"><a href="/blog/bullying-las-senales-que-no-te-cuenta/">Leer más →</a></p>
+        </div>
+      </article>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="sin-resultados reveal" hidden>
+      <strong>Todavía no hay artículos en esta categoría</strong>
+      <p>Escríbeme el tema que te gustaría leer y lo pongo en la lista.</p>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "aviso aviso--agua reveal en-ff3981", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso aviso--agua reveal en-ff3981">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div><strong>Veinticinco artículos, todos suyos</strong>Cada entrada nace de un video donde la doctora explica el tema completo, y se ilustra con sus propias piezas o con fotos de su consultorio.</div>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Tu duda no está aquí?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Escríbeme el tema y, si se repite en consulta, probablemente termine siendo el próximo artículo.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" data-wa href="/contacto/">Proponer un tema</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/cursos/">Ver los cursos</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'citas',
+		'antes'     => '7a1c6657e82e12f0d0db5eaaad4c1fa8',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--simple cabecera--agua">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Citas y tarifas</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Agendar es<br><em>escribirme un mensaje</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">No hay calendario automático ni formularios largos: me escribes por WhatsApp, miramos horarios juntas y te confirmo la cita con todo lo que necesitan saber antes de venir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "cabecera__acciones reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group cabecera__acciones reveal retraso-3">
+<!-- wp:html -->
+<a class="btn btn--rosa" data-wa href="/contacto/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          Escribir por WhatsApp
+        </a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="#politicas">Ver las condiciones ↓</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "citas", "className": "seccion seccion--crema en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-048228" id="citas">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Dos formas de vernos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Las dos incluyen historia completa, plan por escrito y seguimiento.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--2">
+<!-- wp:group {"className": "cita reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita reveal">
+<!-- wp:html -->
+<strong>Presencial</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>En el consultorio 129 del High Park Medical Center, Barranquilla. Valoración completa con examen físico y medidas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="cita__precio" data-precio="presencial">$180.000</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span class="cita__nota">COP por consulta</span>
+<!-- /wp:html -->
+
+<!-- wp:list {"className": "lista lista--verde en-37d30b"} -->
+<ul class="wp-block-list lista lista--verde en-37d30b">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>45 a 60 minutos de consulta</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Peso, talla y curvas de crecimiento</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan impreso y por correo</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Dudas por WhatsApp hasta el siguiente control</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" data-wa href="/contacto/">Agendar presencial</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cita cita--virtual reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita cita--virtual reveal retraso-1">
+<!-- wp:html -->
+<strong>Virtual</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Videollamada desde cualquier país. Ideal para nutrición, seguimiento, crianza y segundas opiniones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="cita__precio" data-precio="virtual">45 USD</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span class="cita__nota">o su equivalente en pesos</span>
+<!-- /wp:html -->
+
+<!-- wp:list {"className": "lista lista--azul en-37d30b"} -->
+<ul class="wp-block-list lista lista--azul en-37d30b">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>45 minutos por videollamada</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Envías exámenes y medidas antes</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan e indicaciones por correo</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Coordinamos según tu huso horario</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:html -->
+<a class="btn btn--azul btn--chico" data-wa href="/contacto/">Agendar virtual</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "aviso reveal en-a58c68", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso reveal en-a58c68">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div><strong>La consulta virtual tiene límites</strong>Lo que necesita examen físico —un dolor abdominal, una otitis, una lesión— se atiende en persona. Si al escribirme veo que es el caso, te lo digo antes de agendar.</div>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema en-8c936b", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-8c936b">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Cómo agendamos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Cuatro pasos y quedamos listas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<ol class="pasos">
+      <li class="reveal"><strong>Me escribes</strong><p>Por WhatsApp, con el nombre y la edad del peque y el motivo de la consulta.</p></li>
+      <li class="reveal" data-delay="1"><strong>Buscamos horario</strong><p>Te propongo las opciones disponibles más cercanas, presenciales o virtuales.</p></li>
+      <li class="reveal" data-delay="2"><strong>Confirmas</strong><p>Te envío la dirección o el enlace de la videollamada y las indicaciones previas.</p></li>
+      <li class="reveal" data-delay="3"><strong>Nos vemos</strong><p>Llegas diez minutos antes o te conectas a la hora acordada. El resto lo hacemos juntas.</p></li>
+    </ol>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":4,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua convenios en-f0a4fe", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua convenios en-f0a4fe">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:group {"className": "convenios__cab reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group convenios__cab reveal">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Convenios</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<span class="convenios__linea" aria-hidden="true"></span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className": "reveal"} -->
+<p class="reveal">Atiendo con estas medicinas prepagadas y pólizas de salud.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "logos reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group logos reveal retraso-1">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-sura.webp" alt="Sura Póliza" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-colmedica.webp" alt="Colmédica Medicina Prepagada" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-bolivar.webp" alt="Seguros Bolívar" loading="lazy" style="height:40px">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-coomeva.webp" alt="Coomeva Medicina Prepagada" loading="lazy" style="height:50px">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-allianz.webp" alt="Allianz" loading="lazy" style="height:34px">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className": "convenios__nota"} -->
+<p class="convenios__nota">¿Tu plan no aparece? Escríbeme y lo revisamos antes de agendar.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "politicas", "className": "seccion seccion--agua en-511cd1", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-511cd1" id="politicas">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Condiciones de la cita</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Para que el tiempo alcance para todas las familias. <em>Condiciones de ejemplo — pendientes de confirmar.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "datos-rejilla", "layout": {"type": "default"}} -->
+<div class="wp-block-group datos-rejilla">
+<!-- wp:group {"className": "dato reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Confirmación</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>La cita queda reservada cuando confirmas por WhatsApp. El día anterior te escribo para recordarla.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-1">
+<!-- wp:html -->
+<span class="dato__aro" style="background:rgba(217,162,79,.18)"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Cancelaciones</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Avísame con al menos 12 horas de anticipación para poder ofrecer el espacio a otra familia.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-2">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Acompañante</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>El menor debe venir con su padre, madre o acudiente, con documento de identidad a la mano.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-3">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Después de la consulta</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Recibes el plan por correo y puedes escribirme dudas puntuales hasta el siguiente control.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "faq__lista en-5ea8e1", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__lista en-5ea8e1">
+<!-- wp:html -->
+<details class="reveal"><summary>¿Desde qué edad atiendes?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Desde recién nacidos hasta la adolescencia, incluyendo control de crecimiento y nutrición.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="1"><summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas sin apuro.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="2"><summary>¿Cómo se paga?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Presencial, en el consultorio el día de la cita. Virtual, antes de la videollamada por transferencia o pasarela de pago. <em>Medios de pago pendientes de confirmar.</em></p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="3"><summary>¿Atiendes urgencias?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>No. La consulta es programada. Ante fiebre en menores de tres meses, dificultad para respirar, vómito persistente o decaimiento importante, acude al servicio de urgencias más cercano.</p></div></details>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Empecemos por un mensaje</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cuéntame el nombre y la edad de tu peque y qué te preocupa. Te respondo con los horarios disponibles.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" data-wa href="/contacto/">Escribir por WhatsApp</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/contacto/">Ver todos los datos</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'consultorio',
+		'antes'     => '2f45954b2ec139bff49d431c2552cc2a',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--agua">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Consultorio</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Un consultorio<br><em>con fondo de mar</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">La ballena, la tortuga, las estrellas y los corales están pintados en las paredes desde el primer día. No es decoración: es lo primero que mira un niño cuando entra, y casi siempre le gana al susto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "cabecera__acciones reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group cabecera__acciones reveal retraso-3">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="#como-llegar">Cómo llegar ↓</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cabecera__foto reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group cabecera__foto reveal retraso-2">
+<!-- wp:html -->
+<div class="cabecera__mancha" aria-hidden="true"></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "marco", "layout": {"type": "default"}} -->
+<div class="wp-block-group marco">
+<!-- wp:html -->
+<span class="washi" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" fetchpriority="high">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":4,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-048228">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">El recorrido, rincón por rincón</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Así se ve por dentro, para que lleguen sabiendo qué esperar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "mosaico mosaico--alto", "layout": {"type": "default"}} -->
+<div class="wp-block-group mosaico mosaico--alto">
+<!-- wp:group {"className": "postal postal--1 reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal postal--1 reveal">
+<!-- wp:html -->
+<span class="washi" style="background:#BBD5EA;transform:translateX(-50%) rotate(-4deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La ballena de la entrada</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Lo primero que ve un niño al llegar. Casi siempre le gana al susto.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal reveal retraso-1">
+<!-- wp:html -->
+<span class="washi" style="background:#F3E3EA;transform:translateX(-50%) rotate(3deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La recepción</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Aquí confirmamos los datos y se espera poco. El mar sigue por toda la pared.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal postal--3 reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal postal--3 reveal retraso-2">
+<!-- wp:html -->
+<span class="washi" style="background:#CFE4DF;transform:translateX(-50%) rotate(-3deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-espera.webp" alt="Sala de espera con la banca turquesa y la rana de peluche" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La sala de espera</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>La banca turquesa, las tortugas pintadas y Pepe esperando sentado.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal reveal retraso-3">
+<!-- wp:html -->
+<span class="washi" style="background:#DCC08D;transform:translateX(-50%) rotate(-2deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La consulta</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Donde conversamos, revisamos los exámenes y armamos el plan con calma.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal postal--4 reveal retraso-4", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal postal--4 reveal retraso-4">
+<!-- wp:html -->
+<span class="washi" style="background:#BBD5EA;transform:translateX(-50%) rotate(2deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La sala de examen</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>La camilla azul, custodiada por los peluches, y la jirafa pintada en la pared.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal reveal retraso-5", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal reveal retraso-5">
+<!-- wp:html -->
+<span class="washi" style="background:#F3E3EA;transform:translateX(-50%) rotate(-2deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ventana.webp" alt="Camilla junto a la ventana, con la ciudad al fondo" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Luz y ciudad</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>La otra camilla mira a la ventana. Los peques se distraen con la vista.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema en-42b6d0", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-42b6d0">
+<!-- wp:group {"className": "pepe reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group pepe reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Pepe, el residente más antiguo</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>La rana verde está aquí desde que el consultorio abrió sus puertas. Vive entre los corales y se deja abrazar durante el examen. Muchos peques vuelven preguntando por él antes que por mí — y así debe ser.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":5,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "como-llegar", "className": "seccion seccion--agua en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-048228" id="como-llegar">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Cómo llegar</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Estamos en el norte de Barranquilla, dentro del High Park Medical Center.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "datos-rejilla", "layout": {"type": "default"}} -->
+<div class="wp-block-group datos-rejilla">
+<!-- wp:group {"className": "dato reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Dirección</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</p>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="https://www.google.com/maps/search/?api=1&query=High+Park+Medical+Center+Barranquilla" target="_blank" rel="noopener">Abrir en Google Maps →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-1">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2"/><path d="M4 13l1.6-5A2 2 0 0 1 7.5 6.5h9A2 2 0 0 1 18.4 8L20 13v4H4z"/><circle cx="7.5" cy="14" r="1"/><circle cx="16.5" cy="14" r="1"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Parqueadero</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>El edificio cuenta con parqueadero para pacientes. Confirma disponibilidad al agendar si llegas en carro.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-2">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 5.2 2 2 0 0 1 5.5 3h3l1.5 4-2 1.6a14 14 0 0 0 6.4 6.4l1.6-2 4 1.5Z"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Confirmación</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Escribe por WhatsApp al <span data-tel>+57 304 653 2006</span> y te confirmo el horario y las indicaciones previas.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-3">
+<!-- wp:html -->
+<span class="dato__aro" style="background:rgba(217,162,79,.18)"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Llega 10 minutos antes</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Alcanzamos a registrar los datos sin apuro y tu peque conoce el lugar antes de empezar.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "en-07f3b0", "layout": {"type": "default"}} -->
+<div class="wp-block-group en-07f3b0">
+<!-- wp:group {"className": "reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal">
+<!-- wp:heading {"level": 2, "className": "titulo en-dad5e8"} -->
+<h2 class="wp-block-heading titulo en-dad5e8">Horario de atención</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className": "tabla-envoltura", "layout": {"type": "default"}} -->
+<div class="wp-block-group tabla-envoltura">
+<!-- wp:html -->
+<table class="horario">
+            <caption>Horario de ejemplo — pendiente de confirmar con la doctora.</caption>
+            <tbody>
+              <tr><th scope="row">Lunes a jueves</th><td>8:00 a. m. – 12:00 m. · 2:00 – 6:00 p. m.</td></tr>
+              <tr><th scope="row">Viernes</th><td>8:00 a. m. – 12:00 m.</td></tr>
+              <tr><th scope="row">Sábado</th><td>8:00 – 11:00 a. m. (según agenda)</td></tr>
+              <tr><th scope="row">Domingo y festivos</th><td class="cerrado">Cerrado</td></tr>
+            </tbody>
+          </table>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal retraso-1">
+<!-- wp:heading {"level": 2, "className": "titulo en-dad5e8"} -->
+<h2 class="wp-block-heading titulo en-dad5e8">Qué traer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"className": "lista lista--azul en-ed67a6"} -->
+<ul class="wp-block-list lista lista--azul en-ed67a6">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Carné de vacunas</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Exámenes o resúmenes de consultas previas</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Documento del menor y del acudiente</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Carné de la prepagada o póliza, si aplica</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Un juguete o manta de apego, si les ayuda</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className": "notita en-b89a77"} -->
+<p class="notita en-b89a77">y si se les olvida algo, lo resolvemos ahí mismo</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Los esperamos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Agenda por WhatsApp y te confirmo día, hora y todo lo que necesitan saber antes de venir.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/contacto/">Datos de contacto</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'contacto',
+		'antes'     => '90d3a7708f17dd28f589fb58c48aeb0e',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Contacto</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Escríbeme<br><em>y te respondo yo</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Sin call center y sin formularios que se pierden. El canal más rápido es WhatsApp; si prefieres dejarlo por escrito, el formulario prepara el mensaje por ti.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cabecera__foto reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group cabecera__foto reveal retraso-2">
+<!-- wp:html -->
+<div class="cabecera__mancha" aria-hidden="true"></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "marco", "layout": {"type": "default"}} -->
+<div class="wp-block-group marco">
+<!-- wp:html -->
+<span class="washi" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos" width="820" height="874" fetchpriority="high" style="object-position:50% 35%">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-048228">
+<!-- wp:group {"className": "wrap en-3de1e8", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap en-3de1e8">
+<!-- wp:group {"className": "reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal">
+<!-- wp:heading {"level": 2, "className": "titulo en-2f1238"} -->
+<h2 class="wp-block-heading titulo en-2f1238">Cuéntame qué necesitas</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada en-37d30b"} -->
+<p class="bajada en-37d30b">Preparo el mensaje con tus datos y lo abrimos en WhatsApp para enviarlo. <em>Aún no hay servidor de correo: el formulario no guarda nada.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<form class="formulario" novalidate>
+        <div class="campo">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Como quieres que te llame">
+          <span class="error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><path d="M12 16.6v.1"/></svg>Escribe tu nombre para saber con quién hablo.</span>
+        </div>
+
+        <div class="campo campo--par">
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
+            <span class="error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><path d="M12 16.6v.1"/></svg>Revisa el correo: falta el @ o el dominio.</span>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono <span class="opcional">(opcional)</span></label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="+57 300 000 0000">
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="motivo">¿Sobre qué me escribes?</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Elige una opción</option>
+            <option>Agendar una cita presencial</option>
+            <option>Agendar una consulta virtual</option>
+            <option>Dudas sobre un curso</option>
+            <option>Convenios y pólizas</option>
+            <option>Otro tema</option>
+          </select>
+          <span class="error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><path d="M12 16.6v.1"/></svg>Elige un motivo para dirigir mejor tu mensaje.</span>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Cuéntame un poco más</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Nombre y edad de tu peque, y qué te preocupa."></textarea>
+          <span class="error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><path d="M12 16.6v.1"/></svg>Escribe al menos una línea para poder ayudarte.</span>
+        </div>
+
+        <label class="consentimiento" for="consiento">
+          <input id="consiento" name="consiento" type="checkbox" required>
+          <span>Autorizo el tratamiento de mis datos personales para responder esta solicitud, conforme a la Ley 1581 de 2012 y a la <a href="/privacidad/">política de privacidad</a>. No compartas historia clínica ni resultados por este medio.</span>
+        </label>
+
+        <div class="formulario__pie">
+          <button class="btn btn--rosa" type="submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+            Preparar mensaje
+          </button>
+          <small>Se abre WhatsApp con el texto listo. Tú decides si lo envías.</small>
+        </div>
+
+        <div class="enviado" tabindex="-1" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.6 2.6L16 9.6"/></svg>
+          <div><strong>Tu mensaje está listo</strong>Se abrió WhatsApp en otra pestaña con el texto redactado. Si no se abrió, escribe directamente al <span data-tel>+57 304 653 2006</span>.</div>
+        </div>
+      </form>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal retraso-1">
+<!-- wp:heading {"level": 2, "className": "titulo en-2f1238"} -->
+<h2 class="wp-block-heading titulo en-2f1238">Datos directos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada en-37d30b"} -->
+<p class="bajada en-37d30b">Respondo personalmente, de lunes a viernes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "datos-rejilla en-c25011", "layout": {"type": "default"}} -->
+<div class="wp-block-group datos-rejilla en-c25011">
+<!-- wp:group {"className": "dato", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>WhatsApp</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p><span data-tel>+57 304 653 2006</span> — el canal más rápido para agendar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-5371db"} -->
+<p class="en-5371db"><a data-wa href="#">Abrir conversación →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Correo</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Para temas administrativos, convenios y facturación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-5371db"} -->
+<p class="en-5371db"><a data-correo href="mailto:nutripedcm@gmail.com">nutripedcm@gmail.com</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Consultorio</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</p>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"className": "en-5371db"} -->
+<p class="en-5371db"><a href="/consultorio/">Cómo llegar →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level": 2, "className": "titulo en-f17531"} -->
+<h2 class="wp-block-heading titulo en-f17531">Horario de respuesta</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className": "tabla-envoltura", "layout": {"type": "default"}} -->
+<div class="wp-block-group tabla-envoltura">
+<!-- wp:html -->
+<table class="horario">
+          <tbody>
+            <tr><th scope="row">Lunes a viernes</th><td>8:00 a. m. – 6:00 p. m.</td></tr>
+            <tr><th scope="row">Sábado, domingo y festivos</th><td class="cerrado">Sin atención</td></tr>
+          </tbody>
+        </table>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "aviso en-aa3a2f", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso en-aa3a2f">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div><strong>Esto no es un canal de urgencias</strong>Los mensajes se responden en horario laboral. Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias.</div>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda cierre--agua reveal en-e04ff8", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda cierre--agua reveal en-e04ff8">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Ya sabes qué necesitan?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mira las modalidades y las tarifas antes de escribir, y me cuentas cuál les sirve mejor.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/servicios/">Ver los servicios</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'cursos',
+		'antes'     => '96af89d3b877ae541488d7b134899061',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--simple">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Cursos</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Cursos y talleres,<br><em>para aprender con calma</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Las preguntas que más se repiten en consulta, explicadas con calma y de una sola vez: un curso en video que ves a tu ritmo, dos talleres en grupo y la escuela para padres, que es presencial.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "notita reveal retraso-3 en-062d4a"} -->
+<p class="notita reveal retraso-3 en-062d4a">escríbeme y te cuento fechas,<br>cupos y forma de inscripción</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-511cd1", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-511cd1">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:group {"tagName": "article", "anchor": "complementaria", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="complementaria">
+<!-- wp:group {"className": "detalle__figura detalle__figura--pieza reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura detalle__figura--pieza reveal reveal--izq">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora con los diez alimentos ideales para la alimentación complementaria" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--der">
+<!-- wp:heading {"level": 2, "className": "verde"} -->
+<h2 class="wp-block-heading verde">Curso de alimentación complementaria</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El paso de la leche a la cuchara, explicado entero y de una sola vez. Es el curso que más piden en consulta: qué ofrecer, en qué textura, cuánto esperar que coma y qué hacer el día que lo escupe todo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--verde"} -->
+<ul class="wp-block-list lista lista--verde">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Señales de que tu bebé ya está listo para empezar</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>La silla correcta: los tres ángulos de 90° que cambian la comida</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Texturas y cantidades semana a semana</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Por qué un alimento se ofrece diez veces antes de decir «no le gusta»</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Alérgenos: cuándo y cómo introducirlos</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Leer la lista de ingredientes, no solo la tabla nutricional</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Desde los 6 meses</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="14" height="14" rx="3"/><path d="M16.5 10.5 21.5 8v8l-5-2.5z"/></svg>En video, a tu ritmo</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>Material de apoyo</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie en-f613c4">
+<!-- wp:html -->
+<span class="curso__precio" style="font-size:28px">$149.000</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" data-curso="complementaria" data-nombre="el curso de alimentación complementaria" href="#">Comprar</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "lonchera", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="lonchera">
+<!-- wp:group {"className": "detalle__figura detalle__figura--pieza reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura detalle__figura--pieza reveal reveal--der">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/taller-lonchera.webp" alt="Pieza del Taller Lonchera Nutritiva de la Dra. Dalila Peñaranda" width="820" height="1025" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--izq">
+<!-- wp:heading {"level": 2, "className": "azul"} -->
+<h2 class="wp-block-heading azul">Taller Lonchera Nutritiva</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué poner en la lonchera para que aguante la mañana y vuelva vacía. Se arma con lo que hay en casa y sin los ultraprocesados que se disfrazan de saludables.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--azul"} -->
+<ul class="wp-block-list lista lista--azul">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Qué lleva una lonchera completa</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Ideas que se arman en diez minutos</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cómo mirar un procesado antes de meterlo en la lonchera</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Qué hacer cuando la lonchera vuelve llena</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Edad escolar</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>Taller grupal</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Fechas por anunciar</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie en-f613c4">
+<!-- wp:html -->
+<span class="curso__precio" style="font-size:28px">$119.000</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" data-curso="lonchera" data-nombre="el Taller Lonchera Nutritiva" href="#">Reservar cupo</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "habitos", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="habitos">
+<!-- wp:group {"className": "detalle__figura detalle__figura--pieza reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura detalle__figura--pieza reveal reveal--izq">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora: ideas para crear una relación saludable con los alimentos" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--der">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Taller «El ABC de los hábitos alimentarios»</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes que el menú está la costumbre: horarios, quién decide qué y quién decide cuánto, y qué pasa en la mesa mientras se come. De ahí sale todo lo demás.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--verde"} -->
+<ul class="wp-block-list lista lista--verde">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cómo se construye un hábito en la mesa, por edad</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Quién ofrece y quién decide cuánto se come</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Horarios y meriendas que sí dejan hambre para la comida</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Qué hacer con las peleas que ya se volvieron rutina</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>Taller grupal</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Fechas por anunciar</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie en-f613c4">
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" data-curso="habitos" data-nombre="el taller «El ABC de los hábitos alimentarios»" data-pregunta="¿Cuándo es el próximo y cómo me inscribo?" href="#">Preguntar por el taller</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "escuela-para-padres", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="escuela-para-padres">
+<!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--der">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 30%">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--izq">
+<!-- wp:heading {"level": 2, "className": "azul"} -->
+<h2 class="wp-block-heading azul">Escuela para padres</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Encuentros presenciales que no son una charla: se lee un cuento, se trabaja lo que el cuento destapa y se conversa. Las emociones nos acompañan toda la vida, y vale la pena aprender a nombrarlas temprano.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--azul"} -->
+<ul class="wp-block-list lista lista--azul">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Sesiones presenciales en grupo</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Un cuento como punto de partida</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Trabajo de emociones con los niños y con los padres</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Espacio para las preguntas que no caben en una consulta</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>Presencial</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>Cupos limitados</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Calendario por anunciar</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie en-f613c4">
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" data-curso="escuela" data-nombre="la escuela para padres" data-pregunta="¿Cuándo es el próximo encuentro y cómo me inscribo?" href="#">Preguntar por la escuela</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Cómo funciona</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Por ahora todo se coordina por WhatsApp, directamente conmigo. Cuando la plataforma de cursos esté lista, la compra del curso en video será automática.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<ol class="pasos">
+      <li class="reveal"><strong>Me escribes</strong><p>Desde esta página el botón abre WhatsApp con el curso ya escrito en el mensaje.</p></li>
+      <li class="reveal" data-delay="1"><strong>Acordamos el pago</strong><p>Te indico los medios disponibles según dónde estés, en pesos o en dólares.</p></li>
+      <li class="reveal" data-delay="2"><strong>Recibes el acceso</strong><p>Te llega al correo apenas se confirma el pago.</p></li>
+      <li class="reveal" data-delay="3"><strong>Lo ves cuando puedas</strong><p>Sin fecha de vencimiento y desde cualquier dispositivo, las veces que quieras.</p></li>
+    </ol>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "faq__lista en-5ea8e1", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__lista en-5ea8e1">
+<!-- wp:html -->
+<details class="reveal"><summary>¿Los cursos reemplazan la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>No. Son material educativo general. Si tu peque tiene un síntoma, un diagnóstico o una dificultad concreta, eso se ve en consulta.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="1"><summary>¿Por cuánto tiempo tengo acceso?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>El acceso no vence: puedes volver al curso cuando quieras. <em>Condición de ejemplo, pendiente de confirmar.</em></p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="2"><summary>¿Puedo pagar desde otro país?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí. Escríbeme y acordamos el medio de pago que te sirva desde tu país.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="3"><summary>¿Hay certificado?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Son cursos para familias, no formación profesional, así que no otorgan certificación clínica. <em>Pendiente de confirmar si se entrega constancia de finalización.</em></p></div></details>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda cierre--verde reveal en-97a672", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda cierre--verde reveal en-97a672">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Prefieres que lo veamos juntas?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si lo tuyo no es un curso sino una duda puntual sobre tu peque, agenda una consulta y lo resolvemos en su caso concreto.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/servicios/">Conocer los servicios</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'inicio',
+		'antes'     => '505d28469a2e9f05bda37c13838ab710',
+		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema hero" id="inicio">
+<!-- wp:html -->
+<span class="burbujas" style="left:4%;top:120px;width:38px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="10" cy="48" r="9"/><circle cx="24" cy="26" r="6"/><circle cx="14" cy="8" r="4"/><circle class="brillo" cx="7" cy="45" r="2"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span class="burbujas burbujas--lenta" style="right:5%;top:70px;width:30px" aria-hidden="true"><svg viewBox="0 0 34 60"><circle cx="20" cy="50" r="8"/><circle cx="9" cy="28" r="5"/><circle cx="22" cy="9" r="4"/><circle class="brillo" cx="17" cy="47" r="2"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "wrap hero__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap hero__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<span class="hero__pill reveal">Barranquilla · presencial y virtual</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Cuidamos la salud<br><span>y nutrición de tus pequeños</span></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "hero__texto reveal retraso-2"} -->
+<p class="hero__texto reveal retraso-2">Soy la Dra. Dalila Peñaranda, pediatra y especialista en nutrición infantil en Barranquilla. Acompaño cada etapa del crecimiento con ciencia, calma y trato cercano — en un consultorio donde el mar recibe primero a los niños.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "hero__acciones reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group hero__acciones reveal retraso-3">
+<!-- wp:html -->
+<a class="btn btn--rosa" data-wa href="/contacto/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          Agenda por WhatsApp
+        </a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/servicios/">Conoce los servicios →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "hero__escena reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group hero__escena reveal retraso-2">
+<!-- wp:html -->
+<div class="hero__mancha" aria-hidden="true"></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "polaroid", "layout": {"type": "default"}} -->
+<div class="wp-block-group polaroid">
+<!-- wp:html -->
+<span class="washi" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/doctora-pepe.jpg" alt="Dra. Dalila Peñaranda con Pepe, la rana de peluche del consultorio" width="1000" height="1327" fetchpriority="high">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="hero__nota">hagamos que su historia sea saludable</div>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "servicios", "className": "seccion seccion--agua en-e8c8ef", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-e8c8ef" id="servicios">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">¿Cómo podemos ayudarte?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Consulta pediátrica y nutricional pensada para el bienestar integral de tus hijos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--servicios", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--servicios">
+<!-- wp:group {"className": "carta reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#E2557E" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><circle cx="18" cy="15" r="3"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Control pediátrico</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Seguimiento del crecimiento, vacunas y prevención en cada etapa.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "carta reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal retraso-1">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#5DA84F" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 8c1-4 5-5 7-4 1 5-2 8-7 8-5 0-8-3-7-8 2-1 6 0 7 4z"/><path d="M12 12v9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Valoración nutricional</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Diagnóstico completo y plan de alimentación realista para tu familia.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "carta reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal retraso-2">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#4A7BB5" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Crecimiento y desarrollo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Curvas, hitos y señales de alarma explicadas sin tecnicismos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "carta reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal retraso-3">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#D9A24F" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M12 3v4"/><path d="M4 21h16"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Alimentación complementaria</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>De la leche a la cuchara, paso a paso y sin culpas.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "carta reveal retraso-4", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal retraso-4">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#5E9E98" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Asesoría a padres</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sueño, rutinas y dudas del día a día, con acompañamiento cercano.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "carta reveal retraso-5", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal retraso-5">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#7B7FC4" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/><path d="M12 9v6"/><path d="M9 12h6"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Consulta virtual</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Atención por videollamada para familias en cualquier país.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "doctora", "className": "seccion seccion--agua doctora", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua doctora" id="doctora">
+<!-- wp:group {"className": "wrap doctora__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap doctora__grid">
+<!-- wp:group {"className": "reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal">
+<!-- wp:group {"className": "marco", "layout": {"type": "default"}} -->
+<div class="wp-block-group marco">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/doctora-retrato.jpg" alt="Dra. Dalila Peñaranda" width="820" height="700" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2, "className": "titulo titulo--azul reveal"} -->
+<h2 class="wp-block-heading titulo titulo--azul reveal">Conoce a la doctora</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "doctora__texto reveal retraso-1"} -->
+<p class="doctora__texto reveal retraso-1">Pediatra con especialización en nutrición infantil. Mi consulta se apoya en evidencia y en escuchar de verdad: entender la rutina de cada casa antes de recomendar. Atiendo en Barranquilla y por videollamada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "pilares", "layout": {"type": "default"}} -->
+<div class="wp-block-group pilares">
+<!-- wp:group {"className": "pilar reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group pilar reveal retraso-2">
+<!-- wp:html -->
+<span class="pilar__aro" style="background:#F3E3EA"><svg viewBox="0 0 24 24" fill="#E2557E" aria-hidden="true"><path d="M12 21s-8-4.8-8-10a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 5.2-8 10-8 10z"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Atención cercana</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Consultas sin prisa, con explicaciones claras y por escrito.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "pilar reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group pilar reveal retraso-3">
+<!-- wp:html -->
+<span class="pilar__aro" style="background:#DCE9F5"><svg viewBox="0 0 24 24" fill="none" stroke="#4A7BB5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Formación continua</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Pediatría y nutrición infantil, con actualización permanente.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "pilar reveal retraso-4", "layout": {"type": "default"}} -->
+<div class="wp-block-group pilar reveal retraso-4">
+<!-- wp:html -->
+<span class="pilar__aro" style="background:#E2F0DE"><svg viewBox="0 0 24 24" fill="none" stroke="#5DA84F" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 20c0-6 3-10 8-11-1 6-4 9-8 11z"/><path d="M12 20C12 14 9 10 4 9c1 6 4 9 8 11z"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Compromiso integral</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Cuidado personalizado en cada etapa del crecimiento.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"anchor": "pepe", "className": "pepe reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group pepe reveal" id="pepe">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Hola, soy Pepe</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Vivo entre los corales del consultorio y acompaño a los niños durante la consulta. Si tu peque llega con miedo, yo lo recibo primero.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "ariaLabel": "Nutrición infantil y crecimiento", "className": "seccion seccion--agua ramas", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua ramas" aria-label="Nutrición infantil y crecimiento">
+<!-- wp:group {"className": "wrap rejilla rejilla--2", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap rejilla rejilla--2">
+<!-- wp:group {"className": "rama reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group rama reveal">
+<!-- wp:heading {"level": 3, "className": "verde"} -->
+<h3 class="wp-block-heading verde">Nutrición infantil</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hábitos alimentarios saludables desde los primeros años, con planes que sí caben en la rutina de la casa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--verde"} -->
+<ul class="wp-block-list lista lista--verde">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Valoración nutricional personalizada</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Asesoría en alimentación complementaria</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Manejo de la selectividad alimentaria</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Menús escolares prácticos</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "rama reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group rama reveal retraso-1">
+<!-- wp:heading {"level": 3, "className": "azul"} -->
+<h3 class="wp-block-heading azul">Crecimiento y desarrollo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Seguimiento de la salud de tus hijos en cada etapa, con controles claros y prevención oportuna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--azul"} -->
+<ul class="wp-block-list lista lista--azul">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Control pediátrico preventivo</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Evaluación de hitos del desarrollo</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Vacunación y prevención</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Enfermedades agudas y crónicas</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "consultorio", "className": "seccion seccion--crema", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema" id="consultorio">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Conoce el consultorio</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Un fondo de mar pintado a mano: corales, tortugas, estrellas y una ballena que recibe a cada niño.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--4", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--4">
+<!-- wp:group {"className": "postal postal--1 reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal postal--1 reveal">
+<!-- wp:html -->
+<span class="washi" style="background:#BBD5EA;transform:translateX(-50%) rotate(-4deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La ballena de la entrada</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Lo primero que ve un niño al llegar.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal reveal retraso-1">
+<!-- wp:html -->
+<span class="washi" style="background:#F3E3EA;transform:translateX(-50%) rotate(3deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La recepción</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>El mar sigue por toda la pared.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal postal--3 reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal postal--3 reveal retraso-2">
+<!-- wp:html -->
+<span class="washi" style="background:#DCC08D;transform:translateX(-50%) rotate(-2deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La consulta</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>Aquí conversamos con calma y armamos el plan.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "postal postal--4 reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group postal postal--4 reveal retraso-3">
+<!-- wp:html -->
+<span class="washi" style="background:#CFE4DF;transform:translateX(-50%) rotate(2deg)" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>La sala de examen</strong>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span>La camilla azul, custodiada por los peluches.</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "cursos", "className": "seccion seccion--crema en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-8b34f8" id="cursos">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Cursos y talleres</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Un curso en video, dos talleres en grupo y la escuela para padres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3">
+<!-- wp:group {"tagName": "article", "className": "curso reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group curso reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-complementaria.jpg" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__cuerpo">
+<!-- wp:html -->
+<strong>Curso de alimentación complementaria</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>De la leche a la cuchara: la silla, las texturas y los alérgenos, paso a paso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie">
+<!-- wp:html -->
+<span class="curso__precio">$149.000</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a href="/cursos/">Ver el curso →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "curso reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group curso reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-lonchera.jpg" alt="Comida saludable lista en porciones" width="800" height="533" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__cuerpo">
+<!-- wp:html -->
+<strong>Taller de lonchera saludable</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Qué poner para que aguante la mañana y vuelva vacía.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie">
+<!-- wp:html -->
+<span class="curso__precio">$119.000</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a href="/cursos/">Ver el curso →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "curso reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group curso reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-dormir.jpg" alt="Bebé durmiendo tranquilo" width="800" height="534" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__cuerpo">
+<!-- wp:html -->
+<strong>Escuela para padres</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Encuentros presenciales: un cuento, las emociones que destapa y una conversación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group curso__pie">
+<!-- wp:html -->
+<span class="curso__precio" style="font-size:16px;color:var(--suave)">Encuentros presenciales</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a href="/cursos/">Ver el curso →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "convenios", "className": "seccion seccion--crema convenios", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema convenios" id="convenios">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:group {"className": "convenios__cab reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group convenios__cab reveal">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Convenios</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<span class="convenios__linea" aria-hidden="true"></span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className": "reveal"} -->
+<p class="reveal">Atiendo con estas medicinas prepagadas y pólizas de salud.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "logos reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group logos reveal retraso-1">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-sura.webp" alt="Sura Póliza" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-colmedica.webp" alt="Colmédica Medicina Prepagada" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-bolivar.webp" alt="Seguros Bolívar" loading="lazy" style="height:40px">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-coomeva.webp" alt="Coomeva Medicina Prepagada" loading="lazy" style="height:50px">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/logo-allianz.webp" alt="Allianz" loading="lazy" style="height:34px">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className": "convenios__nota"} -->
+<p class="convenios__nota">¿Tu plan no aparece? Escríbeme y lo revisamos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "citas", "className": "seccion seccion--crema en-c6ab03", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-c6ab03" id="citas">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Tu cita</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal en-8c2756"} -->
+<p class="bajada reveal en-8c2756">Escríbeme por WhatsApp y confirmamos el horario contigo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--2">
+<!-- wp:group {"className": "cita reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita reveal">
+<!-- wp:html -->
+<strong>Presencial</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="cita__precio" data-precio="presencial">$180.000</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span class="cita__nota">COP por consulta</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--rosa btn--chico" href="/citas/">Ver detalle y agendar</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cita cita--virtual reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita cita--virtual reveal retraso-1">
+<!-- wp:html -->
+<strong>Virtual</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="cita__precio" data-precio="virtual">45 USD</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span class="cita__nota">por videollamada</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--azul btn--chico" href="/citas/">Ver detalle y agendar</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "blog", "className": "seccion seccion--agua en-77726b", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-77726b" id="blog">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Del blog</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Temas que la doctora ya explica en sus redes. <em>Artículos por escribir.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-nutricion.jpg" alt="Bebé comiendo en su silla" width="800" height="1200" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 30%">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué mide, y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" style="object-position:50% 40%">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sonarse antes, cabeza abajo y boca abierta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<a href="/blog/">Leer más →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "ariaLabel": "Testimonios", "className": "seccion seccion--agua en-ab17dd", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-ab17dd" aria-label="Testimonios">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Lo que dicen las familias</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal en-8c2756"} -->
+<p class="bajada reveal en-8c2756"><em>Testimonios ilustrativos — se reemplazarán por reales.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3">
+<!-- wp:html -->
+<blockquote class="testimonio reveal"><span class="testimonio__comilla" aria-hidden="true">“</span><p>Salimos con un plan claro y sin culpas. Mi hija por fin come verduras.</p><footer><strong>María F.</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<blockquote class="testimonio reveal" data-delay="1"><span class="testimonio__comilla" aria-hidden="true">“</span><p>La consulta virtual fue igual de cercana, y vivimos en otro país.</p><footer><strong>Carlos R.</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<blockquote class="testimonio reveal" data-delay="2"><span class="testimonio__comilla" aria-hidden="true">“</span><p>Profesional, empática y muy dedicada. Explica todo con calma.</p><footer><strong>Andrea P.</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "faq", "className": "seccion seccion--crema faq", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema faq" id="faq">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-ef4825"} -->
+<h2 class="wp-block-heading titulo reveal en-ef4825">Preguntas frecuentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className": "faq__lista", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__lista">
+<!-- wp:html -->
+<details class="reveal"><summary>¿Dónde queda el consultorio?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>En <strong>High Park Medical Center</strong>, Calle 1C # 30-40, consultorio 129, en Barranquilla. Es consulta pediátrica presencial, con cita previa.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="1"><summary>¿Cómo agendo una cita?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Por WhatsApp al <span data-tel>+57 304 653 2006</span>. Confirmamos horario y te envío las indicaciones previas.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="2"><summary>¿Desde qué edad atiendes?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Desde recién nacidos hasta la adolescencia, incluyendo control de crecimiento y nutrición.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="3"><summary>¿Atiendes con medicina prepagada o póliza?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="0"><summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="1"><summary>¿Qué diferencia hay entre el control pediátrico y la consulta de nutrición?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>El control pediátrico revisa todo: crecimiento, desarrollo, vacunas y alimentación. La consulta de nutrición infantil entra a fondo en lo que come tu peque, con valoración antropométrica y un plan por escrito. Como soy pediatra y además especialista en nutrición infantil, las dos cosas se pueden ver en la misma cita.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="2"><summary>¿Atiendes urgencias?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>No. La consulta es programada. Ante fiebre en menores de tres meses, dificultad para respirar, vómito persistente o decaimiento importante, acude al servicio de urgencias más cercano.</p></div></details>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<details class="reveal" data-delay="3"><summary>¿Atiendes familias fuera de Colombia?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí. La consulta virtual se hace por videollamada y el plan llega por correo.</p></div></details>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "contacto", "className": "seccion seccion--crema contacto", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema contacto" id="contacto">
+<!-- wp:group {"className": "contacto__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group contacto__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Estamos aquí para acompañarte</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Agenda tu cita y construyamos juntos lo mejor para tus pequeños.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "datos", "layout": {"type": "default"}} -->
+<div class="wp-block-group datos">
+<!-- wp:html -->
+<span><span class="datos__aro"><svg viewBox="0 0 24 24" fill="none" stroke="#4E9E55" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 5.2 2 2 0 0 1 5.5 3h3l1.5 4-2 1.6a14 14 0 0 0 6.4 6.4l1.6-2 4 1.5Z"/></svg></span><span data-tel>+57 304 653 2006</span></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><span class="datos__aro"><svg viewBox="0 0 24 24" fill="none" stroke="#4A7BB5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</span></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><span class="datos__aro"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span><a data-correo href="mailto:nutripedcm@gmail.com" style="color:#42607E">nutripedcm@gmail.com</a></span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "contacto__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group contacto__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Agenda tu cita ahora</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/contacto/">Ver todas las formas de contacto</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'privacidad',
+		'antes'     => '7e03dcf8462feeee68bcc1312a0b5f82',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--simple">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Política de privacidad</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Política de privacidad</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Qué datos se recogen en este sitio, para qué se usan y cómo pedir que se eliminen. Ley 1581 de 2012 y Decreto 1377 de 2013.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-b2d526", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-b2d526">
+<!-- wp:group {"className": "wrap prosa reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap prosa reveal">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Responsable del tratamiento</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dra. Dalila Peñaranda — Pediatría y Nutrición Infantil. Consultorio <span data-direccion>Calle 1C # 30-40, High Park Medical Center, consultorio 129 · Barranquilla, Colombia</span>. Correo de contacto: <a data-correo href="mailto:nutripedcm@gmail.com">nutripedcm@gmail.com</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Qué datos se recogen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Los que tú escribes:</strong> nombre, correo, teléfono y el contenido del mensaje que envías por el formulario o por WhatsApp.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Datos de menores:</strong> si mencionas el nombre o la edad de tu hijo o hija, esos datos se tratan con la autorización del padre, madre o representante legal, y siempre en su interés superior.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Datos de navegación:</strong> este sitio se publica en GitHub Pages, que registra solicitudes de forma técnica y agregada. El sitio no instala cookies de publicidad ni de seguimiento propias.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Para qué se usan</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Responder tu solicitud y coordinar la cita.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Enviarte las indicaciones previas y el plan posterior a la consulta.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Cumplir obligaciones legales de la práctica médica.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Tus datos <strong>no se venden ni se comparten</strong> con terceros para fines comerciales.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Datos sensibles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La información de salud es un dato sensible: entregarla es voluntario y nunca es requisito para navegar el sitio. Te pedimos <strong>no enviar historia clínica, resultados de exámenes ni fotografías clínicas por WhatsApp o correo</strong>; ese material se revisa dentro de la consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Tus derechos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Como titular de los datos —o como representante del menor— puedes conocer, actualizar, rectificar y suprimir tus datos, así como revocar la autorización. Para ejercerlos, escribe a <a data-correo href="mailto:nutripedcm@gmail.com">nutripedcm@gmail.com</a> indicando tu solicitud; se responde dentro de los términos de ley.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Conservación</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los mensajes de contacto se conservan mientras dure la relación de atención y por el tiempo que exijan las obligaciones legales aplicables. La historia clínica se maneja aparte, bajo las normas que la regulan.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Servicios de terceros</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los cursos se compran a través de <strong>Hotmart</strong>, que actúa como responsable independiente del pago y del acceso, con su propia política de privacidad. Las conversaciones por <strong>WhatsApp</strong> se rigen además por las condiciones de esa plataforma.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Cambios</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Esta política puede actualizarse. La versión vigente es siempre la publicada en esta página.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<hr>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"className": "pendiente"} -->
+<p class="pendiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>Borrador de referencia — debe revisarlo la doctora, y ojalá un abogado, antes de publicar</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda cierre--agua reveal en-e04ff8", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda cierre--agua reveal en-e04ff8">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Dudas sobre tus datos?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Escríbeme y te explico qué información se guarda y cómo pedir que se elimine.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/contacto/">Ir a contacto</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/aviso-medico/">Leer el aviso médico</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'servicios',
+		'antes'     => 'd810358c3acc70b0a1e1d2272c32c0bb',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera cabecera--simple">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Servicios</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Pediatría y nutrición,<br><em>en la misma consulta</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Seis formas de acompañarlos, todas con el mismo método: historia completa, examen sin prisa, plan por escrito y seguimiento. Elige por dónde empezar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<nav class="filtros filtros--enlaces reveal" data-delay="3" aria-label="Ir a un servicio" style="margin-top:26px;margin-bottom:0">
+        <a class="filtro" href="#control-pediatrico">Control pediátrico</a>
+        <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a>
+        <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a>
+        <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a>
+        <a class="filtro" href="#asesoria-padres">Asesoría a padres</a>
+        <a class="filtro" href="#consulta-virtual">Consulta virtual</a>
+      </nav>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-511cd1", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-511cd1">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:group {"tagName": "article", "anchor": "control-pediatrico", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="control-pediatrico">
+<!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--izq">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--der">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><circle cx="18" cy="15" r="3"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2, "className": "rosa"} -->
+<h2 class="wp-block-heading rosa">Control pediátrico</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El chequeo de siempre, hecho con calma. Revisamos crecimiento, desarrollo, vacunas y hábitos, y resolvemos las dudas que se acumularon desde la última visita.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--verde"} -->
+<ul class="wp-block-list lista lista--verde">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Peso, talla y perímetro cefálico en sus curvas</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Esquema de vacunación al día</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Prevención de accidentes según la edad</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Enfermedades agudas y control de crónicas</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45–60 minutos</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Desde recién nacidos</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "nutricion-infantil", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="nutricion-infantil">
+<!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--der">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-nutricion.jpg" alt="Bebé comiendo en su silla" width="800" height="1200" loading="lazy" style="object-position:50% 35%">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--izq">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8c1-4 5-5 7-4 1 5-2 8-7 8-5 0-8-3-7-8 2-1 6 0 7 4z"/><path d="M12 12v9"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2, "className": "verde"} -->
+<h2 class="wp-block-heading verde">Nutrición infantil</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Valoración nutricional completa y un plan que se puede sostener: con los alimentos de tu ciudad, los horarios de tu casa y el presupuesto real de la familia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--verde"} -->
+<ul class="wp-block-list lista lista--verde">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Diagnóstico nutricional con antropometría</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Selectividad alimentaria y comedores difíciles</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Bajo peso, sobrepeso y anemia</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Menús y loncheras que sí se comen</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 minutos</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M2 19h20"/></svg>Con plan escrito</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "crecimiento-desarrollo", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="crecimiento-desarrollo">
+<!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--izq">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 25%">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--der">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2, "className": "azul"} -->
+<h2 class="wp-block-heading azul">Crecimiento y desarrollo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Las curvas explicadas sin susto: qué significa el percentil, qué es variación normal y cuándo sí vale la pena estudiar algo más a fondo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--azul"} -->
+<ul class="wp-block-list lista lista--azul">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Seguimiento de talla, peso y velocidad de crecimiento</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Hitos del desarrollo por edad</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Señales de alarma y cuándo remitir</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Sueño, lenguaje y conducta</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45–60 minutos</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/></svg>Control periódico</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "alimentacion-complementaria", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="alimentacion-complementaria">
+<!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--der">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-complementaria.jpg" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy" style="object-position:50% 40%">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--izq">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:rgba(217,162,79,.18)"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M12 3v4"/><path d="M4 21h16"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Alimentación complementaria</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El paso de la leche a la cuchara, acompañado. Qué ofrecer, en qué textura, cuánto esperar y cómo reaccionar cuando escupe todo el primer día.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--verde"} -->
+<ul class="wp-block-list lista lista--verde">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Inicio a los 6 meses, paso a paso</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Texturas, cantidades y frecuencia</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Alérgenos: cuándo y cómo introducirlos</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Atragantamiento: prevención y qué hacer</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 minutos</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>También hay <a href="/cursos/" style="color:inherit;text-decoration:underline">curso en video</a></span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "asesoria-padres", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="asesoria-padres">
+<!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--izq">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" style="object-position:50% 40%">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--der">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:var(--menta)"><svg viewBox="0 0 24 24" fill="none" stroke="#3D7570" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Asesoría a padres</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Para las dudas que no caben en un control: el sueño que se rompió, la rabieta de las siete de la noche, la vuelta al jardín, la llegada de un hermanito.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--azul"} -->
+<ul class="wp-block-list lista lista--azul">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Rutinas de sueño respetuosas</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Acompañamiento en lactancia y destete</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Pantallas, juego y límites por edad</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Preparar la casa para cada etapa</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 minutos</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z"/></svg>Presencial o virtual</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "consulta-virtual", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="consulta-virtual">
+<!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--der">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--izq">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:rgba(123,127,196,.16)"><svg viewBox="0 0 24 24" fill="none" stroke="#5E62A8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="14" height="14" rx="3"/><path d="M16.5 10.5 21.5 8v8l-5-2.5z"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Consulta virtual</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La misma consulta, por videollamada. Funciona para nutrición, seguimiento, dudas de crianza y segundas opiniones; para lo que necesita examen físico te lo digo de entrada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className": "lista lista--azul"} -->
+<ul class="wp-block-list lista lista--azul">
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Para familias en cualquier país</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Envías exámenes y curvas antes de la cita</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan e indicaciones por correo al terminar</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Pago en COP o USD</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 minutos</span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>Sin importar el huso horario</span>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Cómo es cada consulta</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">El mismo recorrido, sin importar el motivo por el que llegues.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<ol class="pasos">
+      <li class="reveal"><strong>Historia completa</strong><p>Embarazo, parto, alimentación, sueño, antecedentes y lo que te preocupa hoy. Sin apuro.</p></li>
+      <li class="reveal" data-delay="1"><strong>Examen y medidas</strong><p>Revisión física, peso, talla y ubicación en las curvas de crecimiento.</p></li>
+      <li class="reveal" data-delay="2"><strong>Conversación</strong><p>Qué encontramos, qué significa y qué opciones hay. En palabras que se entienden.</p></li>
+      <li class="reveal" data-delay="3"><strong>Plan por escrito</strong><p>Te vas con las indicaciones escritas y la fecha del próximo control.</p></li>
+    </ol>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "aviso reveal en-01509c", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso reveal en-01509c">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div><strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias.</div>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda cierre__banda--agua reveal en-e04ff8", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda cierre__banda--agua reveal en-e04ff8">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿No sabes cuál necesitas?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Escríbeme lo que está pasando y te digo qué tipo de consulta les sirve — o si con una respuesta corta basta.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" data-wa href="/contacto/">Cuéntame por WhatsApp</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/citas/">Ver citas y tarifas</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'page',
+		'nombre'    => 'sobre-mi',
+		'antes'     => 'cad60d34b975fe2d07ecd890fc06db0d',
+		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
+<section class="wp-block-group cabecera">
+<!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap cabecera__grid">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<nav class="migas reveal" aria-label="Ruta">
+        <a href="/">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        <span aria-current="page">Sobre mí</span>
+      </nav>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
+<h1 class="wp-block-heading reveal retraso-1">Soy Dalila,<br><em>la pediatra que te ayuda</em></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
+<p class="cabecera__lead reveal retraso-2">Médico pediatra, especialista en nutrición infantil y terapista de alimentación. Llevo la consulta como me hubiera gustado que atendieran a mi propia familia: con tiempo para escuchar, explicaciones que se entienden y un plan que de verdad cabe en la rutina de la casa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "cabecera__acciones reveal retraso-3", "layout": {"type": "default"}} -->
+<div class="wp-block-group cabecera__acciones reveal retraso-3">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/servicios/">Ver los servicios →</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cabecera__foto reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group cabecera__foto reveal retraso-2">
+<!-- wp:html -->
+<div class="cabecera__mancha" aria-hidden="true"></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "marco", "layout": {"type": "default"}} -->
+<div class="wp-block-group marco">
+<!-- wp:html -->
+<span class="washi" aria-hidden="true"></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/doctora-retrato.jpg" alt="Retrato de la Dra. Dalila Peñaranda en su consultorio" width="820" height="700" fetchpriority="high">
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-048228">
+<!-- wp:group {"className": "wrap en-d5937b", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap en-d5937b">
+<!-- wp:group {"className": "prosa reveal en-1386d5", "layout": {"type": "default"}} -->
+<div class="wp-block-group prosa reveal en-1386d5">
+<!-- wp:heading {"level": 2, "className": "en-53896a"} -->
+<h2 class="wp-block-heading en-53896a">Por qué la nutrición y la pediatría van juntas</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En la consulta pediátrica la mayoría de las preguntas terminan en la mesa: <strong>qué come, cuánto come, por qué no quiere comer</strong>. Por eso decidí formarme también en nutrición infantil: para responder esas preguntas con la misma evidencia con la que reviso un crecimiento o una vacuna, y no con consejos sueltos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cada control incluye una mirada al plato. Y cada plan de alimentación se arma con lo que hay en tu casa, en tu ciudad y en tu presupuesto — no con una lista ideal que nadie sostiene tres semanas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<blockquote>
+        <p>Una consulta buena no es la que deja más indicaciones, sino la que deja menos dudas.</p>
+      </blockquote>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Cómo es una consulta conmigo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Empezamos por la historia completa: embarazo, parto, alimentación, sueño, antecedentes de la familia. Después reviso a tu peque con calma, medimos y ubicamos el punto en sus curvas de crecimiento. Al final conversamos: qué encontramos, qué vamos a hacer y qué esperar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Te vas con el plan por escrito y con la puerta abierta para escribir si algo no queda claro. <a href="/citas/">Aquí puedes ver cómo agendar</a>, en consultorio o por videollamada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">Lo que no me importa</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No me importa que seas mamá primeriza y llegues con una lista larguísima de inquietudes: para eso estoy. No me importa que creas que tu pregunta es tonta — la única pregunta tonta es la que no se hace.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>No me importa que llores en la consulta: también soy madre y conozco de primera mano las frustraciones que eso trae. Tampoco me importa que llore tu hijo; lo voy a entender perfectamente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Lo que sí me importa es que vengas tranquila.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "pendiente"} -->
+<p class="pendiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>Escrito a partir de lo que ella cuenta en sus redes — falta su visto bueno</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal retraso-1">
+<!-- wp:group {"className": "dato en-35a11d", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato en-35a11d">
+<!-- wp:heading {"level": 2, "className": "titulo en-f0ea7c"} -->
+<h2 class="wp-block-heading titulo en-f0ea7c">Formación</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "en-50536d"} -->
+<p class="en-50536d">Las especialidades son las que ella misma declara en su contenido; las universidades, los años y el registro médico se completan con su información oficial.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<ol class="cronologia reveal">
+          <li>
+            <time>Pregrado</time>
+            <strong>Médico y cirujano</strong>
+            <p>Universidad y año — <em>pendiente de confirmar</em>.</p>
+          </li>
+          <li>
+            <time>Especialidad</time>
+            <strong>Pediatría</strong>
+            <p>Institución, ciudad y año — <em>pendiente de confirmar</em>.</p>
+          </li>
+          <li>
+            <time>Segunda especialidad</time>
+            <strong>Nutrición infantil</strong>
+            <p>Es la que marca su consulta: cada control mira también el plato.</p>
+          </li>
+          <li>
+            <time>Además</time>
+            <strong>Terapista de alimentación</strong>
+            <p>Formación específica para acompañar a los niños a los que comer les cuesta.</p>
+          </li>
+          <li>
+            <time>Hoy</time>
+            <strong>Consulta en Barranquilla y virtual</strong>
+            <p>Atención presencial en High Park Medical Center y por videollamada para familias dentro y fuera de Colombia.</p>
+          </li>
+        </ol>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"className": "en-17d040"} -->
+<p class="en-17d040">Registro médico y afiliaciones profesionales: pendientes de recibir.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-205ffd", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-205ffd">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Tres cosas que no negocio</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Lo que sostiene cada consulta, sea presencial o virtual.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "datos-rejilla", "layout": {"type": "default"}} -->
+<div class="wp-block-group datos-rejilla">
+<!-- wp:group {"className": "dato reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 3 10 2.5-6 1.5 3h5"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Evidencia, no modas</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Lo que recomiendo está respaldado por guías actuales de pediatría y nutrición. Si algo no tiene sustento, te lo digo.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-1">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z"/><path d="M8 10h4"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Tiempo para escuchar</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Antes de recomendar, pregunto cómo es un día en tu casa. Un plan que ignora la rutina real no se cumple.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "dato reveal retraso-2", "layout": {"type": "default"}} -->
+<div class="wp-block-group dato reveal retraso-2">
+<!-- wp:html -->
+<span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-4.8-8-10a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 5.2-8 10-8 10z"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<strong>Cero culpas</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Nadie llega a la consulta por descuido. Trabajamos desde donde estás hoy, sin sermones y sin comparaciones.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-810cae", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-810cae">
+<!-- wp:group {"anchor": "pepe", "className": "pepe reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group pepe reveal" id="pepe">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/pepe.webp" alt="Pepe, la rana de peluche que acompaña a los niños en el consultorio, sentada frente al mural del mar" width="1100" height="840" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:html -->
+<strong>Y está Pepe</strong>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>La rana verde acompaña el consultorio desde el día que abrió. Vive entre los corales de la pared y recibe a los niños antes que yo: si tu peque llega con miedo, empezamos por saludarlo a él. <a href="/consultorio/">Conoce el resto del consultorio →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "cierre", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Hablamos de tu peque?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cuéntame qué te preocupa y buscamos el espacio que mejor les sirva: consultorio en Barranquilla o videollamada desde donde estén.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" data-wa href="/contacto/">Escríbeme por WhatsApp</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'agotamiento-materno-cinco-senales',
+		'antes'     => '46f73c03c33e991a2c313ee5603ba83f',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Este tema lo conversé con un psiquiatra de niños y adolescentes, porque es de los que en consulta pediátrica aparecen de reojo: la mamá viene a hablar del bebé y lo que está pesando es otra cosa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Son <strong>cinco señales</strong>, y la última es la más grave.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">1. Cansancio físico a pesar de haber dormido bien</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No es el cansancio esperable de las noches partidas. Es levantarse habiendo dormido y sentir que no sirvió de nada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">2. Dificultades para dormir</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La paradoja que más frustra: el bebé por fin duerme y tú no puedes. La cabeza no baja de revoluciones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">3. Pensamientos negativos frecuentes sobre la maternidad</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sentir que eres insuficiente. Que no estás haciendo las cosas bien. Que todas las demás pueden y tú no. Aparecen solos y se repiten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">4. Irritabilidad y mal genio frecuentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Saltar por cosas que antes no te movían, y sentirte mal después por haber saltado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">5. Desconexión emocional con el bebé</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Esta es la más grave y la más callada, porque da vergüenza decirla en voz alta. Sentir que estás cumpliendo con todo —alimentarlo, cambiarlo, cuidarlo— pero que no estás <em>ahí</em>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Si te identificas con alguna de estas señales, no es un defecto tuyo: es una señal para pedir ayuda.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Qué hacer con esto</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nombrarlo ya es la mitad. Si te reconociste en una o en varias, <strong>háblalo</strong>: con tu pareja, con tu red, con tu médico. El agotamiento materno tiene tratamiento y acompañamiento, y buscarlo temprano cambia mucho las cosas — para ti y para tu bebé.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y si vienes a control con tu peque y quieres contarme cómo estás tú, este espacio también es para eso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos"/><figcaption class="wp-element-caption">Si algo de esto te suena, no lo cargues sola.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Dolor de oído a medianoche</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nada de gotas, orégano ni leche materna. Lo que sí ayuda.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/dolor-de-oido-a-medianoche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lactancia y caries</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Protege, pero no basta: la higiene empieza con el primer diente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/lactancia-y-caries-protege-pero-no-basta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Obligar, gritar en la arcada y quedarse en las papillas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Quieres hablarlo?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En la consulta de tu peque también cabe cómo estás tú. Y si hace falta, te oriento sobre a quién acudir.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'bullying-las-senales-que-no-te-cuenta',
+		'antes'     => '5dce3f469438bd568d3a5e311751bfb9',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Este tema lo conversé con un psiquiatra de niños y adolescentes, porque es de los que llegan tarde a la consulta: cuando ya se nota en el cuerpo o en las notas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Los niños y adolescentes que reciben matoneo <strong>usualmente no lo cuentan, por pena</strong>. Así que toca leer otras cosas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Las señales</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Llega a casa sin sus útiles escolares o sin sus objetos personales</strong>, con mucha frecuencia. Y siempre hay una explicación: se perdió, lo presté, no sé.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Rechazo súbito y repentino a ir al colegio</strong>, en un niño que antes iba sin problema. El cambio brusco es lo que importa.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Síntomas físicos sin explicación médica clara</strong>: malestares gastrointestinales, dolores de cabeza. Sobre todo si aparecen los domingos en la noche o las mañanas de colegio.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>El matoneo se esconde en el silencio, y estar atento a estos signos puede marcar la diferencia.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué hacer si las reconoces</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Abre el diálogo</strong>, sin interrogatorio. Preguntas abiertas, sin prisa, en un momento tranquilo — el carro y la hora de dormir funcionan mejor que la mesa.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Habla con el colegio.</strong> No para señalar culpables, sino porque ahí pasa lo que tú no ves.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Busca apoyo.</strong> Salud mental infantil, orientación escolar, lo que haga falta.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo más importante</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Nadie debe enfrentar el bullying solo</strong>, y eso vale también para ti. Si algo de esto te resonó, no esperes a estar seguro para pedir ayuda: se empieza a acompañar desde la sospecha, no desde la certeza.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y sí, esto también cabe en una consulta pediátrica. Los síntomas físicos sin causa clara son, muchas veces, la puerta por donde el tema entra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo"/><figcaption class="wp-element-caption">Lo que no se dice también deja rastro. Ahí empieza la sospecha.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dengue, Zika, chikungunya y fiebre amarilla: peligrosas, sobre todo en niños.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los jugos, el huevo antes del año y el «come poquito».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/tres-mitos-que-oigo-cada-semana/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El cólico cambió de nombre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ya no se llama cólico, y el cambio no es cosmético.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Notaste alguna de estas señales?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tráelo a consulta. Revisamos lo físico, hablamos con calma y, si hace falta, te oriento sobre a quién acudir.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'cinco-errores-que-llevan-a-la-selectividad',
+		'antes'     => 'd68b9bc1a6b459d8ea2b55079e56503d',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">1. No ofrecer variedad</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Variedad de <strong>sabores y de colores</strong>. Un bebé que siempre ve lo mismo aprende que la comida es una lista corta, y después cuesta ampliarla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">2. No cambiar las texturas a tiempo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La transición de líquidos y papillas a <strong>sólidos debe hacerse antes de los 10 meses</strong>. Quedarse en el puré porque «así come mejor» es cómodo hoy y caro después: hay una ventana para aprender a masticar, y cerrarla trae problemas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">3. Obligarlo a comer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si tu hijo te manda señales de saciedad, <strong>no lo presiones</strong>. Las señales son claras cuando uno las mira: juega mucho con la comida, aprieta la boca, voltea la cara. Cuando veas eso, detente. Punto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">4. Gritar o asustarlo durante una arcada</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sé el susto que da. Pero el grito le enseña que comer es peligroso, y eso sí deja huella. <strong>Respira</strong> y acompáñalo con calma: «mi amor, el alimento está muy atrás, empújalo con tu lengua». Se le enseña a resolverlo, no se le enseña a temerlo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">5. Dejar de ofrecer porque hace mala cara</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una mueca no es un veredicto. Retirar el alimento a la primera cara fea es justo lo contrario de lo que hace falta: <a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">un alimento se ofrece diez veces</a>, repartidas en el tiempo, antes de concluir nada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Si tu hijo te envía señales de saciedad, no lo presiones.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:html -->
+<div class="descarga">
+      <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+      <div>
+        <strong>Un regalo: mis recomendaciones nutricionales</strong>
+        <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+        <div class="descarga__pie">
+          <a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
+            Descargar la guía
+          </a>
+          <small>PDF · 9 páginas · gratis</small>
+        </div>
+      </div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">El hilo que los une</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los cinco errores tienen algo en común: confunden quién decide qué. <strong>Tú decides qué se ofrece, cuándo y dónde; él decide cuánto come y si come.</strong> Cuando esa frontera se respeta, la mayoría de las peleas de la mesa desaparecen solas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre cómo crear una relación saludable con los alimentos"/><figcaption class="wp-element-caption">De mi serie sobre la relación con la comida.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Frutos secos y uvas: cómo sí</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Duros y redondos son los dos riesgos de atragantamiento.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/frutos-secos-y-uvas-como-si/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta y solo aparece en un laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una cuchara a los seis meses, dos al año. Y el sodio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Ya se volvió una pelea diaria?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La selectividad instalada se trabaja, y se puede. Agenda y armamos el plan para tu caso.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'cuando-necesita-agua-tu-bebe',
+		'antes'     => 'cd4e1ae0a1d0d7fa12439434ddb20fe5',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>En un clima como el de la costa, la pregunta llega en la primera consulta: «doctora, ¿le doy agüita?». Y la respuesta sorprende a casi todas: <strong>antes de los seis meses, tu bebé no necesita agua</strong>. Tampoco infusiones, ni aguas de hierbas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La razón es sencilla: cerca del <strong>80 % de la leche materna es agua</strong>. Todo lo que tu bebé necesita para hidratarse ya está ahí, junto con lo demás. Ofrecerle agua aparte no lo hidrata mejor; le llena el estómago y le quita espacio a la leche, que es de donde saca lo que sí necesita para crecer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué cambia a los seis meses</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cuando arranca la alimentación complementaria, la cosa cambia. A partir de ahí, <strong>en cada tiempo de comida acompañamos con agua</strong>. No porque la leche deje de alcanzar, sino porque los alimentos nuevos necesitan hidratarse para moverse bien: sin agua, el estreñimiento aparece casi de inmediato.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li>Agua en la comida, no entre comidas para «llenar».</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>En vaso o vaso entrenador, no en biberón.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>La cantidad la marca el niño; se ofrece, no se obliga.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>En el mes seis la leche sigue siendo el pilar. El agua acompaña la comida; no la reemplaza.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora: consejos para comenzar la alimentación complementaria"/><figcaption class="wp-element-caption">De la serie que la doctora publica en sus redes sobre el inicio de la complementaria.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que suele confundir</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Que haga calor no cambia la regla antes de los seis meses: lo que se hace es <strong>ofrecer pecho más seguido</strong>, no agua. Y si en algún momento te preocupa que tu bebé esté deshidratado —pocos pañales mojados, boca seca, decaimiento—, eso no se resuelve con agua en casa: se consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">En resumen</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>0 a 6 meses:</strong> solo leche. Ni agua, ni infusiones.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Desde los 6 meses:</strong> agua en cada tiempo de alimentación complementaria.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Siempre:</strong> la leche materna sigue siendo el pilar durante el primer año.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar la alimentación de tu peque.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":5,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/curso-lonchera.jpg" alt="Comida saludable servida en porciones" width="800" height="533" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo y repeticiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-crecimiento.jpg" alt="Niña pequeña de pie, sonriendo" width="800" height="1198" loading="lazy" style="object-position:50% 30%">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué mide, y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/blog-salud.jpg" alt="Mamá sosteniendo a su bebé en brazos" width="800" height="534" loading="lazy" style="object-position:50% 40%">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sonarse antes, cabeza abajo y boca abierta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Quieres revisarlo en su caso?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En consulta miramos las curvas de tu peque, lo que come en un día real y armamos un plan que se pueda sostener.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'cuidado-con-los-mosquitos',
+		'antes'     => 'b57510247cb368232d171385db5389e5',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué transmiten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No es un solo virus, son varios, y todos circulan por aquí:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Dengue</strong></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Zika</strong></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Chikungunya</strong></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Fiebre amarilla</strong></li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><strong>Todas son peligrosas, sobre todo en niños.</strong> Los más pequeños se deshidratan más rápido, avisan peor lo que sienten y pasan de «está decaidito» a un cuadro serio en menos tiempo del que uno cree.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La regla que más insisto</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Consulta de inmediato y no te automediques.</strong> Esto es especialmente importante aquí: hay analgésicos de uso común que en dengue están desaconsejados porque aumentan el riesgo de sangrado. Dar «algo para la fiebre» mientras se espera puede complicar justo el cuadro que se quería aliviar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Si tu peque tiene fiebre en temporada de mosquitos, el orden correcto es: consulta primero, medicamento después, y el medicamento que indique quien lo examinó.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Consulta de inmediato. ¡No te automediques!</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Señales para no esperar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Acude sin demora si aparece dolor abdominal intenso, vómito persistente, sangrado de encías o nariz, decaimiento marcado, o si el niño se ve peor justo cuando la fiebre cede. Ese último detalle engaña a muchas familias y es de los que más importa conocer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y lo de siempre, que es aburrido y funciona: eliminar el agua estancada en materas, baldes y tanques; toldillo en los más pequeños; ropa clara y manga larga en las horas de mayor actividad del mosquito.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques"/><figcaption class="wp-element-caption">Su propia pieza sobre el tema: ante la fiebre, consulta; no automediques.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":4,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Inhalocámara siempre, sello correcto y diez segundos contados.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-inhalador-la-tecnica-correcta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El cólico cambió de nombre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ya no se llama cólico, y el cambio no es cosmético.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Bullying: las señales que no te cuenta</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se esconde en el silencio, pero deja rastros que sí se ven.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/bullying-las-senales-que-no-te-cuenta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Tu peque tiene fiebre?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En temporada de mosquitos no se espera a ver qué pasa. Escríbeme y lo atendemos cuanto antes.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'cumplio-el-ano-y-dejo-de-comer',
+		'antes'     => '2df2ca729565a30696562dc7ba761bc1',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>El caso es casi siempre el mismo. Un niño que empezó a comer a los seis meses, que recibía los alimentos perfecto, sin drama. Llega el año y de repente no quiere nada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué cambió</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cambió él. Al año tiene <strong>más independencia y más autonomía</strong>, y pasan tres cosas a la vez:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Descubrió el «no».</strong> Y lo dice perfecto, y le encanta decirlo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Retira la mano.</strong> Ya tiene con qué oponerse, y lo usa.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Camina.</strong> Es feliz caminando, así que sentarse le parece un castigo.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Y en ese orden de ideas, <strong>le llama más la atención el mundo que los alimentos</strong>. No es que haya dejado de comer: es que comer bajó de puesto en su lista de prioridades, justo cuando descubrió que puede moverse por su cuenta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Este pequeño ser de luz ya conoce la palabra «no» y la dice perfecto.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Además, el crecimiento se desaceleró</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Durante el primer año un bebé crece a una velocidad que no volverá a repetir. Después de esa carrera el crecimiento se desacelera —es lo esperado— y el apetito baja con él. Un niño de un año que come menos que a los diez meses está siguiendo su biología, no rompiéndola.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Qué ayuda en esta etapa</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Que la comida tenga un lugar fijo</strong>: su silla, no persiguiéndolo por la casa.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Horarios estables</strong>, sin picar entre comidas.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Menos líquido antes de comer.</strong></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ofrecer sin obligar</strong>, y sin cara de expectativa: los niños leen la tensión al instante.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Y vigilar lo que sí importa: que el peso y la talla sigan su curva. Ahí está la respuesta de verdad, no en cuánto quedó en el plato hoy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora con consejos para lidiar con la selectividad alimentaria"/><figcaption class="wp-element-caption">De mi serie sobre selectividad alimentaria.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo y repeticiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo primero de la complementaria no es la comida.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Qué leche después del destete?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Depende de cómo esté comiendo el resto del día.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/que-leche-le-doy-despues-del-destete/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Cómo van sus curvas?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Es la pregunta que de verdad contesta si hay un problema. Agenda y lo miramos con datos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'derivados-lacteos-cuanto-y-desde-cuando',
+		'antes'     => '8483f42a161d37add61ecbceec86b76f',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Los derivados lácteos pueden usarse <strong>a partir de los 6 meses</strong> en los niños que no tienen alergia a la proteína de la leche de vaca. La pregunta real no es si se pueden, sino cuánto.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Las cantidades, por edad</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>De 6 a 8 meses:</strong> máximo 15 gramos, que equivalen a una cuchara medidora.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>De 9 meses al año:</strong> una cucharada colmada, unos 20 gramos.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>A partir del año:</strong> dos cucharadas, unos 30 gramos.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Parece poco, y esa es justamente la idea. A esta edad el derivado lácteo acompaña; no reemplaza ni la leche ni la comida.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">El número que casi nadie mira: el sodio</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Al elegir el producto, revisa que <strong>no supere los 75 miligramos de sodio por cucharada</strong>. Es un criterio concreto y fácil de aplicar en el supermercado, y descarta de una buena parte de los quesos que se venden como infantiles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Recuerda estas recomendaciones para escoger un buen procesado para tu hijo.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Y una advertencia sobre el yogur griego</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Opinión impopular en pediatría, pero la sostengo: <strong>yogur griego en el menor de dos años, no</strong>. Al ser un concentrado de proteína, es muy fácil superar los requerimientos con cantidades pequeñas, y el exceso de proteína a esta edad se relaciona con síndrome metabólico en la adultez. No es un alimento malo; es un alimento para más adelante.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Para el resto, la regla de siempre: <a href="/blog/leer-los-ingredientes-no-solo-la-tabla/">lee la lista de ingredientes</a>, no solo el frente del empaque.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre cómo elegir un buen procesado"/><figcaption class="wp-element-caption">De mi serie sobre cómo mirar un procesado antes de comprarlo.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos tazas de ocho onzas, y por qué no más.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/despues-de-los-dos-anos-que-leche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta y solo aparece en un laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Frutos secos y uvas: cómo sí</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Duros y redondos son los dos riesgos de atragantamiento.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/frutos-secos-y-uvas-como-si/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Cuánto le corresponde al tuyo?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Las cantidades cambian con la edad y con lo que ya está comiendo. En consulta lo ajustamos a su caso.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'despues-de-los-dos-anos-que-leche',
+		'antes'     => 'c09caa6be41316af299c5e0f2d090b6b',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Una ingesta inadecuada de nutrientes se relaciona directamente con un <strong>pobre crecimiento y desarrollo</strong>. Por eso, si a partir de los dos años ya hiciste el destete, tu peque debe seguir consumiendo <strong>leche de crecimiento o leche adaptada para niños</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">¿Por qué no leche de vaca y ya?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Porque las leches adaptadas para niños <strong>todavía traen nutrientes críticos</strong> que a esta edad siguen haciendo falta para el desarrollo. Es el mismo razonamiento de <a href="/blog/que-leche-le-doy-despues-del-destete/">qué leche dar después del destete</a>: la decisión depende de qué tan completo está el plato del resto del día.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La cantidad: dos tazas, y no más</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Dos tazas al día, de ocho onzas cada una.</strong> Ni una más. Y ojo con esto, que es donde se cae mucha gente: <strong>si además está tomando otros derivados lácteos, hay que ajustar esas cantidades</strong>, no sumarlas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Un niño que toma leche todo el día llega sin hambre a la mesa, y la leche termina desplazando a la comida en vez de acompañarla. Ahí empieza, muchas veces, la anemia por falta de hierro.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Estas leches adaptadas todavía tienen nutrientes críticos necesarios para el correcto desarrollo de tu bebé.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">En resumen</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Sigue habiendo leche</strong> después del destete, y eso está bien.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Dos tazas de ocho onzas</strong>, repartidas en el día.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Descuenta</strong> lo que aporten yogur y queso.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>La comida manda</strong>; la leche acompaña.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta"/><figcaption class="wp-element-caption">Dos tazas de ocho onzas al día. Más que eso desplaza la comida.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una cuchara a los seis meses, dos al año. Y el sodio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta y solo aparece en un laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Obligar, gritar en la arcada y quedarse en las papillas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Toma demasiada leche?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Es más común de lo que parece y tiene arreglo. Agenda y revisamos cómo está repartido su día.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'diez-veces-antes-de-decir-no-le-gusta',
+		'antes'     => 'a73801d172f58497cdbc7a46921c3c48',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Es de las preguntas que más me hacen: <strong>¿cuántas veces tengo que ofrecerle un alimento antes de aceptar que no le gusta?</strong> Y la respuesta tiene dos partes, porque sí hay un número, pero el número solo no sirve.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El número es <strong>mínimo diez veces</strong>. Un alimento nuevo se ofrece al menos diez veces antes de sacar conclusiones. Lo que casi nadie cuenta es la segunda parte: esas diez veces <em>no</em> van seguidas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Diez veces, pero con pausas</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si tu peque rechaza el brócoli hoy, martes y miércoles, no hace falta insistir el jueves. Te detienes, sigues con los otros alimentos y <strong>dos o tres semanas después vuelves a ofrecer el mismo</strong>. Esa pausa es parte del método, no un fracaso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y ojo con el otro error: haber completado las diez veces no significa que el tema quedó cerrado para siempre. Un alimento que a los ocho meses no pasaba, al año puede entrar sin problema.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Por qué hay que darle ese tiempo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Porque la papila gustativa aprende. Esa parte de la lengua necesita oportunidades repetidas para reconocer un sabor nuevo y dejar de tratarlo como una amenaza. No es capricho: es fisiología.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Yo tengo que darle el chance a la papila gustativa. Tengo que darle la oportunidad de que, poco a poco, aprenda.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Y por qué lo dulce entra tan fácil</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Aquí está la parte que tranquiliza a muchas mamás. Venimos <strong>genéticamente predispuestos a aceptar los sabores dulces con facilidad</strong>. Tu bebé lleva meses tomando leche materna, cuyo principal azúcar es la lactosa, y la lactosa sabe dulce.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por eso los cereales, los tubérculos y las frutas los reciben casi sin pelear, y la verdura verde cuesta el doble. No es que tu hijo sea difícil: es que le estás ofreciendo algo que su lengua no tenía en el repertorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="descarga">
+      <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+      <div>
+        <strong>Un regalo: mis recomendaciones nutricionales</strong>
+        <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+        <div class="descarga__pie">
+          <a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
+            Descargar la guía
+          </a>
+          <small>PDF · 9 páginas · gratis</small>
+        </div>
+      </div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo que yo haría esta semana</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Lleva la cuenta sin obsesionarte.</strong> Diez exposiciones, repartidas en el tiempo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ofrece, no obligues.</strong> Tú decides qué se sirve; él decide cuánto come.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Que lo vea, lo toque y lo huela</strong>, aunque no se lo lleve a la boca. Eso también cuenta.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Vuelve semanas después</strong>, sin anunciarlo y sin cara de expectativa.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora con recomendaciones para mejorar la conducta de un niño selectivo"/><figcaption class="wp-element-caption">De la serie que publico sobre conducta alimentaria.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":5,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo primero de la complementaria no es la comida, es dónde se sienta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Idealmente antes de salir de la clínica.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Y si de verdad no come?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hay casos en que la selectividad pasa de etapa a problema. En consulta lo miramos con calma y armamos un plan que se pueda sostener.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'dolor-de-oido-a-medianoche',
+		'antes'     => 'e6a9ee90482760eb3407196774ebbf22',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Los entiendo a todos. Son las dos de la mañana, el niño llora, y uno haría cualquier cosa. Empecemos justamente por lo que no hay que hacer.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que no debemos hacer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Aplicar gotas sin haber visto el oído.</strong> Si hay una perforación del tímpano, esas gotas entran donde no deben. Sin mirar el oído, nadie puede saberlo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Orégano caliente.</strong> No.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ungüentos mentolados.</strong> Tampoco.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Leche materna en el oído.</strong> Mucho menos.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Resumo la regla, que es más fácil de recordar: <strong>no metan nada en los oídos.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que sí ayuda esta noche</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos cosas, y son suficientes para llegar a la mañana:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>El analgésico que ya le manejas</strong>, en la dosis que te indicaron en su último control. No es momento de estrenar medicamentos ni de cambiar dosis por cuenta propia.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Calor local.</strong> Este es el tip que casi nadie usa y que de verdad cambia la noche: una toallita o una compresa tibia sobre la oreja, unos <strong>diez minutos</strong>. Alivia lo suficiente para que pueda dormir.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>No te automediques: consulta mejor a tu pediatra y a tu otorrino.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Y a primera hora</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Consulta. El calor y el analgésico son un puente hasta la consulta, no un tratamiento. El oído hay que mirarlo por dentro para saber qué está pasando, y eso no se resuelve por teléfono.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído"/><figcaption class="wp-element-caption">Casi siempre aparece de noche, y casi nunca hay cómo mirar el oído en casa.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":5,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lactancia y caries</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Protege, pero no basta: la higiene empieza con el primer diente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/lactancia-y-caries-protege-pero-no-basta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/doctora-corazon.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Agotamiento materno: cinco señales</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La última es la más grave, y casi nadie la nombra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/agotamiento-materno-cinco-senales/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta y solo aparece en un laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Otra noche así?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si el dolor de oído se repite, hay que estudiarlo. Agenda a primera hora y lo revisamos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'el-agarre-tres-senales-de-que-va-bien',
+		'antes'     => '639b109dec68f81f235812fb2d0a4a3c',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Si la lactancia duele, algo hay que ajustar. No es normal apretar los dientes cada vez que el bebé se prende, y casi siempre la explicación está en cómo se está prendiendo. Estas son las tres señales que reviso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">1. Tu mano en forma de C</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cuatro dedos por debajo y el pulgar por encima, formando una C. Así sostienes el pecho de manera eficiente y le ofreces al bebé una superficie que puede tomar. La mano en tijera —dos dedos a los lados— estorba más de lo que ayuda.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">2. Dos centímetros de areola</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El bebé no mama del pezón: mama del pecho. Su boca debe abarcar <strong>alrededor de dos centímetros de la areola</strong>, esa parte más oscura. Si solo tiene el pezón entre los labios, va a sacar poca leche y te va a lastimar. Las dos cosas a la vez.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">3. El labio inferior hacia afuera</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mírale la boca de perfil: <strong>el labio de abajo debe estar evertido, volteado hacia afuera</strong>, y verse húmedo. Si está metido hacia adentro, el agarre está incompleto; se puede corregir bajando suavemente el labio con el dedo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Tres tips para verificar un agarre perfecto: la mano en C, dos centímetros de areola y el labio inferior hacia afuera.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Si ya hay grietas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Corregir el agarre es lo primero, siempre; sin eso, cualquier crema es un parche. Y si el dolor sigue después de ajustar, no lo aguantes en silencio: consulta. Hay causas que necesitan revisión en persona y se resuelven mucho mejor temprano que tarde.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/grietas-lactancia.webp" alt="Pieza de la doctora sobre grietas y lactancia materna"/><figcaption class="wp-element-caption">De mi serie sobre lactancia: las grietas casi siempre hablan del agarre.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Qué leche después del destete?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Depende de cómo esté comiendo el resto del día.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/que-leche-le-doy-despues-del-destete/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Le llama más la atención el mundo que el plato.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cumplio-el-ano-y-dejo-de-comer/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿La lactancia te está doliendo?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No tiene por qué. Agenda y revisamos el agarre contigo y con tu bebé, en persona o por videollamada.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'el-colico-del-lactante-cambio-de-nombre',
+		'antes'     => '5287d946f7811e38062a3fb6d293d5ff',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>El <s>cólico del lactante</s> ahora se llama <strong>síndrome de distress del lactante</strong>. Y no es un cambio cosmético.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Por qué se cambió</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Porque el término «cólico» <strong>limitaba la situación a los intestinos</strong>. Y la irritabilidad de un bebé no siempre se debe a un dolor abdominal ni a gases, aunque durante décadas se haya tratado como si siempre fuera eso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El nombre nuevo reconoce algo distinto: que hay una <strong>inmadurez en el desarrollo del eje intestino-cerebro</strong>. El bebé no tiene todavía la maquinaria para regular lo que siente, y el llanto es la expresión de eso, no necesariamente de una tripa que duele.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué cambia para ti</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Bastante, en realidad. Si el problema no es solo el intestino, entonces la solución tampoco puede ser solo intestinal: no se resuelve probando una gota tras otra ni cambiando de leche cada dos semanas. Buena parte del trabajo es <strong>acompañar la regulación del bebé</strong> — contacto, ritmo, ambiente, previsibilidad — mientras ese sistema madura.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Un nombre más alineado mejora la concientización y el diagnóstico, y permite un enfoque más compasivo con un mejor resultado.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Y algo para las madres y los padres</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La palabra «cólico» también traía una carga: que algo estabas haciendo mal con la comida, con la leche, con la técnica. El nombre nuevo quita esa culpa del centro y pone el foco donde corresponde: <strong>en un bebé que todavía está madurando</strong>, y en unos padres que necesitan acompañamiento, no un regaño.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Si tu bebé llora de forma intensa y repetida, vale la pena consultarlo. Hay causas que conviene descartar, y hay mucho por hacer más allá de esperar a que se le pase.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora: el cólico del lactante ahora se llama síndrome de distress del lactante"/><figcaption class="wp-element-caption">El cambio de nombre, en una de mis publicaciones.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los jugos, el huevo antes del año y el «come poquito».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/tres-mitos-que-oigo-cada-semana/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Inhalocámara siempre, sello correcto y diez segundos contados.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-inhalador-la-tecnica-correcta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dengue, Zika, chikungunya y fiebre amarilla: peligrosas, sobre todo en niños.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Llora mucho y no sabes por qué?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Es de las consultas más frecuentes y de las que más alivio dan. Agenda y lo revisamos juntas.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'el-inhalador-la-tecnica-correcta',
+		'antes'     => '5706f439e61740f8d5f6d6e4ab3e42b9',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Si a tu hijo le mandaron inhaladores, esto es lo primero: <strong>un inhalador nunca se aplica directo a la boca</strong>. Siempre con inhalocámara. Sin ella, buena parte del medicamento se queda en la boca y en la garganta, justo donde no sirve de nada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Cuál inhalocámara</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Menor de 5 años:</strong> inhalocámara <strong>con mascarilla</strong>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Mayor de 5 años:</strong> inhalocámara <strong>con boquilla</strong>.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Paso a paso</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Agita el medicamento</strong> y, la primera vez que lo uses, verifica que tenga contenido.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Conecta</strong> el inhalador a la cámara.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Haz un sello correcto</strong>: la mascarilla debe cubrir nariz y boca, bien apoyada, sin fugas por los lados. Ese sello es la mitad del trabajo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Presiona una vez</strong> y <strong>cuenta diez segundos</strong> — mil uno, mil dos, mil tres… hasta mil diez — con el niño respirando normal dentro de la cámara.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Si le mandaron más de un puff</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No se aplican seguidos. <strong>Retira, agita otra vez, vuelve a conectar, vuelve a hacer el sello y cuenta otros diez segundos.</strong> Un puff a la vez, con su cuenta completa cada uno.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Esta es la forma correcta de administrar el medicamento inhalado para tu bebé.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo que más veo fallar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>El sello.</strong> Si el niño llora y voltea la cara, el medicamento se escapa. Mejor esperar a que esté tranquilo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>La cuenta.</strong> Diez segundos se sienten largos y casi todo el mundo los acorta.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Los dos puffs juntos</strong>, para terminar antes.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>No lavar la cámara</strong> como indica su fabricante: se carga de estática y retiene el medicamento.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Si tienes dudas con la técnica, tráela a la consulta y la practicamos ahí. Es de esas cosas que se aprenden mucho mejor haciéndolas una vez con alguien al lado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla"/><figcaption class="wp-element-caption">El inhalador solo no basta: la inhalocámara es parte del tratamiento.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":5,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dengue, Zika, chikungunya y fiebre amarilla: peligrosas, sobre todo en niños.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El cólico cambió de nombre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ya no se llama cólico, y el cambio no es cosmético.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los jugos, el huevo antes del año y el «come poquito».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/tres-mitos-que-oigo-cada-semana/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Le cuesta respirar seguido?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si los inhaladores se volvieron rutina, hay que mirar el fondo del asunto. Agenda y lo revisamos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'el-ronquido-nunca-es-normal',
+		'antes'     => 'a08684119706cdcc2e868ce440a8240c',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Lo pregunto siempre, y la respuesta suele venir con una explicación incluida: que ronca poquito, que ronca lo normal, que el papá también ronca. Lo que siempre les digo a mis pacientes es lo mismo: <strong>el ronquido nunca es normal y no debemos normalizarlo.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Por qué no es un detalle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Un niño que ronca no está durmiendo bien, aunque pase la noche en su cama sin despertarse. Y eso se paga durante el día, en más frentes de los que uno imagina:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>La calidad del sueño.</strong> Duerme las horas, pero no descansa.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>La concentración</strong> y, con ella, <strong>el rendimiento escolar</strong>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>El crecimiento.</strong> Buena parte de la hormona de crecimiento se libera durante el sueño profundo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Los dientes</strong> y, con el tiempo, <strong>los rasgos de la cara</strong>, porque un niño que respira por la boca durante años desarrolla distinto.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>El ronquido nunca es normal y no debemos normalizarlo.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Que sea frecuente no lo vuelve inofensivo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Es cierto que muchos niños roncan alguna noche, sobre todo con gripa. Lo que me preocupa es el ronquido <strong>habitual</strong>: el de casi todas las noches, con o sin resfriado, a veces con pausas en la respiración, sueño intranquilo o boca abierta al dormir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Qué hacer</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Consultarlo. No hay que esperar a que aparezca otro síntoma ni a que se note en el colegio. Es de esas cosas que se estudian con calma y que, atendidas a tiempo, le cambian el día a día a un niño.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana"/><figcaption class="wp-element-caption">Duerme las horas, pero no descansa. Eso se paga durante el día.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué mide y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sonarse antes, cabeza abajo y boca abierta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/lavado-nasal-si-esta-llorando-no-se-hace/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Se puso morado al llorar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El espasmo del sollozo asusta, pero es benigno.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/se-puso-morado-al-llorar/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Tu peque ronca todas las noches?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vale la pena mirarlo. Agenda y lo evaluamos, y si hace falta te remito con el especialista indicado.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe',
+		'antes'     => '286a2a626fef12a0770765512fa11476',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>El tamizaje auditivo es <strong>la primera prueba que se le hace a un recién nacido para evaluar su audición</strong>. Este tema lo trabajé con un otorrino pediatra, porque es justo donde la pediatría y la otorrinolaringología se dan la mano.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">¿Cuándo se hace?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo ideal es que <strong>tu bebé no salga de la clínica sin esa primera prueba</strong>. Ese es el estándar y vale la pena pedirlo por nombre antes del alta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y si no alcanzó a hacerse, o si la prueba falla —que puede fallar—, <strong>se realiza a partir del primer mes</strong>. Que falle no es una sentencia: a veces es líquido que aún queda en el oído, o simplemente un bebé inquieto durante la prueba.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">¿Para qué sirve?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sirve de orientación: nos dice si hay buena audición en uno o en ambos oídos. Y con eso podemos anticipar <strong>cómo se va a desarrollar tu hijo, no solo en el habla, sino en todo su entorno</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Esa es la parte que quiero que se entienda. Un niño que no oye bien no solo tarda en hablar: le cuesta más entender lo que pasa a su alrededor, y eso toca el juego, el vínculo y más adelante el colegio. Por eso la palabra clave es <em>temprano</em>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>El tamizaje es el primer paso. La primera consulta de tu bebé recién nacido debe ser con el pediatra y con el otorrino.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">¿Se hace una sola vez?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No. Y esto sorprende a muchas familias. Todo depende de cómo salga esa primera prueba: puede hacer falta <strong>una segunda, una tercera, una cuarta o incluso una quinta</strong>. Repetirla no significa que algo ande mal; significa que estamos confirmando bien antes de concluir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo que conviene que sepas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Pídela antes del alta.</strong> Es la oportunidad más fácil de todas.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Guarda el resultado.</strong> Llévalo a la primera consulta, junto con el carné de vacunas.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Un resultado normal no es para siempre.</strong> La audición se sigue vigilando en los controles: puede aparecer una pérdida más adelante.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Si algo te hace ruido</strong> —no se gira hacia los sonidos, no responde a su nombre, no arranca el balbuceo—, consúltalo sin esperar al siguiente control.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre la importancia de detectar a tiempo la pérdida auditiva"/><figcaption class="wp-element-caption">Detectar a tiempo hace la diferencia: una de mis piezas sobre audición en recién nacidos.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo y repeticiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo primero de la complementaria no es la comida.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Tu bebé ya tuvo su primera consulta?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El control del recién nacido revisa mucho más que el peso. Agenda y lo miramos completo, incluida la audición.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'frutos-secos-y-uvas-como-si',
+		'antes'     => '60e15192eb5fa476a472f18589486a56',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Dos características vuelven riesgoso un alimento para un bebé que apenas empieza: que sea <strong>duro</strong> y que sea <strong>redondo</strong>. Todo lo demás se deriva de ahí.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Los duros: frutos secos y leguminosas</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Almendras, pistachos, maní. Al ser duros pueden impactarse y <strong>obstruir la vía aérea</strong>. Un niño pequeño no tiene todavía la molienda ni el control para manejarlos enteros, por buenos que sean nutricionalmente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>La forma segura es siempre en mantequilla.</strong> Untada fina, mezclada en la papilla o extendida en un trozo de fruta. Así conserva lo que aporta y pierde lo que lo hace peligroso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Los redondos: uvas y arándanos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pequeños, redondos y deslizables: tienen justo el tamaño y la forma del calibre de la vía aérea de un niño. Por eso <strong>se fraccionan o se aplastan</strong>. Una uva se parte a lo largo, en cuartos, no en rodajas; los arándanos se aplastan un poco antes de ofrecerlos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Recuerda siempre las normas de seguridad al iniciar la alimentación complementaria de tu bebé.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo que va con todo esto</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Que coma sentado</strong>, en su silla, con los pies apoyados. Nunca acostado ni caminando.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Que haya un adulto presente</strong>, mirando, todo el tiempo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Sin distractores.</strong> Un niño riéndose con la pantalla no está pendiente de lo que traga.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Arcada no es atragantamiento.</strong> La arcada hace ruido y es un reflejo que protege; el atragantamiento real es silencioso.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/diez-alimentos.webp" alt="Pieza de la doctora con los diez alimentos ideales para la alimentación complementaria"/><figcaption class="wp-element-caption">De mi serie sobre qué ofrecer al empezar la complementaria.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Obligar, gritar en la arcada y quedarse en las papillas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una cuchara a los seis meses, dos al año. Y el sodio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta y solo aparece en un laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Vas a empezar la complementaria?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En consulta revisamos las normas de seguridad una por una, con el caso de tu peque delante.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'la-malnutricion-que-no-se-ve',
+		'antes'     => '346a82c0f08430de099a59f8f5ec12e9',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Existe un tipo de malnutrición que se llama <strong>hambre oculta</strong>, y su nombre lo explica: el niño come, no se ve desnutrido, y aun así le falta algo. <strong>La única forma de diagnosticarla es a través de exámenes de laboratorio.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La más frecuente: la anemia</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La deficiencia de hierro encabeza la lista, seguida de otras como la de <strong>vitamina D</strong>. Son deficiencias que no se anuncian: no hay un síntoma claro que le diga a una mamá «llévalo al laboratorio».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por eso <strong>a partir del año de edad corresponde hacer el tamizaje de malnutrición</strong>. No porque se sospeche algo, sino porque es la única manera de verlo a tiempo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">De dónde sale</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Muchas veces, de las <strong>dietas restrictivas</strong>. Un adulto adopta una recomendación sin respaldo científico, le funciona —o cree que le funciona— y extrapola esa misma dieta a su hijo. El resultado son deficiencias nutricionales en un niño que está creciendo, que es justo cuando menos margen hay.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Y no pasa solo con los niños: por ahí anda mucha gente anémica, con desórdenes menstruales y con cansancio crónico, por deficiencias que nadie revisó.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Cada grupo de alimentos aporta no solo energía, sino nutrientes necesarios para el desarrollo, tanto de niños como de adultos.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La prevención es aburrida y funciona</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Un representante de cada grupo de alimentos en cada tiempo de comida.</strong> Eso es todo. No hay superalimentos ni atajos; hay variedad y porciones adecuadas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Por eso en consulta no hablamos solo de «comer bien»: hablamos de <strong>tazas y cucharas</strong>, porque las porciones son la mitad de la historia y son lo que casi nunca se explica.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora: «si come poquito, no crecerá bien»"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades en nutrición.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/lonchera-estrellas.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una cuchara a los seis meses, dos al año. Y el sodio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/relacion-alimentos.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Obligar, gritar en la arcada y quedarse en las papillas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos tazas de ocho onzas, y por qué no más.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/despues-de-los-dos-anos-que-leche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Ya le hicieron su tamizaje?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Desde el año corresponde. Agenda y revisamos qué exámenes le tocan según su edad y su alimentación.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'la-silla-de-comer-los-tres-angulos-de-90',
+		'antes'     => 'eb9651058f120b350866edd51143007e',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Cuando hablamos de buenas prácticas para empezar la complementaria, casi todo el mundo pregunta por el menú. Yo empiezo por otro lado: <strong>por la silla</strong>. Un bebé mal sentado come mal, se cansa antes y tiene más riesgo de atragantarse.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>¿Y cuál es la silla adecuada? La que permite formar <strong>tres ángulos de 90 grados</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Los tres ángulos</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>El primero, de la espalda a la cadera.</strong> El tronco erguido, no reclinado hacia atrás. Si el bebé va medio acostado, está tragando en una postura que no es la de comer.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>El segundo, en las rodillas.</strong> La silla debe ser lo bastante corta como para que las piernas doblen por el borde del asiento, no que queden estiradas al aire.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>El tercero, en los pies.</strong> Este es el que casi nadie mira: la planta de los pies tiene que <strong>apoyarse en un descansapiés</strong>.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Por qué importan tanto los pies</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Porque comer es un trabajo de todo el cuerpo. Un niño con los pies colgando no tiene dónde hacer fuerza, y la energía que debería usar para masticar y manejar el bocado se le va en sostenerse. Es la diferencia entre comer sentado a la mesa y comer en un taburete alto con las piernas balanceándose.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Nuestros hijos deben apoyar la planta de sus pies en un descansapiés.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué mirar el día que vayas a comprarla</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No hace falta la silla más cara. Hace falta que cumpla, y eso se revisa ahí mismo en la tienda:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Espaldar reclinable</strong>, para acomodarlo según la edad del bebé.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Bandeja a buena distancia</strong>, de modo que pueda mover los brazos con libertad. Si la bandeja le queda encima del pecho, no va a poder llevarse nada a la boca.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Asiento corto</strong>, para que las rodillas doblen por el borde.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Descansapiés regulable</strong>, que alcance la planta del pie hoy y siga alcanzándola cuando crezca.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Un detalle que ahorra discusiones</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La silla también marca dónde ocurre la comida. Si el sitio de comer es siempre el mismo, tu peque entiende sin que se lo expliquen que ese momento tiene un lugar y un rato. Comer persiguiéndolo por la casa enseña justo lo contrario.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre los errores frecuentes al iniciar la alimentación complementaria"/><figcaption class="wp-element-caption">Los tropiezos más comunes de las primeras semanas, en una de mis piezas sobre el inicio de la complementaria.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo y repeticiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué mide y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Vas a empezar la complementaria?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En consulta revisamos si tu peque ya está listo, cómo van sus curvas y armamos el arranque paso a paso.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'lactancia-y-caries-protege-pero-no-basta',
+		'antes'     => 'f64daa13c1b3166c04ff3f0ae451ca7c',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Este tema lo trabajé con una odontopediatra, porque es de los que se resuelven mejor entre las dos especialidades.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que sí protege</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La leche materna trae factores protectores reales: <strong>inmunoglobulinas</strong>, <strong>lactoferrina</strong> —que dificulta el crecimiento bacteriano— y minerales que fortalecen el diente, como el <strong>calcio</strong> y el <strong>fósforo</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Todo eso es cierto. Y aun así, no alcanza.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que hace falta además</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Una dieta anticariogénica</strong>, es decir, libre de azúcares añadidos — y esto vale <strong>tanto para el bebé como para la madre</strong>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Higiene oral desde que aparece el primer diente en boca.</strong> No cuando tenga varios, no cuando sepa escupir: desde el primero.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Controles periódicos con odontopediatría</strong>, igual que con el pediatra.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>No es suficiente la lactancia humana sin una buena higiene oral.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo que suele sorprender</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Que la dieta de la mamá también cuenta, y que la higiene empieza mucho antes de lo que casi todos creen. Un diente recién salido ya se limpia — con una gasa o un cepillo de dedo, suave, después de la última toma del día.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La caries de la infancia temprana es frecuente y prevenible. Ese es el punto: se previene, y se previene desde el primer diente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/horarios-amamantar.webp" alt="Pieza de la doctora sobre horarios y tiempos para amamantar"/><figcaption class="wp-element-caption">De mi serie sobre lactancia.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":4,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos tazas de ocho onzas, y por qué no más.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/despues-de-los-dos-anos-que-leche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-cantidad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta y solo aparece en un laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Dolor de oído a medianoche</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nada de gotas, orégano ni leche materna. Lo que sí ayuda.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/dolor-de-oido-a-medianoche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Ya salió el primer diente?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Buen momento para revisar la higiene y coordinar la primera visita con odontopediatría. Agenda y lo vemos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'lavado-nasal-si-esta-llorando-no-se-hace',
+		'antes'     => 'f2371c3b922295fd28c6e9caac3c4a88',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Empecemos por lo más importante, porque cambia todo lo demás: <strong>el objetivo del lavado no es destapar la nariz de un empujón</strong>. Es bajar el moco y diluirlo para que salga como debe salir. Si uno intenta arrastrar moco muy adherente a presión, lo que hace es mandarlo hacia el oído, y ahí sí aparece la complicación.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Antes del lavado: que se suene</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El paso que casi todos se saltan. Antes de aplicar nada, <strong>pídele que se suene fuerte</strong>. Y que lo haga bien: sonarse de verdad, no un soplido de compromiso. Esto solo ya saca buena parte de la mucosidad y deja el camino libre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La posición</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Siempre <strong>con la cabeza inclinada mirando hacia abajo</strong>. Nunca hacia atrás. Y le pedimos algo que parece un juego pero es clave: <strong>que abra la boca y diga «aaaah»</strong>. Ese sonido mantiene abierta la vía y evita que la presión se vaya hacia el oído.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La presión</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Con dos deditos, no con el puño. La idea es acompañar, no empujar: si se aprieta con toda la mano se manda mucha más presión de la necesaria. Y se hace por tiempos, contando —uno, dos, tres, cuatro—, con descanso entre un lado y el otro.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A los niños les funciona convertirlo en un juego: contar, decir el abecedario o cantar algo corto mientras dura. No es un truco simpático, es lo que hace que colaboren la próxima vez.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>El objetivo del lavado no es destapar con el moco, sino bajarlo, diluirlo para que salga adecuadamente.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La regla que no se negocia</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Si el niño está llorando, no se hace el lavado.</strong> Un niño que llora tiene la vía en la peor posición posible para esto, y ahí sí se complica el oído. Mejor esperar, calmarlo y volver a intentarlo con él tranquilo, aunque signifique dejarlo para más tarde.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">«Es que es una tortura»</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo escucho en todas las consultas, y un otorrino con el que trabajo el tema responde lo mismo que yo: <strong>casi siempre no es el lavado, es el dispositivo</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hay sprays tipo puff, aerosoles y botellitas, y cada uno se comporta distinto según la edad y el caso. La popular jeringa con suero fisiológico es la que menos recomienda, por varias razones — entre ellas, que es la más difícil de dosificar y la que más presión descontrolada mete.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cuál usar depende de lo que te indique tu médico. Pero la conclusión importa: <strong>bien hechos y con el dispositivo correcto, los lavados no son una tortura</strong>, y sí son útiles para los procesos virales, para los niños alérgicos y para prevenir infecciones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Y para terminar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Después del lavado, que tosa. La tos ayuda a subir la mucosidad que quedó abajo y termina de sacarla. Y que se suene otra vez. Sonarse se aprende, y vale la pena enseñarlo temprano: le va a servir toda la infancia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sobre qué solución usar, eso lo conversamos en consulta según la edad y el caso: no todas son iguales ni sirven para lo mismo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas"/><figcaption class="wp-element-caption">El objetivo no es destapar de un empujón: es bajar el moco y diluirlo.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Si le sangra la nariz, esto no</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos dedos, tres minutos y se detiene.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/si-le-sangra-la-nariz-esto-no/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué mide y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El ronquido nunca es normal</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sueño, concentración, crecimiento y hasta los dientes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-ronquido-nunca-es-normal/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Otra vez con mocos?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si tu peque vive congestionado, vale la pena mirar por qué. Agenda y lo revisamos completo.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'leer-los-ingredientes-no-solo-la-tabla',
+		'antes'     => 'ebf0cdafb7d89e573ffd54b66dcb6557',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Casi todo el mundo mira la tabla nutricional. Yo miro primero <strong>la lista de ingredientes</strong>, porque ahí está lo que la publicidad no dice.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">La regla más simple que conozco</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Un buen procesado tiene pocos ingredientes.</strong> Lo ideal es que tenga uno solo: el alimento que anuncia. Si una compota de pera dice «pulpa de pera» y nada más, esa compota sirve. Si la lista sigue y sigue, desconfía.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">El azúcar se disfraza</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Este es el truco que más veo. Un producto promociona en la etiqueta que está enriquecido con vitamina D y vitamina C, y cuando uno baja a los ingredientes encuentra <strong>azúcar en tercer lugar</strong>. O peor: no dice «azúcar», dice «edulcorante» y más abajo «sacarosa», que es azúcar con otro nombre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Los nombres cambian, la molécula no. Si aparece en la lista, cuenta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Un caso concreto: la miel</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hay cereales infantiles que dicen «desde los 6 meses» y traen miel entre sus ingredientes. <strong>La miel no se ofrece antes de los 2 años.</strong> No es un capricho nutricional: tiene que ver con el riesgo de botulismo en los más pequeños. Ese producto, con esa recomendación de edad en el frente, no debería estar en el carrito.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El mismo cereal de la misma marca, pero de arroz solo, sí sirve: su único ingrediente es arroz y viene fortificado con hierro y otras vitaminas, que es justo lo que buscamos a esa edad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Un buen procesado no debe tener malas características. Lo ideal es que tenga un solo ingrediente: el alimento que está en su etiqueta.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Tu lista de revisión en el supermercado</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Da la vuelta al empaque</strong> antes de mirar el frente.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Cuenta los ingredientes.</strong> Mientras menos, mejor.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Busca el azúcar con todos sus apellidos:</strong> sacarosa, jarabe, miel, concentrado de jugo.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Desconfía de la edad impresa en el frente</strong> si los ingredientes no la respaldan.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Un producto fortificado con hierro</strong> es buena noticia a partir de los 6 meses.</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mitos-lonchera.webp" alt="Pieza de la doctora sobre los mitos de una lonchera saludable"/><figcaption class="wp-element-caption">De mi serie sobre lo que entra —y lo que no— en la lonchera.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/consejos-comenzar.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo y repeticiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/cinco-errores.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lo primero de la complementaria no es la comida.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Quieres revisar lo que hay en tu despensa?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En la valoración nutricional miramos qué come tu peque en un día real, incluidos los procesados, y armamos el plan desde ahí.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'que-leche-le-doy-despues-del-destete',
+		'antes'     => '5c1c9844821e7b57b8883a8300367944',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>«Doctora, ya desteté a mi bebé, ¿qué leche le voy a dar?». La respuesta depende de una sola cosa: <strong>cómo está comiendo el resto del día</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Si come completo, leche de vaca</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Si tu bebé no tiene dificultades con la alimentación —es decir, si come de forma <strong>completa, variada, adecuada y equilibrada</strong>, se come sus frutas y se come sus verduras—, puedes usar leche de vaca, en las cantidades recomendadas para su edad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ese niño ya está sacando de la comida el hierro, el zinc y las vitaminas que necesita. La leche cumple su papel y no tiene que hacer de suplemento.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Si es quisquilloso, leche adaptada</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Pero si tu bebé es de los <strong>piquis</strong>: no se come todas las frutas, no se come las verduras todo el tiempo, y a ratos también le cuesta con las proteínas. En ese caso mi recomendación siempre es <strong>leche adaptada para niños</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La razón es concreta: un procesado de buena calidad viene enriquecido con <strong>nutrientes críticos —hierro, vitamina D, zinc y vitamina A—</strong>, que son exactamente los que ese niño no está sacando del plato. No es un lujo; es cubrir lo que falta mientras la alimentación se ordena.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Todos esos nutrientes son necesarios para el óptimo crecimiento y desarrollo de tu hijo.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">La pregunta que hay que hacerse primero</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Fíjate que la decisión no empieza por la leche, sino por el plato. Antes de elegir, vale la pena mirar con honestidad qué come tu peque en una semana normal. Eso es justo lo que revisamos en la valoración nutricional, y de ahí sale la respuesta para tu caso, no la respuesta general de internet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-lactancia.webp" alt="Pieza de la doctora sobre mitos y realidades de la lactancia materna"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades sobre lactancia.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":5,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/grietas-lactancia.webp" alt="Pieza de la doctora sobre lactancia" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El agarre: tres señales de que va bien</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La lactancia no tiene por qué doler.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-agarre-tres-senales-de-que-va-bien/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Le llama más la atención el mundo que el plato.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cumplio-el-ano-y-dejo-de-comer/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/picky-eater.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo y repeticiones.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Cuál le corresponde al tuyo?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En consulta miramos cómo viene comiendo, cómo van sus curvas y decidimos con datos, no con suposiciones.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'se-puso-morado-al-llorar',
+		'antes'     => '856706259e576bc04fa0d1b996d202ac',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:paragraph -->
+<p>Si ya lo viste, sabes el susto del que hablo. Se llama <strong>espasmo del sollozo</strong> y es una condición <strong>benigna</strong>, frecuente en niños menores de cinco años.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué pasa exactamente</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Después de un llanto muy fuerte, el niño no permite la entrada de aire. Al no oxigenarse bien durante unos segundos, se pone <strong>moradito</strong> —o, en otra variante, <strong>muy pálido</strong>—. Es involuntario: no lo está haciendo a propósito ni es una pataleta llevada al extremo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Qué hacer en el momento</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>Mantener la calma</strong>, aunque cueste trabajo. Es lo más difícil y lo más importante.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Seguir hablándole con tranquilidad</strong>, con tu voz de siempre.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Colocarlo de medio lado.</strong></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Ventilarlo</strong>, soplándole suavemente en la carita.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Después de aproximadamente un minuto suelen recuperarse del todo. Es normal que queden muy cansaditos y se duerman enseguida: el episodio agota.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Recuerda que no causa daño a largo plazo, por ser una condición benigna.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lo que conviene saber</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No deja secuelas y se supera con la edad. Dicho eso, <strong>el primer episodio siempre se consulta</strong>: hay que confirmar que efectivamente se trata de esto y descartar otras causas. Y si los episodios se vuelven muy frecuentes, también vale la pena revisarlo — a veces hay factores de fondo, como una anemia, que conviene mirar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora"/><figcaption class="wp-element-caption">Se corta un momento y vuelve. Por eso asusta tanto, y por eso es benigno.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":1,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El ronquido nunca es normal</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sueño, concentración, crecimiento y hasta los dientes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-ronquido-nunca-es-normal/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Si le sangra la nariz, esto no</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos dedos, tres minutos y se detiene.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/si-le-sangra-la-nariz-esto-no/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/selectividad.webp" alt="Pieza de la doctora sobre nutrición" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Le llama más la atención el mundo que el plato.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cumplio-el-ano-y-dejo-de-comer/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Le pasó por primera vez?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El primer episodio se revisa siempre. Agenda y lo confirmamos con tranquilidad.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'si-le-sangra-la-nariz-esto-no',
+		'antes'     => 'fca90a3ef9a56a213a7c7a6470e4c2bc',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que no debemos hacer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Inclinar la cara hacia atrás.</strong> Es el reflejo de todos y es el error clásico. Al echar la cabeza atrás el niño traga sangre, eso le provoca vómito, más incomodidad, y lo que era un susto se convierte en una escena aparatosa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Meter papel o servilletas.</strong> Los tornillitos de papel son papeles capilares: absorben, sí, pero mantienen el vaso abierto. Cuando se retiran, vuelve a sangrar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Lo que sí</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<!-- wp:list-item -->
+<li><strong>No entrar en pánico.</strong> Tu calma hace la mitad del trabajo, porque un niño asustado se mueve y llora, y eso empeora el sangrado.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Inclínalo ligeramente hacia adelante.</strong> Así la sangre sale y no se traga.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><strong>Aprieta las fosas nasales con dos dedos.</strong> Con fuerza, en la parte blanda —ni muy arriba sobre el hueso, ni en la punta—, durante <strong>tres a cuatro minutos seguidos</strong>.</li>
+<!-- /wp:list-item -->
+</ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Y aquí va la parte difícil: <strong>tres minutos sin soltar</strong>. La tentación de aflojar para ver si ya paró es enorme, y cada vez que uno suelta, el reloj vuelve a cero. Cronométralos.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Los sangrados nasales son muy frecuentes en la infancia y la mayoría son de origen benigno.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Cuándo consultar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Que sean frecuentes y benignos no significa que no se miren. Consulta si se repiten seguido, si duran más de lo que deberían a pesar de la presión, si aparecen junto con moretones fáciles, o si simplemente te preocupan. Atenderlos a tiempo es parte del control, no una exageración.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos"/><figcaption class="wp-element-caption">Presión en la parte blanda y el reloj a la vista: tres minutos sin soltar.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":4,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sonarse antes, cabeza abajo y boca abierta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/lavado-nasal-si-esta-llorando-no-se-hace/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/audicion-detectar.webp" alt="Pieza de la doctora sobre crecimiento" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Qué mide y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El ronquido nunca es normal</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sueño, concentración, crecimiento y hasta los dientes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-ronquido-nunca-es-normal/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Se repiten mucho?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los sangrados que vuelven una y otra vez merecen una mirada con calma. Agenda y los revisamos.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+	array(
+		'tipo'      => 'post',
+		'nombre'    => 'tres-mitos-que-oigo-cada-semana',
+		'antes'     => '55a024994c56a37ede7e9ab9e32d8295',
+		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
+<div class="wp-block-group seccion seccion--crema seccion--lectura">
+<!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
+<div class="wp-block-group prosa">
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Mito 1: «Tiene que tomar jugos de fruta para obtener vitaminas»</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Realidad:</strong> las frutas enteras son una mejor opción. Al exprimir se pierde la fibra, y lo que queda puede aportar <strong>excesos de azúcar</strong> con muy poca saciedad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Esto es lo que suele pasar en la práctica: el niño toma un vaso de jugo, llega sin hambre a la comida y además no recibió la fibra que la fruta traía. Si puede masticarla, que la mastique. Y si aún no, la fruta aplastada sigue siendo mejor que el jugo colado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Mito 2: «Es malo darle huevo antes del año»</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Realidad:</strong> es al revés. <strong>Introducir alimentos potencialmente alergénicos entre los 6 y los 12 meses puede reducir el riesgo de alergias.</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Durante años se recomendó retrasar el huevo, el pescado y los frutos secos, y hoy sabemos que esa demora no protegía: en muchos casos hacía lo contrario. La ventana entre los seis meses y el año es una oportunidad, no un riesgo — ofreciéndolos bien preparados y de a uno por vez, para poder identificar cualquier reacción.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Mito 3: «Si come poquito, no crecerá bien»</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Realidad:</strong> no solo importa la cantidad, sino la calidad. Hay que <strong>ofrecer esos alimentos que, en menor tamaño, nutren más</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Un niño que come porciones pequeñas de alimentos densos en nutrientes puede estar mucho mejor que otro que come platos grandes de comida vacía. Por eso, cuando una mamá me dice «come poquito», mi primera pregunta no es cuánto: es qué.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>No solo importa la cantidad, sino la calidad: brindar esos alimentos que en menor tamaño nutren más.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:html -->
+<div class="descarga">
+      <img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
+      <div>
+        <strong>Un regalo: mis recomendaciones nutricionales</strong>
+        <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+        <div class="descarga__pie">
+          <a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
+            Descargar la guía
+          </a>
+          <small>PDF · 9 páginas · gratis</small>
+        </div>
+      </div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">El hilo común</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los tres mitos comparten un problema: miran una sola variable —el vaso, el calendario, el volumen del plato— y se olvidan del conjunto. La alimentación de un niño se evalúa completa, y con sus curvas de crecimiento al lado. <a href="/blog/la-malnutricion-que-no-se-ve/">Ahí está la respuesta de verdad</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mito-jugos.webp" alt="Pieza de la doctora: mito y realidad sobre los jugos de fruta"/><figcaption class="wp-element-caption">De mi serie de mitos y realidades en nutrición.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:html -->
+<div class="aviso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
+      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
+      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+    </p>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":2,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "className": "seccion seccion--agua en-8b34f8", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--agua en-8b34f8">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:heading {"level": 2, "className": "titulo reveal en-597488"} -->
+<h2 class="wp-block-heading titulo reveal en-597488">Sigue leyendo</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Otros temas que suelen venir en la misma consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
+<!-- wp:group {"tagName": "article", "className": "articulo reveal", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/colico-lactante.webp" alt="Pieza de la doctora sobre salud" width="900" height="900" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El cólico cambió de nombre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ya no se llama cólico, y el cambio no es cosmético.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-1", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-1">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dengue, Zika, chikungunya y fiebre amarilla: peligrosas, sobre todo en niños.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "className": "articulo reveal retraso-2", "layout": {"type": "default"}} -->
+<article class="wp-block-group articulo reveal retraso-2">
+<!-- wp:html -->
+<img src="https://helgarpalmieri55.github.io/Paginaweb-DraDalila/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
+<!-- /wp:html -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:html -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Inhalocámara siempre, sello correcto y diez segundos contados.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-inhalador-la-tecnica-correcta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "className": "cierre cierre--fondo-agua", "layout": {"type": "default"}} -->
+<section class="wp-block-group cierre cierre--fondo-agua">
+<!-- wp:group {"className": "cierre__banda reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__banda reveal">
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:heading {"level": 2} -->
+<h2 class="wp-block-heading">¿Tienes otro mito rondando?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Escríbeme cuál es. Si se repite en consulta, probablemente termine siendo el próximo artículo.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cierre__acciones">
+<!-- wp:html -->
+<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->',
+	),
+);

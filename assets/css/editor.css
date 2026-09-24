@@ -1,28 +1,36 @@
 /* ==========================================================================
-   Para que el escritorio se parezca al sitio mientras se edita.
+   Solo para el lienzo del editor. Encima de esto van site.css, paginas.css y
+   wordpress.css, los mismos del sitio, para que lo que se edita se vea igual
+   a la página publicada.
    ========================================================================== */
 
-.editor-styles-wrapper {
-  background: var(--wp--preset--color--crema);
-  font-family: "Nunito", system-ui, sans-serif;
+/* En el sitio las piezas aparecen con una animación al hacer scroll; en el
+   editor tienen que estar a la vista desde el principio. */
+.editor-styles-wrapper .reveal {
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
-/* Las franjas de mar dentro del editor: mismo alto que en el sitio. */
-.editor-styles-wrapper .franja {
-  position: relative;
-  overflow: hidden;
-  height: 264px;
-  --k: 1.08;
-}
-.editor-styles-wrapper .franja--crema { background: var(--wp--preset--color--crema); }
-.editor-styles-wrapper .franja--agua { background: var(--wp--preset--color--agua); }
-
-/* Un aviso discreto para que se entienda que el bloque se dibuja solo. */
+/* Un aviso discreto para que se entienda que la franja se dibuja sola. */
 .editor-styles-wrapper .wp-block-dalila-franja::after {
   content: "Franja de mar";
   position: absolute;
   inset: auto auto 8px 12px;
   font: 700 12px/1 "Nunito", sans-serif;
-  color: var(--wp--preset--color--suave);
+  color: var(--suave, #4F6B85);
   opacity: .5;
+  z-index: 2;
+}
+
+/* En el sitio cada sección trae su propio ancho (.wrap); el editor no debe
+   meter el contenido en su columna de lectura. */
+.editor-styles-wrapper .is-root-container.has-global-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > * {
+  max-width: none;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
