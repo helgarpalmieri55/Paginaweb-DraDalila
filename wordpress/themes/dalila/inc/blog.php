@@ -53,6 +53,16 @@ function dalila_texto_de_tarjeta( $post_id ) {
 }
 
 /**
+ * El título de la tarjeta: el corto del campo «dalila_titulo_tarjeta» si lo
+ * tiene, o el del artículo.
+ */
+function dalila_titulo_de_tarjeta( $post_id ) {
+	$titulo = get_post_meta( $post_id, 'dalila_titulo_tarjeta', true );
+
+	return $titulo ? $titulo : get_the_title( $post_id );
+}
+
+/**
  * El artículo destacado: el que esté fijado arriba (Entradas → Editar →
  * «Fijar en la parte superior del blog»). Si no hay ninguno, el más reciente.
  */
@@ -81,7 +91,28 @@ function dalila_id_destacado() {
  * La portada de la entrada con las medidas reales, para que no salte al cargar.
  */
 function dalila_portada( $post_id, $clase = '' ) {
-	$imagen_id = get_post_thumbnail_id( $post_id );
+	// Si la tarjeta tiene su propia imagen (campo «dalila_imagen_tarjeta»,
+	// con el nombre del archivo de la biblioteca), va esa; si no, la portada.
+	$imagen_id = 0;
+	$propia    = get_post_meta( $post_id, 'dalila_imagen_tarjeta', true );
+	if ( $propia ) {
+		$adjuntos  = get_posts(
+			array(
+				'post_type'      => 'attachment',
+				'name'           => sanitize_title( pathinfo( $propia, PATHINFO_FILENAME ) ),
+				'posts_per_page' => 1,
+				'post_status'    => 'inherit',
+				'fields'         => 'ids',
+			)
+		);
+		$imagen_id = $adjuntos ? (int) $adjuntos[0] : 0;
+		// Las piezas de la doctora se muestran completas, sobre crema.
+		$clase = trim( $clase . ' pieza' );
+	}
+	if ( ! $imagen_id ) {
+		$imagen_id = get_post_thumbnail_id( $post_id );
+		$clase     = trim( str_replace( 'pieza', '', $clase ) );
+	}
 	if ( ! $imagen_id ) {
 		return '';
 	}
@@ -127,7 +158,7 @@ function dalila_atajo_destacado() {
 		'<article class="destacado reveal">%1$s<div class="destacado__cuerpo">%2$s<h2>%3$s</h2><p>%4$s</p><p class="articulo__fecha">%5$s</p><p style="margin-top:20px"><a class="btn btn--rosa btn--chico" href="%6$s">%7$s</a></p></div></article>',
 		dalila_portada( $id ),
 		$chip,
-		esc_html( get_the_title( $id ) ),
+		esc_html( dalila_titulo_de_tarjeta( $id ) ),
 		esc_html( dalila_texto_de_tarjeta( $id ) ),
 		esc_html( sprintf( __( '%d min de lectura', 'dalila' ), dalila_minutos_de_lectura( $id ) ) ),
 		esc_url( get_permalink( $id ) ),
@@ -185,6 +216,32 @@ function dalila_atajo_filtros() {
 add_shortcode( 'dalila_filtros', 'dalila_atajo_filtros' );
 
 /**
+ * El orden de la rejilla: primero lo nuevo que todavía no tiene lugar
+ * asignado (del más reciente al más viejo) y después las tarjetas en el orden
+ * del campo «dalila_orden», que es el que tenían en el sitio.
+ */
+function dalila_en_orden_del_blog( $entradas ) {
+	usort(
+		$entradas,
+		function ( $a, $b ) {
+			$oa = get_post_meta( $a->ID, 'dalila_orden', true );
+			$ob = get_post_meta( $b->ID, 'dalila_orden', true );
+			$sa = '' === $oa ? 0 : 1;
+			$sb = '' === $ob ? 0 : 1;
+			if ( $sa !== $sb ) {
+				return $sa - $sb;
+			}
+			if ( ! $sa ) {
+				return strcmp( $b->post_date, $a->post_date );
+			}
+			return (int) $oa - (int) $ob;
+		}
+	);
+
+	return $entradas;
+}
+
+/**
  * [dalila_articulos] → la rejilla de tarjetas. En el blog van todas menos la
  * destacada, para que el filtro las alcance a todas; en una categoría, una
  * etiqueta o una búsqueda, las de esa consulta.
@@ -211,7 +268,7 @@ function dalila_atajo_articulos() {
 		$argumentos['s'] = get_search_query();
 	}
 
-	$entradas = get_posts( $argumentos );
+	$entradas = dalila_en_orden_del_blog( get_posts( $argumentos ) );
 	if ( ! $entradas ) {
 		return '<div class="sin-resultados reveal"><strong>' . esc_html__( 'Todavía no hay artículos en esta categoría', 'dalila' ) . '</strong><p>' . esc_html__( 'Escríbeme el tema que te gustaría leer y lo pongo en la lista.', 'dalila' ) . '</p></div>';
 	}
@@ -231,7 +288,7 @@ function dalila_atajo_articulos() {
 				esc_attr( dalila_color_de_categoria( $categoria->slug ) ),
 				esc_html( mb_strtolower( $categoria->name ) )
 			) : '',
-			esc_html( get_the_title( $entrada ) ),
+			esc_html( dalila_titulo_de_tarjeta( $entrada->ID ) ),
 			esc_html( dalila_texto_de_tarjeta( $entrada->ID ) ),
 			esc_html( sprintf( __( '%d min de lectura', 'dalila' ), dalila_minutos_de_lectura( $entrada->ID ) ) ),
 			esc_url( get_permalink( $entrada ) ),
@@ -250,38 +307,60 @@ add_shortcode( 'dalila_articulos', 'dalila_atajo_articulos' );
  * personalizados de cada entrada.
  */
 function dalila_registrar_tarjeta() {
-	register_post_meta(
-		'post',
-		'dalila_tarjeta',
-		array(
-			'type'              => 'string',
-			'single'            => true,
-			'show_in_rest'      => true,
-			'sanitize_callback' => 'sanitize_text_field',
-			'auth_callback'     => function () {
-				return current_user_can( 'edit_posts' );
-			},
-		)
+	$campos = array(
+		'dalila_tarjeta'        => array( 'string', 'sanitize_text_field' ),
+		'dalila_titulo_tarjeta' => array( 'string', 'sanitize_text_field' ),
+		'dalila_imagen_tarjeta' => array( 'string', 'sanitize_file_name' ),
+		'dalila_orden'          => array( 'integer', 'absint' ),
+		'dalila_lectura'        => array( 'integer', 'absint' ),
 	);
+	foreach ( $campos as $clave => $forma ) {
+		register_post_meta(
+			'post',
+			$clave,
+			array(
+				'type'              => $forma[0],
+				'single'            => true,
+				'show_in_rest'      => true,
+				'sanitize_callback' => $forma[1],
+				'auth_callback'     => function () {
+					return current_user_can( 'edit_posts' );
+				},
+			)
+		);
+	}
 }
 add_action( 'init', 'dalila_registrar_tarjeta' );
 
 /**
  * Una sola vez, en un sitio que ya se importó sin estos datos: copia a cada
- * entrada el resumen que tenía en su tarjeta y fija el artículo destacado.
- * No pisa nada que ya exista.
+ * entrada lo que tenía su tarjeta en el sitio (texto, lugar en la rejilla,
+ * minutos de lectura e imagen) y fija el artículo destacado. No pisa nada
+ * que ya se haya llenado a mano.
  */
 function dalila_pasar_tarjetas() {
-	if ( get_option( 'dalila_tarjetas_pasadas' ) ) {
+	if ( 3 <= (int) get_option( 'dalila_tarjetas_pasadas' ) ) {
 		return;
 	}
 
-	$datos = require __DIR__ . '/tarjetas.php';
+	$datos  = require __DIR__ . '/tarjetas.php';
+	$campos = array(
+		'texto'   => 'dalila_tarjeta',
+		'titulo'  => 'dalila_titulo_tarjeta',
+		'orden'   => 'dalila_orden',
+		'lectura' => 'dalila_lectura',
+		'imagen'  => 'dalila_imagen_tarjeta',
+	);
 
-	foreach ( $datos['tarjetas'] as $nombre => $texto ) {
+	foreach ( $datos['tarjetas'] as $nombre => $tarjeta ) {
 		$entrada = get_page_by_path( $nombre, OBJECT, 'post' );
-		if ( $entrada && '' === get_post_meta( $entrada->ID, 'dalila_tarjeta', true ) ) {
-			update_post_meta( $entrada->ID, 'dalila_tarjeta', $texto );
+		if ( ! $entrada ) {
+			continue;
+		}
+		foreach ( $campos as $dato => $clave ) {
+			if ( isset( $tarjeta[ $dato ] ) && '' === get_post_meta( $entrada->ID, $clave, true ) ) {
+				update_post_meta( $entrada->ID, $clave, $tarjeta[ $dato ] );
+			}
 		}
 	}
 
@@ -292,7 +371,7 @@ function dalila_pasar_tarjetas() {
 		}
 	}
 
-	update_option( 'dalila_tarjetas_pasadas', 1, false );
+	update_option( 'dalila_tarjetas_pasadas', 3, false );
 }
 add_action( 'admin_init', 'dalila_pasar_tarjetas' );
 

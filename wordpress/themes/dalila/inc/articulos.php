@@ -15,7 +15,15 @@ if ( ! defined( 'ABSPATH' ) ) {
  * lector adulto en español.
  */
 function dalila_minutos_de_lectura( $post_id = null ) {
-	$post_id  = $post_id ? $post_id : get_the_ID();
+	$post_id = $post_id ? $post_id : get_the_ID();
+
+	// Si el artículo trae sus minutos escritos a mano (campo «dalila_lectura»),
+	// valen esos, que son los que tenía en el sitio.
+	$escritos = (int) get_post_meta( $post_id, 'dalila_lectura', true );
+	if ( $escritos > 0 ) {
+		return $escritos;
+	}
+
 	$palabras = str_word_count( wp_strip_all_tags( get_post_field( 'post_content', $post_id ) ) );
 
 	return max( 1, (int) ceil( $palabras / 200 ) );

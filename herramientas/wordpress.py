@@ -427,12 +427,19 @@ def item(titulo, nombre, contenido, resumen, fecha, post_id, tipo,
             '\t\t\t<wp:meta_value>%s</wp:meta_value>\n'
             '\t\t</wp:postmeta>' % (cdata('_thumbnail_id'), cdata(str(miniatura))))
 
+    campos = []
     if tarjeta:
+        campos = [('dalila_tarjeta', tarjeta.get('texto')), ('dalila_titulo_tarjeta', tarjeta.get('titulo')),
+                  ('dalila_orden', tarjeta.get('orden')),
+                  ('dalila_lectura', tarjeta.get('lectura')), ('dalila_imagen_tarjeta', tarjeta.get('imagen'))]
+    for clave, valor in campos:
+        if valor in (None, ''):
+            continue
         filas.append(
             '\t\t<wp:postmeta>\n'
             '\t\t\t<wp:meta_key>%s</wp:meta_key>\n'
             '\t\t\t<wp:meta_value>%s</wp:meta_value>\n'
-            '\t\t</wp:postmeta>' % (cdata('dalila_tarjeta'), cdata(tarjeta)))
+            '\t\t</wp:postmeta>' % (cdata(clave), cdata(str(valor))))
 
     if tipo == 'page':
         filas.append(
@@ -446,34 +453,53 @@ def item(titulo, nombre, contenido, resumen, fecha, post_id, tipo,
 
 
 def tarjetas():
-    """El texto corto que cada artículo lleva en su tarjeta del blog, y cuál
-    es el destacado. En el sitio es distinto de la entrada del artículo."""
+    """Lo que cada artículo lleva en su tarjeta del blog: el texto corto, el
+    lugar en la rejilla, los minutos de lectura y, si no es su portada, la
+    imagen. En el sitio son distintos de lo que dice el artículo mismo."""
     blog = open(os.path.join(DOCS, 'blog.html'), encoding='utf-8').read()
-    textos = {}
-    for m in re.finditer(r'<article class="articulo[^"]*"[^>]*>(?:(?!</article>).)*?<h3>.*?</h3>\s*<p>(.*?)</p>'
-                         r'(?:(?!</article>).)*?href="([^"]+)"', blog, re.S):
-        textos[m.group(2)] = texto_plano(m.group(1))
+    datos = {}
+
+    orden = 0
+    for m in re.finditer(r'<article class="articulo[^"]*"[^>]*>(.*?)</article>', blog, re.S):
+        tarjeta = m.group(1)
+        archivo = etiqueta(tarjeta, r'href="(blog-[^"]+)"')
+        if not archivo:
+            continue
+        orden += 1
+        datos[archivo] = {
+            'texto': texto_plano(etiqueta(tarjeta, r'</h3>\s*<p>(.*?)</p>') or ''),
+            'titulo': texto_plano(etiqueta(tarjeta, r'<h3>(.*?)</h3>') or ''),
+            'orden': orden,
+            'lectura': etiqueta(tarjeta, r'(\d+) min de lectura'),
+        }
 
     destacado = None
     d = re.search(r'<article class="destacado.*?</article>', blog, re.S)
     if d:
         destacado = etiqueta(d.group(0), r'href="(blog-[^"]+)"')
-        texto = etiqueta(d.group(0), r'</h2>\s*<p>(.*?)</p>')
-        if destacado and texto:
-            textos[destacado] = texto_plano(texto)
+        if destacado:
+            datos[destacado] = {
+                'texto': texto_plano(etiqueta(d.group(0), r'</h2>\s*<p>(.*?)</p>') or ''),
+                'orden': 0,
+                'lectura': etiqueta(d.group(0), r'(\d+) min de lectura'),
+                'imagen': os.path.basename(etiqueta(d.group(0), r'<img[^>]+src="([^"]+)"') or ''),
+            }
 
-    return textos, destacado
+    return datos, destacado
 
 
 def escribir_tarjetas(por_nombre, destacado):
-    """Los mismos resúmenes en PHP, para pasarlos a un sitio ya importado."""
+    """Los mismos datos en PHP, para pasarlos a un sitio ya importado."""
+    def php(texto):
+        return "'" + str(texto).replace('\\', '\\\\').replace("'", "\\'") + "'"
+
     filas = ['<?php',
              '/**',
              ' * Generado por herramientas/wordpress.py. No se edita a mano.',
              ' *',
-             ' * Los resúmenes de las tarjetas del blog y el artículo destacado, tal como',
-             ' * estaban en el sitio. inc/blog.php los copia una sola vez a cada entrada;',
-             ' * después se editan desde el campo personalizado «dalila_tarjeta».',
+             ' * Lo que cada artículo llevaba en su tarjeta del blog y cuál era el',
+             ' * destacado. inc/blog.php lo copia una vez a los campos de cada entrada;',
+             ' * después se edita desde ahí.',
              ' *',
              ' * @package dalila',
              ' */',
@@ -483,11 +509,18 @@ def escribir_tarjetas(por_nombre, destacado):
              '}',
              '',
              'return array(',
-             "\t'destacado' => %s," % ("'%s'" % destacado if destacado else 'null'),
+             "\t'destacado' => %s," % (php(destacado) if destacado else 'null'),
              "\t'tarjetas'  => array("]
     for nombre in sorted(por_nombre):
-        texto = por_nombre[nombre].replace('\\', '\\\\').replace("'", "\\'")
-        filas.append("\t\t'%s' => '%s'," % (nombre, texto))
+        d = por_nombre[nombre]
+        campos = ["'texto' => %s" % php(d['texto']), "'orden' => %d" % d['orden']]
+        if d.get('titulo'):
+            campos.append("'titulo' => %s" % php(d['titulo']))
+        if d.get('lectura'):
+            campos.append("'lectura' => %d" % int(d['lectura']))
+        if d.get('imagen'):
+            campos.append("'imagen' => %s" % php(d['imagen']))
+        filas.append("\t\t%s => array( %s )," % (php(nombre), ', '.join(campos)))
     filas += ['\t),', ');', '']
     open(TARJETAS, 'w', encoding='utf-8').write('\n'.join(filas))
 
@@ -636,10 +669,13 @@ def generar():
         if categoria not in CATEGORIAS:
             raise SystemExit('sin categoría fiable para %s' % archivo)
 
+        if archivo in textos and textos[archivo].get('titulo') == titulo:
+            textos[archivo].pop('titulo')
         if archivo in textos:
             por_nombre[apodo(titulo)] = textos[archivo]
         if archivo == destacado:
             nombre_destacado = apodo(titulo)
+        tarjeta = textos.get(archivo, {})
 
         partes.append(item(
             titulo=titulo,
@@ -649,7 +685,7 @@ def generar():
             fecha=fecha_de_alta(os.path.join(DOCS, archivo)),
             post_id=siguiente, tipo='post', categoria=categoria,
             miniatura=id_de.get(portada),
-            tarjeta=textos.get(archivo), fijo=archivo == destacado))
+            tarjeta=tarjeta, fijo=archivo == destacado))
         siguiente += 1
         articulos += 1
 
