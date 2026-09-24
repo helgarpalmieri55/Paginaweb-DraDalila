@@ -2901,7 +2901,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -3645,7 +3645,7 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className": "bajada reveal"} -->
-<p class="bajada reveal">Temas que la doctora ya explica en sus redes. <em>Artículos por escribir.</em></p>
+<p class="bajada reveal">Temas que la doctora ya explica en sus redes.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
@@ -3726,8 +3726,8 @@ return array(
 <p>Sonarse antes, cabeza abajo y boca abierta.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Leer más →", "atributos": {"href": "/blog/"}} -->
-<a href="/blog/">Leer más →</a>
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Leer más →", "atributos": {"href": "/blog/lavado-nasal-si-esta-llorando-no-se-hace/"}} -->
+<a href="/blog/lavado-nasal-si-esta-llorando-no-se-hace/">Leer más →</a>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -3757,7 +3757,7 @@ return array(
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
-<p>La Dra. ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p>
+<p>La Dra. Dalila ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"tagName": "footer", "layout": {"type": "default"}} -->
