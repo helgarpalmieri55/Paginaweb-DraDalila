@@ -92,10 +92,10 @@ function dalila_firma_en_su_lugar( $html ) {
 	}
 
 	$firma  = do_blocks( $patron['content'] );
-	$cierre = strrpos( $html, '<section class="cierre' );
-
-	if ( false !== $cierre ) {
-		return substr_replace( $html, $firma, $cierre, 0 );
+	// El último <section> con la clase «cierre», venga como HTML o como grupo.
+	if ( preg_match_all( '/<section class="[^"]*\bcierre\b/', $html, $hallados, PREG_OFFSET_CAPTURE ) ) {
+		$cierre = end( $hallados[0] );
+		return substr_replace( $html, $firma, $cierre[1], 0 );
 	}
 
 	$fin = strrpos( $html, '</div>' );
@@ -119,3 +119,38 @@ function dalila_migas_con_titulo( $html ) {
 	return preg_replace( '#</nav>#', $flecha . "\n\t\t\t\t" . $titulo . "\n\t\t\t</nav>", $html, 1 );
 }
 add_filter( 'render_block_core/html', 'dalila_migas_con_titulo' );
+
+/**
+ * Un artículo nuevo empieza con la misma sección de lectura que los que ya
+ * están publicados, para que el texto quede con el ancho y el aire del sitio.
+ */
+function dalila_molde_de_articulo( $argumentos, $tipo ) {
+	if ( 'post' !== $tipo ) {
+		return $argumentos;
+	}
+
+	$argumentos['template'] = array(
+		array(
+			'core/group',
+			array(
+				'className' => 'seccion seccion--crema seccion--lectura',
+				'layout'    => array( 'type' => 'constrained' ),
+			),
+			array(
+				array(
+					'core/group',
+					array(
+						'className' => 'prosa',
+						'layout'    => array( 'type' => 'constrained' ),
+					),
+					array(
+						array( 'core/paragraph', array( 'placeholder' => __( 'Empieza a escribir el artículo…', 'dalila' ) ) ),
+					),
+				),
+			),
+		),
+	);
+
+	return $argumentos;
+}
+add_filter( 'register_post_type_args', 'dalila_molde_de_articulo', 10, 2 );

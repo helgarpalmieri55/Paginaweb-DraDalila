@@ -104,11 +104,16 @@
      así que la ruta base es relativa al documento. */
   var BASE = document.documentElement.getAttribute('data-base') || '';
 
-  document.querySelectorAll('.franja[data-escena]').forEach(function (el, orden) {
+  function dibujar(el, orden) {
     var n = (parseInt(el.dataset.escena, 10) || 0) % ESCENAS.length;
     var hasta = el.dataset.hasta || (el.classList.contains('franja--agua') ? 'crema' : 'agua');
     el.setAttribute('aria-hidden', 'true');
     el.innerHTML = '<div class="franja__escena">' + piezas(ESCENAS[n]) +
-                   olas(n + orden * 0.5, FONDOS[hasta] || hasta) + '</div>';
-  });
+                   olas(n + (orden || 0) * 0.5, FONDOS[hasta] || hasta) + '</div>';
+  }
+
+  document.querySelectorAll('.franja[data-escena]').forEach(dibujar);
+
+  /* El editor de WordPress la usa para dibujar una franja suelta. */
+  window.dalilaFranja = dibujar;
 })();

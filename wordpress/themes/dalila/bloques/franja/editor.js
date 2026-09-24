@@ -23,11 +23,20 @@
 	blocks.registerBlockType( 'dalila/franja', {
 		edit: function ( props ) {
 			var a = props.attributes;
+			var ref = element.useRef( null );
 			var propsBloque = blockEditor.useBlockProps( {
+				ref: ref,
 				className: 'franja franja--' + a.desde,
 				'data-escena': a.escena,
 				'data-hasta': a.hasta
 			} );
+
+			// Dibuja la escena con el mismo código del sitio cada vez que cambia.
+			element.useEffect( function () {
+				if ( ref.current && window.dalilaFranja ) {
+					window.dalilaFranja( ref.current, 0 );
+				}
+			}, [ a.escena, a.desde, a.hasta ] );
 
 			return el(
 				element.Fragment,

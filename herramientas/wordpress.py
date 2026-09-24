@@ -19,6 +19,7 @@ bajar GitHub Pages.
 
 import html
 import os
+import sys
 import re
 import subprocess
 import unicodedata
@@ -27,6 +28,12 @@ from datetime import datetime, timezone
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(RAIZ, 'docs')
 SALIDA = os.path.join(RAIZ, 'wordpress', 'importacion', 'contenido.xml')
+# Los estilos que iban en línea, convertidos en clases (ver bloques.py).
+HOJA_BLOQUES = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'assets', 'css', 'bloques.css')
+# La versión del archivo de importación que se cargó en dalilapenaranda.com.
+# Con ella se reconoce qué páginas siguen sin editar y se pueden actualizar.
+IMPORTADO = 'ba1636b'
+MIGRACION = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'migracion.php')
 # Los resúmenes de las tarjetas del blog, para un sitio que ya se importó.
 TARJETAS = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'tarjetas.php')
 
@@ -232,15 +239,14 @@ def a_bloques(fragmento):
         elif nombre == 'figure' and '<img' in el:
             src = etiqueta(el, r'<img[^>]+src="([^"]+)"')
             alt = etiqueta(el, r'<img[^>]+alt="([^"]*)"') or ''
-            ancho = etiqueta(el, r'<img[^>]+width="(\d+)"')
-            alto = etiqueta(el, r'<img[^>]+height="(\d+)"')
             pie = etiqueta(el, r'<figcaption[^>]*>(.*?)</figcaption>')
-            medidas = ' width="%s" height="%s"' % (ancho, alto) if ancho and alto else ''
+            # El bloque Imagen no guarda ancho ni alto en la etiqueta: si van,
+            # el editor lo marca como bloque con contenido inesperado.
             salida.append(
                 '<!-- wp:image {"sizeSlug":"large"} -->\n'
                 '<figure class="wp-block-image size-large">'
-                '<img src="%s" alt="%s"%s/>%s</figure>\n<!-- /wp:image -->'
-                % (src, alt, medidas,
+                '<img src="%s" alt="%s"/>%s</figure>\n<!-- /wp:image -->'
+                % (src, alt,
                    '<figcaption class="wp-element-caption">%s</figcaption>' % pie if pie else ''))
 
         # Separador.
@@ -288,22 +294,28 @@ def cuerpo_del_articulo(fuente, mapa):
     if k > 0:
         inicio = fuente.rfind('<section', 0, k)
         fin = fuente.find('</section>', k) + len('</section>')
-        partes.append(bloque_html(fuente[inicio:fin]))
+        partes.append(CONVERSOR.convertir(fuente[inicio:fin]))
 
     # 4 · El cierre propio del artículo.
     m = re.search(r'<section class="cierre[^"]*">.*?</section>', fuente, re.S)
     if m:
-        partes.append(bloque_html(m.group(0)))
+        partes.append(CONVERSOR.convertir(m.group(0)))
 
     return reescribir('\n\n'.join(partes), mapa)
 
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bloques import Conversor  # noqa: E402
+
+CONVERSOR = Conversor()
+
+
 def cuerpo_de_la_pagina(fuente, mapa):
     """
-    Una página entera, desde que abre <main> hasta que cierra. Las páginas son
-    composiciones de secciones con SVG y estilos propios, así que van como
-    bloques HTML: se ven idénticas y el community manager las arma de nuevo con
-    los patrones del tema cuando quiera cambiarlas.
+    Una página entera, desde que abre <main> hasta que cierra, convertida en
+    bloques: grupos con las clases del sitio, y títulos, párrafos y listas que
+    se editan directo. Los dibujos y las piezas con datos propios quedan como
+    bloque HTML (ver bloques.py).
     """
     i = fuente.find('<main')
     i = fuente.find('>', i) + 1
@@ -313,21 +325,10 @@ def cuerpo_de_la_pagina(fuente, mapa):
         i = fuente.find('<body>') + len('<body>')
         j = fuente.find('<footer class="pie">')
 
-    partes = []
-    for el in elementos(fuente[i:j]):
-        el = el.strip()
-        if not el or 'class="barra"' in el[:80]:
-            continue
-        if el.startswith('<div class="franja'):
-            escena = etiqueta(el, r'data-escena="(\d+)"') or '0'
-            desde = 'agua' if 'franja--agua' in el else 'crema'
-            hasta = etiqueta(el, r'data-hasta="([a-z]+)"') or ('crema' if desde == 'agua' else 'agua')
-            partes.append('<!-- wp:dalila/franja {"escena":%s,"desde":"%s","hasta":"%s","align":"full"} /-->'
-                          % (escena, desde, hasta))
-        else:
-            partes.append(bloque_html(el))
+    cuerpo = '\n'.join(el for el in elementos(fuente[i:j])
+                       if el.strip() and 'class="barra"' not in el[:80])
 
-    return reescribir('\n\n'.join(partes), mapa)
+    return CONVERSOR.convertir(reescribir(cuerpo, mapa))
 
 
 # ------------------------------------------------------------ el archivo WXR
@@ -489,6 +490,73 @@ def escribir_tarjetas(por_nombre, destacado):
     open(TARJETAS, 'w', encoding='utf-8').write('\n'.join(filas))
 
 
+def normalizar(contenido):
+    """El contenido sin las direcciones de las imágenes, que el importador
+    cambia al subirlas. Es la misma cuenta que hace inc/actualizacion.php."""
+    contenido = contenido.replace('\r\n', '\n')
+    contenido = re.sub(r'https?://[^"\'\s)]+/([^/"\'\s)]+\.(?:webp|jpe?g|png|gif|svg|pdf))',
+                       r'\1', contenido, flags=re.I)
+    # WordPress le agrega «-1», «-scaled» o las medidas al nombre si ya existe.
+    contenido = re.sub(r'(?:-\d+x\d+|-scaled|-\d+)+(\.(?:webp|jpe?g|png|gif|svg|pdf))\b',
+                       r'\1', contenido, flags=re.I)
+    return contenido.strip()
+
+
+def contenidos_del_xml(texto):
+    """(tipo, nombre) → contenido, de un archivo de importación."""
+    salida = {}
+    for item in re.findall(r'<item>(.*?)</item>', texto, re.S):
+        tipo = etiqueta(item, r'<wp:post_type><!\[CDATA\[(.*?)\]\]>')
+        if tipo not in ('post', 'page'):
+            continue
+        nombre = etiqueta(item, r'<wp:post_name><!\[CDATA\[(.*?)\]\]>')
+        cuerpo = etiqueta(item, r'<content:encoded><!\[CDATA\[(.*?)\]\]></content:encoded>') or ''
+        salida[(tipo, nombre)] = cuerpo.replace(']]]]><![CDATA[>', ']]>')
+    return salida
+
+
+def escribir_migracion(nuevo_xml):
+    """Para un sitio ya importado: el contenido nuevo de cada página y
+    entrada, y la huella del que se importó, para no pisar lo que se editó."""
+    import hashlib
+    viejo_xml = subprocess.run(['git', 'show', '%s:wordpress/importacion/contenido.xml' % IMPORTADO],
+                               capture_output=True, text=True, cwd=RAIZ).stdout
+    viejos = contenidos_del_xml(viejo_xml)
+    nuevos = contenidos_del_xml(nuevo_xml)
+
+    def php(texto):
+        return "'" + texto.replace('\\', '\\\\').replace("'", "\\'") + "'"
+
+    filas = ['<?php',
+             '/**',
+             ' * Generado por herramientas/wordpress.py. No se edita a mano.',
+             ' *',
+             ' * El contenido de cada página y entrada convertido a bloques editables,',
+             ' * para pasarlo a un sitio que ya se había importado. inc/actualizacion.php',
+             ' * lo aplica una sola vez y solo donde nadie editó desde la importación.',
+             ' *',
+             ' * @package dalila',
+             ' */',
+             '',
+             "if ( ! defined( 'ABSPATH' ) ) {",
+             '\texit;',
+             '}',
+             '',
+             'return array(']
+    for (tipo, nombre), contenido in sorted(nuevos.items()):
+        antes = viejos.get((tipo, nombre))
+        if antes is None or normalizar(antes) == normalizar(contenido):
+            continue
+        filas += ['\tarray(',
+                  "\t\t'tipo'      => '%s'," % tipo,
+                  "\t\t'nombre'    => '%s'," % nombre,
+                  "\t\t'antes'     => '%s'," % hashlib.md5(normalizar(antes).encode()).hexdigest(),
+                  "\t\t'contenido' => %s," % php(contenido),
+                  '\t),']
+    filas += [');', '']
+    open(MIGRACION, 'w', encoding='utf-8').write('\n'.join(filas))
+
+
 def imagenes_del_sitio():
     """Todas las imágenes que el sitio usa de verdad, sin repetir."""
     usadas = []
@@ -591,11 +659,13 @@ def generar():
         paginas += 1
 
     escribir_tarjetas(por_nombre, nombre_destacado)
+    open(HOJA_BLOQUES, 'w', encoding='utf-8').write(CONVERSOR.hoja())
 
     partes.append('</channel>\n</rss>\n')
 
     os.makedirs(os.path.dirname(SALIDA), exist_ok=True)
     open(SALIDA, 'w', encoding='utf-8').write('\n'.join(partes))
+    escribir_migracion('\n'.join(partes))
 
     return len(id_de), articulos, paginas
 
