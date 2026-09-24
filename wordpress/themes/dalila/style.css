@@ -1,0 +1,19 @@
+/*
+Theme Name: Dra. Dalila Peñaranda
+Theme URI: https://dalilapenaranda.com
+Author: novieri
+Author URI: https://dalilapenaranda.com
+Description: Tema de bloques del sitio de la Dra. Dalila Peñaranda, pediatra y especialista en nutrición infantil en Barranquilla. Trae el mundo marino del consultorio —las franjas de mar, la ballena, Pepe— a patrones que se arman desde el escritorio de WordPress.
+Requires at least: 6.5
+Tested up to: 6.8
+Requires PHP: 8.0
+Version: 1.0.0
+License: Uso exclusivo del cliente
+Text Domain: dalila
+Tags: full-site-editing, block-patterns, blog, one-column, custom-colors
+*/
+
+/* Las hojas de estilo reales se encolan desde functions.php:
+   assets/css/site.css   — base, barra, pie, franjas de mar, portada
+   assets/css/paginas.css — páginas interiores, prosa, artículos
+   assets/css/editor.css  — ajustes para que el escritorio se vea como el sitio */

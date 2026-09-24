@@ -1,0 +1,56 @@
+# Arma la rama «tema-wordpress», que contiene solo el tema en su raíz.
+#
+# Hostinger despliega esa rama en wp-content/themes/dalila cada vez que cambia
+# (Sitios web → Avanzado → Git, despliegue automático). Así al servidor llega
+# únicamente el tema: ni los mockups, ni las herramientas, ni las notas del
+# proyecto, que viven en el resto del repositorio.
+#
+# Solo corre desde main, para que nada llegue al sitio en línea sin pasar por
+# un pull request.
+
+name: Rama del tema
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'wordpress/themes/dalila/**'
+      - '.github/workflows/rama-del-tema.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rama-del-tema
+  cancel-in-progress: false
+
+jobs:
+  armar:
+    name: Revisar el tema y publicar la rama
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Traer el repositorio completo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Revisar que el PHP compile
+        run: |
+          find wordpress/themes/dalila -name '*.php' -print0 \
+            | xargs -0 -n1 php -l
+
+      - name: Revisar que el JavaScript y el JSON estén bien
+        run: |
+          find wordpress/themes/dalila -name '*.js' -print0 \
+            | xargs -0 -n1 node --check
+          find wordpress/themes/dalila -name '*.json' -print0 \
+            | xargs -0 -I{} node -e "JSON.parse(require('fs').readFileSync('{}','utf8'))"
+
+      - name: Separar el tema en su propia rama
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git subtree split --prefix=wordpress/themes/dalila -b tema-wordpress
+          git push --force origin tema-wordpress

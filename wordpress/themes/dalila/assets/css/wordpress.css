@@ -1,0 +1,255 @@
+/* ==========================================================================
+   Puente entre el diseño del sitio y lo que WordPress pone alrededor.
+   El diseño real está en site.css y paginas.css; aquí solo va lo que hace
+   falta para que convivan con el editor de bloques.
+   ========================================================================== */
+
+/* ---------- el ancho lo reparte el sitio ----------
+   Las páginas no usan la columna de lectura de WordPress: cada sección trae
+   su .wrap y su propio aire a los lados, igual que en el sitio original.
+   theme.json deja el espacio entre bloques en null para que WordPress no
+   meta márgenes que el diseño no tiene. */
+.wp-site-blocks > * { margin-block: 0; }
+
+/* ---------- la barra fija y la barra del escritorio ----------
+   Con sesión iniciada WordPress mete su propia barra de 32 px arriba. */
+.admin-bar .barra { top: 32px; }
+@media (max-width: 782px) {
+  .admin-bar .barra { top: 46px; }
+}
+
+/* ---------- la franja de mar como bloque ---------- */
+.wp-block-dalila-franja { height: var(--alto-franja); }
+.no-js .wp-block-dalila-franja { height: 0; }
+
+/* ---------- el cuerpo de los artículos ----------
+   El contenido de una entrada son bloques de WordPress, no nuestro HTML, así
+   que .prosa tiene que reconocer también lo que trae el editor. */
+.prosa > .wp-block-image,
+.prosa > figure.wp-block-image { margin: 34px 0; }
+.prosa figure.wp-block-image img { border-radius: 16px; }
+.prosa figure.wp-block-image figcaption {
+  margin-top: 10px;
+  font-size: 14.5px;
+  color: var(--tenue);
+  line-height: 1.5;
+  text-align: left;
+}
+.prosa .wp-block-quote {
+  border: 0;
+  margin: 30px 0;
+  padding: 22px 26px;
+  background: var(--rosa-palo);
+  border-radius: 18px;
+  font-size: 18px;
+  color: var(--tinta);
+}
+.prosa .wp-block-quote p { margin: 0; }
+.prosa .wp-block-separator {
+  border: 0;
+  height: 1px;
+  max-width: none;
+  background: rgba(47,66,96,.14);
+  margin: 38px 0;
+  opacity: 1;
+}
+.prosa .wp-block-embed { margin: 34px 0; }
+
+/* ---------- la barra con la piel del sitio ---------- */
+.barra .wp-block-navigation__container { gap: 4px; }
+.barra .wp-block-navigation .wp-block-navigation-item__content {
+  display: block;
+  padding: 9px 14px;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--texto);
+  border-radius: 999px;
+  transition: color .2s, background .2s;
+}
+.barra .wp-block-navigation .wp-block-navigation-item__content:hover {
+  color: var(--rosa-sombra);
+  background: rgba(226,85,126,.08);
+}
+.barra .wp-block-navigation .wp-block-navigation-item__content[aria-current="page"] {
+  color: var(--rosa-sombra);
+  background: rgba(226,85,126,.10);
+}
+.barra .wp-block-navigation__responsive-container-open,
+.barra .wp-block-navigation__responsive-container-close {
+  color: var(--tinta);
+}
+.barra .barra__logo { margin-right: auto; }
+.barra .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open {
+  background: var(--crema);
+  color: var(--texto);
+  padding: 26px;
+  --navigation-layout-justification-setting: flex-start;
+  --navigation-layout-justify: flex-start;
+}
+/* El desenfoque de la barra encierra al menú abierto dentro de ella; mientras
+   el menú está abierto, la barra lo suelta. */
+.barra:has(.is-menu-open) {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.barra .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay) {
+  background-color: var(--crema);
+}
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content,
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.barra .wp-block-navigation .is-menu-open .wp-block-navigation__responsive-container-content {
+  flex-direction: column;
+}
+.barra .wp-block-navigation__responsive-container.is-menu-open
+  .wp-block-navigation-item__content {
+  font-size: 19px;
+}
+.barra__botones { flex: none; }
+
+/* En pantallas medianas y chicas el sitio esconde el menú detrás de la
+   hamburguesa desde los 1040 px, no desde los 600 px que trae WordPress. */
+@media (max-width: 1040px) {
+  .barra nav.wp-block-navigation {
+    order: 2;
+    margin-left: auto;
+  }
+  .barra__botones { order: 3; }
+  .barra .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+  .barra .wp-block-navigation__responsive-container-open svg {
+    width: 30px;
+    height: 30px;
+  }
+  .barra .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none;
+  }
+  /* El botón de la cita queda redondo, solo con el calendario. */
+  .barra .barra__botones .wp-block-button.barra__boton > .wp-block-button__link {
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    justify-content: center;
+    font-size: 0;
+  }
+}
+
+/* ---------- los botones del editor con la forma de .btn ----------
+   En el sitio .btn va en el enlace; el bloque Botón pone la clase en la caja
+   de afuera. La caja queda neutra y el enlace se viste como .btn. */
+.wp-block-button.btn {
+  display: inline-block;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+}
+.wp-block-button.btn > .wp-block-button__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 15px 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.wp-block-button.btn--rosa > .wp-block-button__link {
+  background: var(--rosa);
+  color: #fff;
+  box-shadow: 0 5px 0 var(--rosa-sombra);
+}
+.wp-block-button.btn--rosa > .wp-block-button__link:hover {
+  background: var(--rosa-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 var(--rosa-sombra);
+}
+.wp-block-button.btn--blanco > .wp-block-button__link {
+  background: #fff;
+  color: var(--tinta);
+  box-shadow: 0 5px 0 rgba(47,66,96,.14);
+}
+.wp-block-button.btn--blanco > .wp-block-button__link:hover {
+  background: var(--agua);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 rgba(47,66,96,.14);
+}
+.wp-block-button.btn > .wp-block-button__link:active {
+  transform: translateY(2px);
+}
+/* El de la barra es más chico y lleva el calendario, como en el sitio. */
+.barra .wp-block-button.barra__boton > .wp-block-button__link {
+  padding: 12px 22px;
+  box-shadow: 0 4px 0 var(--rosa-sombra);
+}
+.barra .wp-block-button.barra__boton > .wp-block-button__link::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--icono-cita) center / contain no-repeat;
+  mask: var(--icono-cita) center / contain no-repeat;
+}
+.barra { --icono-cita: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='16' rx='3.5'/%3E%3Cpath d='M8 3v4M16 3v4M3 10h18'/%3E%3Cpath fill='%23000' stroke='none' d='M12 19.2c-.3 0-.6-.1-.8-.3-1.9-1.6-3.4-2.9-3.4-4.5 0-1.3 1-2.2 2.1-2.2.8 0 1.5.4 2.1 1.1.6-.7 1.3-1.1 2.1-1.1 1.2 0 2.1.9 2.1 2.2 0 1.6-1.5 2.9-3.4 4.5-.2.2-.5.3-.8.3z'/%3E%3C/svg%3E"); }
+
+/* ---------- el blog ----------
+   En una categoría no hay filtros entre el regalo y las tarjetas; el aire que
+   ponían los filtros lo pone esta regla. */
+.descarga + .rejilla { margin-top: 56px; }
+/* La portada del destacado es la de la entrada, que puede venir vertical; se
+   recorta cuadrada, que es la forma que tiene en el sitio. */
+.destacado > img { height: auto; aspect-ratio: 1 / 1; }
+
+/* ---------- paginación del blog ---------- */
+.wp-block-query-pagination {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.wp-block-query-pagination a,
+.wp-block-query-pagination .current {
+  padding: 8px 15px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--tinta);
+  background: var(--blanco);
+  box-shadow: var(--sombra-carta);
+}
+.wp-block-query-pagination .current {
+  background: var(--rosa);
+  color: #fff;
+}
+
+/* ---------- comentarios: el sitio no los usa ---------- */
+.wp-block-post-comments-form,
+.wp-block-comments { display: none; }
+
+/* ---------- la firma de la autora ----------
+   En el sitio el retrato es un <img> suelto; el bloque de imagen de WordPress
+   lo envuelve en <figure>. Esta regla le devuelve el lugar que tenía en la
+   rejilla y el recorte redondo. */
+.autora > .wp-block-image { margin: 0; }
+.autora > .wp-block-image img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  background: var(--crema);
+  box-shadow: 0 6px 16px rgba(47,66,96,.14);
+}
+@media (max-width: 560px) {
+  .autora > .wp-block-image img { margin: 0 auto; }
+}

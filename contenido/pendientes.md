@@ -7,19 +7,29 @@ volver a preguntarlo.
 
 ## 1 · Credenciales y formación
 
-Hoy el sitio dice lo que ella misma declara al cierre de sus reels —médico
-pediatra, especialista en nutrición infantil, terapista de alimentación—, pero la
-línea de tiempo de *Sobre mí* tiene tres huecos marcados como «pendiente de
-confirmar»:
+La formación ya está en *Sobre mí* y en los datos estructurados, tomada de sus
+diplomas y certificados (24 de septiembre de 2026):
 
-- [ ] **Pregrado:** universidad y año de grado.
-- [ ] **Pediatría:** institución, ciudad y año.
-- [ ] **Nutrición infantil:** programa y año.
-- [ ] **Terapista de alimentación:** dónde y cuándo se formó.
-- [ ] **Registro médico** (número), para el pie o la página *Sobre mí*.
+- [x] **Pregrado:** Médico general, Fundación Universitaria San Martín, 2004.
+- [x] **Pediatría:** Especialista en Pediatría, Universidad Libre, seccional
+      Barranquilla, 2011.
+- [x] **Nutrición:** Post Graduate Program in Pediatric Nutrition (PGPN), en
+      asociación con Boston University School of Medicine, 2016.
+- [x] **Terapista de alimentación:** SOS Approach to Feeding, formación de 5 días
+      (37,5 horas), noviembre de 2024 — «SOS Trained Feeding Therapist».
+
+Queda:
+
+- [ ] **Registro médico** (número de RETHUS), si quiere mostrarlo.
 - [ ] **Afiliaciones profesionales** que quiera mostrar (en un post aparece una
       reunión del grupo de divulgadores de la Sociedad Colombiana de Pediatría —
       ¿va?).
+- [ ] **«Especialista en nutrición infantil».** Así se presenta ella en sus redes
+      y así lo dice el sitio (portada, títulos, buscadores). Sus documentos
+      muestran un *programa de posgrado* en nutrición pediátrica, no una
+      especialización con título en Colombia. Conviene que ella confirme si
+      prefiere «pediatra con formación en nutrición infantil», que no se presta a
+      reclamos.
 
 ## 2 · Operación del consultorio
 
@@ -116,7 +126,6 @@ archivo de diseño que conviene reemplazar por material suyo.
       propias explicaciones en video, pero llevan su firma. Priorizaría cinco:
       *el inhalador*, *cuidado con los mosquitos*, *el cólico cambió de nombre*,
       *dolor de oído a medianoche* y *frutos secos y uvas*.
-- [ ] Decidir si quiere **firmar con fecha** cada artículo (hoy no llevan fecha).
 
 ## 8 · Textos legales
 
@@ -186,8 +195,8 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 - ✅ **Convenios:** las cinco entidades que aparecen son las que atiende.
 - ✅ **Horario de respuesta** a mensajes.
 - ✅ **Logo** en alta resolución.
-- ✅ **Tarifas de consulta:** se dejan tal como están por ahora *(pero ver el punto
-  2 — el origen de esos números es el archivo de diseño, no ella)*.
+- ✅ **Tarifas de consulta:** se dejan publicadas tal como están por ahora *(pero
+  siguen sin confirmarse con ella — ver el punto 2)*.
 - ✅ **Fotos del consultorio:** las seis son reales y están publicadas.
 - ✅ **Sus piezas de Instagram:** 24 seleccionadas, ya optimizadas y en uso.
 - ✅ **La guía nutricional se entrega abierta:** cualquiera la descarga desde el

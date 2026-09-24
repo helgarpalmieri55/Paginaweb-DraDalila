@@ -1,0 +1,173 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "layout": { "contentSize": "660px", "wideSize": "1180px" },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "defaultDuotone": false,
+      "custom": true,
+      "palette": [
+        { "slug": "crema",         "color": "#FBF5EF", "name": "Crema" },
+        { "slug": "agua",          "color": "#EEF4FA", "name": "Agua" },
+        { "slug": "blanco",        "color": "#FFFFFF", "name": "Blanco" },
+        { "slug": "tinta",         "color": "#2F4260", "name": "Tinta" },
+        { "slug": "texto",         "color": "#4B6588", "name": "Texto" },
+        { "slug": "suave",         "color": "#4F6B85", "name": "Texto suave" },
+        { "slug": "rosa",          "color": "#E2557E", "name": "Rosa" },
+        { "slug": "rosa-sombra",   "color": "#B93C61", "name": "Rosa oscuro" },
+        { "slug": "rosa-palo",     "color": "#F3E3EA", "name": "Rosa palo" },
+        { "slug": "rosa-claro",    "color": "#EFAFC3", "name": "Rosa claro" },
+        { "slug": "azul",          "color": "#4A7BB5", "name": "Azul" },
+        { "slug": "celeste",       "color": "#DCE9F5", "name": "Celeste" },
+        { "slug": "celeste-washi", "color": "#BBD5EA", "name": "Celeste hondo" },
+        { "slug": "verde",         "color": "#4E9E55", "name": "Verde" },
+        { "slug": "verde-tinta",   "color": "#3E7A45", "name": "Verde oscuro" },
+        { "slug": "verde-palo",    "color": "#E2F0DE", "name": "Verde palo" },
+        { "slug": "menta",         "color": "#CFE4DF", "name": "Menta" },
+        { "slug": "mostaza",       "color": "#D9A24F", "name": "Mostaza" },
+        { "slug": "arena",         "color": "#DCC08D", "name": "Arena" },
+        { "slug": "lila",          "color": "#7B7FC4", "name": "Lila" },
+        { "slug": "nota",          "color": "#FFF8E9", "name": "Nota" },
+        { "slug": "nota-tinta",    "color": "#8A6A2F", "name": "Nota oscuro" }
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fluid": true,
+      "customFontSize": true,
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "slug": "titulos",
+          "name": "Baloo 2 (títulos)",
+          "fontFamily": "\"Baloo 2\", system-ui, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Baloo 2",
+              "fontWeight": "500 800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [ "file:./assets/fonts/baloo2-latin.woff2" ],
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "fontFamily": "Baloo 2",
+              "fontWeight": "500 800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [ "file:./assets/fonts/baloo2-latin-ext.woff2" ],
+              "unicodeRange": "U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+            }
+          ]
+        },
+        {
+          "slug": "texto",
+          "name": "Nunito (texto)",
+          "fontFamily": "Nunito, system-ui, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "400 800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [ "file:./assets/fonts/nunito-latin.woff2" ],
+              "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+            },
+            {
+              "fontFamily": "Nunito",
+              "fontWeight": "400 800",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": [ "file:./assets/fonts/nunito-latin-ext.woff2" ],
+              "unicodeRange": "U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        { "slug": "chico",    "name": "Chico",    "size": "15px" },
+        { "slug": "base",     "name": "Base",     "size": "16px" },
+        { "slug": "lectura",  "name": "Lectura",  "size": "17px" },
+        { "slug": "bajada",   "name": "Bajada",   "size": "19px",
+          "fluid": { "min": "17px", "max": "19px" } },
+        { "slug": "titulo-3", "name": "Título 3", "size": "21px" },
+        { "slug": "titulo-2", "name": "Título 2", "size": "30px",
+          "fluid": { "min": "24px", "max": "30px" } },
+        { "slug": "titulo-1", "name": "Título 1", "size": "50px",
+          "fluid": { "min": "32px", "max": "50px" } }
+      ]
+    },
+    "spacing": {
+      "blockGap": null,
+      "units": [ "px", "rem", "%", "vw" ],
+      "spacingSizes": [
+        { "slug": "20", "name": "Muy chico", "size": "12px" },
+        { "slug": "30", "name": "Chico",     "size": "20px" },
+        { "slug": "40", "name": "Medio",     "size": "34px" },
+        { "slug": "50", "name": "Grande",    "size": "56px" },
+        { "slug": "60", "name": "Sección",   "size": "84px" }
+      ]
+    },
+    "border": { "color": true, "radius": true, "style": true, "width": true },
+    "shadow": {
+      "defaultPresets": false,
+      "presets": [
+        { "slug": "carta", "name": "Carta",
+          "shadow": "0 8px 0 -3px rgba(47,66,96,.06), 0 14px 26px rgba(47,66,96,.08)" },
+        { "slug": "foto",  "name": "Foto",
+          "shadow": "0 12px 0 -4px rgba(47,66,96,.07), 0 22px 40px rgba(47,66,96,.14)" }
+      ]
+    }
+  },
+  "styles": {
+    "color": { "background": "var(--wp--preset--color--crema)", "text": "var(--wp--preset--color--tinta)" },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--texto)",
+      "fontSize": "var(--wp--preset--font-size--base)",
+      "lineHeight": "1.6"
+    },
+    "spacing": {
+      "padding": { "left": "24px", "right": "24px" }
+    },
+    "elements": {
+      "link": {
+        "color": { "text": "#C43F66" },
+        ":hover": { "color": { "text": "#A32E51" } }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--titulos)",
+          "fontWeight": "700",
+          "lineHeight": "1.1"
+        },
+        "color": { "text": "var(--wp--preset--color--tinta)" }
+      },
+      "h1": { "typography": { "fontSize": "var(--wp--preset--font-size--titulo-1)" } },
+      "h2": { "typography": { "fontSize": "var(--wp--preset--font-size--titulo-2)" } },
+      "h3": { "typography": { "fontSize": "var(--wp--preset--font-size--titulo-3)" } },
+      "button": {
+        "color": { "background": "var(--wp--preset--color--rosa)", "text": "#fff" },
+        "typography": { "fontWeight": "800", "fontSize": "16px" },
+        "border": { "radius": "999px" },
+        "spacing": { "padding": { "top": "13px", "bottom": "13px", "left": "26px", "right": "26px" } },
+        ":hover": { "color": { "background": "var(--wp--preset--color--rosa-sombra)" } }
+      }
+    },
+    "blocks": {
+      "core/paragraph": { "color": { "text": "var(--wp--preset--color--texto)" } },
+      "core/list":      { "color": { "text": "var(--wp--preset--color--texto)" } },
+      "core/quote":     { "color": { "text": "var(--wp--preset--color--texto)" } }
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Barra de navegación", "area": "header" },
+    { "name": "footer", "title": "Pie de página",       "area": "footer" }
+  ],
+  "customTemplates": [
+    { "name": "pagina-ancha", "title": "Página a todo el ancho", "postTypes": [ "page" ] }
+  ]
+}

@@ -1,0 +1,79 @@
+<!-- wp:template-part {"slug":"header","tagName":"div"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+
+	<!-- wp:group {"tagName":"section","className":"cabecera cabecera--simple cabecera--agua","layout":{"type":"default"}} -->
+	<section class="wp-block-group cabecera cabecera--simple cabecera--agua">
+		<!-- wp:group {"className":"wrap cabecera__grid","layout":{"type":"default"}} -->
+		<div class="wp-block-group wrap cabecera__grid">
+			<!-- wp:group {"layout":{"type":"default"}} -->
+			<div class="wp-block-group">
+				<!-- wp:html -->
+				<nav class="migas" aria-label="Ruta">
+					<a href="/">Inicio</a>
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+					<span aria-current="page">Blog</span>
+				</nav>
+				<!-- /wp:html -->
+				<!-- wp:heading {"level":1} -->
+				<h1 class="wp-block-heading">Lo que alcanzo a contar<br><em>fuera de la consulta</em></h1>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"className":"cabecera__lead"} -->
+				<p class="cabecera__lead">Las dudas que más se repiten en consulta, respondidas con calma y sin tecnicismos. Para leer en la sala de espera, en la madrugada o cuando el buscador ya te asustó demasiado.</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+	</section>
+	<!-- /wp:group -->
+
+	<!-- wp:dalila/franja {"escena":3,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+	<!-- wp:group {"tagName":"section","className":"seccion seccion--crema","style":{"spacing":{"padding":{"top":"8px"}}},"layout":{"type":"default"}} -->
+	<section class="wp-block-group seccion seccion--crema" style="padding-top:8px">
+		<!-- wp:group {"className":"wrap","layout":{"type":"default"}} -->
+		<div class="wp-block-group wrap">
+
+			<!-- El artículo destacado es el que esté fijado arriba del blog. -->
+			<!-- wp:html -->
+			[dalila_destacado]
+			<!-- /wp:html -->
+
+			<!-- wp:pattern {"slug":"dalila/descarga-guia"} /-->
+
+			<!-- wp:html -->
+			[dalila_filtros]
+			<!-- /wp:html -->
+
+			<!-- Las tarjetas salen de las entradas publicadas. -->
+			<!-- wp:html -->
+			[dalila_articulos]
+			<!-- /wp:html -->
+
+
+		</div>
+		<!-- /wp:group -->
+	</section>
+	<!-- /wp:group -->
+
+	<!-- wp:html -->
+	<section class="cierre">
+  <div class="cierre__banda reveal">
+    <div>
+      <h2>¿Tu duda no está aquí?</h2>
+      <p>Escríbeme el tema y, si se repite en consulta, probablemente termine siendo el próximo artículo.</p>
+    </div>
+    <div class="cierre__acciones">
+      <a class="btn btn--rosa" data-wa href="/contacto/">Proponer un tema</a>
+      <a class="btn btn--blanco" href="/cursos/">Ver los cursos</a>
+    </div>
+  </div>
+</section>
+	<!-- /wp:html -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"div"} /-->

@@ -1,0 +1,248 @@
+/* ==========================================================
+   Dra. Dalila Peñaranda — páginas interiores
+   Se carga después de site.css, del que hereda tokens y
+   componentes. Aquí viven la cabecera de página, la prosa de
+   lectura, los bloques de detalle, la línea de tiempo, el
+   formulario y las tablas de horario.
+   ========================================================== */
+
+/* ---------- cabecera de página ---------- */
+.cabecera{position:relative;overflow:clip;padding:34px 24px 54px;background:var(--crema)}
+.cabecera--agua{background:var(--agua)}
+.cabecera__grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:center}
+.cabecera--simple .cabecera__grid{grid-template-columns:minmax(0,1fr)}
+.cabecera h1{font-size:clamp(32px,4.2vw,50px);color:var(--rosa);margin:14px 0 16px;line-height:1.05}
+.cabecera h1 em{font-style:normal;color:var(--tinta)}
+.cabecera__lead{font-size:17px;line-height:1.7;color:var(--texto);max-width:52ch}
+.cabecera__acciones{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+
+/* migas de pan */
+.migas{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--suave);flex-wrap:wrap}
+.migas a{color:var(--suave);font-weight:700}
+.migas a:hover{color:var(--rosa)}
+.migas svg{width:12px;height:12px;color:var(--tenue);flex:none}
+.migas [aria-current]{color:var(--tinta)}
+
+/* foto de la cabecera, con su cinta washi */
+.cabecera__foto{position:relative}
+.cabecera__foto .marco{transform:rotate(-1.4deg);animation:bob 7.5s ease-in-out infinite}
+.cabecera__foto .marco img{height:clamp(260px,34vh,380px)}
+.cabecera__mancha{position:absolute;inset:-26px -18px -18px -26px;border-radius:48% 52% 46% 54%/52% 46% 54% 48%;background:var(--rosa-palo)}
+.cabecera--agua .cabecera__mancha{background:var(--celeste)}
+
+/* nota de papel reutilizable */
+.notita{display:inline-block;background:var(--nota);color:var(--nota-tinta);font-family:"Baloo 2",cursive;font-size:15px;line-height:1.35;padding:13px 17px;border-radius:10px;box-shadow:0 8px 18px rgba(47,66,96,.14);transform:rotate(-1.6deg)}
+
+/* ---------- prosa de lectura ---------- */
+.prosa{max-width:68ch;margin:0 auto;color:var(--texto);font-size:17px;line-height:1.78}
+.prosa > * + *{margin-top:20px}
+.prosa h2{font-size:clamp(24px,2.8vw,30px);color:var(--tinta);margin-top:42px}
+.prosa h3{font-size:21px;color:var(--azul);margin-top:32px}
+.prosa strong{color:var(--tinta)}
+.prosa ul,.prosa ol{padding-left:22px;display:flex;flex-direction:column;gap:10px}
+.prosa li::marker{color:var(--rosa)}
+.prosa blockquote{margin:28px 0;padding:22px 26px;background:var(--rosa-palo);border-radius:16px;font-family:"Baloo 2",cursive;font-size:20px;line-height:1.4;color:var(--tinta)}
+.prosa blockquote p+p{margin-top:10px}
+.prosa figure{margin:32px 0}
+.prosa figure img{border-radius:16px;box-shadow:var(--sombra-carta)}
+.prosa figcaption{margin-top:10px;font-size:14px;color:var(--suave)}
+.prosa a{font-weight:700;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;text-decoration-color:var(--rosa-claro)}
+.prosa a:hover{text-decoration-color:var(--rosa)}
+.prosa hr{border:0;height:1px;background:rgba(47,66,96,.14);margin:38px 0}
+
+/* ---------- avisos y notas de trabajo ---------- */
+.aviso{display:flex;gap:14px;align-items:flex-start;background:var(--nota);border-radius:16px;padding:20px 22px;color:var(--nota-tinta);font-size:15px;line-height:1.6}
+.aviso svg{width:22px;height:22px;flex:none;margin-top:1px}
+.aviso strong{display:block;color:#6E5220;font-family:"Baloo 2",cursive;font-size:18px;margin-bottom:4px}
+.aviso--agua{background:var(--celeste);color:#3C5C7C}
+.aviso--agua strong{color:#2F4F70}
+.pendiente{display:inline-flex;align-items:center;gap:7px;background:rgba(217,162,79,.16);color:#7A5A1E;font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px}
+.pendiente svg{width:13px;height:13px}
+
+/* ---------- bloques de detalle alternados ---------- */
+.detalle{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:46px;align-items:center;padding:40px 0}
+.detalle+.detalle{border-top:1px solid rgba(47,66,96,.10)}
+.detalle__figura{position:relative}
+.detalle__figura img{width:100%;height:300px;object-fit:cover;border-radius:20px;box-shadow:var(--sombra-foto)}
+.detalle:nth-of-type(even) .detalle__figura{order:2}
+.detalle h2{font-size:clamp(24px,2.9vw,32px);margin-bottom:12px}
+.detalle h2.verde{color:var(--verde)}
+.detalle h2.azul{color:var(--azul)}
+.detalle h2.rosa{color:var(--rosa)}
+.detalle p{color:var(--texto);font-size:16px;line-height:1.7;max-width:54ch}
+.detalle .lista{margin-top:18px}
+.detalle__meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--suave)}
+.detalle__meta span{display:flex;align-items:center;gap:8px}
+.detalle__meta svg{width:16px;height:16px;color:var(--azul)}
+.detalle__icono{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;margin-bottom:16px}
+.detalle__icono svg{width:26px;height:26px}
+
+/* ---------- pasos numerados ---------- */
+.pasos{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;counter-reset:paso}
+.pasos li{position:relative;background:#fff;border-radius:18px;padding:26px 24px 24px;box-shadow:var(--sombra-carta);counter-increment:paso}
+.pasos li::before{content:counter(paso);position:absolute;top:-16px;left:24px;width:36px;height:36px;border-radius:50%;background:var(--rosa);color:#fff;font-family:"Baloo 2",cursive;font-size:19px;display:grid;place-items:center;box-shadow:0 4px 0 var(--rosa-sombra)}
+.pasos strong{display:block;font-family:"Baloo 2",cursive;font-size:19px;margin:12px 0 6px;color:var(--tinta)}
+.pasos p{color:var(--suave);font-size:14.5px;line-height:1.6}
+
+/* ---------- línea de tiempo (formación) ---------- */
+.cronologia{position:relative;margin:0;padding:6px 0 6px 40px;list-style:none}
+.cronologia::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:3px;border-radius:3px;background:linear-gradient(var(--rosa-claro),var(--celeste-washi));transform:scaleY(0);transform-origin:top;transition:transform 1.4s cubic-bezier(.16,.84,.3,1)}
+.cronologia.visible::before{transform:scaleY(1)}
+.cronologia li{position:relative;padding-bottom:28px}
+.cronologia li:last-child{padding-bottom:0}
+.cronologia li::before{content:"";position:absolute;left:-34px;top:6px;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--rosa);box-shadow:0 0 0 4px var(--crema)}
+.cabecera--agua .cronologia li::before,.seccion--agua .cronologia li::before{box-shadow:0 0 0 4px var(--agua)}
+.cronologia time{display:block;font-family:"Baloo 2",cursive;font-size:15px;color:var(--rosa-sombra);font-variant-numeric:tabular-nums}
+.cronologia strong{display:block;font-size:17px;color:var(--tinta);margin:2px 0 4px}
+.cronologia p{color:var(--suave);font-size:14.5px;line-height:1.6;max-width:52ch}
+
+/* ---------- mosaico del consultorio ---------- */
+.mosaico{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
+.mosaico .postal img{height:230px}
+.mosaico--alto .postal img{height:300px}
+
+/* ---------- datos, horarios y tablas ---------- */
+.datos-rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.dato{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--sombra-carta)}
+.dato__aro{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:14px}
+.dato__aro svg{width:20px;height:20px}
+.dato strong{display:block;font-family:"Baloo 2",cursive;font-size:18px;margin-bottom:4px;color:var(--tinta)}
+.dato p,.dato a{font-size:15px;line-height:1.6;color:var(--suave)}
+.dato a{font-weight:700;color:#C43F66}
+.horario{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+.horario caption{text-align:left;font-size:14px;color:var(--suave);padding-bottom:12px}
+.horario th,.horario td{text-align:left;padding:13px 14px;border-bottom:1px solid rgba(47,66,96,.10)}
+.horario th{font-family:"Baloo 2",cursive;font-size:16px;color:var(--tinta);font-weight:500}
+.horario td{color:var(--texto)}
+.horario tr:last-child th,.horario tr:last-child td{border-bottom:0}
+.horario td.cerrado{color:var(--tenue)}
+.tabla-envoltura{overflow-x:auto;background:#fff;border-radius:18px;padding:8px 22px;box-shadow:var(--sombra-carta)}
+
+/* ---------- filtros del blog ---------- */
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.filtro{border:0;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;border-radius:999px;background:#fff;color:var(--suave);box-shadow:0 3px 0 rgba(47,66,96,.10);transition:transform .18s ease,background .18s ease,color .18s ease}
+.filtro:hover{transform:translateY(-2px);color:var(--tinta)}
+.filtro[aria-pressed="true"]{background:var(--rosa);color:#fff;box-shadow:0 3px 0 var(--rosa-sombra)}
+.filtros--enlaces .filtro:hover{background:var(--rosa-palo);color:var(--rosa-sombra)}
+.articulo[hidden]{display:none}
+/* Las piezas que la doctora publica en Instagram son cuadradas y llevan texto:
+   se muestran enteras, sin recorte que se coma un renglón. */
+.rejilla--piezas .articulo img{height:auto;aspect-ratio:1/1;object-fit:cover}
+.detalle__figura--pieza img{height:auto;aspect-ratio:4/5;object-fit:contain;background:var(--crema);
+  box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10)}
+.destacado img.pieza{object-fit:contain;background:var(--crema)}
+.sin-resultados{background:#fff;border-radius:18px;padding:36px;text-align:center;color:var(--suave);box-shadow:var(--sombra-carta)}
+.sin-resultados strong{display:block;font-family:"Baloo 2",cursive;font-size:20px;color:var(--tinta);margin-bottom:6px}
+
+/* artículo destacado del blog */
+.destacado{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--sombra-foto);margin-bottom:34px}
+.destacado img{width:100%;height:100%;min-height:280px;object-fit:cover}
+.destacado__cuerpo{padding:34px}
+.destacado h2{font-size:clamp(24px,3vw,32px);margin:12px 0 10px}
+.destacado p{color:var(--texto);font-size:16px;line-height:1.7;margin-bottom:20px}
+.articulo__fecha{font-size:13px;color:var(--tenue);font-variant-numeric:tabular-nums}
+
+/* ---------- formulario ---------- */
+.formulario{background:#fff;border-radius:22px;padding:34px;box-shadow:var(--sombra-foto);display:grid;gap:18px}
+.campo{display:flex;flex-direction:column;gap:7px}
+.campo--par{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.campo label{font-weight:700;font-size:14.5px;color:var(--tinta)}
+.campo label .opcional{font-weight:400;color:var(--tenue);font-size:13px}
+.campo input,.campo select,.campo textarea{font:inherit;font-size:15.5px;color:var(--tinta);background:var(--crema);border:2px solid rgba(47,66,96,.12);border-radius:12px;padding:13px 15px;transition:border-color .2s ease,background .2s ease}
+.campo textarea{min-height:130px;resize:vertical}
+.campo input::placeholder,.campo textarea::placeholder{color:var(--tenue)}
+.campo input:hover,.campo select:hover,.campo textarea:hover{border-color:rgba(47,66,96,.22)}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:none;border-color:var(--rosa);background:#fff}
+.campo .error{font-size:13.5px;color:#B3315A;display:none;align-items:center;gap:6px}
+.campo .error svg{width:14px;height:14px;flex:none}
+.campo.malo input,.campo.malo select,.campo.malo textarea{border-color:#D0668A;background:#FDF3F6}
+.campo.malo .error{display:flex}
+.consentimiento{display:flex;gap:12px;align-items:flex-start;background:var(--agua);border-radius:14px;padding:16px 18px;font-size:14px;line-height:1.6;color:#3C5C7C}
+.consentimiento input{width:20px;height:20px;flex:none;margin-top:2px;accent-color:var(--rosa)}
+.consentimiento a{font-weight:700}
+.formulario__pie{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.formulario__pie small{color:var(--tenue);font-size:13px}
+.btn[disabled]{opacity:.5;pointer-events:none}
+.enviado{display:none;gap:14px;align-items:flex-start;background:var(--verde-palo);border-radius:16px;padding:20px 22px;color:var(--verde-tinta);font-size:15px;line-height:1.6}
+.enviado svg{width:22px;height:22px;flex:none;margin-top:1px}
+.enviado strong{display:block;font-family:"Baloo 2",cursive;font-size:19px;margin-bottom:4px}
+.formulario.listo .enviado{display:flex}
+.formulario.listo .campo,.formulario.listo .consentimiento,.formulario.listo .formulario__pie{display:none}
+
+/* ---------- descarga: la guía que regala la doctora ---------- */
+.descarga{display:grid;grid-template-columns:150px minmax(0,1fr);gap:26px;align-items:center;
+  background:var(--nota);border-radius:22px;padding:26px 30px;
+  box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 18px 30px rgba(47,66,96,.10)}
+.descarga img{width:100%;height:auto;border-radius:10px;box-shadow:0 8px 18px rgba(47,66,96,.20);transform:rotate(-2deg)}
+.descarga strong{display:block;font-family:"Baloo 2",cursive;font-size:23px;color:var(--nota-tinta);line-height:1.15}
+.descarga p{margin:8px 0 0;color:#6E5220;font-size:15px;line-height:1.6;max-width:52ch}
+.descarga__pie{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
+.descarga__pie small{color:#8A6A2F;font-size:13px}
+.prosa .descarga{margin:34px 0}
+/* En el blog, el regalo va entre el destacado y los filtros: mismo aire arriba y abajo. */
+.descarga + .filtros{margin-top:56px}
+@media (max-width:560px){
+  .descarga{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px}
+  .descarga img{max-width:170px;margin:0 auto}
+}
+
+/* ---------- cierre de página ---------- */
+.cierre{padding:0 24px 70px}
+.cierre__banda{max-width:var(--ancho);margin:0 auto;background:var(--rosa-palo);border-radius:26px;padding:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;align-items:center}
+.cierre__banda h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:12px}
+.cierre__banda p{color:var(--texto);font-size:16px;line-height:1.7;max-width:46ch}
+.cierre__acciones{display:flex;flex-direction:column;gap:14px}
+.cierre--agua .cierre__banda{background:var(--celeste)}
+.cierre--verde .cierre__banda{background:var(--verde-palo)}
+
+/* ---------- aparición lateral ---------- */
+.reveal--izq{transform:translateX(-26px)}
+.reveal--der{transform:translateX(26px)}
+.reveal--izq.visible,.reveal--der.visible{transform:none}
+
+/* ---------- artículos: una sola superficie de lectura ---------- */
+/* La cabecera y el cuerpo comparten eje y fondo, para que el título, la
+   entradilla y el primer párrafo se lean como una sola cosa. La franja de mar
+   entra después, donde el artículo termina. */
+.cabecera--articulo{padding-bottom:10px}
+.cabecera--articulo .cabecera__texto{max-width:68ch;margin:0 auto;font-size:17px}
+.seccion--lectura{padding-top:18px;padding-bottom:46px}
+.cierre--fondo-agua{background:var(--agua)}
+
+/* ---------- firma de la autora al pie de cada artículo ---------- */
+.autora{display:grid;grid-template-columns:86px minmax(0,1fr);gap:22px;align-items:center;
+  max-width:760px;margin:0 auto;background:var(--nota);border-radius:20px;padding:22px 26px}
+.autora__foto{width:86px;height:86px;border-radius:50%;object-fit:cover;object-position:50% 50%;
+  background:var(--crema);box-shadow:0 6px 16px rgba(47,66,96,.14)}
+.autora strong{display:block;font-family:"Baloo 2",cursive;font-size:20px;color:var(--tinta);line-height:1.2}
+.autora p{margin:6px 0 0;font-size:15px;color:var(--nota-tinta);line-height:1.5}
+.autora__enlaces{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;font-weight:700}
+.autora__enlaces a{color:var(--rosa-sombra);text-decoration:none;border-bottom:2px solid transparent}
+.autora__enlaces a:hover{border-bottom-color:currentColor}
+@media (max-width:560px){
+  .autora{grid-template-columns:minmax(0,1fr);text-align:center;justify-items:center;gap:14px;padding:24px 20px}
+  .autora__enlaces{justify-content:center}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .cabecera{padding:24px 24px 40px}
+  .cabecera__grid{grid-template-columns:minmax(0,1fr);gap:32px}
+  .cabecera__foto{max-width:420px;width:100%;margin:0 auto}
+  .detalle{padding:32px 0;gap:30px}
+  .detalle:nth-of-type(even) .detalle__figura{order:0}
+  .detalle__figura img{height:240px}
+  .formulario{padding:24px}
+  .cierre__banda{padding:30px 24px}
+  .destacado__cuerpo{padding:26px}
+}
+@media (max-width:560px){
+  .prosa{font-size:16px}
+  .cronologia{padding-left:32px}
+  .cronologia li::before{left:-29px}
+  .pasos li{padding:24px 20px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+  .cronologia::before{transform:none}
+  .reveal--izq,.reveal--der{transform:none}
+}

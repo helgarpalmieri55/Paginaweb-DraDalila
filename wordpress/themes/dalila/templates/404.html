@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","tagName":"div"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+
+	<!-- El sitio estático no tenía página de error; WordPress sí la necesita.
+	     El texto se dejó al mínimo, sin inventar voz, para que se cambie cuando
+	     la doctora decida qué quiere decir aquí. -->
+	<!-- wp:group {"className":"cabecera cabecera--simple","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group cabecera cabecera--simple">
+		<!-- wp:group {"className":"cabecera__texto","layout":{"type":"default"}} -->
+		<div class="wp-block-group cabecera__texto">
+			<!-- wp:heading {"level":1} -->
+			<h1 class="wp-block-heading">No encontramos esta página</h1>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"className":"cabecera__lead"} -->
+			<p class="cabecera__lead">Puede que la dirección haya cambiado o que el enlace venga incompleto.</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:buttons {"className":"cabecera__acciones"} -->
+			<div class="wp-block-buttons cabecera__acciones">
+				<!-- wp:button {"className":"btn btn--rosa"} -->
+				<div class="wp-block-button btn btn--rosa"><a class="wp-block-button__link wp-element-button" href="/">Volver al inicio</a></div>
+				<!-- /wp:button -->
+				<!-- wp:button {"className":"btn btn--blanco"} -->
+				<div class="wp-block-button btn btn--blanco"><a class="wp-block-button__link wp-element-button" href="/blog/">Ir al blog</a></div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:dalila/franja {"escena":0,"desde":"crema","hasta":"agua","align":"full"} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"div"} /-->
