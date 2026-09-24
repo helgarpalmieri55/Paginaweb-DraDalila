@@ -2901,7 +2901,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -3764,6 +3764,30 @@ return array(
 <footer class="wp-block-group">
 <!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Familia Palmieri Nova"} -->
 <strong>Familia Palmieri Nova</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:html -->
+<span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span>
+<!-- /wp:html -->
+</footer>
+<!-- /wp:group -->
+</blockquote>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "blockquote", "className": "testimonio reveal retraso-1"} -->
+<blockquote class="testimonio reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "“", "atributos": {"aria-hidden": "true"}, "className": "testimonio__comilla"} -->
+<span aria-hidden="true" class="testimonio__comilla">“</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Estamos muy agradecidos con la doctora por estos 5 meses de acompañamiento y atención a nuestro bebé. Ha demostrado ser una pediatra muy dedicada, atenta y cariñosa, siempre pendiente de cada detalle y dispuesta a resolver nuestras dudas con mucha paciencia. Nos ha brindado tranquilidad y confianza en cada consulta. Sin duda, una excelente profesional y una persona que recomendamos con mucho cariño. 💕👶🏻</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"tagName": "footer", "layout": {"type": "default"}} -->
+<footer class="wp-block-group">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Familia Betancourt De la Hoz"} -->
+<strong>Familia Betancourt De la Hoz</strong>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:html -->

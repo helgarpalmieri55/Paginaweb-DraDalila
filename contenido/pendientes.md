@@ -106,7 +106,8 @@ archivo de diseño que conviene reemplazar por material suyo.
 
 - [x] **Los tres inventados salieron** (María F., Carlos R., Andrea P.) y con
       ellos la nota de «ilustrativos». Desde el 24 de septiembre la portada muestra
-      solo testimonios reales; el primero es de la **Familia Palmieri Nova**.
+      solo testimonios reales: el de la **Familia Palmieri Nova** y el de la
+      **Familia Betancourt De la Hoz**.
 - [ ] **Más testimonios reales**, con autorización de quien lo escribe, para
       completar la sección (uno por tarjeta, todos con cinco estrellas).
 
