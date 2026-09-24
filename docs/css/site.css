@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .barra__menu a:hover{color:var(--rosa-sombra);background:rgba(226,85,126,.08)}
 .barra__menu a[aria-current="page"]{color:var(--rosa-sombra);background:rgba(226,85,126,.10)}
 .barra__cta{padding:12px 22px;font-size:15px;box-shadow:0 4px 0 var(--rosa-sombra)}
-.barra__cta svg{width:17px;height:17px}
+.barra__cta svg{width:19px;height:19px}
 .barra__toggle{display:none;margin-left:auto;width:44px;height:44px;border:0;border-radius:12px;background:transparent;cursor:pointer;padding:10px}
 .barra__toggle span{display:block;height:3px;background:var(--tinta);border-radius:3px;transition:transform .25s ease,opacity .2s ease}
 .barra__toggle span+span{margin-top:6px}
