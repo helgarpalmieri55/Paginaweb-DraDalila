@@ -72,7 +72,10 @@ tema, en `inc/posicionamiento.php`. No hay plugin aparte que instalar.
 4. Asignar todas las entradas al usuario de la doctora.
 5. **Marcar «Descargar e importar los archivos adjuntos».** Sin esa casilla las
    imágenes no viajan.
-6. Esperar. Son 49 imágenes y puede tardar unos minutos.
+6. **Desmarcar «Cambiar todas las URL importadas…».** Viene marcada y convierte
+   los enlaces a una sección de la misma página (`#politicas`) en enlaces a la
+   portada (`/#politicas`).
+7. Esperar. Son 49 imágenes y puede tardar unos minutos.
 
 Al terminar deben quedar 25 entradas, 10 páginas y 4 categorías.
 

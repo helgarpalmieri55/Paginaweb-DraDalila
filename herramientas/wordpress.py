@@ -498,6 +498,9 @@ def normalizar(contenido):
     contenido = contenido.replace('\r\n', '\n')
     contenido = re.sub(r'https?://[^"\'\s)]+/([^/"\'\s)]+\.(?:webp|jpe?g|png|gif|svg|pdf))',
                        r'\1', contenido, flags=re.I)
+    # En el servidor, los enlaces a una sección de la misma página («#algo»)
+    # quedaron guardados como «/#algo».
+    contenido = contenido.replace('href="/#', 'href="#')
     # WordPress le agrega «-1», «-scaled» o las medidas al nombre si ya existe.
     contenido = re.sub(r'(?:-\d+x\d+|-scaled|-\d+)+(\.(?:webp|jpe?g|png|gif|svg|pdf))\b',
                        r'\1', contenido, flags=re.I)

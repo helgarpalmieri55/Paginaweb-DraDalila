@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const DALILA_BLOQUES_VERSION = 4;
+const DALILA_BLOQUES_VERSION = 5;
 
 /**
  * El contenido sin las direcciones de las imágenes, que el importador cambia
@@ -25,6 +25,9 @@ const DALILA_BLOQUES_VERSION = 4;
 function dalila_normalizar_contenido( $contenido ) {
 	$contenido = str_replace( "\r\n", "\n", $contenido );
 	$contenido = preg_replace( '#https?://[^"\'\s)]+/([^/"\'\s)]+\.(?:webp|jpe?g|png|gif|svg|pdf))#i', '$1', $contenido );
+	// En el servidor, los enlaces a una sección de la misma página («#algo»)
+	// quedaron guardados como «/#algo».
+	$contenido = str_replace( 'href="/#', 'href="#', $contenido );
 	// WordPress le agrega «-1», «-scaled» o las medidas al nombre si ya existe.
 	$contenido = preg_replace( '#(?:-\d+x\d+|-scaled|-\d+)+(\.(?:webp|jpe?g|png|gif|svg|pdf))\b#i', '$1', $contenido );
 
