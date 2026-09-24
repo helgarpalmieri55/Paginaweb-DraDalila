@@ -1446,7 +1446,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'contacto',
-		'antes'     => array( '90d3a7708f17dd28f589fb58c48aeb0e' ),
+		'antes'     => array( 'eb14d83b273d645748cf26c7dcb01f87' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1716,7 +1716,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'cursos',
-		'antes'     => array( '96af89d3b877ae541488d7b134899061' ),
+		'antes'     => array( 'ae42d729285ac1a2ac31a7532d52fc29' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
