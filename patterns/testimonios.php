@@ -18,7 +18,7 @@
 <!-- wp:group {"className": "rejilla", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla">
 <!-- wp:html -->
-<blockquote class="testimonio"><span class="testimonio__comilla" aria-hidden="true">“</span><p>La Dra. ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p><footer><strong>Sylvana Nova</strong></footer></blockquote>
+<blockquote class="testimonio"><span class="testimonio__comilla" aria-hidden="true">“</span><p>La Dra. ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p><footer><strong>Sylvana Nova</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
 <!-- /wp:html -->
 </div>
 <!-- /wp:group -->
