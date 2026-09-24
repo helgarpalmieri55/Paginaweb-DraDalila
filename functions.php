@@ -104,3 +104,35 @@ function dalila_categorias_de_patrones() {
 	);
 }
 add_action( 'init', 'dalila_categorias_de_patrones' );
+
+/**
+ * El ícono de la pestaña. Mientras no se suba uno en Ajustes → Generales →
+ * Ícono del sitio, va el del sitio original, que viaja con el tema. Apenas se
+ * sube uno, WordPress pone el suyo y este se retira solo.
+ */
+function dalila_icono_de_respaldo() {
+	if ( has_site_icon() ) {
+		return;
+	}
+
+	$dir = get_template_directory_uri() . '/assets/img/';
+	printf( '<link rel="icon" href="%s" sizes="any">' . "\n", esc_url( $dir . 'favicon.ico' ) );
+	printf( '<link rel="icon" href="%s" type="image/png">' . "\n", esc_url( $dir . 'favicon.png' ) );
+	printf( '<link rel="apple-touch-icon" href="%s">' . "\n", esc_url( $dir . 'apple-touch-icon.png' ) );
+}
+add_action( 'wp_head', 'dalila_icono_de_respaldo', 2 );
+add_action( 'login_head', 'dalila_icono_de_respaldo' );
+add_action( 'admin_head', 'dalila_icono_de_respaldo' );
+
+/**
+ * Quien pide /favicon.ico y el archivo no existe llega a WordPress, que sin
+ * ícono propio lo manda al logo de WordPress. Mientras no haya uno, va al del
+ * tema.
+ */
+function dalila_favicon_ico() {
+	if ( ! has_site_icon() ) {
+		wp_safe_redirect( get_template_directory_uri() . '/assets/img/favicon.ico', 301 );
+		exit;
+	}
+}
+add_action( 'do_faviconico', 'dalila_favicon_ico' );
