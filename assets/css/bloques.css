@@ -9,10 +9,11 @@
 .en-01509c { margin-top:34px !important; max-width:760px !important; }
 .en-048228 { padding-top:8px !important; }
 .en-062d4a { margin-top:24px !important; }
-.en-06fa12 { max-width:760px !important; }
 .en-07f3b0 { display:grid !important; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) !important; gap:34px !important; margin-top:44px !important; align-items:start !important; }
+.en-0a4e55 { font-size:14.5px !important; color:var(--suave) !important; }
 .en-1386d5 { margin:0 !important; }
 .en-205ffd { padding-top:34px !important; }
+.en-2cbabd { font-size:28px !important; }
 .en-2f1238 { font-size:28px !important; margin-bottom:8px !important; }
 .en-35a11d { padding:30px !important; }
 .en-37d30b { margin-bottom:24px !important; }
@@ -47,7 +48,10 @@
 .en-c6ab03 { padding-top:0 !important; padding-bottom:24px !important; }
 .en-d5937b { display:grid !important; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) !important; gap:52px !important; align-items:start !important; }
 .en-dad5e8 { font-size:26px !important; margin-bottom:14px !important; }
+.en-dd8bd1 { font-size:16px !important; color:var(--suave) !important; }
 .en-e04ff8 { background:var(--celeste) !important; }
+.en-e4194a { display:flex !important; gap:12px !important; flex-wrap:wrap !important; align-items:center !important; margin-top:32px !important; }
+.en-e71cc7 { margin-top:26px !important; margin-bottom:0 !important; }
 .en-e8c8ef { padding-top:20px !important; }
 .en-ed67a6 { font-size:15.5px !important; }
 .en-ef4825 { margin-bottom:26px !important; }

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "dalila/texto",
+  "title": "Texto del sitio",
+  "category": "text",
+  "icon": "editor-textcolor",
+  "description": "Un texto corto con la forma que le da el diseño del sitio: un botón, una etiqueta, un nombre, un precio. Se escribe directo; si es un enlace, su dirección se cambia en el panel de la derecha.",
+  "keywords": [ "texto", "botón", "enlace", "etiqueta" ],
+  "textdomain": "dalila",
+  "supports": { "html": false, "className": false, "customClassName": true },
+  "attributes": {
+    "etiqueta":     { "type": "string", "default": "span" },
+    "contenido":    { "type": "string", "default": "" },
+    "atributos":    { "type": "object", "default": {} },
+    "icono":        { "type": "string", "default": "" },
+    "iconoAlFinal": { "type": "boolean", "default": false }
+  },
+  "editorScript": "file:./editor.js"
+}
