@@ -17,6 +17,7 @@ con !important para que pese lo mismo que pesaba en línea.
 """
 
 import hashlib
+import html as html_lib
 import json
 import re
 
@@ -28,6 +29,30 @@ HAY_BLOQUE = re.compile(r'<(?:%s)\b' % '|'.join(DE_BLOQUE), re.I)
 
 # Las cajas que un Grupo sabe ser.
 CAJAS = ('div', 'section', 'article', 'aside', 'header', 'footer', 'main')
+
+# Lo que no se convierte nunca: dibujos, tablas, formularios, multimedia.
+INTOCABLES = ('svg', 'form', 'select', 'textarea',
+              'input', 'button', 'iframe', 'script', 'style', 'video', 'audio', 'picture',
+              'canvas', 'hr', 'br')
+HAY_INTOCABLE = re.compile(r'<(?:%s)\b' % '|'.join(t for t in INTOCABLES if t not in ('svg', 'br')), re.I)
+SVG = re.compile(r'<svg\b.*?</svg>', re.S | re.I)
+
+
+# Lo que puede ir dentro de un texto editable sin romperlo.
+EN_LINEA = {'a', 'abbr', 'b', 'bdi', 'br', 'cite', 'code', 'data', 'del', 'em', 'i', 'ins',
+            'kbd', 'mark', 'q', 's', 'small', 'span', 'strong', 'sub', 'sup', 'time', 'u', 'wbr'}
+
+
+def solo_en_linea(fragmento):
+    return all(t.lower() in EN_LINEA for t in re.findall(r'<([a-zA-Z][a-zA-Z0-9]*)', SVG.sub('', fragmento)))
+
+
+def texto_visible(fragmento):
+    return re.sub(r'\s+', '', html_lib.unescape(re.sub(r'<[^>]+>', '', SVG.sub('', fragmento))))
+
+
+def escapar(valor):
+    return valor.replace('&', '&amp;').replace('"', '&quot;')
 
 SUELTAS = ('br', 'hr', 'img', 'input', 'source', 'meta', 'link', 'wbr')
 ETIQUETA = re.compile(r'<(/?)([a-zA-Z][a-zA-Z0-9]*)\b[^>]*?(/?)>', re.S)
@@ -187,7 +212,8 @@ class Conversor:
             self.comentario('dalila/imagen', {'className': clases}), etiqueta_img)
 
     def lista(self, nombre, atributos, contenido):
-        if 'aria-label' in atributos:
+        # Con íconos, cada renglón va como «Texto del sitio», que los respeta.
+        if 'aria-label' in atributos or SVG.search(contenido):
             return None
         datos = self.clases_y_ancla(atributos)
         if datos is None:
@@ -234,6 +260,75 @@ class Conversor:
             ' aria-label="%s"' % etiqueta_aria if etiqueta_aria else '',
             dentro, nombre)
 
+    def clases_y_resto(self, atributos):
+        """Las clases (con estilo y retraso convertidos) y el resto de los
+        atributos tal cual, en su orden, para los bloques del sitio."""
+        clases = atributos.get('class', '').split()
+        if atributos.get('data-delay', '').isdigit():
+            clases.append('retraso-' + atributos['data-delay'])
+        if atributos.get('style'):
+            clases.append(self.clase_de_estilo(atributos['style']))
+        resto = {k: html_lib.unescape(v) for k, v in atributos.items()
+                 if k not in ('class', 'style', 'data-delay')}
+        return ' '.join(c for c in clases if c), resto
+
+    @staticmethod
+    def abrir(nombre, resto, clases):
+        partes = ['%s="%s"' % (k, escapar(v)) for k, v in resto.items()]
+        if clases:
+            partes.append('class="%s"' % clases)
+        return '<%s%s>' % (nombre, ''.join(' ' + p for p in partes))
+
+    def texto_sitio(self, nombre, atributos, contenido):
+        """«Texto del sitio» (dalila/texto): una etiqueta con texto en línea,
+        editable, con un ícono opcional al principio o al final."""
+        if nombre in INTOCABLES or not solo_en_linea(contenido):
+            return None
+        if not texto_visible(contenido):
+            return None
+
+        icono, al_final = '', False
+        if SVG.search(contenido):
+            nodos = piezas(contenido)
+            es_icono = lambda n: n[0] == 'el' and SVG.search(n[1]) and not texto_visible(n[1])
+            if nodos and es_icono(nodos[0]):
+                icono, resto_html = nodos[0][1].strip(), contenido.split(nodos[0][1], 1)[1]
+            elif nodos and es_icono(nodos[-1]):
+                icono, al_final = nodos[-1][1].strip(), True
+                resto_html = contenido.rsplit(nodos[-1][1], 1)[0]
+            else:
+                return None
+            if SVG.search(resto_html):
+                return None
+            texto = re.sub(r'\s+', ' ', resto_html)
+            texto = texto.rstrip() if not al_final else texto.lstrip()
+        else:
+            texto = re.sub(r'\s+', ' ', contenido).strip()
+
+        clases, resto = self.clases_y_resto(atributos)
+        cuerpo = (texto + icono) if al_final else (icono + texto)
+        datos = {'etiqueta': nombre, 'contenido': texto, 'atributos': resto,
+                 'icono': icono, 'iconoAlFinal': True if al_final else None, 'className': clases}
+        return '%s\n%s%s</%s>\n<!-- /wp:dalila/texto -->' % (
+            self.comentario('dalila/texto', datos), self.abrir(nombre, resto, clases), cuerpo, nombre)
+
+    def caja_sitio(self, nombre, atributos, contenido):
+        """«Caja del sitio» (dalila/caja): cualquier contenedor con sus
+        atributos, y adentro bloques."""
+        if nombre in INTOCABLES:
+            return None
+        hijos = piezas(contenido)
+        if not hijos or any(t == 'texto' for t, _ in hijos):
+            return None
+        # Solo dibujos, sin texto ni fotos (las estrellas, las burbujas): una pieza.
+        if not texto_visible(contenido) and '<img' not in contenido:
+            return None
+        clases, resto = self.clases_y_resto(atributos)
+        dentro = '\n\n'.join(self.bloque(el) for _, el in hijos)
+        datos = {'etiqueta': nombre, 'atributos': resto, 'className': clases}
+        return '%s\n%s\n%s\n</%s>\n<!-- /wp:dalila/caja -->' % (
+            self.comentario('dalila/caja', datos), self.abrir(nombre, resto, clases), dentro, nombre)
+
     def bloque(self, el):
         el = el.strip()
         nombre, atributos, fin = abre(el)
@@ -245,12 +340,19 @@ class Conversor:
         resultado = None
         if nombre == 'img':
             resultado = self.imagen(atributos)
-        elif nombre in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p') and not HAY_BLOQUE.search(contenido):
+        elif (nombre in ('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p') and not HAY_BLOQUE.search(contenido)
+              and not SVG.search(contenido) and not HAY_INTOCABLE.search(contenido)):
             resultado = self.texto(nombre, atributos, contenido)
         elif nombre in ('ul', 'ol'):
             resultado = self.lista(nombre, atributos, contenido)
         elif nombre in CAJAS:
             resultado = self.caja(nombre, atributos, contenido)
+
+        # Lo que no cabe en un bloque de WordPress va a los bloques del sitio.
+        if resultado is None and nombre != 'img':
+            resultado = self.texto_sitio(nombre, atributos, contenido)
+        if resultado is None and nombre != 'img':
+            resultado = self.caja_sitio(nombre, atributos, contenido)
 
         return resultado if resultado is not None else self.html(el)
 

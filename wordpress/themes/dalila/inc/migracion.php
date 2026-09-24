@@ -17,20 +17,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'aviso-medico',
-		'antes'     => array( '4ccfd328be40e6fe567c2d13ec6d1412', '86bd9ed46ce9b7b293c3948166e532fa' ),
+		'antes'     => array( '4ccfd328be40e6fe567c2d13ec6d1412', '86bd9ed46ce9b7b293c3948166e532fa', 'afdbddd7b39aaeca0428031c31c47f64' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Aviso médico</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Aviso médico", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Aviso médico</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Aviso médico</h1>
@@ -145,13 +153,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver citas y tarifas", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Ver citas y tarifas</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/contacto/">Escribirme</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Escribirme", "atributos": {"href": "/contacto/"}, "className": "btn btn--blanco"} -->
+<a href="/contacto/" class="btn btn--blanco">Escribirme</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -162,20 +170,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'blog',
-		'antes'     => array( '9d9e75dbae47e65c99621429499da838', 'd43bea19dfe6f55cb7c05e05c7999d3e', 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
+		'antes'     => array( '9d9e75dbae47e65c99621429499da838', 'd145e65697de797081e86aead465c8b7', 'd43bea19dfe6f55cb7c05e05c7999d3e', 'ebf29b6fc4a282ab2db2bcfa205f8005' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Blog</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Blog", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Blog</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Lo que alcanzo a contar<br><em>fuera de la consulta</em></h1>
@@ -205,9 +221,9 @@ return array(
 
 <!-- wp:group {"className": "destacado__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group destacado__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 2} -->
 <h2 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h2>
@@ -237,9 +253,9 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Un regalo: mis recomendaciones nutricionales"} -->
 <strong>Un regalo: mis recomendaciones nutricionales</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
@@ -247,16 +263,13 @@ return array(
 
 <!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group descarga__pie">
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
-            Descargar la guía
-          </a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Descargar la guía", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf", "download": ""}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 4v11\\"/><path d=\\"M8 11l4 4 4-4\\"/><path d=\\"M5 19h14\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download="" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg> Descargar la guía</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "small", "contenido": "PDF · 9 páginas · gratis"} -->
 <small>PDF · 9 páginas · gratis</small>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -264,338 +277,813 @@ return array(
 </div>
 <!-- /wp:group -->
 
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"role": "group", "aria-label": "Filtrar por categoría"}, "className": "filtros reveal"} -->
+<div role="group" aria-label="Filtrar por categoría" class="filtros reveal">
 <!-- wp:html -->
-<div class="filtros reveal" role="group" aria-label="Filtrar por categoría">
-      <button class="filtro" type="button" data-cat="todo" aria-pressed="true">Todo</button>
-      <button class="filtro" type="button" data-cat="nutricion" aria-pressed="false">Nutrición</button>
-      <button class="filtro" type="button" data-cat="lactancia" aria-pressed="false">Lactancia</button>
-      <button class="filtro" type="button" data-cat="salud" aria-pressed="false">Salud</button>
-      <button class="filtro" type="button" data-cat="crecimiento" aria-pressed="false">Crecimiento</button>
-    </div>
+<button class="filtro" type="button" data-cat="todo" aria-pressed="true">Todo</button>
 <!-- /wp:html -->
+
+<!-- wp:html -->
+<button class="filtro" type="button" data-cat="nutricion" aria-pressed="false">Nutrición</button>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<button class="filtro" type="button" data-cat="lactancia" aria-pressed="false">Lactancia</button>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<button class="filtro" type="button" data-cat="salud" aria-pressed="false">Salud</button>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<button class="filtro" type="button" data-cat="crecimiento" aria-pressed="false">Crecimiento</button>
+<!-- /wp:html -->
+</div>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "rejilla rejilla--3 rejilla--piezas", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla rejilla--3 rejilla--piezas">
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Diez veces antes de decir «no le gusta»" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Diez veces antes de decir «no le gusta»</h3>
-          <p>La papila gustativa necesita tiempo. Cómo y cuándo volver a ofrecer un alimento que rechazó.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal"} -->
+<article data-cat="nutricion" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/picky-eater.webp" alt="Diez veces antes de decir «no le gusta»" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="La silla de comer: los tres ángulos de 90°" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>La silla de comer: los tres ángulos de 90°</h3>
-          <p>Lo primero de la complementaria no es la comida: es dónde se sienta a comerla.</p>
-          <p class="articulo__fecha">6 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mitos-lonchera.webp" alt="Leer los ingredientes, no solo la tabla" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Leer los ingredientes, no solo la tabla</h3>
-          <p>Dónde se esconde el azúcar añadido y por qué un buen procesado casi no tiene lista.</p>
-          <p class="articulo__fecha">6 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/leer-los-ingredientes-no-solo-la-tabla/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
+<!-- /wp:heading -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Cumplió el año y dejó de comer" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Cumplió el año y dejó de comer</h3>
-          <p>Descubrió el «no», aprendió a caminar y le llama más la atención el mundo que el plato.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/cumplio-el-ano-y-dejo-de-comer/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>La papila gustativa necesita tiempo. Cómo y cuándo volver a ofrecer un alimento que rechazó.</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="lactancia">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-lactancia.webp" alt="¿Qué leche después del destete?" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">lactancia</span>
-          <h3>¿Qué leche después del destete?</h3>
-          <p>Leche de vaca o adaptada: la respuesta depende de cómo esté comiendo el resto del día.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/que-leche-le-doy-despues-del-destete/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="lactancia">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/grietas-lactancia.webp" alt="El agarre: tres señales de que va bien" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">lactancia</span>
-          <h3>El agarre: tres señales de que va bien</h3>
-          <p>La mano en C, dos centímetros de areola y el labio de abajo hacia afuera.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/el-agarre-tres-senales-de-que-va-bien/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/diez-veces-antes-de-decir-no-le-gusta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>Lavado nasal: si está llorando, no se hace</h3>
-          <p>Sonarse antes, cabeza abajo y boca abierta. El objetivo no es destapar: es diluir.</p>
-          <p class="articulo__fecha">7 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/lavado-nasal-si-esta-llorando-no-se-hace/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="nutricion" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/cinco-errores.webp" alt="La silla de comer: los tres ángulos de 90°" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>Si le sangra la nariz, esto no</h3>
-          <p>Nada de echar la cabeza atrás ni de meter papel. Dos dedos, tres minutos y se detiene.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/si-le-sangra-la-nariz-esto-no/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>Se puso morado al llorar</h3>
-          <p>El espasmo del sollozo asusta muchísimo y es una condición benigna.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/se-puso-morado-al-llorar/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La silla de comer: los tres ángulos de 90°</h3>
+<!-- /wp:heading -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="crecimiento">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="El tamizaje auditivo: la primera prueba" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--azul">crecimiento</span>
-          <h3>El tamizaje auditivo: la primera prueba</h3>
-          <p>Idealmente antes de salir de la clínica. Qué mide, y por qué a veces hay que repetirla.</p>
-          <p class="articulo__fecha">6 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>Lo primero de la complementaria no es la comida: es dónde se sienta a comerla.</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="crecimiento">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--azul">crecimiento</span>
-          <h3>El ronquido nunca es normal</h3>
-          <p>Afecta el sueño, la concentración, el crecimiento y hasta los dientes.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/el-ronquido-nunca-es-normal/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">6 min de lectura</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Frutos secos y uvas: cómo sí" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Frutos secos y uvas: cómo sí</h3>
-          <p>Duros y redondos son los dos riesgos. No hay que eliminarlos: hay que cambiarles la forma.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/frutos-secos-y-uvas-como-si/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-silla-de-comer-los-tres-angulos-de-90/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Cinco errores que llevan a la selectividad" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Cinco errores que llevan a la selectividad</h3>
-          <p>Obligar, gritar durante una arcada y quedarse en las papillas más allá de los diez meses.</p>
-          <p class="articulo__fecha">6 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="nutricion" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mitos-lonchera.webp" alt="Leer los ingredientes, no solo la tabla" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Derivados lácteos: cuánto y desde cuándo" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Derivados lácteos: cuánto y desde cuándo</h3>
-          <p>Una cuchara a los seis meses, dos al año, y un límite de sodio que casi nadie mira.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Después de los dos años, ¿qué leche?</h3>
-          <p>Dos tazas de ocho onzas, y por qué no más de eso.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/despues-de-los-dos-anos-que-leche/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Leer los ingredientes, no solo la tabla</h3>
+<!-- /wp:heading -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="La malnutrición que no se ve" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>La malnutrición que no se ve</h3>
-          <p>Se llama hambre oculta, no se nota en la balanza y solo aparece en el laboratorio.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>Dónde se esconde el azúcar añadido y por qué un buen procesado casi no tiene lista.</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="lactancia">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/horarios-amamantar.webp" alt="Lactancia y caries" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">lactancia</span>
-          <h3>Lactancia y caries</h3>
-          <p>Protege, pero no basta. La higiene empieza con el primer diente, no cuando salgan varios.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/lactancia-y-caries-protege-pero-no-basta/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">6 min de lectura</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>Dolor de oído a medianoche</h3>
-          <p>Nada de gotas sin ver el oído, ni orégano, ni leche materna. Lo que sí ayuda hasta la consulta.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/dolor-de-oido-a-medianoche/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/leer-los-ingredientes-no-solo-la-tabla/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="Agotamiento materno: cinco señales" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>Agotamiento materno: cinco señales</h3>
-          <p>La última es la más grave y la que más cuesta decir en voz alta.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/agotamiento-materno-cinco-senales/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal"} -->
+<article data-cat="nutricion" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/selectividad.webp" alt="Cumplió el año y dejó de comer" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="nutricion">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Tres mitos que oigo cada semana" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--verde">nutrición</span>
-          <h3>Tres mitos que oigo cada semana</h3>
-          <p>Los jugos de fruta, el huevo antes del año y el «come poquito, no crecerá bien».</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/tres-mitos-que-oigo-cada-semana/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="El cólico cambió de nombre" width="900" height="900" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>El cólico cambió de nombre</h3>
-          <p>Ahora es síndrome de distress del lactante, y el cambio no es cosmético.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
+<!-- /wp:heading -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>Cuidado con los mosquitos</h3>
-          <p>Dengue, Zika, chikungunya y fiebre amarilla. Y por qué no se automedica la fiebre.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>Descubrió el «no», aprendió a caminar y le llama más la atención el mundo que el plato.</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="1" data-cat="salud">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--rosa">salud</span>
-          <h3>El inhalador: la técnica correcta</h3>
-          <p>Inhalocámara siempre, sello correcto y diez segundos contados, uno por uno.</p>
-          <p class="articulo__fecha">5 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/el-inhalador-la-tecnica-correcta/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<article class="articulo reveal" data-delay="2" data-cat="crecimiento">
-        <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy">
-        <div class="articulo__cuerpo">
-          <span class="chip chip--azul">crecimiento</span>
-          <h3>Bullying: las señales que no te cuenta</h3>
-          <p>Se esconde en el silencio, pero deja rastros que sí se ven.</p>
-          <p class="articulo__fecha">4 min de lectura</p>
-          <p style="margin-top:12px"><a href="/blog/bullying-las-senales-que-no-te-cuenta/">Leer más →</a></p>
-        </div>
-      </article>
-<!-- /wp:html -->
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cumplio-el-ano-y-dejo-de-comer/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "lactancia"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="lactancia" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-lactancia.webp" alt="¿Qué leche después del destete?" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">¿Qué leche después del destete?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Leche de vaca o adaptada: la respuesta depende de cómo esté comiendo el resto del día.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/que-leche-le-doy-despues-del-destete/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "lactancia"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="lactancia" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/grietas-lactancia.webp" alt="El agarre: tres señales de que va bien" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El agarre: tres señales de que va bien</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La mano en C, dos centímetros de areola y el labio de abajo hacia afuera.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-agarre-tres-senales-de-que-va-bien/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal"} -->
+<article data-cat="salud" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sonarse antes, cabeza abajo y boca abierta. El objetivo no es destapar: es diluir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">7 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/lavado-nasal-si-esta-llorando-no-se-hace/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="salud" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Si le sangra la nariz, esto no</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nada de echar la cabeza atrás ni de meter papel. Dos dedos, tres minutos y se detiene.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/si-le-sangra-la-nariz-esto-no/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="salud" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Se puso morado al llorar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>El espasmo del sollozo asusta muchísimo y es una condición benigna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/se-puso-morado-al-llorar/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "crecimiento"}, "className": "articulo reveal"} -->
+<article data-cat="crecimiento" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/audicion-detectar.webp" alt="El tamizaje auditivo: la primera prueba" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Idealmente antes de salir de la clínica. Qué mide, y por qué a veces hay que repetirla.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">6 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "crecimiento"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="crecimiento" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-ronquido.webp" alt="Ilustración en acuarela de un niño dormido en su cama, con la luna en la ventana" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El ronquido nunca es normal</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Afecta el sueño, la concentración, el crecimiento y hasta los dientes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-ronquido-nunca-es-normal/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="nutricion" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/diez-alimentos.webp" alt="Frutos secos y uvas: cómo sí" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Frutos secos y uvas: cómo sí</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Duros y redondos son los dos riesgos. No hay que eliminarlos: hay que cambiarles la forma.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/frutos-secos-y-uvas-como-si/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal"} -->
+<article data-cat="nutricion" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/relacion-alimentos.webp" alt="Cinco errores que llevan a la selectividad" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Obligar, gritar durante una arcada y quedarse en las papillas más allá de los diez meses.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">6 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cinco-errores-que-llevan-a-la-selectividad/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="nutricion" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/lonchera-estrellas.webp" alt="Derivados lácteos: cuánto y desde cuándo" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Una cuchara a los seis meses, dos al año, y un límite de sodio que casi nadie mira.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/derivados-lacteos-cuanto-y-desde-cuando/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="nutricion" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-leche-dos-anios.webp" alt="Ilustración en acuarela de dos vasos de leche junto a un bol de fruta" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dos tazas de ocho onzas, y por qué no más de eso.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/despues-de-los-dos-anos-que-leche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal"} -->
+<article data-cat="nutricion" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-cantidad.webp" alt="La malnutrición que no se ve" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">La malnutrición que no se ve</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se llama hambre oculta, no se nota en la balanza y solo aparece en el laboratorio.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/la-malnutricion-que-no-se-ve/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "lactancia"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="lactancia" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/horarios-amamantar.webp" alt="Lactancia y caries" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">lactancia</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Lactancia y caries</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Protege, pero no basta. La higiene empieza con el primer diente, no cuando salgan varios.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/lactancia-y-caries-protege-pero-no-basta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="salud" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Dolor de oído a medianoche</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nada de gotas sin ver el oído, ni orégano, ni leche materna. Lo que sí ayuda hasta la consulta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/dolor-de-oido-a-medianoche/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal"} -->
+<article data-cat="salud" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="Agotamiento materno: cinco señales" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Agotamiento materno: cinco señales</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>La última es la más grave y la que más cuesta decir en voz alta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/agotamiento-materno-cinco-senales/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "nutricion"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="nutricion" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mito-jugos.webp" alt="Tres mitos que oigo cada semana" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
+<span class="chip chip--verde">nutrición</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los jugos de fruta, el huevo antes del año y el «come poquito, no crecerá bien».</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/tres-mitos-que-oigo-cada-semana/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="salud" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/colico-lactante.webp" alt="El cólico cambió de nombre" width="900" height="900" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El cólico cambió de nombre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ahora es síndrome de distress del lactante, y el cambio no es cosmético.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-colico-del-lactante-cambio-de-nombre/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal"} -->
+<article data-cat="salud" class="articulo reveal">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/mosquitos-consulta.webp" alt="Pieza de la doctora: cuidado con los mosquitos, consulta de inmediato y no te automediques" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dengue, Zika, chikungunya y fiebre amarilla. Y por qué no se automedica la fiebre.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/cuidado-con-los-mosquitos/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "salud"}, "className": "articulo reveal retraso-1"} -->
+<article data-cat="salud" class="articulo reveal retraso-1">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
+<span class="chip chip--rosa">salud</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Inhalocámara siempre, sello correcto y diez segundos contados, uno por uno.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">5 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/el-inhalador-la-tecnica-correcta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "article", "atributos": {"data-cat": "crecimiento"}, "className": "articulo reveal retraso-2"} -->
+<article data-cat="crecimiento" class="articulo reveal retraso-2">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-bullying.webp" alt="Ilustración en acuarela de un niño sentado solo en las escaleras del colegio mientras otros juegan al fondo" width="1000" height="1000" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group articulo__cuerpo">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
+<span class="chip chip--azul">crecimiento</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Bullying: las señales que no te cuenta</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Se esconde en el silencio, pero deja rastros que sí se ven.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "articulo__fecha"} -->
+<p class="articulo__fecha">4 min de lectura</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className": "en-002535"} -->
+<p class="en-002535"><a href="/blog/bullying-las-senales-que-no-te-cuenta/">Leer más →</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:html -->
-<div class="sin-resultados reveal" hidden>
-      <strong>Todavía no hay artículos en esta categoría</strong>
-      <p>Escríbeme el tema que te gustaría leer y lo pongo en la lista.</p>
-    </div>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"hidden": ""}, "className": "sin-resultados reveal"} -->
+<div hidden="" class="sin-resultados reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Todavía no hay artículos en esta categoría"} -->
+<strong>Todavía no hay artículos en esta categoría</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Escríbeme el tema que te gustaría leer y lo pongo en la lista.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </section>
@@ -619,13 +1107,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" data-wa href="/contacto/">Proponer un tema</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Proponer un tema", "atributos": {"data-wa": "", "href": "/contacto/"}, "className": "btn btn--rosa"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa">Proponer un tema</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/cursos/">Ver los cursos</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver los cursos", "atributos": {"href": "/cursos/"}, "className": "btn btn--blanco"} -->
+<a href="/cursos/" class="btn btn--blanco">Ver los cursos</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -636,20 +1124,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '8b5436cbb862a638d7234db5cc0f90d1' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '8b5436cbb862a638d7234db5cc0f90d1', 'ee5c8571bd05fd26e995450c689ec715' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Citas y tarifas</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Citas y tarifas", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Citas y tarifas</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Agendar es<br><em>escribirme un mensaje</em></h1>
@@ -661,16 +1157,13 @@ return array(
 
 <!-- wp:group {"className": "cabecera__acciones reveal retraso-3", "layout": {"type": "default"}} -->
 <div class="wp-block-group cabecera__acciones reveal retraso-3">
-<!-- wp:html -->
-<a class="btn btn--rosa" data-wa href="/contacto/">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
-          Escribir por WhatsApp
-        </a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Escribir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg> Escribir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="#politicas">Ver las condiciones ↓</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver las condiciones ↓", "atributos": {"href": "#politicas"}, "className": "btn btn--blanco"} -->
+<a href="#politicas" class="btn btn--blanco">Ver las condiciones ↓</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -698,83 +1191,89 @@ return array(
 <div class="wp-block-group rejilla rejilla--2">
 <!-- wp:group {"className": "cita reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita reveal">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Presencial"} -->
 <strong>Presencial</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>En el consultorio 129 del High Park Medical Center, Barranquilla. Valoración completa con examen físico y medidas.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<div class="cita__precio" data-precio="presencial">$180.000</div>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$180.000", "atributos": {"data-precio": "presencial"}, "className": "cita__precio"} -->
+<div data-precio="presencial" class="cita__precio">$180.000</div>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por consulta", "className": "cita__nota"} -->
 <span class="cita__nota">COP por consulta</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:list {"className": "lista lista--verde en-37d30b"} -->
-<ul class="wp-block-list lista lista--verde en-37d30b">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
+<ul class="lista lista--verde en-37d30b">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "45 a 60 minutos de consulta", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>45 a 60 minutos de consulta</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Peso, talla y curvas de crecimiento</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan impreso y por correo</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Dudas por WhatsApp hasta el siguiente control</li>
-<!-- /wp:list-item -->
-</ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" data-wa href="/contacto/">Agendar presencial</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Peso, talla y curvas de crecimiento", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Peso, talla y curvas de crecimiento</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Plan impreso y por correo", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan impreso y por correo</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Dudas por WhatsApp hasta el siguiente control", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Dudas por WhatsApp hasta el siguiente control</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agendar presencial", "atributos": {"data-wa": "", "href": "/contacto/"}, "className": "btn btn--rosa btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa btn--chico">Agendar presencial</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "cita cita--virtual reveal retraso-1", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita cita--virtual reveal retraso-1">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Virtual"} -->
 <strong>Virtual</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Videollamada desde cualquier país. Ideal para nutrición, seguimiento, crianza y segundas opiniones.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<div class="cita__precio" data-precio="virtual">45 USD</div>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "45 USD", "atributos": {"data-precio": "virtual"}, "className": "cita__precio"} -->
+<div data-precio="virtual" class="cita__precio">45 USD</div>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "o su equivalente en pesos", "className": "cita__nota"} -->
 <span class="cita__nota">o su equivalente en pesos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:list {"className": "lista lista--azul en-37d30b"} -->
-<ul class="wp-block-list lista lista--azul en-37d30b">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul en-37d30b"} -->
+<ul class="lista lista--azul en-37d30b">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "45 minutos por videollamada", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>45 minutos por videollamada</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Envías exámenes y medidas antes</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan e indicaciones por correo</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Coordinamos según tu huso horario</li>
-<!-- /wp:list-item -->
-</ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--azul btn--chico" data-wa href="/contacto/">Agendar virtual</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Envías exámenes y medidas antes", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Envías exámenes y medidas antes</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Plan e indicaciones por correo", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan e indicaciones por correo</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Coordinamos según tu huso horario", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Coordinamos según tu huso horario</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agendar virtual", "atributos": {"data-wa": "", "href": "/contacto/"}, "className": "btn btn--azul btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--azul btn--chico">Agendar virtual</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -786,9 +1285,9 @@ return array(
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>La consulta virtual tiene límites</strong>Lo que necesita examen físico —un dolor abdominal, una otitis, una lesión— se atiende en persona. Si al escribirme veo que es el caso, te lo digo antes de agendar."} -->
 <div><strong>La consulta virtual tiene límites</strong>Lo que necesita examen físico —un dolor abdominal, una otitis, una lesión— se atiende en persona. Si al escribirme veo que es el caso, te lo digo antes de agendar.</div>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -808,14 +1307,57 @@ return array(
 <p class="bajada reveal">Cuatro pasos y quedamos listas.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
 <ol class="pasos">
-      <li class="reveal"><strong>Me escribes</strong><p>Por WhatsApp, con el nombre y la edad del peque y el motivo de la consulta.</p></li>
-      <li class="reveal" data-delay="1"><strong>Buscamos horario</strong><p>Te propongo las opciones disponibles más cercanas, presenciales o virtuales.</p></li>
-      <li class="reveal" data-delay="2"><strong>Confirmas</strong><p>Te envío la dirección o el enlace de la videollamada y las indicaciones previas.</p></li>
-      <li class="reveal" data-delay="3"><strong>Nos vemos</strong><p>Llegas diez minutos antes o te conectas a la hora acordada. El resto lo hacemos juntas.</p></li>
-    </ol>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
+<strong>Me escribes</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Por WhatsApp, con el nombre y la edad del peque y el motivo de la consulta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Buscamos horario"} -->
+<strong>Buscamos horario</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te propongo las opciones disponibles más cercanas, presenciales o virtuales.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmas"} -->
+<strong>Confirmas</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te envío la dirección o el enlace de la videollamada y las indicaciones previas.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Nos vemos"} -->
+<strong>Nos vemos</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Llegas diez minutos antes o te conectas a la hora acordada. El resto lo hacemos juntas.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </section>
@@ -915,9 +1457,9 @@ return array(
 <span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15l2 2 4-4"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmación"} -->
 <strong>Confirmación</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>La cita queda reservada cuando confirmas por WhatsApp. El día anterior te escribo para recordarla.</p>
@@ -931,9 +1473,9 @@ return array(
 <span class="dato__aro" style="background:rgba(217,162,79,.18)"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Cancelaciones"} -->
 <strong>Cancelaciones</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Avísame con al menos 12 horas de anticipación para poder ofrecer el espacio a otra familia.</p>
@@ -947,9 +1489,9 @@ return array(
 <span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Acompañante"} -->
 <strong>Acompañante</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>El menor debe venir con su padre, madre o acudiente, con documento de identidad a la mano.</p>
@@ -963,9 +1505,9 @@ return array(
 <span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Después de la consulta"} -->
 <strong>Después de la consulta</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Recibes el plan por correo y puedes escribirme dudas puntuales hasta el siguiente control.</p>
@@ -977,21 +1519,69 @@ return array(
 
 <!-- wp:group {"className": "faq__lista en-5ea8e1", "layout": {"type": "default"}} -->
 <div class="wp-block-group faq__lista en-5ea8e1">
-<!-- wp:html -->
-<details class="reveal"><summary>¿Desde qué edad atiendes?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Desde recién nacidos hasta la adolescencia, incluyendo control de crecimiento y nutrición.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal"} -->
+<details class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Desde qué edad atiendes?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Desde qué edad atiendes?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="1"><summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas sin apuro.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Desde recién nacidos hasta la adolescencia, incluyendo control de crecimiento y nutrición.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="2"><summary>¿Cómo se paga?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Presencial, en el consultorio el día de la cita. Virtual, antes de la videollamada por transferencia o pasarela de pago. <em>Medios de pago pendientes de confirmar.</em></p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-1"} -->
+<details class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Cuánto dura la consulta?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="3"><summary>¿Atiendes urgencias?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>No. La consulta es programada. Ante fiebre en menores de tres meses, dificultad para respirar, vómito persistente o decaimiento importante, acude al servicio de urgencias más cercano.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas sin apuro.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-2"} -->
+<details class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Cómo se paga?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Cómo se paga?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Presencial, en el consultorio el día de la cita. Virtual, antes de la videollamada por transferencia o pasarela de pago. <em>Medios de pago pendientes de confirmar.</em></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-3"} -->
+<details class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Atiendes urgencias?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Atiendes urgencias?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>No. La consulta es programada. Ante fiebre en menores de tres meses, dificultad para respirar, vómito persistente o decaimiento importante, acude al servicio de urgencias más cercano.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1017,13 +1607,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" data-wa href="/contacto/">Escribir por WhatsApp</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Escribir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "className": "btn btn--rosa"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa">Escribir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/contacto/">Ver todos los datos</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver todos los datos", "atributos": {"href": "/contacto/"}, "className": "btn btn--blanco"} -->
+<a href="/contacto/" class="btn btn--blanco">Ver todos los datos</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1034,20 +1624,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'consultorio',
-		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a', '4d990048ca8d6f0adb85cd994950b571' ),
+		'antes'     => array( '2f45954b2ec139bff49d431c2552cc2a', '4d990048ca8d6f0adb85cd994950b571', 'bc3d03aa83ee114beb0c61a7fb8cef66' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Consultorio</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Consultorio", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Consultorio</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Un consultorio<br><em>con fondo de mar</em></h1>
@@ -1059,13 +1657,13 @@ return array(
 
 <!-- wp:group {"className": "cabecera__acciones reveal retraso-3", "layout": {"type": "default"}} -->
 <div class="wp-block-group cabecera__acciones reveal retraso-3">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="#como-llegar">Cómo llegar ↓</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Cómo llegar ↓", "atributos": {"href": "#como-llegar"}, "className": "btn btn--blanco"} -->
+<a href="#como-llegar" class="btn btn--blanco">Cómo llegar ↓</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1121,13 +1719,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La ballena de la entrada"} -->
 <strong>La ballena de la entrada</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Lo primero que ve un niño al llegar. Casi siempre le gana al susto."} -->
 <span>Lo primero que ve un niño al llegar. Casi siempre le gana al susto.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -1141,13 +1739,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La recepción"} -->
 <strong>La recepción</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Aquí confirmamos los datos y se espera poco. El mar sigue por toda la pared."} -->
 <span>Aquí confirmamos los datos y se espera poco. El mar sigue por toda la pared.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -1161,13 +1759,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-espera.webp" alt="Sala de espera con la banca turquesa y la rana de peluche" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La sala de espera"} -->
 <strong>La sala de espera</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "La banca turquesa, las tortugas pintadas y Pepe esperando sentado."} -->
 <span>La banca turquesa, las tortugas pintadas y Pepe esperando sentado.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -1181,13 +1779,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La consulta"} -->
 <strong>La consulta</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Donde conversamos, revisamos los exámenes y armamos el plan con calma."} -->
 <span>Donde conversamos, revisamos los exámenes y armamos el plan con calma.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -1201,13 +1799,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La sala de examen"} -->
 <strong>La sala de examen</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "La camilla azul, custodiada por los peluches, y la jirafa pintada en la pared."} -->
 <span>La camilla azul, custodiada por los peluches, y la jirafa pintada en la pared.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -1221,13 +1819,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ventana.webp" alt="Camilla junto a la ventana, con la ciudad al fondo" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Luz y ciudad"} -->
 <strong>Luz y ciudad</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "La otra camilla mira a la ventana. Los peques se distraen con la vista."} -->
 <span>La otra camilla mira a la ventana. Los peques se distraen con la vista.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1247,9 +1845,9 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Pepe, el residente más antiguo"} -->
 <strong>Pepe, el residente más antiguo</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>La rana verde está aquí desde que el consultorio abrió sus puertas. Vive entre los corales y se deja abrazar durante el examen. Muchos peques vuelven preguntando por él antes que por mí — y así debe ser.</p>
@@ -1283,13 +1881,13 @@ return array(
 <span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Dirección"} -->
 <strong>Dirección</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<p data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "p", "contenido": "Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia", "atributos": {"data-direccion": ""}} -->
+<p data-direccion="">Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</p>
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph {"className": "en-002535"} -->
 <p class="en-002535"><a href="https://www.google.com/maps/search/?api=1&query=High+Park+Medical+Center+Barranquilla" target="_blank" rel="noopener">Abrir en Google Maps →</a></p>
@@ -1303,9 +1901,9 @@ return array(
 <span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2"/><path d="M4 13l1.6-5A2 2 0 0 1 7.5 6.5h9A2 2 0 0 1 18.4 8L20 13v4H4z"/><circle cx="7.5" cy="14" r="1"/><circle cx="16.5" cy="14" r="1"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Parqueadero"} -->
 <strong>Parqueadero</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>El edificio cuenta con parqueadero para pacientes. Confirma disponibilidad al agendar si llegas en carro.</p>
@@ -1319,9 +1917,9 @@ return array(
 <span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 5.2 2 2 0 0 1 5.5 3h3l1.5 4-2 1.6a14 14 0 0 0 6.4 6.4l1.6-2 4 1.5Z"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmación"} -->
 <strong>Confirmación</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Escribe por WhatsApp al <span data-tel>+57 304 653 2006</span> y te confirmo el horario y las indicaciones previas.</p>
@@ -1335,9 +1933,9 @@ return array(
 <span class="dato__aro" style="background:rgba(217,162,79,.18)"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Llega 10 minutos antes"} -->
 <strong>Llega 10 minutos antes</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Alcanzamos a registrar los datos sin apuro y tu peque conoce el lugar antes de empezar.</p>
@@ -1357,17 +1955,65 @@ return array(
 
 <!-- wp:group {"className": "tabla-envoltura", "layout": {"type": "default"}} -->
 <div class="wp-block-group tabla-envoltura">
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "table", "className": "horario"} -->
 <table class="horario">
-            <caption>Horario de ejemplo — pendiente de confirmar con la doctora.</caption>
-            <tbody>
-              <tr><th scope="row">Lunes a jueves</th><td>8:00 a. m. – 12:00 m. · 2:00 – 6:00 p. m.</td></tr>
-              <tr><th scope="row">Viernes</th><td>8:00 a. m. – 12:00 m.</td></tr>
-              <tr><th scope="row">Sábado</th><td>8:00 – 11:00 a. m. (según agenda)</td></tr>
-              <tr><th scope="row">Domingo y festivos</th><td class="cerrado">Cerrado</td></tr>
-            </tbody>
-          </table>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "caption", "contenido": "Horario de ejemplo — pendiente de confirmar con la doctora."} -->
+<caption>Horario de ejemplo — pendiente de confirmar con la doctora.</caption>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/caja {"etiqueta": "tbody"} -->
+<tbody>
+<!-- wp:dalila/caja {"etiqueta": "tr"} -->
+<tr>
+<!-- wp:dalila/texto {"etiqueta": "th", "contenido": "Lunes a jueves", "atributos": {"scope": "row"}} -->
+<th scope="row">Lunes a jueves</th>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "td", "contenido": "8:00 a. m. – 12:00 m. · 2:00 – 6:00 p. m."} -->
+<td>8:00 a. m. – 12:00 m. · 2:00 – 6:00 p. m.</td>
+<!-- /wp:dalila/texto -->
+</tr>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "tr"} -->
+<tr>
+<!-- wp:dalila/texto {"etiqueta": "th", "contenido": "Viernes", "atributos": {"scope": "row"}} -->
+<th scope="row">Viernes</th>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "td", "contenido": "8:00 a. m. – 12:00 m."} -->
+<td>8:00 a. m. – 12:00 m.</td>
+<!-- /wp:dalila/texto -->
+</tr>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "tr"} -->
+<tr>
+<!-- wp:dalila/texto {"etiqueta": "th", "contenido": "Sábado", "atributos": {"scope": "row"}} -->
+<th scope="row">Sábado</th>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "td", "contenido": "8:00 – 11:00 a. m. (según agenda)"} -->
+<td>8:00 – 11:00 a. m. (según agenda)</td>
+<!-- /wp:dalila/texto -->
+</tr>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "tr"} -->
+<tr>
+<!-- wp:dalila/texto {"etiqueta": "th", "contenido": "Domingo y festivos", "atributos": {"scope": "row"}} -->
+<th scope="row">Domingo y festivos</th>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "td", "contenido": "Cerrado", "className": "cerrado"} -->
+<td class="cerrado">Cerrado</td>
+<!-- /wp:dalila/texto -->
+</tr>
+<!-- /wp:dalila/caja -->
+</tbody>
+<!-- /wp:dalila/caja -->
+</table>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1379,25 +2025,29 @@ return array(
 <h2 class="wp-block-heading titulo en-dad5e8">Qué traer</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list {"className": "lista lista--azul en-ed67a6"} -->
-<ul class="wp-block-list lista lista--azul en-ed67a6">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul en-ed67a6"} -->
+<ul class="lista lista--azul en-ed67a6">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Carné de vacunas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Carné de vacunas</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Exámenes o resúmenes de consultas previas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Exámenes o resúmenes de consultas previas</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Documento del menor y del acudiente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Documento del menor y del acudiente</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Carné de la prepagada o póliza, si aplica", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Carné de la prepagada o póliza, si aplica</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Un juguete o manta de apego, si les ayuda", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Un juguete o manta de apego, si les ayuda</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:paragraph {"className": "notita en-b89a77"} -->
 <p class="notita en-b89a77">y si se les olvida algo, lo resolvemos ahí mismo</p>
@@ -1429,13 +2079,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver citas y tarifas", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Ver citas y tarifas</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/contacto/">Datos de contacto</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Datos de contacto", "atributos": {"href": "/contacto/"}, "className": "btn btn--blanco"} -->
+<a href="/contacto/" class="btn btn--blanco">Datos de contacto</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1446,20 +2096,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'contacto',
-		'antes'     => array( '842d31e5cead29914a729deb1675f9ce', 'da582352112bb9bbb04157d5ac168bfc', 'eb14d83b273d645748cf26c7dcb01f87' ),
+		'antes'     => array( '530d03d3a47471786ddda562ae65d171', '842d31e5cead29914a729deb1675f9ce', 'da582352112bb9bbb04157d5ac168bfc', 'eb14d83b273d645748cf26c7dcb01f87' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Contacto</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Contacto", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Contacto</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Escríbeme<br><em>y te respondo yo</em></h1>
@@ -1590,9 +2248,9 @@ return array(
 <span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "WhatsApp"} -->
 <strong>WhatsApp</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p><span data-tel>+57 304 653 2006</span> — el canal más rápido para agendar.</p>
@@ -1610,9 +2268,9 @@ return array(
 <span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Correo"} -->
 <strong>Correo</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Para temas administrativos, convenios y facturación.</p>
@@ -1630,13 +2288,13 @@ return array(
 <span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Consultorio"} -->
 <strong>Consultorio</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<p data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "p", "contenido": "Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia", "atributos": {"data-direccion": ""}} -->
+<p data-direccion="">Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</p>
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph {"className": "en-5371db"} -->
 <p class="en-5371db"><a href="/consultorio/">Cómo llegar →</a></p>
@@ -1652,14 +2310,37 @@ return array(
 
 <!-- wp:group {"className": "tabla-envoltura", "layout": {"type": "default"}} -->
 <div class="wp-block-group tabla-envoltura">
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "table", "className": "horario"} -->
 <table class="horario">
-          <tbody>
-            <tr><th scope="row">Lunes a viernes</th><td>8:00 a. m. – 6:00 p. m.</td></tr>
-            <tr><th scope="row">Sábado, domingo y festivos</th><td class="cerrado">Sin atención</td></tr>
-          </tbody>
-        </table>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "tbody"} -->
+<tbody>
+<!-- wp:dalila/caja {"etiqueta": "tr"} -->
+<tr>
+<!-- wp:dalila/texto {"etiqueta": "th", "contenido": "Lunes a viernes", "atributos": {"scope": "row"}} -->
+<th scope="row">Lunes a viernes</th>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "td", "contenido": "8:00 a. m. – 6:00 p. m."} -->
+<td>8:00 a. m. – 6:00 p. m.</td>
+<!-- /wp:dalila/texto -->
+</tr>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "tr"} -->
+<tr>
+<!-- wp:dalila/texto {"etiqueta": "th", "contenido": "Sábado, domingo y festivos", "atributos": {"scope": "row"}} -->
+<th scope="row">Sábado, domingo y festivos</th>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "td", "contenido": "Sin atención", "className": "cerrado"} -->
+<td class="cerrado">Sin atención</td>
+<!-- /wp:dalila/texto -->
+</tr>
+<!-- /wp:dalila/caja -->
+</tbody>
+<!-- /wp:dalila/caja -->
+</table>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 
@@ -1669,9 +2350,9 @@ return array(
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto no es un canal de urgencias</strong>Los mensajes se responden en horario laboral. Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias."} -->
 <div><strong>Esto no es un canal de urgencias</strong>Los mensajes se responden en horario laboral. Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias.</div>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1699,13 +2380,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver citas y tarifas", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Ver citas y tarifas</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/servicios/">Ver los servicios</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver los servicios", "atributos": {"href": "/servicios/"}, "className": "btn btn--blanco"} -->
+<a href="/servicios/" class="btn btn--blanco">Ver los servicios</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1716,20 +2397,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'cursos',
-		'antes'     => array( '15b2d5ce35736b2b2b37f9bfbe00ad34', 'ae42d729285ac1a2ac31a7532d52fc29' ),
+		'antes'     => array( '15b2d5ce35736b2b2b37f9bfbe00ad34', '468f633d42069144f11f2d3dedd00458', 'ae42d729285ac1a2ac31a7532d52fc29' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Cursos</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Cursos", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Cursos</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Cursos y talleres,<br><em>para aprender con calma</em></h1>
@@ -1775,54 +2464,59 @@ return array(
 <p>El paso de la leche a la cuchara, explicado entero y de una sola vez. Es el curso que más piden en consulta: qué ofrecer, en qué textura, cuánto esperar que coma y qué hacer el día que lo escupe todo.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--verde"} -->
-<ul class="wp-block-list lista lista--verde">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Señales de que tu bebé ya está listo para empezar", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Señales de que tu bebé ya está listo para empezar</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "La silla correcta: los tres ángulos de 90° que cambian la comida", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>La silla correcta: los tres ángulos de 90° que cambian la comida</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Texturas y cantidades semana a semana", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Texturas y cantidades semana a semana</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Por qué un alimento se ofrece diez veces antes de decir «no le gusta»", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Por qué un alimento se ofrece diez veces antes de decir «no le gusta»</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Alérgenos: cuándo y cómo introducirlos", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Alérgenos: cuándo y cómo introducirlos</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Leer la lista de ingredientes, no solo la tabla nutricional", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Leer la lista de ingredientes, no solo la tabla nutricional</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Desde los 6 meses", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 20a8 8 0 0 1 16 0\\"/><circle cx=\\"12\\" cy=\\"8\\" r=\\"4\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Desde los 6 meses</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "En video, a tu ritmo", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"2.5\\" y=\\"5\\" width=\\"14\\" height=\\"14\\" rx=\\"3\\"/><path d=\\"M16.5 10.5 21.5 8v8l-5-2.5z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="14" height="14" rx="3"/><path d="M16.5 10.5 21.5 8v8l-5-2.5z"/></svg>En video, a tu ritmo</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Material de apoyo", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M5 4h14v16H5z\\"/><path d=\\"M9 8h6M9 12h6M9 16h3\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>Material de apoyo</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie en-f613c4">
-<!-- wp:html -->
-<span class="curso__precio" style="font-size:28px">$149.000</span>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$149.000", "className": "curso__precio en-2cbabd"} -->
+<span class="curso__precio en-2cbabd">$149.000</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" data-curso="complementaria" data-nombre="el curso de alimentación complementaria" href="#">Comprar</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Comprar", "atributos": {"data-curso": "complementaria", "data-nombre": "el curso de alimentación complementaria", "href": "#"}, "className": "btn btn--rosa btn--chico"} -->
+<a data-curso="complementaria" data-nombre="el curso de alimentación complementaria" href="#" class="btn btn--rosa btn--chico">Comprar</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1850,48 +2544,51 @@ return array(
 <p>Qué poner en la lonchera para que aguante la mañana y vuelva vacía. Se arma con lo que hay en casa y sin los ultraprocesados que se disfrazan de saludables.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--azul"} -->
-<ul class="wp-block-list lista lista--azul">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
+<ul class="lista lista--azul">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Qué lleva una lonchera completa", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Qué lleva una lonchera completa</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Ideas que se arman en diez minutos", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Ideas que se arman en diez minutos</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Cómo mirar un procesado antes de meterlo en la lonchera", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cómo mirar un procesado antes de meterlo en la lonchera</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Qué hacer cuando la lonchera vuelve llena", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Qué hacer cuando la lonchera vuelve llena</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Edad escolar", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 20a8 8 0 0 1 16 0\\"/><circle cx=\\"12\\" cy=\\"8\\" r=\\"4\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Edad escolar</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Taller grupal", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"9\\" cy=\\"8\\" r=\\"3\\"/><circle cx=\\"17\\" cy=\\"9\\" r=\\"2.4\\"/><path d=\\"M3 19a6 6 0 0 1 12 0\\"/><path d=\\"M17 14a5 5 0 0 1 4 5\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>Taller grupal</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Fechas por anunciar", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Fechas por anunciar</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie en-f613c4">
-<!-- wp:html -->
-<span class="curso__precio" style="font-size:28px">$119.000</span>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$119.000", "className": "curso__precio en-2cbabd"} -->
+<span class="curso__precio en-2cbabd">$119.000</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" data-curso="lonchera" data-nombre="el Taller Lonchera Nutritiva" href="#">Reservar cupo</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Reservar cupo", "atributos": {"data-curso": "lonchera", "data-nombre": "el Taller Lonchera Nutritiva", "href": "#"}, "className": "btn btn--rosa btn--chico"} -->
+<a data-curso="lonchera" data-nombre="el Taller Lonchera Nutritiva" href="#" class="btn btn--rosa btn--chico">Reservar cupo</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1919,40 +2616,43 @@ return array(
 <p>Antes que el menú está la costumbre: horarios, quién decide qué y quién decide cuánto, y qué pasa en la mesa mientras se come. De ahí sale todo lo demás.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--verde"} -->
-<ul class="wp-block-list lista lista--verde">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Cómo se construye un hábito en la mesa, por edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cómo se construye un hábito en la mesa, por edad</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Quién ofrece y quién decide cuánto se come", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Quién ofrece y quién decide cuánto se come</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Horarios y meriendas que sí dejan hambre para la comida", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Horarios y meriendas que sí dejan hambre para la comida</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Qué hacer con las peleas que ya se volvieron rutina", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Qué hacer con las peleas que ya se volvieron rutina</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Taller grupal", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"9\\" cy=\\"8\\" r=\\"3\\"/><circle cx=\\"17\\" cy=\\"9\\" r=\\"2.4\\"/><path d=\\"M3 19a6 6 0 0 1 12 0\\"/><path d=\\"M17 14a5 5 0 0 1 4 5\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>Taller grupal</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Fechas por anunciar", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Fechas por anunciar</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie en-f613c4">
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" data-curso="habitos" data-nombre="el taller «El ABC de los hábitos alimentarios»" data-pregunta="¿Cuándo es el próximo y cómo me inscribo?" href="#">Preguntar por el taller</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Preguntar por el taller", "atributos": {"data-curso": "habitos", "data-nombre": "el taller «El ABC de los hábitos alimentarios»", "data-pregunta": "¿Cuándo es el próximo y cómo me inscribo?", "href": "#"}, "className": "btn btn--rosa btn--chico"} -->
+<a data-curso="habitos" data-nombre="el taller «El ABC de los hábitos alimentarios»" data-pregunta="¿Cuándo es el próximo y cómo me inscribo?" href="#" class="btn btn--rosa btn--chico">Preguntar por el taller</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -1980,44 +2680,47 @@ return array(
 <p>Encuentros presenciales que no son una charla: se lee un cuento, se trabaja lo que el cuento destapa y se conversa. Las emociones nos acompañan toda la vida, y vale la pena aprender a nombrarlas temprano.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--azul"} -->
-<ul class="wp-block-list lista lista--azul">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
+<ul class="lista lista--azul">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Sesiones presenciales en grupo", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Sesiones presenciales en grupo</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Un cuento como punto de partida", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Un cuento como punto de partida</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Trabajo de emociones con los niños y con los padres", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Trabajo de emociones con los niños y con los padres</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Espacio para las preguntas que no caben en una consulta", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Espacio para las preguntas que no caben en una consulta</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Presencial", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z\\"/><circle cx=\\"12\\" cy=\\"10\\" r=\\"2.6\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>Presencial</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Cupos limitados", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"9\\" cy=\\"8\\" r=\\"3\\"/><circle cx=\\"17\\" cy=\\"9\\" r=\\"2.4\\"/><path d=\\"M3 19a6 6 0 0 1 12 0\\"/><path d=\\"M17 14a5 5 0 0 1 4 5\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg>Cupos limitados</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Calendario por anunciar", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Calendario por anunciar</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie en-f613c4">
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" data-curso="escuela" data-nombre="la escuela para padres" data-pregunta="¿Cuándo es el próximo encuentro y cómo me inscribo?" href="#">Preguntar por la escuela</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Preguntar por la escuela", "atributos": {"data-curso": "escuela", "data-nombre": "la escuela para padres", "data-pregunta": "¿Cuándo es el próximo encuentro y cómo me inscribo?", "href": "#"}, "className": "btn btn--rosa btn--chico"} -->
+<a data-curso="escuela" data-nombre="la escuela para padres" data-pregunta="¿Cuándo es el próximo encuentro y cómo me inscribo?" href="#" class="btn btn--rosa btn--chico">Preguntar por la escuela</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2043,32 +2746,123 @@ return array(
 <p class="bajada reveal">Por ahora todo se coordina por WhatsApp, directamente conmigo. Cuando la plataforma de cursos esté lista, la compra del curso en video será automática.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
 <ol class="pasos">
-      <li class="reveal"><strong>Me escribes</strong><p>Desde esta página el botón abre WhatsApp con el curso ya escrito en el mensaje.</p></li>
-      <li class="reveal" data-delay="1"><strong>Acordamos el pago</strong><p>Te indico los medios disponibles según dónde estés, en pesos o en dólares.</p></li>
-      <li class="reveal" data-delay="2"><strong>Recibes el acceso</strong><p>Te llega al correo apenas se confirma el pago.</p></li>
-      <li class="reveal" data-delay="3"><strong>Lo ves cuando puedas</strong><p>Sin fecha de vencimiento y desde cualquier dispositivo, las veces que quieras.</p></li>
-    </ol>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
+<strong>Me escribes</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Desde esta página el botón abre WhatsApp con el curso ya escrito en el mensaje.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Acordamos el pago"} -->
+<strong>Acordamos el pago</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te indico los medios disponibles según dónde estés, en pesos o en dólares.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Recibes el acceso"} -->
+<strong>Recibes el acceso</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te llega al correo apenas se confirma el pago.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Lo ves cuando puedas"} -->
+<strong>Lo ves cuando puedas</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Sin fecha de vencimiento y desde cualquier dispositivo, las veces que quieras.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "faq__lista en-5ea8e1", "layout": {"type": "default"}} -->
 <div class="wp-block-group faq__lista en-5ea8e1">
-<!-- wp:html -->
-<details class="reveal"><summary>¿Los cursos reemplazan la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>No. Son material educativo general. Si tu peque tiene un síntoma, un diagnóstico o una dificultad concreta, eso se ve en consulta.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal"} -->
+<details class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Los cursos reemplazan la consulta?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Los cursos reemplazan la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="1"><summary>¿Por cuánto tiempo tengo acceso?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>El acceso no vence: puedes volver al curso cuando quieras. <em>Condición de ejemplo, pendiente de confirmar.</em></p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>No. Son material educativo general. Si tu peque tiene un síntoma, un diagnóstico o una dificultad concreta, eso se ve en consulta.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="2"><summary>¿Puedo pagar desde otro país?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí. Escríbeme y acordamos el medio de pago que te sirva desde tu país.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-1"} -->
+<details class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Por cuánto tiempo tengo acceso?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Por cuánto tiempo tengo acceso?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="3"><summary>¿Hay certificado?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Son cursos para familias, no formación profesional, así que no otorgan certificación clínica. <em>Pendiente de confirmar si se entrega constancia de finalización.</em></p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>El acceso no vence: puedes volver al curso cuando quieras. <em>Condición de ejemplo, pendiente de confirmar.</em></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-2"} -->
+<details class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Puedo pagar desde otro país?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Puedo pagar desde otro país?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Sí. Escríbeme y acordamos el medio de pago que te sirva desde tu país.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-3"} -->
+<details class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Hay certificado?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Hay certificado?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Son cursos para familias, no formación profesional, así que no otorgan certificación clínica. <em>Pendiente de confirmar si se entrega constancia de finalización.</em></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2094,13 +2888,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver citas y tarifas", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Ver citas y tarifas</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/servicios/">Conocer los servicios</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Conocer los servicios", "atributos": {"href": "/servicios/"}, "className": "btn btn--blanco"} -->
+<a href="/servicios/" class="btn btn--blanco">Conocer los servicios</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2111,7 +2905,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -2126,9 +2920,9 @@ return array(
 <div class="wp-block-group wrap hero__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Barranquilla · presencial y virtual", "className": "hero__pill reveal"} -->
 <span class="hero__pill reveal">Barranquilla · presencial y virtual</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Cuidamos la salud<br><span>y nutrición de tus pequeños</span></h1>
@@ -2140,16 +2934,13 @@ return array(
 
 <!-- wp:group {"className": "hero__acciones reveal retraso-3", "layout": {"type": "default"}} -->
 <div class="wp-block-group hero__acciones reveal retraso-3">
-<!-- wp:html -->
-<a class="btn btn--rosa" data-wa href="/contacto/">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>
-          Agenda por WhatsApp
-        </a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Agenda por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg> Agenda por WhatsApp</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/servicios/">Conoce los servicios →</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Conoce los servicios →", "atributos": {"href": "/servicios/"}, "className": "btn btn--blanco"} -->
+<a href="/servicios/" class="btn btn--blanco">Conoce los servicios →</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2173,9 +2964,9 @@ return array(
 </div>
 <!-- /wp:group -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "hagamos que su historia sea saludable", "className": "hero__nota"} -->
 <div class="hero__nota">hagamos que su historia sea saludable</div>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2337,13 +3128,13 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Atención cercana"} -->
 <strong>Atención cercana</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Consultas sin prisa, con explicaciones claras y por escrito."} -->
 <span>Consultas sin prisa, con explicaciones claras y por escrito.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2357,13 +3148,13 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Formación continua"} -->
 <strong>Formación continua</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Pediatría y nutrición infantil, con actualización permanente."} -->
 <span>Pediatría y nutrición infantil, con actualización permanente.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2377,13 +3168,13 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Compromiso integral"} -->
 <strong>Compromiso integral</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Cuidado personalizado en cada etapa del crecimiento."} -->
 <span>Cuidado personalizado en cada etapa del crecimiento.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2403,9 +3194,9 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Hola, soy Pepe"} -->
 <strong>Hola, soy Pepe</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Vivo entre los corales del consultorio y acompaño a los niños durante la consulta. Si tu peque llega con miedo, yo lo recibo primero.</p>
@@ -2431,22 +3222,25 @@ return array(
 <p>Hábitos alimentarios saludables desde los primeros años, con planes que sí caben en la rutina de la casa.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--verde"} -->
-<ul class="wp-block-list lista lista--verde">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Valoración nutricional personalizada", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Valoración nutricional personalizada</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Asesoría en alimentación complementaria", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Asesoría en alimentación complementaria</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Manejo de la selectividad alimentaria", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Manejo de la selectividad alimentaria</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Menús escolares prácticos", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Menús escolares prácticos</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 
@@ -2460,22 +3254,25 @@ return array(
 <p>Seguimiento de la salud de tus hijos en cada etapa, con controles claros y prevención oportuna.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--azul"} -->
-<ul class="wp-block-list lista lista--azul">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
+<ul class="lista lista--azul">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Control pediátrico preventivo", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Control pediátrico preventivo</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Evaluación de hitos del desarrollo", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Evaluación de hitos del desarrollo</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Vacunación y prevención", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Vacunación y prevención</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Enfermedades agudas y crónicas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Enfermedades agudas y crónicas</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2509,13 +3306,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-ballena.webp" alt="Recepción del consultorio con el mural de la ballena" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La ballena de la entrada"} -->
 <strong>La ballena de la entrada</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Lo primero que ve un niño al llegar."} -->
 <span>Lo primero que ve un niño al llegar.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -2529,13 +3326,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-recepcion.webp" alt="Mostrador de recepción y sala de espera del consultorio" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La recepción"} -->
 <strong>La recepción</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "El mar sigue por toda la pared."} -->
 <span>El mar sigue por toda la pared.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -2549,13 +3346,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La consulta"} -->
 <strong>La consulta</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Aquí conversamos con calma y armamos el plan."} -->
 <span>Aquí conversamos con calma y armamos el plan.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
@@ -2569,13 +3366,13 @@ return array(
 <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-camilla.webp" alt="Sala de examen con la camilla azul y los peluches" width="1100" height="825" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "La sala de examen"} -->
 <strong>La sala de examen</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "La camilla azul, custodiada por los peluches."} -->
 <span>La camilla azul, custodiada por los peluches.</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2607,9 +3404,9 @@ return array(
 
 <!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Curso de alimentación complementaria"} -->
 <strong>Curso de alimentación complementaria</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>De la leche a la cuchara: la silla, las texturas y los alérgenos, paso a paso.</p>
@@ -2617,13 +3414,13 @@ return array(
 
 <!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$149.000", "className": "curso__precio"} -->
 <span class="curso__precio">$149.000</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver el curso →", "atributos": {"href": "/cursos/"}} -->
 <a href="/cursos/">Ver el curso →</a>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2639,9 +3436,9 @@ return array(
 
 <!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Taller de lonchera saludable"} -->
 <strong>Taller de lonchera saludable</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Qué poner para que aguante la mañana y vuelva vacía.</p>
@@ -2649,13 +3446,13 @@ return array(
 
 <!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$119.000", "className": "curso__precio"} -->
 <span class="curso__precio">$119.000</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver el curso →", "atributos": {"href": "/cursos/"}} -->
 <a href="/cursos/">Ver el curso →</a>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2671,9 +3468,9 @@ return array(
 
 <!-- wp:group {"className": "curso__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Escuela para padres"} -->
 <strong>Escuela para padres</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Encuentros presenciales: un cuento, las emociones que destapa y una conversación.</p>
@@ -2681,13 +3478,13 @@ return array(
 
 <!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie">
-<!-- wp:html -->
-<span class="curso__precio" style="font-size:16px;color:var(--suave)">Encuentros presenciales</span>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Encuentros presenciales", "className": "curso__precio en-dd8bd1"} -->
+<span class="curso__precio en-dd8bd1">Encuentros presenciales</span>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver el curso →", "atributos": {"href": "/cursos/"}} -->
 <a href="/cursos/">Ver el curso →</a>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2789,49 +3586,49 @@ return array(
 <div class="wp-block-group rejilla rejilla--2">
 <!-- wp:group {"className": "cita reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita reveal">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Presencial"} -->
 <strong>Presencial</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<div class="cita__precio" data-precio="presencial">$180.000</div>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$180.000", "atributos": {"data-precio": "presencial"}, "className": "cita__precio"} -->
+<div data-precio="presencial" class="cita__precio">$180.000</div>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por consulta", "className": "cita__nota"} -->
 <span class="cita__nota">COP por consulta</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--rosa btn--chico" href="/citas/">Ver detalle y agendar</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver detalle y agendar", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa btn--chico"} -->
+<a href="/citas/" class="btn btn--rosa btn--chico">Ver detalle y agendar</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "cita cita--virtual reveal retraso-1", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita cita--virtual reveal retraso-1">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Virtual"} -->
 <strong>Virtual</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<div class="cita__precio" data-precio="virtual">45 USD</div>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "45 USD", "atributos": {"data-precio": "virtual"}, "className": "cita__precio"} -->
+<div data-precio="virtual" class="cita__precio">45 USD</div>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "por videollamada", "className": "cita__nota"} -->
 <span class="cita__nota">por videollamada</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--azul btn--chico" href="/citas/">Ver detalle y agendar</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver detalle y agendar", "atributos": {"href": "/citas/"}, "className": "btn btn--azul btn--chico"} -->
+<a href="/citas/" class="btn btn--azul btn--chico">Ver detalle y agendar</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2865,9 +3662,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
@@ -2877,9 +3674,9 @@ return array(
 <p>Antes de los seis meses, no: el 80 % de la leche ya es agua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Leer más →", "atributos": {"href": "/blog/cuando-necesita-agua-tu-bebe/"}} -->
 <a href="/blog/cuando-necesita-agua-tu-bebe/">Leer más →</a>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </article>
@@ -2893,9 +3690,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -2905,9 +3702,9 @@ return array(
 <p>Qué mide, y por qué a veces hay que repetirla.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Leer más →", "atributos": {"href": "/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/"}} -->
 <a href="/blog/el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe/">Leer más →</a>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </article>
@@ -2921,9 +3718,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
@@ -2933,9 +3730,9 @@ return array(
 <p>Sonarse antes, cabeza abajo y boca abierta.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Leer más →", "atributos": {"href": "/blog/"}} -->
 <a href="/blog/">Leer más →</a>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </article>
@@ -2955,11 +3752,31 @@ return array(
 <h2 class="wp-block-heading titulo reveal en-8c2756">Lo que dicen las familias</h2>
 <!-- /wp:heading -->
 
-<!-- wp:group {"className": "rejilla en-06fa12", "layout": {"type": "default"}} -->
-<div class="wp-block-group rejilla en-06fa12">
+<!-- wp:group {"className": "rejilla rejilla--3 rejilla--testimonios", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--3 rejilla--testimonios">
+<!-- wp:dalila/caja {"etiqueta": "blockquote", "className": "testimonio reveal"} -->
+<blockquote class="testimonio reveal">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "“", "atributos": {"aria-hidden": "true"}, "className": "testimonio__comilla"} -->
+<span aria-hidden="true" class="testimonio__comilla">“</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>La Dra. ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"tagName": "footer", "layout": {"type": "default"}} -->
+<footer class="wp-block-group">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Familia Palmieri Nova"} -->
+<strong>Familia Palmieri Nova</strong>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<blockquote class="testimonio reveal"><span class="testimonio__comilla" aria-hidden="true">“</span><p>La Dra. ha estado en cada etapa con nuestros hijos desde el nacimiento. Su genuino interés, amor y acompañamiento han sido invaluables para nosotros; no la cambiaríamos por nada del mundo.</p><footer><strong>Familia Palmieri Nova</strong><span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span></footer></blockquote>
+<span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span>
 <!-- /wp:html -->
+</footer>
+<!-- /wp:group -->
+</blockquote>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -2979,37 +3796,133 @@ return array(
 
 <!-- wp:group {"className": "faq__lista", "layout": {"type": "default"}} -->
 <div class="wp-block-group faq__lista">
-<!-- wp:html -->
-<details class="reveal"><summary>¿Dónde queda el consultorio?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>En <strong>High Park Medical Center</strong>, Calle 1C # 30-40, consultorio 129, en Barranquilla. Es consulta pediátrica presencial, con cita previa.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal"} -->
+<details class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Dónde queda el consultorio?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Dónde queda el consultorio?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="1"><summary>¿Cómo agendo una cita?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Por WhatsApp al <span data-tel>+57 304 653 2006</span>. Confirmamos horario y te envío las indicaciones previas.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>En <strong>High Park Medical Center</strong>, Calle 1C # 30-40, consultorio 129, en Barranquilla. Es consulta pediátrica presencial, con cita previa.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="2"><summary>¿Desde qué edad atiendes?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Desde recién nacidos hasta la adolescencia, incluyendo control de crecimiento y nutrición.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-1"} -->
+<details class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Cómo agendo una cita?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Cómo agendo una cita?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="3"><summary>¿Atiendes con medicina prepagada o póliza?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Por WhatsApp al <span data-tel>+57 304 653 2006</span>. Confirmamos horario y te envío las indicaciones previas.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="0"><summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-2"} -->
+<details class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Desde qué edad atiendes?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Desde qué edad atiendes?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="1"><summary>¿Qué diferencia hay entre el control pediátrico y la consulta de nutrición?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>El control pediátrico revisa todo: crecimiento, desarrollo, vacunas y alimentación. La consulta de nutrición infantil entra a fondo en lo que come tu peque, con valoración antropométrica y un plan por escrito. Como soy pediatra y además especialista en nutrición infantil, las dos cosas se pueden ver en la misma cita.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Desde recién nacidos hasta la adolescencia, incluyendo control de crecimiento y nutrición.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="2"><summary>¿Atiendes urgencias?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>No. La consulta es programada. Ante fiebre en menores de tres meses, dificultad para respirar, vómito persistente o decaimiento importante, acude al servicio de urgencias más cercano.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-3"} -->
+<details class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Atiendes con medicina prepagada o póliza?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Atiendes con medicina prepagada o póliza?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<details class="reveal" data-delay="3"><summary>¿Atiendes familias fuera de Colombia?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí. La consulta virtual se hace por videollamada y el plan llega por correo.</p></div></details>
-<!-- /wp:html -->
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-0"} -->
+<details class="reveal retraso-0">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Cuánto dura la consulta?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-1"} -->
+<details class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Qué diferencia hay entre el control pediátrico y la consulta de nutrición?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Qué diferencia hay entre el control pediátrico y la consulta de nutrición?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>El control pediátrico revisa todo: crecimiento, desarrollo, vacunas y alimentación. La consulta de nutrición infantil entra a fondo en lo que come tu peque, con valoración antropométrica y un plan por escrito. Como soy pediatra y además especialista en nutrición infantil, las dos cosas se pueden ver en la misma cita.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-2"} -->
+<details class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Atiendes urgencias?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Atiendes urgencias?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>No. La consulta es programada. Ante fiebre en menores de tres meses, dificultad para respirar, vómito persistente o decaimiento importante, acude al servicio de urgencias más cercano.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "details", "className": "reveal retraso-3"} -->
+<details class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "summary", "contenido": "¿Atiendes familias fuera de Colombia?", "icono": "<span class=\\"mas\\" aria-hidden=\\"true\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2.4\\" stroke-linecap=\\"round\\"><path d=\\"M12 5v14M5 12h14\\"/></svg></span>", "iconoAlFinal": true} -->
+<summary>¿Atiendes familias fuera de Colombia?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
+<div class="wp-block-group faq__cuerpo">
+<!-- wp:paragraph -->
+<p>Sí. La consulta virtual se hace por videollamada y el plan llega por correo.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</details>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3033,17 +3946,17 @@ return array(
 
 <!-- wp:group {"className": "datos", "layout": {"type": "default"}} -->
 <div class="wp-block-group datos">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "<span data-tel>+57 304 653 2006</span>", "icono": "<span class=\\"datos__aro\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#4E9E55\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 15.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 5.2 2 2 0 0 1 5.5 3h3l1.5 4-2 1.6a14 14 0 0 0 6.4 6.4l1.6-2 4 1.5Z\\"/></svg></span>"} -->
 <span><span class="datos__aro"><svg viewBox="0 0 24 24" fill="none" stroke="#4E9E55" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 3.5 5.2 2 2 0 0 1 5.5 3h3l1.5 4-2 1.6a14 14 0 0 0 6.4 6.4l1.6-2 4 1.5Z"/></svg></span><span data-tel>+57 304 653 2006</span></span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "<span data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</span>", "icono": "<span class=\\"datos__aro\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#4A7BB5\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z\\"/><circle cx=\\"12\\" cy=\\"10\\" r=\\"2.6\\"/></svg></span>"} -->
 <span><span class="datos__aro"><svg viewBox="0 0 24 24" fill="none" stroke="#4A7BB5" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span data-direccion>Calle 1C # 30-40, High Park Medical Center<br>Consultorio 129 · Barranquilla, Colombia</span></span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "<a data-correo href=\\"mailto:nutripedcm@gmail.com\\" style=\\"color:#42607E\\">nutripedcm@gmail.com</a>", "icono": "<span class=\\"datos__aro\\"><svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#C43F66\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"5\\" width=\\"18\\" height=\\"14\\" rx=\\"3\\"/><path d=\\"M4 7l8 6 8-6\\"/></svg></span>"} -->
 <span><span class="datos__aro"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span><a data-correo href="mailto:nutripedcm@gmail.com" style="color:#42607E">nutripedcm@gmail.com</a></span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3051,13 +3964,13 @@ return array(
 
 <!-- wp:group {"className": "contacto__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group contacto__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Agenda tu cita ahora</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita ahora", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Agenda tu cita ahora</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/contacto/">Ver todas las formas de contacto</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver todas las formas de contacto", "atributos": {"href": "/contacto/"}, "className": "btn btn--blanco"} -->
+<a href="/contacto/" class="btn btn--blanco">Ver todas las formas de contacto</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3068,20 +3981,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'privacidad',
-		'antes'     => array( '7e03dcf8462feeee68bcc1312a0b5f82', '95f3cfef6a31aedcfde4d7120de4f34a' ),
+		'antes'     => array( '7e03dcf8462feeee68bcc1312a0b5f82', '95f3cfef6a31aedcfde4d7120de4f34a', 'c225c442def9a55c7d7f65bb4dfa85c2' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Política de privacidad</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Política de privacidad", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Política de privacidad</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Política de privacidad</h1>
@@ -3217,13 +4138,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/contacto/">Ir a contacto</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ir a contacto", "atributos": {"href": "/contacto/"}, "className": "btn btn--rosa"} -->
+<a href="/contacto/" class="btn btn--rosa">Ir a contacto</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/aviso-medico/">Leer el aviso médico</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Leer el aviso médico", "atributos": {"href": "/aviso-medico/"}, "className": "btn btn--blanco"} -->
+<a href="/aviso-medico/" class="btn btn--blanco">Leer el aviso médico</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3234,20 +4155,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '775bf4283ac1b449bd44fde5d6bf7a22', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Servicios</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Servicios", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Servicios</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Pediatría y nutrición,<br><em>en la misma consulta</em></h1>
@@ -3257,16 +4186,9 @@ return array(
 <p class="cabecera__lead reveal retraso-2">Seis formas de acompañarlos, todas con el mismo método: historia completa, examen sin prisa, plan por escrito y seguimiento. Elige por dónde empezar.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<nav class="filtros filtros--enlaces reveal" data-delay="3" aria-label="Ir a un servicio" style="margin-top:26px;margin-bottom:0">
-        <a class="filtro" href="#control-pediatrico">Control pediátrico</a>
-        <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a>
-        <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a>
-        <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a>
-        <a class="filtro" href="#asesoria-padres">Asesoría a padres</a>
-        <a class="filtro" href="#consulta-virtual">Consulta virtual</a>
-      </nav>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#asesoria-padres\\">Asesoría a padres</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
+<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#asesoria-padres">Asesoría a padres</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a></nav>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3304,32 +4226,35 @@ return array(
 <p>El chequeo de siempre, hecho con calma. Revisamos crecimiento, desarrollo, vacunas y hábitos, y resolvemos las dudas que se acumularon desde la última visita.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--verde"} -->
-<ul class="wp-block-list lista lista--verde">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Peso, talla y perímetro cefálico en sus curvas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Peso, talla y perímetro cefálico en sus curvas</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Esquema de vacunación al día", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Esquema de vacunación al día</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Prevención de accidentes según la edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Prevención de accidentes según la edad</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Enfermedades agudas y control de crónicas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Enfermedades agudas y control de crónicas</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45–60 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45–60 minutos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Desde recién nacidos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 20a8 8 0 0 1 16 0\\"/><circle cx=\\"12\\" cy=\\"8\\" r=\\"4\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Desde recién nacidos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3361,32 +4286,35 @@ return array(
 <p>Valoración nutricional completa y un plan que se puede sostener: con los alimentos de tu ciudad, los horarios de tu casa y el presupuesto real de la familia.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--verde"} -->
-<ul class="wp-block-list lista lista--verde">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Diagnóstico nutricional con antropometría", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Diagnóstico nutricional con antropometría</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Selectividad alimentaria y comedores difíciles", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Selectividad alimentaria y comedores difíciles</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Bajo peso, sobrepeso y anemia", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Bajo peso, sobrepeso y anemia</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Menús y loncheras que sí se comen", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Menús y loncheras que sí se comen</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "60 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 minutos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Con plan escrito", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 19V9M10 19V5M16 19v-7M2 19h20\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M2 19h20"/></svg>Con plan escrito</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3418,32 +4346,35 @@ return array(
 <p>Las curvas explicadas sin susto: qué significa el percentil, qué es variación normal y cuándo sí vale la pena estudiar algo más a fondo.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--azul"} -->
-<ul class="wp-block-list lista lista--azul">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
+<ul class="lista lista--azul">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Seguimiento de talla, peso y velocidad de crecimiento", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Seguimiento de talla, peso y velocidad de crecimiento</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Hitos del desarrollo por edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Hitos del desarrollo por edad</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Señales de alarma y cuándo remitir", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Señales de alarma y cuándo remitir</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Sueño, lenguaje y conducta", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Sueño, lenguaje y conducta</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45–60 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45–60 minutos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Control periódico", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/></svg>Control periódico</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3475,32 +4406,35 @@ return array(
 <p>El paso de la leche a la cuchara, acompañado. Qué ofrecer, en qué textura, cuánto esperar y cómo reaccionar cuando escupe todo el primer día.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--verde"} -->
-<ul class="wp-block-list lista lista--verde">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Inicio a los 6 meses, paso a paso", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Inicio a los 6 meses, paso a paso</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Texturas, cantidades y frecuencia", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Texturas, cantidades y frecuencia</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Alérgenos: cuándo y cómo introducirlos", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Alérgenos: cuándo y cómo introducirlos</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Atragantamiento: prevención y qué hacer", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Atragantamiento: prevención y qué hacer</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "60 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60 minutos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "También hay <a href=\\"/cursos/\\" style=\\"color:inherit;text-decoration:underline\\">curso en video</a>", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M5 4h14v16H5z\\"/><path d=\\"M9 8h6M9 12h6M9 16h3\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>También hay <a href="/cursos/" style="color:inherit;text-decoration:underline">curso en video</a></span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3532,32 +4466,35 @@ return array(
 <p>Para las dudas que no caben en un control: el sueño que se rompió, la rabieta de las siete de la noche, la vuelta al jardín, la llegada de un hermanito.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--azul"} -->
-<ul class="wp-block-list lista lista--azul">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
+<ul class="lista lista--azul">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Rutinas de sueño respetuosas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Rutinas de sueño respetuosas</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Acompañamiento en lactancia y destete", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Acompañamiento en lactancia y destete</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Pantallas, juego y límites por edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Pantallas, juego y límites por edad</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Preparar la casa para cada etapa", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Preparar la casa para cada etapa</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 minutos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Presencial o virtual", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z"/></svg>Presencial o virtual</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3589,32 +4526,35 @@ return array(
 <p>La misma consulta, por videollamada. Funciona para nutrición, seguimiento, dudas de crianza y segundas opiniones; para lo que necesita examen físico te lo digo de entrada.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list {"className": "lista lista--azul"} -->
-<ul class="wp-block-list lista lista--azul">
-<!-- wp:list-item -->
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
+<ul class="lista lista--azul">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Para familias en cualquier país", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Para familias en cualquier país</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Envías exámenes y curvas antes de la cita", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Envías exámenes y curvas antes de la cita</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Plan e indicaciones por correo al terminar", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Plan e indicaciones por correo al terminar</li>
-<!-- /wp:list-item -->
-<!-- wp:list-item -->
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Pago en COP o USD", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
 <li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Pago en COP o USD</li>
-<!-- /wp:list-item -->
+<!-- /wp:dalila/texto -->
 </ul>
-<!-- /wp:list -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 minutos</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Sin importar el huso horario", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>Sin importar el huso horario</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3640,14 +4580,57 @@ return array(
 <p class="bajada reveal">El mismo recorrido, sin importar el motivo por el que llegues.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
 <ol class="pasos">
-      <li class="reveal"><strong>Historia completa</strong><p>Embarazo, parto, alimentación, sueño, antecedentes y lo que te preocupa hoy. Sin apuro.</p></li>
-      <li class="reveal" data-delay="1"><strong>Examen y medidas</strong><p>Revisión física, peso, talla y ubicación en las curvas de crecimiento.</p></li>
-      <li class="reveal" data-delay="2"><strong>Conversación</strong><p>Qué encontramos, qué significa y qué opciones hay. En palabras que se entienden.</p></li>
-      <li class="reveal" data-delay="3"><strong>Plan por escrito</strong><p>Te vas con las indicaciones escritas y la fecha del próximo control.</p></li>
-    </ol>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Historia completa"} -->
+<strong>Historia completa</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Embarazo, parto, alimentación, sueño, antecedentes y lo que te preocupa hoy. Sin apuro.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Examen y medidas"} -->
+<strong>Examen y medidas</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Revisión física, peso, talla y ubicación en las curvas de crecimiento.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Conversación"} -->
+<strong>Conversación</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Qué encontramos, qué significa y qué opciones hay. En palabras que se entienden.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan por escrito"} -->
+<strong>Plan por escrito</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te vas con las indicaciones escritas y la fecha del próximo control.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "aviso reveal en-01509c", "layout": {"type": "default"}} -->
 <div class="wp-block-group aviso reveal en-01509c">
@@ -3655,9 +4638,9 @@ return array(
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias."} -->
 <div><strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias.</div>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3683,13 +4666,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" data-wa href="/contacto/">Cuéntame por WhatsApp</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Cuéntame por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "className": "btn btn--rosa"} -->
+<a data-wa="" href="/contacto/" class="btn btn--rosa">Cuéntame por WhatsApp</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/citas/">Ver citas y tarifas</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver citas y tarifas", "atributos": {"href": "/citas/"}, "className": "btn btn--blanco"} -->
+<a href="/citas/" class="btn btn--blanco">Ver citas y tarifas</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3700,20 +4683,28 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'sobre-mi',
-		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '90e6c9a2ed332a05de4669b330f21ad8', '937efee65457efbce7d176197f67b833', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'fefea6507a070729c37f063be9636f6c' ),
+		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '90e6c9a2ed332a05de4669b330f21ad8', '937efee65457efbce7d176197f67b833', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'e394c1b2ffd46590c0fc0baea948bbde', 'fefea6507a070729c37f063be9636f6c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
 <div class="wp-block-group wrap cabecera__grid">
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
+<!-- wp:dalila/caja {"etiqueta": "nav", "atributos": {"aria-label": "Ruta"}, "className": "migas reveal"} -->
+<nav aria-label="Ruta" class="migas reveal">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Inicio", "atributos": {"href": "/"}} -->
+<a href="/">Inicio</a>
+<!-- /wp:dalila/texto -->
+
 <!-- wp:html -->
-<nav class="migas reveal" aria-label="Ruta">
-        <a href="/">Inicio</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-        <span aria-current="page">Sobre mí</span>
-      </nav>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
 <!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Sobre mí", "atributos": {"aria-current": "page"}} -->
+<span aria-current="page">Sobre mí</span>
+<!-- /wp:dalila/texto -->
+</nav>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 1, "className": "reveal retraso-1"} -->
 <h1 class="wp-block-heading reveal retraso-1">Soy Dalila,<br><em>la pediatra que te ayuda</em></h1>
@@ -3725,13 +4716,13 @@ return array(
 
 <!-- wp:group {"className": "cabecera__acciones reveal retraso-3", "layout": {"type": "default"}} -->
 <div class="wp-block-group cabecera__acciones reveal retraso-3">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/servicios/">Ver los servicios →</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver los servicios →", "atributos": {"href": "/servicios/"}, "className": "btn btn--blanco"} -->
+<a href="/servicios/" class="btn btn--blanco">Ver los servicios →</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3781,11 +4772,13 @@ return array(
 <p>Cada control incluye una mirada al plato. Y cada plan de alimentación se arma con lo que hay en tu casa, en tu ciudad y en tu presupuesto — no con una lista ideal que nadie sostiene tres semanas.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "blockquote"} -->
 <blockquote>
-        <p>Una consulta buena no es la que deja más indicaciones, sino la que deja menos dudas.</p>
-      </blockquote>
-<!-- /wp:html -->
+<!-- wp:paragraph -->
+<p>Una consulta buena no es la que deja más indicaciones, sino la que deja menos dudas.</p>
+<!-- /wp:paragraph -->
+</blockquote>
+<!-- /wp:dalila/caja -->
 
 <!-- wp:heading {"level": 2} -->
 <h2 class="wp-block-heading">Cómo es una consulta conmigo</h2>
@@ -3829,35 +4822,89 @@ return array(
 <p class="en-50536d">Sus títulos y certificaciones, del primero al más reciente.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "cronologia reveal"} -->
 <ol class="cronologia reveal">
-          <li>
-            <time>Pregrado · 2004</time>
-            <strong>Médico general</strong>
-            <p>Fundación Universitaria San Martín.</p>
-          </li>
-          <li>
-            <time>Especialidad · 2011</time>
-            <strong>Pediatría</strong>
-            <p>Universidad Libre, seccional Barranquilla.</p>
-          </li>
-          <li>
-            <time>Posgrado · 2016</time>
-            <strong>Nutrición pediátrica</strong>
-            <p>Post Graduate Program in Pediatric Nutrition (PGPN), en asociación con la Escuela de Medicina de Boston University.</p>
-          </li>
-          <li>
-            <time>Certificación · 2024</time>
-            <strong>Terapista de alimentación</strong>
-            <p>SOS Approach to Feeding.</p>
-          </li>
-          <li>
-            <time>Hoy</time>
-            <strong>Consulta en Barranquilla y virtual</strong>
-            <p>Atención presencial en High Park Medical Center y por videollamada para familias dentro y fuera de Colombia.</p>
-          </li>
-        </ol>
-<!-- /wp:html -->
+<!-- wp:dalila/caja {"etiqueta": "li"} -->
+<li>
+<!-- wp:dalila/texto {"etiqueta": "time", "contenido": "Pregrado · 2004"} -->
+<time>Pregrado · 2004</time>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Médico general"} -->
+<strong>Médico general</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Fundación Universitaria San Martín.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li"} -->
+<li>
+<!-- wp:dalila/texto {"etiqueta": "time", "contenido": "Especialidad · 2011"} -->
+<time>Especialidad · 2011</time>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Pediatría"} -->
+<strong>Pediatría</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Universidad Libre, seccional Barranquilla.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li"} -->
+<li>
+<!-- wp:dalila/texto {"etiqueta": "time", "contenido": "Posgrado · 2016"} -->
+<time>Posgrado · 2016</time>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Nutrición pediátrica"} -->
+<strong>Nutrición pediátrica</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Post Graduate Program in Pediatric Nutrition (PGPN), en asociación con la Escuela de Medicina de Boston University.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li"} -->
+<li>
+<!-- wp:dalila/texto {"etiqueta": "time", "contenido": "Certificación · 2024"} -->
+<time>Certificación · 2024</time>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Terapista de alimentación"} -->
+<strong>Terapista de alimentación</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>SOS Approach to Feeding.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li"} -->
+<li>
+<!-- wp:dalila/texto {"etiqueta": "time", "contenido": "Hoy"} -->
+<time>Hoy</time>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Consulta en Barranquilla y virtual"} -->
+<strong>Consulta en Barranquilla y virtual</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Atención presencial en High Park Medical Center y por videollamada para familias dentro y fuera de Colombia.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3887,9 +4934,9 @@ return array(
 <span class="dato__aro" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 3 10 2.5-6 1.5 3h5"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Evidencia, no modas"} -->
 <strong>Evidencia, no modas</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Lo que recomiendo está respaldado por guías actuales de pediatría y nutrición. Si algo no tiene sustento, te lo digo.</p>
@@ -3903,9 +4950,9 @@ return array(
 <span class="dato__aro" style="background:var(--celeste)"><svg viewBox="0 0 24 24" fill="none" stroke="#3A6B96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z"/><path d="M8 10h4"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Tiempo para escuchar"} -->
 <strong>Tiempo para escuchar</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Antes de recomendar, pregunto cómo es un día en tu casa. Un plan que ignora la rutina real no se cumple.</p>
@@ -3919,9 +4966,9 @@ return array(
 <span class="dato__aro" style="background:var(--verde-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#3E7A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-4.8-8-10a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 5.2-8 10-8 10z"/></svg></span>
 <!-- /wp:html -->
 
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Cero culpas"} -->
 <strong>Cero culpas</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>Nadie llega a la consulta por descuido. Trabajamos desde donde estás hoy, sin sermones y sin comparaciones.</p>
@@ -3945,9 +4992,9 @@ return array(
 
 <!-- wp:group {"layout": {"type": "default"}} -->
 <div class="wp-block-group">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Y está Pepe"} -->
 <strong>Y está Pepe</strong>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
 <p>La rana verde acompaña el consultorio desde el día que abrió. Vive entre los corales de la pared y recibe a los niños antes que yo: si tu peque llega con miedo, empezamos por saludarlo a él. <a href="/consultorio/">Conoce el resto del consultorio →</a></p>
@@ -3979,13 +5026,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Ver citas y tarifas</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver citas y tarifas", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Ver citas y tarifas</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" data-wa href="/contacto/">Escríbeme por WhatsApp</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Escríbeme por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "className": "btn btn--blanco"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco">Escríbeme por WhatsApp</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -3996,7 +5043,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'agotamiento-materno-cinco-senales',
-		'antes'     => array( '353a8fc4ee61c2e79f16c75444cf6476', '46f73c03c33e991a2c313ee5603ba83f' ),
+		'antes'     => array( '353a8fc4ee61c2e79f16c75444cf6476', '46f73c03c33e991a2c313ee5603ba83f', 'd88264ea382213c0539402f10b3bc792' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4073,19 +5120,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4115,9 +5172,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Dolor de oído a medianoche</h3>
@@ -4143,9 +5200,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">lactancia</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Lactancia y caries</h3>
@@ -4171,9 +5228,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
@@ -4215,13 +5272,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4232,7 +5289,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'bullying-las-senales-que-no-te-cuenta',
-		'antes'     => array( '5dce3f469438bd568d3a5e311751bfb9', 'd5b37ac42291a36466d23caba0477712' ),
+		'antes'     => array( '23d890780f62ba0b782a1f97b8830286', '5dce3f469438bd568d3a5e311751bfb9', 'd5b37ac42291a36466d23caba0477712' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4305,19 +5362,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4347,9 +5414,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
@@ -4375,9 +5442,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
@@ -4403,9 +5470,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El cólico cambió de nombre</h3>
@@ -4447,13 +5514,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4464,7 +5531,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cinco-errores-que-llevan-a-la-selectividad',
-		'antes'     => array( 'd68b9bc1a6b459d8ea2b55079e56503d', 'e4a590abe3078ae9083382e7e2742636' ),
+		'antes'     => array( 'd68b9bc1a6b459d8ea2b55079e56503d', 'e4a590abe3078ae9083382e7e2742636', 'f43d5e4693647ab5122ce5dbcea4fdcc' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4513,22 +5580,37 @@ return array(
 <blockquote class="wp-block-quote"><p>Si tu hijo te envía señales de saciedad, no lo presiones.</p></blockquote>
 <!-- /wp:quote -->
 
-<!-- wp:html -->
-<div class="descarga">
-      <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
-      <div>
-        <strong>Un regalo: mis recomendaciones nutricionales</strong>
-        <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
-        <div class="descarga__pie">
-          <a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
-            Descargar la guía
-          </a>
-          <small>PDF · 9 páginas · gratis</small>
-        </div>
-      </div>
-    </div>
-<!-- /wp:html -->
+<!-- wp:group {"className": "descarga", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Un regalo: mis recomendaciones nutricionales"} -->
+<strong>Un regalo: mis recomendaciones nutricionales</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga__pie">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Descargar la guía", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf", "download": ""}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 4v11\\"/><path d=\\"M8 11l4 4 4-4\\"/><path d=\\"M5 19h14\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download="" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg> Descargar la guía</a>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "small", "contenido": "PDF · 9 páginas · gratis"} -->
+<small>PDF · 9 páginas · gratis</small>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">El hilo que los une</h3>
@@ -4546,19 +5628,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4588,9 +5680,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Frutos secos y uvas: cómo sí</h3>
@@ -4616,9 +5708,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La malnutrición que no se ve</h3>
@@ -4644,9 +5736,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
@@ -4688,13 +5780,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4705,7 +5797,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cuando-necesita-agua-tu-bebe',
-		'antes'     => array( '3cdd1916e3c35ad65f6a8bf6140f6882', 'cd4e1ae0a1d0d7fa12439434ddb20fe5' ),
+		'antes'     => array( '3cdd1916e3c35ad65f6a8bf6140f6882', '6125c3d190a5bbfb51924f4a439ee602', 'cd4e1ae0a1d0d7fa12439434ddb20fe5' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -4778,19 +5870,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar la alimentación de tu peque.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar la alimentación de tu peque."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar la alimentación de tu peque.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4820,9 +5922,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
@@ -4848,9 +5950,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -4876,9 +5978,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
@@ -4920,13 +6022,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4937,7 +6039,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cuidado-con-los-mosquitos',
-		'antes'     => array( '415866bd1ba7e9e11d34ad18ac98f221', 'b57510247cb368232d171385db5389e5' ),
+		'antes'     => array( '3bd2020f20f735090be9f2668bae1a02', '415866bd1ba7e9e11d34ad18ac98f221', 'b57510247cb368232d171385db5389e5' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5007,19 +6109,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5049,9 +6161,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
@@ -5077,9 +6189,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El cólico cambió de nombre</h3>
@@ -5105,9 +6217,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Bullying: las señales que no te cuenta</h3>
@@ -5149,13 +6261,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5166,7 +6278,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'cumplio-el-ano-y-dejo-de-comer',
-		'antes'     => array( '199d82e4a3c91b1cbf7732500db3a1db', '2df2ca729565a30696562dc7ba761bc1' ),
+		'antes'     => array( '199d82e4a3c91b1cbf7732500db3a1db', '2df2ca729565a30696562dc7ba761bc1', 'ec5a2a91e0635bcb7a5ef92642df0ccd' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5246,19 +6358,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5288,9 +6410,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
@@ -5316,9 +6438,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
@@ -5344,9 +6466,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">lactancia</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Qué leche después del destete?</h3>
@@ -5388,13 +6510,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5405,7 +6527,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'derivados-lacteos-cuanto-y-desde-cuando',
-		'antes'     => array( '23a21f1530b0b48505b4c750c5a736ef', '8483f42a161d37add61ecbceec86b76f' ),
+		'antes'     => array( '23a21f1530b0b48505b4c750c5a736ef', '8483f42a161d37add61ecbceec86b76f', 'db461d2344bca0ee9c2da0d1d3c936a8' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5468,19 +6590,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5510,9 +6642,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
@@ -5538,9 +6670,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La malnutrición que no se ve</h3>
@@ -5566,9 +6698,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Frutos secos y uvas: cómo sí</h3>
@@ -5610,13 +6742,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5627,7 +6759,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'despues-de-los-dos-anos-que-leche',
-		'antes'     => array( '61572217d95f2d510dd7ce54c83b7e98', 'c09caa6be41316af299c5e0f2d090b6b' ),
+		'antes'     => array( '61572217d95f2d510dd7ce54c83b7e98', '98b51e51c4d1b6d4d8a8299df1c1ae62', 'c09caa6be41316af299c5e0f2d090b6b' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5689,19 +6821,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5731,9 +6873,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
@@ -5759,9 +6901,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La malnutrición que no se ve</h3>
@@ -5787,9 +6929,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
@@ -5831,13 +6973,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5848,7 +6990,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'diez-veces-antes-de-decir-no-le-gusta',
-		'antes'     => array( '01b8839bea138a87aee3d1b93a523b45', 'a73801d172f58497cdbc7a46921c3c48' ),
+		'antes'     => array( '01b8839bea138a87aee3d1b93a523b45', 'a73801d172f58497cdbc7a46921c3c48', 'db7b64489928c9fa2ce2cad550f9c1d6' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -5897,22 +7039,37 @@ return array(
 <p>Por eso los cereales, los tubérculos y las frutas los reciben casi sin pelear, y la verdura verde cuesta el doble. No es que tu hijo sea difícil: es que le estás ofreciendo algo que su lengua no tenía en el repertorio.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:html -->
-<div class="descarga">
-      <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
-      <div>
-        <strong>Un regalo: mis recomendaciones nutricionales</strong>
-        <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
-        <div class="descarga__pie">
-          <a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
-            Descargar la guía
-          </a>
-          <small>PDF · 9 páginas · gratis</small>
-        </div>
-      </div>
-    </div>
-<!-- /wp:html -->
+<!-- wp:group {"className": "descarga", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Un regalo: mis recomendaciones nutricionales"} -->
+<strong>Un regalo: mis recomendaciones nutricionales</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga__pie">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Descargar la guía", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf", "download": ""}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 4v11\\"/><path d=\\"M8 11l4 4 4-4\\"/><path d=\\"M5 19h14\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download="" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg> Descargar la guía</a>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "small", "contenido": "PDF · 9 páginas · gratis"} -->
+<small>PDF · 9 páginas · gratis</small>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Lo que yo haría esta semana</h3>
@@ -5943,19 +7100,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -5985,9 +7152,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
@@ -6013,9 +7180,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
@@ -6041,9 +7208,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -6085,13 +7252,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6102,7 +7269,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'dolor-de-oido-a-medianoche',
-		'antes'     => array( '659d67a22b82d8eeb166f80b6f142b21', 'e6a9ee90482760eb3407196774ebbf22' ),
+		'antes'     => array( '61f813fd167b4ffad2dc3314d7f54a33', '659d67a22b82d8eeb166f80b6f142b21', 'e6a9ee90482760eb3407196774ebbf22' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6175,19 +7342,29 @@ return array(
 <figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-dolor-de-oido.webp" alt="Ilustración en acuarela de un niño en la cama de noche con un paño tibio sobre el oído"/><figcaption class="wp-element-caption">Casi siempre aparece de noche, y casi nunca hay cómo mirar el oído en casa.</figcaption></figure>
 <!-- /wp:image -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6217,9 +7394,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">lactancia</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Lactancia y caries</h3>
@@ -6245,9 +7422,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Agotamiento materno: cinco señales</h3>
@@ -6273,9 +7450,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La malnutrición que no se ve</h3>
@@ -6317,13 +7494,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6334,7 +7511,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-agarre-tres-senales-de-que-va-bien',
-		'antes'     => array( '639b109dec68f81f235812fb2d0a4a3c', 'ded9843a6b784f619395eae57d4184c4' ),
+		'antes'     => array( '639b109dec68f81f235812fb2d0a4a3c', 'd53ed5489c52cb7c742046658b9bb6a7', 'ded9843a6b784f619395eae57d4184c4' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6387,19 +7564,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6429,9 +7616,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">lactancia</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Qué leche después del destete?</h3>
@@ -6457,9 +7644,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
@@ -6485,9 +7672,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
@@ -6529,13 +7716,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6546,7 +7733,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-colico-del-lactante-cambio-de-nombre',
-		'antes'     => array( '5287d946f7811e38062a3fb6d293d5ff', '9f3a0699716a198992dd912114e0198f' ),
+		'antes'     => array( '5287d946f7811e38062a3fb6d293d5ff', '9f3a0699716a198992dd912114e0198f', 'e7ec03b24c8acc5219752d88a80104b1' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6599,19 +7786,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6641,9 +7838,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
@@ -6669,9 +7866,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
@@ -6697,9 +7894,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
@@ -6741,13 +7938,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6758,7 +7955,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-inhalador-la-tecnica-correcta',
-		'antes'     => array( '5706f439e61740f8d5f6d6e4ab3e42b9', '641c6560fb81e478e8eb0cff6f1c4d8c' ),
+		'antes'     => array( '5706f439e61740f8d5f6d6e4ab3e42b9', '641c6560fb81e478e8eb0cff6f1c4d8c', 'df30c1b0cb7d642b5f88d85782fa1e60' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -6848,19 +8045,29 @@ return array(
 <figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-inhalador.webp" alt="Ilustración en acuarela de un inhalador con su inhalocámara y mascarilla"/><figcaption class="wp-element-caption">El inhalador solo no basta: la inhalocámara es parte del tratamiento.</figcaption></figure>
 <!-- /wp:image -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -6890,9 +8097,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
@@ -6918,9 +8125,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El cólico cambió de nombre</h3>
@@ -6946,9 +8153,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Tres mitos que oigo cada semana</h3>
@@ -6990,13 +8197,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7007,7 +8214,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-ronquido-nunca-es-normal',
-		'antes'     => array( '36f59aa1e899a30f5589d3ea7e374808', 'a08684119706cdcc2e868ce440a8240c' ),
+		'antes'     => array( '285d17314be636b4157b08c57f4fa4e9', '36f59aa1e899a30f5589d3ea7e374808', 'a08684119706cdcc2e868ce440a8240c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7069,19 +8276,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7111,9 +8328,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -7139,9 +8356,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
@@ -7167,9 +8384,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Se puso morado al llorar</h3>
@@ -7211,13 +8428,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7228,7 +8445,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'el-tamizaje-auditivo-la-primera-prueba-de-tu-bebe',
-		'antes'     => array( '286a2a626fef12a0770765512fa11476', '868a25219aa4f39df99be0ea0b5b1fa8' ),
+		'antes'     => array( '286a2a626fef12a0770765512fa11476', '868a25219aa4f39df99be0ea0b5b1fa8', 'cf704f8d53e405d5d6d8e8c28eb2b1de' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7302,19 +8519,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7344,9 +8571,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
@@ -7372,9 +8599,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
@@ -7400,9 +8627,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
@@ -7444,13 +8671,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7461,7 +8688,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'frutos-secos-y-uvas-como-si',
-		'antes'     => array( '60e15192eb5fa476a472f18589486a56', '7b0b8b57f78eb0a6b545699d1cd01192' ),
+		'antes'     => array( '60e15192eb5fa476a472f18589486a56', '6b432471db5e78961f1dbe6046d6e817', '7b0b8b57f78eb0a6b545699d1cd01192' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7523,19 +8750,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7565,9 +8802,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
@@ -7593,9 +8830,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
@@ -7621,9 +8858,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La malnutrición que no se ve</h3>
@@ -7665,13 +8902,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7682,7 +8919,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'la-malnutricion-que-no-se-ve',
-		'antes'     => array( '346a82c0f08430de099a59f8f5ec12e9', 'f66b3a25d5bafb5ac97b84232a226676' ),
+		'antes'     => array( '2d782640439d56b9447f9f91e44029ff', '346a82c0f08430de099a59f8f5ec12e9', 'f66b3a25d5bafb5ac97b84232a226676' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7739,19 +8976,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7781,9 +9028,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Derivados lácteos: cuánto y desde cuándo</h3>
@@ -7809,9 +9056,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cinco errores que llevan a la selectividad</h3>
@@ -7837,9 +9084,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
@@ -7881,13 +9128,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -7898,7 +9145,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'la-silla-de-comer-los-tres-angulos-de-90',
-		'antes'     => array( '9e242cfc14be2159f6b8a5921fa686eb', 'eb9651058f120b350866edd51143007e' ),
+		'antes'     => array( '4b9d5061586db3c90e2fd9a96dc6df03', '9e242cfc14be2159f6b8a5921fa686eb', 'eb9651058f120b350866edd51143007e' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -7982,19 +9229,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8024,9 +9281,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
@@ -8052,9 +9309,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
@@ -8080,9 +9337,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -8124,13 +9381,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8141,7 +9398,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'lactancia-y-caries-protege-pero-no-basta',
-		'antes'     => array( '86d72994e2b36f7ade11fe8589cb73eb', 'f64daa13c1b3166c04ff3f0ae451ca7c' ),
+		'antes'     => array( '226e00a83ec77455a94a41297af48b71', '86d72994e2b36f7ade11fe8589cb73eb', 'f64daa13c1b3166c04ff3f0ae451ca7c' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8204,19 +9461,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8246,9 +9513,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Después de los dos años, ¿qué leche?</h3>
@@ -8274,9 +9541,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La malnutrición que no se ve</h3>
@@ -8302,9 +9569,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Dolor de oído a medianoche</h3>
@@ -8346,13 +9613,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8363,7 +9630,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'lavado-nasal-si-esta-llorando-no-se-hace',
-		'antes'     => array( '9a6af0b76907fd703ef5908aeb1f7c4d', 'f2371c3b922295fd28c6e9caac3c4a88' ),
+		'antes'     => array( '9a6af0b76907fd703ef5908aeb1f7c4d', 'f2371c3b922295fd28c6e9caac3c4a88', 'fe92514d98cb17f83f3196192cd76747' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8448,19 +9715,29 @@ return array(
 <figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-lavado-nasal.webp" alt="Ilustración en acuarela de una jeringa y un frasco de suero fisiológico sobre toallas dobladas"/><figcaption class="wp-element-caption">El objetivo no es destapar de un empujón: es bajar el moco y diluirlo.</figcaption></figure>
 <!-- /wp:image -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8490,9 +9767,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Si le sangra la nariz, esto no</h3>
@@ -8518,9 +9795,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -8546,9 +9823,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El ronquido nunca es normal</h3>
@@ -8590,13 +9867,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8607,7 +9884,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'leer-los-ingredientes-no-solo-la-tabla',
-		'antes'     => array( 'ebf0cdafb7d89e573ffd54b66dcb6557', 'f8be977c3d8b63f6c51c9ebf6fa2b254' ),
+		'antes'     => array( '842332073907e6e86728c4855b234428', 'ebf0cdafb7d89e573ffd54b66dcb6557', 'f8be977c3d8b63f6c51c9ebf6fa2b254' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8684,19 +9961,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8726,9 +10013,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">¿Cuándo necesita agua tu bebé?</h3>
@@ -8754,9 +10041,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
@@ -8782,9 +10069,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">La silla de comer: tres ángulos de 90°</h3>
@@ -8826,13 +10113,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8843,7 +10130,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'que-leche-le-doy-despues-del-destete',
-		'antes'     => array( '44482facc4af3f575bcf80a4dcab561a', '5c1c9844821e7b57b8883a8300367944' ),
+		'antes'     => array( '44482facc4af3f575bcf80a4dcab561a', '5872cf8579ba436ba98793fb352a1131', '5c1c9844821e7b57b8883a8300367944' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -8896,19 +10183,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -8938,9 +10235,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "lactancia", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">lactancia</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El agarre: tres señales de que va bien</h3>
@@ -8966,9 +10263,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
@@ -8994,9 +10291,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Diez veces antes de decir «no le gusta»</h3>
@@ -9038,13 +10335,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -9055,7 +10352,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'se-puso-morado-al-llorar',
-		'antes'     => array( '856706259e576bc04fa0d1b996d202ac', 'beed068ed9dc72f2f6748f1f05c27446' ),
+		'antes'     => array( '0a523d33c55a2535e85748f9057e97ce', '856706259e576bc04fa0d1b996d202ac', 'beed068ed9dc72f2f6748f1f05c27446' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9117,19 +10414,29 @@ return array(
 <figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-espasmo-sollozo.webp" alt="Ilustración en acuarela de una madre calmando en brazos a un bebé que llora"/><figcaption class="wp-element-caption">Se corta un momento y vuelve. Por eso asusta tanto, y por eso es benigno.</figcaption></figure>
 <!-- /wp:image -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -9159,9 +10466,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El ronquido nunca es normal</h3>
@@ -9187,9 +10494,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Si le sangra la nariz, esto no</h3>
@@ -9215,9 +10522,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "nutrición", "className": "chip chip--verde"} -->
 <span class="chip chip--verde">nutrición</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cumplió el año y dejó de comer</h3>
@@ -9259,13 +10566,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -9276,7 +10583,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'si-le-sangra-la-nariz-esto-no',
-		'antes'     => array( 'c810a6041ed59af3ab2df2189fa1ce1f', 'fca90a3ef9a56a213a7c7a6470e4c2bc' ),
+		'antes'     => array( '1fcd0ddba1375b1790cab38940bf8092', 'c810a6041ed59af3ab2df2189fa1ce1f', 'fca90a3ef9a56a213a7c7a6470e4c2bc' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9335,19 +10642,29 @@ return array(
 <figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/portada-sangrado-nariz.webp" alt="Ilustración en acuarela de un niño sentado, inclinado hacia adelante, apretándose la nariz con dos dedos"/><figcaption class="wp-element-caption">Presión en la parte blanda y el reloj a la vista: tres minutos sin soltar.</figcaption></figure>
 <!-- /wp:image -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -9377,9 +10694,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Lavado nasal: si está llorando, no se hace</h3>
@@ -9405,9 +10722,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El tamizaje auditivo: la primera prueba</h3>
@@ -9433,9 +10750,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "crecimiento", "className": "chip chip--azul"} -->
 <span class="chip chip--azul">crecimiento</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El ronquido nunca es normal</h3>
@@ -9477,13 +10794,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -9494,7 +10811,7 @@ return array(
 	array(
 		'tipo'      => 'post',
 		'nombre'    => 'tres-mitos-que-oigo-cada-semana',
-		'antes'     => array( '55a024994c56a37ede7e9ab9e32d8295', 'dc416370b8bbfd489f519c88a1ab20d7' ),
+		'antes'     => array( '4fefccd99d6b38ebe8639e4e583b0116', '55a024994c56a37ede7e9ab9e32d8295', 'dc416370b8bbfd489f519c88a1ab20d7' ),
 		'contenido' => '<!-- wp:group {"className":"seccion seccion--crema seccion--lectura","layout":{"type":"constrained"}} -->
 <div class="wp-block-group seccion seccion--crema seccion--lectura">
 <!-- wp:group {"className":"prosa","layout":{"type":"constrained"}} -->
@@ -9539,22 +10856,37 @@ return array(
 <blockquote class="wp-block-quote"><p>No solo importa la cantidad, sino la calidad: brindar esos alimentos que en menor tamaño nutren más.</p></blockquote>
 <!-- /wp:quote -->
 
-<!-- wp:html -->
-<div class="descarga">
-      <img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy">
-      <div>
-        <strong>Un regalo: mis recomendaciones nutricionales</strong>
-        <p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
-        <div class="descarga__pie">
-          <a class="btn btn--rosa btn--chico" href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>
-            Descargar la guía
-          </a>
-          <small>PDF · 9 páginas · gratis</small>
-        </div>
-      </div>
-    </div>
-<!-- /wp:html -->
+<!-- wp:group {"className": "descarga", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/guia-nutricional.webp" alt="Portada de la guía de recomendaciones nutricionales" width="543" height="760" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+
+<!-- wp:group {"layout": {"type": "default"}} -->
+<div class="wp-block-group">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Un regalo: mis recomendaciones nutricionales"} -->
+<strong>Un regalo: mis recomendaciones nutricionales</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Nueve páginas con lo que suelo explicar en consulta: cómo construir hábitos en la mesa, cómo armar el plato, un menú sugerido para cuatro semanas y dos recetas para compartir.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga__pie">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Descargar la guía", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf", "download": ""}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 4v11\\"/><path d=\\"M8 11l4 4 4-4\\"/><path d=\\"M5 19h14\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/recomendaciones-nutricionales-dra-dalila-penaranda.pdf" download="" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg> Descargar la guía</a>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "small", "contenido": "PDF · 9 páginas · gratis"} -->
+<small>PDF · 9 páginas · gratis</small>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">El hilo común</h3>
@@ -9572,19 +10904,29 @@ return array(
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <!-- /wp:separator -->
 
+<!-- wp:group {"className": "aviso", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso">
 <!-- wp:html -->
-<div class="aviso">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
-    </div>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
 <!-- /wp:html -->
 
-<!-- wp:html -->
-<p style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:32px">
-      <span style="font-size:14.5px;color:var(--suave)">¿Le sirve a alguien más?</span>
-      <a class="btn btn--blanco btn--chico" data-wa href="/contacto/"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
-    </p>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada."} -->
+<div><strong>Esto es información general</strong>Cada niño es distinto y este artículo no reemplaza una valoración médica. Si algo de lo que leíste te preocupa, agenda una consulta antes de cambiar nada.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "p", "className": "en-e4194a"} -->
+<p class="en-e4194a">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "¿Le sirve a alguien más?", "className": "en-0a4e55"} -->
+<span class="en-0a4e55">¿Le sirve a alguien más?</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Compartir por WhatsApp", "atributos": {"data-wa": "", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#2F4260\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--blanco btn--chico"} -->
+<a data-wa="" href="/contacto/" class="btn btn--blanco btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#2F4260" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Compartir por WhatsApp</a>
+<!-- /wp:dalila/texto -->
+</p>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -9614,9 +10956,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El cólico cambió de nombre</h3>
@@ -9642,9 +10984,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">Cuidado con los mosquitos</h3>
@@ -9670,9 +11012,9 @@ return array(
 
 <!-- wp:group {"className": "articulo__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group articulo__cuerpo">
-<!-- wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "salud", "className": "chip chip--rosa"} -->
 <span class="chip chip--rosa">salud</span>
-<!-- /wp:html -->
+<!-- /wp:dalila/texto -->
 
 <!-- wp:heading {"level": 3} -->
 <h3 class="wp-block-heading">El inhalador: la técnica correcta</h3>
@@ -9714,13 +11056,13 @@ return array(
 
 <!-- wp:group {"className": "cierre__acciones", "layout": {"type": "default"}} -->
 <div class="wp-block-group cierre__acciones">
-<!-- wp:html -->
-<a class="btn btn--rosa" href="/citas/">Agenda tu cita</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Agenda tu cita", "atributos": {"href": "/citas/"}, "className": "btn btn--rosa"} -->
+<a href="/citas/" class="btn btn--rosa">Agenda tu cita</a>
+<!-- /wp:dalila/texto -->
 
-<!-- wp:html -->
-<a class="btn btn--blanco" href="/blog/">Volver al blog</a>
-<!-- /wp:html -->
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Volver al blog", "atributos": {"href": "/blog/"}, "className": "btn btn--blanco"} -->
+<a href="/blog/" class="btn btn--blanco">Volver al blog</a>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>

@@ -34,3 +34,10 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+/* El editor separa cada bloque del anterior con 24px que el sitio no tiene
+   (el tema no usa ese espacio): sin esto, las tarjetas, los testimonios y
+   las piezas de cada renglón se ven desalineadas mientras se edita. */
+:root body :where(.is-layout-flow) > * {
+  margin-block-start: 0;
+}

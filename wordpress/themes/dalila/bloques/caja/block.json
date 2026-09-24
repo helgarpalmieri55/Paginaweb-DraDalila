@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "dalila/caja",
+  "title": "Caja del sitio",
+  "category": "design",
+  "icon": "screenoptions",
+  "description": "Un contenedor con la forma que le da el diseño del sitio: una tarjeta, un testimonio, una pregunta frecuente. Lo de adentro se edita como cualquier bloque; para agregar otra igual, duplícala.",
+  "keywords": [ "caja", "tarjeta", "testimonio", "pregunta" ],
+  "textdomain": "dalila",
+  "supports": { "html": false, "className": false, "customClassName": true },
+  "attributes": {
+    "etiqueta":  { "type": "string", "default": "div" },
+    "atributos": { "type": "object", "default": {} }
+  },
+  "editorScript": "file:./editor.js"
+}
