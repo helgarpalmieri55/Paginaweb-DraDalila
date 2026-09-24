@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const DALILA_BLOQUES_VERSION = 12;
+const DALILA_BLOQUES_VERSION = 13;
 
 /**
  * El contenido sin las direcciones de las imágenes, que el importador cambia
