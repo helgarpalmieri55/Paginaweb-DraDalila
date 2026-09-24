@@ -120,9 +120,14 @@ function dalila_seo_identidades() {
 		'name'           => 'Dalila Peñaranda',
 		'honorificPrefix' => 'Dra.',
 		'jobTitle'       => 'Pediatra y especialista en nutrición infantil',
-		'description'    => 'Pediatra con subespecialidad en nutrición infantil. Atiende en Barranquilla y por videollamada a familias dentro y fuera de Colombia.',
+		'description'    => 'Pediatra de la Universidad Libre con posgrado en nutrición pediátrica (PGPN, Boston University School of Medicine) y formación como terapista de alimentación (SOS Approach to Feeding). Atiende en Barranquilla y por videollamada a familias dentro y fuera de Colombia.',
 		'url'            => $casa . 'sobre-mi/',
 		'worksFor'       => array( '@id' => $casa . '#consultorio' ),
+		'alumniOf'       => array(
+			array( '@type' => 'CollegeOrUniversity', 'name' => 'Fundación Universitaria San Martín' ),
+			array( '@type' => 'CollegeOrUniversity', 'name' => 'Universidad Libre' ),
+		),
+		'hasCredential'  => dalila_seo_credenciales(),
 		'knowsAbout'     => DALILA_SEO_TEMAS,
 		'knowsLanguage'  => 'es',
 		'sameAs'         => array_values( array_filter( array( $d['instagram'] ) ) ),
@@ -240,6 +245,28 @@ function dalila_seo_grafo() {
 	}
 
 	return array( '@context' => 'https://schema.org', '@graph' => array_values( $nodos ) );
+}
+
+/**
+ * Sus títulos y certificaciones, tal como constan en los documentos.
+ */
+function dalila_seo_credenciales() {
+	$credencial = function ( $categoria, $nombre, $fecha, $tipo, $entidad ) {
+		return array(
+			'@type'              => 'EducationalOccupationalCredential',
+			'credentialCategory' => $categoria,
+			'name'               => $nombre,
+			'dateCreated'        => $fecha,
+			'recognizedBy'       => array( '@type' => $tipo, 'name' => $entidad ),
+		);
+	};
+
+	return array(
+		$credencial( 'degree', 'Médico general', '2004-12-14', 'CollegeOrUniversity', 'Fundación Universitaria San Martín' ),
+		$credencial( 'degree', 'Especialista en Pediatría', '2011-08-26', 'CollegeOrUniversity', 'Universidad Libre' ),
+		$credencial( 'certificate', 'Post Graduate Program in Pediatric Nutrition (PGPN)', '2016', 'CollegeOrUniversity', 'Boston University School of Medicine' ),
+		$credencial( 'certificate', 'SOS Trained Feeding Therapist', '2024-11-12', 'Organization', 'SOS Approach to Feeding' ),
+	);
 }
 
 /**

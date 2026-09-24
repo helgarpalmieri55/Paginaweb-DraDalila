@@ -3712,7 +3712,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'sobre-mi',
-		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', 'cad60d34b975fe2d07ecd890fc06db0d' ),
+		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3838,30 +3838,30 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className": "en-50536d"} -->
-<p class="en-50536d">Las especialidades son las que ella misma declara en su contenido; las universidades, los años y el registro médico se completan con su información oficial.</p>
+<p class="en-50536d">Sus títulos y certificaciones, del primero al más reciente.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
 <ol class="cronologia reveal">
           <li>
-            <time>Pregrado</time>
-            <strong>Médico y cirujano</strong>
-            <p>Universidad y año — <em>pendiente de confirmar</em>.</p>
+            <time>Pregrado · 2004</time>
+            <strong>Médico general</strong>
+            <p>Fundación Universitaria San Martín.</p>
           </li>
           <li>
-            <time>Especialidad</time>
+            <time>Especialidad · 2011</time>
             <strong>Pediatría</strong>
-            <p>Institución, ciudad y año — <em>pendiente de confirmar</em>.</p>
+            <p>Universidad Libre, seccional Barranquilla.</p>
           </li>
           <li>
-            <time>Segunda especialidad</time>
-            <strong>Nutrición infantil</strong>
-            <p>Es la que marca su consulta: cada control mira también el plato.</p>
+            <time>Posgrado · 2016</time>
+            <strong>Nutrición pediátrica</strong>
+            <p>Post Graduate Program in Pediatric Nutrition (PGPN), en asociación con la Escuela de Medicina de Boston University. Es la que marca su consulta: cada control mira también el plato.</p>
           </li>
           <li>
-            <time>Además</time>
+            <time>Certificación · 2024</time>
             <strong>Terapista de alimentación</strong>
-            <p>Formación específica para acompañar a los niños a los que comer les cuesta.</p>
+            <p>SOS Approach to Feeding: formación de cinco días y 37,5 horas para acompañar a los niños a los que comer les cuesta.</p>
           </li>
           <li>
             <time>Hoy</time>
@@ -3870,10 +3870,6 @@ return array(
           </li>
         </ol>
 <!-- /wp:html -->
-
-<!-- wp:paragraph {"className": "en-17d040"} -->
-<p class="en-17d040">Registro médico y afiliaciones profesionales: pendientes de recibir.</p>
-<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
 </div>
