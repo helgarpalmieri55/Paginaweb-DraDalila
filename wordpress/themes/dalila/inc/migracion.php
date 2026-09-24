@@ -1446,7 +1446,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'contacto',
-		'antes'     => array( '842d31e5cead29914a729deb1675f9ce', 'eb14d83b273d645748cf26c7dcb01f87' ),
+		'antes'     => array( '842d31e5cead29914a729deb1675f9ce', 'da582352112bb9bbb04157d5ac168bfc', 'eb14d83b273d645748cf26c7dcb01f87' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1484,7 +1484,7 @@ return array(
 <!-- /wp:html -->
 
 <!-- wp:dalila/imagen {"className": "en-45fe4c"} -->
-<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/posts/doctora-corazon.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos" width="820" height="874" fetchpriority="high" class="en-45fe4c"/>
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-corazon-estudio.webp" alt="La Dra. Dalila Peñaranda formando un corazón con las manos" width="886" height="916" fetchpriority="high" class="en-45fe4c"/>
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
@@ -2111,7 +2111,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '505d28469a2e9f05bda37c13838ab710', '8e5554a5104ddef178e462ac6ecea6b4' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '505d28469a2e9f05bda37c13838ab710', '8e5554a5104ddef178e462ac6ecea6b4' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -2310,7 +2310,7 @@ return array(
 <!-- wp:group {"className": "marco", "layout": {"type": "default"}} -->
 <div class="wp-block-group marco">
 <!-- wp:dalila/imagen -->
-<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-retrato.jpg" alt="Dra. Dalila Peñaranda" width="820" height="700" loading="lazy"/>
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-retrato-estudio.webp" alt="Dra. Dalila Peñaranda" width="819" height="916" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
@@ -3712,7 +3712,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'sobre-mi',
-		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '90e6c9a2ed332a05de4669b330f21ad8', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'fefea6507a070729c37f063be9636f6c' ),
+		'antes'     => array( '4737f35c7c0941963cb30d3432d3ccea', '90e6c9a2ed332a05de4669b330f21ad8', '937efee65457efbce7d176197f67b833', '960093559229226c36899603a7f163ff', 'cad60d34b975fe2d07ecd890fc06db0d', 'fefea6507a070729c37f063be9636f6c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -3762,7 +3762,7 @@ return array(
 <!-- /wp:html -->
 
 <!-- wp:dalila/imagen -->
-<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-retrato.jpg" alt="Retrato de la Dra. Dalila Peñaranda en su consultorio" width="820" height="700" fetchpriority="high"/>
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-retrato-estudio.webp" alt="Retrato de la Dra. Dalila Peñaranda en su consultorio" width="819" height="916" fetchpriority="high"/>
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
