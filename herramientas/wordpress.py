@@ -13,8 +13,7 @@ bloque HTML, que es la única forma de que se vea idéntico.
 Deja wordpress/importacion/contenido.xml, listo para
 Herramientas → Importar → WordPress en el escritorio.
 
-Las imágenes se traen desde el sitio actual, así que hay que importar ANTES de
-bajar GitHub Pages.
+Las imágenes se traen de docs/ en la rama main del repositorio, que es público.
 """
 
 import html
@@ -34,13 +33,14 @@ HOJA_BLOQUES = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'assets', 'cs
 # importó y las que después se pasaron con la actualización del tema. Una
 # página que sigue igual a cualquiera de ellas no se editó a mano y se puede
 # actualizar. Cada vez que se publique una actualización, su commit se suma.
-IMPORTADOS = ['ba1636b', '028508a', 'ef67d86', 'c2d9a5f', 'f1beb6d', 'ad6695c', 'e4629e0', 'cbab215', 'e2f3cf5']
+IMPORTADOS = ['ba1636b', '028508a', 'ef67d86', 'c2d9a5f', 'f1beb6d', 'ad6695c', 'e4629e0', 'cbab215', 'e2f3cf5', '6fdb728', 'b1413bf', 'cde1972', '24ae3e3', 'f8b718a', 'c09f7e5', 'da965f0', 'ef300a5', 'aa374a6']
 MIGRACION = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'migracion.php')
 # Los resúmenes de las tarjetas del blog, para un sitio que ya se importó.
 TARJETAS = os.path.join(RAIZ, 'wordpress', 'themes', 'dalila', 'inc', 'tarjetas.php')
 
-# De dónde se descargan las imágenes durante la importación.
-ORIGEN = 'https://helgarpalmieri55.github.io/Paginaweb-DraDalila/'
+# De dónde se descargan las imágenes durante la importación: los archivos de
+# docs/ en la rama main del repositorio (GitHub Pages ya no está publicado).
+ORIGEN = 'https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/'
 # El sitio nuevo.
 DESTINO = 'https://dalilapenaranda.com/'
 
@@ -127,16 +127,20 @@ def construir_mapa():
 
 
 def reescribir(fragmento, mapa):
-    """Direcciones y rutas de imagen, del sitio viejo al nuevo."""
-    for archivo, destino in mapa.items():
-        fragmento = fragmento.replace('href="%s"' % archivo, 'href="%s"' % destino)
-        fragmento = fragmento.replace('href="%s#' % archivo, 'href="%s#' % destino)
-    # Las descargas viajan dentro del tema, porque el sitio viejo se va a bajar.
-    fragmento = fragmento.replace('href="assets/descargas/', 'href="%s' % DESCARGAS)
+    """Direcciones y rutas de imagen, del sitio viejo al nuevo. Van tanto en el
+    HTML (href="…") como en los atributos de los bloques ("href": "…")."""
+    for prefijo in ('href="', '"href": "'):
+        for archivo, destino in mapa.items():
+            fragmento = fragmento.replace(prefijo + archivo + '"', prefijo + destino + '"')
+            fragmento = fragmento.replace(prefijo + archivo + '#', prefijo + destino + '#')
+        # Las descargas viajan dentro del tema, porque el sitio viejo se va a bajar.
+        fragmento = fragmento.replace(prefijo + 'assets/descargas/', prefijo + DESCARGAS)
     # Las imágenes apuntan al sitio actual: el importador las descarga y luego
     # reemplaza solo estas direcciones por las de la biblioteca de medios.
     fragmento = re.sub(r'(src|href)="(assets/[^"]+)"',
                        lambda m: '%s="%s%s"' % (m.group(1), ORIGEN, m.group(2)), fragmento)
+    fragmento = re.sub(r'"(src|href)": "(assets/[^"]+)"',
+                       lambda m: '"%s": "%s%s"' % (m.group(1), ORIGEN, m.group(2)), fragmento)
     return fragmento
 
 
@@ -208,7 +212,7 @@ def a_bloques(fragmento):
         dentro = interior(el)
 
         # Párrafo corriente.
-        if nombre == 'p' and not cls and not tiene_estilo:
+        if nombre == 'p' and not cls and not tiene_estilo and '<svg' not in el:
             salida.append('<!-- wp:paragraph -->\n<p>%s</p>\n<!-- /wp:paragraph -->' % dentro)
 
         # Títulos.
@@ -255,10 +259,10 @@ def a_bloques(fragmento):
         elif nombre == 'hr':
             salida.append('<!-- wp:separator -->\n<hr class="wp-block-separator has-alpha-channel-opacity"/>\n<!-- /wp:separator -->')
 
-        # Todo lo demás se guarda tal cual: el aviso médico, el botón de
-        # compartir, las tarjetas. Son piezas con SVG y estilos propios.
+        # Todo lo demás (el aviso médico, el botón de compartir, las
+        # tarjetas) pasa por el conversor, que lo deja editable.
         else:
-            salida.append(bloque_html(el))
+            salida.append(CONVERSOR.bloque(el))
 
     return '\n\n'.join(salida)
 

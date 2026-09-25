@@ -145,6 +145,8 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .rejilla--2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
 .rejilla--3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
 .rejilla--4{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+/* Un solo testimonio va angosto; con más, se reparten en columnas. */
+.rejilla--testimonios:has(> :only-child){max-width:760px}
 .carta{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--sombra-carta);transition:transform .25s ease,box-shadow .25s ease}
 .carta:hover{transform:translateY(-4px);box-shadow:0 12px 0 -3px rgba(47,66,96,.06),0 22px 34px rgba(47,66,96,.13)}
 .carta svg{width:30px;height:30px}

@@ -78,15 +78,9 @@ archivo de diseño que conviene reemplazar por material suyo.
       para la página de cursos.
 - [ ] **Confirmar que podemos usar** las dos fotos suyas que venían del archivo de
       diseño: el retrato y la foto abrazando a Pepe.
-- [ ] ⚠️ **La foto de la portada muestra una marca de fórmula infantil.** En la foto
-      con Pepe se ve, en brazos de la rana, un sobre de Similac 3 con el logo de
-      Abbott legible; también se alcanza a ver el botón de reproducir de Instagram,
-      porque la imagen salió de un reel. En el sitio de una pediatra que promueve
-      la lactancia, una marca de sucedáneo a la vista se lee como respaldo, y en
-      Colombia la publicidad de sucedáneos de la leche materna está regulada. Para
-      la tarjeta que se comparte por WhatsApp ya usamos el retrato de estudio, que
-      no la tiene; **la portada sigue mostrándola**. Lo ideal es una foto nueva; si
-      no, se puede retocar o recortar, pero conviene decidirlo con ella.
+- [x] **La foto de la portada ya no muestra la marca de fórmula.** Desde el 24 de
+      septiembre la portada usa una foto nueva con Pepe en el sofá, con un sobre
+      azul sin marca (`doctora-pepe-sofa.webp`).
 
 **Dónde están hoy las fotos de archivo, para saber qué reemplaza qué:**
 
@@ -110,10 +104,12 @@ archivo de diseño que conviene reemplazar por material suyo.
 
 ## 5 · Testimonios
 
-- [ ] **Los tres que están en el inicio son inventados** (María F., Carlos R.,
-      Andrea P.) y están marcados como ilustrativos. Hacen falta **testimonios
-      reales con autorización escrita** para publicarlos, aunque sea solo con
-      nombre de pila e inicial.
+- [x] **Los tres inventados salieron** (María F., Carlos R., Andrea P.) y con
+      ellos la nota de «ilustrativos». Desde el 24 de septiembre la portada muestra
+      solo testimonios reales: el de la **Familia Palmieri Nova** y el de la
+      **Familia Betancourt De la Hoz**.
+- [ ] **Más testimonios reales**, con autorización de quien lo escribe, para
+      completar la sección (uno por tarjeta, todos con cinco estrellas).
 
 ## 6 · Redes sociales
 
@@ -171,10 +167,9 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 - [ ] **Pedir reseñas a pacientes reales** en la ficha de Google. Diez reseñas
       auténticas pesan más que cualquier ajuste técnico. Sin incentivos: Google
       los penaliza.
-- [ ] ⚠️ **Testimonios reales para la home.** Los tres que hay son de relleno, con
-      nombres inventados y cinco estrellas. Mientras sean falsos no podemos
-      marcarlos como reseñas, y si alguien lo nota cuesta credibilidad. O los
-      reemplazamos por reales o los quitamos.
+- [x] **Testimonios reales para la home.** Los de relleno salieron; queda el de la
+      Familia Palmieri Nova, que es real. No se marcan como reseñas en los datos
+      estructurados: Google no las muestra para el propio negocio.
 - [ ] **Corregir sus perfiles de Doctoralia y medicosdoc.** El de Doctoralia
       muestra una dirección vieja (Calle 85, Torre Mar Center). Necesitamos sus
       claves o que ella los actualice.

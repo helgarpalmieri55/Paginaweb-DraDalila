@@ -190,7 +190,7 @@ def nodo_doctora():
                         'alimentación (SOS Approach to Feeding). Atiende en Barranquilla y por '
                         'videollamada a familias dentro y fuera de Colombia.'),
         'url': BASE + 'sobre-mi.html',
-        'image': BASE + 'assets/img/doctora-retrato.jpg',
+        'image': BASE + 'assets/img/doctora-retrato-estudio.webp',
         'worksFor': {'@id': ID_PRACTICA},
         'alumniOf': [
             {'@type': 'CollegeOrUniversity', 'name': 'Fundación Universitaria San Martín'},

@@ -3,9 +3,9 @@
 Todo lo que hay que hacer, en orden. Dominio en Cloudflare, hosting en
 Hostinger, tema y contenido desde este repositorio.
 
-> **Importante, por el orden:** la importación descarga las imágenes desde
-> `helgarpalmieri55.github.io`. Hay que **importar antes de apagar GitHub
-> Pages**, no después.
+> La importación descarga las imágenes de `docs/` en la rama `main` del
+> repositorio (`raw.githubusercontent.com`), así que el repositorio tiene que
+> seguir siendo público mientras se importa.
 
 ---
 

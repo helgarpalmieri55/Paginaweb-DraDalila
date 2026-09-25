@@ -10,36 +10,48 @@
 .en-048228 { padding-top:8px !important; }
 .en-062d4a { margin-top:24px !important; }
 .en-07f3b0 { display:grid !important; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) !important; gap:34px !important; margin-top:44px !important; align-items:start !important; }
+.en-0a4e55 { font-size:14.5px !important; color:var(--suave) !important; }
 .en-1386d5 { margin:0 !important; }
 .en-205ffd { padding-top:34px !important; }
+.en-2cbabd { font-size:28px !important; }
 .en-2f1238 { font-size:28px !important; margin-bottom:8px !important; }
 .en-35a11d { padding:30px !important; }
 .en-37d30b { margin-bottom:24px !important; }
 .en-3ae1f6 { margin-top:20px !important; }
 .en-3de1e8 { display:grid !important; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)) !important; gap:44px !important; align-items:start !important; }
+.en-3f5062 { height:50px !important; }
 .en-42b6d0 { padding-top:20px !important; padding-bottom:40px !important; }
+.en-45fe4c { object-position:50% 35% !important; }
+.en-4bfa45 { object-position:50% 25% !important; }
 .en-50536d { color:var(--suave) !important; font-size:15px !important; margin-bottom:24px !important; }
 .en-511cd1 { padding-top:0 !important; }
 .en-5371db { margin-top:10px !important; }
 .en-53896a { margin-top:0 !important; }
+.en-57af08 { height:40px !important; }
 .en-597488 { font-size:26px !important; }
 .en-5ea8e1 { max-width:820px !important; margin:44px auto 0 !important; }
 .en-77726b { padding-bottom:52px !important; }
+.en-7e2142 { object-position:50% 40% !important; }
 .en-810cae { padding-top:12px !important; padding-bottom:34px !important; }
 .en-8b34f8 { padding-top:0 !important; padding-bottom:56px !important; }
 .en-8c2756 { margin-bottom:30px !important; }
 .en-8c936b { padding-top:24px !important; }
 .en-97a672 { background:var(--verde-palo) !important; }
 .en-a58c68 { margin-top:30px !important; max-width:820px !important; }
+.en-a70435 { object-position:50% 30% !important; }
 .en-aa3a2f { margin-top:26px !important; }
 .en-ab17dd { padding-top:0 !important; padding-bottom:40px !important; }
 .en-b2d526 { padding-top:16px !important; }
 .en-b89a77 { margin-top:22px !important; }
 .en-c25011 { grid-template-columns:minmax(0,1fr) !important; }
+.en-c5c808 { height:34px !important; }
 .en-c6ab03 { padding-top:0 !important; padding-bottom:24px !important; }
 .en-d5937b { display:grid !important; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) !important; gap:52px !important; align-items:start !important; }
 .en-dad5e8 { font-size:26px !important; margin-bottom:14px !important; }
+.en-dd8bd1 { font-size:16px !important; color:var(--suave) !important; }
 .en-e04ff8 { background:var(--celeste) !important; }
+.en-e4194a { display:flex !important; gap:12px !important; flex-wrap:wrap !important; align-items:center !important; margin-top:32px !important; }
+.en-e71cc7 { margin-top:26px !important; margin-bottom:0 !important; }
 .en-e8c8ef { padding-top:20px !important; }
 .en-ed67a6 { font-size:15.5px !important; }
 .en-ef4825 { margin-bottom:26px !important; }
