@@ -30,11 +30,11 @@
 <!-- /wp:html -->
 
 <!-- wp:html -->
-<details><summary>¿Atiendes con medicina prepagada o póliza?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar.</p></div></details>
+<details><summary>¿Atiendes con medicina prepagada o póliza?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar. También atiendo de forma particular.</p></div></details>
 <!-- /wp:html -->
 
 <!-- wp:html -->
-<details><summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas.</p></div></details>
+<details><summary>¿Cuánto dura la consulta?<span class="mas" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="faq__cuerpo"><p>Unos 40 minutos el control pediátrico, el de crecimiento y desarrollo y la consulta virtual; la de nutrición infantil y la de alimentación complementaria pueden llegar a 60. Siempre con tiempo para revisar antecedentes, examinar y resolver dudas.</p></div></details>
 <!-- /wp:html -->
 
 <!-- wp:html -->

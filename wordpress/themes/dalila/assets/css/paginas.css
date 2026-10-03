@@ -74,6 +74,7 @@
 .detalle__meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--suave)}
 .detalle__meta span{display:flex;align-items:center;gap:8px}
 .detalle__meta svg{width:16px;height:16px;color:var(--azul)}
+.detalle__meta .detalle__precio{font-weight:800;color:var(--tinta)}
 .detalle__icono{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;margin-bottom:16px}
 .detalle__icono svg{width:26px;height:26px}
 

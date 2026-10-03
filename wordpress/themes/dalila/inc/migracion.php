@@ -1124,7 +1124,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '8b5436cbb862a638d7234db5cc0f90d1', 'ee5c8571bd05fd26e995450c689ec715' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ee5c8571bd05fd26e995450c689ec715' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1189,8 +1189,8 @@ return array(
 
 <!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla rejilla--2">
-<!-- wp:group {"className": "cita reveal", "layout": {"type": "default"}} -->
-<div class="wp-block-group cita reveal">
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"data-solo-colombia": ""}, "className": "cita reveal"} -->
+<div data-solo-colombia="" class="cita reveal">
 <!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Presencial"} -->
 <strong>Presencial</strong>
 <!-- /wp:dalila/texto -->
@@ -1199,8 +1199,8 @@ return array(
 <p>En el consultorio 129 del High Park Medical Center, Barranquilla. Valoración completa con examen físico y medidas.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$180.000", "atributos": {"data-precio": "presencial"}, "className": "cita__precio"} -->
-<div data-precio="presencial" class="cita__precio">$180.000</div>
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$300.000", "atributos": {"data-precio": "presencial"}, "className": "cita__precio"} -->
+<div data-precio="presencial" class="cita__precio">$300.000</div>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por consulta", "className": "cita__nota"} -->
@@ -1209,8 +1209,8 @@ return array(
 
 <!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
 <ul class="lista lista--verde en-37d30b">
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "45 a 60 minutos de consulta", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>45 a 60 minutos de consulta</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "40 a 60 minutos, según el servicio", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>40 a 60 minutos, según el servicio</li>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Peso, talla y curvas de crecimiento", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
@@ -1231,7 +1231,7 @@ return array(
 <a data-wa="" href="/contacto/" class="btn btn--rosa btn--chico">Agendar presencial</a>
 <!-- /wp:dalila/texto -->
 </div>
-<!-- /wp:group -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "cita cita--virtual reveal retraso-1", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita cita--virtual reveal retraso-1">
@@ -1243,18 +1243,18 @@ return array(
 <p>Videollamada desde cualquier país. Ideal para nutrición, seguimiento, crianza y segundas opiniones.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "45 USD", "atributos": {"data-precio": "virtual"}, "className": "cita__precio"} -->
-<div data-precio="virtual" class="cita__precio">45 USD</div>
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$200.000", "atributos": {"data-precio": "virtual"}, "className": "cita__precio"} -->
+<div data-precio="virtual" class="cita__precio">$200.000</div>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "o su equivalente en pesos", "className": "cita__nota"} -->
-<span class="cita__nota">o su equivalente en pesos</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por videollamada", "atributos": {"data-fuera-de-colombia": "por videollamada"}, "className": "cita__nota"} -->
+<span data-fuera-de-colombia="por videollamada" class="cita__nota">COP por videollamada</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul en-37d30b"} -->
 <ul class="lista lista--azul en-37d30b">
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "45 minutos por videollamada", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>45 minutos por videollamada</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "40 minutos por videollamada", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>40 minutos por videollamada</li>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Envías exámenes y medidas antes", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
@@ -1544,7 +1544,7 @@ return array(
 <!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group faq__cuerpo">
 <!-- wp:paragraph -->
-<p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas sin apuro.</p>
+<p>Unos 40 minutos el control pediátrico, el de crecimiento y desarrollo y la consulta virtual; la de nutrición infantil y la de alimentación complementaria pueden llegar a 60. Siempre con tiempo para revisar antecedentes, examinar y resolver dudas.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -2393,7 +2393,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'cursos',
-		'antes'     => array( '15b2d5ce35736b2b2b37f9bfbe00ad34', '468f633d42069144f11f2d3dedd00458', 'ae42d729285ac1a2ac31a7532d52fc29' ),
+		'antes'     => array( '15b2d5ce35736b2b2b37f9bfbe00ad34', '468f633d42069144f11f2d3dedd00458', 'ae42d729285ac1a2ac31a7532d52fc29', 'bae6f17d97311958ce27afd129328992' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -2506,8 +2506,8 @@ return array(
 
 <!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie en-f613c4">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$149.000", "className": "curso__precio en-2cbabd"} -->
-<span class="curso__precio en-2cbabd">$149.000</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$200.000", "className": "curso__precio en-2cbabd"} -->
+<span class="curso__precio en-2cbabd">$200.000</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Comprar", "atributos": {"data-curso": "complementaria", "data-nombre": "el curso de alimentación complementaria", "href": "#"}, "className": "btn btn--rosa btn--chico"} -->
@@ -2578,8 +2578,8 @@ return array(
 
 <!-- wp:group {"className": "curso__pie en-f613c4", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie en-f613c4">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$119.000", "className": "curso__precio en-2cbabd"} -->
-<span class="curso__precio en-2cbabd">$119.000</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$150.000", "className": "curso__precio en-2cbabd"} -->
+<span class="curso__precio en-2cbabd">$150.000</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Reservar cupo", "atributos": {"data-curso": "lonchera", "data-nombre": "el Taller Lonchera Nutritiva", "href": "#"}, "className": "btn btn--rosa btn--chico"} -->
@@ -2901,7 +2901,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '2d7a4e44843db22461515e8b1d47a147', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -2955,7 +2955,7 @@ return array(
 <!-- /wp:html -->
 
 <!-- wp:dalila/imagen -->
-<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-pepe-sofa.webp" alt="Dra. Dalila Peñaranda con Pepe, la rana de peluche del consultorio" width="1100" height="1088" fetchpriority="high"/>
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/doctora-pepe-cuento.webp" alt="Dra. Dalila Peñaranda con Pepe, la rana de peluche del consultorio, que lee un cuento" width="1100" height="1088" fetchpriority="high"/>
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
@@ -3057,11 +3057,11 @@ return array(
 <!-- /wp:html -->
 
 <!-- wp:heading {"level": 3} -->
-<h3 class="wp-block-heading">Asesoría a padres</h3>
+<h3 class="wp-block-heading">Consulta prenatal</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Sueño, rutinas y dudas del día a día, con acompañamiento cercano.</p>
+<p>Antes del parto: lactancia, cuidados del recién nacido y un plan para los primeros días.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -3410,8 +3410,8 @@ return array(
 
 <!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$149.000", "className": "curso__precio"} -->
-<span class="curso__precio">$149.000</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$200.000", "className": "curso__precio"} -->
+<span class="curso__precio">$200.000</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver el curso →", "atributos": {"href": "/cursos/"}} -->
@@ -3442,8 +3442,8 @@ return array(
 
 <!-- wp:group {"className": "curso__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group curso__pie">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$119.000", "className": "curso__precio"} -->
-<span class="curso__precio">$119.000</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$150.000", "className": "curso__precio"} -->
+<span class="curso__precio">$150.000</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver el curso →", "atributos": {"href": "/cursos/"}} -->
@@ -3511,7 +3511,7 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"className": "reveal"} -->
-<p class="reveal">Atiendo con estas medicinas prepagadas y pólizas de salud.</p>
+<p class="reveal">Atiendo con estas medicinas prepagadas y pólizas de salud, y también de forma particular.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className": "logos reveal retraso-1", "layout": {"type": "default"}} -->
@@ -3555,6 +3555,14 @@ return array(
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
+
+<!-- wp:group {"className": "logos__texto", "layout": {"type": "default"}} -->
+<div class="wp-block-group logos__texto">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Particulares"} -->
+<strong>Particulares</strong>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 
@@ -3580,8 +3588,8 @@ return array(
 
 <!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla rejilla--2">
-<!-- wp:group {"className": "cita reveal", "layout": {"type": "default"}} -->
-<div class="wp-block-group cita reveal">
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"data-solo-colombia": ""}, "className": "cita reveal"} -->
+<div data-solo-colombia="" class="cita reveal">
 <!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Presencial"} -->
 <strong>Presencial</strong>
 <!-- /wp:dalila/texto -->
@@ -3590,8 +3598,8 @@ return array(
 <p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$180.000", "atributos": {"data-precio": "presencial"}, "className": "cita__precio"} -->
-<div data-precio="presencial" class="cita__precio">$180.000</div>
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$300.000", "atributos": {"data-precio": "presencial"}, "className": "cita__precio"} -->
+<div data-precio="presencial" class="cita__precio">$300.000</div>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por consulta", "className": "cita__nota"} -->
@@ -3602,7 +3610,7 @@ return array(
 <a href="/citas/" class="btn btn--rosa btn--chico">Ver detalle y agendar</a>
 <!-- /wp:dalila/texto -->
 </div>
-<!-- /wp:group -->
+<!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "cita cita--virtual reveal retraso-1", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita cita--virtual reveal retraso-1">
@@ -3614,12 +3622,12 @@ return array(
 <p>Videollamada desde cualquier país; plan e indicaciones por correo.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "45 USD", "atributos": {"data-precio": "virtual"}, "className": "cita__precio"} -->
-<div data-precio="virtual" class="cita__precio">45 USD</div>
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$200.000", "atributos": {"data-precio": "virtual"}, "className": "cita__precio"} -->
+<div data-precio="virtual" class="cita__precio">$200.000</div>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "por videollamada", "className": "cita__nota"} -->
-<span class="cita__nota">por videollamada</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por videollamada", "atributos": {"data-fuera-de-colombia": "por videollamada"}, "className": "cita__nota"} -->
+<span data-fuera-de-colombia="por videollamada" class="cita__nota">COP por videollamada</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Ver detalle y agendar", "atributos": {"href": "/citas/"}, "className": "btn btn--azul btn--chico"} -->
@@ -3873,7 +3881,7 @@ return array(
 <!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group faq__cuerpo">
 <!-- wp:paragraph -->
-<p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar.</p>
+<p>Sí: Sura, Colmédica, Seguros Bolívar, Coomeva y Allianz. Si tu plan no aparece en esa lista, escríbeme y lo revisamos antes de agendar. También atiendo de forma particular.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -3889,7 +3897,7 @@ return array(
 <!-- wp:group {"className": "faq__cuerpo", "layout": {"type": "default"}} -->
 <div class="wp-block-group faq__cuerpo">
 <!-- wp:paragraph -->
-<p>Entre 45 y 60 minutos, con tiempo para revisar antecedentes, examinar y resolver dudas.</p>
+<p>Unos 40 minutos el control pediátrico, el de crecimiento y desarrollo y la consulta virtual; la de nutrición infantil y la de alimentación complementaria pueden llegar a 60. Siempre con tiempo para revisar antecedentes, examinar y resolver dudas.</p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -4175,7 +4183,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4206,8 +4214,8 @@ return array(
 <p class="cabecera__lead reveal retraso-2">Seis formas de acompañarlos, todas con el mismo método: historia completa, examen sin prisa, plan por escrito y seguimiento. Elige por dónde empezar.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#asesoria-padres\\">Asesoría a padres</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
-<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#asesoria-padres">Asesoría a padres</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a></nav>
+<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#consulta-prenatal\\">Consulta prenatal</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
+<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#consulta-prenatal">Consulta prenatal</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a></nav>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -4268,12 +4276,16 @@ return array(
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45–60 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
-<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45–60 minutos</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "40 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>40 minutos</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Desde recién nacidos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 20a8 8 0 0 1 16 0\\"/><circle cx=\\"12\\" cy=\\"8\\" r=\\"4\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/></svg>Desde recién nacidos</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$300.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$300.000 COP</span>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -4335,6 +4347,10 @@ return array(
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Con plan escrito", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 19V9M10 19V5M16 19v-7M2 19h20\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M2 19h20"/></svg>Con plan escrito</span>
 <!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$350.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$350.000 COP</span>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4388,12 +4404,16 @@ return array(
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45–60 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
-<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45–60 minutos</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "40 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>40 minutos</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Control periódico", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/></svg>Control periódico</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$300.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$300.000 COP</span>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -4455,6 +4475,10 @@ return array(
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "También hay <a href=\\"/cursos/\\" style=\\"color:inherit;text-decoration:underline\\">curso en video</a>", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M5 4h14v16H5z\\"/><path d=\\"M9 8h6M9 12h6M9 16h3\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>También hay <a href="/cursos/" style="color:inherit;text-decoration:underline">curso en video</a></span>
 <!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$350.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$350.000 COP</span>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4462,8 +4486,8 @@ return array(
 </article>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName": "article", "anchor": "asesoria-padres", "className": "detalle", "layout": {"type": "default"}} -->
-<article class="wp-block-group detalle" id="asesoria-padres">
+<!-- wp:group {"tagName": "article", "anchor": "consulta-prenatal", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="consulta-prenatal">
 <!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura reveal reveal--izq">
 <!-- wp:dalila/imagen {"className": "en-7e2142"} -->
@@ -4479,29 +4503,29 @@ return array(
 <!-- /wp:html -->
 
 <!-- wp:heading {"level": 2} -->
-<h2 class="wp-block-heading">Asesoría a padres</h2>
+<h2 class="wp-block-heading">Consulta prenatal</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Para las dudas que no caben en un control: el sueño que se rompió, la rabieta de las siete de la noche, la vuelta al jardín, la llegada de un hermanito.</p>
+<p>Para conocernos antes de que nazca tu bebé. Resolvemos las dudas de las últimas semanas del embarazo y salen con un plan para los primeros días en casa.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul"} -->
 <ul class="lista lista--azul">
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Rutinas de sueño respetuosas", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Rutinas de sueño respetuosas</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Lactancia: cómo prepararse y qué esperar", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Lactancia: cómo prepararse y qué esperar</li>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Acompañamiento en lactancia y destete", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Acompañamiento en lactancia y destete</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Cuidados del recién nacido en casa", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cuidados del recién nacido en casa</li>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Pantallas, juego y límites por edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Pantallas, juego y límites por edad</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Tamizajes y vacunas de los primeros días", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Tamizajes y vacunas de los primeros días</li>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Preparar la casa para cada etapa", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Preparar la casa para cada etapa</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Señales de alarma y cuándo consultar", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Señales de alarma y cuándo consultar</li>
 <!-- /wp:dalila/texto -->
 </ul>
 <!-- /wp:dalila/caja -->
@@ -4514,6 +4538,10 @@ return array(
 
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Presencial o virtual", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h11a4 4 0 0 1 0 8H8l-4 4V6z"/></svg>Presencial o virtual</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$250.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$250.000 COP</span>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -4568,12 +4596,16 @@ return array(
 
 <!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__meta">
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "45 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
-<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45 minutos</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "40 minutos", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M12 7v5l3 2\\"/></svg>"} -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>40 minutos</span>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Sin importar el huso horario", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><circle cx=\\"12\\" cy=\\"12\\" r=\\"9\\"/><path d=\\"M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z\\"/></svg>"} -->
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>Sin importar el huso horario</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$200.000 COP", "atributos": {"data-fuera-de-colombia": "70 USD"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span data-fuera-de-colombia="70 USD" class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$200.000 COP</span>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->

@@ -43,15 +43,17 @@ Queda:
       familia llega tarde?
 - [ ] **Medios de pago**, presencial y virtual (hoy dice «transferencia o pasarela
       de pago», que es una suposición).
-- [ ] **Tarifas de consulta.** El sitio muestra **$180.000** presencial y **45 USD**
-      virtual. ⚠️ Esos números venían del archivo de diseño que nos pasaron, no de
-      ella: hay que confirmarlos antes de publicar.
+- [x] **Tarifas de consulta** (3 de octubre de 2026): control pediátrico y
+      crecimiento y desarrollo $300.000 (40 min); nutrición infantil y
+      alimentación complementaria $350.000; consulta prenatal $250.000;
+      consulta virtual $200.000 (40 min) o 70 USD desde fuera de Colombia.
+      «Asesoría a padres» pasó a ser **consulta prenatal**: revisar con ella el
+      texto y los cuatro temas que se le pusieron.
 
 ## 3 · Cursos y talleres
 
-- [ ] **Precios.** Hoy aparecen **$149.000** (curso de alimentación complementaria)
-      y **$119.000** (Taller Lonchera Nutritiva). ⚠️ Vienen del mismo archivo de
-      diseño: confirmar.
+- [x] **Precios:** curso de alimentación complementaria $200.000 y taller de
+      lonchera $150.000 (3 de octubre de 2026).
 - [ ] **Precio y cupos** del taller «El ABC de los hábitos alimentarios» y de la
       **escuela para padres / Parents Lab**.
 - [ ] **Próximas fechas** de los talleres y de la escuela para padres.

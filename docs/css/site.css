@@ -226,6 +226,18 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .logos div:hover img{transform:scale(1.06)}
 .convenios__nota{margin-top:16px;color:var(--tenue);font-size:13.5px}
 
+/* Particulares: un cuadro de texto entre los logos de los convenios. */
+.logos .logos__texto strong{font-family:"Baloo 2",cursive;font-weight:800;font-size:22px;color:var(--tinta);letter-spacing:.2px}
+
+/* ---------- tarifas según el país ----------
+   site.js marca <html> con .fuera-de-colombia: ahí solo queda la consulta
+   virtual, en dólares. */
+.fuera-de-colombia [data-solo-colombia]{display:none !important}
+.fuera-de-colombia .rejilla--2:has(> .cita--virtual){max-width:560px}
+.cita-pais{margin-top:18px;font-size:13.5px;color:var(--tenue)}
+.cita-pais button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.cita-pais button:hover{color:var(--tinta)}
+
 /* ---------- citas ---------- */
 .cita{--filo:var(--rosa);background:linear-gradient(var(--filo) 0 6px,#fff 6px);border-radius:20px;padding:30px;box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10)}
 .cita--virtual{--filo:var(--azul)}
