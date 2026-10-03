@@ -32,7 +32,6 @@ const CONFIG = Object.assign({
   document.querySelectorAll('[data-tel]').forEach(el => { el.textContent = CONFIG.whatsapp; });
   document.querySelectorAll('[data-correo]').forEach(el => { el.textContent = CONFIG.correo; if (el.tagName === 'A') el.href = 'mailto:' + CONFIG.correo; });
   document.querySelectorAll('[data-direccion]').forEach(el => { el.innerHTML = CONFIG.direccion + '<br>' + CONFIG.direccion2; });
-  document.querySelectorAll('[data-precio="presencial"]').forEach(el => { el.textContent = CONFIG.precioPresencial; });
   document.querySelectorAll('[data-red]').forEach(a => { a.href = CONFIG.redes[a.dataset.red] || '#'; });
   /* Botón de compra: va a Hotmart si ya hay enlace; si no, abre WhatsApp
      con el curso escrito, para acordar el pago directamente con la doctora. */
@@ -59,8 +58,14 @@ const CONFIG = Object.assign({
   const textoOriginal = new WeakMap();
   function aplicarPais() {
     document.documentElement.classList.toggle('fuera-de-colombia', !enColombia);
-    document.querySelectorAll('[data-precio="virtual"]').forEach(el => {
-      el.textContent = enColombia ? CONFIG.precioVirtual : CONFIG.precioVirtualExterior;
+    // Las tarifas salen de Ajustes → Datos del consultorio. data-moneda agrega
+    // «COP» al precio en pesos; si el elemento lleva un ícono, se conserva.
+    document.querySelectorAll('[data-precio]').forEach(el => {
+      const icono = el.querySelector('svg');
+      el.textContent = el.dataset.precio === 'presencial'
+        ? CONFIG.precioPresencial + (el.dataset.moneda || '')
+        : enColombia ? CONFIG.precioVirtual + (el.dataset.moneda || '') : CONFIG.precioVirtualExterior;
+      if (icono) el.prepend(icono);
     });
     document.querySelectorAll('[data-fuera-de-colombia]').forEach(el => {
       if (!textoOriginal.has(el)) textoOriginal.set(el, el.innerHTML);
