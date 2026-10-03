@@ -4183,7 +4183,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4604,8 +4604,8 @@ return array(
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>Sin importar el huso horario</span>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$200.000 COP", "atributos": {"data-fuera-de-colombia": "70 USD"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
-<span data-fuera-de-colombia="70 USD" class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$200.000 COP</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$200.000 COP", "atributos": {"data-precio": "virtual", "data-moneda": " COP"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span data-precio="virtual" data-moneda=" COP" class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$200.000 COP</span>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
