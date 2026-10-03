@@ -38,7 +38,7 @@
 <!-- /wp:html -->
 
 <!-- wp:html -->
-<div class="carta"><svg viewBox="0 0 24 24" fill="none" stroke="#5E9E98" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg><h3>Asesoría a padres</h3><p>Sueño, rutinas y dudas del día a día, con acompañamiento cercano.</p></div>
+<div class="carta"><svg viewBox="0 0 24 24" fill="none" stroke="#5E9E98" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M17 14a5 5 0 0 1 4 5"/></svg><h3>Consulta prenatal</h3><p>Antes del parto: lactancia, cuidados del recién nacido y un plan para los primeros días.</p></div>
 <!-- /wp:html -->
 
 <!-- wp:html -->

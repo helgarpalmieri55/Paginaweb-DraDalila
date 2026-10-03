@@ -22,11 +22,11 @@
 <!-- wp:group {"className": "rejilla rejilla--3", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla rejilla--3">
 <!-- wp:html -->
-<article class="curso"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/curso-complementaria.jpg' ); ?>" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy"><div class="curso__cuerpo"><strong>Curso de alimentación complementaria</strong><p>De la leche a la cuchara: la silla, las texturas y los alérgenos, paso a paso.</p><div class="curso__pie"><span class="curso__precio">$149.000</span><a href="/cursos/">Ver el curso →</a></div></div></article>
+<article class="curso"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/curso-complementaria.jpg' ); ?>" alt="Bebé comiendo con cuchara en su silla" width="800" height="1199" loading="lazy"><div class="curso__cuerpo"><strong>Curso de alimentación complementaria</strong><p>De la leche a la cuchara: la silla, las texturas y los alérgenos, paso a paso.</p><div class="curso__pie"><span class="curso__precio">$200.000</span><a href="/cursos/">Ver el curso →</a></div></div></article>
 <!-- /wp:html -->
 
 <!-- wp:html -->
-<article class="curso"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/curso-lonchera.jpg' ); ?>" alt="Comida saludable lista en porciones" width="800" height="533" loading="lazy"><div class="curso__cuerpo"><strong>Taller de lonchera saludable</strong><p>Qué poner para que aguante la mañana y vuelva vacía.</p><div class="curso__pie"><span class="curso__precio">$119.000</span><a href="/cursos/">Ver el curso →</a></div></div></article>
+<article class="curso"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/curso-lonchera.jpg' ); ?>" alt="Comida saludable lista en porciones" width="800" height="533" loading="lazy"><div class="curso__cuerpo"><strong>Taller de lonchera saludable</strong><p>Qué poner para que aguante la mañana y vuelva vacía.</p><div class="curso__pie"><span class="curso__precio">$150.000</span><a href="/cursos/">Ver el curso →</a></div></div></article>
 <!-- /wp:html -->
 
 <!-- wp:html -->

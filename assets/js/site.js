@@ -13,8 +13,9 @@ const CONFIG = Object.assign({
   correo: 'nutripedcm@gmail.com',
   direccion: 'Calle 1C # 30-40, High Park Medical Center',
   direccion2: 'Consultorio 129 · Barranquilla, Colombia',
-  precioPresencial: '$180.000',
-  precioVirtual: '45 USD',
+  precioPresencial: '$300.000',
+  precioVirtual: '$200.000',
+  precioVirtualExterior: '70 USD',
   mostrarPrecios: true,
   mostrarPepe: true,
   redes: { instagram: 'https://www.instagram.com/dra.dalilapenaranda/' },
@@ -32,7 +33,6 @@ const CONFIG = Object.assign({
   document.querySelectorAll('[data-correo]').forEach(el => { el.textContent = CONFIG.correo; if (el.tagName === 'A') el.href = 'mailto:' + CONFIG.correo; });
   document.querySelectorAll('[data-direccion]').forEach(el => { el.innerHTML = CONFIG.direccion + '<br>' + CONFIG.direccion2; });
   document.querySelectorAll('[data-precio="presencial"]').forEach(el => { el.textContent = CONFIG.precioPresencial; });
-  document.querySelectorAll('[data-precio="virtual"]').forEach(el => { el.textContent = CONFIG.precioVirtual; });
   document.querySelectorAll('[data-red]').forEach(a => { a.href = CONFIG.redes[a.dataset.red] || '#'; });
   /* Botón de compra: va a Hotmart si ya hay enlace; si no, abre WhatsApp
      con el curso escrito, para acordar el pago directamente con la doctora. */
@@ -46,6 +46,51 @@ const CONFIG = Object.assign({
   });
 
   if (!CONFIG.mostrarPrecios) document.getElementById('citas')?.remove();
+
+  /* -------- tarifas según el país --------
+     Fuera de Colombia solo se ofrece la consulta virtual, en dólares. El país
+     se deduce de la zona horaria del dispositivo (sin pedir permisos ni
+     consultar servicios externos) y la persona lo puede cambiar con el enlace
+     que aparece bajo las tarifas. */
+  let enColombia = true;
+  try { enColombia = Intl.DateTimeFormat().resolvedOptions().timeZone === 'America/Bogota'; } catch (e) {}
+  try { const elegido = localStorage.getItem('dalila-pais'); if (elegido) enColombia = elegido === 'co'; } catch (e) {}
+
+  const textoOriginal = new WeakMap();
+  function aplicarPais() {
+    document.documentElement.classList.toggle('fuera-de-colombia', !enColombia);
+    document.querySelectorAll('[data-precio="virtual"]').forEach(el => {
+      el.textContent = enColombia ? CONFIG.precioVirtual : CONFIG.precioVirtualExterior;
+    });
+    document.querySelectorAll('[data-fuera-de-colombia]').forEach(el => {
+      if (!textoOriginal.has(el)) textoOriginal.set(el, el.innerHTML);
+      const original = textoOriginal.get(el);
+      if (enColombia) { el.innerHTML = original; return; }
+      // Se cambia solo el texto: si el elemento lleva un ícono, se queda.
+      const icono = el.querySelector('svg');
+      el.textContent = el.dataset.fueraDeColombia;
+      if (icono) el.prepend(icono.cloneNode(true));
+    });
+    document.querySelectorAll('.cita-pais button').forEach(b => {
+      b.textContent = enColombia ? '¿Vives fuera de Colombia? Ver la tarifa internacional' : '¿Estás en Colombia? Ver las tarifas en pesos';
+    });
+  }
+  document.querySelectorAll('.cita--virtual').forEach(tarjeta => {
+    const rejilla = tarjeta.parentElement;
+    if (!rejilla || rejilla.nextElementSibling?.classList.contains('cita-pais')) return;
+    const p = document.createElement('p');
+    p.className = 'cita-pais';
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.addEventListener('click', () => {
+      enColombia = !enColombia;
+      try { localStorage.setItem('dalila-pais', enColombia ? 'co' : 'ext'); } catch (e) {}
+      aplicarPais();
+    });
+    p.appendChild(b);
+    rejilla.after(p);
+  });
+  aplicarPais();
   if (!CONFIG.mostrarPepe) document.getElementById('pepe')?.remove();
 
   /* -------- menú móvil -------- */

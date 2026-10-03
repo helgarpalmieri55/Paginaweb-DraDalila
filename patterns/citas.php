@@ -22,11 +22,11 @@
 <!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla rejilla--2">
 <!-- wp:html -->
-<div class="cita"><strong>Presencial</strong><p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p><div class="cita__precio" data-precio="presencial">$180.000</div><span class="cita__nota">COP por consulta</span><a class="btn btn--rosa btn--chico" href="/citas/">Ver detalle y agendar</a></div>
+<div class="cita" data-solo-colombia><strong>Presencial</strong><p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p><div class="cita__precio" data-precio="presencial">$300.000</div><span class="cita__nota">COP por consulta</span><a class="btn btn--rosa btn--chico" href="/citas/">Ver detalle y agendar</a></div>
 <!-- /wp:html -->
 
 <!-- wp:html -->
-<div class="cita cita--virtual"><strong>Virtual</strong><p>Videollamada desde cualquier país; plan e indicaciones por correo.</p><div class="cita__precio" data-precio="virtual">45 USD</div><span class="cita__nota">por videollamada</span><a class="btn btn--azul btn--chico" href="/citas/">Ver detalle y agendar</a></div>
+<div class="cita cita--virtual"><strong>Virtual</strong><p>Videollamada desde cualquier país; plan e indicaciones por correo.</p><div class="cita__precio" data-precio="virtual">$200.000</div><span class="cita__nota" data-fuera-de-colombia="por videollamada">COP por videollamada</span><a class="btn btn--azul btn--chico" href="/citas/">Ver detalle y agendar</a></div>
 <!-- /wp:html -->
 </div>
 <!-- /wp:group -->
