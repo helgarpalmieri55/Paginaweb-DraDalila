@@ -28,7 +28,11 @@ const CONFIG = Object.assign({
   /* -------- datos de contacto en la página -------- */
   const digits = CONFIG.whatsapp.replace(/\D/g, '');
   const waLink = 'https://wa.me/' + digits + '?text=' + encodeURIComponent(CONFIG.mensajeWhatsApp);
-  document.querySelectorAll('[data-wa]').forEach(a => { a.href = waLink; a.target = '_blank'; a.rel = 'noopener'; });
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    // data-mensaje cambia el texto con el que abre WhatsApp (por ejemplo, para pedir un plan).
+    a.href = a.dataset.mensaje ? 'https://wa.me/' + digits + '?text=' + encodeURIComponent(a.dataset.mensaje) : waLink;
+    a.target = '_blank'; a.rel = 'noopener';
+  });
   document.querySelectorAll('[data-tel]').forEach(el => { el.textContent = CONFIG.whatsapp; });
   document.querySelectorAll('[data-correo]').forEach(el => { el.textContent = CONFIG.correo; if (el.tagName === 'A') el.href = 'mailto:' + CONFIG.correo; });
   document.querySelectorAll('[data-direccion]').forEach(el => { el.innerHTML = CONFIG.direccion + '<br>' + CONFIG.direccion2; });
