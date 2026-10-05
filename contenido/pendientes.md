@@ -63,6 +63,17 @@ Queda:
 - [ ] **Enlaces de Hotmart** (cuatro: complementaria, lonchera, hábitos, escuela).
       Mientras no lleguen, los botones abren WhatsApp con el curso ya escrito.
 
+### Acompañamiento por WhatsApp (en «Citas y tarifas»)
+
+- [x] Publicado el 5 de octubre de 2026, solo para pacientes: plan primer
+      trimestre $59.900 al mes (60 USD desde fuera de Colombia) y consulta
+      suelta $20.000 (20 USD). Responde la doctora, ilimitado dentro del
+      horario de las citas. Pago mes a mes con los datos que ella envíe.
+- [ ] **Confirmar** que los 60 USD del plan son **al mes** (así quedó) y no por
+      los tres meses.
+- [ ] Cuando tenga pasarela (Wompi, Bold o Mercado Pago), cambiar el paso 3
+      por «Te envío un enlace de pago».
+
 ## 4 · Fotos
 
 Lo que ya tenemos sirve, pero hay seis fotos de banco de imágenes heredadas del

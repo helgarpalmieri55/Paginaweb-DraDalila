@@ -1124,7 +1124,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ee5c8571bd05fd26e995450c689ec715' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ee5c8571bd05fd26e995450c689ec715' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1358,6 +1358,182 @@ return array(
 <!-- /wp:dalila/caja -->
 </ol>
 <!-- /wp:dalila/caja -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "section", "anchor": "whatsapp", "className": "seccion seccion--crema en-048228", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema en-048228" id="whatsapp">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Solo para pacientes de la doctora", "className": "chip chip--rosa reveal"} -->
+<span class="chip chip--rosa reveal">Solo para pacientes de la doctora</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Acompañamiento por WhatsApp</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Para las dudas que aparecen entre una consulta y otra. Te respondo yo, directamente, en el mismo horario de las citas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--2">
+<!-- wp:group {"className": "cita cita--verde reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita cita--verde reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan primer trimestre"} -->
+<strong>Plan primer trimestre</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Los tres primeros meses del bebé, con la doctora a un mensaje de distancia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$59.900", "atributos": {"data-precio": "plan-whatsapp"}, "className": "cita__precio"} -->
+<div data-precio="plan-whatsapp" class="cita__precio">$59.900</div>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP al mes, durante los 3 primeros meses", "atributos": {"data-fuera-de-colombia": "al mes, durante los 3 primeros meses"}, "className": "cita__nota"} -->
+<span data-fuera-de-colombia="al mes, durante los 3 primeros meses" class="cita__nota">COP al mes, durante los 3 primeros meses</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
+<ul class="lista lista--verde en-37d30b">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Consultas ilimitadas por WhatsApp", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Consultas ilimitadas por WhatsApp</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora, no una asistente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Responde la doctora, no una asistente</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Cualquier duda pediátrica de tu bebé", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cualquier duda pediátrica de tu bebé</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Puedes enviar fotos y videos", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Puedes enviar fotos y videos</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar el plan", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama " href="/contacto/" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar el plan</a>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cita cita--azul reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita cita--azul reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Consulta por WhatsApp"} -->
+<strong>Consulta por WhatsApp</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Una duda puntual, sin tener que agendar una cita completa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$20.000", "atributos": {"data-precio": "consulta-whatsapp"}, "className": "cita__precio"} -->
+<div data-precio="consulta-whatsapp" class="cita__precio">$20.000</div>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por consulta", "atributos": {"data-fuera-de-colombia": "por consulta"}, "className": "cita__nota"} -->
+<span data-fuera-de-colombia="por consulta" class="cita__nota">COP por consulta</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul en-37d30b"} -->
+<ul class="lista lista--azul en-37d30b">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Una consulta por mensaje, a cualquier edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Una consulta por mensaje, a cualquier edad</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora directamente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Responde la doctora directamente</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "En el horario de atención del consultorio", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>En el horario de atención del consultorio</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Si hace falta examinar, te propongo una cita", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Si hace falta examinar, te propongo una cita</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar una consulta", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--azul btn--chico"} -->
+<a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama " href="/contacto/" class="btn btn--azul btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar una consulta</a>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos en-e1d8a6"} -->
+<ol class="pasos en-e1d8a6">
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
+<strong>Me escribes</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Con el botón de arriba, desde el número que vas a usar para las consultas y con el nombre de tu peque.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmo que seas paciente"} -->
+<strong>Confirmo que seas paciente</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Este servicio es solo para familias que ya atiendo. Si aún no lo son, agendamos primero una consulta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Te envío los datos de pago"} -->
+<strong>Te envío los datos de pago</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te indico cómo pagar. El plan se paga mes a mes, durante los tres primeros meses del bebé.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Quedas activo"} -->
+<strong>Quedas activo</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Desde ese momento me escribes cuando lo necesites, dentro del horario de atención.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:group {"className": "aviso reveal en-a58c68", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso reveal en-a58c68">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>WhatsApp no es un canal de urgencias</strong>Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias. Lo que necesite examen físico se atiende en consulta."} -->
+<div><strong>WhatsApp no es un canal de urgencias</strong>Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias. Lo que necesite examen físico se atiende en consulta.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </section>
@@ -2901,7 +3077,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '2d7a4e44843db22461515e8b1d47a147', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '2d7a4e44843db22461515e8b1d47a147', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '64879d105b1da6a6b5b833e17b342aaa', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -3637,6 +3813,10 @@ return array(
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+
+<!-- wp:dalila/texto {"etiqueta": "p", "contenido": "<span>¿Ya eres paciente? Conoce el <a href=\\"/citas/#whatsapp\\">acompañamiento por WhatsApp</a>.</span>", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "enlace-whatsapp reveal"} -->
+<p class="enlace-whatsapp reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><span>¿Ya eres paciente? Conoce el <a href="/citas/#whatsapp">acompañamiento por WhatsApp</a>.</span></p>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </section>
@@ -4183,7 +4363,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4613,6 +4793,10 @@ return array(
 <!-- /wp:group -->
 </article>
 <!-- /wp:group -->
+
+<!-- wp:dalila/texto {"etiqueta": "p", "contenido": "<span>¿Ya eres paciente? Entre una consulta y otra también puedes escribirme: conoce el <a href=\\"/citas/#whatsapp\\">acompañamiento por WhatsApp</a>.</span>", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "enlace-whatsapp reveal"} -->
+<p class="enlace-whatsapp reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><span>¿Ya eres paciente? Entre una consulta y otra también puedes escribirme: conoce el <a href="/citas/#whatsapp">acompañamiento por WhatsApp</a>.</span></p>
+<!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </section>

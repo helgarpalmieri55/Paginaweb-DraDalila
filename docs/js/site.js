@@ -13,6 +13,10 @@ const CONFIG = {
   precioPresencial: '$300.000',            // en pesos, consulta presencial
   precioVirtual: '$200.000',               // en pesos, consulta virtual desde Colombia
   precioVirtualExterior: '70 USD',         // consulta virtual desde fuera de Colombia
+  precioPlanWhatsApp: '$59.900',          // plan primer trimestre por WhatsApp, al mes
+  precioPlanWhatsAppExterior: '60 USD',
+  precioConsultaWhatsApp: '$20.000',      // consulta suelta por WhatsApp
+  precioConsultaWhatsAppExterior: '20 USD',
   mostrarPrecios: true,                    // false oculta la sección "Tu cita"
   mostrarPepe: true,                       // false oculta el bloque de Pepe
   redes: { instagram: 'https://www.instagram.com/dra.dalilapenaranda/' },   // por ahora solo tiene Instagram
@@ -68,11 +72,17 @@ const CONFIG = {
     document.documentElement.classList.toggle('fuera-de-colombia', !enColombia);
     // Las tarifas salen de Ajustes → Datos del consultorio. data-moneda agrega
     // «COP» al precio en pesos; si el elemento lleva un ícono, se conserva.
+    const tarifas = {
+      presencial: [CONFIG.precioPresencial, CONFIG.precioPresencial],
+      virtual: [CONFIG.precioVirtual, CONFIG.precioVirtualExterior],
+      'plan-whatsapp': [CONFIG.precioPlanWhatsApp, CONFIG.precioPlanWhatsAppExterior],
+      'consulta-whatsapp': [CONFIG.precioConsultaWhatsApp, CONFIG.precioConsultaWhatsAppExterior]
+    };
     document.querySelectorAll('[data-precio]').forEach(el => {
+      const par = tarifas[el.dataset.precio];
+      if (!par || !par[0]) return;
       const icono = el.querySelector('svg');
-      el.textContent = el.dataset.precio === 'presencial'
-        ? CONFIG.precioPresencial + (el.dataset.moneda || '')
-        : enColombia ? CONFIG.precioVirtual + (el.dataset.moneda || '') : CONFIG.precioVirtualExterior;
+      el.textContent = enColombia ? par[0] + (el.dataset.moneda || '') : par[1];
       if (icono) el.prepend(icono);
     });
     document.querySelectorAll('[data-fuera-de-colombia]').forEach(el => {
@@ -88,8 +98,8 @@ const CONFIG = {
       b.textContent = enColombia ? '¿Vives fuera de Colombia? Ver la tarifa internacional' : '¿Estás en Colombia? Ver las tarifas en pesos';
     });
   }
-  document.querySelectorAll('.cita--virtual').forEach(tarjeta => {
-    const rejilla = tarjeta.parentElement;
+  document.querySelectorAll('.cita--virtual, .cita [data-fuera-de-colombia]').forEach(pieza => {
+    const rejilla = pieza.closest('.cita')?.parentElement;
     if (!rejilla || rejilla.nextElementSibling?.classList.contains('cita-pais')) return;
     const p = document.createElement('p');
     p.className = 'cita-pais';

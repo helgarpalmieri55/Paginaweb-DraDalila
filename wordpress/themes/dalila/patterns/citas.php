@@ -30,6 +30,10 @@
 <!-- /wp:html -->
 </div>
 <!-- /wp:group -->
+
+<!-- wp:html -->
+<p class="enlace-whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><span>¿Ya eres paciente? Conoce el <a href="/citas/#whatsapp">acompañamiento por WhatsApp</a>.</span></p>
+<!-- /wp:html -->
 </div>
 <!-- /wp:group -->
 </section>
