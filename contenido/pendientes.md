@@ -33,10 +33,8 @@ Queda:
 
 ## 2 · Operación del consultorio
 
-- [ ] **Horario de atención del consultorio.** El de *respuesta a mensajes* ya está
-      confirmado (lunes a viernes 8:00 a. m. – 6:00 p. m.; sábado, domingo y
-      festivos sin atención), pero el horario en que **atiende pacientes** sigue
-      siendo de ejemplo, en `consultorio.html`.
+- [x] **Horario de atención del consultorio:** el que está publicado queda así
+      (confirmado el 5 de octubre de 2026).
 - [ ] **Condiciones de la cita.** Las que están hoy las escribimos nosotros:
       confirmación por WhatsApp, cancelación con 12 horas de anticipación,
       acompañante obligatorio para el menor. ¿Son las suyas? ¿Qué pasa si la

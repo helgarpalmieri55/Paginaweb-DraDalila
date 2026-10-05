@@ -241,6 +241,8 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 /* ---------- citas ---------- */
 .cita{--filo:var(--rosa);background:linear-gradient(var(--filo) 0 6px,#fff 6px);border-radius:20px;padding:30px;box-shadow:0 10px 0 -4px rgba(47,66,96,.06),0 16px 28px rgba(47,66,96,.10)}
 .cita--virtual{--filo:var(--azul)}
+.cita--verde{--filo:var(--verde)}
+.cita--azul{--filo:var(--azul)}
 .cita strong{font-family:"Baloo 2",cursive;font-size:24px;display:block;margin-bottom:6px}
 .cita > p{margin-bottom:18px;color:var(--suave);font-size:15px;line-height:1.6}
 .cita__precio{font-family:"Baloo 2",cursive;font-size:32px;color:var(--tinta);margin-bottom:4px}
