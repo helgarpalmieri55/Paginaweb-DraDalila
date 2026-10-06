@@ -249,3 +249,10 @@
 }
 /* El acompañamiento por WhatsApp dentro de servicios: separado de los detalles. */
 .whatsapp-servicio{padding-top:56px;margin-top:8px;border-top:1px solid rgba(47,66,96,.10);scroll-margin-top:110px}
+
+/* ---------- acompañamiento por WhatsApp: «¿Cómo funciona?» de cada plan ---------- */
+.cita__acciones{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.como-funciona[aria-expanded="true"]{background:var(--agua);box-shadow:inset 0 0 0 2px rgba(47,66,96,.14)}
+.pasos-grupo{margin-top:44px;scroll-margin-top:110px}
+.pasos-grupo__titulo{font-family:"Baloo 2",cursive;font-size:22px;color:var(--tinta);margin:0 0 30px}
+.pasos-grupo[hidden]{display:none}

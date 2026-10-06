@@ -1124,7 +1124,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ee5c8571bd05fd26e995450c689ec715' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ba1baf309a963cfb1f299c763fb9f22e', 'ee5c8571bd05fd26e995450c689ec715' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1419,9 +1419,17 @@ return array(
 </ul>
 <!-- /wp:dalila/caja -->
 
+<!-- wp:group {"className": "cita__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita__acciones">
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar el plan", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
 <a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama " href="/contacto/" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar el plan</a>
 <!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "¿Cómo funciona?", "atributos": {"data-ver-pasos": "plan", "href": "#pasos-plan"}, "className": "btn btn--blanco btn--chico como-funciona"} -->
+<a data-ver-pasos="plan" href="#pasos-plan" class="btn btn--blanco btn--chico como-funciona">¿Cómo funciona?</a>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 
@@ -1463,16 +1471,30 @@ return array(
 </ul>
 <!-- /wp:dalila/caja -->
 
+<!-- wp:group {"className": "cita__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita__acciones">
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar una consulta", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--azul btn--chico"} -->
 <a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama " href="/contacto/" class="btn btn--azul btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar una consulta</a>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "¿Cómo funciona?", "atributos": {"data-ver-pasos": "consulta", "href": "#pasos-consulta"}, "className": "btn btn--blanco btn--chico como-funciona"} -->
+<a data-ver-pasos="consulta" href="#pasos-consulta" class="btn btn--blanco btn--chico como-funciona">¿Cómo funciona?</a>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 
-<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos en-e1d8a6"} -->
-<ol class="pasos en-e1d8a6">
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"id": "pasos-plan", "data-pasos": "plan"}, "className": "pasos-grupo"} -->
+<div id="pasos-plan" data-pasos="plan" class="pasos-grupo">
+<!-- wp:heading {"level": 3, "className": "pasos-grupo__titulo reveal"} -->
+<h3 class="wp-block-heading pasos-grupo__titulo reveal">Cómo funciona el plan primer trimestre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
+<ol class="pasos">
 <!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
 <li class="reveal">
 <!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
@@ -1480,7 +1502,7 @@ return array(
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
-<p>Con el botón de arriba, desde el número que vas a usar para las consultas y con el nombre de tu peque.</p>
+<p>Con el botón «Solicitar el plan», desde el número que vas a usar para las consultas y con el nombre de tu peque.</p>
 <!-- /wp:paragraph -->
 </li>
 <!-- /wp:dalila/caja -->
@@ -1521,6 +1543,68 @@ return array(
 </li>
 <!-- /wp:dalila/caja -->
 </ol>
+<!-- /wp:dalila/caja -->
+</div>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"id": "pasos-consulta", "data-pasos": "consulta"}, "className": "pasos-grupo"} -->
+<div id="pasos-consulta" data-pasos="consulta" class="pasos-grupo">
+<!-- wp:heading {"level": 3, "className": "pasos-grupo__titulo reveal"} -->
+<h3 class="wp-block-heading pasos-grupo__titulo reveal">Cómo funciona la consulta por WhatsApp</h3>
+<!-- /wp:heading -->
+
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
+<ol class="pasos">
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
+<strong>Me escribes</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Con el botón «Solicitar una consulta», con el nombre de tu peque y tu pregunta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmo que seas paciente"} -->
+<strong>Confirmo que seas paciente</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Este servicio es solo para familias que ya atiendo. Si aún no lo son, agendamos primero una consulta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Te envío los datos de pago"} -->
+<strong>Te envío los datos de pago</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te indico cómo pagar la consulta. Se paga cada vez que la necesites.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Te respondo"} -->
+<strong>Te respondo</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Con el pago confirmado, respondo tu consulta dentro del horario de atención. Si hace falta examinar, te propongo una cita.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
+</div>
 <!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "aviso reveal en-a58c68", "layout": {"type": "default"}} -->
@@ -4363,7 +4447,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4848,9 +4932,17 @@ return array(
 </ul>
 <!-- /wp:dalila/caja -->
 
+<!-- wp:group {"className": "cita__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita__acciones">
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar el plan", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
 <a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama " href="/contacto/" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar el plan</a>
 <!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "¿Cómo funciona?", "atributos": {"data-ver-pasos": "plan", "href": "#pasos-plan"}, "className": "btn btn--blanco btn--chico como-funciona"} -->
+<a data-ver-pasos="plan" href="#pasos-plan" class="btn btn--blanco btn--chico como-funciona">¿Cómo funciona?</a>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 
@@ -4892,16 +4984,30 @@ return array(
 </ul>
 <!-- /wp:dalila/caja -->
 
+<!-- wp:group {"className": "cita__acciones", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita__acciones">
 <!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar una consulta", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--azul btn--chico"} -->
 <a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama " href="/contacto/" class="btn btn--azul btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar una consulta</a>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "¿Cómo funciona?", "atributos": {"data-ver-pasos": "consulta", "href": "#pasos-consulta"}, "className": "btn btn--blanco btn--chico como-funciona"} -->
+<a data-ver-pasos="consulta" href="#pasos-consulta" class="btn btn--blanco btn--chico como-funciona">¿Cómo funciona?</a>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 
-<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos en-e1d8a6"} -->
-<ol class="pasos en-e1d8a6">
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"id": "pasos-plan", "data-pasos": "plan"}, "className": "pasos-grupo"} -->
+<div id="pasos-plan" data-pasos="plan" class="pasos-grupo">
+<!-- wp:heading {"level": 3, "className": "pasos-grupo__titulo reveal"} -->
+<h3 class="wp-block-heading pasos-grupo__titulo reveal">Cómo funciona el plan primer trimestre</h3>
+<!-- /wp:heading -->
+
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
+<ol class="pasos">
 <!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
 <li class="reveal">
 <!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
@@ -4909,7 +5015,7 @@ return array(
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
-<p>Con el botón de arriba, desde el número que vas a usar para las consultas y con el nombre de tu peque.</p>
+<p>Con el botón «Solicitar el plan», desde el número que vas a usar para las consultas y con el nombre de tu peque.</p>
 <!-- /wp:paragraph -->
 </li>
 <!-- /wp:dalila/caja -->
@@ -4950,6 +5056,68 @@ return array(
 </li>
 <!-- /wp:dalila/caja -->
 </ol>
+<!-- /wp:dalila/caja -->
+</div>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "div", "atributos": {"id": "pasos-consulta", "data-pasos": "consulta"}, "className": "pasos-grupo"} -->
+<div id="pasos-consulta" data-pasos="consulta" class="pasos-grupo">
+<!-- wp:heading {"level": 3, "className": "pasos-grupo__titulo reveal"} -->
+<h3 class="wp-block-heading pasos-grupo__titulo reveal">Cómo funciona la consulta por WhatsApp</h3>
+<!-- /wp:heading -->
+
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
+<ol class="pasos">
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
+<strong>Me escribes</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Con el botón «Solicitar una consulta», con el nombre de tu peque y tu pregunta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmo que seas paciente"} -->
+<strong>Confirmo que seas paciente</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Este servicio es solo para familias que ya atiendo. Si aún no lo son, agendamos primero una consulta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Te envío los datos de pago"} -->
+<strong>Te envío los datos de pago</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te indico cómo pagar la consulta. Se paga cada vez que la necesites.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Te respondo"} -->
+<strong>Te respondo</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Con el pago confirmado, respondo tu consulta dentro del horario de atención. Si hace falta examinar, te propongo una cita.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
+</div>
 <!-- /wp:dalila/caja -->
 
 <!-- wp:group {"className": "aviso reveal en-a58c68", "layout": {"type": "default"}} -->
