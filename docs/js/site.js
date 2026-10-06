@@ -114,6 +114,28 @@ const CONFIG = {
     rejilla.after(p);
   });
   aplicarPais();
+
+  /* -------- «¿Cómo funciona?» del acompañamiento por WhatsApp --------
+     Cada tarjeta tiene su botón; debajo se ven solo los pasos de ese plan.
+     Sin JavaScript (y en el editor) se ven todos. */
+  document.querySelectorAll('[data-ver-pasos]').forEach(boton => {
+    const seccion = boton.closest('#whatsapp') || document;
+    const grupos = seccion.querySelectorAll('[data-pasos]');
+    const botones = seccion.querySelectorAll('[data-ver-pasos]');
+    const mostrar = clave => {
+      grupos.forEach(g => { g.hidden = g.dataset.pasos !== clave; });
+      botones.forEach(b => b.setAttribute('aria-expanded', String(b.dataset.verPasos === clave)));
+    };
+    boton.setAttribute('aria-controls', 'pasos-' + boton.dataset.verPasos);
+    boton.addEventListener('click', e => {
+      e.preventDefault();
+      mostrar(boton.dataset.verPasos);
+      const grupo = seccion.querySelector('[data-pasos="' + boton.dataset.verPasos + '"]');
+      grupo?.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      grupo?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    if (!seccion.dataset.pasosListos) { seccion.dataset.pasosListos = '1'; mostrar('plan'); }
+  });
   if (!CONFIG.mostrarPepe) document.getElementById('pepe')?.remove();
 
   /* -------- menú móvil -------- */
