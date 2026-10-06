@@ -67,8 +67,8 @@ Queda:
 
 - [x] Publicado el 5 de octubre de 2026, solo para pacientes: plan primer
       trimestre $59.900 al mes (60 USD desde fuera de Colombia) y consulta
-      suelta $20.000 (20 USD). Responde la doctora, ilimitado dentro del
-      horario de las citas. Pago mes a mes con los datos que ella envíe.
+      suelta $20.000 (20 USD). Responde la doctora, dentro del horario de
+      las citas. La doctora no quiere que diga «ilimitado» ni «sin límite». Pago mes a mes con los datos que ella envíe.
 - [ ] **Confirmar** que los 60 USD del plan son **al mes** (así quedó) y no por
       los tres meses.
 - [ ] Cuando tenga pasarela (Wompi, Bold o Mercado Pago), cambiar el paso 3
