@@ -4363,7 +4363,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4394,8 +4394,8 @@ return array(
 <p class="cabecera__lead reveal retraso-2">Seis formas de acompañarlos, todas con el mismo método: historia completa, examen sin prisa, plan por escrito y seguimiento. Elige por dónde empezar.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#consulta-prenatal\\">Consulta prenatal</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
-<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#consulta-prenatal">Consulta prenatal</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a></nav>
+<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#consulta-prenatal\\">Consulta prenatal</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a> <a class=\\"filtro\\" href=\\"#whatsapp\\">Acompañamiento por WhatsApp</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
+<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#consulta-prenatal">Consulta prenatal</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a> <a class="filtro" href="#whatsapp">Acompañamiento por WhatsApp</a></nav>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -4794,9 +4794,117 @@ return array(
 </article>
 <!-- /wp:group -->
 
-<!-- wp:dalila/texto {"etiqueta": "p", "contenido": "<span>¿Ya eres paciente? Entre una consulta y otra también puedes escribirme: conoce el <a href=\\"/citas/#whatsapp\\">acompañamiento por WhatsApp</a>.</span>", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "enlace-whatsapp reveal"} -->
-<p class="enlace-whatsapp reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><span>¿Ya eres paciente? Entre una consulta y otra también puedes escribirme: conoce el <a href="/citas/#whatsapp">acompañamiento por WhatsApp</a>.</span></p>
+<!-- wp:group {"anchor": "whatsapp", "className": "whatsapp-servicio", "layout": {"type": "default"}} -->
+<div class="wp-block-group whatsapp-servicio" id="whatsapp">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Solo para pacientes de la doctora", "className": "chip chip--rosa reveal"} -->
+<span class="chip chip--rosa reveal">Solo para pacientes de la doctora</span>
 <!-- /wp:dalila/texto -->
+
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Acompañamiento por WhatsApp</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">Para las dudas que aparecen entre una consulta y otra. Te respondo yo, directamente, en el mismo horario de las citas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
+<div class="wp-block-group rejilla rejilla--2">
+<!-- wp:group {"className": "cita cita--verde reveal", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita cita--verde reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan primer trimestre"} -->
+<strong>Plan primer trimestre</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Los tres primeros meses del bebé, con la doctora a un mensaje de distancia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$59.900", "atributos": {"data-precio": "plan-whatsapp"}, "className": "cita__precio"} -->
+<div data-precio="plan-whatsapp" class="cita__precio">$59.900</div>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP al mes, durante los 3 primeros meses", "atributos": {"data-fuera-de-colombia": "al mes, durante los 3 primeros meses"}, "className": "cita__nota"} -->
+<span data-fuera-de-colombia="al mes, durante los 3 primeros meses" class="cita__nota">COP al mes, durante los 3 primeros meses</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
+<ul class="lista lista--verde en-37d30b">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Consultas ilimitadas por WhatsApp", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Consultas ilimitadas por WhatsApp</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora, no una asistente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Responde la doctora, no una asistente</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Cualquier duda pediátrica de tu bebé", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Cualquier duda pediátrica de tu bebé</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Puedes enviar fotos y videos", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Puedes enviar fotos y videos</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar el plan", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero el Plan primer trimestre por WhatsApp. Mi bebé se llama " href="/contacto/" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar el plan</a>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "cita cita--azul reveal retraso-1", "layout": {"type": "default"}} -->
+<div class="wp-block-group cita cita--azul reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Consulta por WhatsApp"} -->
+<strong>Consulta por WhatsApp</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Una duda puntual, sin tener que agendar una cita completa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "$20.000", "atributos": {"data-precio": "consulta-whatsapp"}, "className": "cita__precio"} -->
+<div data-precio="consulta-whatsapp" class="cita__precio">$20.000</div>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "COP por consulta", "atributos": {"data-fuera-de-colombia": "por consulta"}, "className": "cita__nota"} -->
+<span data-fuera-de-colombia="por consulta" class="cita__nota">COP por consulta</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--azul en-37d30b"} -->
+<ul class="lista lista--azul en-37d30b">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Una consulta por mensaje, a cualquier edad", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Una consulta por mensaje, a cualquier edad</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora directamente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Responde la doctora directamente</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "En el horario de atención del consultorio", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>En el horario de atención del consultorio</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Si hace falta examinar, te propongo una cita", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Si hace falta examinar, te propongo una cita</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": "Solicitar una consulta", "atributos": {"data-wa": "", "data-mensaje": "Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama ", "href": "/contacto/"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z\\"/></svg>", "className": "btn btn--azul btn--chico"} -->
+<a data-wa="" data-mensaje="Hola doctora, soy paciente suya y quiero una consulta por WhatsApp. Mi hijo o hija se llama " href="/contacto/" class="btn btn--azul btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg>Solicitar una consulta</a>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className": "enlace-whatsapp reveal"} -->
+<p class="enlace-whatsapp reveal"><span>Cómo funciona, quién puede pedirlo y qué no cubre: <a href="/citas/#whatsapp">lee los detalles</a>.</span></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </section>

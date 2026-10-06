@@ -247,3 +247,5 @@
   .cronologia::before{transform:none}
   .reveal--izq,.reveal--der{transform:none}
 }
+/* El acompañamiento por WhatsApp dentro de servicios: separado de los detalles. */
+.whatsapp-servicio{padding-top:56px;margin-top:8px;border-top:1px solid rgba(47,66,96,.10);scroll-margin-top:110px}
