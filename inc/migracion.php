@@ -4447,7 +4447,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4878,8 +4878,92 @@ return array(
 </article>
 <!-- /wp:group -->
 
-<!-- wp:group {"anchor": "whatsapp", "className": "whatsapp-servicio", "layout": {"type": "default"}} -->
-<div class="wp-block-group whatsapp-servicio" id="whatsapp">
+<!-- wp:group {"className": "servicios-recorrido", "layout": {"type": "default"}} -->
+<div class="wp-block-group servicios-recorrido">
+<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
+<h2 class="wp-block-heading titulo reveal">Cómo es cada consulta</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className": "bajada reveal"} -->
+<p class="bajada reveal">El mismo recorrido, sin importar el motivo por el que llegues.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
+<ol class="pasos">
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Historia completa"} -->
+<strong>Historia completa</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Embarazo, parto, alimentación, sueño, antecedentes y lo que te preocupa hoy. Sin apuro.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Examen y medidas"} -->
+<strong>Examen y medidas</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Revisión física, peso, talla y ubicación en las curvas de crecimiento.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Conversación"} -->
+<strong>Conversación</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Qué encontramos, qué significa y qué opciones hay. En palabras que se entienden.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan por escrito"} -->
+<strong>Plan por escrito</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te vas con las indicaciones escritas y la fecha del próximo control.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:group {"className": "aviso reveal en-01509c", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso reveal en-01509c">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias."} -->
+<div><strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:dalila/franja {"escena":3,"desde":"agua","hasta":"crema","align":"full"} /-->
+
+<!-- wp:group {"tagName": "section", "anchor": "whatsapp", "className": "seccion seccion--crema", "layout": {"type": "default"}} -->
+<section class="wp-block-group seccion seccion--crema" id="whatsapp">
+<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
+<div class="wp-block-group wrap">
 <!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Solo para pacientes de la doctora", "className": "chip chip--rosa reveal"} -->
 <span class="chip chip--rosa reveal">Solo para pacientes de la doctora</span>
 <!-- /wp:dalila/texto -->
@@ -5128,90 +5212,6 @@ return array(
 
 <!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>WhatsApp no es un canal de urgencias</strong>Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias. Lo que necesite examen físico se atiende en consulta."} -->
 <div><strong>WhatsApp no es un canal de urgencias</strong>Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias. Lo que necesite examen físico se atiende en consulta.</div>
-<!-- /wp:dalila/texto -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
-</section>
-<!-- /wp:group -->
-
-<!-- wp:dalila/franja {"escena":3,"desde":"agua","hasta":"crema","align":"full"} /-->
-
-<!-- wp:group {"tagName": "section", "className": "seccion seccion--crema", "layout": {"type": "default"}} -->
-<section class="wp-block-group seccion seccion--crema">
-<!-- wp:group {"className": "wrap", "layout": {"type": "default"}} -->
-<div class="wp-block-group wrap">
-<!-- wp:heading {"level": 2, "className": "titulo reveal"} -->
-<h2 class="wp-block-heading titulo reveal">Cómo es cada consulta</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"className": "bajada reveal"} -->
-<p class="bajada reveal">El mismo recorrido, sin importar el motivo por el que llegues.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos"} -->
-<ol class="pasos">
-<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
-<li class="reveal">
-<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Historia completa"} -->
-<strong>Historia completa</strong>
-<!-- /wp:dalila/texto -->
-
-<!-- wp:paragraph -->
-<p>Embarazo, parto, alimentación, sueño, antecedentes y lo que te preocupa hoy. Sin apuro.</p>
-<!-- /wp:paragraph -->
-</li>
-<!-- /wp:dalila/caja -->
-
-<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
-<li class="reveal retraso-1">
-<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Examen y medidas"} -->
-<strong>Examen y medidas</strong>
-<!-- /wp:dalila/texto -->
-
-<!-- wp:paragraph -->
-<p>Revisión física, peso, talla y ubicación en las curvas de crecimiento.</p>
-<!-- /wp:paragraph -->
-</li>
-<!-- /wp:dalila/caja -->
-
-<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
-<li class="reveal retraso-2">
-<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Conversación"} -->
-<strong>Conversación</strong>
-<!-- /wp:dalila/texto -->
-
-<!-- wp:paragraph -->
-<p>Qué encontramos, qué significa y qué opciones hay. En palabras que se entienden.</p>
-<!-- /wp:paragraph -->
-</li>
-<!-- /wp:dalila/caja -->
-
-<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
-<li class="reveal retraso-3">
-<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan por escrito"} -->
-<strong>Plan por escrito</strong>
-<!-- /wp:dalila/texto -->
-
-<!-- wp:paragraph -->
-<p>Te vas con las indicaciones escritas y la fecha del próximo control.</p>
-<!-- /wp:paragraph -->
-</li>
-<!-- /wp:dalila/caja -->
-</ol>
-<!-- /wp:dalila/caja -->
-
-<!-- wp:group {"className": "aviso reveal en-01509c", "layout": {"type": "default"}} -->
-<div class="wp-block-group aviso reveal en-01509c">
-<!-- wp:html -->
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
-<!-- /wp:html -->
-
-<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias."} -->
-<div><strong>Esta página es informativa</strong>Los contenidos del sitio no reemplazan una consulta médica ni sirven para diagnosticar. Ante fiebre en menores de tres meses, dificultad para respirar o decaimiento importante, acude directamente a urgencias.</div>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
