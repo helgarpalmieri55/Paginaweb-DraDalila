@@ -1124,7 +1124,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ba1baf309a963cfb1f299c763fb9f22e', 'ee5c8571bd05fd26e995450c689ec715', 'f542e9945cbad9d01e84918ed76ab81f' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ba1baf309a963cfb1f299c763fb9f22e', 'e33499fa9056301fd6f28c8bbf5642c6', 'ee5c8571bd05fd26e995450c689ec715', 'f542e9945cbad9d01e84918ed76ab81f' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1383,8 +1383,8 @@ return array(
 <div class="wp-block-group rejilla rejilla--2">
 <!-- wp:group {"className": "cita cita--verde reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita cita--verde reveal">
-<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan primer trimestre"} -->
-<strong>Plan primer trimestre</strong>
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan primer trimestre <span class=\\"cita__edad\\">(para bebés de 0 a 3 meses)</span>"} -->
+<strong>Plan primer trimestre <span class="cita__edad">(para bebés de 0 a 3 meses)</span></strong>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
@@ -4447,7 +4447,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4980,8 +4980,8 @@ return array(
 <div class="wp-block-group rejilla rejilla--2">
 <!-- wp:group {"className": "cita cita--verde reveal", "layout": {"type": "default"}} -->
 <div class="wp-block-group cita cita--verde reveal">
-<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan primer trimestre"} -->
-<strong>Plan primer trimestre</strong>
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Plan primer trimestre <span class=\\"cita__edad\\">(para bebés de 0 a 3 meses)</span>"} -->
+<strong>Plan primer trimestre <span class="cita__edad">(para bebés de 0 a 3 meses)</span></strong>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
