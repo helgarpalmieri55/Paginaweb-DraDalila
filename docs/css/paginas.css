@@ -247,8 +247,9 @@
   .cronologia::before{transform:none}
   .reveal--izq,.reveal--der{transform:none}
 }
-/* El acompañamiento por WhatsApp dentro de servicios: separado de los detalles. */
-.whatsapp-servicio{padding-top:56px;margin-top:8px;border-top:1px solid rgba(47,66,96,.10);scroll-margin-top:110px}
+/* «Cómo es cada consulta», al final de los servicios: separado de los detalles. */
+.servicios-recorrido{padding-top:56px;margin-top:8px;border-top:1px solid rgba(47,66,96,.10)}
+#whatsapp{scroll-margin-top:90px}
 
 /* ---------- acompañamiento por WhatsApp: «¿Cómo funciona?» de cada plan ---------- */
 .cita__acciones{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
