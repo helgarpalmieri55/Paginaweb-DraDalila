@@ -1124,7 +1124,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'citas',
-		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ba1baf309a963cfb1f299c763fb9f22e', 'ee5c8571bd05fd26e995450c689ec715' ),
+		'antes'     => array( '7a1c6657e82e12f0d0db5eaaad4c1fa8', '86ef6b8886a3b4b17de8119247bcdc8f', '8b5436cbb862a638d7234db5cc0f90d1', '9e697660f31ee9a08011716d8e859b03', 'ba1baf309a963cfb1f299c763fb9f22e', 'ee5c8571bd05fd26e995450c689ec715', 'f542e9945cbad9d01e84918ed76ab81f' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple cabecera--agua", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple cabecera--agua">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -1401,8 +1401,8 @@ return array(
 
 <!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
 <ul class="lista lista--verde en-37d30b">
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Consultas ilimitadas por WhatsApp", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Consultas ilimitadas por WhatsApp</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Tus dudas resueltas en el horario de atención", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Tus dudas resueltas en el horario de atención</li>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora, no una asistente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
@@ -1538,7 +1538,7 @@ return array(
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
-<p>Desde ese momento me escribes cuando lo necesites, dentro del horario de atención.</p>
+<p>Desde ese momento puedes escribirme tus dudas, dentro del horario de atención, durante los tres primeros meses del bebé.</p>
 <!-- /wp:paragraph -->
 </li>
 <!-- /wp:dalila/caja -->
@@ -4447,7 +4447,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4914,8 +4914,8 @@ return array(
 
 <!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
 <ul class="lista lista--verde en-37d30b">
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Consultas por WhatsApp", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Consultas por WhatsApp</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Tus dudas resueltas en el horario de atención", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Tus dudas resueltas en el horario de atención</li>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora, no una asistente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
@@ -5051,7 +5051,7 @@ return array(
 <!-- /wp:dalila/texto -->
 
 <!-- wp:paragraph -->
-<p>Desde ese momento me escribes cuando lo necesites, dentro del horario de atención.</p>
+<p>Desde ese momento puedes escribirme tus dudas, dentro del horario de atención, durante los tres primeros meses del bebé.</p>
 <!-- /wp:paragraph -->
 </li>
 <!-- /wp:dalila/caja -->
