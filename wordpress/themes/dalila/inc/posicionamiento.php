@@ -29,7 +29,7 @@ const DALILA_SEO_SERVICIOS = array(
 	array( 'Nutrición infantil', 'Valoración nutricional con antropometría y plan de alimentación ajustado a la edad, los hábitos y la realidad de cada casa.' ),
 	array( 'Crecimiento y desarrollo', 'Seguimiento de talla, peso y perímetro cefálico sobre las curvas de la OMS, y de los hitos del desarrollo.' ),
 	array( 'Alimentación complementaria', 'Acompañamiento en el inicio de sólidos: texturas, cantidades, señales de alarma y manejo de la selectividad.' ),
-	array( 'Asesoría a padres', 'Lactancia, sueño, pataletas y dudas de crianza resueltas con tiempo y sin apuro.' ),
+	array( 'Consulta prenatal', 'Encuentro con la pediatra antes del nacimiento: lactancia, cuidados del recién nacido, tamizajes y señales de alarma.' ),
 	array( 'Consulta virtual', 'Videollamada para familias dentro y fuera de Colombia, con el plan enviado por correo.' ),
 );
 

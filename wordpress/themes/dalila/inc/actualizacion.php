@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const DALILA_BLOQUES_VERSION = 17;
+const DALILA_BLOQUES_VERSION = 24;
 
 /**
  * El contenido sin las direcciones de las imágenes, que el importador cambia
@@ -166,6 +166,22 @@ function dalila_actualizar_a_bloques() {
 		}
 
 		dalila_poner_contenido_nuevo( $post->ID, $entrada['contenido'] );
+	}
+
+	// Las tarifas de «Datos del consultorio»: si quedaron guardadas con los
+	// valores de ejemplo de antes, pasan a las tarifas reales.
+	$datos = get_option( DALILA_OPCION );
+	if ( is_array( $datos ) ) {
+		$viejos = array(
+			'precio_presencial' => array( '$180.000', '$300.000' ),
+			'precio_virtual'    => array( '45 USD', '$200.000' ),
+		);
+		foreach ( $viejos as $clave => $par ) {
+			if ( isset( $datos[ $clave ] ) && trim( $datos[ $clave ] ) === $par[0] ) {
+				$datos[ $clave ] = $par[1];
+			}
+		}
+		update_option( DALILA_OPCION, $datos );
 	}
 
 	update_option( 'dalila_bloques_pendientes', $pendiente, false );

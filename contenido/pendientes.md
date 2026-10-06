@@ -33,25 +33,25 @@ Queda:
 
 ## 2 · Operación del consultorio
 
-- [ ] **Horario de atención del consultorio.** El de *respuesta a mensajes* ya está
-      confirmado (lunes a viernes 8:00 a. m. – 6:00 p. m.; sábado, domingo y
-      festivos sin atención), pero el horario en que **atiende pacientes** sigue
-      siendo de ejemplo, en `consultorio.html`.
+- [x] **Horario de atención del consultorio:** el que está publicado queda así
+      (confirmado el 5 de octubre de 2026).
 - [ ] **Condiciones de la cita.** Las que están hoy las escribimos nosotros:
       confirmación por WhatsApp, cancelación con 12 horas de anticipación,
       acompañante obligatorio para el menor. ¿Son las suyas? ¿Qué pasa si la
       familia llega tarde?
 - [ ] **Medios de pago**, presencial y virtual (hoy dice «transferencia o pasarela
       de pago», que es una suposición).
-- [ ] **Tarifas de consulta.** El sitio muestra **$180.000** presencial y **45 USD**
-      virtual. ⚠️ Esos números venían del archivo de diseño que nos pasaron, no de
-      ella: hay que confirmarlos antes de publicar.
+- [x] **Tarifas de consulta** (3 de octubre de 2026): control pediátrico y
+      crecimiento y desarrollo $300.000 (40 min); nutrición infantil y
+      alimentación complementaria $350.000; consulta prenatal $250.000;
+      consulta virtual $200.000 (40 min) o 70 USD desde fuera de Colombia.
+      «Asesoría a padres» pasó a ser **consulta prenatal**: revisar con ella el
+      texto y los cuatro temas que se le pusieron.
 
 ## 3 · Cursos y talleres
 
-- [ ] **Precios.** Hoy aparecen **$149.000** (curso de alimentación complementaria)
-      y **$119.000** (Taller Lonchera Nutritiva). ⚠️ Vienen del mismo archivo de
-      diseño: confirmar.
+- [x] **Precios:** curso de alimentación complementaria $200.000 y taller de
+      lonchera $150.000 (3 de octubre de 2026).
 - [ ] **Precio y cupos** del taller «El ABC de los hábitos alimentarios» y de la
       **escuela para padres / Parents Lab**.
 - [ ] **Próximas fechas** de los talleres y de la escuela para padres.
@@ -62,6 +62,17 @@ Queda:
 - [ ] **¿Entrega constancia o certificado** de finalización?
 - [ ] **Enlaces de Hotmart** (cuatro: complementaria, lonchera, hábitos, escuela).
       Mientras no lleguen, los botones abren WhatsApp con el curso ya escrito.
+
+### Acompañamiento por WhatsApp (en «Citas y tarifas»)
+
+- [x] Publicado el 5 de octubre de 2026, solo para pacientes: plan primer
+      trimestre $59.900 al mes (60 USD desde fuera de Colombia) y consulta
+      suelta $20.000 (20 USD). Responde la doctora, dentro del horario de
+      las citas. La doctora no quiere que diga «ilimitado» ni «sin límite». Pago mes a mes con los datos que ella envíe.
+- [ ] **Confirmar** que los 60 USD del plan son **al mes** (así quedó) y no por
+      los tres meses.
+- [ ] Cuando tenga pasarela (Wompi, Bold o Mercado Pago), cambiar el paso 3
+      por «Te envío un enlace de pago».
 
 ## 4 · Fotos
 

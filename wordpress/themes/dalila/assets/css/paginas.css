@@ -74,6 +74,7 @@
 .detalle__meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--suave)}
 .detalle__meta span{display:flex;align-items:center;gap:8px}
 .detalle__meta svg{width:16px;height:16px;color:var(--azul)}
+.detalle__meta .detalle__precio{font-weight:800;color:var(--tinta)}
 .detalle__icono{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;margin-bottom:16px}
 .detalle__icono svg{width:26px;height:26px}
 
@@ -246,3 +247,12 @@
   .cronologia::before{transform:none}
   .reveal--izq,.reveal--der{transform:none}
 }
+/* El acompañamiento por WhatsApp dentro de servicios: separado de los detalles. */
+.whatsapp-servicio{padding-top:56px;margin-top:8px;border-top:1px solid rgba(47,66,96,.10);scroll-margin-top:110px}
+
+/* ---------- acompañamiento por WhatsApp: «¿Cómo funciona?» de cada plan ---------- */
+.cita__acciones{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.como-funciona[aria-expanded="true"]{background:var(--agua);box-shadow:inset 0 0 0 2px rgba(47,66,96,.14)}
+.pasos-grupo{margin-top:44px;scroll-margin-top:110px}
+.pasos-grupo__titulo{font-family:"Baloo 2",cursive;font-size:22px;color:var(--tinta);margin:0 0 30px}
+.pasos-grupo[hidden]{display:none}

@@ -16,7 +16,7 @@
 <!-- /wp:html -->
 
 <!-- wp:paragraph -->
-<p>Atiendo con estas medicinas prepagadas y pólizas de salud.</p>
+<p>Atiendo con estas medicinas prepagadas y pólizas de salud, y también de forma particular.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className": "logos", "layout": {"type": "default"}} -->
@@ -39,6 +39,10 @@
 
 <!-- wp:html -->
 <div><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo-allianz.webp' ); ?>" alt="Allianz" loading="lazy" style="height:34px"></div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div class="logos__texto"><strong>Particulares</strong></div>
 <!-- /wp:html -->
 </div>
 <!-- /wp:group -->

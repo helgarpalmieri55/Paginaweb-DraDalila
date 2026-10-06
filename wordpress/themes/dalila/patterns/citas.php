@@ -22,14 +22,18 @@
 <!-- wp:group {"className": "rejilla rejilla--2", "layout": {"type": "default"}} -->
 <div class="wp-block-group rejilla rejilla--2">
 <!-- wp:html -->
-<div class="cita"><strong>Presencial</strong><p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p><div class="cita__precio" data-precio="presencial">$180.000</div><span class="cita__nota">COP por consulta</span><a class="btn btn--rosa btn--chico" href="/citas/">Ver detalle y agendar</a></div>
+<div class="cita" data-solo-colombia><strong>Presencial</strong><p>High Park Medical Center, consultorio 129. Valoración completa con plan por escrito.</p><div class="cita__precio" data-precio="presencial">$300.000</div><span class="cita__nota">COP por consulta</span><a class="btn btn--rosa btn--chico" href="/citas/">Ver detalle y agendar</a></div>
 <!-- /wp:html -->
 
 <!-- wp:html -->
-<div class="cita cita--virtual"><strong>Virtual</strong><p>Videollamada desde cualquier país; plan e indicaciones por correo.</p><div class="cita__precio" data-precio="virtual">45 USD</div><span class="cita__nota">por videollamada</span><a class="btn btn--azul btn--chico" href="/citas/">Ver detalle y agendar</a></div>
+<div class="cita cita--virtual"><strong>Virtual</strong><p>Videollamada desde cualquier país; plan e indicaciones por correo.</p><div class="cita__precio" data-precio="virtual">$200.000</div><span class="cita__nota" data-fuera-de-colombia="por videollamada">COP por videollamada</span><a class="btn btn--azul btn--chico" href="/citas/">Ver detalle y agendar</a></div>
 <!-- /wp:html -->
 </div>
 <!-- /wp:group -->
+
+<!-- wp:html -->
+<p class="enlace-whatsapp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 20.5l1.7-5.5A8.4 8.4 0 1 1 21 11.5z"/></svg><span>¿Ya eres paciente? Conoce el <a href="/citas/#whatsapp">acompañamiento por WhatsApp</a>.</span></p>
+<!-- /wp:html -->
 </div>
 <!-- /wp:group -->
 </section>

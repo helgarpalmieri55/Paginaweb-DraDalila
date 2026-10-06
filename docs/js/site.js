@@ -10,8 +10,13 @@ const CONFIG = {
   correo: 'nutripedcm@gmail.com',
   direccion: 'Calle 1C # 30-40, High Park Medical Center',
   direccion2: 'Consultorio 129 · Barranquilla, Colombia',
-  precioPresencial: '$180.000',            // pendiente de confirmar con la doctora
-  precioVirtual: '45 USD',                 // pendiente de confirmar con la doctora
+  precioPresencial: '$300.000',            // en pesos, consulta presencial
+  precioVirtual: '$200.000',               // en pesos, consulta virtual desde Colombia
+  precioVirtualExterior: '70 USD',         // consulta virtual desde fuera de Colombia
+  precioPlanWhatsApp: '$59.900',          // plan primer trimestre por WhatsApp, al mes
+  precioPlanWhatsAppExterior: '60 USD',
+  precioConsultaWhatsApp: '$20.000',      // consulta suelta por WhatsApp
+  precioConsultaWhatsAppExterior: '20 USD',
   mostrarPrecios: true,                    // false oculta la sección "Tu cita"
   mostrarPepe: true,                       // false oculta el bloque de Pepe
   redes: { instagram: 'https://www.instagram.com/dra.dalilapenaranda/' },   // por ahora solo tiene Instagram
@@ -31,12 +36,14 @@ const CONFIG = {
   /* -------- datos de contacto en la página -------- */
   const digits = CONFIG.whatsapp.replace(/\D/g, '');
   const waLink = 'https://wa.me/' + digits + '?text=' + encodeURIComponent(CONFIG.mensajeWhatsApp);
-  document.querySelectorAll('[data-wa]').forEach(a => { a.href = waLink; a.target = '_blank'; a.rel = 'noopener'; });
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    // data-mensaje cambia el texto con el que abre WhatsApp (por ejemplo, para pedir un plan).
+    a.href = a.dataset.mensaje ? 'https://wa.me/' + digits + '?text=' + encodeURIComponent(a.dataset.mensaje) : waLink;
+    a.target = '_blank'; a.rel = 'noopener';
+  });
   document.querySelectorAll('[data-tel]').forEach(el => { el.textContent = CONFIG.whatsapp; });
   document.querySelectorAll('[data-correo]').forEach(el => { el.textContent = CONFIG.correo; if (el.tagName === 'A') el.href = 'mailto:' + CONFIG.correo; });
   document.querySelectorAll('[data-direccion]').forEach(el => { el.innerHTML = CONFIG.direccion + '<br>' + CONFIG.direccion2; });
-  document.querySelectorAll('[data-precio="presencial"]').forEach(el => { el.textContent = CONFIG.precioPresencial; });
-  document.querySelectorAll('[data-precio="virtual"]').forEach(el => { el.textContent = CONFIG.precioVirtual; });
   document.querySelectorAll('[data-red]').forEach(a => { a.href = CONFIG.redes[a.dataset.red] || '#'; });
   /* Botón de compra: va a Hotmart si ya hay enlace; si no, abre WhatsApp
      con el curso escrito, para acordar el pago directamente con la doctora. */
@@ -50,6 +57,85 @@ const CONFIG = {
   });
 
   if (!CONFIG.mostrarPrecios) document.getElementById('citas')?.remove();
+
+  /* -------- tarifas según el país --------
+     Fuera de Colombia solo se ofrece la consulta virtual, en dólares. El país
+     se deduce de la zona horaria del dispositivo (sin pedir permisos ni
+     consultar servicios externos) y la persona lo puede cambiar con el enlace
+     que aparece bajo las tarifas. */
+  let enColombia = true;
+  try { enColombia = Intl.DateTimeFormat().resolvedOptions().timeZone === 'America/Bogota'; } catch (e) {}
+  try { const elegido = localStorage.getItem('dalila-pais'); if (elegido) enColombia = elegido === 'co'; } catch (e) {}
+
+  const textoOriginal = new WeakMap();
+  function aplicarPais() {
+    document.documentElement.classList.toggle('fuera-de-colombia', !enColombia);
+    // Las tarifas salen de Ajustes → Datos del consultorio. data-moneda agrega
+    // «COP» al precio en pesos; si el elemento lleva un ícono, se conserva.
+    const tarifas = {
+      presencial: [CONFIG.precioPresencial, CONFIG.precioPresencial],
+      virtual: [CONFIG.precioVirtual, CONFIG.precioVirtualExterior],
+      'plan-whatsapp': [CONFIG.precioPlanWhatsApp, CONFIG.precioPlanWhatsAppExterior],
+      'consulta-whatsapp': [CONFIG.precioConsultaWhatsApp, CONFIG.precioConsultaWhatsAppExterior]
+    };
+    document.querySelectorAll('[data-precio]').forEach(el => {
+      const par = tarifas[el.dataset.precio];
+      if (!par || !par[0]) return;
+      const icono = el.querySelector('svg');
+      el.textContent = enColombia ? par[0] + (el.dataset.moneda || '') : par[1];
+      if (icono) el.prepend(icono);
+    });
+    document.querySelectorAll('[data-fuera-de-colombia]').forEach(el => {
+      if (!textoOriginal.has(el)) textoOriginal.set(el, el.innerHTML);
+      const original = textoOriginal.get(el);
+      if (enColombia) { el.innerHTML = original; return; }
+      // Se cambia solo el texto: si el elemento lleva un ícono, se queda.
+      const icono = el.querySelector('svg');
+      el.textContent = el.dataset.fueraDeColombia;
+      if (icono) el.prepend(icono.cloneNode(true));
+    });
+    document.querySelectorAll('.cita-pais button').forEach(b => {
+      b.textContent = enColombia ? '¿Vives fuera de Colombia? Ver la tarifa internacional' : '¿Estás en Colombia? Ver las tarifas en pesos';
+    });
+  }
+  document.querySelectorAll('.cita--virtual, .cita [data-fuera-de-colombia]').forEach(pieza => {
+    const rejilla = pieza.closest('.cita')?.parentElement;
+    if (!rejilla || rejilla.nextElementSibling?.classList.contains('cita-pais')) return;
+    const p = document.createElement('p');
+    p.className = 'cita-pais';
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.addEventListener('click', () => {
+      enColombia = !enColombia;
+      try { localStorage.setItem('dalila-pais', enColombia ? 'co' : 'ext'); } catch (e) {}
+      aplicarPais();
+    });
+    p.appendChild(b);
+    rejilla.after(p);
+  });
+  aplicarPais();
+
+  /* -------- «¿Cómo funciona?» del acompañamiento por WhatsApp --------
+     Cada tarjeta tiene su botón; debajo se ven solo los pasos de ese plan.
+     Sin JavaScript (y en el editor) se ven todos. */
+  document.querySelectorAll('[data-ver-pasos]').forEach(boton => {
+    const seccion = boton.closest('#whatsapp') || document;
+    const grupos = seccion.querySelectorAll('[data-pasos]');
+    const botones = seccion.querySelectorAll('[data-ver-pasos]');
+    const mostrar = clave => {
+      grupos.forEach(g => { g.hidden = g.dataset.pasos !== clave; });
+      botones.forEach(b => b.setAttribute('aria-expanded', String(b.dataset.verPasos === clave)));
+    };
+    boton.setAttribute('aria-controls', 'pasos-' + boton.dataset.verPasos);
+    boton.addEventListener('click', e => {
+      e.preventDefault();
+      mostrar(boton.dataset.verPasos);
+      const grupo = seccion.querySelector('[data-pasos="' + boton.dataset.verPasos + '"]');
+      grupo?.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      grupo?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    if (!seccion.dataset.pasosListos) { seccion.dataset.pasosListos = '1'; mostrar('plan'); }
+  });
   if (!CONFIG.mostrarPepe) document.getElementById('pepe')?.remove();
 
   /* -------- menú móvil -------- */
