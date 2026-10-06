@@ -4363,7 +4363,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '54e7ef5df4ecf3707c45cf6a26c60135', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4830,8 +4830,8 @@ return array(
 
 <!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde en-37d30b"} -->
 <ul class="lista lista--verde en-37d30b">
-<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Consultas ilimitadas por WhatsApp", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
-<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Consultas ilimitadas por WhatsApp</li>
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Consultas por WhatsApp", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Consultas por WhatsApp</li>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Responde la doctora, no una asistente", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
@@ -4900,9 +4900,69 @@ return array(
 </div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className": "enlace-whatsapp reveal"} -->
-<p class="enlace-whatsapp reveal"><span>Cómo funciona, quién puede pedirlo y qué no cubre: <a href="/citas/#whatsapp">lee los detalles</a>.</span></p>
+<!-- wp:dalila/caja {"etiqueta": "ol", "className": "pasos en-e1d8a6"} -->
+<ol class="pasos en-e1d8a6">
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal"} -->
+<li class="reveal">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Me escribes"} -->
+<strong>Me escribes</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Con el botón de arriba, desde el número que vas a usar para las consultas y con el nombre de tu peque.</p>
 <!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-1"} -->
+<li class="reveal retraso-1">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Confirmo que seas paciente"} -->
+<strong>Confirmo que seas paciente</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Este servicio es solo para familias que ya atiendo. Si aún no lo son, agendamos primero una consulta.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-2"} -->
+<li class="reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Te envío los datos de pago"} -->
+<strong>Te envío los datos de pago</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Te indico cómo pagar. El plan se paga mes a mes, durante los tres primeros meses del bebé.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "li", "className": "reveal retraso-3"} -->
+<li class="reveal retraso-3">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Quedas activo"} -->
+<strong>Quedas activo</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Desde ese momento me escribes cuando lo necesites, dentro del horario de atención.</p>
+<!-- /wp:paragraph -->
+</li>
+<!-- /wp:dalila/caja -->
+</ol>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:group {"className": "aviso reveal en-a58c68", "layout": {"type": "default"}} -->
+<div class="wp-block-group aviso reveal en-a58c68">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v5"/><circle cx="12" cy="16.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="9"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:dalila/texto {"etiqueta": "div", "contenido": "<strong>WhatsApp no es un canal de urgencias</strong>Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias. Lo que necesite examen físico se atiende en consulta."} -->
+<div><strong>WhatsApp no es un canal de urgencias</strong>Ante fiebre en menores de tres meses, dificultad para respirar, convulsión o decaimiento importante, acude directamente al servicio de urgencias. Lo que necesite examen físico se atiende en consulta.</div>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 </div>
