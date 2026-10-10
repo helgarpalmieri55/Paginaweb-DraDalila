@@ -248,6 +248,7 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 .cita--virtual{--filo:var(--azul)}
 .cita--verde{--filo:var(--verde)}
 .cita--azul{--filo:var(--azul)}
+.cita strong .cita__edad{font-family:"Nunito",sans-serif;font-size:15px;font-weight:700;color:var(--suave);white-space:nowrap}
 .cita strong{font-family:"Baloo 2",cursive;font-size:24px;display:block;margin-bottom:6px}
 .cita > p{margin-bottom:18px;color:var(--suave);font-size:15px;line-height:1.6}
 .cita__precio{font-family:"Baloo 2",cursive;font-size:32px;color:var(--tinta);margin-bottom:4px}
