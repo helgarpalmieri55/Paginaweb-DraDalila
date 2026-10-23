@@ -42,8 +42,8 @@ Queda:
 - [ ] **Medios de pago**, presencial y virtual (hoy dice «transferencia o pasarela
       de pago», que es una suposición).
 - [x] **Tarifas de consulta** (3 de octubre de 2026): control pediátrico y
-      crecimiento y desarrollo $300.000 (40 min); nutrición infantil y
-      alimentación complementaria $350.000; consulta prenatal $250.000;
+      crecimiento y desarrollo $300.000 (40 min); nutrición infantil $350.000;
+      alimentación complementaria $450.000 (23 de octubre); consulta prenatal $250.000;
       consulta virtual $200.000 (40 min) o 70 USD desde fuera de Colombia.
       «Asesoría a padres» pasó a ser **consulta prenatal**: revisar con ella el
       texto y los cuatro temas que se le pusieron.

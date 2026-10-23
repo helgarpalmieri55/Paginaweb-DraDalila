@@ -4447,7 +4447,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd353ff6c9f73e98f8f92f5e4d6d3ac70', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4740,8 +4740,8 @@ return array(
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>También hay <a href="/cursos/" style="color:inherit;text-decoration:underline">curso en video</a></span>
 <!-- /wp:dalila/texto -->
 
-<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$350.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
-<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$350.000 COP</span>
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$450.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$450.000 COP</span>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
