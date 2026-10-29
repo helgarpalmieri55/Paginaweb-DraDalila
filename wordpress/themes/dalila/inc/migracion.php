@@ -4487,7 +4487,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '5d17c39e338430977add2a13a568a7bb', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd353ff6c9f73e98f8f92f5e4d6d3ac70', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '5d17c39e338430977add2a13a568a7bb', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd353ff6c9f73e98f8f92f5e4d6d3ac70', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'e4e7fd7b57e9bb09a67531f11494d6f9', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4859,7 +4859,7 @@ return array(
 <!-- wp:group {"className": "detalle__figura detalle__figura--pieza detalle__figura--documento reveal reveal--der", "layout": {"type": "default"}} -->
 <div class="wp-block-group detalle__figura detalle__figura--pieza detalle__figura--documento reveal reveal--der">
 <!-- wp:dalila/imagen -->
-<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/bienvenida-recien-nacido.webp" alt="Portada de la guía «Bienvenida al mundo, bebé» de la Dra. Dalila Peñaranda" width="860" height="1216" loading="lazy"/>
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/bienvenida-recien-nacido-cercania.webp" alt="Portada de la guía «Bienvenida al mundo, bebé» de la Dra. Dalila Peñaranda" width="860" height="1216" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
@@ -4928,8 +4928,8 @@ return array(
 
 <!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
 <div class="wp-block-group descarga__pie">
-<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Ver más información", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf", "target": "_blank", "rel": "noopener"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M6 3h8l4 4v14H6z\\"/><path d=\\"M14 3v4h4\\"/><path d=\\"M9 12h6M9 16h4\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
-<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf" target="_blank" rel="noopener" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h4"/></svg> Ver más información</a>
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Ver más información", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/guia-bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf", "target": "_blank", "rel": "noopener"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M6 3h8l4 4v14H6z\\"/><path d=\\"M14 3v4h4\\"/><path d=\\"M9 12h6M9 16h4\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/guia-bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf" target="_blank" rel="noopener" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h4"/></svg> Ver más información</a>
 <!-- /wp:dalila/texto -->
 
 <!-- wp:dalila/texto {"etiqueta": "small", "contenido": "Guía para la familia · PDF · 3 páginas"} -->

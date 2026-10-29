@@ -213,7 +213,9 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 
 - [ ] Revisar con la doctora el texto del servicio en Servicios y en la tarjeta
       del inicio (se armó con el texto que ella envió).
-- [ ] En la guía «Bienvenida al mundo, bebé» (PDF), el paso 4 de la página 2
-      se llama «Tiempo de adaptación», igual que el paso 2; en la ruta de la
-      portada ese paso es «Las primeras horas de vida». Si lo corrige en Canva,
-      se reemplaza el archivo `assets/descargas/bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf`.
+- [x] Guía «Bienvenida al mundo, bebé» actualizada (29 de octubre): el paso 2
+      ahora es «Cercanía y acompañamiento». Queda un detalle menor: en la ruta
+      de la portada el paso 4 dice «Las primeras horas de vida» y adentro dice
+      «Tiempo de adaptación». El archivo está en
+      `assets/descargas/guia-bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf`;
+      si cambia, va con un nombre nuevo para que nadie vea el viejo en caché.
