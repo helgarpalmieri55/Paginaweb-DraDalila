@@ -42,6 +42,10 @@
 <!-- /wp:html -->
 
 <!-- wp:html -->
+<div class="carta"><svg viewBox="0 0 24 24" fill="none" stroke="#E2557E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6.5" r="3"/><path d="M12 10.5c-3.6 0-6 3.2-6 6.5 0 2.2 2.7 4 6 4s6-1.8 6-4c0-3.3-2.4-6.5-6-6.5z"/><path d="M9.5 15.5c1.5 1 3.5 1 5 0"/></svg><h3>Atención del recién nacido</h3><p>En sala de partos o quirófano: valoración inicial, contacto piel con piel e inicio de la lactancia.</p></div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
 <div class="carta"><svg viewBox="0 0 24 24" fill="none" stroke="#7B7FC4" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/><path d="M12 9v6"/><path d="M9 12h6"/></svg><h3>Consulta virtual</h3><p>Atención por videollamada para familias en cualquier país.</p></div>
 <!-- /wp:html -->
 </div>
