@@ -3161,7 +3161,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'inicio',
-		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '2d7a4e44843db22461515e8b1d47a147', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '64879d105b1da6a6b5b833e17b342aaa', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
+		'antes'     => array( '05ac1a00bfbd524eda5cb8987a807afb', '193cee3cbbd843aa84332ef26f4bb184', '2d7a4e44843db22461515e8b1d47a147', '33c193fb9dfcbdfd87a41045f15e034a', '378e0ccbf59f6e75b572198fe93d7755', '505d28469a2e9f05bda37c13838ab710', '5b3abae8383eb64f84dfa0af1f3b99e8', '64879d105b1da6a6b5b833e17b342aaa', '8e5554a5104ddef178e462ac6ecea6b4', '90f346ba3d4ee4aff9c79d80b4922395', 'b29fddcf5a2227d5cc45a4a65e87a85d', 'dcda872eab70a5056366dd8db2e1ef84' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "anchor": "inicio", "className": "seccion seccion--crema hero", "layout": {"type": "default"}} -->
 <section class="wp-block-group seccion seccion--crema hero" id="inicio">
 <!-- wp:html -->
@@ -3328,6 +3328,22 @@ return array(
 
 <!-- wp:group {"className": "carta reveal retraso-5", "layout": {"type": "default"}} -->
 <div class="wp-block-group carta reveal retraso-5">
+<!-- wp:html -->
+<svg viewBox="0 0 24 24" fill="none" stroke="#E2557E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6.5" r="3"/><path d="M12 10.5c-3.6 0-6 3.2-6 6.5 0 2.2 2.7 4 6 4s6-1.8 6-4c0-3.3-2.4-6.5-6-6.5z"/><path d="M9.5 15.5c1.5 1 3.5 1 5 0"/></svg>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 3} -->
+<h3 class="wp-block-heading">Atención del recién nacido</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En sala de partos o quirófano: valoración inicial, contacto piel con piel e inicio de la lactancia.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "carta reveal retraso-6", "layout": {"type": "default"}} -->
+<div class="wp-block-group carta reveal retraso-6">
 <!-- wp:html -->
 <svg viewBox="0 0 24 24" fill="none" stroke="#7B7FC4" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 3l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8V7z"/><path d="M12 9v6"/><path d="M9 12h6"/></svg>
 <!-- /wp:html -->
@@ -4069,6 +4085,30 @@ return array(
 <!-- /wp:group -->
 </blockquote>
 <!-- /wp:dalila/caja -->
+
+<!-- wp:dalila/caja {"etiqueta": "blockquote", "className": "testimonio reveal retraso-2"} -->
+<blockquote class="testimonio reveal retraso-2">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "“", "atributos": {"aria-hidden": "true"}, "className": "testimonio__comilla"} -->
+<span aria-hidden="true" class="testimonio__comilla">“</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:paragraph -->
+<p>Siendo papás primerizos conocer a la doctora Dali fue un acierto total. Nos ayudó con la lactancia materna desde que la conocimos, y gracias a ella también hoy vamos para 6 meses siendo LME con una bebé sana y fuerte. Confiamos en ella y eso es clave en este camino de brindarle el bienestar integral a nuestros bebés. Sabemos que estamos siendo guiados por un profesional muy humano y consciente ❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"tagName": "footer", "layout": {"type": "default"}} -->
+<footer class="wp-block-group">
+<!-- wp:dalila/texto {"etiqueta": "strong", "contenido": "Papás de Amelia Martín"} -->
+<strong>Papás de Amelia Martín</strong>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:html -->
+<span class="estrellas" aria-label="Cinco estrellas"><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.8l2.4 5 5.4.6-4 3.7 1.1 5.4L10 13.8l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/></svg></span>
+<!-- /wp:html -->
+</footer>
+<!-- /wp:group -->
+</blockquote>
+<!-- /wp:dalila/caja -->
 </div>
 <!-- /wp:group -->
 </div>
@@ -4447,7 +4487,7 @@ return array(
 	array(
 		'tipo'      => 'page',
 		'nombre'    => 'servicios',
-		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd353ff6c9f73e98f8f92f5e4d6d3ac70', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
+		'antes'     => array( '0beab58a470529ccdb11814d6b910579', '2f0e3cce33632ed80f9030fd445604c1', '539f64fe26effe5e6657a61f1240d5d0', '54e7ef5df4ecf3707c45cf6a26c60135', '5d17c39e338430977add2a13a568a7bb', '6a79c7f859dbe5d1a362bd9307cc61c5', '775bf4283ac1b449bd44fde5d6bf7a22', '84301262e4ca711d42da49c5133f939f', '8fd3eb990a2a8f2dc39e036f3fb1081e', 'c415822c1e7fb8beb09e4a48d295e027', 'd353ff6c9f73e98f8f92f5e4d6d3ac70', 'd810358c3acc70b0a1e1d2272c32c0bb', 'e385b70b09120e32eeffb0eae1bbeccc', 'f3631a7f36f2a4c061e8c77ee131eb2c' ),
 		'contenido' => '<!-- wp:group {"tagName": "section", "className": "cabecera cabecera--simple", "layout": {"type": "default"}} -->
 <section class="wp-block-group cabecera cabecera--simple">
 <!-- wp:group {"className": "wrap cabecera__grid", "layout": {"type": "default"}} -->
@@ -4475,11 +4515,11 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className": "cabecera__lead reveal retraso-2"} -->
-<p class="cabecera__lead reveal retraso-2">Seis formas de acompañarlos, todas con el mismo método: historia completa, examen sin prisa, plan por escrito y seguimiento. Elige por dónde empezar.</p>
+<p class="cabecera__lead reveal retraso-2">Siete formas de acompañarlos, todas con el mismo método: historia completa, examen sin prisa, plan por escrito y seguimiento. Elige por dónde empezar.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#consulta-prenatal\\">Consulta prenatal</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a> <a class=\\"filtro\\" href=\\"#whatsapp\\">Acompañamiento por WhatsApp</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
-<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#consulta-prenatal">Consulta prenatal</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a> <a class="filtro" href="#whatsapp">Acompañamiento por WhatsApp</a></nav>
+<!-- wp:dalila/texto {"etiqueta": "nav", "contenido": "<a class=\\"filtro\\" href=\\"#control-pediatrico\\">Control pediátrico</a> <a class=\\"filtro\\" href=\\"#nutricion-infantil\\">Nutrición infantil</a> <a class=\\"filtro\\" href=\\"#crecimiento-desarrollo\\">Crecimiento y desarrollo</a> <a class=\\"filtro\\" href=\\"#alimentacion-complementaria\\">Alimentación complementaria</a> <a class=\\"filtro\\" href=\\"#consulta-prenatal\\">Consulta prenatal</a> <a class=\\"filtro\\" href=\\"#recien-nacido\\">Atención del recién nacido</a> <a class=\\"filtro\\" href=\\"#consulta-virtual\\">Consulta virtual</a> <a class=\\"filtro\\" href=\\"#whatsapp\\">Acompañamiento por WhatsApp</a>", "atributos": {"aria-label": "Ir a un servicio"}, "className": "filtros filtros--enlaces reveal retraso-3 en-e71cc7"} -->
+<nav aria-label="Ir a un servicio" class="filtros filtros--enlaces reveal retraso-3 en-e71cc7"><a class="filtro" href="#control-pediatrico">Control pediátrico</a> <a class="filtro" href="#nutricion-infantil">Nutrición infantil</a> <a class="filtro" href="#crecimiento-desarrollo">Crecimiento y desarrollo</a> <a class="filtro" href="#alimentacion-complementaria">Alimentación complementaria</a> <a class="filtro" href="#consulta-prenatal">Consulta prenatal</a> <a class="filtro" href="#recien-nacido">Atención del recién nacido</a> <a class="filtro" href="#consulta-virtual">Consulta virtual</a> <a class="filtro" href="#whatsapp">Acompañamiento por WhatsApp</a></nav>
 <!-- /wp:dalila/texto -->
 </div>
 <!-- /wp:group -->
@@ -4814,18 +4854,106 @@ return array(
 </article>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName": "article", "anchor": "consulta-virtual", "className": "detalle", "layout": {"type": "default"}} -->
-<article class="wp-block-group detalle" id="consulta-virtual">
-<!-- wp:group {"className": "detalle__figura reveal reveal--der", "layout": {"type": "default"}} -->
-<div class="wp-block-group detalle__figura reveal reveal--der">
+<!-- wp:group {"tagName": "article", "anchor": "recien-nacido", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="recien-nacido">
+<!-- wp:group {"className": "detalle__figura detalle__figura--pieza detalle__figura--documento reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura detalle__figura--pieza detalle__figura--documento reveal reveal--der">
 <!-- wp:dalila/imagen -->
-<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/bienvenida-recien-nacido.webp" alt="Portada de la guía «Bienvenida al mundo, bebé» de la Dra. Dalila Peñaranda" width="860" height="1216" loading="lazy"/>
 <!-- /wp:dalila/imagen -->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className": "reveal reveal--izq", "layout": {"type": "default"}} -->
 <div class="wp-block-group reveal reveal--izq">
+<!-- wp:html -->
+<span class="detalle__icono" style="background:var(--rosa-palo)"><svg viewBox="0 0 24 24" fill="none" stroke="#C43F66" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6.5" r="3"/><path d="M12 10.5c-3.6 0-6 3.2-6 6.5 0 2.2 2.7 4 6 4s6-1.8 6-4c0-3.3-2.4-6.5-6-6.5z"/><path d="M9.5 15.5c1.5 1 3.5 1 5 0"/></svg></span>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level": 2, "className": "rosa"} -->
+<h2 class="wp-block-heading rosa">Atención del recién nacido</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Los primeros minutos de vida son únicos e irrepetibles. Estoy presente en sala de partos o quirófano para recibir a tu bebé con una atención segura, cálida y especializada.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dalila/caja {"etiqueta": "ul", "className": "lista lista--verde"} -->
+<ul class="lista lista--verde">
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Valoración inicial del recién nacido", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Valoración inicial del recién nacido</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Su adaptación a la vida fuera del útero", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Su adaptación a la vida fuera del útero</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Contacto piel con piel, si las condiciones clínicas lo permiten", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Contacto piel con piel, si las condiciones clínicas lo permiten</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Inicio temprano de la lactancia materna", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Inicio temprano de la lactancia materna</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Orientación y compañía para mamá y papá", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Orientación y compañía para mamá y papá</li>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "li", "contenido": "Las intervenciones necesarias para su bienestar", "icono": "<span class=\\"lista__check\\"><svg viewBox=\\"0 0 20 20\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"3\\" stroke-linecap=\\"round\\"><path d=\\"M4 10.5 8.5 15 16 6\\"/></svg></span>"} -->
+<li><span class="lista__check"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 10.5 8.5 15 16 6"/></svg></span>Las intervenciones necesarias para su bienestar</li>
+<!-- /wp:dalila/texto -->
+</ul>
+<!-- /wp:dalila/caja -->
+
+<!-- wp:paragraph -->
+<p>En los nacimientos por cesárea también acompañamos ese momento: cuidamos el vínculo entre mamá, papá y bebé, y el contacto con papá cuando las condiciones lo permiten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className": "detalle__meta", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__meta">
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "En sala de partos o quirófano", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16\\"/><path d=\\"M12 7v6M9 10h6\\"/><path d=\\"M2 21h20\\"/></svg>"} -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16"/><path d="M12 7v6M9 10h6"/><path d="M2 21h20"/></svg>En sala de partos o quirófano</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "Parto natural o cesárea", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M12 20s-7-4.2-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.8-7 9-7 9z\\"/></svg>"} -->
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.2-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.8-7 9-7 9z"/></svg>Parto natural o cesárea</span>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "span", "contenido": "$650.000 COP", "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><rect x=\\"3\\" y=\\"6\\" width=\\"18\\" height=\\"12\\" rx=\\"2.5\\"/><circle cx=\\"12\\" cy=\\"12\\" r=\\"2.5\\"/></svg>", "className": "detalle__precio"} -->
+<span class="detalle__precio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.5"/></svg>$650.000 COP</span>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "descarga__pie", "layout": {"type": "default"}} -->
+<div class="wp-block-group descarga__pie">
+<!-- wp:dalila/texto {"etiqueta": "a", "contenido": " Ver más información", "atributos": {"href": "https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf", "target": "_blank", "rel": "noopener"}, "icono": "<svg viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"#fff\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" aria-hidden=\\"true\\"><path d=\\"M6 3h8l4 4v14H6z\\"/><path d=\\"M14 3v4h4\\"/><path d=\\"M9 12h6M9 16h4\\"/></svg>", "className": "btn btn--rosa btn--chico"} -->
+<a href="https://dalilapenaranda.com/wp-content/themes/dalila/assets/descargas/bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf" target="_blank" rel="noopener" class="btn btn--rosa btn--chico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h4"/></svg> Ver más información</a>
+<!-- /wp:dalila/texto -->
+
+<!-- wp:dalila/texto {"etiqueta": "small", "contenido": "Guía para la familia · PDF · 3 páginas"} -->
+<small>Guía para la familia · PDF · 3 páginas</small>
+<!-- /wp:dalila/texto -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</article>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName": "article", "anchor": "consulta-virtual", "className": "detalle", "layout": {"type": "default"}} -->
+<article class="wp-block-group detalle" id="consulta-virtual">
+<!-- wp:group {"className": "detalle__figura reveal reveal--izq", "layout": {"type": "default"}} -->
+<div class="wp-block-group detalle__figura reveal reveal--izq">
+<!-- wp:dalila/imagen -->
+<img src="https://raw.githubusercontent.com/helgarpalmieri55/Paginaweb-DraDalila/main/docs/assets/img/consultorio-consulta.webp" alt="Escritorio de consulta con la silla de la doctora y las de la familia" width="1100" height="825" loading="lazy"/>
+<!-- /wp:dalila/imagen -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className": "reveal reveal--der", "layout": {"type": "default"}} -->
+<div class="wp-block-group reveal reveal--der">
 <!-- wp:html -->
 <span class="detalle__icono" style="background:rgba(123,127,196,.16)"><svg viewBox="0 0 24 24" fill="none" stroke="#5E62A8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="14" height="14" rx="3"/><path d="M16.5 10.5 21.5 8v8l-5-2.5z"/></svg></span>
 <!-- /wp:html -->

@@ -142,6 +142,18 @@ body::-webkit-scrollbar-thumb{background:#A9BEE4;border-radius:6px}
 /* ---------- tarjetas ---------- */
 .rejilla{display:grid;gap:18px}
 .rejilla--servicios{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+/* Si la última fila queda incompleta, sus tarjetas van centradas. */
+@media (min-width:700px){
+  .rejilla--servicios{grid-template-columns:repeat(4,1fr)}
+  .rejilla--servicios>*{grid-column:span 2}
+  .rejilla--servicios>:last-child:nth-child(2n+1){grid-column:2/span 2}
+}
+@media (min-width:1000px){
+  .rejilla--servicios{grid-template-columns:repeat(6,1fr)}
+  .rejilla--servicios>:last-child:nth-child(2n+1){grid-column:span 2}
+  .rejilla--servicios>:last-child:nth-child(3n+1){grid-column:3/span 2}
+  .rejilla--servicios>:nth-last-child(2):nth-child(3n+1){grid-column:2/span 2}
+}
 .rejilla--2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
 .rejilla--3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
 .rejilla--4{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
