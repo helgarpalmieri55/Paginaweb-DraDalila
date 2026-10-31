@@ -30,6 +30,7 @@ const DALILA_SEO_SERVICIOS = array(
 	array( 'Crecimiento y desarrollo', 'Seguimiento de talla, peso y perímetro cefálico sobre las curvas de la OMS, y de los hitos del desarrollo.' ),
 	array( 'Alimentación complementaria', 'Acompañamiento en el inicio de sólidos: texturas, cantidades, señales de alarma y manejo de la selectividad.' ),
 	array( 'Consulta prenatal', 'Encuentro con la pediatra antes del nacimiento: lactancia, cuidados del recién nacido, tamizajes y señales de alarma.' ),
+	array( 'Atención del recién nacido', 'La pediatra en sala de partos o quirófano: valoración inicial, adaptación, contacto piel con piel e inicio temprano de la lactancia.' ),
 	array( 'Consulta virtual', 'Videollamada para familias dentro y fuera de Colombia, con el plan enviado por correo.' ),
 );
 

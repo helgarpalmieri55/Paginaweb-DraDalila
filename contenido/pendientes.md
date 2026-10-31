@@ -44,6 +44,7 @@ Queda:
 - [x] **Tarifas de consulta** (3 de octubre de 2026): control pediátrico y
       crecimiento y desarrollo $300.000 (40 min); nutrición infantil $350.000;
       alimentación complementaria $450.000 (23 de octubre); consulta prenatal $250.000;
+      atención del recién nacido $650.000 (29 de octubre);
       consulta virtual $200.000 (40 min) o 70 USD desde fuera de Colombia.
       «Asesoría a padres» pasó a ser **consulta prenatal**: revisar con ella el
       texto y los cuatro temas que se le pusieron.
@@ -207,3 +208,14 @@ frecuentes locales y firma de autora. Lo que falta no es código.
 - ✅ **Sus piezas de Instagram:** 24 seleccionadas, ya optimizadas y en uso.
 - ✅ **La guía nutricional se entrega abierta:** cualquiera la descarga desde el
   blog sin dejar datos ni pasar por WhatsApp.
+
+## Atención del recién nacido (29 de octubre de 2026)
+
+- [ ] Revisar con la doctora el texto del servicio en Servicios y en la tarjeta
+      del inicio (se armó con el texto que ella envió).
+- [x] Guía «Bienvenida al mundo, bebé» actualizada (29 de octubre): el paso 2
+      ahora es «Cercanía y acompañamiento». Queda un detalle menor: en la ruta
+      de la portada el paso 4 dice «Las primeras horas de vida» y adentro dice
+      «Tiempo de adaptación». El archivo está en
+      `assets/descargas/guia-bienvenida-al-mundo-bebe-dra-dalila-penaranda.pdf`;
+      si cambia, va con un nombre nuevo para que nadie vea el viejo en caché.

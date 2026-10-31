@@ -71,6 +71,7 @@
 .detalle h2.rosa{color:var(--rosa)}
 .detalle p{color:var(--texto);font-size:16px;line-height:1.7;max-width:54ch}
 .detalle .lista{margin-top:18px}
+.detalle .lista+p{margin-top:18px}
 .detalle__meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--suave)}
 .detalle__meta span{display:flex;align-items:center;gap:8px}
 .detalle__meta svg{width:16px;height:16px;color:var(--azul)}
@@ -233,6 +234,8 @@
   .detalle{padding:32px 0;gap:30px}
   .detalle:nth-of-type(even) .detalle__figura{order:0}
   .detalle__figura img{height:240px}
+  /* Un documento en vertical no cabe entero: se muestra su encabezado. */
+  .detalle__figura--documento img{height:300px;object-fit:cover;object-position:top}
   .formulario{padding:24px}
   .cierre__banda{padding:30px 24px}
   .destacado__cuerpo{padding:26px}
